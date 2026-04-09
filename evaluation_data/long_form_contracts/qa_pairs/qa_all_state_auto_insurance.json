@@ -1,0 +1,515 @@
+{
+    "contract": "all_state_auto_insurance.pdf",
+    "qa_pairs": [
+        {
+            "question": "Where is the home office of Allstate Insurance Company located?",
+            "answer": "Northbrook, Illinois",
+            "evidence": "Home Office: Northbrook, Illinois ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the form number found on the first page of the policy?",
+            "answer": "AU127-1",
+            "evidence": "AU127-1 ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum daily payment for loss of wages for an insured person attending a trial?",
+            "answer": "$50 a day",
+            "evidence": "up to $50 a day for loss of wages or salary if we ask that person to attend hearings or trials to defend against a bodily injury suit. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum payment amount for a single bail bond?",
+            "answer": "$300 per bond",
+            "evidence": "We won't pay more than $300 per bond. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum rated load capacity for a vehicle to be defined as a Utility Auto?",
+            "answer": "Not more than 2,000 pounds",
+            "evidence": "This auto must have a rated load capacity of not more than 2,000 pounds. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "How many days notice is required if Allstate cancels a policy for non-payment of premium?",
+            "answer": "At least 10 days",
+            "evidence": "If we cancel because you didn't pay the premium, the date of cancellation will be at least 10 days after the date of mailing. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum benefit for funeral service expenses under Coverage CC?",
+            "answer": "$2,000",
+            "evidence": "1. $2,000; ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Within how many days must an accident be reported to the authorities for hit-and-run uninsured motorist coverage?",
+            "answer": "As soon as possible",
+            "evidence": "The accident must be reported as soon as possible to the proper authorities. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the limit for loss to a covered trailer that is not described on the Policy Declarations?",
+            "answer": "$500",
+            "evidence": "THE LIMIT FOR LOSS TO ANY COVERED TRAILER NOT DESCRIBED ON THE POLICY DECLARATIONS IS $500. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum amount Allstate will repay for transportation costs from the place of theft or disablement?",
+            "answer": "Up to $10",
+            "evidence": "Allstate will repay you up to $10 for the cost of transportation from the place of theft of your insured auto or disablement of the auto to your destination ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "How many days notice must Allstate be given regarding a hit-and-run accident?",
+            "answer": "Within 30 days",
+            "evidence": "We must be notified within 30 days. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What time frame is required for a disability to commence to be eligible for Coverage CW?",
+            "answer": "Within 20 days of the date of the accident",
+            "evidence": "1. commences within 20 days of the date of the accident; ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum total benefit for transportation expenses when an entire auto is stolen under comprehensive insurance?",
+            "answer": "$300",
+            "evidence": "Allstate will repay up to $10 a day but not more than $300 for each loss for the cost of transportation when the entire auto is stolen. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "How much does Allstate pay for loss of clothing and personal luggage in an insured auto?",
+            "answer": "Up to $200",
+            "evidence": "Allstate will pay up to $200 for loss of clothing and personal luggage, including its contents ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the monetary threshold for mandatory arbitration of a claim dispute?",
+            "answer": "$3000 or less",
+            "evidence": "any claim involving an amount of $3000 or less, the dispute will be settled by arbitration. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the primary method of determining the amount of loss if the insurer and insured disagree?",
+            "answer": "Appraisal",
+            "evidence": "Both you and Allstate have a right to demand an appraisal of the loss. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "According to the definitions, what does the term 'You' include?",
+            "answer": "The policyholder named on the Policy Declarations and that policyholder's resident spouse.",
+            "evidence": " 'You' or 'Your' means the policyholder named on the Policy Declarations and that policyholder's resident spouse. ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What type of company is Allstate Insurance Company identified as?",
+            "answer": "A Stock Company",
+            "evidence": "A Stock Company ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the time limit for death to occur after an accident for Coverage CM if the person was not continuously prevented from working?",
+            "answer": "Within 90 days",
+            "evidence": "1. death occurs within 90 days of the auto accident; ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What does Coverage JJ cover?",
+            "answer": "Towing And Labor Costs",
+            "evidence": "COVERAGE JJ Towing And Labor Costs ",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Who does Allstate rely on for information when making the policy agreement?",
+            "answer": "The policyholder",
+            "evidence": "Allstate, relying on the information you have given us, makes the following agreements with you. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who is responsible for choosing the counsel to defend an insured person?",
+            "answer": "Allstate",
+            "evidence": "We will choose the counsel. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "To whom is the Automobile Medical Payments benefit payable if the insured is a minor?",
+            "answer": "Either parent (if a resident of the same household)",
+            "evidence": "if the deceased is a minor, the benefit is payable to either parent if that parent is a resident of the same household at the time of the accident. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Which document shows the premium amount for each insured auto?",
+            "answer": "Policy Declarations",
+            "evidence": "premiums will be shown for each auto... on the Policy Declarations. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who must provide written consent before the policy can be transferred?",
+            "answer": "Allstate",
+            "evidence": "This policy can't be transferred to anyone without our written consent. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who chooses the physicians for medical examinations in an Uninsured Motorists claim?",
+            "answer": "Allstate",
+            "evidence": "The insured person may be required to take medical examinations by physicians selected by us ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Whose permission is required for an insured person to use a non-owned auto under Part 1?",
+            "answer": "The owner's",
+            "evidence": "any other person using it with your permission... A non-owned auto used by you or a resident relative with the owner's permission. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "What entity governs the calculation or adjustment of premiums?",
+            "answer": "The rules, rates and forms in effect in the policyholder's state",
+            "evidence": "Any calculation or adjustment of your premium will be made using the rules, rates and forms in effect... for our use in your state. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who must the insured person cooperate with during a lawsuit defense?",
+            "answer": "Allstate",
+            "evidence": "an insured person must cooperate with us in the investigation, settlement and defense of any claim or lawsuit. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "To whom are the weekly benefits under Coverage CW paid?",
+            "answer": "The disabled insured person",
+            "evidence": "Weekly benefits are payable to the disabled insured person. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who selects the arbitrators if the American Arbitration Association rules are not used?",
+            "answer": "The insured person selects one, Allstate selects another, and those two select a third.",
+            "evidence": "The insured person will select one arbitrator and we will select another. The two arbitrators will select a third. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who receives the death benefit under Coverage CM if there is no surviving resident spouse and the deceased is not a minor?",
+            "answer": "The deceased insured person's estate",
+            "evidence": "In all other cases, the benefit is payable to the deceased insured person's estate. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Under the Trust Agreement, who selects the attorney to recover damages from a responsible party?",
+            "answer": "Allstate",
+            "evidence": "We will select the attorney. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Which law's limits apply to the exclusion of intentional acts?",
+            "answer": "Nevada financial responsibility law",
+            "evidence": "to the extent that the limits of liability for this coverage exceed the limits of liability required by the Nevada financial responsibility law. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who pays the appraiser appointed by the insured person?",
+            "answer": "The insured person",
+            "evidence": "Each will appoint and pay a qualified appraiser. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who does the 'Resident' definition include besides those physically residing in the household?",
+            "answer": "Unmarried dependent children while temporarily away from home (if they intend to resume residency).",
+            "evidence": "Your unmarried dependent children while temporarily away from home will be considered residents if they intend to resume residing in your household. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "To whom must the insured person authorize Allstate to obtain medical reports?",
+            "answer": "Physicians and providers of records pertinent to the claim",
+            "evidence": "We must be given authorization to obtain medical reports and other records pertinent to the claim. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who bears the cost of the third arbitrator in an arbitration proceeding?",
+            "answer": "The insured person and Allstate (shared equally)",
+            "evidence": "The expense of the third arbitrator... will be shared equally. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Whose rights of recovery does Allstate acquire after making a payment under Protection Against Loss To The Auto?",
+            "answer": "The insured's",
+            "evidence": "When we pay, your rights of recovery from anyone else become ours up to the amount we have paid. ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who signs the policy on behalf of Allstate?",
+            "answer": "The Secretary and the President",
+            "evidence": "Allstate has caused this policy to be signed by its Secretary and its President ",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "What happens if the policyholder acquires an additional auto but fails to report it within 60 days?",
+            "answer": "Certain coverages of the policy may not apply.",
+            "evidence": "You must tell us within 60 days when you acquire an additional or replacement auto. If you don't, certain coverages of this policy may not apply. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the outcome if Allstate broadens coverage during the policy period without an extra charge?",
+            "answer": "The policyholder automatically receives the new feature (if they have the applicable coverage).",
+            "evidence": "When Allstate broadens a coverage during the policy period without additional charge, you have the new feature if you have the coverage to which it applies. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If an insured person is using a non-owned auto, how does Allstate's liability insurance apply relative to other insurance?",
+            "answer": "It will be excess over other collectible insurance.",
+            "evidence": "IF AN INSURED PERSON IS USING A SUBSTITUTE PRIVATE PASSENGER AUTO OR NON-OWNED AUTO, OUR LIABILITY INSURANCE WILL BE EXCESS OVER OTHER COLLECTIBLE INSURANCE. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Under what condition does Coverage ZA (Sound System) apply?",
+            "answer": "Only if comprehensive insurance is in effect under the policy.",
+            "evidence": "Coverage ZA applies only if comprehensive insurance is in effect under this policy. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What occurs if the insured person fails to protect an auto from further loss after an initial loss?",
+            "answer": "The further loss is not covered.",
+            "evidence": "Protect the auto from further loss... If you don't protect the auto, further loss is not covered. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "How is the deductible handled in a collision involving two autos that are both insured by Allstate?",
+            "answer": "The deductible amount will not be subtracted from the loss payment.",
+            "evidence": "The deductible amount won't be subtracted from the loss payment in collisions involving your insured auto and another auto insured by us. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If a loss is caused by glass breakage, how can the deductible be waived by agreement?",
+            "answer": "If the glass is repaired rather than replaced.",
+            "evidence": "the deductible amount will not be subtracted from a glass breakage loss if the glass is repaired rather than replaced. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the requirement for Coverage CC medical treatment to be extended to five years?",
+            "answer": "The limit of insurance shown for Coverage CC must be more than $5,000.",
+            "evidence": "This will be extended to five years if the amount of insurance shown on the Policy Declarations for this coverage is more than $5,000. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "When does Coverage UU (Rental Reimbursement) end for a stolen auto?",
+            "answer": "When Allstate offers a settlement or the auto is returned to use.",
+            "evidence": "Coverage ends when... if the auto is stolen, when we offer settlement or your auto is returned to use ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the consequence if an insured person voluntarily makes a payment for something other than bail bonds or first aid?",
+            "answer": "Allstate cannot be obligated for that payment.",
+            "evidence": "We can't be obligated if an insured person voluntarily takes any action or makes any payments other than for covered expenses for bail bonds or first aid to others. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If Allstate refuses to pay medical expenses because they are deemed unnecessary, what is their obligation if the insured is sued?",
+            "answer": "Allstate will pay all defense costs and any resulting judgment.",
+            "evidence": "If the insured person is sued by a medical services provider because we refuse to pay contested medical expenses, we will pay all defense costs and any resulting judgment against the insured person. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the result if an insured person sues a responsible party for an uninsured motorist claim without notifying Allstate?",
+            "answer": "Allstate is not bound by any resulting judgment.",
+            "evidence": "If an insured person sues a person believed responsible for the accident without giving us notice... we aren't bound by any resulting judgment. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "How are accrued weekly disability benefits paid?",
+            "answer": "Every four weeks.",
+            "evidence": "Accrued weekly benefits are payable every four weeks. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What happens to the policy if the policyholder dies?",
+            "answer": "Coverage is provided until the end of the policy period for the legal representative and persons covered at the date of death.",
+            "evidence": "if you die, coverage will be provided until the end of the policy period for: 1. your legal representative... and 2. persons covered on the date of your death. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Under Coverage DE, what does the insured pay if the loss is $75?",
+            "answer": "The difference between $75 and $100 ($25).",
+            "evidence": "If the loss is between $50 and $100, you pay the difference between the amount of loss and $100. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the condition for an additional auto to be covered under Part 1 Liability?",
+            "answer": "Allstate must insure all other private passenger or utility autos the policyholder owns and notice must be given within 60 days.",
+            "evidence": "This auto will be covered if we insure all other private passenger autos or utility autos you own. You must, however, tell us within 60 days ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "When does Coverage UU begin if the insured auto is driveable but needs repairs?",
+            "answer": "The day after the auto is taken to the garage for repairs.",
+            "evidence": "If it is driveable, coverage starts the day after the auto is taken to the garage for repairs. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If an insured person and Allstate cannot agree on a claim of $2500, how is it settled?",
+            "answer": "By arbitration.",
+            "evidence": "If the insured person and we don't agree on that person's right to receive damages on any claim involving an amount of $3000 or less, the dispute will be settled by arbitration. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is required for a hit-and-run vehicle to be considered an 'uninsured auto'?",
+            "answer": "Physical contact with the insured person or their vehicle, and the identity of the owner/operator must be unknown.",
+            "evidence": "a hit-and-run motor vehicle which causes bodily injury to an insured person by physical contact... The identity of the operator and the owner of the vehicle must be unknown ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Under Coverage CM, what condition must be met for a death occurring 6 months after an accident to be covered?",
+            "answer": "The injury must have continuously prevented the person from performing their occupation.",
+            "evidence": "death occurs within 1 year of the auto accident and the bodily injury has continuously prevented the insured person from performing all duties pertaining to that person's occupation. ",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Under what specific set of circumstances will Allstate pay for loss of clothing and personal luggage due to theft?",
+            "answer": "The entire auto must be stolen and the policyholder must have purchased comprehensive insurance.",
+            "evidence": "Allstate will pay up to $200 for loss of clothing and personal luggage... This coverage applies only when... the entire auto is stolen, and you have purchased comprehensive insurance. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Is a resident relative covered for medical payments if they are injured while operating a non-owned utility auto with the owner's permission?",
+            "answer": "Yes, because a utility auto is included in the definition of an auto, and resident relatives are covered while in any auto with permission.",
+            "evidence": "1. You and any resident relative who sustains bodily injury while in... an auto... The use of a non-owned auto must be with the owner's permission. AND 'Utility Auto' means an auto ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an insured person has two autos under one policy and is in an accident with one, can they combine the limits of both autos?",
+            "answer": "No, combining limits of two or more autos is prohibited; only the limit for the involved auto applies.",
+            "evidence": "COMBINING LIMITS OF TWO OR MORE AUTOS PROHIBITED ... ONLY THE COVERAGE LIMITS SHOWN ON THE POLICY DECLARATIONS FOR THAT AUTO WILL APPLY. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Does the policy cover bodily injury to a domestic employee if they are injured in a car pool while working?",
+            "answer": "The domestic employee is covered if not required to be under workers compensation, and car pools are generally not excluded by the 'carry persons for charge' rule.",
+            "evidence": "exclusion... does not apply to shared expense car pools. AND This exclusion does not apply to your domestic employee who is not required to be covered by a workers compensation law ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "How are total disability benefits defined differently in the first year versus the second year under Coverage CW?",
+            "answer": "In the first year, it must prevent the person's own occupation; in subsequent years, it must prevent any occupation for wage or profit.",
+            "evidence": "during the first year... prevents... that person's occupation; and during the second and subsequent years... prevents... any occupation or employment for wage or profit. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What is the total liability limit if a policyholder has an accident in a replacement auto and has another policy covering the same risk?",
+            "answer": "The policy will not apply at all if there is other collectible insurance for a replacement auto.",
+            "evidence": "WHEN THIS COVERAGE APPLIES TO A REPLACEMENT AUTO... THIS POLICY WILL NOT APPLY IF YOU HAVE OTHER COLLECTIBLE AUTO MEDICAL INSURANCE. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an insured's auto is being repaired and they use a rental car, is the rental car considered an 'insured auto' for liability and when would Allstate's coverage apply?",
+            "answer": "Yes, it is a substitute auto, and Allstate's coverage is excess over any other insurance the rental car may have.",
+            "evidence": "A substitute... auto... used while your insured auto is being serviced AND IF AN INSURED PERSON IS USING A SUBSTITUTE... AUTO, OUR LIABILITY INSURANCE WILL BE EXCESS ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Under Coverage SS, does Allstate pay if the hit-and-run driver is identified but has no insurance, and what is the notification timeline?",
+            "answer": "Yes, if they have no insurance they are an uninsured auto, but for hit-and-run specifically, the identity must be unknown; notification must be within 30 days.",
+            "evidence": "a hit-and-run motor vehicle... The identity of the operator... must be unknown AND We must be notified within 30 days. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an insured person is injured in an accident involving a vehicle operated on crawler-treads, are they eligible for Medical Payments or Death Indemnity?",
+            "answer": "No, vehicles on crawler-treads are excluded from both coverages.",
+            "evidence": "This coverage does not apply to... a vehicle operated on rails or crawler-treads AND This coverage does not apply to death... sustained while in... a vehicle operated on rails or crawler-treads ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What happens if a policyholder misrepresents their marital status and later has an accident?",
+            "answer": "Allstate may adjust the premium during the policy period or cancel the policy for material misrepresentation.",
+            "evidence": "You agree that if this information changes or is incorrect... we may adjust your premium AND Allstate won't cancel your policy unless... Fraud or material misrepresentation is used in obtaining the policy ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Is a person covered for medical payments if they are struck as a pedestrian by a trailer designed for use with a private passenger auto?",
+            "answer": "Yes, because the definition of an insured person for medical payments includes being struck by an auto or trailer.",
+            "evidence": "You and any resident relative who sustains bodily injury while... struck by, an auto or trailer. AND The trailer must be designed for use with a private passenger auto ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Does Part 6 cover loss to a sound system that was installed by the car manufacturer?",
+            "answer": "No, the definition of a Sound System for coverage purposes requires it to be installed in a location other than the one designed by the manufacturer.",
+            "evidence": "loss to any sound system... exclusion will not apply if you have purchased Coverage ZA. AND 'Sound System' ... which is installed in a location other than the one designed by the auto's manufacturer ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Can an insured recover under both Collision (Coverage DD) and Comprehensive (Coverage HH) for the same glass breakage loss?",
+            "answer": "No, when more than one coverage applies, the insured may recover under the broadest one, but not both.",
+            "evidence": "Glass breakage, whether or not caused by collision... is covered. AND WHEN MORE THAN ONE COVERAGE IS APPLICABLE TO THE LOSS, YOU MAY RECOVER UNDER THE BROADEST COVERAGE BUT NOT BOTH. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an insured auto and a mounted camper unit are both damaged in a single collision, how many deductibles apply?",
+            "answer": "Only one deductible applies.",
+            "evidence": "ONLY ONE DEDUCTIBLE WILL APPLY TO AN AUTO WITH A MOUNTED CAMPER UNIT. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Is interest paid on damages that exceed Allstate's limits of liability?",
+            "answer": "No, Allstate only pays interest on damages not exceeding their limits of liability.",
+            "evidence": "We will only pay interest on damages not exceeding our limits of liability. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If Allstate pays for a loss under Part 6 and later recovers money from the person at fault, what happens to that money?",
+            "answer": "Allstate is entitled to that money up to the amount they paid, as the insured's rights of recovery become theirs.",
+            "evidence": "When we pay, your rights of recovery from anyone else become ours up to the amount we have paid. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If a policyholder is using a non-owned auto for business, are they covered for liability under this policy?",
+            "answer": "Generally no, except for the policyholder using a private passenger auto or trailer, and even then only up to Nevada state law limits if the policy limits are higher.",
+            "evidence": "exclusion... does not apply while you... are using a private passenger auto AND to the extent that the limits of liability... exceed the limits of liability required by the Nevada financial responsibility law. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If a person is eligible for both Workers Compensation and Automobile Medical Payments for the same injury, what does Allstate pay?",
+            "answer": "Nothing, as medical payments coverage does not apply to the extent treatment is covered by Workers Compensation.",
+            "evidence": "This coverage does not apply to any person to the extent that the treatment is covered under any workers compensation law. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What happens if an insured and Allstate agree to arbitrate a claim over $3000 but then Allstate disagrees with the arbitrator's decision?",
+            "answer": "Either party has a right to a trial on all issues in a court of competent jurisdiction regardless of the arbitration method.",
+            "evidence": "Regardless of the method of arbitration, either party has a right to a trial on all issues in a court of competent jurisdiction. ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Does the policy cover loss to a trailer used for business purposes while attached to a sedan?",
+            "answer": "Yes, provided the trailer is attached to a private passenger auto and is designed for use with such an auto.",
+            "evidence": "This trailer can't be used for business purposes with other than a private passenger auto AND 'Auto' means a land motor vehicle AND sedan delivery is a utility auto ",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What is the specific dollar amount of the death benefit for an insured person under Coverage CM?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "How much is the monthly premium for the policy issued to P.L.E.?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "What is the name of the President of Allstate Insurance Company who signed the policy?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "What is the grace period for premium payments before a policy is cancelled?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "Does this policy provide coverage for accidents occurring in Mexico?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        }
+    ]
+}

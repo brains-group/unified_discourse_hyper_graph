@@ -1,0 +1,191 @@
+{
+  "contract": "contract_5_final_expense.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the policy number for this final expense policy?",
+      "answer": "CC-FE-2024-9903",
+      "evidence": "Policy #: CC-FE-2024-9903",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the benefit amount of this policy?",
+      "answer": "$10,000",
+      "evidence": "Benefit Amount: $10,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the monthly premium?",
+      "answer": "$87.50, guaranteed level for life",
+      "evidence": "Monthly Premium: $87.50 (guaranteed level for life)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's age?",
+      "answer": "72 years",
+      "evidence": "Age: 72 years",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the effective date of this policy?",
+      "answer": "May 1, 2024",
+      "evidence": "Effective: May 1, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What percentage of the face amount is paid if death occurs during Year 1?",
+      "answer": "30% of face amount ($3,000) plus all premiums paid",
+      "evidence": "During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What percentage of the face amount is paid if death occurs during Year 2?",
+      "answer": "70% of face amount ($7,000) plus all premiums paid",
+      "evidence": "During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the approximate cash value after 10 years?",
+      "answer": "Approximately $3,200",
+      "evidence": "4.2 Approximate cash value after 10 years: $3,200",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the grace period for this policy?",
+      "answer": "30 days",
+      "evidence": "3.4 GRACE PERIOD: If payment is not received, you have 30 days to pay before the policy cancels.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the age range for eligibility under this policy?",
+      "answer": "Ages 50 to 85",
+      "evidence": "9.2 AGE LIMITS: Coverage is available for ages 50-85.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the free look period?",
+      "answer": "30 days",
+      "evidence": "7.1 30-DAY FREE LOOK: You can cancel within 30 days of receiving this policy for a full refund.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What company issued this final expense policy?",
+      "answer": "ComfortCare Senior Insurance",
+      "evidence": "ComfortCare Senior Insurance",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the primary beneficiary of this policy?",
+      "answer": "Linda Sue Johnson (Daughter), receiving 100%",
+      "evidence": "Primary: Linda Sue Johnson (Daughter) - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the insured person on this policy?",
+      "answer": "Dorothy Mae Johnson",
+      "evidence": "Name: Dorothy Mae Johnson",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the premium payer on this policy?",
+      "answer": "Dorothy Mae Johnson",
+      "evidence": "Premium Payer: Dorothy Mae Johnson",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What address should claims be mailed to?",
+      "answer": "ComfortCare Claims, P.O. Box 777, Tampa, FL 33601",
+      "evidence": "Mail to: ComfortCare Claims, P.O. Box 777, Tampa, FL 33601",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Within how many business days will valid claims be paid?",
+      "answer": "Within 5 business days",
+      "evidence": "We will pay valid claims within 5 business days.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "If death results from an accident at any time, what benefit is paid?",
+      "answer": "The full benefit amount ($10,000) is paid immediately, plus all premiums paid.",
+      "evidence": "EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is paid if the insured dies by suicide within 2 years of the issue date?",
+      "answer": "Only the premiums paid are returned; no death benefit is payable.",
+      "evidence": "5.1 SUICIDE: If death occurs by suicide within 2 years of the issue date, we will only return the premiums paid.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What happens after 2 years if the policy owner stops paying premiums?",
+      "answer": "The policy automatically continues with a reduced benefit amount based on the cash value; no further premiums are needed.",
+      "evidence": "8.1 After 2 years, if you stop paying premiums, your policy will automatically continue with a reduced benefit amount based on the cash value. No further premiums needed.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "After the policy has been in force for 2 years, can the insurer cancel it except for non-payment?",
+      "answer": "No. After 2 years, the insurer cannot cancel the policy or deny claims except for non-payment of premiums.",
+      "evidence": "9.3 INCONTESTABILITY: After this policy has been in force for 2 years, we cannot cancel it or deny claims except for non-payment of premiums.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Under what conditions is an accidental death recognized for the full benefit?",
+      "answer": "An accident must be a sudden, unexpected event causing injury that results in death within 90 days of the event.",
+      "evidence": "An accident means a sudden, unexpected event causing injury that results in death within 90 days of the event.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Within what period may the insured restart the policy after it lapses?",
+      "answer": "Within 2 years by paying missed premiums with interest.",
+      "evidence": "8.3 You may restart your policy within 2 years by paying missed premiums with interest.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured dies on June 1, 2024 (during Year 1) and death is not accidental, how much will the beneficiary receive?",
+      "answer": "30% of the face amount ($3,000) plus all premiums paid to date.",
+      "evidence": "During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid / EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Does this policy exclude war, aviation, or travel? What about suicide?",
+      "answer": "There is no war exclusion, no aviation exclusion, and no travel restrictions. The only exclusion is suicide within 2 years of issue, which limits payment to premiums paid only.",
+      "evidence": "5.2 NO OTHER EXCLUSIONS: This policy has no war exclusion, no aviation exclusion, and no travel restrictions. / 5.1 SUICIDE: If death occurs by suicide within 2 years of the issue date, we will only return the premiums paid.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If the insured dies accidentally during Year 2, what does the beneficiary receive — graded benefit or full benefit?",
+      "answer": "The full benefit amount ($10,000) plus all premiums paid, because accidental death at any time triggers the full benefit regardless of the graded benefit schedule.",
+      "evidence": "During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid / EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the loan interest rate for a policy loan on this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does this policy offer a conversion privilege to a different type of insurance?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the insured's address?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Is there a contingent beneficiary named in this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the guaranteed cash value at the end of Year 5?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

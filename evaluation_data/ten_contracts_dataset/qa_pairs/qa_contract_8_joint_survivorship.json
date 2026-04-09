@@ -1,0 +1,227 @@
+{
+  "contract": "contract_8_joint_survivorship.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the policy number for this joint survivorship life insurance policy?",
+      "answer": "EPL-JSL-2024-1156",
+      "evidence": "Policy Number: EPL-JSL-2024-1156",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the death benefit amount?",
+      "answer": "$2,500,000",
+      "evidence": "Death Benefit: $2,500,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the annual premium?",
+      "answer": "$32,400, guaranteed level for 10 years",
+      "evidence": "Annual Premium: $32,400 (guaranteed level for 10 years)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum guaranteed annual premium after Year 10?",
+      "answer": "$48,600 per year",
+      "evidence": "4.2 AFTER YEAR 10: Premium may increase but will never exceed the maximum guaranteed premium of $48,600 per year.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the issue date of this policy?",
+      "answer": "August 20, 2024",
+      "evidence": "Issue Date: August 20, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the loan interest rate on policy loans?",
+      "answer": "Variable, currently 5.5% per annum",
+      "evidence": "5.3 POLICY LOANS: Interest rate: Variable, currently 5.5% per annum",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum loan amount as a percentage of cash surrender value?",
+      "answer": "90% of cash surrender value",
+      "evidence": "5.3 POLICY LOANS: Maximum: 90% of cash surrender value",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the grace period for premium payments?",
+      "answer": "60 days",
+      "evidence": "4.6 GRACE PERIOD: If payment is not received, you have 60 days to pay before the policy cancels.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the free look period?",
+      "answer": "30 days",
+      "evidence": "ARTICLE XI - FREE LOOK PERIOD: The policy owner may cancel within 30 days of policy receipt for a full refund of premium paid.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the projected cash value at the end of Year 10?",
+      "answer": "$285,000",
+      "evidence": "5.2 Projected cash value (based on current assumptions): End of Year 10: $285,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the projected cash value at the end of Year 20?",
+      "answer": "$712,000",
+      "evidence": "5.2 Projected cash value (based on current assumptions): End of Year 20: $712,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "After how many years may policy loans be taken?",
+      "answer": "After the policy has been in force for 2 years",
+      "evidence": "5.3 POLICY LOANS: Available after policy has been in force for 2 years",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the policy form type?",
+      "answer": "Second-to-Die Whole Life",
+      "evidence": "Policy Form: Second-to-Die Whole Life",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the policy owner?",
+      "answer": "The Hartford Family Irrevocable Life Insurance Trust, with First National Bank of Connecticut as trustee",
+      "evidence": "The Hartford Family Irrevocable Life Insurance Trust / Dated: August 1, 2024 / Trustee: First National Bank of Connecticut",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the beneficiary of this policy?",
+      "answer": "Hartford Family Irrevocable Life Insurance Trust",
+      "evidence": "BENEFICIARY: Hartford Family Irrevocable Life Insurance Trust",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who are the two insureds on this policy?",
+      "answer": "William Alexander Hartford and Elizabeth Anne Hartford",
+      "evidence": "First Insured: William Alexander Hartford / Second Insured: Elizabeth Anne Hartford",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who pays the premiums on this policy?",
+      "answer": "Hartford Family Irrevocable Trust",
+      "evidence": "Premium Payor: Hartford Family Irrevocable Trust",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What company issued this policy?",
+      "answer": "Estate Planning Life Assurance Ltd.",
+      "evidence": "Estate Planning Life Assurance Ltd.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What ownership rights does the policy owner (the Trust) have?",
+      "answer": "The Trust has the right to designate and change beneficiaries, assign the policy, take policy loans, and surrender the policy.",
+      "evidence": "10.1 The policy owner (the Trust) has all ownership rights including the right to: Designate and change beneficiaries / Assign the policy / Take policy loans / Surrender the policy",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "When is the death benefit paid under this policy?",
+      "answer": "The death benefit is payable only upon the death of the second insured to die.",
+      "evidence": "1.2 DEATH BENEFIT TRIGGER: The death benefit is payable only upon the death of the SECOND insured to die (survivorship basis).",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What happens if either insured commits suicide within 2 years of the issue date?",
+      "answer": "The death benefit is limited to return of premiums paid. This suicide clause resets if the policy is reinstated.",
+      "evidence": "7.1 SUICIDE CLAUSE: If either insured commits suicide within 2 years of the issue date, the death benefit is limited to return of premiums paid. / 7.2 This suicide clause resets if the policy is reinstated.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What happens when the first insured dies?",
+      "answer": "No death benefit is paid. The policy continues in force, premium payment continues, the policy owner receives written confirmation, and a death certificate must be filed.",
+      "evidence": "3.1 When the first insured dies, no death benefit is paid, but: (a) Policy continues in force (b) Premium payment obligation continues (c) Policy owner receives written confirmation (d) Death certificate must be filed with us",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If both insureds die in the same accident and it cannot be determined who died first, when is the death benefit paid?",
+      "answer": "The death benefit will be paid immediately.",
+      "evidence": "9.1 If both insureds die in the same accident or incident and it cannot be determined who died first, the death benefit will be paid immediately.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "For claim purposes, if two deaths occur within 30 days of each other, how are they treated?",
+      "answer": "They are treated as simultaneous.",
+      "evidence": "9.2 If deaths occur within 30 days of each other, this will be treated as simultaneous for claim purposes.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Are partial withdrawals permitted under this policy?",
+      "answer": "No. Partial withdrawals are not permitted.",
+      "evidence": "5.4 WITHDRAWALS: Partial withdrawals are not permitted under this policy type.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Within what period after the first death may the policy owner elect to split the policy?",
+      "answer": "Within 2 years of the first death.",
+      "evidence": "6.2 Requirements for split: Must elect within 2 years of first death",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Do any war, aviation, or travel exclusions apply to this policy?",
+      "answer": "No. No war, aviation, or travel exclusions apply.",
+      "evidence": "7.4 NO OTHER EXCLUSIONS: No war, aviation, or travel exclusions apply to this policy.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Can the insurer contest this policy after the second insured has died?",
+      "answer": "No. The contestability provision states the insurer may contest only within 2 years of issue while both insureds are living.",
+      "evidence": "7.3 CONTESTABILITY: We may contest this policy for material misrepresentation within 2 years of issue while both insureds are living.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the first insured (William Hartford) dies after this policy has been in force for 5 years, will the death benefit be paid to beneficiaries at that time?",
+      "answer": "No. No death benefit is paid on the first death. The policy continues in force until the second insured also dies, at which point the $2,500,000 is paid.",
+      "evidence": "1.2 DEATH BENEFIT TRIGGER: The death benefit is payable only upon the death of the SECOND insured to die (survivorship basis). / 1.3 If the first insured dies, no death benefit is paid and the policy continues in force covering the surviving insured.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If there is an outstanding loan at the time the second insured dies, how does it affect the death benefit paid?",
+      "answer": "The $2,500,000 death benefit is reduced by any outstanding loans, since the death benefit is paid minus any outstanding loans.",
+      "evidence": "2.1 Upon the death of the second insured, we will pay $2,500,000 to the designated beneficiary, minus any outstanding loans. / 5.3 Loans reduce death benefit dollar-for-dollar",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Why is this policy owned by an irrevocable trust rather than by the insureds directly?",
+      "answer": "The policy is owned by an irrevocable trust to exclude the proceeds from the insureds' taxable estates, as proceeds paid to the trust should not be includable in either insured's estate if the trust is properly structured.",
+      "evidence": "8.1 This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxable estates. / 8.2 IMPORTANT TAX NOTE: Proceeds paid to the trust should not be includable in either insured's estate if the trust is properly structured and maintained.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Is there a waiver of premium option available after the first insured dies?",
+      "answer": "No. Premium waiver is not available on joint survivorship policies, and premiums must continue to be paid after the first death.",
+      "evidence": "4.5 WAIVER OPTION: Premium waiver is not available on joint survivorship policies. / 4.4 FIRST DEATH PREMIUM CONTINUATION: Premiums continue after the first death at the same rate.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the insured's occupation?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the reinstatement period if this policy lapses?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What are the Crummey power requirements for this trust?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does this policy pay dividends?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the face amount allocated to each insured if the split option is exercised?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

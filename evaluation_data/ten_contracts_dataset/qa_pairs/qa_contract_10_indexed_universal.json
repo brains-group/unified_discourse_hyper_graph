@@ -1,0 +1,251 @@
+{
+  "contract": "contract_10_indexed_universal.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the policy number for this indexed universal life policy?",
+      "answer": "HWP-IUL-2024-7290",
+      "evidence": "Policy Number: HWP-IUL-2024-7290",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the initial face amount?",
+      "answer": "$500,000",
+      "evidence": "Initial Face Amount: $500,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the planned annual premium?",
+      "answer": "$6,000",
+      "evidence": "Planned Annual Premium: $6,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the current cap rate for the S&P 500 Index Account?",
+      "answer": "10.5%",
+      "evidence": "A) S&P 500 Index Account (Annual Point-to-Point) / Current Cap: 10.5%",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the floor rate for all index accounts?",
+      "answer": "0%",
+      "evidence": "Floor: 0% / CRITICAL: You never lose money due to market decline. The worst case is 0% interest for that year.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the guaranteed minimum fixed account interest rate?",
+      "answer": "2% per annum",
+      "evidence": "Fixed account will never be less than 2%",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the fixed account interest rate?",
+      "answer": "3.0% annually",
+      "evidence": "FIXED ACCOUNT: Guaranteed interest rate: 3.0% annually",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the monthly administrative charge?",
+      "answer": "$12 per month",
+      "evidence": "5.2 Administrative Charge: $12 per month",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the premium load percentage?",
+      "answer": "3.5% of each premium payment",
+      "evidence": "4.4 PREMIUM LOAD: 3.5% of each premium payment is deducted for expenses.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the policy loan interest rate?",
+      "answer": "4% annually (fixed)",
+      "evidence": "7.1 POLICY LOANS: Loan interest: 4% annually (fixed loan rate)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the surrender charge in Year 1?",
+      "answer": "10%",
+      "evidence": "Year 1: 10%",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "After what year does the surrender charge reach 0%?",
+      "answer": "After Year 12",
+      "evidence": "Year 12+: 0%",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the guaranteed minimum cap rate?",
+      "answer": "Caps will never be less than 4%",
+      "evidence": "2.5 GUARANTEED RATES: Caps will never be less than 4%",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the guaranteed minimum participation rate?",
+      "answer": "25%",
+      "evidence": "Participation rates will never be less than 25%",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the issue date of this policy?",
+      "answer": "October 3, 2024",
+      "evidence": "Date of Issue: October 3, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum premium payment?",
+      "answer": "$100 per payment",
+      "evidence": "4.1 Minimum: $100 per payment",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What company issued this policy?",
+      "answer": "Horizon Wealth Protection Insurance",
+      "evidence": "Horizon Wealth Protection Insurance",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the primary beneficiary?",
+      "answer": "Matthew Scott Thompson (Spouse), receiving 100%",
+      "evidence": "Primary: Matthew Scott Thompson (Spouse) - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the contingent beneficiary?",
+      "answer": "Thompson Family Trust, receiving 100%",
+      "evidence": "Contingent: Thompson Family Trust - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What is the current allocation across index and fixed accounts?",
+      "answer": "S&P 500 Index: 50%, NASDAQ-100 Index: 30%, Fixed Account: 20%",
+      "evidence": "2.3 CURRENT ALLOCATION: S&P 500 Index: 50% / NASDAQ-100 Index: 30% / Fixed Account: 20%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "How is the Cost of Insurance charge calculated?",
+      "answer": "(Death Benefit minus Account Value) multiplied by the Monthly COI Rate divided by 1,000",
+      "evidence": "5.1 Cost of Insurance (COI): Deducted monthly based on: (Death Benefit - Account Value) × Monthly COI Rate ÷ 1,000",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What is the death benefit option currently selected?",
+      "answer": "Option 1 (Level Death Benefit)",
+      "evidence": "Death Benefit Option: Option 1 (Level)",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens to loaned amounts in terms of interest crediting?",
+      "answer": "Loaned amounts earn the fixed account rate (3%), and the net cost of the loan is 1% annually (4% loan rate minus 3% credited).",
+      "evidence": "7.1 POLICY LOANS: Loaned amounts earn fixed account rate (3%) / Net cost: 1% annually",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens if the index declines in a given year?",
+      "answer": "The floor protects at 0%, so no interest is credited for that year but no loss is incurred.",
+      "evidence": "3.2 EXAMPLE: If index declined 5%: Floor protects at 0% / Interest credited: 0% (no loss) / 3.3 CRITICAL: You never lose money due to market decline.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the S&P 500 gains 15% in a year, what interest rate is credited to that account?",
+      "answer": "10.5%, because the gain is capped at the current cap rate.",
+      "evidence": "3.2 EXAMPLE: Assume S&P 500 Index: Gain: 15% / With 100% participation and 10.5% cap / Interest credited: 10.5% (capped)",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is paid if the insured commits suicide within 2 years of issue or reinstatement?",
+      "answer": "Only premiums paid minus any withdrawals and charges, without interest.",
+      "evidence": "11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "When will the insurer notify the policy owner before a lapse occurs?",
+      "answer": "At least 30 days before lapse.",
+      "evidence": "10.1 If account value is insufficient to pay monthly deductions, we will notify you at least 30 days before lapse.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "How many free partial withdrawals are allowed per year before fees apply?",
+      "answer": "The first 10 withdrawals are free; a $50 fee applies thereafter.",
+      "evidence": "7.2 PARTIAL WITHDRAWALS: First 10 withdrawals free; $50 fee thereafter",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "When may allocation changes be made without a fee?",
+      "answer": "On any policy anniversary; the first 4 reallocations per year are free, with a $25 fee thereafter.",
+      "evidence": "2.4 You may change allocations on any policy anniversary at no charge. First 4 reallocations per year are free; $25 fee thereafter.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "After what year can the policy owner make free partial withdrawals of up to 10% of account value without surrender charge?",
+      "answer": "After Year 1",
+      "evidence": "8.4 FREE PARTIAL WITHDRAWAL: You may withdraw up to 10% of account value each year without surrender charge after Year 1.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "After how many years is a policy loan available?",
+      "answer": "After 1 year",
+      "evidence": "7.1 POLICY LOANS: Available after 1 year",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Under Option 1, if the account value grows over time, what happens to the cost of insurance charge?",
+      "answer": "The COI charge decreases, because it is calculated as (Death Benefit minus Account Value) times the COI rate; as the account value grows, the net amount at risk decreases, reducing the COI.",
+      "evidence": "6.1 OPTION 1 - Level Death Benefit (CURRENT): Death Benefit = $500,000 (specified amount) / 5.1 Cost of Insurance (COI): Deducted monthly based on: (Death Benefit - Account Value) × Monthly COI Rate ÷ 1,000",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If the S&P 500 index gains 8% in a year, what interest is credited to the S&P 500 Index Account, and is the cap invoked?",
+      "answer": "8% interest is credited. The cap of 10.5% is not invoked because the gain is below the cap rate.",
+      "evidence": "A) S&P 500 Index Account (Annual Point-to-Point) / Current Cap: 10.5% | Participation Rate: 100% / Floor: 0% / 3.1 Interest Credited = Index % Change × Participation Rate (subject to Cap and Floor)",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Is this policy considered a securities product, and does index participation mean the policy owner owns stocks?",
+      "answer": "No. This is not a securities product. Index participation does not involve direct ownership of stocks or index funds.",
+      "evidence": "12.1 This is NOT a securities product. Index participation does not involve direct ownership of stocks or index funds.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If the No Lapse Guarantee Rider is not elected and the account value drops to zero, will coverage continue?",
+      "answer": "No. Without the No Lapse Guarantee Rider, the policy would lapse if account value is insufficient to cover monthly deductions after the 61-day grace period.",
+      "evidence": "ARTICLE 9 - NO LAPSE GUARANTEE RIDER (OPTIONAL - NOT SELECTED): Not currently elected on this policy. / 10.2 Grace period: 61 days to pay sufficient premium to bring policy back in force.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Do index credits include dividends from index component stocks?",
+      "answer": "No. Dividends from index components are not included in index performance calculations.",
+      "evidence": "12.2 Dividends from index components are NOT included in index performance calculations.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the insured's occupation?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Is there a conversion privilege to a different type of policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the reinstatement period after this policy lapses?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does this policy include a waiver of premium rider?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the free look period for this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "contract": "contract_3_universal_life.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the contract number for this universal life policy?",
+      "answer": "FPS-UL-24-03391",
+      "evidence": "Contract Number: FPS-UL-24-03391",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the specified face value of this policy?",
+      "answer": "$400,000",
+      "evidence": "Specified Amount (Face Value): $400,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the planned monthly premium?",
+      "answer": "$200 per month",
+      "evidence": "Planned Premium: $200/month",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum premium payment?",
+      "answer": "$75 per payment",
+      "evidence": "Minimum: $75 per payment",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum annual premium subject to tax limitations?",
+      "answer": "$50,000 per year",
+      "evidence": "Maximum: $50,000 per year (subject to tax limitations)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the guaranteed minimum interest rate credited to the account value?",
+      "answer": "2.0% per annum",
+      "evidence": "4.2 Guaranteed minimum rate: 2.0% per annum",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the current credited interest rate?",
+      "answer": "3.5% per annum",
+      "evidence": "Current rate: 3.5% per annum (subject to change monthly)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the monthly administrative expense charge?",
+      "answer": "$8.00 per month",
+      "evidence": "(b) Administrative expense charge: $8.00/month",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the premium expense charge percentage deducted when premiums are paid?",
+      "answer": "3%",
+      "evidence": "2.2 Premiums are allocated to the Account Value after deduction of a 3% premium expense charge.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum partial withdrawal amount?",
+      "answer": "$500",
+      "evidence": "6.2 Minimum withdrawal: $500",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the issue date of this policy?",
+      "answer": "March 10, 2024",
+      "evidence": "Issue Date: March 10, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the surrender charge in Year 1 as a percentage of specified amount?",
+      "answer": "8%",
+      "evidence": "8.2 Surrender Charge Schedule (% of Specified Amount): Year 1: 8%",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What death benefit option is currently selected on this policy?",
+      "answer": "Option A (Level Death Benefit)",
+      "evidence": "Death Benefit Option: Level (Option A)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's date of birth?",
+      "answer": "November 15, 1982",
+      "evidence": "DOB: 11/15/1982",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What company issued this universal life policy?",
+      "answer": "FlexProtect Insurance Solutions",
+      "evidence": "FlexProtect Insurance Solutions",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the primary beneficiary of this policy?",
+      "answer": "Jennifer Ann Wilson (Wife), receiving 100%",
+      "evidence": "Primary: Jennifer Ann Wilson (Wife) - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who are the contingent beneficiaries and their shares?",
+      "answer": "Robert Wilson Jr. (Son) at 50% and Emily Rose Wilson (Daughter) at 50%",
+      "evidence": "Contingent: Robert Wilson Jr. (Son) - 50% / Emily Rose Wilson (Daughter) - 50%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Under Option B, how is the death benefit calculated?",
+      "answer": "Death Benefit equals the Specified Amount plus the Account Value.",
+      "evidence": "5.2 OPTION B (Increasing Death Benefit) - Available by Request: Death Benefit = Specified Amount + Account Value",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What does the Cash Surrender Value equal?",
+      "answer": "Account Value minus Surrender Charge minus Outstanding Loans",
+      "evidence": "8.1 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "How is the Cost of Insurance charge calculated?",
+      "answer": "(Specified Amount minus Account Value) multiplied by the Monthly COI Rate divided by 1,000",
+      "evidence": "3.2 Cost of Insurance is calculated as: (Specified Amount - Account Value) × Monthly COI Rate / 1,000",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens if the Account Value is insufficient to cover monthly deductions?",
+      "answer": "The policy enters a 61-day grace period during which the policy continues.",
+      "evidence": "2.4 If Account Value falls below the amount needed to pay monthly charges, the policy will enter a 61-day grace period.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What happens if premium is not received within 61 days when the account value is insufficient?",
+      "answer": "The policy lapses.",
+      "evidence": "10.2 If sufficient premium is not received within 61 days, policy lapses.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is paid upon lapse if account value exceeds surrender charges?",
+      "answer": "Any Account Value in excess of surrender charges will be paid to the policy owner automatically.",
+      "evidence": "10.3 Upon lapse, any Account Value in excess of surrender charges will be paid to you automatically.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is paid if the insured dies by suicide within 24 months of the issue date?",
+      "answer": "Only the Account Value, without interest.",
+      "evidence": "9.1 SUICIDE EXCLUSION: If insured dies by suicide within 24 months of issue date, we pay only the Account Value, without interest.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What fee applies when changing the death benefit option if coverage is being increased?",
+      "answer": "A $50 processing fee is required, plus evidence of insurability.",
+      "evidence": "5.3 You may change death benefit options subject to: (a) Evidence of insurability if increasing coverage (b) Payment of a $50 processing fee",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "After what year do partial withdrawal charges cease?",
+      "answer": "After Year 10 there is no charge.",
+      "evidence": "6.3 Withdrawal charges: Years 1-10: $25 per withdrawal / Years 11+: No charge",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Under what conditions can the insurer contest this policy?",
+      "answer": "The insurer may contest for material misrepresentation within 2 years of the issue date while the insured is living.",
+      "evidence": "9.2 CONTESTABILITY: We may contest this policy for material misrepresentation within 2 years of issue date while insured is living.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is the surrender charge percentage in Year 15 and beyond?",
+      "answer": "0% — no surrender charge applies.",
+      "evidence": "8.2 Surrender Charge Schedule (% of Specified Amount): Year 15+: 0%",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the policy owner skips premium payments and the account value becomes insufficient to cover monthly deductions, what is the maximum number of days coverage continues before the policy lapses?",
+      "answer": "61 days, which is the grace period that begins when the account value is insufficient.",
+      "evidence": "2.3 You may skip payments as long as the Account Value is sufficient to cover monthly deductions. / 2.4 If Account Value falls below the amount needed to pay monthly charges, the policy will enter a 61-day grace period. / 10.2 If sufficient premium is not received within 61 days, policy lapses.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Under Option A, if the policy has an outstanding loan at the time of the insured's death, what death benefit will be paid?",
+      "answer": "Under Option A the death benefit equals the Specified Amount, but it is paid minus any outstanding policy loans.",
+      "evidence": "5.1 OPTION A (Level Death Benefit): Death Benefit = Specified Amount / 5.4 Death benefit is paid minus any outstanding policy loans.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Can the policy owner make a partial withdrawal of $300?",
+      "answer": "No. The minimum partial withdrawal amount is $500.",
+      "evidence": "6.2 Minimum withdrawal: $500",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the insured's occupation?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the insured's risk or underwriting class?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does this policy include a waiver of premium rider?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the free look period for this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the reinstatement period after this policy lapses?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

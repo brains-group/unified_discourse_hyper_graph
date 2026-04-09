@@ -1,0 +1,605 @@
+{
+  "contract": "td_contract.pdf",
+  "qa_pairs": [
+    {
+      "question": "What is the policy number of the insured?",
+      "answer": "123 456 789",
+      "evidence": "This Insurance Policy # 123 456 789 is issued to: Jane Sample",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the sum insured under this policy?",
+      "answer": "$181,700.00",
+      "evidence": "Sum Insured $181,700.00",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the effective date of the policy?",
+      "answer": "September 7, 2023",
+      "evidence": "Effective Date September 7, 2023",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the first premium due date?",
+      "answer": "October 7, 2023",
+      "evidence": "First Premium Due Date October 7, 2023",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the risk class of the insured person?",
+      "answer": "Female/Non-smoker",
+      "evidence": "Risk Class Female/Non-smoker",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the date of birth of the insured person?",
+      "answer": "March 21, 1989",
+      "evidence": "Date of Birth of Insured Person March 21, 1989",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the issue age of the insured person?",
+      "answer": "34 years old",
+      "evidence": "Issue Age 34 years old",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the premium payment frequency under this policy?",
+      "answer": "Monthly",
+      "evidence": "Premium Payment Frequency Monthly",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What type of payment account is used for premium payments?",
+      "answer": "Credit Card ending in 1234",
+      "evidence": "Premium Payment Account Type Credit Card ending in 1234",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Is the Waiver of Premiums benefit included in this policy?",
+      "answer": "Yes",
+      "evidence": "Waiver of Premiums Yes",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the total monthly premium starting September 7, 2023?",
+      "answer": "$20.00 monthly",
+      "evidence": "September 7, 2023 $22.75 N/A $20.00 monthly",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the total monthly premium starting September 7, 2043?",
+      "answer": "$150.75 monthly",
+      "evidence": "September 7, 2043 $167.50 N/A $150.75 monthly",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the total monthly premium starting September 7, 2063?",
+      "answer": "$447.50 monthly",
+      "evidence": "September 7, 2063 $447.50 N/A $447.50 monthly",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the total monthly premium starting September 7, 2083?",
+      "answer": "$972.93 monthly",
+      "evidence": "September 7, 2083 $972.93 N/A $972.93 monthly",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the name of the policy owner?",
+      "answer": "Jane Sample",
+      "evidence": "Policy Owner First Name Jane / Policy Owner Last Name Sample",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the name of the insured person?",
+      "answer": "Jane Sample",
+      "evidence": "Insured Person First Name Jane / Insured Person Last Name Sample",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the plan type of this insurance policy?",
+      "answer": "TD 20-Year Term Life insurance",
+      "evidence": "Plan TD 20-Year Term Life insurance",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the reinstatement effective date?",
+      "answer": "September 7, 2023",
+      "evidence": "Reinstatement Effective Date September 7, 2023",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the length of the grace period under this policy?",
+      "answer": "Thirty (30) calendar days",
+      "evidence": "We will allow a grace period of thirty (30) calendar days, during which time this policy will remain in effect even if premiums are not paid by the due date.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum living benefit advance payment percentage of the death benefit?",
+      "answer": "50%",
+      "evidence": "you may request an advance payment of 50% of the Death Benefit if the insured person has a terminal illness (to a maximum of $100,000).",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum dollar amount for the living benefit?",
+      "answer": "$100,000",
+      "evidence": "you may request an advance payment of 50% of the Death Benefit if the insured person has a terminal illness (to a maximum of $100,000).",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum life expectancy required to qualify for the living benefit?",
+      "answer": "12 months or less",
+      "evidence": "You must be diagnosed with a terminal illness with a life expectancy of 12 months or less",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "How long does the review period last from the effective date?",
+      "answer": "30 days",
+      "evidence": "You have a 30 day review period from your effective date to review your policy.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Until what birthday does the policy provide continuous coverage?",
+      "answer": "The insured person's 80th birthday",
+      "evidence": "providing continuous coverage until your 80th birthday.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Until what birthday can the policy be converted to permanent life insurance?",
+      "answer": "The policy anniversary nearest the insured's 69th birthday",
+      "evidence": "Coverage can be converted from term life insurance to permanent life insurance at any time up to and including the policy anniversary nearest the insured's 69th birthday",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Until what age are premiums for the Waiver of Premiums benefit payable?",
+      "answer": "The insured person's 65th birthday",
+      "evidence": "The premiums for this waiver of premiums benefit are payable until the insured person's 65th birthday, and are shown in the Policy Schedule.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the phone number to contact TD Insurance?",
+      "answer": "1-888-788-0839",
+      "evidence": "call toll-free 1-888-788-0839, Monday to Friday, 8 a.m. to 10 p.m. (ET) and Saturday 10 a.m. to 6 p.m., (ET)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the mailing address for TD Life Insurance Company?",
+      "answer": "P.O. Box 1, TD Centre, Toronto, Ontario M5K 1A2",
+      "evidence": "TD Life Insurance Company, P.O. Box 1, TD Centre; Toronto, Ontario, M5K 1A2.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Within what time period after a lapse date can a policyholder apply for reinstatement?",
+      "answer": "Within 2 years of the lapse date",
+      "evidence": "You may apply to us within 2 years of the lapse date to have your policy reinstated.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the claim filing deadline after the date of death of the insured person?",
+      "answer": "365 days",
+      "evidence": "The claim for insurance benefits is not made within 365 days of the date of death of the insured person",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the suicide exclusion period under this policy?",
+      "answer": "2 years from the effective date of coverage or the most recent reinstatement effective date",
+      "evidence": "The insured person dies due to suicide ... within 2 years of the effective date of coverage or the most recent reinstatement effective date.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "How long must total disability continue before premiums are waived?",
+      "answer": "A continuous period of six months",
+      "evidence": "the insured person becomes totally disabled, as defined below, and remains totally disabled for a continuous period of six months, we will... Waive the payment of monthly premiums",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the basic premium from September 7, 2023?",
+      "answer": "$22.75",
+      "evidence": "September 7, 2023 $22.75 N/A $20.00 monthly",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the basic premium from September 7, 2043?",
+      "answer": "$167.50",
+      "evidence": "September 7, 2043 $167.50 N/A $150.75 monthly",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the policy payor's name?",
+      "answer": "Jane Sample",
+      "evidence": "Policy Payor Jane Sample",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What date does the policy provide coverage to if kept in effect?",
+      "answer": "March 21, 2103",
+      "evidence": "If you keep this policy in effect it can provide coverage to March 21, 2103.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who underwrites this TD 20-Year Term Life insurance policy?",
+      "answer": "TD Life Insurance Company",
+      "evidence": "Underwritten by TD Life Insurance Company (referred to as 'the insurer' and 'we', 'us' and 'our' in this policy).",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the policy owner of this insurance policy?",
+      "answer": "Jane Sample",
+      "evidence": "Policy Owner First Name Jane / Policy Owner Last Name Sample",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the insured person under this policy?",
+      "answer": "Jane Sample",
+      "evidence": "Insured Person First Name Jane / Insured Person Last Name Sample",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who receives the death benefit if no beneficiary is named?",
+      "answer": "The policy owner or the estate of the policy owner",
+      "evidence": "If there is no beneficiary when the insured person dies, to you or your estate.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "To whom is the living benefit paid?",
+      "answer": "The insured person",
+      "evidence": "We will pay the benefit to the insured person;",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who has the exclusive right to name or change the beneficiary designation?",
+      "answer": "The policy owner",
+      "evidence": "The right to name or change the beneficiary designation is reserved to you only.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who employs the agents that sell TD Life insurance products?",
+      "answer": "TD Assurance Agency Inc.",
+      "evidence": "They are sponsored by TD Life and employed by TD Assurance Agency Inc., which holds contracts with TD Life.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which company promotes the insurance products sold under this policy?",
+      "answer": "TD Life Insurance Company",
+      "evidence": "Our agents promote life and health insurance products of TD Life Insurance Company ('TD Life').",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What governs the insurance in terms of applicable law?",
+      "answer": "The laws of the province where the policyholder was resident when they initially applied for insurance",
+      "evidence": "Your insurance will be governed by the laws of the province where you were resident when you initially applied for insurance under this policy",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What organization may TD Life report personal health information to?",
+      "answer": "MIB, a non-profit membership organization of life insurance companies",
+      "evidence": "TD Life, or its authorized administrators or reinsurers, may make a brief report of your personal health information to the MIB, a non-profit membership organization of life insurance companies",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What relationship must a witness to the beneficiary form have to the policyholder?",
+      "answer": "The witness must not be related to the policyholder and must not be named as a beneficiary",
+      "evidence": "Please have this form witnessed by someone who is not related to you and who is also not named as a beneficiary.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What document must be submitted to change a beneficiary designation?",
+      "answer": "A written request submitted to TD Life's Head Office",
+      "evidence": "If you wish to name or change your beneficiary, you must submit a written request to us, but such change shall not be binding on us until received at our Head Office.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What does a primary beneficiary designation refer to?",
+      "answer": "A list of beneficiary(ies) who will receive the proceeds of the insurance in the event of the policyholder's death",
+      "evidence": "Primary Beneficiary Designation: A list of beneficiary(ies), who will receive the proceeds of the insurance in the event of your death.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What does a contingent beneficiary designation refer to?",
+      "answer": "A secondary list of beneficiaries who receive proceeds if none of the primary beneficiaries are living at the time of death",
+      "evidence": "Contingent Beneficiary Designation: A 'secondary' list of beneficiary(ies), (subrogated in Quebec) who will receive the proceeds of the insurance in the event that none of the primary beneficiaries that you have designated are living at the time of your death.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the Vice President, Product and Pricing, Life, Health and Credit Protection at TD Life Insurance Company who signed this policy?",
+      "answer": "Erika Schiavoni",
+      "evidence": "Erika Schiavoni / Vice President, Product and Pricing / Life, Health and Credit Protection / TD Life Insurance Company",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What relationship does TD Assurance Agency have to TD Bank Financial Group?",
+      "answer": "TD Assurance Agency is a member of TD Bank Financial Group",
+      "evidence": "TD Assurance Agency is a member of TD Bank Financial Group",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What benefit is subject to waiver being waived when a conversion option is exercised during total disability?",
+      "answer": "The waiver of premiums will not apply to the converted insurance policy",
+      "evidence": "If you exercise the conversion option in this policy while the insured person is totally disabled, we will not waive premiums for the converted insurance policy.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens to proceeds payable to a named beneficiary with respect to the estate?",
+      "answer": "Proceeds payable to a named beneficiary are paid directly to the beneficiary and do not flow through the estate, so no probate or executor fees are deducted and no estate creditors can make claims against them",
+      "evidence": "Proceeds payable to a named beneficiary (someone other than 'estate') are paid directly to the beneficiary and do not flow through the estate. This means that no probate or executor fees will be deducted from, and no estate creditors can make claims against, these proceeds",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens to the policy if premiums are not paid within the grace period?",
+      "answer": "The policy will lapse",
+      "evidence": "If the outstanding premiums are not paid by the end of the grace period, this policy will lapse.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured person dies within 2 years of the effective date due to suicide, what will TD pay?",
+      "answer": "TD will pay the policy owner 100% of premiums paid since the effective date",
+      "evidence": "If no insurance benefit is payable as a result of suicide, then we will pay the policy owner 100% of premiums paid since the effective date or since the most recent reinstatement effective date if the policy has been reinstated.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the policyholder wishes to cancel within the 30-day review period, what happens to the premiums paid?",
+      "answer": "Any premium paid will be promptly refunded in full",
+      "evidence": "If you decide to discontinue this policy during that period, simply contact us, provided no claim has been made, any premium paid will be promptly refunded and your policy will be cancelled as of your effective date.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a claim becomes payable during the grace period, what happens to outstanding premiums?",
+      "answer": "All outstanding premiums will be deducted from any claim payable",
+      "evidence": "If a claim becomes payable during the grace period, all outstanding premiums will be deducted from any claim payable.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured person is found to have been incorrectly classified by age and the insured is still eligible, and the policyholder has overpaid, what will happen?",
+      "answer": "TD will refund the excess premiums calculated at the time a claim is made against the policy",
+      "evidence": "If the insured person is still eligible for insurance, the premium amount will be adjusted to the correct amount based on the correct date of birth at the insured person's effective date and; If overpaid, we will refund the excess premiums calculated at the time a claim is made against this policy",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured person is found to have been incorrectly classified by age and the insured is still eligible, and the policyholder has underpaid, what will happen?",
+      "answer": "TD will decrease the benefit amount by the amount underpaid at the time a claim is made against the policy",
+      "evidence": "If underpaid, we will decrease the benefit amount by the amount underpaid at the time a claim is made against this policy.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured person's age is misstated and they are not eligible for insurance, what happens to the policy?",
+      "answer": "All coverages under the policy will be considered never to have been in force and all premiums paid will be refunded",
+      "evidence": "If the insured person is not eligible for insurance, all coverages under this policy will be considered never to have been in force and we will refund all premiums paid.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a policyholder pays on a monthly basis, when does each subsequent premium become due after the first?",
+      "answer": "One calendar month after the previous due date",
+      "evidence": "Each subsequent premium due date will follow one calendar month later.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a policyholder pays on an annual basis, when does each subsequent premium become due after the first?",
+      "answer": "One year after the previous due date",
+      "evidence": "Each subsequent premium due date will follow one year later.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured person recovers from total disability but within 6 months becomes totally disabled again from the same or related cause, how is this treated?",
+      "answer": "The subsequent period of total disability is considered a continuation of the former period",
+      "evidence": "If after we have waived at least one premium under this provision, the insured person recovers, but within 6 months again becomes totally disabled from the same or a related cause, we will consider the subsequent period of total disability to be a continuation of the former period.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If an irrevocable beneficiary has been designated, what must occur before a beneficiary change request is valid?",
+      "answer": "The irrevocable beneficiary must consent to the change",
+      "evidence": "If you name someone as an irrevocable beneficiary, they must consent to certain changes you may want to make to the policy in the future. For example, an irrevocable beneficiary must consent to any request to change the beneficiary or surrender the policy.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured person's total disability results from a criminal act, will premiums be waived?",
+      "answer": "No, premiums will not be waived",
+      "evidence": "We will not waive premiums if total disability results, either directly or indirectly, from one or more of the following causes: ... The commission or attempted commission by the insured person of a criminal act",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If total disability results from war, will premiums be waived?",
+      "answer": "No, premiums will not be waived",
+      "evidence": "We will not waive premiums if total disability results, either directly or indirectly, from one or more of the following causes: ... War, whether declared or undeclared, any act of war or activities directly related to service in the armed forces of any country",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If TD Life has information about a policyholder that impacts the premium after the effective date, when can this information be honored?",
+      "answer": "Only at the time of notification",
+      "evidence": "Any information you provide after the policy's effective date and which impacts the premium can only be honored at time of notification.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If proof of continued total disability is not provided when requested, when is the insured person deemed to no longer be totally disabled?",
+      "answer": "On the day prior to the date on which TD asked for the proof",
+      "evidence": "if such proof is not provided, the insured person will be deemed to no longer be totally disabled on the day prior to the date on which we asked for the proof and monthly premiums will begin again.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured person dies while the policy is in effect, what will the insurer pay and to whom?",
+      "answer": "The insurer will pay the Sum Insured to the beneficiary, or the estate if no beneficiary is named",
+      "evidence": "If the insured person dies while this policy is in effect, the insurer will pay the Sum Insured to the beneficiary or your estate if no beneficiary is named.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a policyholder misrepresented information in the application, what can TD do?",
+      "answer": "TD may void the insurance coverage under the policy",
+      "evidence": "You understand that we may void your insurance coverage under this policy if you have concealed or misrepresented any information.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insurance has been in effect for two years from the effective date, how does TD treat the application answers given?",
+      "answer": "TD will treat all of the answers as true, except for cases of fraudulent misrepresentation",
+      "evidence": "After insurance has been in effect for two (2) years from the effective date or reinstatement effective date we will treat all of the answers you gave as evidence of insurability as true, except for cases of fraudulent misrepresentation.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a fraudulent claim is made, what happens to the policy?",
+      "answer": "All coverage under the policy will end",
+      "evidence": "All coverage under this policy will end on the earliest of the date when any of the following occurs: ... Upon a fraudulent claim made by you or the beneficiary",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If total disability results from attempted suicide, will the Waiver of Premiums benefit apply?",
+      "answer": "No, premiums will not be waived",
+      "evidence": "We will not waive premiums if total disability results, either directly or indirectly, from one or more of the following causes: Attempted suicide or self-inflicted injury",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the policyholder cancels coverage after the 30-day review period and there are no pending claims, what happens to unearned premiums?",
+      "answer": "Any unearned premiums will be refunded",
+      "evidence": "If you decide to cancel insured person's coverage any time after, please call us and—provided there are no claims pending—we will refund any unearned premiums you may have paid.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured person is paying on a non-monthly frequency and becomes totally disabled, what happens to the payment frequency?",
+      "answer": "It is automatically changed to monthly beginning from the date TD agrees to waive premiums",
+      "evidence": "Automatically change the policy premium payment frequency to monthly, if the payment frequency is other than monthly, beginning with the date we agree to waive premiums.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Can coverage be converted to permanent insurance without a medical examination?",
+      "answer": "Yes, no medical examination is required for conversion",
+      "evidence": "Coverage can be converted from term life insurance to permanent life insurance at any time up to and including the policy anniversary nearest the insured's 69th birthday – again, with no medical examination required.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What happens to the death benefit if there are outstanding premiums owed at the time of death?",
+      "answer": "The outstanding premiums owed are deducted from the Sum Insured before payment",
+      "evidence": "If a death benefit is payable under this policy, then we will pay the Sum Insured in effect at the time of death minus any outstanding premiums that are owed at the time the insured person dies.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What are all the conditions that must be met to reinstate a lapsed policy?",
+      "answer": "The insured person must be alive; all unpaid premiums from the lapse date to the reinstatement effective date must be paid; a completed Reinstatement Application must be provided; and new evidence of insurability must be provided that TD considers satisfactory",
+      "evidence": "In order to reinstate your policy in that time period, you must meet all of the following criteria: The insured person must be alive; You must pay us all unpaid premiums due from the lapse date up to and including the reinstatement effective date; You must provide us with a completed Reinstatement Application; and You must provide us with new evidence of insurability for the insured person that we consider satisfactory.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What are all conditions that must be met before a living benefit claim can be paid?",
+      "answer": "The policy must be in force and paid current; the insured person must be diagnosed with a terminal illness with a life expectancy of 12 months or less; TD will pay the benefit to the insured person; any irrevocable beneficiary or policy owner must consent to the payment",
+      "evidence": "Your policy must be in force and paid current. We will pay the benefit to the insured person; Any irrevocable beneficiary or policy owner under this policy must consent to the payment of the benefit; You must be diagnosed with a terminal illness with a life expectancy of 12 months or less",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What two situations result in no insurance benefit being paid under this policy?",
+      "answer": "First, if the claim is not made within 365 days of the date of death; second, if the insured person dies by suicide within 2 years of the effective date or most recent reinstatement effective date",
+      "evidence": "We will not pay any insurance benefit if: The claim for insurance benefits is not made within 365 days of the date of death of the insured person; or The insured person dies due to suicide ... within 2 years of the effective date of coverage or the most recent reinstatement effective date.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What happens to the premiums paid since the effective date if the insured person dies by suicide within 2 years and no benefit is paid?",
+      "answer": "TD will pay the policy owner 100% of premiums paid since the effective date, or since the most recent reinstatement effective date if the policy has been reinstated",
+      "evidence": "If no insurance benefit is payable as a result of suicide, then we will pay the policy owner 100% of premiums paid since the effective date or since the most recent reinstatement effective date if the policy has been reinstated.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Under what conditions will all coverage under this policy end?",
+      "answer": "Coverage ends when the insured person dies; when TD receives a cancellation request; when premiums are not paid by the end of the grace period; upon a fraudulent claim; or on the insured person's 80th birthday",
+      "evidence": "All coverage under this policy will end on the earliest of the date when any of the following occurs: The insured person dies; or We receive request from you to cancel your coverage; or The end of the grace period if premiums are not paid; or Upon a fraudulent claim made by you or the beneficiary; or The insured person's 80th birthday.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "For total disability in the first two years after the onset of disease, what is the standard for disability, and how does this differ after two years?",
+      "answer": "In the first two years, the insured person must be wholly prevented from performing the substantial duties of their own occupation. After two years, the insured person must be prevented from engaging in any gainful occupation for which they are or may reasonably become qualified by training, education, or experience",
+      "evidence": "'Total disability' or 'totally disabled' shall mean that the insured person, as a result of bodily injury or disease, is wholly prevented during the first two years after the injury or the onset of the disease from performing the substantial duties of their own occupation; after the first two years the insured person must be prevented by the injury or disease, from engaging in any gainful occupation for which they are or may reasonably become qualified by training, education or experience.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What must a claimant provide before TD will pay a death benefit, and what is the deadline for providing proof?",
+      "answer": "The claimant must provide proof that the insured person has died and, upon TD's request, access to any required medical records including a physician's statement and coroner's report. The proof must be provided within one year of the date of death.",
+      "evidence": "Before we will pay any claim under this policy, the person making the claim (the claimant) must provide: Proof, satisfactory to us, that the insured person has died; Upon our request, access to any medical records that we require to assess the claim, including an attending physician's statement and a coroner's report. In all cases, the proof must be provided within one (1) year of the date of death of the insured person",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What are the eligibility requirements a proposed insured person must meet at the time of application?",
+      "answer": "The proposed insured person must be a Canadian citizen, or have applied for or been granted Permanent Resident status by the Canadian Government, and must be at least 18 years old and within 6 months of their 60th birthday",
+      "evidence": "To be eligible to apply for insurance coverage under this policy, a proposed insured person must, at the time of application: Be a Canadian citizen; or Have applied for or been granted Permanent Resident (Landed Immigrant) status by the Canadian Government; and Be at least 18 years old and within 6 months of the 60th birthday.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "When a living benefit claim is made, what limitations are placed on the policyholder's rights?",
+      "answer": "The policyholder may not cancel the policy; and if premiums are not paid, the unpaid amount increases the living benefit, and the living benefit amount plus unpaid premiums will accumulate interest until the insured's death at the current prime rate",
+      "evidence": "When you claim the Living benefit, you agree to the following conditions and limitations on your rights as a policy owner: You may not cancel this policy; If premiums are not paid, either directly or through the waiver benefit, the amount of any unpaid premiums will increase the amount of the living benefit. The living benefit amount and any unpaid premium amount will accumulate interest until the death of the insured person. Interest is set at the current prime rate and may be adjusted if prime fluctuates by 1% or more.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Under what conditions will the Waiver of Premiums benefit not apply even if the insured person is totally disabled?",
+      "answer": "The waiver will not apply if total disability results from: attempted suicide or self-inflicted injury; war or military service; commission of a criminal act; an accident while operating a vehicle over the legal blood alcohol limit; or taking a drug other than as prescribed by a licensed physician",
+      "evidence": "We will not waive premiums if total disability results, either directly or indirectly, from one or more of the following causes: Attempted suicide or self-inflicted injury...; War, whether declared or undeclared...; The commission or attempted commission by the insured person of a criminal act; An accident that occurs while the insured person is operating any kind of conveyance while their blood alcohol level exceeds the legal limit...; Taking a drug in a manner other than prescribed by a licensed physician.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What conditions govern the notice and proof requirements for total disability claims?",
+      "answer": "TD must receive notice of total disability while the insured person is alive and continues to be totally disabled; proof must be received within 3 months of when notice was given; TD will not waive premiums falling due more than 12 months before the insured person gives notice",
+      "evidence": "We must receive notice of total disability while the insured person is alive and continues to be totally disabled. We must also receive proof of the total disability of the insured person within 3 months of the date notice was provided to us. We will not waive any premiums falling due more than 12 months before the insured person gives us notice of total disability.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What are the conditions under which the policy automatically renews?",
+      "answer": "The policy renews automatically at the end of each 20-year term for successive 20-year terms as long as premiums are paid, with no medical examination required. The final renewal runs only until the insured person's 80th birthday, after which no further renewal occurs.",
+      "evidence": "We will renew this policy and insurance in effect at the end of the initial 20 year period for successive 20 year renewal periods each of the same length as the initial period, except the renewal anniversary nearest to the insured person's 80th birthday. The final renewal period will only run until the insured person's 80th birthday, at which point the policy will end and there will be no further renewal.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the surrender value of this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the specific occupation of the insured person?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the annual income of the insured person?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What are the specific health conditions disclosed by the insured person in the application?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Who has been designated as the beneficiary under this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the premium rate for converting this policy to permanent life insurance?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the specific type of permanent insurance available for conversion under this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the mortgage amount that this policy is intended to cover?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What province did the insured person reside in when applying for the policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the processing time for a death benefit claim?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

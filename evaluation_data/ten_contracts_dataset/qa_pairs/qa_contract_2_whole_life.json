@@ -1,0 +1,221 @@
+{
+  "contract": "contract_2_whole_life.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the policy number for this whole life insurance policy?",
+      "answer": "GFP-WL-2024-8847",
+      "evidence": "Policy No: GFP-WL-2024-8847",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the face amount of this policy?",
+      "answer": "$250,000",
+      "evidence": "Face Amount: $250,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the annual premium for this policy?",
+      "answer": "$3,240",
+      "evidence": "Annual Premium: $3,240",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maturity date of this policy?",
+      "answer": "Age 100 (July 8, 2078)",
+      "evidence": "Maturity Date: Age 100 (July 8, 2078)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's issue age?",
+      "answer": "45",
+      "evidence": "Issue Age: 45",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's risk class?",
+      "answer": "Standard Non-Tobacco",
+      "evidence": "Risk Class: Standard Non-Tobacco",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the policy loan interest rate?",
+      "answer": "5% per annum, compounded annually",
+      "evidence": "7.3 Loan interest rate: 5% per annum, compounded annually.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum loan amount available as a percentage of cash surrender value?",
+      "answer": "90% of current cash surrender value",
+      "evidence": "7.2 Maximum loan amount: 90% of current cash surrender value.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the guaranteed cash value at the end of Year 10?",
+      "answer": "$28,450",
+      "evidence": "5.3 Guaranteed cash value at end of Year 10: $28,450",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the guaranteed cash value at the end of Year 20?",
+      "answer": "$71,200",
+      "evidence": "5.3 Guaranteed cash value at end of Year 20: $71,200",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "How long is the free look period?",
+      "answer": "30 days",
+      "evidence": "12. FREE LOOK PERIOD: You may cancel this policy within 30 days of receipt for a full refund of premiums paid.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the interest rate charged on overdue premiums when reinstating a lapsed policy?",
+      "answer": "6% per annum",
+      "evidence": "10.1 You may reinstate this policy within 3 years of lapse if: (b) You pay all overdue premiums with interest at 6% per annum",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Within how many days will the insurer pay death benefit claims after receiving complete documentation?",
+      "answer": "Within 7 days",
+      "evidence": "8.2 Payment will be made within 7 days of receiving complete claim documentation.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the effective date of this policy?",
+      "answer": "February 1, 2024",
+      "evidence": "Effective Date: February 1, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What company issued this whole life policy?",
+      "answer": "Guardian Family Protection Corp.",
+      "evidence": "Guardian Family Protection Corp.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the primary beneficiary of this policy?",
+      "answer": "David Chen (Husband), receiving 100%",
+      "evidence": "Primary: David Chen (Husband) - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the contingent beneficiary of this policy?",
+      "answer": "Chen Family Trust, receiving 100%",
+      "evidence": "Contingent: Chen Family Trust - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the insured on this policy?",
+      "answer": "Margaret Rose Chen",
+      "evidence": "Name: Margaret Rose Chen",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which dividend option is currently selected on this policy?",
+      "answer": "Paid-Up Additions",
+      "evidence": "[Current selection: Paid-Up Additions]",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What formula is used to calculate the death benefit payment?",
+      "answer": "Face Amount + Paid-Up Additions minus Policy Loans minus Loan Interest",
+      "evidence": "8.1 Upon receipt of proof of death, we will pay the beneficiary: Face Amount + Paid-Up Additions - Policy Loans - Loan Interest",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens if the total indebtedness on a policy loan exceeds the cash value?",
+      "answer": "The policy will terminate unless sufficient payment is made within 31 days of notice.",
+      "evidence": "7.5 If total indebtedness exceeds the cash value, the policy will terminate unless sufficient payment is made within 31 days of notice.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What automatically applies if no non-forfeiture election is made within 60 days of lapse?",
+      "answer": "Extended Term Insurance will automatically apply.",
+      "evidence": "9.4 If no election is made within 60 days of lapse, Extended Term Insurance will automatically apply.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is the insurer's liability if the insured dies by suicide within two years of the issue date?",
+      "answer": "The insurer will pay only the premiums paid, without interest.",
+      "evidence": "11.1 SUICIDE: If the insured dies by suicide within two years from the issue date, we will pay only the premiums paid, without interest.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Under what conditions may the insurer contest this policy?",
+      "answer": "The insurer may contest only within the first two years while the insured is living, and only for material misrepresentation in the application.",
+      "evidence": "13. CONTESTABILITY: We may contest this policy only within the first two years while the insured is living, and only for material misrepresentation in the application.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "After how many years in force may the policy owner take a policy loan?",
+      "answer": "After the policy has been in force for one full year.",
+      "evidence": "7.1 You may borrow against the cash value after the policy has been in force for one full year.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What are the three conditions that must be met to reinstate a lapsed policy?",
+      "answer": "The policy owner must provide evidence of insurability satisfactory to the insurer, pay all overdue premiums with interest at 6% per annum, and repay or reinstate any policy loans with interest.",
+      "evidence": "10.1 You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the policy owner stops paying premiums after three years and elects Reduced Paid-Up Insurance, what happens?",
+      "answer": "Coverage continues for a reduced death benefit with no further premiums required; the amount is based on the cash value and the insured's attained age.",
+      "evidence": "9.2 REDUCED PAID-UP INSURANCE: Continue coverage for a reduced death benefit with no further premiums required. Amount based on cash value and insured's attained age.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If age was misstated in the application, how is the face amount adjusted?",
+      "answer": "The face amount is adjusted to what the premium would have purchased at the correct age.",
+      "evidence": "11.2 MISSTATEMENT OF AGE: If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the policy owner stops paying premiums after three years and does not make a non-forfeiture election within 60 days, and the insured then dies, what death benefit amount will be paid?",
+      "answer": "Extended Term Insurance automatically applies, continuing the full face amount for a limited period based on the cash value; the full face amount would be payable if death occurs within that limited period.",
+      "evidence": "9.3 EXTENDED TERM INSURANCE: Continue the full face amount for a limited period based on cash value. No further premiums. / 9.4 If no election is made within 60 days of lapse, Extended Term Insurance will automatically apply.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Is the actual cash value of this policy guaranteed to match the values shown in the policy values table?",
+      "answer": "The policy guarantees minimum cash values per the schedule, but actual cash value may be higher due to dividend credits.",
+      "evidence": "5.1 This policy builds cash value according to the guaranteed schedule shown in the policy values table. / 5.4 Actual cash value may be higher due to dividend credits.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Are dividends guaranteed to be declared each year?",
+      "answer": "No. Dividends are not guaranteed; they may be declared annually based on the company's mortality, investment, and expense experience.",
+      "evidence": "6.1 This is a participating policy. Annual dividends may be declared based on our mortality, investment, and expense experience. / 6.2 Dividends are not guaranteed.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the monthly premium payment amount for this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What sub-accounts are available for investment under this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does this policy include a waiver of premium rider?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the accelerated death benefit provision for terminal illness?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the insured's occupation?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

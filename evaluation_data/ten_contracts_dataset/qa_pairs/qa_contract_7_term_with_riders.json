@@ -1,0 +1,245 @@
+{
+  "contract": "contract_7_term_with_riders.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the policy number for this term with riders policy?",
+      "answer": "PP-TL-2024-6729R",
+      "evidence": "Policy Number: PP-TL-2024-6729R",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the face amount of the base policy?",
+      "answer": "$750,000",
+      "evidence": "Face Amount: $750,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the total annual premium including all riders?",
+      "answer": "$1,089.00",
+      "evidence": "Total Annual Premium (including riders): $1,089.00",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the base annual premium excluding riders?",
+      "answer": "$612.00",
+      "evidence": "Base Annual Premium: $612.00",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the policy term?",
+      "answer": "30 years (expires July 12, 2054)",
+      "evidence": "Policy Period: 30 years (expires July 12, 2054)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's underwriting class?",
+      "answer": "Preferred Non-Smoker",
+      "evidence": "Underwriting Class: Preferred Non-Smoker",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the annual premium for the Waiver of Premium rider?",
+      "answer": "$102 per year",
+      "evidence": "RIDER 1: WAIVER OF PREMIUM DUE TO DISABILITY / Premium: $102/year",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the annual premium for the Children's Term Insurance Rider?",
+      "answer": "$156 per year",
+      "evidence": "RIDER 4: CHILDREN'S TERM INSURANCE RIDER / Premium: $156/year",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What coverage amount does the Children's Term Insurance Rider provide per child?",
+      "answer": "$15,000 per eligible child",
+      "evidence": "Provides $15,000 coverage on each eligible child",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the additional accidental death benefit amount?",
+      "answer": "$750,000",
+      "evidence": "RIDER 5: ACCIDENTAL DEATH BENEFIT / Pays an additional $750,000 if death results from accidental injury",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the annual premium for the Accidental Death Benefit rider?",
+      "answer": "$94 per year",
+      "evidence": "RIDER 5: ACCIDENTAL DEATH BENEFIT / Premium: $94/year",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the grace period for premium payments?",
+      "answer": "31 days from due date",
+      "evidence": "3.2 GRACE PERIOD: 31 days from due date. Coverage continues during grace period.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum additional coverage purchasable per option date under the Guaranteed Insurability Option rider?",
+      "answer": "$100,000",
+      "evidence": "May purchase up to $100,000 additional coverage per option date",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "At what age does the Accidental Death Benefit rider terminate?",
+      "answer": "At insured's age 70",
+      "evidence": "Terminates at insured's age 70",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the annual premium for the Guaranteed Insurability Option rider?",
+      "answer": "$89 per year",
+      "evidence": "RIDER 6: GUARANTEED INSURABILITY OPTION / Premium: $89/year",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the policy date?",
+      "answer": "July 12, 2024",
+      "evidence": "Policy Date: July 12, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the insured?",
+      "answer": "Christopher David Bennett",
+      "evidence": "Name: Christopher David Bennett",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the primary beneficiary and what are their respective shares?",
+      "answer": "Rachel Marie Bennett (Wife) at 60%, Christopher Bennett Jr. (Son) at 20%, and Olivia Grace Bennett (Daughter) at 20%",
+      "evidence": "Primary: Rachel Marie Bennett (Wife) - 60% / Christopher Bennett Jr. (Son) - 20% / Olivia Grace Bennett (Daughter) - 20%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the contingent beneficiary?",
+      "answer": "Bennett Family Irrevocable Trust, receiving 100%",
+      "evidence": "Contingent: Bennett Family Irrevocable Trust - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What children are covered under the Children's Term Insurance Rider?",
+      "answer": "Christopher Bennett Jr. (Age 8) and Olivia Grace Bennett (Age 5)",
+      "evidence": "Covered Children: Christopher Bennett Jr. (Age 8) / Olivia Grace Bennett (Age 5)",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What company issued this policy?",
+      "answer": "ProtectPlus Family Insurance Co.",
+      "evidence": "ProtectPlus Family Insurance Co.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What are the Guaranteed Insurability Option exercise dates?",
+      "answer": "At ages 40, 43, 46, 49, and at the birth or adoption of a child",
+      "evidence": "Option dates: Ages 40, 43, 46, 49 and at birth/adoption of child",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "If the insured becomes totally disabled before age 60 and remains disabled for 6 months, what happens to premiums?",
+      "answer": "All future premiums are waived and coverage continues in full force.",
+      "evidence": "If you become totally disabled before age 60 and remain disabled for 6 consecutive months: All future premiums are waived / Coverage continues in full force",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is paid if the insured dies by suicide within 2 years of the issue date?",
+      "answer": "Only the premiums paid are returned, without interest.",
+      "evidence": "1.3 EXCLUSION - SUICIDE: If death occurs by suicide within 2 years of the issue date, we will pay only the premiums paid, without interest.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If an unpaid premium is due when the insured dies during the grace period, is it deducted from the death benefit?",
+      "answer": "Yes. If death occurs during the grace period, the unpaid premium will be deducted from the death benefit.",
+      "evidence": "3.2 GRACE PERIOD: 31 days from due date. Coverage continues during grace period. If death occurs during grace period, unpaid premium will be deducted from death benefit.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Under what condition is aviation death covered under the base policy for this insured?",
+      "answer": "Aviation death is covered because the standard aviation exclusion has been waived based on the insured's declared private pilot activities, with an additional premium of $175/year included. The only remaining exception is military combat operations.",
+      "evidence": "SECTION 6: AVIATION EXCLUSION WAIVER: The standard aviation exclusion has been waived for this policy based on the insured's declared private pilot activities. Additional premium of $175/year is included in the base premium. Coverage includes death while: Operating or riding as a passenger in any aircraft / Exception: military combat operations",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Under what conditions does the Accidental Death Benefit not pay?",
+      "answer": "The rider excludes: suicide, self-inflicted injury, war, aviation (as pilot/crew), and death if the insured was under the influence of drugs or alcohol.",
+      "evidence": "Excludes: suicide, self-inflicted injury, war, aviation (as pilot/crew) / No payment if insured was under influence of drugs/alcohol",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "When do all Guaranteed Insurability Option rights terminate?",
+      "answer": "All options terminate at age 50.",
+      "evidence": "All options terminate at age 50",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Until what age does the Children's Term Insurance Rider cover each child?",
+      "answer": "Until age 25",
+      "evidence": "Coverage from birth (or adoption) to age 25",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "When may this policy be converted to permanent insurance without evidence of insurability?",
+      "answer": "Before the policy expiration date or before the insured's 70th birthday, whichever is earlier, with a minimum conversion amount of $50,000.",
+      "evidence": "4.2 You may convert all or part of this policy to permanent life insurance without evidence of insurability: Before the policy expiration date, or / Before your 70th birthday, whichever is earlier / Minimum conversion amount: $50,000",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured dies in an aircraft accident as a private pilot, do both the base policy death benefit and the Accidental Death Benefit rider pay?",
+      "answer": "The base policy pays the $750,000 death benefit because the aviation exclusion was waived. However, the Accidental Death Benefit rider excludes aviation deaths as pilot or crew, so the additional $750,000 rider benefit would not be paid.",
+      "evidence": "SECTION 6: AVIATION EXCLUSION WAIVER: The standard aviation exclusion has been waived for this policy... Coverage includes death while: Operating or riding as a passenger in any aircraft / RIDER 5: Excludes: suicide, self-inflicted injury, war, aviation (as pilot/crew)",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If the insured is diagnosed with a terminal illness and accesses the Terminal Illness Accelerated Death Benefit, how much can be advanced and what is left for beneficiaries?",
+      "answer": "Up to 95% of the death benefit ($712,500) can be advanced (minimum $10,000, maximum $500,000), with the advance reduced by an actuarial discount. The remaining death benefit is paid to beneficiaries upon death.",
+      "evidence": "RIDER 2: ACCELERATED DEATH BENEFIT - TERMINAL ILLNESS / May access up to 95% of death benefit while living / Minimum advance: $10,000 / Maximum advance: $500,000 / Benefit reduced by actuarial discount (approximately 8% per year) / Remaining death benefit paid to beneficiaries upon death",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "A child covered under the Children's Term Insurance Rider turns 25. Can they obtain individual life insurance coverage without a medical exam?",
+      "answer": "Yes. Children may convert to an individual policy at age 25 without evidence of insurability, for up to 5 times the rider amount ($75,000).",
+      "evidence": "Children may convert to individual policy at age 25 without evidence of insurability, up to 5 times the rider amount",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the Chronic Illness rider benefit amount per month as a percentage and what is the maximum total advance?",
+      "answer": "The rider allows access to up to 2% of the face amount per month, with a maximum total advance of 50% of the face amount.",
+      "evidence": "RIDER 3: May access up to 2% of face amount per month / Maximum total advance: 50% of face amount",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the insured's Social Security number?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the cash surrender value of this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Are policy loans available under this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the annual premium for the Chronic Illness rider?",
+      "answer": "$48 per year",
+      "evidence": "RIDER 3: ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS / Premium: $48/year",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the dividend history for this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the reinstatement period if this policy lapses?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

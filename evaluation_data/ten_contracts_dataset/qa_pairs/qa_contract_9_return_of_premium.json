@@ -1,0 +1,227 @@
+{
+  "contract": "contract_9_return_of_premium.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the policy number for this return of premium policy?",
+      "answer": "VG-ROP-2024-4183",
+      "evidence": "Policy No: VG-ROP-2024-4183",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the death benefit amount?",
+      "answer": "$300,000",
+      "evidence": "Death Benefit: $300,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the annual premium?",
+      "answer": "$1,620",
+      "evidence": "Annual Premium: $1,620",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the total return of premium amount at the end of the term?",
+      "answer": "$32,400",
+      "evidence": "Return of Premium at End of Term: $32,400 (if policy maintained)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the policy term?",
+      "answer": "20 years (ending September 15, 2044)",
+      "evidence": "Policy Term: 20 years (ending September 15, 2044)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's smoker status?",
+      "answer": "Non-Smoker",
+      "evidence": "Smoker Status: Non-Smoker",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's underwriting rating?",
+      "answer": "Preferred Plus",
+      "evidence": "Rating: Preferred Plus",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What percentage of premiums is returned if the policy is surrendered in Years 6-10?",
+      "answer": "30% of premiums paid",
+      "evidence": "Years 6-10: 30% of premiums paid returned",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What percentage of premiums is returned if the policy is surrendered in Years 11-15?",
+      "answer": "60% of premiums paid",
+      "evidence": "Years 11-15: 60% of premiums paid returned",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What percentage of premiums is returned if the policy is surrendered in Years 16-19?",
+      "answer": "90% of premiums paid",
+      "evidence": "Years 16-19: 90% of premiums paid returned",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the grace period for premium payments?",
+      "answer": "31 days",
+      "evidence": "4.4 Grace period: 31 days. If premium is not paid within grace period, policy lapses and return of premium benefit is forfeited.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Within how many days are ROP payments made?",
+      "answer": "Within 60 days of the applicable date",
+      "evidence": "3.4 ROP payments are made within 60 days of the applicable date.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the issue date of this policy?",
+      "answer": "September 15, 2024",
+      "evidence": "Issued: September 15, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What company issued this policy?",
+      "answer": "ValueGuard Life Insurance Company",
+      "evidence": "ValueGuard Life Insurance Company",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the interest rate on overdue premiums in a reinstatement?",
+      "answer": "6% per annum",
+      "evidence": "8.1 If the policy lapses, you may apply for reinstatement within 5 years if: You pay all past due premiums with interest at 6% per annum",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the primary beneficiary?",
+      "answer": "Carlos Roberto Martinez (Husband), receiving 100%",
+      "evidence": "Primary: Carlos Roberto Martinez (Husband) - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who are the contingent beneficiaries and their shares?",
+      "answer": "Sofia Isabella Martinez (Daughter) at 50% and Marco Daniel Martinez (Son) at 50%",
+      "evidence": "Contingent: Sofia Isabella Martinez (Daughter) - 50% / Marco Daniel Martinez (Son) - 50%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the insured?",
+      "answer": "Nicole Christine Martinez",
+      "evidence": "Name: Nicole Christine Martinez",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What documents must beneficiaries submit to claim the death benefit?",
+      "answer": "A certified death certificate, a completed claim form, and government-issued ID.",
+      "evidence": "2.3 Beneficiaries must submit: Certified death certificate / Completed claim form / Government-issued ID",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What is the only way to access accumulated value under this policy during the term?",
+      "answer": "Through full surrender (with the applicable ROP percentage) or by waiting until the end of the term for the full ROP payment.",
+      "evidence": "6.3 The only way to access cash value is through: Full surrender (with applicable ROP percentage), OR / Waiting until end of term for full ROP payment",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens if the policy lapses due to non-payment within the grace period?",
+      "answer": "The policy lapses and the return of premium benefit is forfeited.",
+      "evidence": "4.4 Grace period: 31 days. If premium is not paid within grace period, policy lapses and return of premium benefit is forfeited.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is the insurer's liability if the insured dies by suicide within 24 months of issue?",
+      "answer": "Only the premiums paid are returned without interest; no death benefit is payable.",
+      "evidence": "7.1 SUICIDE: If the insured dies by suicide within 24 months of the issue date, we will pay only the premiums paid without interest. No death benefit is payable.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What happens to the ROP benefit if the policy owner converts to permanent insurance?",
+      "answer": "The ROP benefit is forfeited and premiums paid to date are not returned.",
+      "evidence": "5.4 Upon conversion: ROP benefit is forfeited / Premiums paid to date are NOT returned",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a premium is paid late during the grace period, how is the ROP benefit affected?",
+      "answer": "The ROP benefit is reduced by 10% for each late payment.",
+      "evidence": "4.5 Missed premiums cannot be made up. If a premium is paid late (during grace period), the ROP benefit is reduced by 10% for each late payment.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What percentage of premiums is returned if the policy is surrendered in Years 1-5?",
+      "answer": "0% — no premium return applies.",
+      "evidence": "Years 1-5: 0% premium return",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What happens to the ROP benefit calculation upon reinstatement after a lapse?",
+      "answer": "The ROP benefit is recalculated to exclude the lapsed period.",
+      "evidence": "8.2 Upon reinstatement, the ROP benefit is recalculated to exclude the lapsed period.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Within how many years after lapse may the policy be reinstated?",
+      "answer": "Within 5 years",
+      "evidence": "8.1 If the policy lapses, you may apply for reinstatement within 5 years if...",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Are policy loans or partial withdrawals available under this policy?",
+      "answer": "No. Policy loans are not available and partial withdrawals are not permitted.",
+      "evidence": "6.1 Policy loans are NOT available under this policy type. / 6.2 Partial withdrawals are NOT permitted.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured dies in Year 8, what total amount do the beneficiaries receive?",
+      "answer": "The full $300,000 death benefit plus 30% of the premiums paid to date (the Year 6-10 ROP rate), as illustrated in the policy example.",
+      "evidence": "3.3 DEATH DURING TERM: If death occurs during the term, beneficiaries receive: Full death benefit ($300,000), PLUS a proportional premium refund based on the early surrender schedule. / Years 6-10: 30% of premiums paid returned",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If the insured survives to the end of the term but had one late payment during the grace period, will the full $32,400 be returned?",
+      "answer": "No. The full $32,400 end-of-term ROP requires all premiums to be paid on time. A late payment reduces the ROP benefit by 10%, so the return would be reduced.",
+      "evidence": "4.3 CRITICAL: To receive the full return of premium at end of term, ALL premiums must be paid on time. / 4.5 If a premium is paid late (during grace period), the ROP benefit is reduced by 10% for each late payment.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If the policy owner converts to permanent insurance after 10 years of paying premiums, do they receive any refund of the premiums paid?",
+      "answer": "No. Upon conversion the ROP benefit is forfeited and premiums paid to date are not returned. The conversion privilege requires giving up the ROP benefit entirely.",
+      "evidence": "5.4 Upon conversion: ROP benefit is forfeited / Premiums paid to date are NOT returned",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Can the policy be contested after 2 years in force?",
+      "answer": "No. After 2 years the contestability period has passed. A new 2-year contestability period begins only upon reinstatement.",
+      "evidence": "7.2 MATERIAL MISREPRESENTATION: We may contest the policy within 2 years of issue if there was material misrepresentation in the application. / 8.3 A new 2-year suicide and contestability period begins upon reinstatement.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the cash value that can be borrowed against during the term?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the conversion premium rate for the permanent policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does this policy include an accelerated death benefit rider?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the insured's occupation?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What happens to the policy if the insured becomes disabled and cannot pay premiums?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

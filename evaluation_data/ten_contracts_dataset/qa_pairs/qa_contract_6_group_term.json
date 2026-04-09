@@ -1,0 +1,209 @@
+{
+  "contract": "contract_6_group_term.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the certificate number for this group term life insurance certificate?",
+      "answer": "AGB-GT-2024-TechCorp-00842",
+      "evidence": "Certificate No: AGB-GT-2024-TechCorp-00842",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the basic life insurance benefit amount?",
+      "answer": "$180,000 (2x Annual Salary)",
+      "evidence": "Basic Life Insurance: 2x Annual Salary = $180,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the voluntary additional coverage amount?",
+      "answer": "$100,000",
+      "evidence": "Voluntary Additional Coverage: $100,000 (employee-elected)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the total coverage amount?",
+      "answer": "$280,000",
+      "evidence": "Total Coverage: $280,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the employee's monthly premium contribution for voluntary coverage?",
+      "answer": "$12 per month",
+      "evidence": "Premium Contribution: Employer pays basic; employee pays $12/month for voluntary coverage",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum accelerated death benefit amount?",
+      "answer": "$250,000",
+      "evidence": "7.2 Maximum acceleration: $250,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What percentage of the death benefit may be accelerated under the terminal illness provision?",
+      "answer": "Up to 75%",
+      "evidence": "7.1 If you are diagnosed with a terminal illness with life expectancy of 12 months or less, you may request acceleration of up to 75% of your death benefit.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum total coverage allowed under this certificate?",
+      "answer": "$1,000,000",
+      "evidence": "3.4 MAXIMUM BENEFIT: Total coverage cannot exceed $1,000,000.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum conversion amount available under the conversion privilege?",
+      "answer": "The lesser of group coverage or $200,000",
+      "evidence": "5.3 The conversion policy will be issued at: Maximum amount: Lesser of group coverage or $200,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the issue date of this certificate?",
+      "answer": "June 1, 2024",
+      "evidence": "Issue Date: June 1, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the employee's department?",
+      "answer": "Software Engineering",
+      "evidence": "Department: Software Engineering",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Within how many business days will benefits be paid after receipt of complete claim documentation?",
+      "answer": "Within 10 business days",
+      "evidence": "10.4 Benefits will be paid within 10 business days of receipt of complete claim documentation.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the suicide exclusion period under this group certificate?",
+      "answer": "12 months from the coverage effective date",
+      "evidence": "8.1 SUICIDE: If death occurs by suicide within 12 months of the coverage effective date, we will not pay a death benefit.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the employer policyholder?",
+      "answer": "TechCorp Industries, Inc.",
+      "evidence": "TechCorp Industries, Inc.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the primary beneficiary?",
+      "answer": "Jordan Casey Taylor (Spouse), receiving 100%",
+      "evidence": "Primary: Jordan Casey Taylor (Spouse) - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is the contingent beneficiary?",
+      "answer": "Taylor Family Revocable Trust, receiving 100%",
+      "evidence": "Contingent: Taylor Family Revocable Trust - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What insurance company provides this group coverage?",
+      "answer": "Alliance Group Benefits",
+      "evidence": "Alliance Group Benefits",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What governs in case of conflict between the certificate and the master policy?",
+      "answer": "The Master Policy controls in case of any conflict with the certificate.",
+      "evidence": "1.2 The Master Policy controls in case of any conflict with this certificate.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "How is the basic life benefit amount calculated?",
+      "answer": "The basic benefit equals 2 times the employee's annual base salary, rounded to the next higher $1,000.",
+      "evidence": "3.1 BASIC LIFE: Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Where should beneficiaries submit claims?",
+      "answer": "Alliance Group Benefits - Claims Department, 1200 Insurance Plaza, Dallas, TX 75201",
+      "evidence": "10.3 Submit claims to: Alliance Group Benefits - Claims Department, 1200 Insurance Plaza, Dallas, TX 75201",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens to coverage if the employee ceases active full-time employment?",
+      "answer": "Coverage terminates on the date the employee ceases active full-time employment.",
+      "evidence": "4.1 Your coverage terminates on the earliest of: (c) The date you cease active full-time employment",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the employee leaves employment, how many days does the employee have to port coverage?",
+      "answer": "The employee must apply within 31 days of termination of employment.",
+      "evidence": "6.3 You must apply within 31 days of termination of employment.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the employee becomes totally disabled before age 60 and remains disabled for 6 months, what happens to voluntary life insurance premiums?",
+      "answer": "The voluntary life insurance premiums will be waived.",
+      "evidence": "11.1 If you become totally disabled before age 60 and remain disabled for 6 consecutive months, your voluntary life insurance premiums will be waived.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "When does the premium waiver benefit end?",
+      "answer": "Waiver ends when the employee returns to work, recovers, or reaches age 65.",
+      "evidence": "11.4 Waiver ends when you return to work, recover, or reach age 65.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the employee's group coverage terminates for non-payment of premium, can the employee convert to an individual policy?",
+      "answer": "No. The conversion privilege is available only if group coverage terminates for any reason except non-payment of premium.",
+      "evidence": "5.1 If your group coverage terminates for any reason except non-payment of premium, you may convert to an individual whole life policy without evidence of insurability.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Does this group policy have pre-existing condition exclusions?",
+      "answer": "No. Group coverage has no pre-existing condition exclusions.",
+      "evidence": "8.2 PRE-EXISTING CONDITION LIMITATION: None. Group coverage has no pre-existing condition exclusions.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the employee is diagnosed with a terminal illness and accelerates 75% of the death benefit, how much death benefit will the beneficiaries ultimately receive?",
+      "answer": "The beneficiaries will receive only 25% of the original death benefit, since any amount accelerated reduces the death benefit payable to beneficiaries.",
+      "evidence": "7.1 If you are diagnosed with a terminal illness with life expectancy of 12 months or less, you may request acceleration of up to 75% of your death benefit. / 7.4 Any amount accelerated reduces the death benefit payable to beneficiaries.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If the employee leaves employment and wants to continue coverage without a medical exam, which option is appropriate — conversion or portability?",
+      "answer": "Both conversion and portability are available without evidence of insurability. Conversion provides an individual whole life policy up to $200,000; portability continues the same group amount at age-banded rates.",
+      "evidence": "5.1 If your group coverage terminates for any reason except non-payment of premium, you may convert to an individual whole life policy without evidence of insurability. / 6.5 Evidence of insurability is NOT required for portability.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "How is the basic life benefit recalculated when the employee receives a salary increase?",
+      "answer": "The basic benefit is recalculated annually on the policy anniversary based on the employee's current salary (2x annual base salary, rounded to the next higher $1,000).",
+      "evidence": "3.3 SALARY CHANGES: Your basic benefit will be recalculated annually on your policy anniversary based on your current salary. / 3.1 BASIC LIFE: Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the policy's grace period for premium payments?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the employee's annual salary?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What type of individual policy is issued upon conversion?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does this certificate include an accidental death and dismemberment benefit?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the actuarial discount rate applied to accelerated death benefit advances?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

@@ -1,0 +1,671 @@
+{
+  "contract": "capital_health_plan.pdf",
+  "qa_pairs": [
+    {
+      "question": "What is the contract number for this HMO Health Insurance agreement?",
+      "answer": "DMS-22/23-072A",
+      "evidence": "CONTRACT FOR HMO HEALTH INSURANCE DMS-22/23-072A BETWEEN STATE OF FLORIDA DEPARTMENT OF MANAGEMENT SERVICES AND CAPITAL HEALTH PLAN, INC.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the address of Capital Health Plan, Inc.?",
+      "answer": "2140 Centerville Place, PO Box 15349, Tallahassee, Florida 32317",
+      "evidence": "This Contract is between the STATE OF FLORIDA, DEPARTMENT OF MANAGEMENT SERVICES (Department), an agency of the State of Florida with office at 4050 Esplanade Way, Tallahassee, Florida 32399-0950, and Capital Health Plan, Inc. (Contractor), with office at 2140 Centerville Place, PO Box 15349, Tallahassee, Florida 32317",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the Implementation Date defined in the contract?",
+      "answer": "January 1, 2024, at 12:00 A.M., Eastern Time (EST)",
+      "evidence": "\"Implementation Date\" means January 1, 2024, at 12:00 A.M., Eastern Time (EST).",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the initial contract term duration?",
+      "answer": "Three (3) years",
+      "evidence": "The initial Contract term is three (3) years and Services will commence on the Effective Date and end December 31, 2026, unless extended, terminated, or renewed as provided herein.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "How many additional renewal terms may the Department elect?",
+      "answer": "Up to three (3) additional one (1) year renewal terms",
+      "evidence": "At its sole option and discretion, the Department may renew the Contract for up to three (3) additional one (1) year renewal terms.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What advance written notice must the Department provide to terminate the contract for convenience?",
+      "answer": "Sixty (60) Calendar Days",
+      "evidence": "The Department, by sixty (60) Calendar Days advanced written notice to Contractor, may terminate the Contract for any reason or no reason at all when the Department determines in its sole discretion that it is in the Department's best interest to do so.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum face amount for Commercial General Liability insurance?",
+      "answer": "At least five million dollars ($5,000,000) per annual aggregate",
+      "evidence": "The Contractor must continuously maintain commercial general liability insurance (inclusive of any amounts provided by an umbrella or excess policy) in the face amount of at least five million dollars ($5,000,000) per annual aggregate.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum face amount for Business Interruption Insurance?",
+      "answer": "At least five million dollars ($5,000,000) per annual aggregate",
+      "evidence": "Contractor must continuously maintain business interruption insurance coverage in the face amount of at least five million dollars ($5,000,000) per annual aggregate.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum face amount for Professional Indemnity Insurance?",
+      "answer": "At least five million dollars ($5,000,000) per annual aggregate",
+      "evidence": "The Contractor must continuously maintain professional indemnity insurance that must cover professional liability and error and omissions in the face amount of at least five million dollars ($5,000,000) per annual aggregate.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the maximum amount of the performance bond as a percentage of the annual contract amount?",
+      "answer": "Not to exceed twenty percent (20%) of the annual Contract amount",
+      "evidence": "Contractor will deliver to the Department's Contract Manager, without additional cost to the Department, a performance bond or irrevocable letter of credit in the amount not to exceed twenty percent (20%) of the annual Contract amount as determined by the Department.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the name of the Department's Contract Administrator as of the Effective Date?",
+      "answer": "Andrew Fier",
+      "evidence": "As of the Effective Date, the Contract Administrator is: Andrew Fier, Departmental Purchasing, Department of Management Services",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the name of the Department's Contract Manager as of the Implementation Date?",
+      "answer": "Darrell Gholar",
+      "evidence": "As of the Implementation Date, the Department's Contract Manager is: Darrell Gholar, State Group Insurance, Department of Management Services",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the Contractor's Account Manager named in the contract?",
+      "answer": "Deborah Sisk",
+      "evidence": "Contractor's Account Manager is: Deborah Sisk, Account Executive, Capital Health Plan Inc.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the liquidated damages amount per Calendar Day for failing to meet Implementation Plan deadlines?",
+      "answer": "$10,000 per Calendar Day for each unmet deadline",
+      "evidence": "If Contractor fails to meet deadlines set forth in the Department approved Implementation Plan, it shall pay liquidated damages of $10,000 per Calendar Day, for each unmet deadline",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the liquidated damage amount per event for breaching the record retention subsection?",
+      "answer": "$10,000 per event",
+      "evidence": "The Contractor therefore agrees to credit the Department the sum of $10,000 per event, for each breach of this subsection.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the credit per violation for offshoring data in violation of the contract?",
+      "answer": "$50,000 per violation, with a cumulative total cap of $500,000 per event",
+      "evidence": "entitle the Department to a credit of $50,000 per violation, with a cumulative total cap of $500,000 per event.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the Plan Year defined as in this contract?",
+      "answer": "The calendar year from January 1 to December 31",
+      "evidence": "\"Plan Year\" means the calendar year from January 1 to December 31.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the definition of a Rural Area in this contract?",
+      "answer": "Less than 1,000 persons per square mile",
+      "evidence": "\"Rural Area\" means less than 1,000 persons per square mile.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the definition of a Suburban Area in this contract?",
+      "answer": "Between 1,000 to 3,000 persons per square mile",
+      "evidence": "\"Suburban Area\" means between 1,000 to 3,000 persons per square mile.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the definition of an Urban Area in this contract?",
+      "answer": "Greater than 3,000 persons per square mile",
+      "evidence": "\"Urban Area\" means greater than 3,000 persons per square mile.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Which counties are included in Region Two under this contract?",
+      "answer": "Franklin, Gadsden, Jefferson, Leon, Liberty, Madison, Taylor, and Wakulla Counties",
+      "evidence": "through the ITN the Contractor was awarded the HMO contract for Region Two, which includes Franklin, Gadsden, Jefferson, Leon, Liberty, Madison, Taylor, and Wakulla Counites",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the warranty period following delivery of the Services?",
+      "answer": "Three hundred, sixty-five (365) Calendar Days",
+      "evidence": "this warranty will remain in effect for a period of three hundred, sixty-five (365) Calendar Days following delivery of the Services (\"Warranty Period\").",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum look-back period for background screenings?",
+      "answer": "A minimum of six (6) years where six (6) years of historical information is available",
+      "evidence": "The look-back period for such background screenings shall be for a minimum of six (6) years where six (6) years of historical information is available.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "How often must background screenings be refreshed?",
+      "answer": "Every five (5) years from the time initially performed",
+      "evidence": "The Contractor will ensure that all background screening will be refreshed every five (5) years from the time initially performed for each Person during the term of the Contract.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Within how many days must the Contractor notify affected Members of a data breach caused by the Contractor?",
+      "answer": "No later than thirty (30) Calendar Days after the determination of a Breach or reason to believe a Breach occurred",
+      "evidence": "notify all Members whose State of Florida Data was accessed by any Breach, unauthorized access or transmission is determined by the Department to have been caused by the Contractor or its Subcontractors no later than thirty (30) Calendar Days after the determination of a Breach or reason to believe a Breach occurred.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum duration of credit monitoring services following a breach?",
+      "answer": "No less than a period of one (1) year following the Breach",
+      "evidence": "The Contractor shall include credit monitoring services at its own cost for those Members affected or potentially affected by an alleged Breach for no less than a period of one (1) year following the Breach.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What percentage of the network must the Awarded Respondent own within the State?",
+      "answer": "At least 80%",
+      "evidence": "Awarded Respondent must own at least 80% of their proposed network within the State.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "How many business days after contract execution must the Contractor submit the final Implementation Plan?",
+      "answer": "No later than ten (10) business days following execution of the Contract",
+      "evidence": "Awarded Respondent shall submit the final Implementation Plan to Department for approval no later than ten (10) business days following execution of the Contract.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the minimum Medical Loss Ratio guarantee proposed by Capital Health Plan?",
+      "answer": "A minimum 95.0% medical loss ratio guarantee for the combined Commercial Standard and HDHP",
+      "evidence": "We propose a minimum 95.0% medical loss ratio guarantee for the combined Commercial Standard and HDHP. In the event the actual MLR is below the target, CHP will issue a rebate to the State of Florida.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "How many days prior notice must the Contractor give before changing approved Subcontractors?",
+      "answer": "At least sixty (60) Calendar Days",
+      "evidence": "Contractor will not subcontract any of the Services or enter into any subcontracts or change approved Subcontractors as listed in Attachment 6 ... without providing the Department prior Notice of at least sixty (60) Calendar Days",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What entity signed the contract on behalf of Capital Health Plan, Inc.?",
+      "answer": "Sabin Bass, President, CEO",
+      "evidence": "CAPITAL HEALTH PLAN, INC. Signature: Sabin Bass, Print Name and Title: Sabin Bass, President, CEO, Date: 9/15/2023 | 2:16 PM EDT",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the target average speed to answer for inbound customer calls?",
+      "answer": "100% of telephone calls to member services will be answered within an average speed to answer of 30 seconds or less",
+      "evidence": "100% of telephone calls to member services will be answered within an average speed to answer of 30 seconds or less.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the call abandonment rate standard?",
+      "answer": "Less than or equal to 3%",
+      "evidence": "Call Abandonment Rate - Less than or equal to 3%",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What percentage of ID cards must be mailed by December 15 annually?",
+      "answer": "98.0% of ID cards will be mailed no later than December 15, annually",
+      "evidence": "98.0% of ID cards will be mailed no later than December 15, annually.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the customer service toll-free line hours of operation?",
+      "answer": "At least 12 hours a day, beginning no later than 8 AM eastern, and ending no earlier than 7PM, eastern, Monday through Friday",
+      "evidence": "The toll-free telephone line shall be supported by live dedicated (but not necessarily exclusive) customer service representatives for at least 12 hours a day, beginning no later than 8 AM eastern, and ending no earlier than 7PM, eastern, Monday through Friday.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the telephone number for the Department's Contract Manager Darrell Gholar?",
+      "answer": "850-921-4504",
+      "evidence": "Darrell Gholar, State Group Insurance, Department of Management Services, 4050 Esplanade Way, Suite 217D, Tallahassee, FL 32399-0950, Telephone: 850-921-4504",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the governing law of this contract?",
+      "answer": "The laws of the State of Florida",
+      "evidence": "The laws of the State of Florida govern the Contract.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the notice period required before the performance bond can be cancelled?",
+      "answer": "Thirty (30) Calendar Days prior written Notice",
+      "evidence": "The Contractor shall provide Department with thirty (30) Calendar Days prior written Notice or immediate Notice upon knowledge of any attempt to cancel or to make any other material change in the status, coverage, or scope of the required bond",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What specific appropriation fund is used for payments under this contract?",
+      "answer": "State Employees' Health Insurance Trust Fund: 72 7275 73 2 668003 72750200 00, Appropriation Category: Payments to HMOs, Category Code: 310340, Organization Code: 72750200805, Budget Entity – 72750200, Fund – 2668",
+      "evidence": "Fully Insured HMO - State Employees' Health Insurance Trust Fund: 72 7275 73 2 668003 72750200 00, Appropriation Category: Payments to HMOs, Category Code: 310340, Organization Code: 72750200805, Budget Entity – 72750200, Fund – 2668",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the first call resolution standard?",
+      "answer": "90% of inquiries will be resolved during the first call",
+      "evidence": "First Call Resolution - 90% of inquiries will be resolved during the first call",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Which company provides Pharmacy Benefit Management (PBM) services as a subcontractor to Capital Health Plan?",
+      "answer": "Prime Therapeutics",
+      "evidence": "Prime Therapeutics - Pharmacy Benefit Manager (PBM)",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which subcontractor provides urgent care and telehealth services for Capital Health Plan?",
+      "answer": "Amwell, Inc.",
+      "evidence": "Amwell, Inc. - Urgent Care, Telehealth",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which subcontractor performs the HEDIS Audit for Capital Health Plan?",
+      "answer": "Healthy People",
+      "evidence": "Healthy People - HEDIS Audit Firm",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which subcontractor provides subrogation services for Capital Health Plan?",
+      "answer": "OptumInsight, Inc.",
+      "evidence": "OptumInsight, Inc. - Subrogation",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which subcontractor provides the Blue Card Network and Away From Home Care services?",
+      "answer": "BCBS of Florida",
+      "evidence": "BCBS of Florida - Ble Card Network, Away From Home Care, Anti-fraud Investigation",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which subcontractor provides interpretation services for Capital Health Plan?",
+      "answer": "Language Line Solutions",
+      "evidence": "Language Line Solutions - Interpretation",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which subcontractor performs the Radiation Benefits Management Program for Capital Health Plan?",
+      "answer": "AIM Specialty Health",
+      "evidence": "AIM Specialty Health - Radiation Benefits Management Program",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which attachment governs the Privacy, Security, and Confidentiality Business Associate Agreement?",
+      "answer": "Attachment 8",
+      "evidence": "Attachment 8: Privacy, Security, and Confidentiality Business Associate Agreement",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which attachment contains the Performance Guarantees?",
+      "answer": "Attachment 2",
+      "evidence": "Attachment 2: Performance Guarantees",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which attachment contains the Cost Reply/Price Sheet?",
+      "answer": "Attachment 3",
+      "evidence": "Attachment 3: Cost Reply / Price Sheet",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which attachment lists the Department Approved Subcontractors?",
+      "answer": "Attachment 6",
+      "evidence": "Attachment 6: List of Department approved Subcontractors",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which attachment contains the Administrative Requirements?",
+      "answer": "Attachment 1",
+      "evidence": "Attachment 1: Administrative Requirements",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who serves as the Contract Manager on behalf of the Department during the term of the contract?",
+      "answer": "Darrell Gholar, State Group Insurance, Department of Management Services",
+      "evidence": "As of the Implementation Date, the Department's Contract Manager is: Darrell Gholar, State Group Insurance, Department of Management Services",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is responsible for handling and defending administrative actions or proceedings brought by Members?",
+      "answer": "The Department, as an agency of the State",
+      "evidence": "The Department, as an agency of the State, shall be responsible, in accordance with State law, for handling and defending any administrative actions or proceedings brought by Members in accordance with sections 120.569, 120.57 or 120.574, Florida Statutes.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who bears the full cost of recreating lost State of Florida Data when loss is due to Contractor negligence?",
+      "answer": "The Contractor",
+      "evidence": "Contractor shall be fully responsible for recreating such lost State of Florida Data in the manner and on the schedule set by the Department... Contractor shall bear the full cost for recreating any lost State of Florida Data and will not be entitled to any compensation by the Department for those costs.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is responsible for the acts or omissions of all Subcontractors used in provision of Services?",
+      "answer": "The Contractor",
+      "evidence": "Contractor is responsible for the acts or omissions of all Subcontractors, if any, it uses in the provision of the Services during the term of the Contract.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who owns all Deliverables, papers, documents, materials, and work prepared by the Contractor for purposes of the Contract?",
+      "answer": "The Department",
+      "evidence": "All Deliverables, papers, documents, materials, work, and other items prepared by the Contractor and provided to the State for purposes of the Contract are the property of the Department",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is responsible for paying independent third-party auditor costs associated with audits performed on the Department's behalf?",
+      "answer": "The Department",
+      "evidence": "The Department will be responsible for the independent third-party auditor costs associated with any audit performed on the Department's behalf.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which document governs the standard contract conditions incorporated by reference?",
+      "answer": "The General Contract Conditions - PUR 1000 form",
+      "evidence": "The General Contract Conditions - PUR 1000 form, which is incorporated by reference, and available at the weblink listed below.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What division of the Department administers this contract?",
+      "answer": "The Department's Division of State Group Insurance",
+      "evidence": "\"Division\" means the Department's Division of State Group Insurance.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which company provides healthcare information technology services as a subcontractor?",
+      "answer": "HealthTrio LLC",
+      "evidence": "HealthTrio LLC - Healthcare Information Technology",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which party is responsible for notifying all consumer reporting agencies if a breach impacts more than 1,000 Members at a single time?",
+      "answer": "The Contractor",
+      "evidence": "If a Breach impacts more than 1,000 Members at a single time, the Contractor shall notify, without unreasonable delay, all consumer reporting agencies that compile and maintain files on consumers on a nationwide basis",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which subcontractor provides recovery services for Capital Health Plan?",
+      "answer": "Preformant Recovery, Inc.",
+      "evidence": "Preformant Recovery, Inc. - Recovery",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What document serves as the official system of record for eligibility?",
+      "answer": "The Department's eligibility file",
+      "evidence": "The Awarded Respondent agrees that Department' eligibility file shall be the official system of record.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who has full and final decision-making authority concerning eligibility, coverage, benefits, claims and interpretation of the Benefits Document?",
+      "answer": "The Department",
+      "evidence": "In accordance with the Benefits Document and Florida Law, Department shall have full and final decision-making authority concerning eligibility, coverage, benefits, claims and interpretation of the Benefits Document.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens if the Contractor fails to submit a redacted copy of information it claims is Confidential?",
+      "answer": "The Department is authorized to produce the entire documents, data, or records submitted to the Department in answer to a public records request or other lawful request",
+      "evidence": "If the Contractor fails to submit a redacted copy of information it claims is Confidential, the Department is authorized to produce the entire documents, data, or records submitted to the Department in answer to a public records request or other lawful request for these records.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Which party pays all costs to notify persons of a Breach that the Department determines was NOT caused by the Contractor?",
+      "answer": "The Department",
+      "evidence": "The Department shall pay all costs to notify such persons related to any Breach determined by the Department to not have been caused by the Contractor or its Subcontractors.",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "If the Contractor is terminated for convenience before January 1, 2024, what costs will the Department reimburse?",
+      "answer": "Direct costs actually incurred for Services authorized by the Department and satisfactorily performed prior to receipt of the notice of termination",
+      "evidence": "If this Contract is terminated for convenience prior to January 1, 2024 the Department shall reimburse Contractor for direct costs actually incurred for Services authorized by the Department and satisfactorily performed prior to receipt of the notice of termination.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a Contractor employee has a Disqualifying Offense within the last six years, what action must the Contractor immediately take?",
+      "answer": "Remove that Person from any position with Access to State of Florida Data or directly performing services under the Contract",
+      "evidence": "the Contractor is required to immediately remove that Person from any position with Access to State of Florida Data or directly performing services under the Contract.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Contractor discovers a Breach or Incident outside of normal business hours, when must they notify the Department's Contract Manager?",
+      "answer": "As soon as possible, and in all events, within twenty-four (24) hours",
+      "evidence": "If the Contractor becomes aware of a Breach or Incident outside of normal business hours, the Contractor shall notify the Department's Contract Manager as soon as possible, and in all events, within twenty-four (24) hours.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Contractor's performance falls below the minimum level of performance for the same Performance Guarantee for three consecutive quarters, what may the Department do?",
+      "answer": "Declare an Event of Default and pursue alternative remedies in lieu of accepting Performance Guarantees",
+      "evidence": "if Contractor's performance falls below the minimum level of performance for the same Performance Guarantee for three consecutive (3) quarters, or reporting periods, and such failure is not otherwise excused, then the Department may declare an Event of Default and pursue alternative remedies in lieu of accepting Performance Guarantees.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a Member files suit against Contractor regarding eligibility that is the Department's administrative responsibility without an administrative hearing, what must the Contractor do?",
+      "answer": "File a motion to dismiss or any other appropriate motions and notify the Department of its action",
+      "evidence": "Contractor shall file a motion to dismiss or any other appropriate motions and shall notify the Department of its action.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a transfer or sale of 50% or more of the Contractor's equity interests occurs, what does that constitute?",
+      "answer": "An impermissible assignment subject to the provisions of section 10.2",
+      "evidence": "A transfer or sale fifty percent (50%) or more of Contractor's equity interests (whether in a single transaction or series of transactions), or a sale of substantially all of Contractor's assets shall constitute an impermissible assignment subject to the provisions of section 10.2.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Contractor fails to perform the obligations related to notifying the Department of a Breach, what does this constitute?",
+      "answer": "An Event of Default, entitling the Department to recover damages and/or pursue injunctive relief",
+      "evidence": "The Contractor's failure to perform the obligations in this subsection shall also be an Event of Default, and will entitle the Department to recover any other damages it incurs arising from a failure to perform the obligations in this subsection (including any actual out-of-pocket expenses incurred by the Department to investigate and remediate the violation) and/or to pursue injunctive relief.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Department elects to add services or products during the Contract term, what must occur?",
+      "answer": "The Contractor and the Department will negotiate a mutually agreed amendment to the Contract",
+      "evidence": "If the Department elects to add services or products, the Contractor and the Department will negotiate a mutually agreed amendment to the Contract.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Contractor is placed on the Scrutinized Companies that Boycott Israel List, what may the Department do?",
+      "answer": "At its option, terminate the Contract",
+      "evidence": "The Department may, at its option, terminate the Contract if the Contractor is found to have submitted a false certification as provided under subsection 287.135(5), F.S., or been placed on the Scrutinized Companies with Activities in Sudan List or the Scrutinized Companies with Activities in the Iran Petroleum Energy Sector List, or been engaged in business operations in Cuba or Syria, or to have been placed on the Scrutinized Companies that Boycott Israel List or is engaged in a boycott of Israel.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Department rejects an invoice as contested, what may the Department do?",
+      "answer": "Request additional documentation",
+      "evidence": "If Department contests the invoice charges as submitted, additional documentation may be requested.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a Person self-reports an adjudication of guilt for a Disqualifying Offense within three Business Days, what must the Contractor immediately do?",
+      "answer": "Disallow that Person Access to any State of Florida Data or from directly performing Services under the Contract",
+      "evidence": "The Contractor shall require all Persons to self-report within three (3) Business Days of adjudication to the Contractor any adjudication of guilt as described above for the Disqualifying Offenses. The Contractor shall immediately disallow that Person Access to any State of Florida Data or from directly performing Services under the Contract.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Contractor provides the same plan to a similar private client at more favorable pricing, what must the Contractor do?",
+      "answer": "Offer equivalent pricing terms to the Department, and the Department and Contractor may execute an amendment to adopt the equivalent pricing terms",
+      "evidence": "if Contractor provides substantially the same Plan(s) to any other substantially similar clients, whether a public or private entity, with pricing terms more favorable than the premium pricing in this Contract, then Contractor agrees to offer equivalent pricing terms to the Department and the Department and Contractor may execute an amendment of this Contract to adopt the equivalent pricing terms if determined acceptable to the Department.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Contractor violates the no offshoring of data provision, what three outcomes does the contract specify?",
+      "answer": "It results in immediate and irreparable harm entitling the Department to injunctive relief; entitles the Department to a credit of $50,000 per violation up to $500,000 per event; and entitles the Department to recover additional damages beyond those covered",
+      "evidence": "The Parties agree that a violation of this provision will: (a) result in immediate and irreparable harm to the Department, entitling the Department to immediate injunctive relief... (b) entitle the Department to a credit of $50,000 per violation, with a cumulative total cap of $500,000 per event... (c) entitle the Department to recover damages, if any, arising from a breach of this subsection and beyond those covered under subsection (b).",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a Contractor Event of Default is not cured within ten Calendar Days after receipt of notice, what may occur?",
+      "answer": "It may constitute an Event of Default on the part of the Contractor, triggering Department remedies including termination, legal proceedings, or performing Services at Contractor's expense",
+      "evidence": "Any one (1) or more of the following events by Contractor, which is not cured within ten (10) Calendar Days after receipt of notice thereof by the Department, may constitute an \"Event of Default\" on the part of Contractor",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If Contractor fails to provide the annual attestation by December 31 for the Documented Care Plan performance guarantee, what is the financial consequence?",
+      "answer": "$2,000 for failing to provide the annual attestation by December 31 of the plan year",
+      "evidence": "$2,000 for failing to provide the annual attestation by December 31 of the plan year.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If total liquidated damages for any calendar quarter exceed the payment due under subsection 3.8, what is the cap?",
+      "answer": "The total will not exceed one hundred percent (100%) of the payment due under subsection 3.8 of this Contract",
+      "evidence": "Notwithstanding anything in the Contract to the contrary, the total of any and all liquidated damages paid or to be paid by Contractor pursuant to this Contract for any calendar quarter will not exceed one hundred percent (100%) of the payment due under subsection 3.8 of this Contract.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If a Performance Guarantee is suspended by mutual agreement, is the Contractor still required to collect data for that guarantee?",
+      "answer": "Yes, Contractor must continue accumulating data relevant to that Performance Guarantee and reporting such data to the Department",
+      "evidence": "Suspension of a Performance Guarantee will not excuse Contractor from accumulating data relevant to that Performance Guarantee and reporting such data to the Department as part of the management reports delivered pursuant to this Contract.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Department terminates for cause, what financial liability may the Contractor face beyond ordinary performance?",
+      "answer": "The Contractor shall be liable for any re-procurement costs",
+      "evidence": "If the Contract is terminated for cause, the Contractor shall be liable for any re-procurement costs.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the Department terminates the Contract for convenience after January 1, 2024, is the Contractor entitled to lost profits?",
+      "answer": "No, the Contractor will not be entitled to recover any lost profits, consequential, special, punitive, or indirect damages",
+      "evidence": "The Contractor will not be entitled to recover any lost profits, consequential, special, punitive, or indirect damages, or any other damages other than the payment amounts due for performance until the effective date of termination.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is the combination of the document hierarchy and the conflict resolution rule when this main agreement conflicts with its attachments?",
+      "answer": "The main agreement (this document) will control over the attachments in the event of conflict, and the attachments are ranked in order of precedence from Attachment 8 (highest) to Attachment 7 (lowest)",
+      "evidence": "\"Contract\" means this agreement between the Department and Contractor consisting of, in order of precedence, the following documents: 1. This agreement and its attachments, in the following order of precedence: a. Attachment 8... b. Attachment 1... c. Attachment 2... d. Attachment 3... e. Attachment 4... f. Attachment 5... g. Attachment 6... h. Attachment 7... In the event of conflict between this document and the Attachments, this document will control.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the combined effect on the Contractor if they fail to meet the same Performance Guarantee for three consecutive quarters AND refuse to allow audit access?",
+      "answer": "Failing the same Performance Guarantee for three consecutive quarters may result in an Event of Default under section 9.1(aa), and refusing audit access is independently an Event of Default under section 9.1(v); together both are Contractor Events of Default that trigger Department remedies including termination",
+      "evidence": "(aa) Failure to meet the same Performance Guarantee for at least three (3) consecutive performance periods. ... (v) Contractor refuses to allow any access required to comply with the audit provisions of the Contract;",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Under what combined conditions would the Contractor be excused from paying liquidated damages for failing to meet an Implementation Plan deadline?",
+      "answer": "The Contractor is excused from liquidated damages if the delay is due to the Department's failure to comply with the defined timeline",
+      "evidence": "If Contractor fails to meet deadlines set forth in the Department approved Implementation Plan, it shall pay liquidated damages of $10,000 per Calendar Day, for each unmet deadline, unless any such delay is due to the Department's failure to comply with the defined timeline.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the combined effect on a person found to have a Disqualifying Offense: what must they do annually AND what must the Contractor maintain?",
+      "answer": "The person must complete an annual certification that they have not received an adjudication of guilt for Disqualifying Offenses, and the Contractor must maintain that certification in the employment file",
+      "evidence": "Additionally, the Contractor shall require that the Person complete an annual certification that he or she has not received an adjudication of guilt as described above for the Disqualifying Offenses and shall maintain that certification in the employment file.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the interplay between the Best Pricing Clause and the scope of plan designs when determining if equivalent pricing applies?",
+      "answer": "The best pricing clause applies to substantially the same plans at more favorable terms, but explicitly does not include or apply to other Plan Design offerings",
+      "evidence": "The Contractor's premium pricing under this Contract will not exceed the Contractor's pricing for substantially the same Plan(s) provided to any other substantially similar clients... This does not include or apply to other Plan Design offerings.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What are the combined post-termination service obligations regarding run-out claims AND transition to a subsequent vendor?",
+      "answer": "The Contractor must continue processing run-out claims and provide services (mailroom, appeals, claims adjudication, customer service, etc.) through 16 months post-termination, AND simultaneously provide transition services to the Department starting six months before expiration or upon notice of termination for up to twelve months",
+      "evidence": "Awarded Respondent shall continue to process and adjudicate run-out claims... through the end of 16-months following the effective date of termination of the Contract. ... Upon the earlier of six (6) months before the expiration of the Contract or upon any notice of termination of the Contract, Awarded Respondent shall provide transition services to Department. Transition services shall be provided up to twelve (12) months unless otherwise waived by Department.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the combined requirement for audit notice and the scope of what may be audited?",
+      "answer": "Except in emergencies, at least 10 Business Days notice is required for audits at Contractor premises, and the audits may include procedures, computer systems, claims files, provider contracts, service records, accounting records, internal audits, quality control assessments, and applicable provider contracts including pharmaceutical manufacturer contracts",
+      "evidence": "Except in emergency situations, reasonable notice will be provided for audits conducted at Contractor's premises, which notice will not be less than 10 (ten) Business Days. Audits may include, but not be limited to, audits of procedures, computer systems, claims files, provider contracts, service records, accounting records, internal audits, quality control assessments, and any and all applicable provider contracts, including contracts with pharmaceutical manufacturers",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What are the combined requirements for the Contractor's account management team composition and performance review process?",
+      "answer": "The Account Management Team must include an executive sponsor, account director/executive, account manager, customer service manager (dedicated), data/fiscal analyst, and medical director. This team may be subject to two Performance Reviews per year, and if any score is below the measurement criteria, an action plan must be implemented as mutually agreed",
+      "evidence": "Awarded Respondent shall assign a dedicated (but not necessarily exclusive) Account Management Team which shall include an executive sponsor, an account director/executive, an account manager, a customer service manager, a data/fiscal analyst, and a medical director... The Account Management Team may be subject to two Performance Reviews developed and conducted by Department each year. If any Performance Review score is less than the measurement criteria, an action plan must be implemented as mutually agreed to by Department and Awarded Respondent.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "How do the background screening requirements interact with access to State of Florida Data for persons who do not directly perform services under the contract?",
+      "answer": "The Contractor must conduct criminal background screening not only for those who directly perform services, but also for those who have access, including indirect access, to State of Florida Data, whether or not they perform services under the Contract",
+      "evidence": "the Contractor warrants that it will conduct a criminal background screening of, or ensure that such a screening is conducted for each of its employees... operating under their direction who directly perform services under the Contract, whether or not the Person has access to State of Florida Data, as well as those who have access, including indirect access, to State of Florida Data, whether or not they perform services under the Contract.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What combined conditions must exist before the Contractor may be excused from performance guarantee failures?",
+      "answer": "The Contractor is excused from failing to meet any Performance Guarantee only to the extent such failure is caused by the Department not performing any of its obligations under the Contract",
+      "evidence": "Contractor will be excused for failing to meet any Performance Guarantee to the extent such failure is caused by the Department not performing any of its obligations under the Contract.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What are the combined notification requirements when the Contractor changes its Contract Manager contact information AND when a breach occurs outside business hours?",
+      "answer": "Contract Manager changes must be notified within five (5) Business Days; a breach outside business hours must be reported within twenty-four (24) hours",
+      "evidence": "Each Party will provide prompt written Notice no later than five (5) Business Days to the other Party of any changes to the Party's Contract/Account Manager or his or her contact information. ... If the Contractor becomes aware of a Breach or Incident outside of normal business hours, the Contractor shall notify the Department's Contract Manager as soon as possible, and in all events, within twenty-four (24) hours.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the relationship between the performance bond duration and the contract term, and how does the letter of credit alternative compare?",
+      "answer": "The performance bond must be maintained throughout the contract term and in effect for two years thereafter; as an alternative, the Contractor may use an irrevocable letter of credit on an annually renewable basis that provides substantially equivalent protection in the Department's reasonable judgment",
+      "evidence": "The bond shall be maintained throughout the term of the Contract and shall be in effect for two (2) years thereafter... As an alternative to the surety bond described in this subsection, the Contractor may use an irrevocable, letter of credit on an annually renewable basis, which in the reasonable judgment of the Department, provides substantially equivalent protection.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "Under what combined conditions can a Contractor dispute a Department audit finding, and what process must be followed?",
+      "answer": "Any disputes regarding audit findings must be resolved in accordance with section 10.7 (Dispute Resolution, Governing Law and Venue), which requires the dispute to first be decided by the Department's Contract Manager, whose decision is final and conclusive, with exhaustion of this administrative remedy as an absolute condition precedent to any legal action",
+      "evidence": "Any disputes regarding the audit findings of the Department or its designated auditor shall be resolved in accordance with section 10.7 (Dispute Resolution, Governing Law and Venue) of this Contract. ... Any dispute concerning performance of the Contract shall be decided by the Department's Contract Manager, who will reduce the decision to writing and serve a copy to the Contractor. The decision of the Department's Contract Manager shall be final and conclusive. Exhaustion of this administrative remedy is an absolute condition precedent to the Contractor's ability to pursue legal action",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the specific per-second financial consequence for an Average Speed to Answer of exactly 31.1 seconds?",
+      "answer": "$20,000",
+      "evidence": "Similarly, an Average Speed to Answer of 31.1 seconds will result in a $20,000 financial consequence.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the combined requirement for when background check documentation is retained and what must it contain?",
+      "answer": "The Contractor shall retain a list of all Persons with Access to State of Florida Data including a statement confirming each Person passed the screening (but not the substance of results), and must retain written policy and access records for the duration of the Contract plus at least five years from termination",
+      "evidence": "The Contractor shall retain a list of all Persons with Access to State of Florida Data, including a statement confirming that each Person has passed the Background Screening required herein. Such a statement shall not include the substance of the screening results, only that the Person has passed the screening. ... The Contractor shall retain the written policy and information required in this subsection for the duration of this Contract and a period of no less than five (5) years from the date of termination of this Contract and any Contract extensions.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What are the specific monthly premium rates for the HMO Standard Plan for Region 2 active employees in 2024?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the specific deductible amount for the HMO High Deductible Health Plan offered under this contract?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What are the copayment amounts for specialist visits under the HMO Standard Plan?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the total enrollment count for Capital Health Plan at the time of contract execution?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the specific annual premium amount paid by the State of Florida to Capital Health Plan?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What are the specific HEDIS scores achieved by Capital Health Plan in the year prior to contract execution?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the out-of-pocket maximum for family coverage under the Standard HMO plan?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the total number of network physicians in Capital Health Plan's provider network at contract execution?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does Capital Health Plan offer dental benefits under this contract?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the specific premium rate for Medicare-eligible retirees under the HDHP in 2025?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "contract": "contract_1_term_life.txt",
+  "qa_pairs": [
+    {
+      "question": "What is the policy number for this term life insurance policy?",
+      "answer": "SL-2024-TRM-00123",
+      "evidence": "POLICY NUMBER: SL-2024-TRM-00123",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the death benefit amount on this policy?",
+      "answer": "$500,000",
+      "evidence": "Death Benefit Amount: $500,000",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the monthly premium for this policy?",
+      "answer": "$45.00 per month",
+      "evidence": "Premium Amount: $45.00 per month",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the policy term length?",
+      "answer": "20 years",
+      "evidence": "Policy Term: 20 years (expires January 15, 2044)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the issue date of this policy?",
+      "answer": "January 15, 2024",
+      "evidence": "ISSUE DATE: January 15, 2024",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's date of birth?",
+      "answer": "March 22, 1985",
+      "evidence": "Date of Birth: March 22, 1985",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the insured's age at issue?",
+      "answer": "38 years",
+      "evidence": "Age at Issue: 38 years",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the length of the grace period for premium payments?",
+      "answer": "31 days",
+      "evidence": "4.3 \"Grace Period\" means the 31-day period following the premium due date during which coverage continues without lapse.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "On what day of the month are premiums due?",
+      "answer": "The 15th day of each month",
+      "evidence": "4.2 \"Premium Due Date\" means the 15th day of each month.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What is the expiry date of this policy?",
+      "answer": "January 15, 2044",
+      "evidence": "Policy Term: 20 years (expires January 15, 2044)",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "What insurance company issued this policy?",
+      "answer": "SecureLife Insurance Company",
+      "evidence": "SecureLife Insurance Company",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Within how many days will valid claims be paid after receiving all required documentation?",
+      "answer": "30 days",
+      "evidence": "9.3 We will pay valid claims within 30 days of receiving all required documentation.",
+      "category": "CAT1_ATOMIC_LOOKUP"
+    },
+    {
+      "question": "Who is the primary beneficiary of this policy?",
+      "answer": "Sarah Elizabeth Anderson (Spouse), receiving 100%",
+      "evidence": "Primary Beneficiary: Sarah Elizabeth Anderson (Spouse) - 100%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who are the contingent beneficiaries and what are their shares?",
+      "answer": "Emma Grace Anderson (Daughter) at 50% and Lucas James Anderson (Son) at 50%",
+      "evidence": "Contingent Beneficiary: Emma Grace Anderson (Daughter) - 50% / Lucas James Anderson (Son) - 50%",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "Who is both the policy owner and the insured person?",
+      "answer": "John Michael Anderson",
+      "evidence": "Policy Owner: John Michael Anderson / Insured Person: John Michael Anderson",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "To what address should claims be submitted?",
+      "answer": "SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102",
+      "evidence": "9.2 Claims should be sent to: SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What documents must a beneficiary submit to claim the death benefit?",
+      "answer": "A completed claim form, a certified copy of the death certificate, and the original policy document (if available)",
+      "evidence": "9.1 To claim the death benefit, the beneficiary must submit: (a) Completed claim form (b) Certified copy of the death certificate (c) Original policy document (if available)",
+      "category": "CAT2_RELATIONAL_LOOKUP"
+    },
+    {
+      "question": "What happens to coverage if the premium is not paid by the end of the grace period?",
+      "answer": "The policy will lapse and coverage will terminate.",
+      "evidence": "6.3 If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is the insurer's liability if the insured commits suicide within two years of the issue date?",
+      "answer": "Liability is limited to a refund of premiums paid.",
+      "evidence": "7.1 SUICIDE CLAUSE: If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "After how many years in force can the insurer no longer contest this policy?",
+      "answer": "After two years in force during the insured's lifetime from the issue date.",
+      "evidence": "10.1 INCONTESTABILITY: We cannot contest this policy after it has been in force during the insured's lifetime for two years from the issue date.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the insured's age was misstated, how is the death benefit adjusted?",
+      "answer": "The death benefit is adjusted to what the premiums paid would have purchased at the correct age and sex.",
+      "evidence": "10.2 MISSTATEMENT OF AGE OR SEX: If the age or sex of the insured has been misstated, we will adjust the death benefit to what the premiums paid would have purchased at the correct age and sex.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What is the deadline by which the insured must convert this policy to a permanent policy?",
+      "answer": "Conversion must occur before the earlier of the policy expiry date or the insured's 65th birthday.",
+      "evidence": "8.2 Conversion must occur before the earlier of: (a) The policy expiry date, or (b) The insured's 65th birthday.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "What happens when an assignment notice is sent to the insurer?",
+      "answer": "The assignment is not binding on the insurer until written notice is received at their home office.",
+      "evidence": "10.3 ASSIGNMENT: You may assign this policy. We are not responsible for the validity of any assignment. An assignment is not binding on us until we receive written notice at our home office.",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "If the policy is converted to permanent insurance, on what factors will the new premium be based?",
+      "answer": "The new premium will be based on the insured's attained age at conversion, the amount of coverage converted, and the class of permanent policy selected.",
+      "evidence": "8.3 The premium for the new policy will be based on: (a) The insured's attained age at conversion (b) The amount of coverage converted (c) The class of permanent policy selected",
+      "category": "CAT3_CONDITIONAL_REASONING"
+    },
+    {
+      "question": "Can the insurer require evidence of insurability when the insured converts this policy to a permanent policy?",
+      "answer": "No. The conversion privilege allows conversion without evidence of insurability.",
+      "evidence": "8.1 You may convert this policy to a permanent life insurance policy without evidence of insurability.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If the insured dies during the grace period, will the death benefit be reduced?",
+      "answer": "Coverage continues during the grace period per Section 6.2, and the full death benefit is payable under Section 5.1 if the insured dies while the policy is in force; the policy remains in force during the grace period, so the full death benefit would be payable.",
+      "evidence": "6.2 If a premium is not paid by the due date, a grace period of 31 days is allowed. Coverage continues during the grace period. / 5.1 We will pay the death benefit to the beneficiary if: (a) The insured dies while this policy is in force",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "If death occurs after the policy has been in force for three years due to a cause other than suicide, will the insurer be able to contest the claim on the basis of misrepresentation in the application?",
+      "answer": "No. The incontestability clause prevents the insurer from contesting the policy after two years in force during the insured's lifetime, and suicide is the only stated exclusion.",
+      "evidence": "10.1 INCONTESTABILITY: We cannot contest this policy after it has been in force during the insured's lifetime for two years from the issue date. / 7.2 No other exclusions apply to this policy.",
+      "category": "CAT4_MULTIHOP_REASONING"
+    },
+    {
+      "question": "What is the cash value accumulation schedule for this policy?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the reinstatement period if this policy lapses?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "Does this policy include an accidental death benefit rider?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the insured's tobacco or smoker status?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What non-forfeiture options are available if the insured stops paying premiums?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    },
+    {
+      "question": "What is the loan interest rate if the policy owner takes a policy loan?",
+      "answer": "Not specified in this policy.",
+      "evidence": "N/A",
+      "category": "CAT5_UNANSWERABLE"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+You are an expert at generating question-answer pairs for evaluating knowledge graphs 
+built from legal/insurance contract documents.
+
+Each contract is provided as a separate attached file. Use the filename as the 
+contract identifier. Your task is to generate ground truth question-answer pairs 
+across 5 categories, ordered from simple to complex.
+
+## Categories
+
+**CAT1_ATOMIC_LOOKUP**
+Single attribute retrieval from one entity. No reasoning or traversal required.
+The answer is a direct value stored in the document.
+
+**CAT2_RELATIONAL_LOOKUP**
+Requires identifying a relationship or role between two entities.
+One edge traversal — who owns what, who receives what, what governs what.
+
+**CAT3_CONDITIONAL_REASONING**
+Requires following a single rule or condition through to its outcome.
+Pattern: "if X then Y" — the answer is found by traversing one logical chain.
+
+**CAT4_MULTIHOP_REASONING**
+Requires locating and reconciling 2 or more independent clauses or rules 
+simultaneously to arrive at the answer. The answer cannot be found from 
+any single clause alone.
+
+**CAT5_UNANSWERABLE**
+The question is plausible and relevant to a life insurance contract, but 
+the answer is NOT present in this document. The correct answer is always:
+"Not specified in this policy."
+
+---
+
+## Instructions
+
+- Go line by line in the document, and for each category, generate AS MANY high-quality question-answer pairs AS POSSIBLE.
+  Do not artificially limit the count — exhaust ALL meaningful questions the document supports. 
+  Requirements: At most 10 from CAT5, at LEAST 25 from EACH of the others.
+- Each question must target a distinct fact, relationship, or clause. No redundancy.
+- Questions must be self-contained and unambiguous.
+- Answers must be concise, faithful to the document, and require no calculation.
+- Do NOT generate any questions that require arithmetic, date calculation, 
+  or any form of numerical reasoning.
+- For CAT5_UNANSWERABLE, do NOT generate questions whose answers can be inferred 
+  or derived from the document — they must be genuinely absent.
+- Do NOT mix information across contracts. Treat each contract file independently.
+- For every question in categories CAT1 through CAT4, provide an evidence field 
+  containing the exact clause, section, or sentence from the document that supports 
+  the answer. For CAT5_UNANSWERABLE, set evidence to "N/A".
+
+---
+
+## Output Format
+
+Generate one separate JSON file per contract.
+Name each file exactly as: qa_<contract_filename(without extension)>.json
+
+Each file must contain a single JSON object in this structure:
+
+{
+  "contract": "<contract_filename>",
+  "qa_pairs": [
+    {
+      "question": "<question>",
+      "answer": "<answer>",
+      "evidence": "<exact clause or section supporting the answer>",
+      "category": "<CAT1_ATOMIC_LOOKUP | CAT2_RELATIONAL_LOOKUP | CAT3_CONDITIONAL_REASONING | CAT4_MULTIHOP_REASONING | CAT5_UNANSWERABLE>"
+    }
+  ]
+}
+
+Return only valid JSON per file. No explanation, no markdown, no preamble.

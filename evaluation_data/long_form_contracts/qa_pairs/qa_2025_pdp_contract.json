@@ -1,0 +1,389 @@
+{
+    "contract": "2025_pdp_contract.pdf",
+    "qa_pairs": [
+        {
+            "question": "What is the official name of the entity referred to as 'CMS' in the contract?",
+            "answer": "Centers for Medicare & Medicaid Services",
+            "evidence": "Centers for Medicare & Medicaid Services (hereinafter referred to as CMS)",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the final day of the effective period for this contract?",
+            "answer": "December 31, 2025",
+            "evidence": "This contract is effective from the date of CMS's authorized representative's signature through December 31, 2025.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "When was the 2025 Solicitation for Applications for Medicare Prescription Drug Plan Contracts released?",
+            "answer": "January 9, 2024",
+            "evidence": "the 2025 Solicitation for Applications for Medicare Prescription Drug Plan Contracts, released on January 9, 2024",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What minimum star rating must the PDP Sponsor maintain for the Part D summary plan?",
+            "answer": "At least 3 stars",
+            "evidence": "PDP Sponsor agrees to maintain a Part D summary plan rating score of at least 3 stars as required by 42 CFR § 423.505(b)(26).",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What percentage of ownership is required for an individual to be considered a 'major shareholder' for integrity reporting?",
+            "answer": "5% or more",
+            "evidence": "any major shareholders (5% or more), by a government agency (State or Federal) on matters relating to payments from governmental entities",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Which table in the Business Integrity section of the application is referenced for reporting integrity items?",
+            "answer": "Table A.",
+            "evidence": "reported as part of Table A. of the Business Integrity section of the PDP application.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Who holds the title of Director of the Medicare Drug Benefit and C & D Data Group?",
+            "answer": "Vanessa S. Duran",
+            "evidence": "Vanessa S. Duran Director Medicare Drug Benefit and C & D Data Group, Center for Medicare",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Which Article in the contract is titled 'HIPAA Provisions'?",
+            "answer": "Article IV",
+            "evidence": "Article IV HIPAA Provisions",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Which specific section of the Social Security Act deals with the exclusion of individuals from Medicare participation?",
+            "answer": "Section 1128 or 1128A",
+            "evidence": "excluded from participation in Medicare under Section 1128 or 1128A of the Social Security Act",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Which section of the American Recovery and Reinvestment Act of 2009 governs the use of health information technology systems?",
+            "answer": "Section 13112",
+            "evidence": "Pursuant to § 13112 of the American Recovery and Reinvestment Act of 2009 (ARRA)",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "How many total pages are in this contract document?",
+            "answer": "13",
+            "evidence": "Page 13 of 13",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What regulation requires the PDP Sponsor to maintain a positive net worth?",
+            "answer": "42 CFR § 423.505(b)(23)",
+            "evidence": "maintain a fiscally sound operation by at least maintaining a positive net worth (total assets exceed total liabilities) as required in 42 CFR § 423.505(b)(23).",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What regulation mandates the development of a business continuity plan?",
+            "answer": "42 CFR § 423.505(p)",
+            "evidence": "PDP Sponsor agrees to develop, maintain, and implement a business continuity plan as required by 42 CFR § 423.505(p).",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Which Part of 45 CFR governs the Civil Rights Act of 1964 regulations mentioned in the contract?",
+            "answer": "Part 80",
+            "evidence": "Title VI of the Civil Rights Act of 1964 (and pertinent regulations at 45 CFR Part 80)",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the specific citation for the False Claims Act in the contract?",
+            "answer": "31 U.S.C. §§ 3729 et seq.",
+            "evidence": "the False Claims Act (31 U.S.C. §§ 3729 et seq.)",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Which official has the authority to determine if an entity is eligible to operate a PDP under 42 CFR § 423.503?",
+            "answer": "The Administrator of CMS",
+            "evidence": "an entity that has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "To whom does the PDP Sponsor grant a license to use its plan formulary for Part D administration?",
+            "answer": "The Government",
+            "evidence": "hereby grants to the Government, and any person or entity who might receive the formulary from the Government, a non-exclusive license to use all or any portion of the formulary",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who is responsible for providing manufacturer discounts on drugs to beneficiaries?",
+            "answer": "PDP Sponsor",
+            "evidence": "PDP Sponsor agrees to provide applicable beneficiaries manufacturer discounts on applicable drugs",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Which system must the PDP Sponsor use to resolve complaints received by CMS?",
+            "answer": "CMS complaint tracking system",
+            "evidence": "resolve complaints received by CMS against the PDP Sponsor through the CMS complaint tracking system",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Which entity maintains the ultimate responsibility for complying with all contract terms?",
+            "answer": "PDP Sponsor",
+            "evidence": "PDP Sponsor agrees that it maintains ultimate responsibility for adhering to and otherwise fully complying with all terms and conditions of this contract with CMS.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who must the PDP Sponsor notify in writing if they intend to non-renew the contract?",
+            "answer": "CMS",
+            "evidence": "it must notify: (a) CMS in writing",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "With whom must the PDP Sponsor enter into a business associate agreement to track out-of-pocket costs?",
+            "answer": "The entity with which CMS has contracted to track Medicare beneficiaries' true out-of-pocket costs",
+            "evidence": "PDP Sponsor agrees to enter into a business associate agreement with the entity with which CMS has contracted to track Medicare beneficiaries' true out-of-pocket costs.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "To whom must the PDP Sponsor provide standard contracts upon request according to pharmacy timelines?",
+            "answer": "Any pharmacy that meets standard terms and conditions",
+            "evidence": "PDP Sponsor agrees to contract with any pharmacy that meets PDP Sponsor's reasonable and relevant standard terms and conditions... including making standard contracts available on request",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Which entity releases Part D Medical Loss Ratio data to the public?",
+            "answer": "CMS",
+            "evidence": "PDP Sponsor acknowledges that CMS releases to the public the following data... (b) Part D Medical Loss Ratio data",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who is responsible for the payment of fees for cost sharing of enrollment related costs?",
+            "answer": "PDP Sponsor",
+            "evidence": "PDP Sponsor agrees to payment of fees established by CMS for cost sharing of enrollment related costs",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who is the signatory for CMS in this contract?",
+            "answer": "Vanessa S. Duran",
+            "evidence": "FOR THE CENTERS FOR MEDICARE & MEDICAID SERVICES <<Vanessa Duran ESIG>> Vanessa S. Duran",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Under whose signature is the PDP Sponsor section of the contract executed?",
+            "answer": "Contracting Official Name",
+            "evidence": "FOR PDP SPONSOR <<CONTRACTING OFFICIAL NAME >> Contracting Official Name",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Whose standards must the PDP Sponsor utilize when upgrading health information technology systems?",
+            "answer": "Standards adopted under § 3004 of the Public Health Service Act",
+            "evidence": "it shall utilize, where available, health information technology systems and products that meet standards and implementation specifications adopted under § 3004 of the Public Health Service Act",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who submits the bid for the next program year to CMS?",
+            "answer": "PDP Sponsor",
+            "evidence": "PDP Sponsor agrees to submit the next year's bid... so that CMS and the PDP Sponsor may conduct negotiations",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Which group of entities performs functions on the PDP Sponsor's behalf that must comply with 42 CFR § 423.505(i)?",
+            "answer": "First tier, downstream, and related entities",
+            "evidence": "ensure that any contracts or agreements with first tier, downstream, and related entities performing functions on PDP Sponsor's behalf... are in compliance",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "What is the status of the contract document if the PDP Sponsor had a contract for Year 2024?",
+            "answer": "It is considered a renewal of the existing contract",
+            "evidence": "If PDP Sponsor had a contract with CMS for Contract Year 2024... this document is considered a renewal of the existing contract.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What may happen if a licensure waiver expires and the sponsor fails to obtain a state license?",
+            "answer": "CMS may delete affected PDP Regions from the service area",
+            "evidence": "PDP Sponsor agrees that expiration of the licensure waiver (and the failure to obtain a license from the relevant State) may be the basis for CMS deleting from PDP Sponsor's service area those PDP Regions affected",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the result if CMS and the PDP Sponsor cannot reach an agreement on the bid?",
+            "answer": "No renewal takes place",
+            "evidence": "if PDP Sponsor and CMS cannot reach agreement on the bid... CMS declines to accept the bid... no renewal takes place",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What must the PDP Sponsor do if the Government determines it has been overpaid?",
+            "answer": "Return the overpaid monies back to the Government",
+            "evidence": "In the event that the Government determines that PDP Sponsor has been overpaid, PDP Sponsor agrees to return those overpaid monies back to the Government.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What must the PDP Sponsor do if the prescription drug pricing standard source is not public?",
+            "answer": "Disclose all individual drug prices to applicable pharmacies in advance",
+            "evidence": "If the source for any prescription drug pricing standard is not publicly available, PDP Sponsor will disclose all individual drug prices to be updated to the applicable pharmacies in advance",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "When is the restriction against implementing mid-year regulatory changes inapplicable for CMS?",
+            "answer": "When the new requirements are mandated by statute",
+            "evidence": "This provision does not apply to new requirements mandated by statute. [42 CFR § 423.516]",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the payment deadline for a standard pharmacy claim submitted electronically?",
+            "answer": "Within 14 days of receipt",
+            "evidence": "within 14 days of receipt of an electronically submitted claim",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the payment deadline for a pharmacy claim that is not submitted electronically?",
+            "answer": "Within 30 days of receipt",
+            "evidence": "within 30 days of receipt of a claim submitted otherwise.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "How is a PDP Sponsor determined qualified to renew its contract annually?",
+            "answer": "If they have not provided notice of intention not to renew",
+            "evidence": "PDP Sponsor will be determined qualified to renew its contract annually only if PDP Sponsor has not provided CMS with a notice of intention not to renew",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the specific deadline for the PDP Sponsor to notify CMS of non-renewal?",
+            "answer": "The first Monday of June",
+            "evidence": "notify: (a) CMS in writing by the first Monday of June in the year in which the current contract period ends",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Must the PDP Sponsor accept enrollment applications during the open enrollment period for Medicare Advantage?",
+            "answer": "Yes, if required by 42 CFR § 423.38(e)",
+            "evidence": "PDP Sponsor shall accept enrollment applications from individuals who change their election during the open enrollment period for individuals enrolled in Medicare Advantage... as required by 42 CFR § 423.38(e).",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the claim submission window for a pharmacy located in a long-term care facility?",
+            "answer": "Not less than 30 days but not more than 90 days",
+            "evidence": "pharmacy located in, or having a contract with, a long-term care facility will have not less than 30 days (but not more than 90 days) to submit claims",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the maximum validity period for a licensure waiver granted under 42 CFR § 423.415?",
+            "answer": "One year",
+            "evidence": "waiver granted pursuant to 42 CFR § 423.415... in no case for more than one year only",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What must the PDP Sponsor do regarding enrollees if the contract is terminated by mutual consent?",
+            "answer": "Provide notice in accordance with CMS's instructions",
+            "evidence": "If this contract is terminated by mutual consent, PDP Sponsor must provide notice to its Medicare enrollees and the general public in accordance with CMS's instructions.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "How often must the PDP Sponsor update pricing standards based on drug costs?",
+            "answer": "Not less frequently than once every 7 days",
+            "evidence": "PDP Sponsor will update such standard not less frequently than once every 7 days",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What happens to pending obligations from the 2024 contract year when the 2025 contract is signed?",
+            "answer": "They are not extinguished or interrupted",
+            "evidence": "the parties' execution of this contract does not extinguish or interrupt any pending obligations or actions that may have arisen under the 2024 or prior year contracts.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "How do the claim submission timelines for long-term care pharmacies compare to the payment timelines for retail pharmacies?",
+            "answer": "LTC pharmacies have 30 to 90 days to submit claims, while retail pharmacies must be paid by the sponsor within 14 to 30 days of receipt depending on submission method",
+            "evidence": "transmit payment with respect to all claims submitted by pharmacies... within 14 days of receipt of an electronically submitted claim or within 30 days of receipt of a claim submitted otherwise... long-term care facility will have not less than 30 days (but not more than 90 days) to submit claims",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What content and timing requirements apply to beneficiary notification if a PDP Sponsor chooses not to renew?",
+            "answer": "At least 90 days notice before the effective date, including information on alternative plans in the region",
+            "evidence": "Each Medicare enrollee, at least 90 days before the date on which the nonrenewal is effective. PDP Sponsor must provide... information on alternatives available for obtaining qualified prescription drug coverage within the PDP region",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What are the restrictions on a PDP Sponsor resuming operations in a region after non-renewal or termination of plan benefit packages?",
+            "answer": "The sponsor is ineligible for 2 years in that region unless special circumstances warrant consideration by CMS",
+            "evidence": "CMS cannot enter into a contract... for 2 years in the PDP region... unless there are circumstances that warrant special consideration... A PDP Sponsor that agrees to terminate its offering of PBPs in a PDP region also agrees that it will not be eligible to apply to resume offering plans in that region for 2 years.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "When is an essential operations test required, and for which specific entities?",
+            "answer": "Prior to the start of the benefit year for new sponsors or subsidiaries that have not previously entered a Part D contract",
+            "evidence": "PDP Sponsor agrees to pass an essential operations test prior to the start of the benefit year. This provision only applies to new sponsors that have not previously entered into a Part D contract with CMS and neither it, nor another subsidiary of the applicant's parent organization, is offering Part D benefits",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What is the relationship between the 2025 Solicitation and the Medicare Prescription Drug Benefit Manual in this contract?",
+            "answer": "The contract incorporates the 2025 Solicitation in its entirety, and the PDP Sponsor agrees to operate in accordance with policies outlined in both the solicitation and the Manual",
+            "evidence": "this contract... incorporates in its entirety the 2025 Solicitation... PDP Sponsor also agrees to operate in accordance with... the solicitation, as well as all other... policies outlined in guidance, such as the Medicare Prescription Drug Benefit Manual",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "How are regulatory changes managed mid-year vs. at the beginning of the year?",
+            "answer": "New significant requirements are generally implemented only at the beginning of a calendar year, but this restriction does not apply to requirements mandated by statute",
+            "evidence": "CMS agrees that it will not implement, other than at the beginning of a calendar year, regulations... that impose new, significant regulatory requirements... This provision does not apply to new requirements mandated by statute.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What details must be included in the notice if a sponsor or subcontractor is criminally convicted for fraudulent activities?",
+            "answer": "Notice must be provided to CMS based on best knowledge, including details of the conviction or civil judgment",
+            "evidence": "PDP Sponsor agrees to provide notice based on best knowledge, information, and belief to CMS in the event PDP Sponsor or any of its subcontractors is criminally convicted or has a civil judgment entered against it for fraudulent activities",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What are the rules regarding contract alterations and their binding nature?",
+            "answer": "The sponsor attests they have not altered the terms, and any alterations made by the sponsor are not binding",
+            "evidence": "PDP Sponsor agrees and attests that it has not altered in any way the terms... PDP Sponsor agrees that any alterations to the original text... shall not be binding on the parties.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "How does the contract define the use of terms and the priority of the Act/Regulations?",
+            "answer": "Terms not defined in the contract use definitions from the Social Security Act/42 CFR Part 423, and failure to reference a requirement does not affect its applicability",
+            "evidence": "Terms not otherwise defined in this contract shall have the meaning given to such terms in §§ 1860D-1 through 1860D-43 of the Act and 42 CFR Part 423... Failure to reference a regulatory requirement in this contract does not affect the applicability of such requirements",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What is required for the PDP Sponsor to maintain integrity regarding executive staff and governmental payments?",
+            "answer": "Notice must be given to CMS for any investigations or legal actions involving key management or executive staff related to government healthcare payments",
+            "evidence": "PDP Sponsor agrees to provide notice... of any integrity items related to payments from governmental entities... These items include any investigations, legal actions... involving... any key management or executive staff... on matters relating to payments from governmental entities",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What happens if a sponsor non-renews plans in a region and then wants to submit new bids later?",
+            "answer": "CMS does not approve plan bids from that organization in that region for 2 years unless special circumstances apply",
+            "evidence": "If a PDP Sponsor does not renew any of its plan benefit packages (PBPs) in a PDP region, CMS does not approve plan bids submitted by the organization in that PDP region for 2 years unless there are circumstances that warrant special consideration",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What responsibilities does the sponsor have regarding data when ending a contract, regardless of whether it's via non-renewal or mutual termination?",
+            "answer": "The sponsor must ensure the timely transfer of any data or files",
+            "evidence": "If PDP Sponsor does not renew a contract, it must ensure the timely transfer of any data or files... If a contract is terminated under this section [Mutual Consent], PDP Sponsor must ensure the timely transfer of any data or files.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Under what conditions can CMS mutually consent to a contract termination requested after the regulatory deadline?",
+            "answer": "The termination must not negatively affect the administration of the Medicare Part D Program",
+            "evidence": "If the PDP Sponsor submits a request to end the term of this contract after the deadline... CMS may mutually consent to the contract termination if the contract termination does not negatively affect the administration of the Medicare Part D Program.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What specific HIPAA rules must be complied with according to Article V?",
+            "answer": "45 CFR Parts 160, 162, and 164",
+            "evidence": "applicable Health Insurance Portability and Accountability Act (HIPAA) rules at 45 CFR Parts 160, 162, and 164",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What is the monthly premium amount for this PDP plan?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "What is the exact list of drugs included in the plan formulary?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "What is the specific dollar amount of the civil money penalties for intermediate sanctions?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "What is the specific address for the PDP Sponsor organization?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        }
+    ]
+}

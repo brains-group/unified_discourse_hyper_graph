@@ -1,0 +1,515 @@
+{
+    "contract": "progressive_maine_auto_policy.pdf",
+    "qa_pairs": [
+        {
+            "question": "What is the form number of the Maine Auto Policy?",
+            "answer": "9611A ME (09/16)",
+            "evidence": "Form 9611A ME (09/16)",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "How is 'bodily injury' defined in the policy?",
+            "answer": "Bodily harm, sickness, or disease, including death that results from bodily harm, sickness, or disease.",
+            "evidence": "'Bodily injury' means bodily harm, sickness, or disease, including death that results from bodily harm, sickness, or disease.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum gross vehicle weight rating for a vehicle to be considered an 'auto'?",
+            "answer": "12,000 pounds or less.",
+            "evidence": "with a gross vehicle weight rating of 12,000 pounds or less, according to the manufacturer's specifications.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What does the term 'occupying' mean according to the general definitions?",
+            "answer": "In, on, entering or exiting.",
+            "evidence": "'Occupying' means in, on, entering or exiting.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the daily limit for loss of earnings incurred at the insurer's request under Liability coverage?",
+            "answer": "Up to $200 per day.",
+            "evidence": "reasonable expenses, including loss of earnings up to $200 per day, incurred at our request.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum amount payable for a bail bond under Part I?",
+            "answer": "Up to $250.",
+            "evidence": "up to $250 for a bail bond required because of an accident resulting in bodily injury or property damage covered under this Part I.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Within how many years must medical services be received to be covered under Part II?",
+            "answer": "Within three years from the date of a motor vehicle accident.",
+            "evidence": "necessary medical services received within three years from the date of a motor vehicle accident",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum daily benefit for transportation expenses if a covered auto is stolen?",
+            "answer": "$30 per day.",
+            "evidence": "A combined maximum of $900, not exceeding $30 per day, will apply to these additional benefits.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum number of days for which Rental Reimbursement Coverage is provided?",
+            "answer": "30 days.",
+            "evidence": "This coverage is limited to the each day limit shown on the declarations page for a maximum of 30 days.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the automatic limit of liability for a trailer not shown on the declarations page under Part IV?",
+            "answer": "$500.",
+            "evidence": "If the trailer is not shown on the declarations page, the limit of liability is $500.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "How is 'your pet' defined in the policy?",
+            "answer": "Any dog or cat owned by you, a relative, or a rated resident.",
+            "evidence": "'Your pet' means any dog or cat owned by you, a relative, or a rated resident.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum time allowed for labor under Roadside Assistance Coverage per disablement?",
+            "answer": "60 minutes.",
+            "evidence": "labor on a covered disabled auto for any time period in excess of 60 minutes per disablement;",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Within how many hours must a hit-and-run accident be reported to the police for Uninsured Motorist coverage to apply?",
+            "answer": "Within 24 hours or as soon as practicable.",
+            "evidence": "reports the accident to the police or civil authority within 24 hours or as soon as practicable after the accident;",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum number of roadside assistance emergencies covered in a six-month period for one auto?",
+            "answer": "Three.",
+            "evidence": "more than three covered emergencies for any single covered auto in a six-month period;",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the maximum distance from a road for entrapment in snow to be a 'covered emergency'?",
+            "answer": "Within 100 feet.",
+            "evidence": "entrapment in snow, mud, water or sand within 100 feet of a road or highway.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Under Part IV, what is the default limit for custom parts and equipment if additional coverage isn't purchased?",
+            "answer": "$1,000.",
+            "evidence": "the most we will pay for loss to: a. custom parts or equipment is $1,000 unless you purchased Additional Custom Parts or Equipment Coverage",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What does 'property damage' mean under the general definitions?",
+            "answer": "Physical damage to, destruction of, or loss of use of, tangible property.",
+            "evidence": "'Property damage' means physical damage to, destruction of, or loss of use of, tangible property.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the minimum notice period for cancellation due to nonpayment of premium?",
+            "answer": "15 days.",
+            "evidence": "If the policy is cancelled for nonpayment of premium, we will mail notice of cancellation to you at least 15 days before cancellation takes effect.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "What is the minimum notice period for nonrenewal of the policy?",
+            "answer": "More than 33 days.",
+            "evidence": "Notice will be mailed more than 33 days before the end of the policy period.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Which state's laws govern disputes regarding the policy's coverage?",
+            "answer": "The state listed on the application as the insured's residence.",
+            "evidence": "Any disputes as to the coverages provided or the provisions of this policy shall be governed by the law of the state listed on your application as your residence.",
+            "category": "CAT1_ATOMIC_LOOKUP"
+        },
+        {
+            "question": "Who is defined as 'we', 'us', and 'our' in the policy?",
+            "answer": "The underwriting company providing the insurance shown on the declarations page.",
+            "evidence": "'We,' 'us' and 'our' mean the underwriting company providing the insurance, as shown on the declarations page.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who qualifies as a 'relative' under the policy definitions?",
+            "answer": "A person residing in the same household related by blood, marriage, adoption, or a ward, stepchild, or foster child.",
+            "evidence": "'Relative' means a person residing in the same household as you, and related to you by blood, marriage or adoption, and includes a ward, stepchild, or foster child.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who is considered an 'insured person' for Liability to Others (Part I)?",
+            "answer": "The named insured, relatives, rated residents, or anyone using a covered auto with permission.",
+            "evidence": "'Insured person' means: a. you, a relative, or a rated resident... b. any person with respect to an accident arising out of that person's use of a covered auto with the permission of you, a relative, or a rated resident;",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "What relationship must a 'rated resident' have to the named insured?",
+            "answer": "Residing in the same household but not a relative, and listed on the declarations page (not as excluded).",
+            "evidence": "'Rated resident' means a person residing in the same household as you at the time of the loss who is not a relative, but only if that person is both: a. listed in the 'Drivers and household residents' section... and b. not designated as either an 'Excluded' or a 'List Only' driver.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "To whom may the insurer pay a loss for a covered auto under the 'Loss Payable Clause'?",
+            "answer": "The named insured and any lienholder shown on the declarations page.",
+            "evidence": "Payment under this Part IV for a loss to a covered auto will be made according to your interest and the interest of any lienholder shown on the declarations page",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Which document shows the specific coverages and limits of liability for the policyholder?",
+            "answer": "The declarations page.",
+            "evidence": "We will insure you for the coverages and the limits of liability shown on this policy's declarations page.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Whose acts or omissions is an 'Additional Interest' covered for under Part I?",
+            "answer": "A named insured, relative, rated resident, or permissive user of a covered auto.",
+            "evidence": "any 'Additional Interest' shown on the declarations page with respect only to its liability for the acts or omissions of a person described in a. or b. above.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who determines if medical services are necessary under Part II?",
+            "answer": "The insurer (Progressive) or someone on its behalf.",
+            "evidence": "We, or someone on our behalf, will determine: ... 2. whether the medical services are necessary.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who selects the counsel if an insured is sued by a medical provider for unpaid expenses the insurer deemed unnecessary?",
+            "answer": "The insurer.",
+            "evidence": "If the medical service provider sues the insured person because we refuse to pay expenses... We will choose the counsel.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who is entitled to recover damages under Part III besides the injured person?",
+            "answer": "Any person entitled to recover because of bodily injury sustained by an insured person.",
+            "evidence": "any person who is entitled to recover damages covered by this Part III because of bodily injury sustained by a person described in a., b. or c. above.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "To whom does the 'No Benefit to Bailee' provision apply?",
+            "answer": "Any carrier or other bailee for hire.",
+            "evidence": "Coverage under this Part IV will not directly or indirectly benefit any carrier or other bailee for hire.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who must notify the police if a theft or vandalism occurs?",
+            "answer": "The person seeking coverage.",
+            "evidence": "if theft or vandalism has occurred, you or the person seeking coverage must notify the police within 24 hours or as soon as practicable.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who is responsible for the costs of their own appraiser in a loss dispute?",
+            "answer": "The party that appointed them (either the insured or the insurer).",
+            "evidence": "You will pay your appraiser's fees and expenses. We will pay our appraiser's fees and expenses.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who handles the towing services for Roadside Assistance?",
+            "answer": "An authorized service representative of the insurer.",
+            "evidence": "we will pay for our authorized service representative to provide the following services",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who is responsible for payment if an auto is towed to a location other than the nearest qualified facility?",
+            "answer": "The insured person.",
+            "evidence": "If a covered disabled auto is towed to any place other than the nearest qualified repair facility, you will be responsible for any additional charges incurred.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "To whom does the insurer mail a notice of cancellation?",
+            "answer": "The named insured shown on the declarations page.",
+            "evidence": "We may cancel this policy during the policy period by mailing a notice of cancellation to the named insured shown on the declarations page",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Whose driving privileges being suspended can lead to policy cancellation?",
+            "answer": "The named insured, any driver in the household, or any regular operator of a covered auto.",
+            "evidence": "loss of driving privileges through suspension, revocation or expiration of an operator's license issued to you, any driver in your household, or any regular operator of a covered auto",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who must provide written proof of loss to the insurer?",
+            "answer": "The person seeking coverage.",
+            "evidence": "A person seeking coverage must: ... 2. provide any written proof of loss we may reasonably require;",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "In a subrogation scenario, for whom does the insured hold recovered money in trust?",
+            "answer": "The insurer.",
+            "evidence": "the amount recovered will be held by the insured person in trust for us and reimbursed to us to the extent of our payment.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "Who has the authority to change or cancel the policy if there are multiple named insureds?",
+            "answer": "Any one of the named insureds.",
+            "evidence": "If there is more than one named insured on this policy, any named insured may cancel or change this policy.",
+            "category": "CAT2_RELATIONAL_LOOKUP"
+        },
+        {
+            "question": "What happens if a named insured asks to insure an additional auto 45 days after acquiring it?",
+            "answer": "Coverage begins at the time the request is made, not from the date of acquisition.",
+            "evidence": "If you ask us to insure an additional auto more than 30 days after you become the owner, any coverage we provide will begin at the time you request coverage.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Does Liability coverage apply if an insured uses a covered auto for a shared-expense car pool?",
+            "answer": "Yes, the exclusion for carrying persons for a fee does not apply to car pools.",
+            "evidence": "This exclusion does not apply to shared-expense car pools;",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If an accident occurs in a state with higher financial responsibility limits than Maine, which limit applies?",
+            "answer": "The higher limits required by that state's law.",
+            "evidence": "a financial responsibility or similar law requiring limits of liability... higher than the limits shown on the declarations page, this policy will provide the higher limits;",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Is an insured covered for medical payments if they are injured while occupying a vehicle being used as a residence?",
+            "answer": "No, this is specifically excluded.",
+            "evidence": "Coverage under this Part II will not apply to bodily injury: ... 7. sustained by any person while occupying any vehicle or trailer while located for use as a residence or premises;",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Can an insured sue the insurer for medical expenses deemed 'unnecessary' if they haven't paid the provider yet?",
+            "answer": "No, unless the provider has initiated collection activity.",
+            "evidence": "The insured person may not sue us for expenses... unless the insured person paid the entire disputed amount... or the medical service provider has initiated collection activity",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What is the outcome if the insurer and insured cannot agree on Uninsured Motorist damages?",
+            "answer": "The dispute will be determined by arbitration if both parties mutually agree to it.",
+            "evidence": "this will be determined by arbitration if we and the insured person mutually agree to arbitration prior to the expiration of the bodily injury statute of limitations",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If an auto is stolen, how soon do transportation expense benefits begin?",
+            "answer": "48 hours after the theft is reported to the insurer.",
+            "evidence": "Coverage for transportation expenses and loss of use damages begins 48 hours after you report the theft to us",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Is a child safety seat covered if it is damaged in a collision?",
+            "answer": "Yes, the insurer will pay the reasonable cost to replace it.",
+            "evidence": "we will pay the reasonable cost to replace any child safety seat damaged in an accident to which this coverage applies.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If an engine has 90,000 miles, how is the repair cost for Part IV calculated?",
+            "answer": "An adjustment may be made for betterment or depreciation.",
+            "evidence": "an adjustment may be made for betterment or depreciation and physical condition on: ... (iii) engines and transmissions, if the engine has greater than 80,000 miles;",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Does a deductible apply to glass damage if the glass is repaired rather than replaced?",
+            "answer": "No.",
+            "evidence": "No deductible will apply to a loss to window glass when the glass is repaired instead of replaced.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What happens to a lienholder's interest if the policy is nonrenewed?",
+            "answer": "The lienholder's interest terminates.",
+            "evidence": "If this policy is cancelled, nonrenewed or voided, the interest of any lienholder under this agreement will also terminate.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Will Roadside Assistance cover a flat tire on a trailer?",
+            "answer": "No, Roadside Assistance does not apply to trailers.",
+            "evidence": "Coverage under this Part V will not apply to: ... 16. a trailer.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If an insured fails to take steps to protect a damaged auto from further loss, are the additional damages covered?",
+            "answer": "No, they are not covered.",
+            "evidence": "If failure to provide such protection results in further loss, any additional damages will not be covered under this policy;",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Can the insurer deny coverage if an insured makes a material misrepresentation during the policy period?",
+            "answer": "Yes, if the misrepresentation was material to a risk the insurer assumed.",
+            "evidence": "we may deny coverage... if you... have concealed or misrepresented any material fact or circumstance... and that concealment... was material to a risk we assumed.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Is a refund of premium required for a cancellation to be valid?",
+            "answer": "No, making or offering a refund is not a condition of cancellation.",
+            "evidence": "our making or offering of a refund is not a condition of cancellation.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "What occurs if the insured obtains other insurance on a covered auto?",
+            "answer": "The similar insurance under this policy terminates on the effective date of the other insurance.",
+            "evidence": "If you obtain other insurance on a covered auto, any similar insurance provided by this policy will terminate as to that covered auto on the effective date of the other insurance.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If an insured person dies, how long does the policy stay in effect?",
+            "answer": "Until the end of the policy period.",
+            "evidence": "if a named insured shown on the declarations page dies, this policy will provide coverage until the end of the policy period",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Does the bankruptcy of an insured person cancel the insurer's obligations?",
+            "answer": "No, it does not relieve the insurer of its obligations.",
+            "evidence": "The bankruptcy or insolvency of an insured person will not relieve us of any obligations under this policy.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "Will the insurer pay for labor performed at a service station under Roadside Assistance?",
+            "answer": "No, labor performed at a service station is excluded.",
+            "evidence": "Coverage under this Part V will not apply to: ... 8. labor or repair work performed at a service station, garage, or repair shop;",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "If a policy is cancelled in the first 50 days, can the insurer do so for any reason?",
+            "answer": "Yes, if the notice is received within the first 59 days of the initial period.",
+            "evidence": "We may cancel this policy for any reason if the notice is received by the named insured within the first 59 days of the initial policy period.",
+            "category": "CAT3_CONDITIONAL_REASONING"
+        },
+        {
+            "question": "How is a 'replacement auto' covered differently for Physical Damage (Part IV) vs. Liability (Part I)?",
+            "answer": "Liability coverage applies automatically, but Physical Damage coverage only applies for the first 30 days unless the insurer is notified.",
+            "evidence": "A replacement auto will have the same coverage as the auto it replaces... However, if the auto being replaced had coverage under Part IV... such coverage will apply to the replacement auto only during the first 30 days... unless you notify us",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an insured is injured by an uninsured motorist while using a vehicle without permission, is there coverage?",
+            "answer": "No, because Part III excludes coverage for use of a vehicle without permission.",
+            "evidence": "[Part III Exclusion 2]: Coverage... will not apply: to bodily injury sustained by you... while using any vehicle... without the permission of the owner",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Will the insurer pay medical expenses if the insured person is also eligible for workers' compensation?",
+            "answer": "No, Part II excludes coverage if workers' compensation benefits are available.",
+            "evidence": "[Part II Exclusion 8]: Coverage... will not apply to bodily injury: 8. if workers' compensation benefits are available for the bodily injury;",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an insured uses their covered auto for a TNC (ride-sharing) but also has Roadside Assistance, is a breakdown covered?",
+            "answer": "No, both Liability and Roadside Assistance exclude ride-sharing activities.",
+            "evidence": "[Part I Exclusion 1c]: Coverage... will not apply... for ride-sharing activity. [Part V Exclusion 14]: Coverage... will not apply to: 14. any covered auto while being used in connection with ride-sharing activity;",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What is the maximum total benefit for a pet dog that dies in a collision after receiving $400 in vet care?",
+            "answer": "$1,000.",
+            "evidence": "[Part IV, Pet Injury]: we will provide: ... 2. a $1,000 death benefit... less any payment we made toward veterinary expenses. [Limit of Liability 6a]: The most we will pay for all damages in any one loss is a total of $1,000",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Can an insured recover from the insurer under Uninsured Motorist coverage if they already settled with the at-fault party without consent?",
+            "answer": "No, settling without written consent excludes Uninsured Motorist coverage.",
+            "evidence": "[Part III Exclusion 5]: Coverage... will not apply: 5. to bodily injury sustained by any person if that person... settles without our written consent;",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an insured has two separate Progressive policies, can they combine the Liability limits for one accident?",
+            "answer": "No, the insurer will only pay the highest limit available under any one policy.",
+            "evidence": "[Part I, Limits of Liability]: If multiple auto policies issued by us are in effect for you, we will pay no more than the highest limit of liability for this coverage available under any one policy.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Is damage to a non-owned auto covered if it is used for a retail food delivery service?",
+            "answer": "No, Part IV excludes coverage for any vehicle used for retail or wholesale delivery.",
+            "evidence": "[Part IV Exclusion 1b]: Coverage... will not apply for loss: 1. to any vehicle while being used: ... b. for retail or wholesale delivery, including... food;",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "How does the policy treat an accident involving a truck and an attached trailer regarding Liability limits?",
+            "answer": "They are considered one auto, and the limits of liability are not increased.",
+            "evidence": "[Part I, Limits of Liability]: An auto and attached trailer are considered one auto. Therefore, the limits of liability will not be increased for an accident involving an auto that has an attached trailer.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an insured person recovers medical expenses from an at-fault driver, what happens to the money Progressive already paid them for those expenses?",
+            "answer": "The insured must reimburse Progressive from the recovery, and Progressive will pay its share of the legal fees.",
+            "evidence": "[Part VII, Our Rights to Recover Payment]: 1. the insured person will be required to sign a document agreeing to reimburse us... 2. we are responsible for a pro rata share of the attorney fees incurred by that insured person",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If a covered auto is a total loss, and the loan balance is higher than the ACV, what limits apply to the payoff coverage?",
+            "answer": "The difference between ACV and the loan balance, but not exceeding the specific limit/percentage shown on the declarations page.",
+            "evidence": "[Part IV, Loan/Lease Payoff]: we will pay... the difference between: 1. the actual cash value... and 2. any greater amount the owner... is legally obligated to pay... However, our payment... shall not exceed the limit of liability shown on the declarations page.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Is there coverage under Medical Payments for a relative who is struck by a car while riding a bicycle?",
+            "answer": "Yes, they are covered as an 'insured person' when struck by a motor vehicle while not occupying a self-propelled motorized vehicle.",
+            "evidence": "[Part II Additional Definitions]: 'Insured person' means: a. you, a relative... (ii) when struck by a motor vehicle... while not occupying a self-propelled motorized vehicle;",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Does Liability coverage apply if the named insured's relative drives a vehicle owned by that relative that isn't on the policy?",
+            "answer": "No, there is an exclusion for vehicles owned by a relative that are not covered autos on the policy.",
+            "evidence": "[Part I Exclusion 12]: bodily injury or property damage arising out of the ownership, maintenance or use of any vehicle owned by a relative... other than a covered auto for which this coverage has been purchased.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If an unauthorized provider provides roadside labor for 90 minutes, how much does the insurer pay?",
+            "answer": "Only the reasonable charges for the first 60 minutes.",
+            "evidence": "[Part V, Unauthorized Service Provider]: we will pay only reasonable charges... [Part V Exclusion 5]: Coverage... will not apply to: ... labor... in excess of 60 minutes per disablement;",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Under what condition is a 'non-owned auto' covered for Collision?",
+            "answer": "If the premium is paid for Collision and the vehicle is used with permission by an insured person and not available for their regular use.",
+            "evidence": "[Part IV, Collision]: If you pay the premium... we will pay for... loss to a: ... 2. non-owned auto; [Additional Definitions]: 'Non-owned auto' means an auto that is not owned by or furnished or available for the regular use of you... while in the custody of... you... with the permission of the owner",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If the insurer broadening coverage for free during the policy period, when does it apply to the current policy?",
+            "answer": "Automatically on the date the change is implemented in the state.",
+            "evidence": "[Part VII, Changes]: if during the policy period we broaden any coverage... without additional premium charge, that change will automatically apply... as of the date the coverage change is implemented in your state.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Does a named insured's intentional act to damage their own car prevent an innocent co-insured spouse from receiving payment?",
+            "answer": "No, the exclusion does not apply to the legal interest of a named insured who didn't know or participate.",
+            "evidence": "[Part IV Exclusion 5]: However, where a loss to a covered auto is caused by a named insured, this exclusion shall not apply to the extent of the legal interest of any other named insured who had no knowledge of or participation in the intentional act",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "How is the 'each person' liability limit affected by a claim for emotional anguish from witnessing the accident?",
+            "answer": "The 'each person' limit includes all derivative claims like emotional injury resulting from the bodily injury of another.",
+            "evidence": "[Part I Limits of Liability]: The 'each person' limit... applies to the total of all claims... and all claims of others derived from such bodily injury, including... emotional injury or mental anguish resulting from the bodily injury of another or from witnessing the bodily injury to another",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "If a policy is cancelled by the insured during the initial period, what happens to the refund?",
+            "answer": "It is calculated pro rata, but a cancellation fee is retained.",
+            "evidence": "[Part VII, Cancellation Refund]: any refund due will be computed on a daily pro rata basis. However, we will retain a cancellation fee if this policy is cancelled at your request... during the initial policy period.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "Can the insurer use non-OEM parts to repair a damaged vehicle?",
+            "answer": "Yes, repair costs can be based on the cost of nonoriginal manufacturer parts.",
+            "evidence": "[Part IV Limits of Liability 2d(ii)]: ... will be based on the cost of repair or replacement parts... including... (b) nonoriginal manufacturer parts or equipment.",
+            "category": "CAT4_MULTIHOP_REASONING"
+        },
+        {
+            "question": "What is the grace period for a late premium payment before the policy is cancelled?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "What is the interest rate applied to unpaid premiums?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "Does the policy provide coverage for identity theft protection?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "What is the specific dollar amount for the premium of the 'Pet Injury Coverage'?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        },
+        {
+            "question": "How many days does an insured have to appeal a decision made by the arbitrators?",
+            "answer": "Not specified in this policy.",
+            "evidence": "N/A",
+            "category": "CAT5_UNANSWERABLE"
+        }
+    ]
+}
