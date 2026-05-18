@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import dspy
 from nkg.index.extraction.extract_relations import *
 from nkg.utils.general import batch_list
+from nkg.utils.math_utils import sample_results
 
 def construct_edges_between_chunks(graph: Graph):
     chunk_ids = graph.get_chunk_ids()
@@ -681,50 +682,211 @@ def construct_edges_between_entities_and_facts_parallel(graph: Graph, entity_bat
 
     print("Finished constructing edges between entities and facts.")
 
+def _get_parent_chunk_summary(graph: Graph, fact_id: str) -> str:
+    """
+    Traverses incoming edges to a Fact node to find its parent Chunk,
+    returning the chunk's summary for LLM context.
+    """
+    # Look at edges coming INTO the fact
+    for source_node, target_node, edge_data in graph.network.in_edges(fact_id, data=True):
+        if edge_data.get("edge_type") == "chunk_fact":
+             # We found the parent chunk, return its summary
+            return graph.chunks[source_node].summary
+    return ""
 
-def construct_all_edges(graph: Graph, threshold: float = 0.5, max_workers: int = 10):
-    if max_workers == 1:
-        construct_edges_between_entities_and_facts(graph, entity_batch_size=5)
-        construct_edges_between_chunks(graph)
-        construct_edges_between_same_chunk_facts(graph)
-        construct_edges_between_all_facts(graph, threshold)
+
+def construct_edges_between_facts_linear(graph: Graph, top_k: int, skip_percent: float = 0.25,
+                                         retrieval_model: str = "all-MiniLM-L6-v2"):
+    """
+    Constructs fact-to-fact edges in linear time using multi-dimensional vector search
+    and rank-based sampling.
+    """
+    print("Initializing fact embeddings for vector search...")
+    graph.init_fact_embeddings(retrieval_model=retrieval_model)
+
+    fact_edge_constructor = dspy.ChainOfThought(FactEdge)
+    fact_ids = graph.get_fact_ids()
+
+    print(f"Evaluating {len(fact_ids)} facts linearly...")
+    for source_id in fact_ids:
+        source_fact = graph.facts[source_id]
+
+        # 1. Retrieve all facts ranked by multi-dimensional relevance
+        all_ids, all_scores = graph.get_relevant_seeds(source_fact, get_all=True)
+
+        # 2. Sample Top-K (Immediate Relevance)
+        top_ids, _ = sample_results(all_ids, all_scores, strategy="top_k", k=top_k)
+
+        # 3. Sample Middle-K (Discovery / Skipping top percentile)
+        mid_ids, _ = sample_results(
+            all_ids, all_scores,
+            strategy="skip_percent_top_k",
+            k=top_k,
+            skip_top_percent=skip_percent
+        )
+
+        # 4. Combine, deduplicate, and remove self-references
+        candidate_targets = set(top_ids + mid_ids)
+        if source_id in candidate_targets:
+            candidate_targets.remove(source_id)
+
+        source_chunk_summary = _get_parent_chunk_summary(graph, source_id)
+
+        # 5. Evaluate valid candidates
+        for target_id in candidate_targets:
+            # Skip if an edge was already established
+            if graph.network.has_edge(source_id, target_id):
+                continue
+
+            target_fact = graph.facts[target_id]
+            target_chunk_summary = _get_parent_chunk_summary(graph, target_id)
+
+            # Call LLM
+            edge_info = fact_edge_constructor(
+                fact_sentence_1=source_fact.sentence,
+                chunk_summary_1=source_chunk_summary,
+                fact_sentence_2=target_fact.sentence,
+                chunk_summary_2=target_chunk_summary
+            )
+
+            # Add bidirectional edges
+            graph.network.add_edge(
+                source_id, target_id,
+                description=edge_info.description_1_2,
+                label=edge_info.label_1_2,
+                edge_type="fact_fact",
+                score=edge_info.relevance_score
+            )
+
+            graph.network.add_edge(
+                target_id, source_id,
+                description=edge_info.description_2_1,
+                label=edge_info.label_2_1,
+                edge_type="fact_fact",
+                score=edge_info.relevance_score
+            )
+
+    print("Finished constructing linear fact edges.")
+
+
+def construct_edges_between_facts_linear_parallel(graph: Graph, top_k: int, skip_percent: float = 0.25,
+                                                  retrieval_model: str = "all-MiniLM-L6-v2", max_workers: int = 10):
+    """
+    Parallel version of linear edge construction. Computes vector search
+    in the main thread, then delegates DSPy LLM calls to a thread pool.
+    """
+    print("Initializing fact embeddings for parallel vector search...")
+    graph.init_fact_embeddings(retrieval_model=retrieval_model)
+
+    fact_edge_constructor = dspy.ChainOfThought(FactEdge)
+    fact_ids = graph.get_fact_ids()
+
+    tasks = []
+    seen_pairs = set()  # Tracks unique comparisons to prevent redundant bidirectional checks
+
+    # ==========================================
+    # PHASE 1: Fast Vector Search & Sampling
+    # ==========================================
+    print("Calculating vector similarities and generating task queue...")
+    for source_id in fact_ids:
+        source_fact = graph.facts[source_id]
+
+        # Retrieve and sample
+        all_ids, all_scores = graph.get_relevant_seeds(source_fact, get_all=True)
+        top_ids, _ = sample_results(all_ids, all_scores, strategy="top_k", k=top_k)
+        mid_ids, _ = sample_results(all_ids, all_scores, strategy="skip_percent_top_k", k=top_k,
+                                    skip_top_percent=skip_percent)
+
+        candidate_targets = set(top_ids + mid_ids)
+        if source_id in candidate_targets:
+            candidate_targets.remove(source_id)
+
+        source_chunk_summary = _get_parent_chunk_summary(graph, source_id)
+
+        for target_id in candidate_targets:
+            # 1. Enforce strict pair uniqueness (A->B is the same logic check as B->A)
+            pair_key = tuple(sorted([source_id, target_id]))
+
+            # 2. Add to task list if it hasn't been checked and no edge exists
+            if pair_key not in seen_pairs and not graph.network.has_edge(source_id, target_id):
+                seen_pairs.add(pair_key)
+
+                target_fact = graph.facts[target_id]
+                target_chunk_summary = _get_parent_chunk_summary(graph, target_id)
+
+                tasks.append((
+                    source_id, target_id,
+                    source_fact.sentence, target_fact.sentence,
+                    source_chunk_summary, target_chunk_summary
+                ))
+
+    # ==========================================
+    # PHASE 2: Parallel LLM Execution
+    # ==========================================
+    print(f"Executing {len(tasks)} Fact-to-Fact evaluations across {max_workers} threads...")
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Re-using the _cross_chunk_fact_worker you already wrote
+        futures = {
+            executor.submit(_cross_chunk_fact_worker, fact_edge_constructor, *t): t
+            for t in tasks
+        }
+
+        for future in as_completed(futures):
+            try:
+                f1_id, f2_id, edge_info = future.result()
+
+                # Safely mutate the graph in the main thread
+                graph.network.add_edge(
+                    f1_id, f2_id,
+                    description=edge_info.description_1_2,
+                    label=edge_info.label_1_2,
+                    edge_type="fact_fact",
+                    score=edge_info.relevance_score
+                )
+
+                graph.network.add_edge(
+                    f2_id, f1_id,
+                    description=edge_info.description_2_1,
+                    label=edge_info.label_2_1,
+                    edge_type="fact_fact",
+                    score=edge_info.relevance_score
+                )
+            except Exception as e:
+                print(f"Error processing parallel linear fact edge: {e}")
+
+    print("Finished constructing parallel linear fact edges.")
+
+def construct_initial_edges(graph: Graph, threshold: float = 0.5, max_workers: int = 10, mode:str = "linear"):
+    if mode == "linear":
+        if max_workers == 1:
+            construct_edges_between_entities_and_facts(graph, entity_batch_size=5)
+            #construct_edges_between_same_chunk_facts(graph)
+        else:
+            construct_edges_between_entities_and_facts_parallel(graph, entity_batch_size=5, max_workers=max_workers)
+            #construct_edges_between_same_chunk_facts_parallel(graph, max_workers=max_workers)
     else:
-        construct_edges_between_entities_and_facts_parallel(graph, entity_batch_size=5, max_workers=max_workers)
-        construct_edges_between_chunks_parallel(graph,max_workers=max_workers)
-        construct_edges_between_same_chunk_facts_parallel(graph,max_workers=max_workers)
-        construct_edges_between_all_facts_parallel(graph, threshold,max_workers=max_workers)
+        if max_workers == 1:
+            construct_edges_between_entities_and_facts(graph, entity_batch_size=5)
+            construct_edges_between_chunks(graph)
+            construct_edges_between_same_chunk_facts(graph)
+            construct_edges_between_all_facts(graph, threshold)
+        else:
+            construct_edges_between_entities_and_facts_parallel(graph, entity_batch_size=5, max_workers=max_workers)
+            construct_edges_between_chunks_parallel(graph, max_workers=max_workers)
+            construct_edges_between_same_chunk_facts_parallel(graph, max_workers=max_workers)
+            construct_edges_between_all_facts_parallel(graph, threshold, max_workers=max_workers)
 
-def construct_edges_during_merge(graph: Graph, threshold: float = 0.5, max_workers: int = 10):
-    if max_workers == 1:
-        construct_edges_between_chunks(graph)
-        construct_edges_between_all_facts(graph, threshold)
+def construct_edges_during_merge(graph: Graph, threshold: float = 0.5, max_workers: int = 10, mode:str ="linear", top_k: int = 10):
+    if mode == "linear":
+        if max_workers == 1:
+            construct_edges_between_facts_linear(graph, top_k=top_k, skip_percent=.33)
+        else:
+            construct_edges_between_facts_linear_parallel(graph, top_k=top_k, skip_percent=.33, max_workers=max_workers)
     else:
-        construct_edges_between_chunks_parallel(graph,max_workers=max_workers)
-        construct_edges_between_all_facts_parallel(graph, threshold,max_workers=max_workers)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        if max_workers == 1:
+            construct_edges_between_chunks(graph)
+            construct_edges_between_all_facts(graph, threshold)
+        else:
+            construct_edges_between_chunks_parallel(graph,max_workers=max_workers)
+            construct_edges_between_all_facts_parallel(graph, threshold,max_workers=max_workers)

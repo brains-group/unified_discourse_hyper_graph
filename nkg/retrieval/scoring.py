@@ -1,5 +1,5 @@
 import numpy as np
-from nkg.utils.math_utils import cosine_similarity_single, max_pooled_list_similarity
+from nkg.utils.math_utils import *
 
 # Default Weights
 FACT_WEIGHTS = {"sentence": 0.6, "macro": 0.15, "chunk": 0.25}
@@ -146,3 +146,41 @@ def score_fact_entity_edge(
     type_score = max_pooled_list_similarity(plan_broad_embs, edge_label_emb)
 
     return weights["broad_anchors"] * type_score
+
+FF_W = {"label": 0.3, "desc": 0.5, "llm_score": 0.2}
+EF_W = {"broad_anchors": 0.5, "semantics": 0.5}
+FE_W = {"broad_anchors": 1.0}
+
+def batch_score_fact_fact_edges(
+    plan_labels_norm: np.ndarray,      # (L, D)
+    plan_semantics_norm: np.ndarray,   # (S, D)
+    edge_label_norm: np.ndarray,       # (N, D)
+    edge_desc_norm: np.ndarray,        # (N, D)
+    edge_llm_scores: np.ndarray        # (N,)
+) -> np.ndarray:
+    label_scores = batch_mean_cos(plan_labels_norm, edge_label_norm)
+    desc_scores = batch_mean_cos(plan_semantics_norm, edge_desc_norm)
+    return (
+        FF_W["label"] * label_scores +
+        FF_W["desc"] * desc_scores +
+        FF_W["llm_score"] * edge_llm_scores.astype(np.float32)
+    )
+
+def batch_score_entity_fact_edges(
+    plan_broad_norm: np.ndarray,       # (B, D)
+    plan_semantics_norm: np.ndarray,   # (S, D)
+    edge_label_norm: np.ndarray        # (N, D)
+) -> np.ndarray:
+    broad_scores = batch_mean_cos(plan_broad_norm, edge_label_norm)
+    sem_scores = batch_mean_cos(plan_semantics_norm, edge_label_norm)
+    return (
+        EF_W["broad_anchors"] * broad_scores +
+        EF_W["semantics"] * sem_scores
+    )
+
+def batch_score_fact_entity_edges(
+    plan_broad_norm: np.ndarray,       # (B, D)
+    edge_label_norm: np.ndarray        # (N, D)
+) -> np.ndarray:
+    broad_scores = batch_mean_cos(plan_broad_norm, edge_label_norm)
+    return FE_W["broad_anchors"] * broad_scores

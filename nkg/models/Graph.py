@@ -2,7 +2,10 @@ import uuid
 import networkx as nx
 from cudnn import Graph
 from pydantic import BaseModel
+from sentence_transformers import SentenceTransformer
 from nkg.models.index_objects import EntityFingerprint, Chunk, Fact
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 
 class Graph:
     network = nx.DiGraph()
@@ -257,8 +260,82 @@ class Graph:
                 dict_ids[fact_id] = self.facts[fact_id].sentence
 
             return dict_ids
-
         return fact_ids
+
+    def init_fact_embeddings(self, retrieval_model: str):
+        self.model = SentenceTransformer(retrieval_model)
+        tmp_facts = list(self.facts.values())
+        self.fact_ids = list(self.facts.keys())
+
+
+        fact_sentences = [fact.sentence for fact in tmp_facts]
+        fact_topics = []
+        fact_entities = []
+        fact_answered_questions = []
+        fact_follow_up_questions = []
+
+        for fact in tmp_facts:
+            topics = str([x + " " for x in fact.chunk_topics])
+            answered_questions = str([x + " " for x in fact.answered_questions])
+            follow_up_questions = str([x + " " for x in fact.follow_up_questions])
+            entities = str([x.role + " " for x in fact.entities])
+            fact_topics.append(topics)
+            fact_entities.append(entities)
+            fact_answered_questions.append(answered_questions)
+            fact_follow_up_questions.append(follow_up_questions)
+
+        self.fact_sent_embeddings = self.model.encode(fact_sentences)
+        self.fact_topic_embeddings = self.model.encode(fact_topics)
+        self.fact_entities_embeddings = self.model.encode(fact_entities)
+        self.fact_answered_questions_embeddings = self.model.encode(fact_answered_questions)
+        self.fact_follow_up_questions_embeddings = self.model.encode(fact_follow_up_questions)
+
+    def get_relevant_seeds(self, fact, top_k: int = 8, get_all: bool = False) -> tuple[list[str], list[float]]:
+        """
+        Use rank fusion across multiple embedding dimensions to retrieve top-k fact IDs.
+        """
+
+        # 1. Format query dimensions identically to init_fact_embeddings
+        query_sentence = fact.sentence
+        query_topics = str([x + " " for x in fact.chunk_topics])
+        query_entities = str([x.role + " " for x in fact.entities])
+        query_follow_up_questions = str([x + " " for x in fact.follow_up_questions])
+
+        # 2. Generate embeddings for the query fact
+        # Note: Assumes self.model is the initialized SentenceTransformer
+        query_sent_embedding = self.model.encode([query_sentence], show_progress_bar=False)
+        query_topic_embedding = self.model.encode([query_topics], show_progress_bar=False)
+        query_entity_embedding = self.model.encode([query_entities], show_progress_bar=False)
+        query_follow_up_embeddings = self.model.encode([query_follow_up_questions], show_progress_bar=False)
+
+        # 3. Compute Cosine Similarity for each dimension
+        sent_scores = cosine_similarity(query_sent_embedding, self.fact_sent_embeddings).flatten()
+        topic_scores = cosine_similarity(query_topic_embedding, self.fact_topic_embeddings).flatten()
+        entity_scores = cosine_similarity(query_entity_embedding, self.fact_entities_embeddings).flatten()
+        questions_scores = cosine_similarity(query_follow_up_embeddings,
+                                                      self.fact_answered_questions_embeddings).flatten()
+
+        # 4. Rank Fusion (Equal Weighting)
+        combined_scores = (
+                sent_scores +
+                topic_scores +
+                entity_scores +
+                questions_scores
+        )
+
+        # 5. Sort and Retrieve Top-K
+        top_indices = np.argsort(combined_scores)[::-1]
+
+        if not get_all and top_k > 0:
+            top_indices = top_indices[:top_k]
+
+        top_ids = [self.fact_ids[i] for i in top_indices]
+        top_scores = [combined_scores[i] for i in top_indices]
+
+        return top_ids, top_scores
+
+
+
 
 
 

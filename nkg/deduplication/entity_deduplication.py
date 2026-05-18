@@ -94,9 +94,12 @@ class GraphDeduplicator:
 
         for i in range(len(entity_ids)):
             # argsort sorts ascending. Take the end of the array, reverse it, skip index 0 (self)
-            top_indices = np.argsort(sim_total[i])[-top_k - 1: -1][::-1]
+            top_indices = np.argsort(sim_total[i])[-(top_k + 1):][::-1]
 
             for j in top_indices:
+                if i == j:
+                    continue  # Safely skip self-matching using the index
+
                 score = sim_total[i][j]
                 if score >= threshold:
                     sim_graph.add_edge(entity_ids[i], entity_ids[j], weight=float(score))
@@ -206,7 +209,7 @@ class GraphDeduplicator:
                 # (Generates a new UUID so we don't accidentally overwrite anything)
                 alias_id = str(uuid.uuid4())
                 graph.entities[alias_id] = alias_fp
-                graph.network.add_node(alias_id, type="entity")
+                graph.network.add_node(alias_id, type="entity", data=alias_fp)
 
                 # B. Rewire edges BEFORE deleting old nodes
                 for old_node in duplicates:
@@ -229,7 +232,7 @@ class GraphDeduplicator:
         # Optional: Run the label_edges() safety net you just built to ensure edge types are clean
         if hasattr(graph, 'label_edges'):
             graph.label_edges()
-
+            
         return graph
 
 def main():

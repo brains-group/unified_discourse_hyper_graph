@@ -7,9 +7,9 @@ def chunk_text_by_tokens(model: str = None ,text: str = None, chunk_size: int = 
 
     if not model:
         load_dotenv()
-        model_name = os.getenv("MODEL_NAME", "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8")
+        model = os.getenv("MODEL_NAME", "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8")
 
-    TOKENIZER = AutoTokenizer.from_pretrained(model_name)
+    TOKENIZER = AutoTokenizer.from_pretrained(model)
 
     # Encode the text into Qwen's specific token IDs
     tokens = TOKENIZER.encode(text)

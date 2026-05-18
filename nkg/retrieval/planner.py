@@ -15,13 +15,16 @@ class QueryPlan(dspy.Signature):
 
     # Node Guidance
     rewritten_query: str = dspy.OutputField(desc="A clean, standalone version of the query for semantic search.")
-    target_topics: list[str] = dspy.OutputField(desc="1-3 Broad thematic categories the query touches upon.")
-    target_entities: list[str] = dspy.OutputField(desc="1-3 Specific named instances (e.g., 'John Doe', 'Policy 123').")
-    broad_anchors: list[str] = dspy.OutputField(desc="1-3Role-based entities or concepts (e.g., 'policyholder', 'claimant', 'vehicle').")
+    target_topics: list[str] = dspy.OutputField(desc="Broad thematic categories the query touches upon.")
+    target_entities: list[str] = dspy.OutputField(desc="Specific named instances (e.g., 'John Doe', 'Policy 123').")
+    broad_anchors: list[str] = dspy.OutputField(
+        desc="Role-based entities or concepts (e.g., 'policyholder', 'claimant', 'vehicle').")
 
     # Edge Guidance (Updated)
-    target_edge_labels: list[str] = dspy.OutputField(desc="1-3 UPPERCASE relationship labels (strict 2-4 word labels) representing desired logical steps (e.g., DEFINES_CONDITION, HAS_EXCEPTION).")
-    target_edge_semantics: list[str] = dspy.OutputField(desc="1-3 Rich, descriptive phrases of the narrative relationship needed to connect the dots (e.g., 'exceptions to the liability clause').")
+    target_edge_labels: list[str] = dspy.OutputField(
+        desc="Strict 2-4 word categorical labels (e.g., 'CONTRADICTS', 'EXEMPLIFIES') that represent the desired logical steps.")
+    target_edge_semantics: list[str] = dspy.OutputField(
+        desc="Rich, descriptive phrases of the narrative relationship needed to connect the dots (e.g., 'exceptions to the liability clause').")
 
 def generate_query_plan(query: str):
     planner = dspy.ChainOfThought(QueryPlan)

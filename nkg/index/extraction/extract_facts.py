@@ -12,6 +12,8 @@ class FactMetaExtractor(dspy.Signature):
     
     1. name: Generate a concise, descriptive 3-5 word title summarizing the core claim, rule, or event of the fact.
     2. chunk_topics: Extract a list of 2-4 highly specific thematic keywords or short phrases that connect this fact to the broader text.
+    3. answered_questions: Extract a list of 2-4 questions that this fact answer.
+    4. follow_up_questions: Extract a list of 2-4 follow up quesions that a user may have after reading this fact.
     
     CRITICAL INSTRUCTION: You MUST output at least one valid string in the chunk_topics list. Do NOT return an empty list. Do NOT hallucinate concepts, external facts, or metadata not explicitly supported by the provided text.
     """
@@ -20,6 +22,8 @@ class FactMetaExtractor(dspy.Signature):
     fact_sentence: str = dspy.InputField()
     name: str = dspy.OutputField()
     chunk_topics: List[str] = dspy.OutputField()
+    answered_questions: List[str] = dspy.OutputField()
+    follow_up_questions: List[str] = dspy.OutputField()
 
 class FactAssembler(dspy.Module):
     def __init__(self):
@@ -35,6 +39,8 @@ class FactAssembler(dspy.Module):
             macro_topics=[],
             chunk_topics=fact_meta_info.chunk_topics,
             entities=entity_fingerprints,
+            answered_questions=fact_meta_info.answered_questions,
+            follow_up_questions=fact_meta_info.follow_up_questions
         )
 
         return fact_instance

@@ -207,7 +207,7 @@ class Retriever:
         for i, edge in enumerate(fe_edges):
             self.fe_label_embs[edge] = fe_label_matrix[i:i + 1]
 
-    def get_seeds(self, query: str, top_k: int = 10, lambda_mmr: float = 0.6, verbose=False) -> tuple[list[str], object]:
+    def get_seeds(self, query: str, top_k: int = 10, lambda_mmr: float = 0.6, verbose=False, mode="all") -> tuple[list[str], object]:
         """
         Executes the query plan, scores all facts and entities independently,
         and returns the top-k diverse seeds using MMR.
@@ -230,32 +230,34 @@ class Retriever:
         candidate_diversity_embs = []  # Used exclusively for MMR redundancy checks
 
         # 3. Score all Entities
-        for ent_id, embs in self.entity_embs.items():
-            score = score_entity(
-                plan_target_embs=plan_targets_embs,
-                plan_broad_embs=plan_broad_embs,
-                entity_name_emb=embs["name"],
-                entity_role_emb=embs["role"],
-                entity_anchor_embs=embs["anchors"]
-            )
-            candidate_ids.append(ent_id)
-            candidate_scores.append(score)
-            # Use the entity's name embedding to represent it during the MMR diversity check
-            candidate_diversity_embs.append(embs["name"][0])
+        if mode in ["all", "hypergraph"]:
+            for ent_id, embs in self.entity_embs.items():
+                score = score_entity(
+                    plan_target_embs=plan_targets_embs,
+                    plan_broad_embs=plan_broad_embs,
+                    entity_name_emb=embs["name"],
+                    entity_role_emb=embs["role"],
+                    entity_anchor_embs=embs["anchors"]
+                )
+                candidate_ids.append(ent_id)
+                candidate_scores.append(score)
+                # Use the entity's name embedding to represent it during the MMR diversity check
+                candidate_diversity_embs.append(embs["role"][0])
 
         # 4. Score all Facts
-        for fact_id, embs in self.fact_embs.items():
-            score = score_fact(
-                plan_rewrite_emb=plan_rewrite_emb,
-                plan_topics_embs=plan_topics_embs,
-                fact_sent_emb=embs["sentence"],
-                fact_macro_embs=embs["macro"],
-                fact_chunk_embs=embs["chunk"]
-            )
-            candidate_ids.append(fact_id)
-            candidate_scores.append(score)
-            # Use the fact's sentence embedding to represent it during the MMR diversity check
-            candidate_diversity_embs.append(embs["sentence"][0])
+        if mode in ["all", "discourse"]:
+            for fact_id, embs in self.fact_embs.items():
+                score = score_fact(
+                    plan_rewrite_emb=plan_rewrite_emb,
+                    plan_topics_embs=plan_topics_embs,
+                    fact_sent_emb=embs["sentence"],
+                    fact_macro_embs=embs["macro"],
+                    fact_chunk_embs=embs["chunk"]
+                )
+                candidate_ids.append(fact_id)
+                candidate_scores.append(score)
+                # Use the fact's sentence embedding to represent it during the MMR diversity check
+                candidate_diversity_embs.append(embs["sentence"][0])
 
         # 5. Apply MMR (Maximal Marginal Relevance)
         selected_indices = compute_mmr(
@@ -275,12 +277,13 @@ class Retriever:
     def retrieve(
             self,
             query: str,
-            top_k_seeds: int = 8,
+            top_k_seeds: int = 20,
             max_depth: int = 3,
             beam_width: int = 3,
             final_top_k: int = 5,
             return_raw_paths: bool = False,
-            verbose=False
+            verbose=False,
+            mode="all"
     ) -> str:
         """
         The main public API for the Retriever.
@@ -291,7 +294,7 @@ class Retriever:
             print(f"\n--- Starting Retrieval Pipeline for: '{query}' ---")
 
         # Step 1: Query Planning & Seed Selection
-        seeds, plan = self.get_seeds(query, top_k=top_k_seeds)
+        seeds, plan = self.get_seeds(query, top_k=top_k_seeds, mode=mode)
 
         if not seeds:
             print("No relevant seeds found.")
@@ -300,12 +303,13 @@ class Retriever:
         # Step 2: Bounded Beam Search (Local MMR Edge Expansion)
         if verbose:
             print(f"Expanding {len(seeds)} seeds to a max fact depth of {max_depth}...")
-        completed_paths = expand_paths(
+        completed_paths = expand_paths_batched(
             engine=self,
             seeds=seeds,
             plan=plan,
             max_depth=max_depth,
-            beam_width=beam_width
+            beam_width=beam_width,
+            mode=mode
         )
 
         if verbose:
@@ -333,6 +337,58 @@ class Retriever:
 
         return context_string
 
+    def get_seeds_precomputed(self, plan_embs_dict: dict, top_k: int = 10, lambda_mmr: float = 0.6, mode="all") -> list[str]:
+        """Bypasses Query Planner and Encoding."""
+        plan_rewrite_emb = plan_embs_dict.get("rewritten_query", np.array([]))
+        plan_targets_embs = plan_embs_dict.get("target_entities", np.array([]))
+        plan_broad_embs = plan_embs_dict.get("broad_anchors", np.array([]))
+        plan_topics_embs = plan_embs_dict.get("target_topics", np.array([]))
+
+        candidate_ids = []
+        candidate_scores = []
+        candidate_diversity_embs = []
+
+        if mode in ["all", "hypergraph"]:
+            for ent_id, embs in self.entity_embs.items():
+                score = score_entity(plan_targets_embs, plan_broad_embs, embs["name"], embs["role"], embs["anchors"])
+                candidate_ids.append(ent_id)
+                candidate_scores.append(score)
+                candidate_diversity_embs.append(embs["name"][0])
+
+
+        if mode in ["all", "discourse"]:
+            for fact_id, embs in self.fact_embs.items():
+                score = score_fact(plan_rewrite_emb, plan_topics_embs, embs["sentence"], embs["macro"], embs["chunk"])
+                candidate_ids.append(fact_id)
+                candidate_scores.append(score)
+                candidate_diversity_embs.append(embs["sentence"][0])
+
+        selected_indices = compute_mmr(candidate_scores, np.array(candidate_diversity_embs), top_k, lambda_mmr)
+        return [candidate_ids[i] for i in selected_indices]
+
+    def get_raw_paths_precomputed(self, plan_embs: dict, top_k_seeds: int = 8, max_depth: int = 3,
+                                  beam_width: int = 3) -> tuple:
+        """Returns the completed Path objects AND their assembled strings."""
+        seeds = self.get_seeds_precomputed(plan_embs, top_k=top_k_seeds)
+
+        if not seeds:
+            return [], []
+
+        completed_paths = expand_paths_precomputed(
+            engine=self,
+            seeds=seeds,
+            plan_labels_embs=plan_embs.get("target_edge_labels", np.array([])),
+            plan_semantics_embs=plan_embs.get("target_edge_semantics", np.array([])),
+            plan_broad_embs=plan_embs.get("broad_anchors", np.array([])),
+            max_depth=max_depth,
+            beam_width=beam_width
+        )
+
+        from nkg.retrieval.traversal import assemble_path_string
+        assembled_strings = [assemble_path_string(self.graph, p) for p in completed_paths]
+
+        return completed_paths, assembled_strings
+
 def main():
     from nkg.utils.config import configure_dspy
     from sentence_transformers import SentenceTransformer, CrossEncoder
@@ -341,7 +397,7 @@ def main():
     configure_dspy(max_tokens=30000)
 
     # 1. Load your models
-    bi_encoder = SentenceTransformer('all-MiniLM-L6-v2')
+    bi_encoder = SentenceTransformer('Qwen/Qwen3-Embedding-4B')
     cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
 
     # 2. Initialize the Retriever

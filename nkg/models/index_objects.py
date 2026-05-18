@@ -51,6 +51,8 @@ class Fact(BaseModel):
     sentence: str
     macro_topics: List[str]
     chunk_topics: List[str]
+    answered_questions: Optional[List[str]]
+    follow_up_questions: Optional[List[str]]
     entities: List[EntityFingerprint]
 
 class Chunk(BaseModel):
