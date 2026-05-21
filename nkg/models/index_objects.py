@@ -63,4 +63,5 @@ class Chunk(BaseModel):
     text: str
     summary: str
     topics: List[str]
+    entities: List[EntityFingerprint] = Field(default_factory=list)
     facts: List[Fact]

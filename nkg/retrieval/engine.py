@@ -230,7 +230,7 @@ class Retriever:
         candidate_diversity_embs = []  # Used exclusively for MMR redundancy checks
 
         # 3. Score all Entities
-        if mode in ["all", "hypergraph"]:
+        if mode:
             for ent_id, embs in self.entity_embs.items():
                 score = score_entity(
                     plan_target_embs=plan_targets_embs,
@@ -245,7 +245,7 @@ class Retriever:
                 candidate_diversity_embs.append(embs["role"][0])
 
         # 4. Score all Facts
-        if mode in ["all", "discourse"]:
+        if mode:
             for fact_id, embs in self.fact_embs.items():
                 score = score_fact(
                     plan_rewrite_emb=plan_rewrite_emb,

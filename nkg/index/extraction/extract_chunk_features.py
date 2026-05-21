@@ -1,12 +1,13 @@
 import dspy
-from typing import List, Tuple
-from nkg.models.index_objects import Fact, Chunk
-from nkg.index.extraction.extract_facts import FactAssembler
+from nkg.models.index_objects import Chunk
+from nkg.index.extraction.extract_facts import BatchedFactAssembler
+from nkg.index.extraction.extract_entities import extract_chunk_entities
+
 
 class ChunkMeta(dspy.Signature):
     __doc__ = """
     Extract structural metadata and core facts from the source_text :
-    
+
     - name: Provide a concise 3-5 word descriptive title for this chunk.
     - topics: Provide a list of 2-4 macro-level thematic keywords or short phrases.
     - summary: Provide a dense, 2-3 sentence summary of the core information.
@@ -19,10 +20,11 @@ class ChunkMeta(dspy.Signature):
     fact_sentences: list[str] = dspy.OutputField()
     name: str = dspy.OutputField()
 
+
 class ChunkDescription(dspy.Signature):
     __doc__ = """
     Extract structural metadata and core facts from the source_text :
-    
+
     - name: Provide a concise 3-5 word descriptive title for this chunk.
     - topics: Provide a list of 2-4 macro-level thematic keywords or short phrases.
     - summary: Provide a dense, 3-4 sentence summary of the core information.
@@ -33,25 +35,27 @@ class ChunkDescription(dspy.Signature):
     summary: str = dspy.OutputField()
     name: str = dspy.OutputField()
 
+
 class ChunkFacts(dspy.Signature):
     __doc__ = """
     You are an expert intelligence analyst. Your goal is to achieve 100% exhaustive recall of all factual information contained in the source_text.
-    
+
     -Steps-
     1. Scan the text and identify every distinct Entity (person, organization, concept, document, location) and every distinct Event/Action.
     2. For EACH Entity and Event identified, extract the specific, atomic facts associated with them.
-    
+
     Each fact sentence must be:
     * Atomic: It must contain exactly one complete thought, rule, or action. Break compound sentences into multiple separate facts.
     * Self-Contained: It must make perfect sense completely out of context. Resolve all pronouns (change "He signed it" to "John Doe signed Policy 123").
     * Grounded: It must be explicitly stated in the text. Do not infer or summarize external knowledge.
-    
-    CRITICAL: You must extract EVERYTHING. 
+
+    CRITICAL: You must extract EVERYTHING.
     For example, if a chunk has 15 distinct facts, do not stop after 3 or 4 facts, instead you must output the 15 fact sentences.
     """
 
     source_text: str = dspy.InputField()
     fact_sentences: list[str] = dspy.OutputField()
+
 
 class ChunkAssembler(dspy.Module):
     def __init__(self):
@@ -59,46 +63,42 @@ class ChunkAssembler(dspy.Module):
         self.chunk_description_extractor = dspy.ChainOfThought(ChunkDescription)
         self.chunk_fact_extractor = dspy.ChainOfThought(ChunkFacts)
 
-    def forward(self, source_text: str, double_extraction=True) -> Chunk:
-        chunk_description=None
-        chunk_meta_info=None
+    def forward(self, source_text: str, double_extraction=True, fact_batch_size: int = 5) -> Chunk:
         if double_extraction:
-            #chunk_meta_info = self.chunk_meta_extractor(source_text=source_text)
             chunk_description = self.chunk_description_extractor(source_text=source_text)
             chunk_facts = self.chunk_fact_extractor(source_text=source_text)
+            name = chunk_description.name
+            summary = chunk_description.summary
+            topics = chunk_description.topics
+            fact_sentences = chunk_facts.fact_sentences
         else:
             chunk_meta_info = self.chunk_meta_extractor(source_text=source_text)
+            name = chunk_meta_info.name
+            summary = chunk_meta_info.summary
+            topics = chunk_meta_info.topics
+            fact_sentences = chunk_meta_info.fact_sentences
 
-        fact_assembler = FactAssembler()
-        facts = []
+        # Extract entities once for the whole chunk — shared pool for all facts
+        chunk_entities = extract_chunk_entities(text=source_text)
 
-        if double_extraction:
-            fact_storage = chunk_facts
-        else:
-            fact_storage = chunk_meta_info
+        # Assemble all facts in batches, each fact getting the relevant subset of chunk entities
+        fact_assembler = BatchedFactAssembler()
+        facts = fact_assembler(
+            source_text=source_text,
+            fact_sentences=fact_sentences,
+            chunk_entities=chunk_entities,
+            batch_size=fact_batch_size
+        )
 
-        for fact_sentence in fact_storage.fact_sentences:
-            fact = fact_assembler(source_text=source_text, fact_sentence=fact_sentence)
-            facts.append(fact)
+        return Chunk(
+            name=name,
+            text=source_text,
+            summary=summary,
+            topics=topics,
+            entities=chunk_entities,
+            facts=facts
+        )
 
-        if double_extraction:
-            chunk_instance = Chunk(
-                name=chunk_description.name,
-                text=source_text,
-                summary=chunk_description.summary,
-                topics=chunk_description.topics,
-                facts=facts
-            )
-        else:
-            chunk_instance = Chunk(
-                name=chunk_meta_info.name,
-                text=source_text,
-                summary=chunk_meta_info.summary,
-                topics=chunk_meta_info.topics,
-                facts=facts
-            )
-
-        return chunk_instance
 
 def main():
     pass

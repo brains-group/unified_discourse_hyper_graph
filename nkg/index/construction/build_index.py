@@ -13,7 +13,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-def process_text_batch(texts: List[str], chunk_size: int, overlap: int, edge_threshold: float, max_workers: int) -> Graph:
+def process_text_batch(texts: List[str], chunk_size: int, overlap: int, edge_threshold: float, max_workers: int, fact_batch_size: int = 5) -> Graph:
     """
     Worker function for the first layer of the pyramid.
     Takes a batch of texts, initializes graphs for each, merges them,
@@ -23,7 +23,7 @@ def process_text_batch(texts: List[str], chunk_size: int, overlap: int, edge_thr
 
     # 1. Initialize and merge graphs for all texts in this batch
     for text in texts:
-        local_graph = initialize_graph_from_text(text, chunk_size=chunk_size, overlap=overlap)
+        local_graph = initialize_graph_from_text(text, chunk_size=chunk_size, overlap=overlap, fact_batch_size=fact_batch_size)
         merged_graph.merge(local_graph)
 
     # 2. Construct edges across the newly merged graph
@@ -58,7 +58,8 @@ def build_index_from_directory(
         chunk_size: int = 600,
         overlap: int = 50,
         edge_threshold: float = 0.5,
-        max_sub_workers=10
+        max_sub_workers=10,
+        fact_batch_size: int = 5
 ) -> Graph:
     """
     Reads all text files in a directory and builds a unified knowledge graph
@@ -85,7 +86,7 @@ def build_index_from_directory(
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all text batches to the worker pool
         futures = {
-            executor.submit(process_text_batch, batch, chunk_size, overlap, edge_threshold, max_sub_workers): i
+            executor.submit(process_text_batch, batch, chunk_size, overlap, edge_threshold, max_sub_workers, fact_batch_size): i
             for i, batch in enumerate(text_batches)
         }
 
@@ -130,19 +131,15 @@ def build_index_from_directory(
     return current_graphs[0]
 
 
-def process_single_chunk(chunk_text: str, edge_threshold: float, max_sub_workers: int) -> Graph:
+def process_single_chunk(chunk_text: str, edge_threshold: float, max_sub_workers: int, fact_batch_size: int = 5) -> Graph:
     """
     Worker function to process an individual chunk of text.
     Extracts the nodes (Chunks, Facts, Entities) and constructs the
     internal local edges (Entity->Fact, Fact->Fact within the same chunk).
     """
-    # 1. Initialize the nodes for this specific chunk.
-    # Note: We pass a massive chunk_size to bypass re-chunking, since we pre-chunked the text.
-    local_graph = initialize_graph_from_text(chunk_text, chunk_size=999999, overlap=0)
-
-    # 2. Construct local edges (Entity-Fact and Same-Chunk Fact relationships)
+    # We pass a massive chunk_size to bypass re-chunking, since we pre-chunked the text.
+    local_graph = initialize_graph_from_text(chunk_text, chunk_size=999999, overlap=0, fact_batch_size=fact_batch_size)
     construct_initial_edges(local_graph, threshold=edge_threshold, max_workers=max_sub_workers, mode="linear")
-
     return local_graph
 
 
@@ -154,7 +151,8 @@ def build_index_from_file(
         overlap: int = 50,
         edge_threshold: float = 0.5,
         top_k: int = 10,
-        max_sub_workers: int = 10
+        max_sub_workers: int = 10,
+        fact_batch_size: int = 10
 ) -> Graph:
     """
     Reads a single text file, breaks it into chunks via tokenizer, processes chunks
@@ -189,7 +187,7 @@ def build_index_from_file(
     local_graphs = []
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {
-            executor.submit(process_single_chunk, chunk, edge_threshold, max_sub_workers): i
+            executor.submit(process_single_chunk, chunk, edge_threshold, max_sub_workers, fact_batch_size): i
             for i, chunk in enumerate(text_chunks)
         }
 
@@ -244,12 +242,12 @@ if __name__ == "__main__":
         chunk_size=600,
         overlap=50,
         edge_threshold=0.5,
-        top_k=2,  # Number of K-nearest facts to sample
-        max_sub_workers=80  # Threads used internally by LLM batching
+        top_k=5,  # Number of K-nearest facts to sample
+        max_sub_workers=100  # Threads used internally by LLM batching
     )
 
     # Export pre-deduplication
-    final_graph.export_graph("./kg_outputs/c7riders_2.graphml")
+    final_graph.export_graph("./kg_outputs/c7riders_3.graphml")
 
     print(
         f"\nRaw Graph Size: {final_graph.network.number_of_nodes()} nodes, {final_graph.network.number_of_edges()} edges")
@@ -269,7 +267,7 @@ if __name__ == "__main__":
     print(f"Average Entity Edges: {final_graph.avg_entity_edges()}")
 
     # Export final product
-    final_graph.export_graph("./kg_outputs/c7riders_2.graphml")
+    final_graph.export_graph("./kg_outputs/c7riders_3.graphml")
 
 
 # if __name__ == "__main__":

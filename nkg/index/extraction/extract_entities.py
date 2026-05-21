@@ -93,9 +93,33 @@ def extract_entity_fingerprints(text: str, mode="single_step", batched=True) -> 
                     fingerprints.extend(group_fingerprints)
                 return fingerprints
 
+class ExtractChunkEntities(dspy.Signature):
+    __doc__ = """
+    Analyze the source_text and extract a complete, deduplicated list of entity fingerprints.
+    This is the canonical entity pool for the chunk — all facts in this chunk will draw their
+    entities from this list.
+
+    For each entity, provide:
+    - name: The exact surface text or best normalized form.
+    - type: High-level ontological category (PERSON, ORGANIZATION, LOCATION, CONCEPT, DATE, etc.)
+    - role: A 3-8 word micro-role describing what the entity is doing in this specific text.
+    - relational_anchors: Specific identifiers linked to this entity (policy numbers, IDs, etc.).
+    """
+
+    source_text: str = dspy.InputField()
+    entities: list[EntityFingerprint] = dspy.OutputField(
+        desc="Complete list of all entity fingerprints found in this chunk"
+    )
+
+
+def extract_chunk_entities(text: str) -> list[EntityFingerprint]:
+    """Extract all entity fingerprints from a chunk. Used once per chunk as a shared entity pool."""
+    generator = dspy.ChainOfThought(ExtractChunkEntities)
+    return generator(source_text=text).entities
+
+
 def main():
     pass
 
 if __name__ == "__main__":
     main()
-    

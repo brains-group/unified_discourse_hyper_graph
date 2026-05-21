@@ -19,8 +19,8 @@ from nkg.models.index_objects import EntityFingerprint
 # ==========================================
 
 class MergedEntity(BaseModel):
-    duplicate_ids: List[str] = Field(
-        description="The exact string IDs of the entities from the input cluster that are duplicates."
+    duplicate_names: List[str] = Field(
+        description="The names of the entities from the cluster that are duplicates of each other."
     )
     alias_name: str = Field(description="The normalized name for the merged entity.")
     alias_type: str = Field(description="The high-level ontological category (e.g., PERSON, ORGANIZATION).")
@@ -34,12 +34,12 @@ class ClusterResolution(dspy.Signature):
     Given a cluster of entity records (JSON), identify subsets that refer to the EXACT same real-world entity.
 
     For each duplicate group:
-    - List their IDs in duplicate_ids.
+    - List the entity names that are duplicates in duplicate_names.
     - Produce a single normalized alias representing them.
 
     Only merge entities that are unambiguously identical. Different entities that are merely related (e.g., a person and their company) must NOT be merged. Return an empty list if no duplicates exist.
     """
-    cluster_records: str = dspy.InputField(desc="JSON of entity records with their IDs.")
+    cluster_records: str = dspy.InputField(desc="JSON of entity records with their names, types, roles, and anchors.")
     merged_entities: List[MergedEntity] = dspy.OutputField(desc="Merged entity groups. Empty list if no duplicates.")
 
 
@@ -110,31 +110,46 @@ class GraphDeduplicator:
         """
         Worker function: Prepares JSON data, calls DSPy, and parses the output
         safely into EntityFingerprint objects.
+
+        The LLM receives entity names (not UUIDs) so it can reason about duplicates
+        without having to reproduce long opaque identifiers. We map names back to
+        IDs ourselves after the LLM responds.
         """
-        # 1. Prepare input payload
+        # 1. Build name → [ids] lookup for this cluster
+        #    Multiple IDs can share the same name (exact duplicates from different contexts).
+        name_to_ids: Dict[str, List[str]] = {}
+        for eid in cluster_ids:
+            entity_name = graph.entities[eid].name
+            name_to_ids.setdefault(entity_name, []).append(eid)
+
+        # 2. Prepare input payload — names only, no UUIDs
         records = []
         for eid in cluster_ids:
             ent = graph.entities[eid]
             records.append({
-                "id": eid,
                 "name": ent.name,
                 "type": ent.type,
                 "role": ent.role,
-                "anchors": ent.relational_anchors
+                "anchors": list(ent.relational_anchors)
             })
 
         payload = json.dumps(records, indent=2)
 
-        # 2. Call LLM
+        # 3. Call LLM
         try:
             result = self.resolver(cluster_records=payload)
             resolved_groups = []
 
             for merged in result.merged_entities:
-                # Security Check: Ensure LLM didn't hallucinate IDs
-                valid_dups = [d_id for d_id in merged.duplicate_ids if d_id in cluster_ids]
+                # Collect all IDs whose name matches any name the LLM returned
+                valid_dups = []
+                for name in merged.duplicate_names:
+                    valid_dups.extend(name_to_ids.get(name, []))
 
-                # Only return groups that actually merge 2 or more valid items
+                # Deduplicate while preserving order
+                valid_dups = list(dict.fromkeys(valid_dups))
+
+                # Only return groups that actually merge 2 or more items
                 if len(valid_dups) > 1:
                     new_fp = EntityFingerprint(
                         name=merged.alias_name,

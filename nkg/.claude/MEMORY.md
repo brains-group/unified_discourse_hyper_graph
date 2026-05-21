@@ -1,0 +1,1 @@
+- [NKG Architecture Overview](memory/project_nkg_architecture.md) — Full pipeline: DSPy sigs, Pydantic models, extraction flow, graph node/edge types, top-level entry points
