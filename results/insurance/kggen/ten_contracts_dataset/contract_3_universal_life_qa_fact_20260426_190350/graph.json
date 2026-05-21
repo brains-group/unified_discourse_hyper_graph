@@ -1,0 +1,993 @@
+{
+  "entities": [
+    "Issue Date",
+    "Variable Rate",
+    "Cost of Insurance charge",
+    "Age",
+    "current Account Value",
+    "$400,000",
+    "CONTESTABILITY",
+    "Moody's Corporate Bond Index",
+    "added to loan balance",
+    "Primary Beneficiary",
+    "skip payments",
+    "rate schedule",
+    "Robert James Wilson",
+    "maximum payment",
+    "Male",
+    "premium expense charge",
+    "Date",
+    "61-day grace period",
+    "policy",
+    "Interest credited",
+    "Death Benefit Reduction",
+    "3% premium expense charge",
+    "Evidence of Insurability",
+    "Processing Fee",
+    "FlexProtect Insurance Solutions",
+    "sufficient premium",
+    "tax limitations",
+    "Policy Loans",
+    "minimum 4%",
+    "FPS-UL-24-03391",
+    "outstanding policy loan interest",
+    "Jennifer Ann Wilson",
+    "$75/month",
+    "Account Value",
+    "Monthly Deduction Date",
+    "Target Premium",
+    "Guaranteed Minimum Rate",
+    "minimum payment",
+    "Withdrawal Charges",
+    "Outstanding Policy Loans",
+    "not received within 61 days",
+    "Cash Surrender Value",
+    "Annual Adjustment",
+    "Variable rate",
+    "paid to you automatically",
+    "Year 1: 8%",
+    "Minimum Interest Rate",
+    "SUICIDE EXCLUSION",
+    "Surrender Charge",
+    "risk class",
+    "dollar-for-dollar",
+    "Contingent Beneficiary",
+    "Surrender Charge Schedule",
+    "without interest",
+    "Deductions for monthly charges and expenses",
+    "90%",
+    "Monthly COI Rate",
+    "sufficient Account Value",
+    "Chief Executive Officer",
+    "monthly charges",
+    "Face Value",
+    "policy lapses",
+    "Upon lapse",
+    "Interest Crediting",
+    "Contract Number",
+    "DOB",
+    "COI",
+    "interest credited",
+    "Emily Rose Wilson",
+    "first 15 years",
+    "death benefit",
+    "interest crediting",
+    "Administrative expense charge",
+    "Year 10: 2%",
+    "Credited Interest Rate",
+    "Years 11+",
+    "11/15/1982",
+    "insured's age",
+    "insured",
+    "Account Value falls below",
+    "Minimum Premium",
+    "Death Benefit Option",
+    "Maximum loan",
+    "Account Value in excess of surrender charges",
+    "Specified Amount",
+    "Minimum Withdrawal",
+    "premiums",
+    "Policy Years",
+    "Year 15+: 0%",
+    "Level",
+    "policy surrender",
+    "expenses",
+    "Account Value Amounts",
+    "material misrepresentation",
+    "Arizona",
+    "Flexible Premium Payments",
+    "Current Rate",
+    "Planned Premium",
+    "Universal Life Insurance Policy",
+    "1.5%",
+    "Policy Owner",
+    "Cost of Insurance",
+    "Option B (Increasing Death Benefit)",
+    "Outstanding loan",
+    "Interest may be paid annually",
+    "Signature",
+    "100%",
+    "Wife",
+    "within 2 years of issue date",
+    "Maximum Withdrawal",
+    "insured's sex",
+    "Account Value Reduction",
+    "Year 5: 5%",
+    "Son",
+    "Option A (Level Death Benefit)",
+    "while insured is living",
+    "Loan Interest Rate",
+    "Loan interest rate",
+    "Upon surrender",
+    "adjusted annually each January 1",
+    "Daughter",
+    "Gender",
+    "Grace Period",
+    "policy terminates",
+    "Partial Withdrawals",
+    "yearly limit",
+    "Account Value insufficient to pay monthly deductions",
+    "Insured",
+    "Option A",
+    "50%",
+    "Accumulation of premiums paid",
+    "Years 1-10",
+    "coverage ends",
+    "premiums paid",
+    "monthly deductions",
+    "Phoenix",
+    "Robert Wilson Jr.",
+    "notify you",
+    "Maximum Loan",
+    "Executed at Phoenix, Arizona",
+    "suicide within 24 months of issue date",
+    "Policy continues for 61 days",
+    "Death Benefit",
+    "$200/month",
+    "41",
+    "March 10, 2024"
+  ],
+  "relations": [
+    [
+      "Chief Executive Officer",
+      "is position held by",
+      "FlexProtect Insurance Solutions"
+    ],
+    [
+      "Policy Owner",
+      "is",
+      "Robert James Wilson"
+    ],
+    [
+      "Withdrawal Charges",
+      "apply in",
+      "Years 1-10"
+    ],
+    [
+      "Contingent Beneficiary",
+      "has share",
+      "50%"
+    ],
+    [
+      "Variable rate",
+      "equals",
+      "Moody's Corporate Bond Index + 1.5%"
+    ],
+    [
+      "Option B (Increasing Death Benefit)",
+      "equals",
+      "Specified Amount"
+    ],
+    [
+      "SUICIDE EXCLUSION",
+      "pays",
+      "Account Value without interest"
+    ],
+    [
+      "Loan Interest Rate",
+      "is adjusted",
+      "annually"
+    ],
+    [
+      "Monthly Deduction Date",
+      "is when",
+      "Administrative expense charge of $8.00/month is deducted"
+    ],
+    [
+      "Cost of Insurance",
+      "depends on",
+      "risk class"
+    ],
+    [
+      "policy",
+      "has",
+      "61-day grace period"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "has minimum premium",
+      "$75/month"
+    ],
+    [
+      "Monthly COI Rate",
+      "is used in calculation of",
+      "Cost of Insurance"
+    ],
+    [
+      "Flexible Premium Payments",
+      "includes",
+      "tax limitations"
+    ],
+    [
+      "policy",
+      "has",
+      "Specified Amount"
+    ],
+    [
+      "premiums",
+      "are allocated to",
+      "Account Value after deduction of a 3% premium expense charge"
+    ],
+    [
+      "Emily Rose Wilson",
+      "is",
+      "Daughter"
+    ],
+    [
+      "Account Value",
+      "accumulates",
+      "interest credited"
+    ],
+    [
+      "Robert James Wilson",
+      "has date of birth",
+      "11/15/1982"
+    ],
+    [
+      "Account Value",
+      "falls below",
+      "amount needed to pay monthly charges"
+    ],
+    [
+      "Surrender Charge",
+      "is applied when",
+      "policy surrender occurs in the first 15 years"
+    ],
+    [
+      "Guaranteed Minimum Rate",
+      "is",
+      "2.0% per annum"
+    ],
+    [
+      "Withdrawals",
+      "reduce",
+      "Account Value"
+    ],
+    [
+      "Grace Period",
+      "lasts",
+      "61 days"
+    ],
+    [
+      "You",
+      "must pay",
+      "Processing Fee"
+    ],
+    [
+      "rate schedule",
+      "contains",
+      "COI rates"
+    ],
+    [
+      "CONTESTABILITY",
+      "applies while",
+      "insured is living"
+    ],
+    [
+      "premiums",
+      "are subject to",
+      "maximum payment of $50,000 per year"
+    ],
+    [
+      "Interest Crediting",
+      "is based on",
+      "Account Value"
+    ],
+    [
+      "Cost of Insurance",
+      "depends on",
+      "insured's sex"
+    ],
+    [
+      "SUICIDE EXCLUSION",
+      "applies if",
+      "insured dies by suicide within 24 months of issue date"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "has target premium",
+      "$200/month"
+    ],
+    [
+      "Minimum Interest Rate",
+      "is",
+      "4%"
+    ],
+    [
+      "Option B (Increasing Death Benefit)",
+      "is",
+      "Available by Request"
+    ],
+    [
+      "Account Value falls below",
+      "triggers",
+      "61-day grace period"
+    ],
+    [
+      "Monthly Deduction Date",
+      "is when",
+      "Cost of Insurance charge is deducted"
+    ],
+    [
+      "Option A (Level Death Benefit)",
+      "is",
+      "Currently Selected"
+    ],
+    [
+      "outstanding policy loan interest",
+      "is deducted on",
+      "Monthly Deduction Date"
+    ],
+    [
+      "Policy Loans",
+      "have maximum",
+      "90% of current Account Value"
+    ],
+    [
+      "Variable rate",
+      "has minimum",
+      "minimum 4%"
+    ],
+    [
+      "policy surrender",
+      "results in",
+      "Surrender Charge"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "has face value",
+      "$400,000"
+    ],
+    [
+      "policy",
+      "has",
+      "Flexible Premium Payments"
+    ],
+    [
+      "Variable Rate",
+      "plus",
+      "1.5%"
+    ],
+    [
+      "You",
+      "may change",
+      "death benefit options"
+    ],
+    [
+      "Primary Beneficiary",
+      "is",
+      "Jennifer Ann Wilson"
+    ],
+    [
+      "Account Value",
+      "less",
+      "Deductions for monthly charges and expenses"
+    ],
+    [
+      "Cost of Insurance",
+      "depends on",
+      "insured's age"
+    ],
+    [
+      "policy",
+      "has",
+      "Monthly COI Rate"
+    ],
+    [
+      "Account Value Reduction",
+      "occurs when",
+      "Account Value falls below minimum required"
+    ],
+    [
+      "sufficient premium",
+      "must be received",
+      "within 61 days"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "has specified amount",
+      "$400,000"
+    ],
+    [
+      "sufficient premium",
+      "not received within 61 days",
+      "results in policy lapses"
+    ],
+    [
+      "Evidence of Insurability",
+      "is required for",
+      "increasing coverage"
+    ],
+    [
+      "Cost of Insurance",
+      "is defined as",
+      "monthly charge for the death benefit based on the insured's age, sex, and risk class"
+    ],
+    [
+      "policy",
+      "has",
+      "Surrender Charge"
+    ],
+    [
+      "policy",
+      "has",
+      "Administrative expense charge"
+    ],
+    [
+      "Monthly Deduction Date",
+      "is",
+      "the 10th day of each month"
+    ],
+    [
+      "Flexible Premium Payments",
+      "includes",
+      "maximum payment of $50,000 per year"
+    ],
+    [
+      "Robert James Wilson",
+      "has gender",
+      "Male"
+    ],
+    [
+      "Option B (Increasing Death Benefit)",
+      "adds",
+      "Account Value"
+    ],
+    [
+      "policy",
+      "may be surrendered",
+      "in the first 15 years"
+    ],
+    [
+      "Current Rate",
+      "is",
+      "3.5% per annum"
+    ],
+    [
+      "61-day grace period",
+      "is entered when",
+      "Account Value falls below amount needed to pay monthly charges"
+    ],
+    [
+      "FlexProtect Insurance Solutions",
+      "executed in",
+      "Phoenix"
+    ],
+    [
+      "expenses",
+      "are deducted from",
+      "Account Value"
+    ],
+    [
+      "Outstanding loan",
+      "reduces death benefit",
+      "dollar-for-dollar"
+    ],
+    [
+      "policy",
+      "has",
+      "Monthly Deductions"
+    ],
+    [
+      "We",
+      "may declare",
+      "different rates"
+    ],
+    [
+      "Partial Withdrawals",
+      "are allowed",
+      "at any time"
+    ],
+    [
+      "Variable rate",
+      "is adjusted",
+      "annually each January 1"
+    ],
+    [
+      "Interest",
+      "may be paid",
+      "annually"
+    ],
+    [
+      "Loan interest rate",
+      "is",
+      "Variable rate"
+    ],
+    [
+      "skip payments",
+      "are allowed if",
+      "Account Value is sufficient to cover monthly deductions"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "issued on",
+      "March 10, 2024"
+    ],
+    [
+      "Account Value",
+      "must be sufficient to cover",
+      "monthly deductions"
+    ],
+    [
+      "Withdrawal Charges",
+      "are",
+      "$25 per withdrawal"
+    ],
+    [
+      "Upon surrender",
+      "results in",
+      "policy terminates"
+    ],
+    [
+      "Withdrawal Charges",
+      "do not apply in",
+      "Years 11+"
+    ],
+    [
+      "Robert James Wilson",
+      "has age",
+      "41"
+    ],
+    [
+      "Cost of Insurance",
+      "means",
+      "COI"
+    ],
+    [
+      "Death Benefit",
+      "is paid minus",
+      "Outstanding Policy Loans"
+    ],
+    [
+      "Primary Beneficiary",
+      "has share",
+      "100%"
+    ],
+    [
+      "Current Rate",
+      "is subject to change",
+      "monthly"
+    ],
+    [
+      "Variable Rate",
+      "equals",
+      "Moody's Corporate Bond Index"
+    ],
+    [
+      "FlexProtect Insurance Solutions",
+      "has CEO",
+      "Chief Executive Officer"
+    ],
+    [
+      "Interest",
+      "may be added to",
+      "loan balance"
+    ],
+    [
+      "Executed at",
+      "location",
+      "Phoenix, Arizona"
+    ],
+    [
+      "Interest Crediting",
+      "uses",
+      "Credited Interest Rate"
+    ],
+    [
+      "Grace Period",
+      "is triggered when",
+      "Account Value is insufficient to pay monthly deductions"
+    ],
+    [
+      "Account Value",
+      "means",
+      "Accumulation of premiums paid"
+    ],
+    [
+      "Cost of Insurance",
+      "is calculated as",
+      "(Specified Amount - Account Value) \u00d7 Monthly COI Rate / 1,000"
+    ],
+    [
+      "different rates",
+      "are based on",
+      "Account Value Amounts"
+    ],
+    [
+      "Maximum Withdrawal",
+      "is",
+      "Account Value minus amount needed to keep policy in force"
+    ],
+    [
+      "Annual Adjustment",
+      "applies to",
+      "Loan Interest Rate"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "includes",
+      "Year 10: 2%"
+    ],
+    [
+      "Monthly Deduction Date",
+      "is when",
+      "outstanding policy loan interest is deducted"
+    ],
+    [
+      "policy",
+      "has",
+      "interest crediting"
+    ],
+    [
+      "Loan Interest Rate",
+      "has minimum",
+      "4%"
+    ],
+    [
+      "CONTESTABILITY",
+      "applies if",
+      "material misrepresentation occurs"
+    ],
+    [
+      "FlexProtect Insurance Solutions",
+      "executed on",
+      "March 10, 2024"
+    ],
+    [
+      "Phoenix",
+      "is located in",
+      "Arizona"
+    ],
+    [
+      "premium expense charge",
+      "is",
+      "3% premium expense charge"
+    ],
+    [
+      "policy",
+      "has",
+      "Monthly Deduction Date"
+    ],
+    [
+      "Loan Interest Rate",
+      "is",
+      "Variable Rate"
+    ],
+    [
+      "policy",
+      "has",
+      "rate schedule"
+    ],
+    [
+      "Chief Executive Officer",
+      "represents",
+      "FlexProtect Insurance Solutions"
+    ],
+    [
+      "Signature",
+      "signed by",
+      "Chief Executive Officer"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "has planned premium",
+      "$200/month"
+    ],
+    [
+      "Account Value",
+      "is defined as",
+      "accumulation of premiums paid, less deductions for monthly charges and expenses, plus interest credited"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "issued by",
+      "FlexProtect Insurance Solutions"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "has death benefit option",
+      "Option A"
+    ],
+    [
+      "Processing Fee",
+      "is",
+      "$50"
+    ],
+    [
+      "interest crediting",
+      "is a component of",
+      "Account Value"
+    ],
+    [
+      "premiums",
+      "are subject to",
+      "minimum payment of $75 per payment"
+    ],
+    [
+      "Robert Wilson Jr.",
+      "is",
+      "Son"
+    ],
+    [
+      "You",
+      "must provide",
+      "Evidence of Insurability"
+    ],
+    [
+      "Upon surrender",
+      "results in",
+      "coverage ends"
+    ],
+    [
+      "Account Value",
+      "plus",
+      "Interest credited"
+    ],
+    [
+      "Administrative expense charge",
+      "is",
+      "$8.00/month"
+    ],
+    [
+      "Credited Interest Rate",
+      "is updated",
+      "monthly"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "has contract number",
+      "FPS-UL-24-03391"
+    ],
+    [
+      "premiums paid",
+      "contribute to",
+      "Account Value"
+    ],
+    [
+      "Maximum loan",
+      "is",
+      "90% of current Account Value"
+    ],
+    [
+      "Flexible Premium Payments",
+      "allows",
+      "premiums to be paid at any time and in any amount"
+    ],
+    [
+      "Maximum Loan",
+      "is",
+      "90% of current Account Value"
+    ],
+    [
+      "Specified Amount",
+      "is used in calculation of",
+      "Cost of Insurance"
+    ],
+    [
+      "Minimum Withdrawal",
+      "is",
+      "$500"
+    ],
+    [
+      "premiums",
+      "are subject to",
+      "tax limitations"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "includes",
+      "Year 1: 8%"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "includes",
+      "Year 15+: 0%"
+    ],
+    [
+      "Jennifer Ann Wilson",
+      "is",
+      "Wife"
+    ],
+    [
+      "Contingent Beneficiary",
+      "is",
+      "Emily Rose Wilson"
+    ],
+    [
+      "Upon lapse",
+      "results in",
+      "Account Value in excess of surrender charges being paid to you automatically"
+    ],
+    [
+      "policy",
+      "has",
+      "Cost of Insurance"
+    ],
+    [
+      "monthly charges",
+      "are deducted from",
+      "Account Value"
+    ],
+    [
+      "Contingent Beneficiary",
+      "is",
+      "Robert Wilson Jr."
+    ],
+    [
+      "Insured",
+      "is",
+      "Robert James Wilson"
+    ],
+    [
+      "Cash Surrender Value",
+      "equals",
+      "Account Value - Surrender Charge - Outstanding Loans"
+    ],
+    [
+      "policy",
+      "has",
+      "outstanding policy loan interest"
+    ],
+    [
+      "Outstanding loan",
+      "reduces",
+      "death benefit"
+    ],
+    [
+      "different rates",
+      "are based on",
+      "Policy Years"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "includes",
+      "Year 5: 5%"
+    ],
+    [
+      "CONTESTABILITY",
+      "is valid",
+      "within 2 years of issue date"
+    ],
+    [
+      "COI rates",
+      "are guaranteed not to exceed",
+      "those shown in the rate schedule attached to this policy"
+    ],
+    [
+      "Date",
+      "is provided on",
+      "policy document"
+    ],
+    [
+      "Death Benefit",
+      "equals",
+      "Specified Amount"
+    ],
+    [
+      "Account Value Reduction",
+      "may lead to",
+      "Death Benefit Reduction"
+    ],
+    [
+      "Universal Life Insurance Policy",
+      "has death benefit option",
+      "Level"
+    ],
+    [
+      "Flexible Premium Payments",
+      "includes",
+      "minimum payment of $75 per payment"
+    ]
+  ],
+  "edges": [
+    "has gender",
+    "must be sufficient to cover",
+    "do not apply in",
+    "triggers",
+    "has minimum premium",
+    "pays",
+    "are allowed if",
+    "applies while",
+    "applies if",
+    "has CEO",
+    "is calculated as",
+    "are guaranteed not to exceed",
+    "may be added to",
+    "is entered when",
+    "is provided on",
+    "is when",
+    "falls below",
+    "is defined as",
+    "has contract number",
+    "has specified amount",
+    "represents",
+    "depends on",
+    "reduce",
+    "has share",
+    "executed in",
+    "must provide",
+    "not received within 61 days",
+    "occurs when",
+    "are",
+    "applies to",
+    "adds",
+    "may change",
+    "is subject to change",
+    "less",
+    "accumulates",
+    "includes",
+    "uses",
+    "has date of birth",
+    "are allowed",
+    "is updated",
+    "location",
+    "may be surrendered",
+    "is based on",
+    "is deducted on",
+    "is triggered when",
+    "results in",
+    "have maximum",
+    "executed on",
+    "plus",
+    "is required for",
+    "signed by",
+    "apply in",
+    "must be received",
+    "has planned premium",
+    "are subject to",
+    "is position held by",
+    "is located in",
+    "are allocated to",
+    "is a component of",
+    "reduces death benefit",
+    "issued by",
+    "has minimum",
+    "may be paid",
+    "has target premium",
+    "must pay",
+    "contribute to",
+    "has age",
+    "lasts",
+    "means",
+    "is valid",
+    "has death benefit option",
+    "allows",
+    "may lead to",
+    "are deducted from",
+    "has face value",
+    "is",
+    "contains",
+    "issued on",
+    "is applied when",
+    "equals",
+    "has",
+    "is paid minus",
+    "are based on",
+    "is used in calculation of",
+    "reduces",
+    "may declare",
+    "is adjusted"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

@@ -1,0 +1,1760 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;This policy was guaranteed issue.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy was issued without medical questions or exams. The graded benefit schedule applies because of this.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;It was clear that the decisions they made in the ensuing hours could redefine humanity’s place in the cosmos or condemn them to ignorance and potential peril.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">45.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid. An accident means a sudden, unexpected event causing injury that results in death within 90 days of the event.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;We will pay valid claims within 5 business days.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Together, they stood on the edge of the unknown, forging humanity’s response to a message from the heavens.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If payment is not received, you have 30 days to pay before the policy cancels.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">36.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Final Expense Life Insurance, ComfortCare Senior Insurance: This is a simplified issue whole life insurance policy designed to help cover funeral and final expenses. There are no medical exams or health questions required.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Date: May 1, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy builds cash value slowly. Guaranteed cash values are shown in the table we sent you.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;3.1 Your monthly premium is $87.50 and will never increase. 3.2 Premiums are automatically deducted from your bank account on the 1st of each month. 3.3 If a payment fails, we will try again on the 15th.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If a payment fails, we will try again on the 15th.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The ensuing silence was palpable—a collective introspection about their role in this grand cosmic play, one that could rewrite human history.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The beneficiary should call us at 1-800-COMFORT or send: • Death certificate (certified copy) • Completed claim form • This policy (if available)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Restart your policy within 2 years by paying missed premiums with interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;After 2 years, if you stop paying premiums, your policy will automatically continue with a reduced benefit amount based on the cash value. No further premiums needed.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Coverage is available for ages 50-85.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy #: CC-FE-2024-9903, Effective: May 1, 2024, Type: Guaranteed Issue Whole Life.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You can cancel within 30 days of receiving this policy for a full refund.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy builds a small cash value over time.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You can borrow against the cash value or surrender the policy for the cash value at any time.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;They were no longer mere operatives; they had become guardians of a threshold, keepers of a message from a realm beyond stars and stripes.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">45.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of the issue date, we will only return the premiums paid.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premiums are automatically deducted from your bank account on the 1st of each month.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Name: Dorothy Mae Johnson, Birth Date: June 12, 1951, Age: 72 years, Gender: Female.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Your premium will never increase as long as you keep paying it. Your coverage will never decrease.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy has no war exclusion, no aviation exclusion, and no travel restrictions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This elevation in their mission could not be shackled by regulations and established protocols—it demanded a new perspective, a new resolve.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">45.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You can change to annual or quarterly payments if you prefer.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;$87.50 and will never increase.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Mercer’s latter instincts gained precedence— the team’s mandate had evolved, no longer solely to observe and report but to interact and prepare.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">36.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;For questions, call: 1-800-COMFORT (1-800-266-3678)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Benefit Amount: $10,000, Monthly Premium: $87.50 (guaranteed level for life), Payment Method: Bank draft on 1st of each month, Premium Payer: Dorothy Mae Johnson.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;There are no medical exams or health questions required.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Approximate cash value after 10 years: $3,200.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Tension threaded through the dialogue of beeps and static as communications with Washington buzzed in the background.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">40.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Or you can take the cash value and cancel the policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;A metamorphosis had begun, and Operation: Dulce hummed with the newfound frequency of their daring, a tone set not by the earthly&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">32.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;After this policy has been in force for 2 years, we cannot cancel it or deny claims except for non-payment of premiums.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary: Linda Sue Johnson (Daughter) - 100%.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You own this policy. It stays with you even if you move to another state.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The encrypted dialogue continued to unfold, its intricate patterns showing an almost uncanny anticipation.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">16.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You can change your beneficiary at any time by calling us or sending a written request.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The team stood, a portentous air enveloping them.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">35.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may restart your policy within 2 years by paying missed premiums with interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy is issued in Tampa, Florida.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Mail to: ComfortCare Claims, P.O. Box 777, Tampa, FL 33601&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This might well be our first contact,&quot; he acknowledged, &quot;And we need to be ready for whatever answers back.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Signed: _____________________________ Chief Operating Officer ComfortCare Senior Insurance&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"Premiums are automatically deducted from your bank account on the 1st of each month."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;GUARANTEED ISSUE WHOLE LIFE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"The type of life insurance policy, which guarantees issue without medical underwriting."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;MISSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Their mission was elevated."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;CLAIM FORM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A completed claim form is required to file a claim."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;NEVER INCREASE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TERM_CONDITION"</data>
+  <data key="d4">"The premium remains fixed for life."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;PAYMENT FAILURE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"A failed premium deduction."&lt;SEP&gt;"If a payment fails, a retry is scheduled for the 15th."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;DOROTHY MAE JOHNSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual responsible for paying the premiums."&lt;SEP&gt;"The insured individual, a 72-year-old female born on June 12, 1951."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;RESOLVE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Their mission demanded a new resolve."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;DARING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Operation: Dulce hummed with the newfound frequency of their daring."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;COMFORTCARE CLAIMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The claims should be mailed to ComfortCare Claims."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;AUTOMATIC DEDUCTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"The system that deducts premiums from the bank account."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;15TH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A retry is attempted on the 15th if payment fails."&lt;SEP&gt;"The secondary attempt date for failed premium payments."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;JUNE 12, 1951&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The birth date of Dorothy Mae Johnson."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;TENSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Tension threaded through the dialogue."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SERVICE"</data>
+  <data key="d4">"Coverage is available for individuals aged 50 to 85."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;P.O. BOX 777&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ADDRESS"</data>
+  <data key="d4">"The mailing address for claims is P.O. Box 777."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;OVER TIME&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The period during which the cash value accumulates."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;GRACE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"You have 30 days to pay after a missed payment before the policy cancels."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;72 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age of Dorothy Mae Johnson."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;COMMUNICATIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Communications with Washington buzzed in the background."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;MISSED PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"Missed premiums must be paid to restart the policy."&lt;SEP&gt;"Missed premiums must be paid with interest to restart the policy."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;FL 33601&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POSTAL CODE"</data>
+  <data key="d4">"FL 33601 is the postal code for the mailing address."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;PREMIUM WILL NEVER INCREASE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TERM_CONDITION"</data>
+  <data key="d4">"The monthly premium remains constant for life."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;POLICY CANCELLATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The policy cancels if payment is not received within 30 days."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;FEMALE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"GENDER"</data>
+  <data key="d4">"The gender of Dorothy Mae Johnson."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;WASHINGTON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Communications with Washington buzzed in the background."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The original policy is required if available."&lt;SEP&gt;"The policy can be restarted within 2 years by paying missed premiums with interest."&lt;SEP&gt;"The policy is a financial document that provides life insurance coverage."&lt;SEP&gt;"The policy was issued without medical questions or exams, leading to a graded benefit schedule."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;MEDICAL QUESTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"The policy was issued without requiring medical questions."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;VALID CLAIMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Valid claims are paid within 5 business days."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;COVERAGE WILL NEVER DECREASE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TERM_CONDITION"</data>
+  <data key="d4">"The death benefit remains at $10,000."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;ANNUAL PAYMENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT FREQUENCY"</data>
+  <data key="d4">"You can change to annual payments."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;$10,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The death benefit amount payable under the policy."&lt;SEP&gt;"The full death benefit paid after Year 2."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;TEAM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The team stood."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;5 BUSINESS DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Claims are processed and paid within 5 business days."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"Interest is applied to missed premiums when restarting."&lt;SEP&gt;"Interest must be paid on missed premiums to restart the policy."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;HEALTH QUESTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"Not required for this policy."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;GUARANTEED LEVEL FOR LIFE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PREMIUM_TERM"</data>
+  <data key="d4">"The premium remains constant for the life of the policy."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;PORTENTOUS AIR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The team was enveloped by a portentous air."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;AGE 50&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEMOGRAPHIC"</data>
+  <data key="d4">"Coverage is available starting at age 50."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;30-DAY FREE LOOK&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY PROVISION"</data>
+  <data key="d4">"You can cancel the policy within 30 days of receipt for a full refund."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;ENCRYPTED DIALOGUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"OBJECT"</data>
+  <data key="d4">"The encrypted dialogue continued to unfold."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;GRADED BENEFIT SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL STRUCTURE"</data>
+  <data key="d4">"The graded benefit schedule applies due to the policy being issued without medical questions or exams."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;BANK DRAFT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT_METHOD"</data>
+  <data key="d4">"The method used to collect monthly premiums."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;DECISIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The decisions could redefine humanity’s place in the cosmos."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;AGE 85&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEMOGRAPHIC"</data>
+  <data key="d4">"Coverage is available up to age 85."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;FULL REFUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"A full refund is issued if the policy is canceled within 30 days."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;PATTERNS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The encrypted dialogue showed intricate patterns."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;QUARTERLY PAYMENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT FREQUENCY"</data>
+  <data key="d4">"You can change to quarterly payments."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;LINDA SUE JOHNSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The primary beneficiary, daughter of Dorothy Mae Johnson."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;HUMANITY’S PLACE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The decisions could redefine humanity’s place in the cosmos."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;POLICY IN FORCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"After 2 years, the policy cannot be canceled or claims denied, except for non-payment of premiums."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;CHANGE BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"You can change the beneficiary at any time."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;FIRST CONTACT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"This might well be our first contact."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;CASH VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ASSET"</data>
+  <data key="d4">"A small amount of value that accumulates over time in the policy."&lt;SEP&gt;"The reduced benefit is based on the accumulated cash value."&lt;SEP&gt;"This policy builds cash value slowly, and guaranteed cash values are provided in a table."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;DAUGHTER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"Linda Sue Johnson is the daughter of Dorothy Mae Johnson."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;COSMOS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The decisions could redefine humanity’s place in the cosmos."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;2 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"After 2 years of non-payment, the policy continues automatically."&lt;SEP&gt;"The policy becomes incontestable after 2 years."&lt;SEP&gt;"The suicide exclusion applies within 2 years of the issue date."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;WRITTEN REQUEST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A written request is one method to change the beneficiary."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;ANSWERS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"We need to be ready for whatever answers back."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;GUARANTEED CASH VALUES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ASSET"</data>
+  <data key="d4">"Guaranteed cash values are shown in the table sent to the policyholder."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;100%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The full percentage of the death benefit payable to the primary beneficiary."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;IGNORANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The decisions could condemn them to ignorance."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;CANCELLATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The policy cannot be canceled after 2 years."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;POLICY OWNERSHIP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The policyholder owns the policy and retains it regardless of relocation."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;EDGE OF THE UNKNOWN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"They stood on the edge of the unknown."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;TABLE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The table contains guaranteed cash values for the policy."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;YEAR 1&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The first year of the policy, before May 1, 2025."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;PERIL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The decisions could condemn them to potential peril."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;PORTABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY FEATURE"</data>
+  <data key="d4">"The policy is portable across state lines."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;CLAIMS DENIAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Claims cannot be denied after 2 years, except for non-payment of premiums."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;HUMANITY’S RESPONSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"They were forging humanity’s response to a message from the heavens."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;$3,200&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The approximate cash value after 10 years is $3,200."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;CONNECTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Their connection to the stars solidified."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;NON-PAYMENT OF PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL VIOLATION"</data>
+  <data key="d4">"The only exception to incontestability is non-payment of premiums."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;REDUCED BENEFIT AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The policy continues with a reduced benefit based on cash value."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;HEAVENS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"They were forging humanity’s response to a message from the heavens."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;10 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The approximate cash value is projected after 10 years."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;MAY 1, 2025&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The end of Year 1."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;STARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Their connection to the stars solidified."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;TAMPA&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Tampa is the city where claims are mailed."&lt;SEP&gt;"The policy is issued in Tampa, Florida."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;NO FURTHER PREMIUMS NEEDED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"After 2 years, no additional premiums are required."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;SILENCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The ensuing silence was palpable."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;BORROW AGAINST CASH VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"You can borrow money using the cash value as collateral."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;YEAR 2&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The second year of the policy, from May 1, 2025 to April 30, 2026."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;GROUP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The group moved to address the crystallizing warning."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;FLORIDA&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The policy is issued in Tampa, Florida."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;TAKE CASH VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"You can withdraw the cash value and cancel the policy."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;INTROSPECTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The ensuing silence was a collective introspection."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;SURRENDER POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"You can cancel the policy and receive the cash value."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;MAY 1, 2026&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The end of Year 2."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;CRYSTALLIZING WARNING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The group moved to address the crystallizing warning."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;1-800-COMFORT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONTACT INFORMATION"</data>
+  <data key="d4">"The beneficiary can call 1-800-COMFORT to file a claim."&lt;SEP&gt;"The toll-free number for questions is 1-800-COMFORT."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;RESTART POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"You can restart the policy within 2 years by paying missed premiums plus interest."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;COSMIC PLAY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The ensuing silence was about their role in this grand cosmic play."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;BANK ACCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL INSTITUTION"</data>
+  <data key="d4">"Premiums are automatically deducted from your bank account."&lt;SEP&gt;"The account from which premiums are deducted."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;$3,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The death benefit paid during Year 1."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;PASSIVE RECIPIENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The group shifted from passive recipients to active participants."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;GUARANTEED ISSUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY FEATURE"</data>
+  <data key="d4">"This policy is guaranteed issue, meaning it is issued without medical underwriting."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;HUMAN HISTORY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The ensuing silence was about their role in this grand cosmic play, one that could rewrite human history."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;SUICIDE EXCLUSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY EXCLUSION"</data>
+  <data key="d4">"If death occurs by suicide within 2 years of the issue date, only premiums paid are returned."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;$7,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The death benefit paid during Year 2."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;ACTIVE PARTICIPANTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The group shifted from passive recipients to active participants."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;1-800-266-3678&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONTACT INFORMATION"</data>
+  <data key="d4">"The toll-free number for questions is 1-800-266-3678."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;1ST OF EACH MONTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Premiums are automatically deducted on the 1st of each month."&lt;SEP&gt;"The primary deduction date for premiums."&lt;SEP&gt;"The scheduled date for monthly premium deduction."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;OPERATIVES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"They were mere operatives."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;ISSUE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The suicide exclusion is measured from the issue date."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;MEDICAL EXAMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"Not required for this policy."&lt;SEP&gt;"The policy was issued without requiring medical exams."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The stated death benefit of the policy, $10,000."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;MERCER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Mercer’s instincts gained precedence."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;CHIEF OPERATING OFFICER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The Chief Operating Officer signed the policy."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</node>
+<node id="&quot;FINAL EXPENSE LIFE INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY"</data>
+  <data key="d4">"A simplified issue whole life insurance policy designed to help cover funeral and final expenses, with no medical exams or health questions required."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;GUARDIANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"They had become guardians of a threshold."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"Only the premiums paid are returned in case of suicide within 2 years."&lt;SEP&gt;"The total premiums paid by the insured, which are added to the death benefit in the first two years."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;ACCIDENTAL DEATH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"A death resulting from a sudden, unexpected event causing injury that leads to death within 90 days."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;INSTINCTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Mercer’s instincts gained precedence."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;COMFORTCARE SENIOR INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"ComfortCare Senior Insurance is the issuing organization."&lt;SEP&gt;"The insurance provider offering the Final Expense Life Insurance policy."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;SIMPLIFIED ISSUE WHOLE LIFE INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of life insurance that does not require medical exams or health questions."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;THRESHOLD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"They were guardians of a threshold."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;WAR EXCLUSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY EXCLUSION"</data>
+  <data key="d4">"This policy does not have a war exclusion."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;SUDDEN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ATTRIBUTE"</data>
+  <data key="d4">"An accident is defined as a sudden event."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;TEAM’S MANDATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The team’s mandate had evolved."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;MAY 1, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The effective date of the policy."&lt;SEP&gt;"The policy was signed on May 1, 2024."</data>
+  <data key="d2">chunk-27f7419b8e9547f0a8504d81113f4cd5&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;FUNERAL EXPENSES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EXPENSE"</data>
+  <data key="d4">"The policy is designed to help cover funeral and final expenses."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;MESSAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"They were keepers of a message."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;FULL BENEFIT AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The $10,000 death benefit paid immediately upon accidental death."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;AVIATION EXCLUSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY EXCLUSION"</data>
+  <data key="d4">"This policy does not have an aviation exclusion."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;UNEXPECTED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ATTRIBUTE"</data>
+  <data key="d4">"An accident is defined as an unexpected event."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;METAMORPHOSIS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"A metamorphosis had begun."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;$87.50&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The guaranteed monthly premium for the policy."&lt;SEP&gt;"The monthly premium amount."&lt;SEP&gt;"The monthly premium is $87.50 and will never increase."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7&lt;SEP&gt;chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;FINAL EXPENSES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EXPENSE"</data>
+  <data key="d4">"The policy is designed to help cover funeral and final expenses."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;REALM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"They were keepers of a message from a realm beyond stars and stripes."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;TRAVEL RESTRICTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY RESTRICTION"</data>
+  <data key="d4">"This policy has no travel restrictions."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;INJURY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"An accident causes injury."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;OPERATION: DULCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Operation: Dulce hummed with the newfound frequency of their daring."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;CC-FE-2024-9903&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_NUMBER"</data>
+  <data key="d4">"The unique identifier for the insurance policy."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;ELEVATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Their mission was elevated."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The beneficiary is responsible for filing a claim."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<node id="&quot;90 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The window within which death must occur after an accident to qualify for full benefits."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;FREQUENCY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Operation: Dulce hummed with the newfound frequency of their daring."</data>
+  <data key="d2">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</node>
+<node id="&quot;DEATH CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A certified copy of the death certificate is required to file a claim."</data>
+  <data key="d2">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;This policy was guaranteed issue.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy was guaranteed issue.&quot;" target="&quot;GUARANTEED ISSUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy was issued without medical questions or exams. The graded benefit schedule applies because of this.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy was issued without medical questions or exams. The graded benefit schedule applies because of this.&quot;" target="&quot;MEDICAL QUESTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy was issued without medical questions or exams. The graded benefit schedule applies because of this.&quot;" target="&quot;GRADED BENEFIT SCHEDULE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy was issued without medical questions or exams. The graded benefit schedule applies because of this.&quot;" target="&quot;MEDICAL EXAMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;It was clear that the decisions they made in the ensuing hours could redefine humanity’s place in the cosmos or condemn them to ignorance and potential peril.&quot;" target="&quot;DECISIONS&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;It was clear that the decisions they made in the ensuing hours could redefine humanity’s place in the cosmos or condemn them to ignorance and potential peril.&quot;" target="&quot;HUMANITY’S PLACE&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;It was clear that the decisions they made in the ensuing hours could redefine humanity’s place in the cosmos or condemn them to ignorance and potential peril.&quot;" target="&quot;COSMOS&quot;">
+  <data key="d5">360.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;It was clear that the decisions they made in the ensuing hours could redefine humanity’s place in the cosmos or condemn them to ignorance and potential peril.&quot;" target="&quot;IGNORANCE&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;It was clear that the decisions they made in the ensuing hours could redefine humanity’s place in the cosmos or condemn them to ignorance and potential peril.&quot;" target="&quot;PERIL&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid. An accident means a sudden, unexpected event causing injury that results in death within 90 days of the event.&quot;" target="&quot;ACCIDENTAL DEATH&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid. An accident means a sudden, unexpected event causing injury that results in death within 90 days of the event.&quot;" target="&quot;SUDDEN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid. An accident means a sudden, unexpected event causing injury that results in death within 90 days of the event.&quot;" target="&quot;FULL BENEFIT AMOUNT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid. An accident means a sudden, unexpected event causing injury that results in death within 90 days of the event.&quot;" target="&quot;UNEXPECTED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid. An accident means a sudden, unexpected event causing injury that results in death within 90 days of the event.&quot;" target="&quot;INJURY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXCEPTION - ACCIDENTAL DEATH: If death results from an accident at any time, we pay the full benefit amount immediately, plus all premiums paid. An accident means a sudden, unexpected event causing injury that results in death within 90 days of the event.&quot;" target="&quot;90 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We will pay valid claims within 5 business days.&quot;" target="&quot;VALID CLAIMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We will pay valid claims within 5 business days.&quot;" target="&quot;5 BUSINESS DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Together, they stood on the edge of the unknown, forging humanity’s response to a message from the heavens.&quot;" target="&quot;EDGE OF THE UNKNOWN&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Together, they stood on the edge of the unknown, forging humanity’s response to a message from the heavens.&quot;" target="&quot;HUMANITY’S RESPONSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Together, they stood on the edge of the unknown, forging humanity’s response to a message from the heavens.&quot;" target="&quot;HEAVENS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If payment is not received, you have 30 days to pay before the policy cancels.&quot;" target="&quot;GRACE PERIOD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If payment is not received, you have 30 days to pay before the policy cancels.&quot;" target="&quot;POLICY CANCELLATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants.&quot;" target="&quot;CONNECTION&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants.&quot;" target="&quot;STARS&quot;">
+  <data key="d5">360.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants.&quot;" target="&quot;GROUP&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants.&quot;" target="&quot;CRYSTALLIZING WARNING&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants.&quot;" target="&quot;PASSIVE RECIPIENTS&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants.&quot;" target="&quot;ACTIVE PARTICIPANTS&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Final Expense Life Insurance, ComfortCare Senior Insurance: This is a simplified issue whole life insurance policy designed to help cover funeral and final expenses. There are no medical exams or health questions required.&quot;" target="&quot;FINAL EXPENSE LIFE INSURANCE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Final Expense Life Insurance, ComfortCare Senior Insurance: This is a simplified issue whole life insurance policy designed to help cover funeral and final expenses. There are no medical exams or health questions required.&quot;" target="&quot;COMFORTCARE SENIOR INSURANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Final Expense Life Insurance, ComfortCare Senior Insurance: This is a simplified issue whole life insurance policy designed to help cover funeral and final expenses. There are no medical exams or health questions required.&quot;" target="&quot;SIMPLIFIED ISSUE WHOLE LIFE INSURANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Final Expense Life Insurance, ComfortCare Senior Insurance: This is a simplified issue whole life insurance policy designed to help cover funeral and final expenses. There are no medical exams or health questions required.&quot;" target="&quot;FUNERAL EXPENSES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Final Expense Life Insurance, ComfortCare Senior Insurance: This is a simplified issue whole life insurance policy designed to help cover funeral and final expenses. There are no medical exams or health questions required.&quot;" target="&quot;FINAL EXPENSES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Date: May 1, 2024&quot;" target="&quot;MAY 1, 2024&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy builds cash value slowly. Guaranteed cash values are shown in the table we sent you.&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy builds cash value slowly. Guaranteed cash values are shown in the table we sent you.&quot;" target="&quot;GUARANTEED CASH VALUES&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy builds cash value slowly. Guaranteed cash values are shown in the table we sent you.&quot;" target="&quot;TABLE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 Your monthly premium is $87.50 and will never increase. 3.2 Premiums are automatically deducted from your bank account on the 1st of each month. 3.3 If a payment fails, we will try again on the 15th.&quot;" target="&quot;NEVER INCREASE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 Your monthly premium is $87.50 and will never increase. 3.2 Premiums are automatically deducted from your bank account on the 1st of each month. 3.3 If a payment fails, we will try again on the 15th.&quot;" target="&quot;PAYMENT FAILURE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 Your monthly premium is $87.50 and will never increase. 3.2 Premiums are automatically deducted from your bank account on the 1st of each month. 3.3 If a payment fails, we will try again on the 15th.&quot;" target="&quot;AUTOMATIC DEDUCTION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 Your monthly premium is $87.50 and will never increase. 3.2 Premiums are automatically deducted from your bank account on the 1st of each month. 3.3 If a payment fails, we will try again on the 15th.&quot;" target="&quot;15TH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 Your monthly premium is $87.50 and will never increase. 3.2 Premiums are automatically deducted from your bank account on the 1st of each month. 3.3 If a payment fails, we will try again on the 15th.&quot;" target="&quot;BANK ACCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 Your monthly premium is $87.50 and will never increase. 3.2 Premiums are automatically deducted from your bank account on the 1st of each month. 3.3 If a payment fails, we will try again on the 15th.&quot;" target="&quot;1ST OF EACH MONTH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 Your monthly premium is $87.50 and will never increase. 3.2 Premiums are automatically deducted from your bank account on the 1st of each month. 3.3 If a payment fails, we will try again on the 15th.&quot;" target="&quot;$87.50&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If a payment fails, we will try again on the 15th.&quot;" target="&quot;PAYMENT FAILURE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If a payment fails, we will try again on the 15th.&quot;" target="&quot;15TH&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The ensuing silence was palpable—a collective introspection about their role in this grand cosmic play, one that could rewrite human history.&quot;" target="&quot;SILENCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The ensuing silence was palpable—a collective introspection about their role in this grand cosmic play, one that could rewrite human history.&quot;" target="&quot;INTROSPECTION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The ensuing silence was palpable—a collective introspection about their role in this grand cosmic play, one that could rewrite human history.&quot;" target="&quot;COSMIC PLAY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The ensuing silence was palpable—a collective introspection about their role in this grand cosmic play, one that could rewrite human history.&quot;" target="&quot;HUMAN HISTORY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The beneficiary should call us at 1-800-COMFORT or send: • Death certificate (certified copy) • Completed claim form • This policy (if available)&quot;" target="&quot;CLAIM FORM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The beneficiary should call us at 1-800-COMFORT or send: • Death certificate (certified copy) • Completed claim form • This policy (if available)&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The beneficiary should call us at 1-800-COMFORT or send: • Death certificate (certified copy) • Completed claim form • This policy (if available)&quot;" target="&quot;1-800-COMFORT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The beneficiary should call us at 1-800-COMFORT or send: • Death certificate (certified copy) • Completed claim form • This policy (if available)&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The beneficiary should call us at 1-800-COMFORT or send: • Death certificate (certified copy) • Completed claim form • This policy (if available)&quot;" target="&quot;DEATH CERTIFICATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Restart your policy within 2 years by paying missed premiums with interest.&quot;" target="&quot;MISSED PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Restart your policy within 2 years by paying missed premiums with interest.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Restart your policy within 2 years by paying missed premiums with interest.&quot;" target="&quot;INTEREST&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After 2 years, if you stop paying premiums, your policy will automatically continue with a reduced benefit amount based on the cash value. No further premiums needed.&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After 2 years, if you stop paying premiums, your policy will automatically continue with a reduced benefit amount based on the cash value. No further premiums needed.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After 2 years, if you stop paying premiums, your policy will automatically continue with a reduced benefit amount based on the cash value. No further premiums needed.&quot;" target="&quot;REDUCED BENEFIT AMOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After 2 years, if you stop paying premiums, your policy will automatically continue with a reduced benefit amount based on the cash value. No further premiums needed.&quot;" target="&quot;NO FURTHER PREMIUMS NEEDED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage is available for ages 50-85.&quot;" target="&quot;COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage is available for ages 50-85.&quot;" target="&quot;AGE 50&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage is available for ages 50-85.&quot;" target="&quot;AGE 85&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy #: CC-FE-2024-9903, Effective: May 1, 2024, Type: Guaranteed Issue Whole Life.&quot;" target="&quot;GUARANTEED ISSUE WHOLE LIFE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy #: CC-FE-2024-9903, Effective: May 1, 2024, Type: Guaranteed Issue Whole Life.&quot;" target="&quot;MAY 1, 2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy #: CC-FE-2024-9903, Effective: May 1, 2024, Type: Guaranteed Issue Whole Life.&quot;" target="&quot;CC-FE-2024-9903&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You can cancel within 30 days of receiving this policy for a full refund.&quot;" target="&quot;30-DAY FREE LOOK&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You can cancel within 30 days of receiving this policy for a full refund.&quot;" target="&quot;FULL REFUND&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy builds a small cash value over time.&quot;" target="&quot;OVER TIME&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy builds a small cash value over time.&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You can borrow against the cash value or surrender the policy for the cash value at any time.&quot;" target="&quot;BORROW AGAINST CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You can borrow against the cash value or surrender the policy for the cash value at any time.&quot;" target="&quot;SURRENDER POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;They were no longer mere operatives; they had become guardians of a threshold, keepers of a message from a realm beyond stars and stripes.&quot;" target="&quot;OPERATIVES&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;They were no longer mere operatives; they had become guardians of a threshold, keepers of a message from a realm beyond stars and stripes.&quot;" target="&quot;GUARDIANS&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;They were no longer mere operatives; they had become guardians of a threshold, keepers of a message from a realm beyond stars and stripes.&quot;" target="&quot;THRESHOLD&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;They were no longer mere operatives; they had become guardians of a threshold, keepers of a message from a realm beyond stars and stripes.&quot;" target="&quot;MESSAGE&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;They were no longer mere operatives; they had become guardians of a threshold, keepers of a message from a realm beyond stars and stripes.&quot;" target="&quot;REALM&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of the issue date, we will only return the premiums paid.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of the issue date, we will only return the premiums paid.&quot;" target="&quot;SUICIDE EXCLUSION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of the issue date, we will only return the premiums paid.&quot;" target="&quot;ISSUE DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of the issue date, we will only return the premiums paid.&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums are automatically deducted from your bank account on the 1st of each month.&quot;" target="&quot;PREMIUMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums are automatically deducted from your bank account on the 1st of each month.&quot;" target="&quot;BANK ACCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums are automatically deducted from your bank account on the 1st of each month.&quot;" target="&quot;1ST OF EACH MONTH&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Dorothy Mae Johnson, Birth Date: June 12, 1951, Age: 72 years, Gender: Female.&quot;" target="&quot;DOROTHY MAE JOHNSON&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Dorothy Mae Johnson, Birth Date: June 12, 1951, Age: 72 years, Gender: Female.&quot;" target="&quot;JUNE 12, 1951&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Dorothy Mae Johnson, Birth Date: June 12, 1951, Age: 72 years, Gender: Female.&quot;" target="&quot;72 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Dorothy Mae Johnson, Birth Date: June 12, 1951, Age: 72 years, Gender: Female.&quot;" target="&quot;FEMALE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your premium will never increase as long as you keep paying it. Your coverage will never decrease.&quot;" target="&quot;PREMIUM WILL NEVER INCREASE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your premium will never increase as long as you keep paying it. Your coverage will never decrease.&quot;" target="&quot;COVERAGE WILL NEVER DECREASE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy has no war exclusion, no aviation exclusion, and no travel restrictions.&quot;" target="&quot;WAR EXCLUSION&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy has no war exclusion, no aviation exclusion, and no travel restrictions.&quot;" target="&quot;AVIATION EXCLUSION&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy has no war exclusion, no aviation exclusion, and no travel restrictions.&quot;" target="&quot;TRAVEL RESTRICTIONS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This elevation in their mission could not be shackled by regulations and established protocols—it demanded a new perspective, a new resolve.&quot;" target="&quot;RESOLVE&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This elevation in their mission could not be shackled by regulations and established protocols—it demanded a new perspective, a new resolve.&quot;" target="&quot;MISSION&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This elevation in their mission could not be shackled by regulations and established protocols—it demanded a new perspective, a new resolve.&quot;" target="&quot;ELEVATION&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You can change to annual or quarterly payments if you prefer.&quot;" target="&quot;ANNUAL PAYMENTS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You can change to annual or quarterly payments if you prefer.&quot;" target="&quot;QUARTERLY PAYMENTS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;$87.50 and will never increase.&quot;" target="&quot;$87.50&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Mercer’s latter instincts gained precedence— the team’s mandate had evolved, no longer solely to observe and report but to interact and prepare.&quot;" target="&quot;MERCER&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Mercer’s latter instincts gained precedence— the team’s mandate had evolved, no longer solely to observe and report but to interact and prepare.&quot;" target="&quot;INSTINCTS&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Mercer’s latter instincts gained precedence— the team’s mandate had evolved, no longer solely to observe and report but to interact and prepare.&quot;" target="&quot;TEAM’S MANDATE&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;For questions, call: 1-800-COMFORT (1-800-266-3678)&quot;" target="&quot;1-800-COMFORT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;For questions, call: 1-800-COMFORT (1-800-266-3678)&quot;" target="&quot;1-800-266-3678&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Benefit Amount: $10,000, Monthly Premium: $87.50 (guaranteed level for life), Payment Method: Bank draft on 1st of each month, Premium Payer: Dorothy Mae Johnson.&quot;" target="&quot;DOROTHY MAE JOHNSON&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Benefit Amount: $10,000, Monthly Premium: $87.50 (guaranteed level for life), Payment Method: Bank draft on 1st of each month, Premium Payer: Dorothy Mae Johnson.&quot;" target="&quot;$10,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Benefit Amount: $10,000, Monthly Premium: $87.50 (guaranteed level for life), Payment Method: Bank draft on 1st of each month, Premium Payer: Dorothy Mae Johnson.&quot;" target="&quot;GUARANTEED LEVEL FOR LIFE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Benefit Amount: $10,000, Monthly Premium: $87.50 (guaranteed level for life), Payment Method: Bank draft on 1st of each month, Premium Payer: Dorothy Mae Johnson.&quot;" target="&quot;BANK DRAFT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Benefit Amount: $10,000, Monthly Premium: $87.50 (guaranteed level for life), Payment Method: Bank draft on 1st of each month, Premium Payer: Dorothy Mae Johnson.&quot;" target="&quot;1ST OF EACH MONTH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Benefit Amount: $10,000, Monthly Premium: $87.50 (guaranteed level for life), Payment Method: Bank draft on 1st of each month, Premium Payer: Dorothy Mae Johnson.&quot;" target="&quot;$87.50&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;There are no medical exams or health questions required.&quot;" target="&quot;HEALTH QUESTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;There are no medical exams or health questions required.&quot;" target="&quot;MEDICAL EXAMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Approximate cash value after 10 years: $3,200.&quot;" target="&quot;$3,200&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Approximate cash value after 10 years: $3,200.&quot;" target="&quot;10 YEARS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Tension threaded through the dialogue of beeps and static as communications with Washington buzzed in the background.&quot;" target="&quot;TENSION&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Tension threaded through the dialogue of beeps and static as communications with Washington buzzed in the background.&quot;" target="&quot;COMMUNICATIONS&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Tension threaded through the dialogue of beeps and static as communications with Washington buzzed in the background.&quot;" target="&quot;WASHINGTON&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Or you can take the cash value and cancel the policy.&quot;" target="&quot;TAKE CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A metamorphosis had begun, and Operation: Dulce hummed with the newfound frequency of their daring, a tone set not by the earthly&quot;" target="&quot;DARING&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A metamorphosis had begun, and Operation: Dulce hummed with the newfound frequency of their daring, a tone set not by the earthly&quot;" target="&quot;METAMORPHOSIS&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A metamorphosis had begun, and Operation: Dulce hummed with the newfound frequency of their daring, a tone set not by the earthly&quot;" target="&quot;OPERATION: DULCE&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A metamorphosis had begun, and Operation: Dulce hummed with the newfound frequency of their daring, a tone set not by the earthly&quot;" target="&quot;FREQUENCY&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After this policy has been in force for 2 years, we cannot cancel it or deny claims except for non-payment of premiums.&quot;" target="&quot;POLICY IN FORCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After this policy has been in force for 2 years, we cannot cancel it or deny claims except for non-payment of premiums.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After this policy has been in force for 2 years, we cannot cancel it or deny claims except for non-payment of premiums.&quot;" target="&quot;CANCELLATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After this policy has been in force for 2 years, we cannot cancel it or deny claims except for non-payment of premiums.&quot;" target="&quot;CLAIMS DENIAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;After this policy has been in force for 2 years, we cannot cancel it or deny claims except for non-payment of premiums.&quot;" target="&quot;NON-PAYMENT OF PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Linda Sue Johnson (Daughter) - 100%.&quot;" target="&quot;LINDA SUE JOHNSON&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Linda Sue Johnson (Daughter) - 100%.&quot;" target="&quot;DAUGHTER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Linda Sue Johnson (Daughter) - 100%.&quot;" target="&quot;100%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You own this policy. It stays with you even if you move to another state.&quot;" target="&quot;POLICY OWNERSHIP&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You own this policy. It stays with you even if you move to another state.&quot;" target="&quot;PORTABILITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The encrypted dialogue continued to unfold, its intricate patterns showing an almost uncanny anticipation.&quot;" target="&quot;ENCRYPTED DIALOGUE&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The encrypted dialogue continued to unfold, its intricate patterns showing an almost uncanny anticipation.&quot;" target="&quot;PATTERNS&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You can change your beneficiary at any time by calling us or sending a written request.&quot;" target="&quot;CHANGE BENEFICIARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You can change your beneficiary at any time by calling us or sending a written request.&quot;" target="&quot;WRITTEN REQUEST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The team stood, a portentous air enveloping them.&quot;" target="&quot;TEAM&quot;">
+  <data key="d5">475.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The team stood, a portentous air enveloping them.&quot;" target="&quot;PORTENTOUS AIR&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may restart your policy within 2 years by paying missed premiums with interest.&quot;" target="&quot;MISSED PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may restart your policy within 2 years by paying missed premiums with interest.&quot;" target="&quot;INTEREST&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may restart your policy within 2 years by paying missed premiums with interest.&quot;" target="&quot;RESTART POLICY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is issued in Tampa, Florida.&quot;" target="&quot;TAMPA&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is issued in Tampa, Florida.&quot;" target="&quot;FLORIDA&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;$10,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;YEAR 1&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;MAY 1, 2025&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;YEAR 2&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;MAY 1, 2026&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;$3,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;$7,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;FACE AMOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IF DEATH OCCURS: During Year 1 (before May 1, 2025): We pay 30% of face amount ($3,000) plus all premiums paid. During Year 2 (May 1, 2025 - April 30, 2026): We pay 70% of face amount ($7,000) plus all premiums paid. After Year 2 (on or after May 1, 2026): We pay the full benefit amount ($10,000).&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Mail to: ComfortCare Claims, P.O. Box 777, Tampa, FL 33601&quot;" target="&quot;COMFORTCARE CLAIMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Mail to: ComfortCare Claims, P.O. Box 777, Tampa, FL 33601&quot;" target="&quot;P.O. BOX 777&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Mail to: ComfortCare Claims, P.O. Box 777, Tampa, FL 33601&quot;" target="&quot;FL 33601&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Mail to: ComfortCare Claims, P.O. Box 777, Tampa, FL 33601&quot;" target="&quot;TAMPA&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-d5af5d02f06aac56354f5591615410e7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This might well be our first contact,&quot; he acknowledged, &quot;And we need to be ready for whatever answers back.&quot;" target="&quot;FIRST CONTACT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This might well be our first contact,&quot; he acknowledged, &quot;And we need to be ready for whatever answers back.&quot;" target="&quot;ANSWERS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-0a39f78a6c9af68edd4a7d8ef2dadc96</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Signed: _____________________________ Chief Operating Officer ComfortCare Senior Insurance&quot;" target="&quot;CHIEF OPERATING OFFICER&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Signed: _____________________________ Chief Operating Officer ComfortCare Senior Insurance&quot;" target="&quot;COMFORTCARE SENIOR INSURANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-27f7419b8e9547f0a8504d81113f4cd5</data>
+</edge>
+</graph></graphml>

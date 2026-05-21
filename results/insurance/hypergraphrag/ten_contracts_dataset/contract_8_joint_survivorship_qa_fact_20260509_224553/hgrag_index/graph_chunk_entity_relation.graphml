@@ -1,0 +1,1617 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;═══════════════════════════════════════════════════════════════════&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">4.0</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy is designed for estate planning and estate tax liquidity purposes.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;No war, aviation, or travel exclusions apply to this policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Annual premium of $32,400 is guaranteed level for the first 10 policy years.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The policy owner (the Trust) has all ownership rights including the right to: Designate and change beneficiaries; Assign the policy; Take policy loans; Surrender the policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;August 20, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The death benefit is payable only upon the death of the SECOND insured to die (survivorship basis).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This option is rarely exercised and primarily exists for divorce or trust modification situations.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">14.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Upon the death of the second insured, we will pay $2,500,000 to the designated beneficiary, minus any outstanding loans.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium waiver is not available on joint survivorship policies.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxable estates.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Projected cash value (based on current assumptions): End of Year 10: $285,000 End of Year 20: $712,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Neither insured has ownership rights unless specified in the trust document.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Exclusions apply to certain conditions or events as defined in Article VII.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Proof of both deaths must be submitted: • Death certificate of first insured • Death certificate of second insured • Completed claim forms.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premiums are payable annually on August 20th.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The surviving insured becomes a single-life whole life policy for administrative purposes only. Coverage amount and premium remain unchanged.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy may not be assigned without trustee authorization.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Available after policy has been in force for 2 years: Maximum: 90% of cash surrender value; Interest rate: Variable, currently 5.5% per annum; Loans reduce death benefit dollar-for-dollar; Available before or after first death.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy accumulates cash value on a guaranteed schedule.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If either insured commits suicide within 2 years of the issue date, the death benefit is limited to return of premiums paid.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Payment will be made within 30 days of receiving complete documentation.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Proceeds paid to the trust should not be includable in either insured's estate if the trust is properly structured and maintained.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues in force (b) Premium payment obligation continues (c) Policy owner receives written confirmation (d) Death certificate must be filed with us.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The policy owner may cancel within 30 days of policy receipt for a full refund of premium paid.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Upon the first death, the policy owner may elect to split this policy into two separate single-life policies, one on each insured.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the first insured dies, no death benefit is paid and the policy continues in force covering the surviving insured.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;, Connecticut&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Consult with estate planning attorney regarding: Three-year lookback rule if policy transferred to trust; Crummey power requirements; Annual exclusion gift planning.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium may increase but will never exceed the maximum guaranteed premium of $48,600 per year.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Estate Planning Life Assurance Ltd. is headquartered in Hartford, Connecticut.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The death benefit is paid only after both insureds have died.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premiums continue after the first death at the same rate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This suicide clause resets if the policy is reinstated.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If both insureds die in the same accident or incident and it cannot be determined who died first, the death benefit will be paid immediately.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Must elect within 2 years of first death; Each policy's face amount determined by actuarial allocation; Both insureds must be alive at time of first death (available only in rare simultaneous death situations with medical uncertainty); Evidence of insurability may be required.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Medical uncertainty may be required as part of the underwriting process.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Partial withdrawals are not permitted under this policy type.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Chairman &amp; Chief Executive Officer&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If payment is not received, you have 60 days to pay before the policy cancels.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;We may contest this policy for material misrepresentation within 2 years of issue while both insureds are living.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If deaths occur within 30 days of each other, this will be treated as simultaneous for claim purposes.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This is a joint life insurance policy insuring two lives.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;SINGLE-LIFE WHOLE LIFE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"The surviving insured becomes a single-life whole life policy for administrative purposes."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;ARTICLE VII&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Exclusions are defined in Article VII."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;SECOND INSURED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"Second to die; triggers payout."&lt;SEP&gt;"The second person to die, whose death triggers the payout of the death benefit."&lt;SEP&gt;"The second person to die; death triggers the payout."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;$285,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"Projected cash value at end of Year 10 is $285,000."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;CLAIM PURPOSES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The criteria used by insurers to process death benefits."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;ANNUAL PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The annual premium is $32,400 and is guaranteed level for the first 10 policy years."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;OPTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"This option is rarely exercised and primarily exists for divorce or trust modification situations."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;POLICY CONTINUATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TERM"</data>
+  <data key="d4">"Policy remains active after first death."&lt;SEP&gt;"The policy remains active after the first death."&lt;SEP&gt;"The policy remains active after the first insured’s death, continuing to cover the surviving insured."&lt;SEP&gt;"The policy remains in force after the first insured's death, continuing to cover the surviving insured."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;$712,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"Projected cash value at end of Year 20 is $712,000."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;BENEFICIARIES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Individuals designated to receive the death benefit; can be changed by the policy owner."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;$32,400&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The annual premium is $32,400."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;SUICIDE CLAUSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"A clause that limits the death benefit to return of premiums paid if either insured commits suicide within 2 years of the issue date."&lt;SEP&gt;"The suicide clause resets upon policy reinstatement."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;BOTH INSUREDS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"GROUP"</data>
+  <data key="d4">"The two individuals covered by the policy, both of whom must pass away before the death benefit is paid."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;YEAR 10&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Projected cash value is based on assumptions at end of Year 10."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;SURVIVING INSURED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The surviving insured becomes a single-life whole life policy for administrative purposes after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;ASSIGNMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL ACTION"</data>
+  <data key="d4">"The transfer of policy rights to another party; permitted with trustee authorization."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;FIRST 10 POLICY YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The premium is guaranteed level for the first 10 policy years."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;INSURED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"An individual covered under the policy; either insured may commit suicide."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;ESTATE PLANNING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PURPOSE"</data>
+  <data key="d4">"Primary purpose of the policy."&lt;SEP&gt;"The primary purpose of the policy, used to manage and transfer assets within an estate."&lt;SEP&gt;"The primary purpose of the policy."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;YEAR 20&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Projected cash value is based on assumptions at end of Year 20."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;SURRENDER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL ACTION"</data>
+  <data key="d4">"The act of terminating the policy and receiving its cash value."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;PREMIUM INCREASE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"After year 10, the premium may increase but will not exceed $48,600 per year."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;ISSUE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date when the policy is issued; contestability period begins on this date."&lt;SEP&gt;"The date when the policy is issued; suicide within 2 years of this date triggers the clause."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;ESTATE TAX LIQUIDITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Ensures funds are available to pay estate taxes."&lt;SEP&gt;"Ensures funds for estate tax payment."&lt;SEP&gt;"The policy ensures funds are available to pay estate taxes upon the death of the second insured."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;POLICY LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL FEATURE"</data>
+  <data key="d4">"A feature allowing the policy owner to borrow against the policy’s cash value."&lt;SEP&gt;"Policy loans are available after the policy has been in force for 2 years."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;TRUST DOCUMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The legal document that governs the trust; specifies whether insureds have ownership rights."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;MAXIMUM GUARANTEED PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The maximum guaranteed premium is $48,600 per year."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The total amount of premiums paid by the insured; returned if suicide occurs within 2 years."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;BENEFICIARY: HARTFORD FAMILY IRREVOCABLE LIFE INSURANCE TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The entity designated to receive the death benefit upon the second insured’s death."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Maximum loan amount is 90% of cash surrender value."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;TRUSTEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"An individual or entity responsible for managing the trust; must authorize any assignment."&lt;SEP&gt;"The entity responsible for managing the trust’s assets and fulfilling its obligations."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;REINSTATEMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The policy is reinstated, causing the suicide clause to reset."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;HARTFORD FAMILY IRREVOCABLE LIFE INSURANCE TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"A trust established on August 1, 2024, serving as both policy owner and beneficiary."&lt;SEP&gt;"The trust that owns the policy and receives the death benefit."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;INTEREST RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Interest rate for policy loans is variable, currently 5.5% per annum."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;AUTHORIZATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL ACTION"</data>
+  <data key="d4">"Permission required for policy assignment; must come from the trustee."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;CONTESTABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The policy may be contested for material misrepresentation within 2 years of issue while both insureds are alive."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;FIRST NATIONAL BANK OF CONNECTICUT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The trustee of the Hartford Family Irrevocable Life Insurance Trust."&lt;SEP&gt;"The trustee of the trust."&lt;SEP&gt;"Trustee."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;5.5% PER ANNUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"Interest rate for policy loans is currently 5.5% per annum."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;FREE LOOK PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"A 30-day window during which the policy owner may cancel the policy for a full refund."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;$48,600&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The maximum guaranteed premium is $48,600 per year."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"A false or misleading statement that is significant enough to affect the policy decision."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;ANNUAL PREMIUM: $32,400 (GUARANTEED LEVEL FOR 10 YEARS)&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_TERM"</data>
+  <data key="d4">"The yearly payment required to keep the policy active, guaranteed for 10 years."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;FIRST INSURED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"First to die; no payout."&lt;SEP&gt;"The first insured is an individual whose death triggers the provisions in Article III, but no death benefit is paid."&lt;SEP&gt;"The first person to die; no benefit paid upon death."&lt;SEP&gt;"The first person to die; no death benefit is paid upon their death, but the policy remains active."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2&lt;SEP&gt;chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;BEFORE OR AFTER FIRST DEATH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Policy loans are available before or after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;POLICY RECEIPT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date the policy is received; the free look period begins on this date."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Premiums are payable annually on August 20th."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;INSUREDS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Both individuals covered under the policy; the contestability period applies while both are living."&lt;SEP&gt;"The individuals covered by the policy; do not have ownership rights unless specified in the trust document."&lt;SEP&gt;"The individuals covered by the policy; their taxable estates are excluded from proceeds."&lt;SEP&gt;"The individuals whose estates should not include the proceeds."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;PREMIUM PAYOR: HARTFORD FAMILY IRREVOCABLE TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The entity responsible for paying the annual premiums."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;DOCUMENT SEPARATOR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FORMATTING ELEMENT"</data>
+  <data key="d4">"The line of equal signs serves as a visual separator in the document, likely used for formatting purposes."</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</node>
+<node id="&quot;PARTIAL WITHDRAWALS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL FEATURE"</data>
+  <data key="d4">"Partial withdrawals are not permitted under this policy type."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;FULL REFUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The return of the entire premium paid if the policy is canceled within the free look period."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;AUGUST 20TH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Premiums are payable annually on August 20th."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;WAR EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Exclusions related to death caused by war; none apply to this policy."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;CLAIM FORMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Forms required to file a claim."&lt;SEP&gt;"Official forms required to initiate the death benefit payout."&lt;SEP&gt;"Required for claim filing."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;THIS POLICY TYPE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"Partial withdrawals are not permitted under this policy type."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;PREMIUM PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The total amount paid by the policy owner; refunded in full if canceled within the free look period."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;PREMIUM CONTINUATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Premiums continue after the first death at the same rate."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;AVIATION EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Exclusions related to death caused by aviation incidents; none apply to this policy."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;HARTFORD FAMILY IRREVOCABLE TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"Policy owner and beneficiary."&lt;SEP&gt;"The policy owner and beneficiary, established on August 1, 2024, with First National Bank of Connecticut as trustee."&lt;SEP&gt;"The policy owner and beneficiary."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;POLICY OWNER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL ENTITY"</data>
+  <data key="d4">"The entity that holds ownership rights over the policy; in this case, the Trust."&lt;SEP&gt;"The entity that holds the policy; may cancel within 30 days of receipt."&lt;SEP&gt;"The policy owner may elect to split the policy after the first death."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;ESTATE PLANNING LIFE ASSURANCE LTD.&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"A life insurance company offering policies with estate planning features."&lt;SEP&gt;"The insurance company issuing the policy."&lt;SEP&gt;"The insurer."&lt;SEP&gt;"The issuing company of the policy, providing life insurance services."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;SAME RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The premium continues at the same rate after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;AUGUST 1, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date the Hartford Family Irrevocable Life Insurance Trust was established."&lt;SEP&gt;"The date the trust was established."&lt;SEP&gt;"Trust establishment date."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;SPLIT OPTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE FEATURE"</data>
+  <data key="d4">"The policy owner may elect to split the policy into two separate single-life policies after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;HARTFORD, CONNECTICUT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The city and state where Estate Planning Life Assurance Ltd. is headquartered."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;PREMIUM WAIVER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE FEATURE"</data>
+  <data key="d4">"Premium waiver is not available on joint survivorship policies."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;TRAVEL EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Exclusions related to death caused by travel; none apply to this policy."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;$2,500,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_AMOUNT"</data>
+  <data key="d4">"The death benefit amount payable upon the death of the second insured."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Loans reduce death benefit dollar-for-dollar."&lt;SEP&gt;"No death benefit is paid when the first insured dies."&lt;SEP&gt;"The amount paid upon death; limited to return of premiums if suicide occurs within 2 years."&lt;SEP&gt;"The amount paid upon death; paid immediately in cases of simultaneous death."&lt;SEP&gt;"The amount paid upon the death of the second insured, which is $2,500,000."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2&lt;SEP&gt;chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;SINGLE-LIFE POLICIES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"The policy splits into two separate single-life policies, one on each insured."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;CHAIRMAN &amp; CHIEF EXECUTIVE OFFICER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The highest-ranking executive of Estate Planning Life Assurance Ltd.; responsible for overall leadership."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;JOINT SURVIVORSHIP POLICIES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"Premium waiver is not available on joint survivorship policies."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;IRREVOCABLE TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL ENTITY"</data>
+  <data key="d4">"A trust that cannot be easily changed or revoked, used to own the policy and exclude proceeds from taxable estates."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_TERM"</data>
+  <data key="d4">"Any loans taken against the policy that will be deducted from the death benefit."&lt;SEP&gt;"Loans against the policy that reduce the death benefit."&lt;SEP&gt;"Loans that reduce death benefit."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;AUGUST 20, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"August 20, 2024 is a specific date mentioned in the text, likely indicating the date of a document or event."&lt;SEP&gt;"The date the document was issued or signed."</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619&lt;SEP&gt;chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;2 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The election to split must be made within 2 years of the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The state of being eligible for life insurance based on health, age, and other factors."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;GRACE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"You have 60 days to pay before the policy cancels."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;TAXABLE ESTATES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL CONCEPT"</data>
+  <data key="d4">"The portion of an individual's estate subject to estate tax; proceeds from the policy are excluded."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;SECOND-TO-DIE WHOLE LIFE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of life insurance that pays only after the second insured dies."&lt;SEP&gt;"A type of life insurance that pays out only after the second of two insured individuals dies."&lt;SEP&gt;"Policy type that pays after second death."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;CHIEF EXECUTIVE OFFICER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The Chief Executive Officer (CEO) is the highest-ranking executive in an organization, responsible for overall management."</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</node>
+<node id="&quot;ACTUARIAL ALLOCATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Each policy's face amount is determined by actuarial allocation."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;JOINT SURVIVORSHIP LIFE INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY"</data>
+  <data key="d4">"A joint life insurance policy that covers two lives and pays the death benefit only after the second insured dies."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;COVERAGE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The coverage amount remains unchanged after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;PROCEEDS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The death benefit paid to the trust; should not be included in the insureds' estates."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;STANDARD RISK CLASS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RISK_CLASSIFICATION"</data>
+  <data key="d4">"Risk class of William Alexander Hartford."&lt;SEP&gt;"The risk classification of William Alexander Hartford, indicating average health and risk profile."&lt;SEP&gt;"William’s risk class."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Each policy's face amount is determined by actuarial allocation."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;WILLIAM ALEXANDER HARTFORD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"First insured, born December 5, 1956, age 67, male, risk class: Standard."&lt;SEP&gt;"First insured, male, born December 5, 1956, age 67, risk class: Standard."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;WRITTEN CONFIRMATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The policy owner receives written confirmation after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL ENTITY"</data>
+  <data key="d4">"The irrevocable trust that owns the policy and holds all ownership rights."&lt;SEP&gt;"The irrevocable trust that receives proceeds; must be properly structured and maintained."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;CONNECTICUT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Connecticut is a location mentioned in the text, likely referring to a state in the United States."</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</node>
+<node id="&quot;PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The premium remains unchanged after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;ELIZABETH ANNE HARTFORD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Second insured, born March 18, 1958, age 66, female, risk class: Preferred."&lt;SEP&gt;"Second insured, female, born March 18, 1958, age 66, risk class: Preferred."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;ESTATE PLANNING ATTORNEY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROFESSIONAL"</data>
+  <data key="d4">"A legal expert who advises on estate planning matters, including trust-related issues."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;60 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"You have 60 days to pay before the policy cancels."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;PREFERRED RISK CLASS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RISK_CLASSIFICATION"</data>
+  <data key="d4">"Elizabeth’s risk class."&lt;SEP&gt;"Risk class of Elizabeth Anne Hartford."&lt;SEP&gt;"The risk classification of Elizabeth Anne Hartford, indicating better health and lower risk profile."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;CHAIRMAN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The Chairman is a leadership position, likely referring to a senior executive in an organization."</data>
+  <data key="d2">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</node>
+<node id="&quot;SIMULTANEOUS DEATH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"An event where both insureds die in the same accident and it is impossible to determine who died first."&lt;SEP&gt;"Deaths occurring within 30 days of each other are treated as simultaneous."&lt;SEP&gt;"The split option is available only in rare simultaneous death situations with medical uncertainty."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;POLICY NUMBER: EPL-JSL-2024-1156&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"IDENTIFIER"</data>
+  <data key="d4">"Unique identifier assigned to the policy."&lt;SEP&gt;"Unique policy ID."&lt;SEP&gt;"Unique policy identifier."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;POLICY CANCELLATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The policy cancels if payment is not received within 60 days."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;THREE-YEAR LOOKBACK RULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL CONCEPT"</data>
+  <data key="d4">"A rule that may apply if the policy is transferred to a trust within three years of death."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;ANNUAL PREMIUM: $32,400&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_AMOUNT"</data>
+  <data key="d4">"Guaranteed annual premium."&lt;SEP&gt;"The guaranteed annual premium for 10 years."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;MEDICAL UNCERTAINTY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"A condition where medical information is incomplete or inconclusive, potentially affecting policy approval."&lt;SEP&gt;"The split option is available only in rare simultaneous death situations with medical uncertainty."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE FEATURE"</data>
+  <data key="d4">"Exclusions apply to certain conditions or events as defined in Article VII."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;CASH VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The policy accumulates cash value on a guaranteed schedule."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;CRUMMEY POWER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL CONCEPT"</data>
+  <data key="d4">"A provision that allows beneficiaries to withdraw contributions to a trust, required for certain tax advantages."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;DEATH BENEFIT: $2,500,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_AMOUNT"</data>
+  <data key="d4">"Payout amount."&lt;SEP&gt;"The amount paid upon the death of the second insured."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The life insurance policy owned by the irrevocable trust."&lt;SEP&gt;"The life insurance policy that cannot be assigned without trustee authorization."&lt;SEP&gt;"The life insurance policy that does not include war, aviation, or travel exclusions."&lt;SEP&gt;"The policy continues in force after the first insured's death."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Documentation or proof that an individual is eligible for life insurance based on health status."&lt;SEP&gt;"Evidence of insurability may be required to exercise the split option."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;ISSUE DATE: AUGUST 20, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Policy issuance date."&lt;SEP&gt;"The date the policy was issued."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;GUARANTEED SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Cash value accumulates on a guaranteed schedule."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;ANNUAL EXCLUSION GIFT PLANNING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TAX STRATEGY"</data>
+  <data key="d4">"A method to gift up to a certain amount per year without incurring gift tax."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;PREMIUM PAYMENT OBLIGATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"The obligation to pay premiums continues after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;RARELY EXERCISED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"The split option is rarely exercised."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;POLICY FORM: SECOND-TO-DIE WHOLE LIFE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"The type of policy, which is a second-to-die whole life insurance, meaning the death benefit is paid only after the second insured dies."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;DEATH CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Proof of death."&lt;SEP&gt;"Required legal document proving the death of each insured."&lt;SEP&gt;"Required proof of death."&lt;SEP&gt;"The death certificate must be filed with the insurer after the first death."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2&lt;SEP&gt;chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;ACCIDENT OR INCIDENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"A single event causing the deaths of both insureds."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</node>
+<node id="&quot;DIVORCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL EVENT"</data>
+  <data key="d4">"The split option primarily exists for divorce situations."&lt;SEP&gt;"This option exists for divorce situations."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;SURVIVORSHIP BASIS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TERM"</data>
+  <data key="d4">"A policy structure where the death benefit is paid only after both insured individuals have died."&lt;SEP&gt;"Payout only after both insureds die."&lt;SEP&gt;"The policy pays only after both insureds have died."</data>
+  <data key="d2">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;PROJECTED CASH VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Projected cash value at end of Year 10 is $285,000 and at end of Year 20 is $712,000."</data>
+  <data key="d2">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<node id="&quot;30 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"A time frame within which deaths are considered simultaneous for claim purposes."&lt;SEP&gt;"Payout timeframe."&lt;SEP&gt;"The timeframe for payment after documentation is complete."&lt;SEP&gt;"The timeframe within which the death benefit will be paid after complete documentation is received."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-ba3f3b68551881949333f09e2d573e06</data>
+</node>
+<node id="&quot;TRUST MODIFICATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL EVENT"</data>
+  <data key="d4">"The split option primarily exists for trust modification situations."&lt;SEP&gt;"This option exists for trust modification situations."</data>
+  <data key="d2">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;═══════════════════════════════════════════════════════════════════&quot;" target="&quot;DOCUMENT SEPARATOR&quot;">
+  <data key="d5">50.0</data>
+  <data key="d6">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is designed for estate planning and estate tax liquidity purposes.&quot;" target="&quot;ESTATE PLANNING&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is designed for estate planning and estate tax liquidity purposes.&quot;" target="&quot;ESTATE TAX LIQUIDITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No war, aviation, or travel exclusions apply to this policy.&quot;" target="&quot;WAR EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No war, aviation, or travel exclusions apply to this policy.&quot;" target="&quot;AVIATION EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No war, aviation, or travel exclusions apply to this policy.&quot;" target="&quot;TRAVEL EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No war, aviation, or travel exclusions apply to this policy.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual premium of $32,400 is guaranteed level for the first 10 policy years.&quot;" target="&quot;$32,400&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual premium of $32,400 is guaranteed level for the first 10 policy years.&quot;" target="&quot;FIRST 10 POLICY YEARS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual premium of $32,400 is guaranteed level for the first 10 policy years.&quot;" target="&quot;ANNUAL PREMIUM&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner (the Trust) has all ownership rights including the right to: Designate and change beneficiaries; Assign the policy; Take policy loans; Surrender the policy.&quot;" target="&quot;BENEFICIARIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner (the Trust) has all ownership rights including the right to: Designate and change beneficiaries; Assign the policy; Take policy loans; Surrender the policy.&quot;" target="&quot;ASSIGNMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner (the Trust) has all ownership rights including the right to: Designate and change beneficiaries; Assign the policy; Take policy loans; Surrender the policy.&quot;" target="&quot;SURRENDER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner (the Trust) has all ownership rights including the right to: Designate and change beneficiaries; Assign the policy; Take policy loans; Surrender the policy.&quot;" target="&quot;POLICY LOANS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner (the Trust) has all ownership rights including the right to: Designate and change beneficiaries; Assign the policy; Take policy loans; Surrender the policy.&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner (the Trust) has all ownership rights including the right to: Designate and change beneficiaries; Assign the policy; Take policy loans; Surrender the policy.&quot;" target="&quot;TRUST&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;August 20, 2024&quot;" target="&quot;AUGUST 20, 2024&quot;">
+  <data key="d5">75.0</data>
+  <data key="d6">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The death benefit is payable only upon the death of the SECOND insured to die (survivorship basis).&quot;" target="&quot;SECOND INSURED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The death benefit is payable only upon the death of the SECOND insured to die (survivorship basis).&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The death benefit is payable only upon the death of the SECOND insured to die (survivorship basis).&quot;" target="&quot;SURVIVORSHIP BASIS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This option is rarely exercised and primarily exists for divorce or trust modification situations.&quot;" target="&quot;OPTION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This option is rarely exercised and primarily exists for divorce or trust modification situations.&quot;" target="&quot;RARELY EXERCISED&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This option is rarely exercised and primarily exists for divorce or trust modification situations.&quot;" target="&quot;DIVORCE&quot;">
+  <data key="d5">165.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This option is rarely exercised and primarily exists for divorce or trust modification situations.&quot;" target="&quot;TRUST MODIFICATION&quot;">
+  <data key="d5">165.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099&lt;SEP&gt;chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the death of the second insured, we will pay $2,500,000 to the designated beneficiary, minus any outstanding loans.&quot;" target="&quot;BENEFICIARY: HARTFORD FAMILY IRREVOCABLE LIFE INSURANCE TRUST&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the death of the second insured, we will pay $2,500,000 to the designated beneficiary, minus any outstanding loans.&quot;" target="&quot;TRUSTEE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the death of the second insured, we will pay $2,500,000 to the designated beneficiary, minus any outstanding loans.&quot;" target="&quot;HARTFORD FAMILY IRREVOCABLE LIFE INSURANCE TRUST&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the death of the second insured, we will pay $2,500,000 to the designated beneficiary, minus any outstanding loans.&quot;" target="&quot;FIRST NATIONAL BANK OF CONNECTICUT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the death of the second insured, we will pay $2,500,000 to the designated beneficiary, minus any outstanding loans.&quot;" target="&quot;ANNUAL PREMIUM: $32,400 (GUARANTEED LEVEL FOR 10 YEARS)&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the death of the second insured, we will pay $2,500,000 to the designated beneficiary, minus any outstanding loans.&quot;" target="&quot;PREMIUM PAYOR: HARTFORD FAMILY IRREVOCABLE TRUST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium waiver is not available on joint survivorship policies.&quot;" target="&quot;PREMIUM WAIVER&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium waiver is not available on joint survivorship policies.&quot;" target="&quot;JOINT SURVIVORSHIP POLICIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxable estates.&quot;" target="&quot;INSUREDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxable estates.&quot;" target="&quot;IRREVOCABLE TRUST&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxable estates.&quot;" target="&quot;TAXABLE ESTATES&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxable estates.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Projected cash value (based on current assumptions): End of Year 10: $285,000 End of Year 20: $712,000.&quot;" target="&quot;$285,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Projected cash value (based on current assumptions): End of Year 10: $285,000 End of Year 20: $712,000.&quot;" target="&quot;$712,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Projected cash value (based on current assumptions): End of Year 10: $285,000 End of Year 20: $712,000.&quot;" target="&quot;YEAR 10&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Projected cash value (based on current assumptions): End of Year 10: $285,000 End of Year 20: $712,000.&quot;" target="&quot;YEAR 20&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Projected cash value (based on current assumptions): End of Year 10: $285,000 End of Year 20: $712,000.&quot;" target="&quot;PROJECTED CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Neither insured has ownership rights unless specified in the trust document.&quot;" target="&quot;TRUST DOCUMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Neither insured has ownership rights unless specified in the trust document.&quot;" target="&quot;INSUREDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Exclusions apply to certain conditions or events as defined in Article VII.&quot;" target="&quot;ARTICLE VII&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Exclusions apply to certain conditions or events as defined in Article VII.&quot;" target="&quot;EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Proof of both deaths must be submitted: • Death certificate of first insured • Death certificate of second insured • Completed claim forms.&quot;" target="&quot;CLAIM FORMS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Proof of both deaths must be submitted: • Death certificate of first insured • Death certificate of second insured • Completed claim forms.&quot;" target="&quot;DEATH CERTIFICATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums are payable annually on August 20th.&quot;" target="&quot;PREMIUMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums are payable annually on August 20th.&quot;" target="&quot;AUGUST 20TH&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The surviving insured becomes a single-life whole life policy for administrative purposes only. Coverage amount and premium remain unchanged.&quot;" target="&quot;COVERAGE AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The surviving insured becomes a single-life whole life policy for administrative purposes only. Coverage amount and premium remain unchanged.&quot;" target="&quot;SINGLE-LIFE WHOLE LIFE POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The surviving insured becomes a single-life whole life policy for administrative purposes only. Coverage amount and premium remain unchanged.&quot;" target="&quot;PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The surviving insured becomes a single-life whole life policy for administrative purposes only. Coverage amount and premium remain unchanged.&quot;" target="&quot;SURVIVING INSURED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy may not be assigned without trustee authorization.&quot;" target="&quot;TRUSTEE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy may not be assigned without trustee authorization.&quot;" target="&quot;AUTHORIZATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy may not be assigned without trustee authorization.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after policy has been in force for 2 years: Maximum: 90% of cash surrender value; Interest rate: Variable, currently 5.5% per annum; Loans reduce death benefit dollar-for-dollar; Available before or after first death.&quot;" target="&quot;POLICY LOANS&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after policy has been in force for 2 years: Maximum: 90% of cash surrender value; Interest rate: Variable, currently 5.5% per annum; Loans reduce death benefit dollar-for-dollar; Available before or after first death.&quot;" target="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after policy has been in force for 2 years: Maximum: 90% of cash surrender value; Interest rate: Variable, currently 5.5% per annum; Loans reduce death benefit dollar-for-dollar; Available before or after first death.&quot;" target="&quot;INTEREST RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after policy has been in force for 2 years: Maximum: 90% of cash surrender value; Interest rate: Variable, currently 5.5% per annum; Loans reduce death benefit dollar-for-dollar; Available before or after first death.&quot;" target="&quot;5.5% PER ANNUM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after policy has been in force for 2 years: Maximum: 90% of cash surrender value; Interest rate: Variable, currently 5.5% per annum; Loans reduce death benefit dollar-for-dollar; Available before or after first death.&quot;" target="&quot;BEFORE OR AFTER FIRST DEATH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after policy has been in force for 2 years: Maximum: 90% of cash surrender value; Interest rate: Variable, currently 5.5% per annum; Loans reduce death benefit dollar-for-dollar; Available before or after first death.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy accumulates cash value on a guaranteed schedule.&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy accumulates cash value on a guaranteed schedule.&quot;" target="&quot;GUARANTEED SCHEDULE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If either insured commits suicide within 2 years of the issue date, the death benefit is limited to return of premiums paid.&quot;" target="&quot;SUICIDE CLAUSE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If either insured commits suicide within 2 years of the issue date, the death benefit is limited to return of premiums paid.&quot;" target="&quot;INSURED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If either insured commits suicide within 2 years of the issue date, the death benefit is limited to return of premiums paid.&quot;" target="&quot;ISSUE DATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If either insured commits suicide within 2 years of the issue date, the death benefit is limited to return of premiums paid.&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If either insured commits suicide within 2 years of the issue date, the death benefit is limited to return of premiums paid.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Payment will be made within 30 days of receiving complete documentation.&quot;" target="&quot;30 DAYS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Proceeds paid to the trust should not be includable in either insured's estate if the trust is properly structured and maintained.&quot;" target="&quot;INSUREDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Proceeds paid to the trust should not be includable in either insured's estate if the trust is properly structured and maintained.&quot;" target="&quot;PROCEEDS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Proceeds paid to the trust should not be includable in either insured's estate if the trust is properly structured and maintained.&quot;" target="&quot;TRUST&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues in force (b) Premium payment obligation continues (c) Policy owner receives written confirmation (d) Death certificate must be filed with us.&quot;" target="&quot;FIRST INSURED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues in force (b) Premium payment obligation continues (c) Policy owner receives written confirmation (d) Death certificate must be filed with us.&quot;" target="&quot;WRITTEN CONFIRMATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues in force (b) Premium payment obligation continues (c) Policy owner receives written confirmation (d) Death certificate must be filed with us.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues in force (b) Premium payment obligation continues (c) Policy owner receives written confirmation (d) Death certificate must be filed with us.&quot;" target="&quot;DEATH CERTIFICATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues in force (b) Premium payment obligation continues (c) Policy owner receives written confirmation (d) Death certificate must be filed with us.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues in force (b) Premium payment obligation continues (c) Policy owner receives written confirmation (d) Death certificate must be filed with us.&quot;" target="&quot;PREMIUM PAYMENT OBLIGATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner may cancel within 30 days of policy receipt for a full refund of premium paid.&quot;" target="&quot;FREE LOOK PERIOD&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner may cancel within 30 days of policy receipt for a full refund of premium paid.&quot;" target="&quot;POLICY RECEIPT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner may cancel within 30 days of policy receipt for a full refund of premium paid.&quot;" target="&quot;FULL REFUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner may cancel within 30 days of policy receipt for a full refund of premium paid.&quot;" target="&quot;PREMIUM PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The policy owner may cancel within 30 days of policy receipt for a full refund of premium paid.&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the first death, the policy owner may elect to split this policy into two separate single-life policies, one on each insured.&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the first death, the policy owner may elect to split this policy into two separate single-life policies, one on each insured.&quot;" target="&quot;SPLIT OPTION&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon the first death, the policy owner may elect to split this policy into two separate single-life policies, one on each insured.&quot;" target="&quot;SINGLE-LIFE POLICIES&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the first insured dies, no death benefit is paid and the policy continues in force covering the surviving insured.&quot;" target="&quot;POLICY CONTINUATION&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the first insured dies, no death benefit is paid and the policy continues in force covering the surviving insured.&quot;" target="&quot;FIRST INSURED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;, Connecticut&quot;" target="&quot;CONNECTICUT&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;SECOND INSURED&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;POLICY CONTINUATION&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;ESTATE PLANNING&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;ESTATE TAX LIQUIDITY&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;HARTFORD FAMILY IRREVOCABLE LIFE INSURANCE TRUST&quot;">
+  <data key="d5">810.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;FIRST NATIONAL BANK OF CONNECTICUT&quot;">
+  <data key="d5">1360.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;FIRST INSURED&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;CLAIM FORMS&quot;">
+  <data key="d5">640.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;HARTFORD FAMILY IRREVOCABLE TRUST&quot;">
+  <data key="d5">810.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;ESTATE PLANNING LIFE ASSURANCE LTD.&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;AUGUST 1, 2024&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;$2,500,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;SECOND-TO-DIE WHOLE LIFE&quot;">
+  <data key="d5">810.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;STANDARD RISK CLASS&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;WILLIAM ALEXANDER HARTFORD&quot;">
+  <data key="d5">810.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;DEATH CERTIFICATE&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;ELIZABETH ANNE HARTFORD&quot;">
+  <data key="d5">810.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;PREFERRED RISK CLASS&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;POLICY NUMBER: EPL-JSL-2024-1156&quot;">
+  <data key="d5">640.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;ANNUAL PREMIUM: $32,400&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;DEATH BENEFIT: $2,500,000&quot;">
+  <data key="d5">760.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;ISSUE DATE: AUGUST 20, 2024&quot;">
+  <data key="d5">640.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;SURVIVORSHIP BASIS&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;When the first insured dies, no death benefit is paid, but: (a) Policy continues&quot;" target="&quot;30 DAYS&quot;">
+  <data key="d5">640.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Consult with estate planning attorney regarding: Three-year lookback rule if policy transferred to trust; Crummey power requirements; Annual exclusion gift planning.&quot;" target="&quot;ESTATE PLANNING ATTORNEY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Consult with estate planning attorney regarding: Three-year lookback rule if policy transferred to trust; Crummey power requirements; Annual exclusion gift planning.&quot;" target="&quot;THREE-YEAR LOOKBACK RULE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Consult with estate planning attorney regarding: Three-year lookback rule if policy transferred to trust; Crummey power requirements; Annual exclusion gift planning.&quot;" target="&quot;CRUMMEY POWER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Consult with estate planning attorney regarding: Three-year lookback rule if policy transferred to trust; Crummey power requirements; Annual exclusion gift planning.&quot;" target="&quot;ANNUAL EXCLUSION GIFT PLANNING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium may increase but will never exceed the maximum guaranteed premium of $48,600 per year.&quot;" target="&quot;PREMIUM INCREASE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium may increase but will never exceed the maximum guaranteed premium of $48,600 per year.&quot;" target="&quot;MAXIMUM GUARANTEED PREMIUM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium may increase but will never exceed the maximum guaranteed premium of $48,600 per year.&quot;" target="&quot;$48,600&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Estate Planning Life Assurance Ltd. is headquartered in Hartford, Connecticut.&quot;" target="&quot;ESTATE PLANNING LIFE ASSURANCE LTD.&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Estate Planning Life Assurance Ltd. is headquartered in Hartford, Connecticut.&quot;" target="&quot;HARTFORD, CONNECTICUT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Estate Planning Life Assurance Ltd. is headquartered in Hartford, Connecticut.&quot;" target="&quot;CHAIRMAN &amp; CHIEF EXECUTIVE OFFICER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Estate Planning Life Assurance Ltd. is headquartered in Hartford, Connecticut.&quot;" target="&quot;AUGUST 20, 2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The death benefit is paid only after both insureds have died.&quot;" target="&quot;BOTH INSUREDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums continue after the first death at the same rate.&quot;" target="&quot;PREMIUM CONTINUATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums continue after the first death at the same rate.&quot;" target="&quot;SAME RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This suicide clause resets if the policy is reinstated.&quot;" target="&quot;SUICIDE CLAUSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This suicide clause resets if the policy is reinstated.&quot;" target="&quot;REINSTATEMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If both insureds die in the same accident or incident and it cannot be determined who died first, the death benefit will be paid immediately.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If both insureds die in the same accident or incident and it cannot be determined who died first, the death benefit will be paid immediately.&quot;" target="&quot;SIMULTANEOUS DEATH&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If both insureds die in the same accident or incident and it cannot be determined who died first, the death benefit will be paid immediately.&quot;" target="&quot;ACCIDENT OR INCIDENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must elect within 2 years of first death; Each policy's face amount determined by actuarial allocation; Both insureds must be alive at time of first death (available only in rare simultaneous death situations with medical uncertainty); Evidence of insurability may be required.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must elect within 2 years of first death; Each policy's face amount determined by actuarial allocation; Both insureds must be alive at time of first death (available only in rare simultaneous death situations with medical uncertainty); Evidence of insurability may be required.&quot;" target="&quot;ACTUARIAL ALLOCATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must elect within 2 years of first death; Each policy's face amount determined by actuarial allocation; Both insureds must be alive at time of first death (available only in rare simultaneous death situations with medical uncertainty); Evidence of insurability may be required.&quot;" target="&quot;FACE AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must elect within 2 years of first death; Each policy's face amount determined by actuarial allocation; Both insureds must be alive at time of first death (available only in rare simultaneous death situations with medical uncertainty); Evidence of insurability may be required.&quot;" target="&quot;SIMULTANEOUS DEATH&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must elect within 2 years of first death; Each policy's face amount determined by actuarial allocation; Both insureds must be alive at time of first death (available only in rare simultaneous death situations with medical uncertainty); Evidence of insurability may be required.&quot;" target="&quot;MEDICAL UNCERTAINTY&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must elect within 2 years of first death; Each policy's face amount determined by actuarial allocation; Both insureds must be alive at time of first death (available only in rare simultaneous death situations with medical uncertainty); Evidence of insurability may be required.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Medical uncertainty may be required as part of the underwriting process.&quot;" target="&quot;INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Medical uncertainty may be required as part of the underwriting process.&quot;" target="&quot;MEDICAL UNCERTAINTY&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Medical uncertainty may be required as part of the underwriting process.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Partial withdrawals are not permitted under this policy type.&quot;" target="&quot;PARTIAL WITHDRAWALS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Partial withdrawals are not permitted under this policy type.&quot;" target="&quot;THIS POLICY TYPE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Chairman &amp; Chief Executive Officer&quot;" target="&quot;CHIEF EXECUTIVE OFFICER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Chairman &amp; Chief Executive Officer&quot;" target="&quot;CHAIRMAN&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-291cf66ebfb0a821c0ba4f5e78ba9619</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If payment is not received, you have 60 days to pay before the policy cancels.&quot;" target="&quot;GRACE PERIOD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If payment is not received, you have 60 days to pay before the policy cancels.&quot;" target="&quot;60 DAYS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If payment is not received, you have 60 days to pay before the policy cancels.&quot;" target="&quot;POLICY CANCELLATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6d1cf57f08a24ccb9c66d388d14d40c2</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy for material misrepresentation within 2 years of issue while both insureds are living.&quot;" target="&quot;ISSUE DATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy for material misrepresentation within 2 years of issue while both insureds are living.&quot;" target="&quot;CONTESTABILITY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy for material misrepresentation within 2 years of issue while both insureds are living.&quot;" target="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy for material misrepresentation within 2 years of issue while both insureds are living.&quot;" target="&quot;INSUREDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If deaths occur within 30 days of each other, this will be treated as simultaneous for claim purposes.&quot;" target="&quot;CLAIM PURPOSES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If deaths occur within 30 days of each other, this will be treated as simultaneous for claim purposes.&quot;" target="&quot;SIMULTANEOUS DEATH&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If deaths occur within 30 days of each other, this will be treated as simultaneous for claim purposes.&quot;" target="&quot;30 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-9f165efc3ce213ab6efd98b36294a099</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a joint life insurance policy insuring two lives.&quot;" target="&quot;ESTATE PLANNING LIFE ASSURANCE LTD.&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a joint life insurance policy insuring two lives.&quot;" target="&quot;JOINT SURVIVORSHIP LIFE INSURANCE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a joint life insurance policy insuring two lives.&quot;" target="&quot;WILLIAM ALEXANDER HARTFORD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a joint life insurance policy insuring two lives.&quot;" target="&quot;ELIZABETH ANNE HARTFORD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a joint life insurance policy insuring two lives.&quot;" target="&quot;POLICY NUMBER: EPL-JSL-2024-1156&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a joint life insurance policy insuring two lives.&quot;" target="&quot;ISSUE DATE: AUGUST 20, 2024&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a joint life insurance policy insuring two lives.&quot;" target="&quot;POLICY FORM: SECOND-TO-DIE WHOLE LIFE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ba3f3b68551881949333f09e2d573e06</data>
+</edge>
+</graph></graphml>

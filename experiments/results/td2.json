@@ -1,0 +1,12 @@
+{
+    "experiment_name": "td_2",
+    "graph_source": "kg_outputs/td2.graphml",
+    "fact_recall": {
+        "recall_score": 0.9690522243713733,
+        "total_facts": 517
+    },
+    "qa_performance": {
+        "qa_score": 0.7912621359223301,
+        "total_pairs": 309
+    }
+}

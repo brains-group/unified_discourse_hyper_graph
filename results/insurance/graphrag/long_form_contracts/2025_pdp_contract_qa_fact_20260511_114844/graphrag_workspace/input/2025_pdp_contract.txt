@@ -1,0 +1,264 @@
+## CONTRACT WITH APPROVED ENTITY PURSUANT TO SECTIONS 1860D-1 THROUGH 1860D-43 OF THE SOCIAL SECURITY ACT FOR THE OPERATION OF A VOLUNTARY MEDICARE PRESCRIPTION DRUG PLAN
+
+## CONTRACT (&lt;&lt;CONTRACT\_ID&gt;&gt;)
+
+Between
+
+Centers for Medicare &amp; Medicaid Services (hereinafter referred to as 'CMS')
+
+And
+
+## &lt;&lt;CONTRACT\_NAME&gt;&gt;
+
+(a Prescription Drug Plan Sponsor, hereinafter referred to as 'PDP Sponsor')
+
+CMS and PDP Sponsor, an entity that has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503, agree to the following for the purposes of §§ 1860D-1 through 1860D-43 (with the exception of §§ 1860D-22(a) and 1860D-31) of the Social Security Act (hereinafter referred to as 'the Act').
+
+## Article I
+
+## Voluntary Medicare Prescription Drug Plan
+
+- A. PDP Sponsor agrees to operate one or more Medicare Voluntary Prescription Drug Plans (hereinafter referred to as a 'PDP'), as described in its application and related materials submitted to CMS for Medicare approval, including but not limited to all the attestations contained therein, and in compliance with the provisions of this contract, which incorporates in its entirety the 2025 Solicitation for Applications for Medicare Prescription Drug Plan Contracts, released on January 9, 2024 (hereinafter collectively referred to as 'the contract'). PDP Sponsor also agrees to operate in accordance with §§ 1860D-1 through 1860D-43 (with the exception of §§ 1860D-22(a) and 1860D-31) of the Act, the regulations at 42 CFR Part 423 (with the exception of Subparts Q, R, and S), and the solicitation, as well as all other applicable Federal statutes, regulations, and policies outlined in guidance, such as the Medicare Prescription Drug Benefit Manual, the Medicare Communications and Marketing Guidelines, Final CY 2025 Part D Redesign Program Instructions, Medicare Part D Manufacturer Discount Program Final Guidance, Medicare Prescription Payment Plan Final Guidance, CMS Participant Guides, Health Plan Management System memos, Rate Announcement, and trainings. Except as provided in paragraph (C) of this Article, this contract is deemed to incorporate any changes that are required by statute to be implemented during the term of this contract and any regulations implementing or interpreting such statutory provisions.
+- B. CMS agrees to perform its obligations to PDP Sponsor consistent with §§ 1860D-1 through 1860D-43 of the Act (with the exception of §§ 1860D-22(a) and 1860D-31), the regulations at 42 CFR Part 423 (with the exception of Subparts Q, R, and S), and the solicitation, as well as all other applicable Federal statutes, regulations, and policies outlined in guidance, such as the Medicare Prescription Drug Benefit Manual, the Medicare Communications and Marketing Guidelines, Final CY 2025 Part D Redesign Program Instructions, Medicare Part D Manufacturer Discount Program Final Guidance, Medicare Prescription Payment Plan Final Guidance, CMS Participant Guides, Health Plan Management System memos, Rate Announcement, and trainings.
+- C. CMS agrees that it will not implement, other than at the beginning of a calendar year, regulations under 42 CFR Part 423 that impose new, significant regulatory requirements on PDP Sponsor. This provision does not apply to new requirements mandated by statute. [42 CFR § 423.516]
+- D. If PDP Sponsor had a contract with CMS for Contract Year 2024 under the contract ID number designated above, this document is considered a renewal of the existing contract. While the terms of this document supersede the terms of the 2024 contract, the parties' execution of this contract does not extinguish or interrupt any pending obligations or actions that may have arisen under the 2024 or prior year contracts.
+- E. This contract is in no way intended to supersede or modify 42 CFR Part 423. Failure to reference a regulatory requirement in this contract does not affect the applicability of such requirements to PDP Sponsor and CMS.
+
+## A. ENROLLMENT
+
+1. PDP Sponsor agrees to accept new enrollments, make enrollments effective, process voluntary disenrollments, and limit involuntary disenrollments, as described in 42 CFR Part 423 Subpart B.
+2. PDP Sponsor agrees to comply with the prohibition in 42 CFR § 423.104(b) on discrimination in beneficiary enrollment.
+3. PDP Sponsor shall accept enrollment applications from individuals who change their election during the open enrollment period for individuals enrolled in Medicare Advantage described in 42 CFR § 422.62(a)(3), as required by 42 CFR § 423.38(e).
+
+## B. PRESCRIPTION DRUG BENEFIT
+
+1. PDP Sponsor agrees to provide the basic prescription drug coverage as defined under 42 CFR § 423.100 and, to the extent applicable, supplemental benefits as defined in 42 CFR § 423.100 and in accordance with Subpart C of 42 CFR Part 423. PDP Sponsor also agrees to provide Part D benefits as described in PDP Sponsor's bid(s) approved each year by CMS (as referenced in the Medicare Advantage Attestation of Benefit Plan, which is included in the contracting materials, and to be replaced each year upon renewal of the contract to reflect PDP Sponsor's approved bids for the succeeding contract year).
+2. PDP Sponsor agrees to calculate and collect beneficiary premiums in accordance with 42 CFR §§ 423.286 and 423.293. PDP Sponsor also agrees to make a reasonable effort to identify all amounts incorrectly collected and to pay any other amounts due in accordance with 42 CFR § 423.294.
+3. PDP Sponsor agrees to maintain administrative and management capabilities sufficient for the organization to organize, implement, and control the financial, communication, benefit administration, and quality assurance activities related to the delivery of Part D services as required by 42 CFR § 423.505(b)(25).
+4. PDP Sponsor agrees to provide applicable beneficiaries manufacturer discounts on applicable drugs both in the initial and catastrophic coverage phases of the Part D benefit in accordance with the requirements of § 1860D-14C of the Act and all applicable guidance, including the Medicare Part D Manufacturer Discount Program Final Guidance.
+5. PDP Sponsor agrees to provide all Part D enrollees with the option to participate in the Medicare Prescription Payment Plan in accordance with the requirements of § 1860D2(b)(2)(E) of the Act and all applicable guidance, including the Medicare Prescription Payment Plan: Final Part One Guidance on Select Topics, Implementation of Section
+
+## Article II
+
+## Functions to be Performed by PDP Sponsor
+
+1860D-2 of the Social Security Act for 2025, and Response to Relevant Comments and Medicare Prescription Payment Plan: Final Part Two Guidance on Select Topics, Implementation of Section 1860D-2 of the Social Security Act for 2025, and Response to Relevant Comments.
+
+## C. DISSEMINATION OF PLAN INFORMATION
+
+1. PDP Sponsor agrees to provide the information required in 42 CFR § 423.48.
+2. PDP Sponsor acknowledges that CMS releases to the public the following data, consistent with 42 CFR Part 423 Subpart K:
+3. (a) Summary reconciled Part D payment data after the reconciliation of Part D payments, as provided in 42 CFR § 423.505(o)(1); and
+4. (b) Part D Medical Loss Ratio data for the contract year, as described at 42 CFR § 423.2490.
+3. PDP Sponsor agrees to disclose information to beneficiaries in the manner and the form specified by CMS under 42 CFR § 423.128 and 42 CFR Part 423 Subpart V.
+
+## D. QUALITY ASSURANCE/UTILIZATION MANAGEMENT
+
+1. PDP Sponsor agrees to operate quality assurance, drug utilization management, drug management, and medication therapy management programs, and to support electronic prescribing, in accordance with Subpart D of 42 CFR Part 423.
+2. PDP Sponsor agrees to address and resolve complaints received by CMS against the PDP Sponsor through the CMS complaint tracking system as required in 42 CFR § 423.505(b)(22).
+3. PDP Sponsor agrees to maintain a Part D summary plan rating score of at least 3 stars as required by 42 CFR § 423.505(b)(26).
+4. PDP Sponsor agrees to pass an essential operations test prior to the start of the benefit year. This provision only applies to new sponsors that have not previously entered into a Part D contract with CMS and neither it, nor another subsidiary of the applicant's parent organization, is offering Part D benefits during the current year. [42 CFR § 423.505(b)(27)]
+
+## E. APPEALS AND GRIEVANCES
+
+PDP Sponsor agrees to comply with all requirements in Subpart M of 42 CFR Part 423 governing coverage determinations, grievances and appeals, and formulary exceptions, and the applicable provisions of Subpart U.
+
+## F. PAYMENT TO PDP SPONSOR
+
+1. PDP Sponsor and CMS agree that payment under this contract is governed by the rules in Subpart G of 42 CFR Part 423.
+2. PDP Sponsor agrees to comply with all applicable Federal laws and regulations, guidance, and authorities pertaining to claims and debt collections. In the event that the Government determines that PDP Sponsor has been overpaid, PDP Sponsor agrees to return those overpaid monies back to the Government.
+
+## G. BID SUBMISSION AND REVIEW
+
+If PDP Sponsor intends to participate in the Part D program for the next program year, PDP Sponsor agrees to submit the next year's bid, including all required information on premiums, benefits, and cost-sharing, by the applicable due date, as provided in Subpart F of 42 CFR Part 423 so that CMS and the PDP Sponsor may conduct negotiations regarding the terms and conditions of the proposed bid and benefit plan renewal.
+
+## H. STATE LAW AND LICENSURE REQUIREMENTS
+
+1. PDP Sponsor agrees to comply with State law to the extent that it is not preempted by Federal law as described in Subpart I of 42 CFR Part 423.
+2. PDP Sponsor agrees that where it is operating in a State using a waiver granted pursuant to 42 CFR § 423.410, such waiver shall be valid for three consecutive program years. PDP Sponsor agrees that expiration of the licensure waiver (and the failure to obtain a license from the relevant State) may be the basis for CMS deleting from PDP Sponsor's service area those PDP Regions affected by the waiver expiration. CMS may terminate or non-renew PDP Sponsor's contract where the expiration of the waiver results in PDP Sponsor not being qualified to offer a PDP plan in any PDP Region.
+3. PDP Sponsor agrees that where it is operating in a State using a waiver granted pursuant to 42 CFR § 423.415, such waiver shall be valid for the period that the Secretary of the Department of Health and Human Services determines is appropriate for timely processing of PDP Sponsor's license application by the State, but in no case for more than one year only, beginning on January 1 of the contract year for which CMS granted the waiver.
+
+## I. COORDINATION WITH OTHER PRESCRIPTION DRUG COVERAGE
+
+1. PDP Sponsor agrees to comply with the coordination requirements with State Pharmacy Assistance Programs (SPAPs) and plans that provide other prescription drug coverage as described in Subpart J of 42 CFR Part 423.
+2. PDP Sponsor agrees to comply with Medicare Secondary Payer procedures as described in 42 CFR § 423.462.
+
+## J. SERVICE AREA AND PHARMACY ACCESS
+
+1. PDP Sponsor agrees to provide Part D benefits in the service area for which it has been approved by CMS utilizing a pharmacy network and formulary approved by CMS that meet the requirements of 42 CFR § 423.120.
+2. PDP Sponsor agrees to provide Part D benefits through out-of-network pharmacies according to 42 CFR § 423.124.
+3. PDP Sponsor agrees to provide benefits by means of point of service systems to adjudicate prescription drug claims in a timely and efficient manner in compliance with CMS standards, except when necessary to provide access in underserved areas, I/T/U pharmacies (as defined in 42 CFR § 423.100), and long-term care pharmacies (as defined in 42 CFR § 423.100) according to 42 CFR § 423.505(b)(17).
+4. PDP Sponsor agrees to contract with any pharmacy that meets PDP Sponsor's reasonable and relevant standard terms and conditions according to 42 CFR § 423.505(b)(18), including making standard contracts available on request in accordance with the timelines specified in the regulation.
+
+## K. EFFECTIVE COMPLIANCE PROGRAM/PROGRAM INTEGRITY
+
+1. PDP Sponsor agrees to adopt and implement an effective compliance program that applies to its Part D-related operations, consistent with 42 CFR § 423.504(b)(4)(vi).
+2. PDP Sponsor agrees to provide notice based on best knowledge, information, and belief to CMS of any integrity items related to payments from governmental entities, both Federal and State, for healthcare or prescription drug services that would have been reported as part of Table A. of the Business Integrity section of the PDP application. These items include any investigations, legal actions or matters subject to arbitration brought involving the PDP Sponsor (or the PDP Sponsor's firm if applicable) and its subcontractors (excluding contracted network providers), including any key management or executive staff, or any major shareholders (5% or more), by a government agency (State or Federal) on matters relating to payments from governmental entities, both Federal and State, for healthcare and/or prescription drug services. In providing the notice, the PDP Sponsor shall keep the Government informed of when the integrity item is initiated and when it is closed. Notice should be provided of the details concerning any resolution and monetary payments as well as any settlement agreements or corporate integrity agreements.
+3. PDP Sponsor agrees to provide notice based on best knowledge, information, and belief to CMS in the event PDP Sponsor or any of its subcontractors is criminally convicted or has a civil judgment entered against it for fraudulent activities or is sanctioned under any Federal program involving the provision of health care or prescription drug services.
+
+## L. LOW-INCOME SUBSIDY
+
+PDP Sponsor agrees that it will participate in the administration of subsidies for low-income subsidy eligible individuals according to Subpart P of 42 CFR Part 423.
+
+## M. COMMUNICATION WITH CMS
+
+PDP Sponsor agrees that it shall maintain the capacity to communicate with CMS electronically in accordance with CMS requirements.
+
+## N. BENEFICIARY FINANCIAL PROTECTIONS
+
+PDP Sponsor agrees to afford its enrollees protection from liability for payment of fees that are the obligation of PDP Sponsor in accordance with 42 CFR § 423.505(g).
+
+## O. RELATIONSHIP WITH FIRST TIER, DOWNSTREAM, AND RELATED ENTITIES
+
+1. PDP Sponsor agrees that it maintains ultimate responsibility for adhering to and otherwise fully complying with all terms and conditions of this contract with CMS. [42 CFR § 423.505(i)]
+2. PDP Sponsor shall ensure that any contracts or agreements with first tier, downstream, and related entities performing functions on PDP Sponsor's behalf related to the operation of the Part D benefit are in compliance with 42 CFR § 423.505(i).
+3. PDP Sponsor agrees not to employ or contract with an individual or entity who is excluded from participation in Medicare under Section 1128 or 1128A of the Social Security Act (or with an entity that employs or contracts with an excluded individual or entity) for provision of any of the services listed in 42 CFR § 423.752(a)(6).
+
+## P. CERTIFICATION OF DATA THAT DETERMINE PAYMENT
+
+PDP Sponsor must provide certifications in accordance with 42 CFR § 423.505(k).
+
+## Q. ENROLLMENT RELATED COSTS
+
+PDP Sponsor agrees to payment of fees established by CMS for cost sharing of enrollment related costs in accordance with 42 CFR § 423.6.
+
+## R. PDP SPONSOR REIMBURSEMENT TO PHARMACIES [42 CFR §§ 423.505(b)(21) and 423.520]
+
+1. If a PDP Sponsor uses a standard for reimbursement of pharmacies based on the cost of a drug, PDP Sponsor will update such standard not less frequently than once every 7 days, beginning with an initial update on January 1 of each year, to accurately reflect the market price of the drug.
+2. If the source for any prescription drug pricing standard is not publicly available, PDP
+
+Sponsor will disclose all individual drug prices to be updated to the applicable pharmacies in advance for their use for the reimbursement of claims.
+
+3. PDP Sponsor will issue, mail, or otherwise transmit payment with respect to all claims submitted by pharmacies (other than pharmacies that dispense drugs by mail order only, or are located in, or contract with, a long-term care facility) within 14 days of receipt of an electronically submitted claim or within 30 days of receipt of a claim submitted otherwise.
+4. PDP Sponsor must ensure that a pharmacy located in, or having a contract with, a longterm care facility will have not less than 30 days (but not more than 90 days) to submit claims to PDP Sponsor for reimbursement.
+
+## Article III Record Retention and Reporting Requirements
+
+## A. RECORD MAINTENANCE AND ACCESS
+
+PDP Sponsor agrees to maintain records and provide access in accordance with 42 CFR §§ 423.505(b)(10) and 423.505(i)(2).
+
+## B. GENERAL REPORTING REQUIREMENTS
+
+PDP Sponsor agrees to submit information to CMS according to 42 CFR §§ 423.505(f) and 423.514, and applicable Final Medicare Part D Reporting Guidance.
+
+## C. CMS LICENSE FOR USE OF PLAN FORMULARY
+
+PDP Sponsor agrees to submit to CMS each plan's formulary information, including any changes to its formularies, and hereby grants to the Government, and any person or entity who might receive the formulary from the Government, a non-exclusive license to use all or any portion of the formulary for any purpose related to the administration of the Part D program, including without limitation publicly distributing, displaying, publishing, or reconfiguration of the information in any medium, including www.medicare.gov, and by any electronic, print, or other means of distribution.
+
+## Article IV HIPAA Provisions
+
+- A. PDP Sponsor agrees to comply with the confidentiality and enrollee record accuracy requirements specified in 42 CFR § 423.136.
+- B. PDP Sponsor agrees to enter into a business associate agreement with the entity with which CMS has contracted to track Medicare beneficiaries' true out-of- pocket costs.
+
+Article V
+
+## Requirements of Other Laws and Regulations
+
+PDP Sponsor agrees to comply with (a) applicable Federal laws and regulations designed to prevent fraud, waste, and abuse, including, but not limited to, applicable provisions of Federal criminal law, the False Claims Act (31 U.S.C. §§ 3729 et seq.), and the anti-kickback provision of § 1128B of the Act; (b) applicable Health Insurance Portability and Accountability Act (HIPAA) rules at 45 CFR Parts 160, 162, and 164; and (c) all other applicable Federal statutes and regulations.
+
+## Article VI Contract Term and Renewal
+
+## A. TERM OF CONTRACT
+
+This contract is effective from the date of CMS's authorized representative's signature through December 31, 2025. This contract shall be renewable for successive one-year periods thereafter according to 42 CFR § 423.506.
+
+## B. QUALIFICATION TO RENEW A CONTRACT
+
+1. In accordance with 42 CFR § 423.507, PDP Sponsor will be determined qualified to renew its contract annually only if PDP Sponsor has not provided CMS with a notice of intention not to renew in accordance with Article VII of this contract.
+2. Although PDP Sponsor may be determined qualified to renew its contract under this Article, if PDP Sponsor and CMS cannot reach agreement on the bid under Subpart F of 42 CFR Part 423 and CMS declines to accept the bid pursuant to 42 CFR § 423.265(b)(4), no renewal takes place, and, in accordance with 42 CFR § 423.502(d)(2), the failure to reach agreement is not subject to the appeals provisions in Subpart N of 42 CFR Part 423.
+
+## Article VII Nonrenewal of Contract by PDP Sponsor
+
+- A. PDP Sponsor may elect not to renew its contract with CMS, effective at the end of the term of the contract for any reason as long as PDP Sponsor provides proper notice of the decision according to the required timeframes. [42 CFR § 423.507(a)(1)]
+- B. If PDP Sponsor does not intend to renew its contract, in accordance with 42 CFR § 423.507(a)(2), it must notify:
+3. (a) CMS in writing by the first Monday of June in the year in which the current contract period ends;
+4. (b) Each Medicare enrollee, at least 90 days before the date on which the nonrenewal is effective. PDP Sponsor must provide, to enrollees, through this notice or outbound
+
+- telephone calls, information on alternatives available for obtaining qualified prescription drug coverage within the PDP region, including Medicare AdvantagePrescription Drug plans, Medicare cost plans offering a Part D plan, and other PDPs, and must receive CMS approval of notices or scripts prior to their use.
+- C. If PDP Sponsor does not renew a contract, CMS cannot enter into a contract with PDP Sponsor or with an organization whose covered persons, as defined in 42 CFR § 423.507(a)(4), also served as covered persons for the nonrenewing PDP Sponsor for 2 years in the PDP region or regions served by the contract unless there are circumstances that warrant special consideration, as determined by CMS. If a PDP Sponsor does not renew any of its plan benefit packages (PBPs) in a PDP region, CMS does not approve plan bids submitted by the organization in that PDP region for 2 years unless there are circumstances that warrant special consideration, as determined by CMS. [42 CFR § 423.507(a)(3)]
+- D. If PDP Sponsor does not renew a contract, it must ensure the timely transfer of any data or files in accordance with 42 CFR § 423.507(a)(5).
+
+## Article VIII Modification or Termination of Contract
+
+## A. CONTRACT MODIFICATION OR TERMINATION BY MUTUAL CONSENT
+
+1. This contract may be modified or terminated at any time by written mutual consent of the parties. If the PDP Sponsor submits a request to end the term of this contract after the deadline provided in 42 CFR § 423.507(a)(2)(i), CMS may mutually consent to the contract termination if the contract termination does not negatively affect the administration of the Medicare Part D Program.
+2. If this contract is terminated by mutual consent, PDP Sponsor must provide notice to its Medicare enrollees and the general public in accordance with CMS's instructions.
+3. As set forth in 42 CFR § 423.508, if the contract is modified by mutual consent, PDP Sponsor must notify its Medicare enrollees of any changes that CMS determines are appropriate for notification according to the process and timeframes specified by CMS.
+4. If a contract is terminated under this section, PDP Sponsor must ensure the timely transfer of any data or files.
+5. If a contract is terminated under this section, CMS cannot enter into a new contract or service area expansion in the PDP region or regions served by the contract with PDP Sponsor or with an organization whose covered persons, as defined in 42 CFR § 423.508(f), also served as covered persons for the terminating PDP Sponsor for a period of up to 2 years unless there are circumstances that warrant special consideration, as determined by CMS. A PDP Sponsor that agrees to terminate its offering of PBPs in a PDP region also agrees that it will not be eligible to apply to resume offering plans in that region for 2 years. [42 CFR § 423.508(e)]
+
+## B. TERMINATION OF CONTRACT BY CMS
+
+CMS may terminate the contract in accordance with 42 CFR § 423.509.
+
+## C. TERMINATION OF CONTRACT BY PDP SPONSOR
+
+PDP Sponsor may terminate the contract only in accordance with 42 CFR § 423.510.
+
+## Article IX Compliance and Enforcement Actions
+
+## A. INTERMEDIATE SANCTIONS
+
+Consistent with Subpart O of 42 CFR Part 423, PDP Sponsor shall be subject to sanctions and civil money penalties.
+
+## B. COMPLIANCE ACTIONS AND PAST PERFORMANCE
+
+CMS may determine that the PDP Sponsor is out of compliance with a Part D requirement and take compliance actions as described in 42 CFR § 423.505(n) or issue intermediate sanctions as defined in 42 CFR Part 423 Subpart O. [42 CFR § 423.505(n)]
+
+## Article X Severability
+
+Severability of the contract shall be in accordance with 42 CFR § 423.504(e).
+
+## Article XI Miscellaneous
+
+## A. DEFINITIONS
+
+Terms not otherwise defined in this contract shall have the meaning given to such terms in §§ 1860D-1 through 1860D-43 of the Act and 42 CFR Part 423.
+
+## B. ALTERATION TO ORIGINAL CONTRACT TERMS
+
+PDP Sponsor agrees and attests that it has not altered in any way the terms of the PDP contract presented for signature by CMS. PDP Sponsor agrees that any alterations to the original text that PDP Sponsor may make to this contract shall not be binding on the parties.
+
+## C. ADDITIONAL CONTRACT TERMS
+
+PDP Sponsor agrees to include in this contract other terms and conditions in accordance with 42 CFR § 423.505(j).
+
+- D. Pursuant to § 13112 of the American Recovery and Reinvestment Act of 2009 (ARRA), PDP Sponsor agrees that as it implements, acquires, or upgrades its health information technology systems, it shall utilize, where available, health information technology systems and products that meet standards and implementation specifications adopted under § 3004 of the Public Health Service Act, as amended by § 13101 of the ARRA.
+- E. PDP Sponsor agrees to maintain a fiscally sound operation by at least maintaining a positive net worth (total assets exceed total liabilities) as required in 42 CFR § 423.505(b)(23).
+- F. Business Continuity: PDP Sponsor agrees to develop, maintain, and implement a business continuity plan as required by 42 CFR § 423.505(p).
+- G. The PDP Sponsor agrees to comply with applicable anti-discrimination laws, including Title VI of the Civil Rights Act of 1964 (and pertinent regulations at 45 CFR Part 80), § 504 of the Rehabilitation Act of 1973 (and pertinent regulations at 45 CFR Part 84), and the Age Discrimination Act of 1975 (and pertinent regulations at 45 CFR Part 91). The PDP Sponsor agrees to comply with the requirements relating to Nondiscrimination in Health Programs and Activities in 45 CFR Part 92, including submitting assurances that the PDP Sponsor's health programs and activities are operated in compliance with the nondiscrimination requirements, as required in 45 CFR § 92.5.
+- H. The final settlement process and payment, as well as any appeals, will be handled in accordance with 42 CFR §§ 423.521 and 423.522.
+
+In witness whereof, the parties hereby execute this contract.
+
+This document has been electronically signed by:
+
+FOR PDP SPONSOR
+
+## &lt;&lt;CONTRACTING\_OFFICIAL\_NAME &gt;&gt;
+
+Contracting Official Name
+
+&lt;&lt;DATE\_STAMP&gt;&gt;
+
+Date
+
+&lt;&lt;CONTRACT\_NAME&gt;&gt;
+
+Organization
+
+&lt;&lt;ADDRESS&gt;&gt;
+
+Address
+
+FOR THE CENTERS FOR MEDICARE &amp; MEDICAID SERVICES
+
+&lt;&lt;Vanessa Duran\_ESIG&gt;&gt; Vanessa S. Duran Director Medicare Drug Benefit and C &amp; D Data Group,
+
+&lt;&lt;DATE\_STAMP&gt;&gt;
+
+Date
+
+Center for Medicare

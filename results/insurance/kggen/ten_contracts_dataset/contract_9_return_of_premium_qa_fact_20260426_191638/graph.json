@@ -1,0 +1,994 @@
+{
+  "entities": [
+    "premiums paid without interest",
+    "convert to permanent insurance",
+    "premiums paid to date",
+    "20-Year Return of Premium Term",
+    "reduced by 10%",
+    "ROP payment",
+    "0% premium return",
+    "beneficiary",
+    "government-issued ID",
+    "early surrender ROP",
+    "President",
+    "60% of premiums paid returned",
+    "conversion privilege",
+    "Date",
+    "evidence of insurability",
+    "Year 8",
+    "ROP percentage",
+    "permanent insurance",
+    "$1,620",
+    "issue date",
+    "past due premiums",
+    "critical",
+    "beneficiaries",
+    "$50,000",
+    "20-year term",
+    "satisfactory evidence of insurability",
+    "years 16-19",
+    "whichever is earlier",
+    "interest at 6% per annum",
+    "1-800-VALUE-GUARD",
+    "reinstatement",
+    "30% of premiums paid returned",
+    "years 11-15",
+    "$32,400",
+    "service@valueguardlife.com",
+    "Return of Premium (ROP) Term Life Insurance Policy",
+    "September 15, 2044",
+    "policy owner",
+    "$12,960",
+    "Nicole Christine Martinez",
+    "Husband",
+    "100% of all premiums paid",
+    "September 15",
+    "years 1-5",
+    "made up",
+    "new policy premium",
+    "standard term life insurance",
+    "forfeited",
+    "misstatement of age",
+    "$303,888",
+    "LEVEL premiums",
+    "death during term",
+    "maximum conversion amount",
+    "return of premium",
+    "applicable date",
+    "borrow against",
+    "lapsed period",
+    "$3,888",
+    "5 years",
+    "ROP benefit",
+    "36",
+    "change beneficiaries",
+    "year 20",
+    "early surrender schedule",
+    "2 years of issue",
+    "full surrender",
+    "suicide",
+    "policy lapses",
+    "cash value",
+    "death benefit",
+    "proportional premium refund",
+    "minimum conversion amount",
+    "home office",
+    "60 days",
+    "annual premium",
+    "Customer Service",
+    "April 7, 1988",
+    "not returned",
+    "Carlos Roberto Martinez",
+    "late payment",
+    "full return of premium",
+    "assign the policy as collateral",
+    "Marco Daniel Martinez",
+    "insured",
+    "conversion",
+    "90% of premiums paid returned",
+    "taxable gain",
+    "contest the policy",
+    "24 months",
+    "full death benefit",
+    "attained age",
+    "premiums",
+    "Female",
+    "Year 20",
+    "completed claim form",
+    "missed premiums",
+    "100% of premiums paid returned",
+    "on time",
+    "Annual",
+    "material misrepresentation",
+    "insured is still alive",
+    "partial withdrawals",
+    "return of premium benefit",
+    "certified death certificate",
+    "travel exclusions",
+    "new 2-year suicide and contestability period",
+    "written submission",
+    "20 years",
+    "31 days",
+    "term",
+    "ROP payments",
+    "Son",
+    "hazardous activity exclusions",
+    "war exclusions",
+    "Daughter",
+    "Minneapolis, Minnesota",
+    "VG-ROP-2024-4183",
+    "Preferred Plus",
+    "Sofia Isabella Martinez",
+    "Non-Smoker",
+    "ValueGuard Life Insurance Company",
+    "end of term",
+    "aviation exclusions",
+    "end of term ROP",
+    "$300,000",
+    "surrender the policy",
+    "policy loans",
+    "life insurance protection",
+    "return of premium feature",
+    "premium",
+    "September 15, 2024",
+    "policy expires",
+    "grace period",
+    "insured's 65th birthday",
+    "premiums paid",
+    "years 6-10",
+    "recalculated ROP benefit",
+    "permanent life insurance policy",
+    "current face amount",
+    "correct age"
+  ],
+  "relations": [
+    [
+      "new policy premium",
+      "is based on",
+      "attained age"
+    ],
+    [
+      "war exclusions",
+      "apply",
+      "no"
+    ],
+    [
+      "Marco Daniel Martinez",
+      "is relationship to",
+      "Nicole Christine Martinez"
+    ],
+    [
+      "annual premium",
+      "amounts to",
+      "$1,620"
+    ],
+    [
+      "death occurring in Year 8",
+      "results in",
+      "$303,888 total payout"
+    ],
+    [
+      "proportional premium refund",
+      "is based on",
+      "early surrender schedule"
+    ],
+    [
+      "early surrender ROP",
+      "pays",
+      "0% premium return"
+    ],
+    [
+      "death during term",
+      "results in payment of",
+      "death benefit"
+    ],
+    [
+      "premiums",
+      "are",
+      "LEVEL"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has contingent beneficiary",
+      "Sofia Isabella Martinez"
+    ],
+    [
+      "policy owner",
+      "receives",
+      "$32,400"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "payment of all past due premiums with interest at 6% per annum"
+    ],
+    [
+      "insured's 65th birthday",
+      "is earlier than",
+      "policy expires"
+    ],
+    [
+      "current face amount",
+      "is",
+      "0,000"
+    ],
+    [
+      "insured",
+      "survives",
+      "20-year term"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "includes",
+      "proportional premium refund"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has primary beneficiary",
+      "Carlos Roberto Martinez"
+    ],
+    [
+      "ROP benefit",
+      "is reduced by",
+      "10% for each late payment"
+    ],
+    [
+      "ValueGuard Life Insurance Company",
+      "issued policy for",
+      "Nicole Christine Martinez"
+    ],
+    [
+      "premiums",
+      "are returned",
+      "100% of premiums paid returned"
+    ],
+    [
+      "20-year term",
+      "ends on",
+      "September 15, 2044"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has return of premium at end of term",
+      "$32,400"
+    ],
+    [
+      "conversion",
+      "is available when",
+      "whichever is earlier"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has contingent beneficiary",
+      "Marco Daniel Martinez"
+    ],
+    [
+      "Executed at",
+      "location is",
+      "Minneapolis, Minnesota"
+    ],
+    [
+      "maximum conversion amount",
+      "equals",
+      "current face amount"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has policy type",
+      "20-Year Return of Premium Term"
+    ],
+    [
+      "premiums paid to date",
+      "are NOT returned upon",
+      "conversion"
+    ],
+    [
+      "conversion",
+      "results in",
+      "ROP benefit is forfeited"
+    ],
+    [
+      "beneficiary",
+      "must submit",
+      "completed claim form"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "includes",
+      "early surrender ROP"
+    ],
+    [
+      "24 months",
+      "is the time period for",
+      "suicide"
+    ],
+    [
+      "policy owner",
+      "may",
+      "assign the policy as collateral"
+    ],
+    [
+      "conversion",
+      "available before",
+      "policy expires"
+    ],
+    [
+      "premiums",
+      "are returned",
+      "90% of premiums paid returned"
+    ],
+    [
+      "Customer Service",
+      "can be reached at",
+      "1-800-VALUE-GUARD"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has death benefit",
+      "$300,000"
+    ],
+    [
+      "hazardous activity exclusions",
+      "apply",
+      "no"
+    ],
+    [
+      "life insurance protection",
+      "is provided during",
+      "20-year term"
+    ],
+    [
+      "conversion privilege",
+      "allows",
+      "conversion to permanent life insurance policy"
+    ],
+    [
+      "$3,888",
+      "equals",
+      "30% \u00d7 $12,960 premiums paid"
+    ],
+    [
+      "maximum conversion amount",
+      "is",
+      "$300,000"
+    ],
+    [
+      "ROP benefit",
+      "is not considered",
+      "taxable gain"
+    ],
+    [
+      "premiums paid to date",
+      "are not returned",
+      "upon conversion"
+    ],
+    [
+      "conversion",
+      "results in",
+      "premiums paid to date are NOT returned"
+    ],
+    [
+      "grace period",
+      "is",
+      "31 days"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has rating",
+      "Preferred Plus"
+    ],
+    [
+      "recalculated ROP benefit",
+      "excludes",
+      "lapsed period"
+    ],
+    [
+      "year 20",
+      "results in",
+      "100% of premiums paid returned"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "insured is still alive"
+    ],
+    [
+      "end of term",
+      "leads to",
+      "full ROP payment"
+    ],
+    [
+      "policy owner",
+      "may",
+      "change beneficiaries"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "is a",
+      "Term Life Insurance Policy"
+    ],
+    [
+      "$303,888",
+      "includes",
+      "$3,888 proportional premium refund"
+    ],
+    [
+      "early surrender ROP",
+      "applies if",
+      "policy is surrendered before end of term"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has policy term",
+      "20 years"
+    ],
+    [
+      "missed premiums",
+      "cannot be",
+      "made up"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "satisfactory evidence of insurability"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has end of term date",
+      "September 15, 2044"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has policy number",
+      "VG-ROP-2024-4183"
+    ],
+    [
+      "2 years of issue",
+      "is the period during which",
+      "contest the policy"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has smoker status",
+      "Non-Smoker"
+    ],
+    [
+      "death benefit",
+      "is payable to",
+      "beneficiary"
+    ],
+    [
+      "annual premium",
+      "is due on",
+      "September 15"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "has feature",
+      "20-year term"
+    ],
+    [
+      "conversion",
+      "requires",
+      "no evidence of insurability"
+    ],
+    [
+      "ROP payments",
+      "are made within",
+      "60 days"
+    ],
+    [
+      "years 1-5",
+      "results in",
+      "0% premium return"
+    ],
+    [
+      "minimum conversion amount",
+      "is",
+      "$50,000"
+    ],
+    [
+      "policy owner",
+      "may",
+      "surrender the policy"
+    ],
+    [
+      "beneficiaries",
+      "receive",
+      "full death benefit"
+    ],
+    [
+      "early surrender ROP",
+      "pays",
+      "100% of premiums paid returned"
+    ],
+    [
+      "years 11-15",
+      "results in",
+      "60% of premiums paid returned"
+    ],
+    [
+      "death during term",
+      "results in payment of",
+      "$300,000"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "has feature",
+      "return of all premiums if you outlive the term"
+    ],
+    [
+      "suicide",
+      "results in",
+      "payment of premiums paid without interest"
+    ],
+    [
+      "death benefit",
+      "is adjusted to what",
+      "premium would have purchased at correct age"
+    ],
+    [
+      "cash value",
+      "cannot be borrowed against",
+      "during the term"
+    ],
+    [
+      "ROP benefit",
+      "is forfeited upon",
+      "conversion"
+    ],
+    [
+      "suicide",
+      "results in",
+      "no death benefit is payable"
+    ],
+    [
+      "ROP benefit",
+      "is forfeited",
+      "upon conversion"
+    ],
+    [
+      "aviation exclusions",
+      "apply",
+      "no"
+    ],
+    [
+      "conversion",
+      "results in",
+      "new policy premium based on attained age"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has date of birth",
+      "April 7, 1988"
+    ],
+    [
+      "early surrender ROP",
+      "pays",
+      "90% of premiums paid returned"
+    ],
+    [
+      "policy lapses",
+      "allows",
+      "reinstatement within 5 years"
+    ],
+    [
+      "premiums paid",
+      "total",
+      "$32,400"
+    ],
+    [
+      "partial withdrawals",
+      "are",
+      "NOT permitted"
+    ],
+    [
+      "misstatement of age",
+      "does not affect",
+      "ROP amount"
+    ],
+    [
+      "premiums paid",
+      "are returned",
+      "100% of all premiums paid"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has gender",
+      "Female"
+    ],
+    [
+      "travel exclusions",
+      "apply",
+      "no"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "includes",
+      "end of term ROP"
+    ],
+    [
+      "full surrender",
+      "involves",
+      "applicable ROP percentage"
+    ],
+    [
+      "ValueGuard Life Insurance Company",
+      "can be contacted via",
+      "service@valueguardlife.com"
+    ],
+    [
+      "new 2-year suicide and contestability period",
+      "begins upon",
+      "reinstatement"
+    ],
+    [
+      "$303,888",
+      "includes",
+      "$300,000 death benefit"
+    ],
+    [
+      "full return of premium",
+      "requires",
+      "all premiums paid on time"
+    ],
+    [
+      "reinstatement",
+      "results in",
+      "recalculated ROP benefit to exclude the lapsed period"
+    ],
+    [
+      "years 16-19",
+      "results in",
+      "90% of premiums paid returned"
+    ],
+    [
+      "policy lapses",
+      "leads to",
+      "return of premium benefit forfeited"
+    ],
+    [
+      "end of term ROP",
+      "applies if",
+      "all premiums have been paid"
+    ],
+    [
+      "beneficiaries",
+      "receive",
+      "proportional premium refund"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has premium mode",
+      "Annual"
+    ],
+    [
+      "interest at 6% per annum",
+      "applies to",
+      "past due premiums"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has age at issue",
+      "36"
+    ],
+    [
+      "late payment",
+      "reduces",
+      "ROP benefit"
+    ],
+    [
+      "written submission",
+      "must be sent to",
+      "home office"
+    ],
+    [
+      "misstatement of age",
+      "results in adjustment of",
+      "death benefit"
+    ],
+    [
+      "ROP payments",
+      "are made within",
+      "applicable date"
+    ],
+    [
+      "Carlos Roberto Martinez",
+      "has designation",
+      "Husband"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "has feature",
+      "proportional premium refund"
+    ],
+    [
+      "early surrender ROP",
+      "pays",
+      "30% of premiums paid returned"
+    ],
+    [
+      "end of term ROP",
+      "results in payment of",
+      "$32,400"
+    ],
+    [
+      "cash value",
+      "can be accessed through",
+      "full surrender (with applicable ROP percentage)"
+    ],
+    [
+      "death benefit",
+      "is received by",
+      "beneficiaries"
+    ],
+    [
+      "premium not paid within grace period",
+      "results in",
+      "policy lapses"
+    ],
+    [
+      "beneficiary",
+      "must submit",
+      "government-issued ID"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "has annual premium",
+      "$1,620"
+    ],
+    [
+      "material misrepresentation",
+      "allows",
+      "contest the policy within 2 years of issue"
+    ],
+    [
+      "President",
+      "executed",
+      "policy"
+    ],
+    [
+      "premiums",
+      "do not increase",
+      "during the term"
+    ],
+    [
+      "suicide",
+      "within",
+      "24 months of issue date"
+    ],
+    [
+      "Carlos Roberto Martinez",
+      "is relationship to",
+      "Nicole Christine Martinez"
+    ],
+    [
+      "changes",
+      "must be submitted in",
+      "written submission"
+    ],
+    [
+      "beneficiary",
+      "must submit",
+      "certified death certificate"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "has feature",
+      "life insurance protection"
+    ],
+    [
+      "policy",
+      "does not build",
+      "cash value"
+    ],
+    [
+      "ValueGuard Life Insurance Company",
+      "provides",
+      "Customer Service"
+    ],
+    [
+      "Sofia Isabella Martinez",
+      "has designation",
+      "Daughter"
+    ],
+    [
+      "policy owner",
+      "receives",
+      "100% of all premiums paid"
+    ],
+    [
+      "surrender the policy",
+      "results in payment of",
+      "ROP percentage"
+    ],
+    [
+      "reinstatement",
+      "results in",
+      "new 2-year suicide and contestability period"
+    ],
+    [
+      "policy loans",
+      "are",
+      "NOT available under this policy type"
+    ],
+    [
+      "insured",
+      "survives",
+      "end of term ROP"
+    ],
+    [
+      "Marco Daniel Martinez",
+      "has designation",
+      "Son"
+    ],
+    [
+      "Date",
+      "is",
+      "September 15, 2024"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "has feature",
+      "option to convert to permanent insurance"
+    ],
+    [
+      "ValueGuard Life Insurance Company",
+      "is insurer of",
+      "VG-ROP-2024-4183"
+    ],
+    [
+      "permanent insurance",
+      "can be converted to",
+      "Return of Premium (ROP) Term Life Insurance Policy"
+    ],
+    [
+      "proportional premium refund",
+      "is payable in addition to",
+      "death benefit"
+    ],
+    [
+      "early surrender ROP",
+      "pays",
+      "60% of premiums paid returned"
+    ],
+    [
+      "cash value",
+      "can be accessed through",
+      "waiting until end of term for full ROP payment"
+    ],
+    [
+      "Sofia Isabella Martinez",
+      "is relationship to",
+      "Nicole Christine Martinez"
+    ],
+    [
+      "policy owner",
+      "may",
+      "convert to permanent insurance"
+    ],
+    [
+      "death benefit",
+      "is payable in addition to",
+      "proportional premium refund"
+    ],
+    [
+      "Return of Premium (ROP) Term Life Insurance Policy",
+      "includes",
+      "death during term"
+    ],
+    [
+      "conversion",
+      "available before",
+      "insured's 65th birthday"
+    ],
+    [
+      "Nicole Christine Martinez",
+      "was issued on",
+      "September 15, 2024"
+    ],
+    [
+      "return of premium feature",
+      "increases cost of",
+      "standard term life insurance"
+    ],
+    [
+      "years 6-10",
+      "results in",
+      "30% of premiums paid returned"
+    ],
+    [
+      "end of term ROP",
+      "applies if",
+      "insured is alive on September 15, 2044"
+    ]
+  ],
+  "edges": [
+    "executed",
+    "can be contacted via",
+    "has gender",
+    "is due on",
+    "can be reached at",
+    "has policy number",
+    "amounts to",
+    "pays",
+    "must submit",
+    "applies if",
+    "has policy term",
+    "can be converted to",
+    "within",
+    "is relationship to",
+    "is adjusted to what",
+    "available before",
+    "does not affect",
+    "has designation",
+    "ends on",
+    "may",
+    "is provided during",
+    "has premium mode",
+    "has age at issue",
+    "do not increase",
+    "has primary beneficiary",
+    "issued policy for",
+    "are",
+    "applies to",
+    "is available when",
+    "has feature",
+    "involves",
+    "has end of term date",
+    "total",
+    "are returned",
+    "includes",
+    "has date of birth",
+    "was issued on",
+    "is forfeited upon",
+    "is not considered",
+    "is earlier than",
+    "cannot be borrowed against",
+    "is based on",
+    "is received by",
+    "results in",
+    "has smoker status",
+    "excludes",
+    "are NOT returned upon",
+    "is forfeited",
+    "results in payment of",
+    "leads to",
+    "apply",
+    "receives",
+    "is reduced by",
+    "increases cost of",
+    "begins upon",
+    "provides",
+    "results in adjustment of",
+    "is the time period for",
+    "has return of premium at end of term",
+    "is insurer of",
+    "are made within",
+    "must be sent to",
+    "can be accessed through",
+    "has annual premium",
+    "is payable in addition to",
+    "allows",
+    "does not build",
+    "requires",
+    "is a",
+    "is payable to",
+    "are not returned",
+    "has contingent beneficiary",
+    "survives",
+    "is",
+    "has death benefit",
+    "must be submitted in",
+    "equals",
+    "cannot be",
+    "location is",
+    "receive",
+    "reduces",
+    "has rating",
+    "has policy type",
+    "is the period during which"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

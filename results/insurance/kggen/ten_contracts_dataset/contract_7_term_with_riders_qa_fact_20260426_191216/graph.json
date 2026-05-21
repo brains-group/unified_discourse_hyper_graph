@@ -1,0 +1,1064 @@
+{
+  "entities": [
+    "90 days",
+    "base + all riders",
+    "direct cause of death",
+    "age",
+    "37",
+    "guaranteed renewable",
+    "President and CEO",
+    "30 years",
+    "Chronic Illness",
+    "beneficiary",
+    "convert",
+    "Section 7: Policy Modification",
+    "Rider 2",
+    "Male",
+    "evidence of insurability",
+    "base premium",
+    "July 12, 2024",
+    "base",
+    "policy",
+    "monthly",
+    "permanent life insurance",
+    "95% of death benefit",
+    "$175/year",
+    "complete inability",
+    "issue date",
+    "future premiums",
+    "age 49",
+    "Rider 1",
+    "beneficiaries",
+    "$50,000",
+    "medical underwriting",
+    "while living",
+    "Accelerated Death Benefit - Chronic Illness",
+    "612.00",
+    "self-inflicted injury",
+    "class",
+    "actuarial discount",
+    "coverage",
+    "eating",
+    "death",
+    "Preferred Non-Smoker",
+    "6 consecutive months",
+    "maximum advance",
+    "chronically ill",
+    "non-payment of premiums",
+    "diagnosed with a terminal illness",
+    "toileting",
+    "option dates",
+    "2 years",
+    "riders",
+    "adoption of child",
+    "all options terminate at age 50",
+    "future children",
+    "ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS",
+    "age 46",
+    "accidental injury",
+    "dressing",
+    "insured's lifetime",
+    "Accelerated Death Benefit - Terminal Illness",
+    "Section 4: Policy Renewal and Conversion",
+    "military combat operations",
+    "Contingent",
+    "Section 6: Aviation Exclusion Waiver",
+    "suicide",
+    "remaining death benefit",
+    "July 12, 2054",
+    "beneficiary changes",
+    "age 43",
+    "request",
+    "minimum advance",
+    "60%",
+    "CHILDREN'S TERM INSURANCE RIDER",
+    "death benefit",
+    "8% per year",
+    "May 20, 1987",
+    "minimum conversion amount",
+    "Activities of Daily Living",
+    "annual premium",
+    "crew",
+    "age 25",
+    "insured",
+    "due date",
+    "Denver, Colorado",
+    "natural children",
+    "30 days written notice",
+    "Terminal Illness",
+    "death while operating or riding as a passenger in any aircraft",
+    "total disability",
+    "all riders",
+    "premiums",
+    "continence",
+    "added",
+    "ProtectPlus Family Insurance Co.",
+    "transferring",
+    "Bennett Family Irrevocable Trust",
+    "face amount",
+    "medical exam",
+    "adoption",
+    "age 40",
+    "return to work",
+    "additional premium",
+    "1,089.00",
+    "age 70",
+    "legally adopted children",
+    "additional coverage",
+    "policy anniversary",
+    "war",
+    "aviation",
+    "100%",
+    "Wife",
+    "age 65",
+    "age 60",
+    "20%",
+    "31 days",
+    "Christopher David Bennett",
+    "70th birthday",
+    "recovery",
+    "annual proof of continuing disability",
+    "pilot",
+    "Son",
+    "GUARANTEED INSURABILITY OPTION",
+    "policy expiration date",
+    "Daughter",
+    "licensed healthcare practitioner",
+    "750,000",
+    "Rachel Marie Bennett",
+    "unpaid premium",
+    "89.00",
+    "alcohol",
+    "quarterly",
+    "removed",
+    "increased premiums",
+    "Section 5: Incontestability",
+    "birth",
+    "30 days",
+    "July 12",
+    "bathing",
+    "standard aviation exclusion",
+    "Waiver of Premium Due to Disability",
+    "written request",
+    "premium",
+    "satisfactory proof of death",
+    "grace period",
+    "Christopher Bennett Jr.",
+    "convert to individual policy",
+    "age 95",
+    "Olivia Grace Bennett",
+    "Disability",
+    "drugs",
+    "annual",
+    "private pilot activities",
+    "payment mode",
+    "renewal rate schedule",
+    "ACCIDENTAL DEATH BENEFIT",
+    "Rider 3",
+    "cannot perform 2 of 6 Activities of Daily Living"
+  ],
+  "relations": [
+    [
+      "standard aviation exclusion",
+      "is waived due to",
+      "private pilot activities"
+    ],
+    [
+      "Christopher Bennett Jr.",
+      "is beneficiary of",
+      "Christopher David Bennett"
+    ],
+    [
+      "Bennett Family Irrevocable Trust",
+      "has share",
+      "100%"
+    ],
+    [
+      "private pilot activities",
+      "trigger",
+      "aviation exclusion waiver"
+    ],
+    [
+      "Section 7: Policy Modification",
+      "allows",
+      "riders may be removed"
+    ],
+    [
+      "$175/year",
+      "is included in",
+      "base premium"
+    ],
+    [
+      "this policy",
+      "has increased premiums shown in",
+      "renewal rate schedule"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "covers",
+      "legally adopted children"
+    ],
+    [
+      "Activities of Daily Living",
+      "includes",
+      "continence"
+    ],
+    [
+      "Christopher David Bennett",
+      "has primary beneficiary",
+      "Rachel Marie Bennett"
+    ],
+    [
+      "Christopher David Bennett",
+      "has total annual premium",
+      "1,089.00"
+    ],
+    [
+      "Olivia Grace Bennett",
+      "has share",
+      "20%"
+    ],
+    [
+      "ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS",
+      "applies if",
+      "chronically ill"
+    ],
+    [
+      "convert",
+      "requires",
+      "evidence of insurability"
+    ],
+    [
+      "Section 6: Aviation Exclusion Waiver",
+      "waives",
+      "standard aviation exclusion"
+    ],
+    [
+      "Payment Mode",
+      "is",
+      "annual"
+    ],
+    [
+      "31 days",
+      "is duration of",
+      "grace period"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "covers",
+      "age 25"
+    ],
+    [
+      "ProtectPlus Family Insurance Co.",
+      "has position",
+      "President and CEO"
+    ],
+    [
+      "annual premium",
+      "equals",
+      "all riders"
+    ],
+    [
+      "you",
+      "must be unable to perform",
+      "2 of 6 Activities of Daily Living for at least 90 days"
+    ],
+    [
+      "Rider 3",
+      "has premium",
+      "$48/year"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "provides coverage",
+      "coverage"
+    ],
+    [
+      "$175/year",
+      "is additional premium",
+      "additional premium"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "pays additional",
+      "$750,000"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "has option dates",
+      "age 40"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "requires exercise within",
+      "90 days"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "has premium based on",
+      "age"
+    ],
+    [
+      "Rider 1",
+      "is",
+      "Waiver of Premium Due to Disability"
+    ],
+    [
+      "insured",
+      "dies",
+      "while this policy is in force"
+    ],
+    [
+      "riders",
+      "may be removed on",
+      "policy anniversary"
+    ],
+    [
+      "Christopher David Bennett",
+      "has primary beneficiary",
+      "Christopher Bennett Jr."
+    ],
+    [
+      "Olivia Grace Bennett",
+      "is covered under",
+      "CHILDREN'S TERM INSURANCE RIDER"
+    ],
+    [
+      "Rachel Marie Bennett",
+      "is beneficiary of",
+      "Christopher David Bennett"
+    ],
+    [
+      "We",
+      "will pay",
+      "the death benefit"
+    ],
+    [
+      "riders",
+      "may be added or removed on",
+      "policy anniversary"
+    ],
+    [
+      "Christopher David Bennett",
+      "has date of birth",
+      "May 20, 1987"
+    ],
+    [
+      "grace period",
+      "has duration of",
+      "31 days"
+    ],
+    [
+      "Activities of Daily Living",
+      "includes",
+      "eating"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "excludes",
+      "war"
+    ],
+    [
+      "Rider 2",
+      "is",
+      "Accelerated Death Benefit - Terminal Illness"
+    ],
+    [
+      "annual premium",
+      "can be changed upon",
+      "request"
+    ],
+    [
+      "death benefit",
+      "paid to",
+      "beneficiaries"
+    ],
+    [
+      "advance",
+      "has minimum",
+      "$10,000"
+    ],
+    [
+      "89.00",
+      "includes",
+      "$175/year"
+    ],
+    [
+      "ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS",
+      "has maximum total advance",
+      "50% of face amount"
+    ],
+    [
+      "annual premium",
+      "has alternative payment mode",
+      "monthly"
+    ],
+    [
+      "ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS",
+      "allows access to",
+      "2% of face amount per month"
+    ],
+    [
+      "Activities of Daily Living",
+      "are",
+      "6 activities"
+    ],
+    [
+      "Christopher David Bennett",
+      "has policy type",
+      "30-Year Level Premium Term"
+    ],
+    [
+      "Christopher David Bennett",
+      "has policy number",
+      "PP-TL-2024-6729R"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "covers",
+      "birth"
+    ],
+    [
+      "unpaid premium",
+      "is deducted from",
+      "death benefit"
+    ],
+    [
+      "Section 7: Policy Modification",
+      "allows",
+      "riders may be added"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "allows conversion up to",
+      "5 times the rider amount"
+    ],
+    [
+      "89.00",
+      "is base premium with all riders",
+      "base + all riders"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "has option dates",
+      "adoption of child"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "allows up to",
+      "$100,000 additional coverage per option date"
+    ],
+    [
+      "grace period",
+      "is",
+      "31 days"
+    ],
+    [
+      "ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS",
+      "requires certification by",
+      "licensed healthcare practitioner"
+    ],
+    [
+      "coverage",
+      "includes death while",
+      "operating or riding as a passenger in any aircraft"
+    ],
+    [
+      "Disability",
+      "is defined as",
+      "complete inability"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "allows purchase of",
+      "additional coverage"
+    ],
+    [
+      "advance",
+      "has maximum",
+      "$500,000"
+    ],
+    [
+      "you",
+      "become",
+      "totally disabled before age 60"
+    ],
+    [
+      "annual premium",
+      "has payment mode",
+      "annual"
+    ],
+    [
+      "ProtectPlus Family Insurance Co.",
+      "issued in",
+      "Denver, Colorado"
+    ],
+    [
+      "Payment Mode",
+      "includes",
+      "monthly"
+    ],
+    [
+      "Christopher David Bennett",
+      "has contingent beneficiary",
+      "Bennett Family Irrevocable Trust"
+    ],
+    [
+      "Bennett Family Irrevocable Trust",
+      "is contingent beneficiary of",
+      "Christopher David Bennett"
+    ],
+    [
+      "Christopher David Bennett",
+      "has face amount",
+      "750,000"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "covers",
+      "future children"
+    ],
+    [
+      "this policy",
+      "is guaranteed renewable to",
+      "age 95"
+    ],
+    [
+      "grace period",
+      "continues",
+      "coverage"
+    ],
+    [
+      "accidental injury",
+      "is direct cause of",
+      "death"
+    ],
+    [
+      "annual premium",
+      "is due on",
+      "July 12"
+    ],
+    [
+      "Christopher David Bennett",
+      "has issue age",
+      "37"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "excludes",
+      "pilot"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "excludes",
+      "alcohol"
+    ],
+    [
+      "Section 4: Policy Renewal and Conversion",
+      "describes",
+      "guaranteed renewable"
+    ],
+    [
+      "Chronic Illness",
+      "means",
+      "the inability to perform at least 2 of 6 Activities of Daily Living for at least 90 days"
+    ],
+    [
+      "ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS",
+      "does not apply",
+      "actuarial discount"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "excludes",
+      "drugs"
+    ],
+    [
+      "minimum conversion amount",
+      "is",
+      "$50,000"
+    ],
+    [
+      "Terminal Illness",
+      "means",
+      "a condition expected to result in death within 24 months as certified by a physician"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "covers",
+      "adoption"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "applies if",
+      "accidental injury"
+    ],
+    [
+      "Olivia Grace Bennett",
+      "is beneficiary of",
+      "Christopher David Bennett"
+    ],
+    [
+      "Rider 3",
+      "is",
+      "Accelerated Death Benefit - Chronic Illness"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "excludes",
+      "crew"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "excludes",
+      "self-inflicted injury"
+    ],
+    [
+      "Activities of Daily Living",
+      "includes",
+      "dressing"
+    ],
+    [
+      "Christopher David Bennett",
+      "is male",
+      "Male"
+    ],
+    [
+      "chronic illness",
+      "requires inability to perform",
+      "2 of 6 Activities of Daily Living for at least 90 days"
+    ],
+    [
+      "2 years",
+      "is duration of",
+      "insured's lifetime"
+    ],
+    [
+      "suicide",
+      "results in payment of",
+      "only the premiums paid, without interest"
+    ],
+    [
+      "annual premium",
+      "has alternative payment mode",
+      "quarterly"
+    ],
+    [
+      "Christopher David Bennett",
+      "has primary beneficiary",
+      "Olivia Grace Bennett"
+    ],
+    [
+      "you",
+      "may convert",
+      "all or part of this policy"
+    ],
+    [
+      "adding riders",
+      "may require",
+      "evidence of insurability"
+    ],
+    [
+      "coverage",
+      "continues in full force",
+      "if you become totally disabled before age 60 and remain disabled for 6 consecutive months"
+    ],
+    [
+      "70th birthday",
+      "is earlier than",
+      "policy expiration date"
+    ],
+    [
+      "remaining death benefit",
+      "is paid to",
+      "beneficiaries upon death"
+    ],
+    [
+      "guaranteed renewable",
+      "applies to",
+      "this policy"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "all options terminate at",
+      "age 50"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "excludes",
+      "suicide"
+    ],
+    [
+      "beneficiary changes",
+      "may be made at any time by",
+      "written request"
+    ],
+    [
+      "Christopher Bennett Jr.",
+      "has share",
+      "20%"
+    ],
+    [
+      "convert to individual policy",
+      "requires",
+      "evidence of insurability"
+    ],
+    [
+      "Activities of Daily Living",
+      "includes",
+      "bathing"
+    ],
+    [
+      "waiver",
+      "continues until",
+      "you recover, return to work, or age 65"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "has option dates",
+      "birth"
+    ],
+    [
+      "chronically ill",
+      "cannot perform",
+      "Activities of Daily Living"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "requires death within",
+      "90 days"
+    ],
+    [
+      "non-payment of premiums",
+      "is exception to",
+      "incontestability"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "has option dates",
+      "age 49"
+    ],
+    [
+      "Rachel Marie Bennett",
+      "has share",
+      "60%"
+    ],
+    [
+      "benefit",
+      "is reduced by",
+      "actuarial discount (approximately 8% per year)"
+    ],
+    [
+      "suicide",
+      "occurs within",
+      "2 years of the issue date"
+    ],
+    [
+      "Payment Mode",
+      "includes",
+      "quarterly"
+    ],
+    [
+      "death benefit",
+      "is paid to",
+      "the beneficiary"
+    ],
+    [
+      "Christopher David Bennett",
+      "has base annual premium",
+      "612.00"
+    ],
+    [
+      "ProtectPlus Family Insurance Co.",
+      "issued policy on",
+      "July 12, 2024"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "has option dates",
+      "age 43"
+    ],
+    [
+      "Christopher Bennett Jr.",
+      "is covered under",
+      "CHILDREN'S TERM INSURANCE RIDER"
+    ],
+    [
+      "Rider 1",
+      "has premium",
+      "$102/year"
+    ],
+    [
+      "Rider 2",
+      "has premium",
+      "included at no charge"
+    ],
+    [
+      "Christopher David Bennett",
+      "has policy expiration",
+      "July 12, 2054"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "has premium based on",
+      "class"
+    ],
+    [
+      "Christopher David Bennett",
+      "has underwriting class",
+      "Preferred Non-Smoker"
+    ],
+    [
+      "death while operating or riding as a passenger in any aircraft",
+      "excludes",
+      "military combat operations"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "allows",
+      "convert to individual policy"
+    ],
+    [
+      "riders",
+      "require",
+      "30 days written notice"
+    ],
+    [
+      "riders",
+      "may be added on",
+      "policy anniversary"
+    ],
+    [
+      "Christopher David Bennett",
+      "has policy period",
+      "30 years"
+    ],
+    [
+      "Due Date",
+      "is",
+      "July 12"
+    ],
+    [
+      "you",
+      "become chronically ill",
+      "and cannot perform 2 of 6 Activities of Daily Living"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "terminates at",
+      "age 70"
+    ],
+    [
+      "death",
+      "occurs during",
+      "grace period"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "covers",
+      "natural children"
+    ],
+    [
+      "Section 5: Incontestability",
+      "states",
+      "no contest after 2 years"
+    ],
+    [
+      "beneficiary",
+      "receives payment within",
+      "30 days of receiving satisfactory proof of death"
+    ],
+    [
+      "ACCELERATED DEATH BENEFIT - CHRONIC ILLNESS",
+      "has premium",
+      "premium"
+    ],
+    [
+      "you",
+      "remain disabled for",
+      "6 consecutive months"
+    ],
+    [
+      "Activities of Daily Living",
+      "includes",
+      "toileting"
+    ],
+    [
+      "CHILDREN'S TERM INSURANCE RIDER",
+      "requires no",
+      "medical exam"
+    ],
+    [
+      "diagnosed with a terminal illness",
+      "allows access to",
+      "up to 95% of death benefit while living"
+    ],
+    [
+      "ACCIDENTAL DEATH BENEFIT",
+      "excludes",
+      "aviation"
+    ],
+    [
+      "annual premium",
+      "equals",
+      "base"
+    ],
+    [
+      "GUARANTEED INSURABILITY OPTION",
+      "has option dates",
+      "age 46"
+    ],
+    [
+      "Activities of Daily Living",
+      "includes",
+      "transferring"
+    ],
+    [
+      "policy",
+      "is in force",
+      "and all premiums have been paid"
+    ],
+    [
+      "Disability",
+      "means",
+      "the complete inability to perform the material and substantial duties of your regular occupation due to sickness or injury"
+    ],
+    [
+      "Christopher David Bennett",
+      "is insured",
+      "Christopher David Bennett"
+    ],
+    [
+      "you",
+      "have all future premiums waived",
+      "if you become totally disabled before age 60 and remain disabled for 6 consecutive months"
+    ],
+    [
+      "convert",
+      "is allowed before",
+      "policy expiration date"
+    ],
+    [
+      "you",
+      "must submit",
+      "annual proof of continuing disability"
+    ],
+    [
+      "Christopher David Bennett",
+      "has policy date",
+      "July 12, 2024"
+    ],
+    [
+      "convert",
+      "is allowed before",
+      "70th birthday"
+    ]
+  ],
+  "edges": [
+    "has maximum",
+    "has payment mode",
+    "has total annual premium",
+    "is paid to",
+    "is covered under",
+    "has duration of",
+    "is insured",
+    "is due on",
+    "has policy number",
+    "must submit",
+    "applies if",
+    "occurs within",
+    "may be made at any time by",
+    "allows purchase of",
+    "is duration of",
+    "is additional premium",
+    "requires death within",
+    "become",
+    "has face amount",
+    "can be changed upon",
+    "will pay",
+    "continues",
+    "have all future premiums waived",
+    "is male",
+    "requires inability to perform",
+    "requires exercise within",
+    "issued policy on",
+    "is defined as",
+    "is contingent beneficiary of",
+    "has premium based on",
+    "has underwriting class",
+    "issued in",
+    "has share",
+    "has primary beneficiary",
+    "has base annual premium",
+    "applies to",
+    "are",
+    "all options terminate at",
+    "cannot perform",
+    "allows up to",
+    "trigger",
+    "has option dates",
+    "includes",
+    "continues until",
+    "has date of birth",
+    "is waived due to",
+    "occurs during",
+    "dies",
+    "is earlier than",
+    "remain disabled for",
+    "covers",
+    "provides coverage",
+    "may require",
+    "may be removed on",
+    "may be added on",
+    "is exception to",
+    "includes death while",
+    "allows access to",
+    "is direct cause of",
+    "excludes",
+    "terminates at",
+    "waives",
+    "states",
+    "is base premium with all riders",
+    "results in payment of",
+    "has policy period",
+    "is reduced by",
+    "paid to",
+    "is in force",
+    "has premium",
+    "has policy date",
+    "is included in",
+    "must be unable to perform",
+    "is beneficiary of",
+    "require",
+    "requires certification by",
+    "has increased premiums shown in",
+    "pays additional",
+    "has issue age",
+    "has minimum",
+    "describes",
+    "has alternative payment mode",
+    "requires no",
+    "is allowed before",
+    "continues in full force",
+    "means",
+    "does not apply",
+    "allows",
+    "requires",
+    "has position",
+    "has contingent beneficiary",
+    "is deducted from",
+    "is",
+    "allows conversion up to",
+    "equals",
+    "become chronically ill",
+    "has maximum total advance",
+    "has policy expiration",
+    "receives payment within",
+    "may convert",
+    "may be added or removed on",
+    "has policy type",
+    "is guaranteed renewable to"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

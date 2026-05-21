@@ -1,0 +1,48 @@
+encoding_model: cl100k_base
+skip_workflows: []
+models:
+  default_chat_model:
+    api_key: EMPTY
+    type: chat
+    model_provider: openai
+    model: Qwen/Qwen3-30B-A3B-Instruct-2507-FP8
+    encoding_model: cl100k_base
+    api_base: http://localhost:8000/v1
+    tokens_per_minute: 100000
+    requests_per_minute: 1000
+    max_retries: 5
+    concurrent_requests: 25
+    max_tokens: 20000
+  default_embedding_model:
+    api_key: EMPTY
+    type: embedding
+    model_provider: openai
+    model: google/embeddinggemma-300m
+    encoding_model: cl100k_base
+    api_base: http://localhost:8001/v1
+    tokens_per_minute: 100000
+    requests_per_minute: 1000
+    concurrent_requests: 25
+chunks:
+  size: 600
+  overlap: 50
+  group_by_columns: [id]
+entity_extraction:
+  prompt: "prompts/entity_extraction.txt"
+  entity_types: [organization, person, geo, event]
+  max_gleanings: 1
+summarize_descriptions:
+  prompt: "prompts/summarize_descriptions.txt"
+  max_length: 1000
+claim_extraction:
+  enabled: false
+community_reports:
+  prompt: "prompts/community_report.txt"
+  max_length: 2000
+  max_input_length: 8000
+cluster_graph:
+  max_cluster_size: 10
+embed_graph:
+  enabled: true
+embed_text:
+  enabled: true

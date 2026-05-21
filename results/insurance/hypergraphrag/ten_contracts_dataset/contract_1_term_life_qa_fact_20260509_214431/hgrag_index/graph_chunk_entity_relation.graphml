@@ -1,0 +1,1650 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;Premium Amount: $45.00 per month&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;To claim the death benefit, the beneficiary must submit: (a) Completed claim form, (b) Certified copy of the death certificate, (c) Original policy document (if available).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;4.1 'Death Benefit' means the amount payable to the beneficiary upon the death of the insured during the policy term.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;LIFE INSURANCE POLICY&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SECTION 6: PREMIUM PAYMENTS&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Insured Person: John Michael Anderson&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium Payment Mode: Monthly automatic deduction&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Coverage continues during the grace period.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Claims should be sent to: SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;4.2 'Premium Due Date' means the 15th day of each month.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SecureLife Insurance Company&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;6.1 Premiums are due monthly on the 15th of each month.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Date of Birth: March 22, 1985&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SECTION 3: BENEFICIARY DESIGNATION&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-1e7576f117be0f40acf0a030dd995719</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;We will pay valid claims within 30 days of receiving all required documentation.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;4.3 'Grace Period' means the 31-day period following the premium due date during which coverage continues without lapse.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;POLICY NUMBER: SL-2024-TRM-00123&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;6.2 If a premium is not paid by the due date, a grace period of 31 days is allowed. Coverage continues during the grace period.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Age at Issue: 38 years&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary Beneficiary: Sarah Elizabeth Anderson (Spouse) - 100%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;We cannot contest this policy after it has been in force during the insured's lifetime for two years from the issue date.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;4.4 'Policy Anniversary' means the same day and month as the issue date in each subsequent year.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;ISSUE DATE: January 15, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;6.3 If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SECTION 2: COVERAGE DETAILS&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Contingent Beneficiary: Emma Grace Anderson (Daughter) - 50%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Conversion must occur before the earlier of: (a) The policy expiry date, or (b) The insured's 65th birthday.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the age or sex of the insured has been misstated, we will adjust the death benefit to what the premiums paid would have purchased at the correct age and sex.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SECTION 5: DEATH BENEFIT&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;POLICY TYPE: 20-Year Level Term Life Insurance&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death Benefit Amount: $500,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;No other exclusions apply to this policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Lucas James Anderson (Son) - 50%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The premium for the new policy will be based on: (a) The insured's attained age at conversion, (b) The amount of coverage converted, (c) The class of permanent policy selected.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may assign this policy. We are not responsible for the validity of any assignment. An assignment is not binding on us until we receive written notice at our home office.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;5.1 We will pay the death benefit to the beneficiary if: (a) The insured dies while this policy is in force, and (b) We receive proof of death acceptable to us, and (c) The death occurs before the policy expiry date.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SECTION 1: POLICY OWNER AND INSURED&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Term: 20 years (expires January 15, 2044)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SECTION 4: DEFINITIONS&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Authorized Signature: ___________________________ Chief Underwriting Officer SecureLife Insurance Company Date Issued: January 15, 2024.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;5.2 The death benefit will be paid in one lump sum unless the beneficiary chooses an alternate settlement option.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Owner: John Michael Anderson&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;DEATH CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A certified copy of the official document proving the death of the insured."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;DEATH DURING POLICY TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"A condition under which the death benefit is payable—death must occur while the policy is active."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;BENEFICIARY CONTACT INFORMATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INFORMATION"</data>
+  <data key="d4">"Contact details of the beneficiaries."&lt;SEP&gt;"Contact details."&lt;SEP&gt;"The contact details of the beneficiaries, not explicitly stated but implied."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;MARCH 22, 1985&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date of birth of the insured person."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;DEATH BENEFIT ELIGIBILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"The requirement that the insured must die while the policy is in force and before the expiry date."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;ORIGINAL POLICY DOCUMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The original insurance policy document, which may be required to process a claim."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;POLICY IN FORCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"The active state of the policy during its term."&lt;SEP&gt;"The active state of the policy."&lt;SEP&gt;"The state of the policy when it is active and coverage is valid."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;INSURANCE COMPANY ADDRESS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Address of SecureLife Insurance Company."&lt;SEP&gt;"The address of SecureLife Insurance Company."&lt;SEP&gt;"The physical or mailing address of SecureLife Insurance Company, not provided in the text."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The periodic payment required to maintain the policy's active status."&lt;SEP&gt;"The premium for the new permanent policy is determined by the insured's age at conversion, the amount of coverage, and the type of policy selected."&lt;SEP&gt;"The premium is the amount of money required to be paid for the insurance policy to remain active."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;38 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age of the insured at the time the policy was issued."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;GRACE PERIOD DURATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"31 days."&lt;SEP&gt;"The 31-day grace period following the premium due date."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;SECURELIFE INSURANCE COMPANY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"A life insurance company that issued the policy."&lt;SEP&gt;"The insurance company issuing the policy."&lt;SEP&gt;"The insurance company responsible for processing claims and managing policies."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;GRACE PERIOD COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COVERAGE_STATUS"</data>
+  <data key="d4">"The state of coverage during the 31-day grace period after the premium due date."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY ISSUE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"January 15, 2024."&lt;SEP&gt;"The date the policy was issued, January 15, 2024."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The policy becomes incontestable after two years of continuous coverage."&lt;SEP&gt;"The policy can be assigned to another individual."&lt;SEP&gt;"The policy can be converted into a permanent life insurance policy."&lt;SEP&gt;"The policy is a legal contract between the insured and the insurance company, outlining terms, conditions, and benefits."&lt;SEP&gt;"The policy is the legal document that governs the insurance agreement."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;$500,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The death benefit amount payable to the beneficiary upon the insured's death during the policy term."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;PREMIUM PAYMENT DEADLINE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The 15th of each month, the deadline for premium payment."&lt;SEP&gt;"The 15th of each month."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;CLAIMS DEPARTMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEPARTMENT"</data>
+  <data key="d4">"The department within SecureLife Insurance Company that handles insurance claims."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;POLICY LAPSE EVENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The event that occurs when the premium is not paid by the end of the grace period."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;DEATH BENEFIT AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"$500,000."&lt;SEP&gt;"The $500,000 sum payable upon the insured's death."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;TERMINATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Coverage will terminate if the premium is not paid by the end of the grace period."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;20 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The term of the policy, from January 15, 2024, to January 15, 2044."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICYHOLDER RIGHTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Rights of the policy owner."&lt;SEP&gt;"The rights held by the policy owner, including beneficiary designation and premium payment control."&lt;SEP&gt;"The rights of the policy owner, including beneficiary designation."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;P.O. BOX 5000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ADDRESS"</data>
+  <data key="d4">"The mailing address for submitting claims."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;DEATH BENEFIT PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The action taken by the insurer to pay the death benefit to the beneficiary."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;MONTHLY PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"$45.00."&lt;SEP&gt;"The $45.00 payment required each month."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;LAPSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The policy will lapse if the premium is not paid by the end of the grace period, meaning the policy becomes inactive."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;JANUARY 15, 2044&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The expiration date of the policy."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;BENEFICIARY RIGHTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Rights of the beneficiaries."&lt;SEP&gt;"The rights of the beneficiaries to receive the death benefit."&lt;SEP&gt;"The rights of the designated beneficiaries to receive the death benefit."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;HARTFORD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The city where the Claims Department is located."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;PROOF OF DEATH SUBMISSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Submitting documentation of death."&lt;SEP&gt;"The action required by the insurer to verify the insured's death."&lt;SEP&gt;"The requirement to submit documentation of death."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;SPOUSE RELATIONSHIP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"Marital bond between John Michael Anderson and Sarah Elizabeth Anderson."&lt;SEP&gt;"The marital bond between John Michael Anderson and Sarah Elizabeth Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;$45.00 PER MONTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The monthly premium amount required to maintain the policy."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;SUICIDE CLAUSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The suicide clause is a provision in the policy that limits the insurer's liability to a refund of premiums paid if the insured dies by suicide within two years of the policy's issue date."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;INSURER OBLIGATIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Duty to pay the death benefit."&lt;SEP&gt;"The duty of the insurance company to pay the death benefit."&lt;SEP&gt;"The responsibilities of the insurance company to pay the death benefit upon valid claim."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;CT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The state abbreviation for Connecticut, where Hartford is located."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;BENEFICIARY DESIGNATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The act of naming beneficiaries."&lt;SEP&gt;"The act of naming individuals to receive the death benefit."&lt;SEP&gt;"The process of naming individuals to receive the death benefit."&lt;SEP&gt;"The section naming beneficiaries."&lt;SEP&gt;"The section of the policy that names the beneficiaries."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;PARENT-CHILD RELATIONSHIP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"Familial bond between John Michael Anderson and his children."&lt;SEP&gt;"The familial bond between John Michael Anderson and his children."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;INSURED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual whose life is covered by the policy and who may exercise the conversion privilege."&lt;SEP&gt;"The insured is the individual whose life is covered by the policy."&lt;SEP&gt;"The person whose life is covered by the policy, in this case John Michael Anderson."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;MONTHLY AUTOMATIC DEDUCTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT_MODE"</data>
+  <data key="d4">"The method by which premiums are paid—automatically deducted each month."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICYHOLDER RESPONSIBILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Duty to pay premiums."&lt;SEP&gt;"The duty of the policyholder to maintain premium payments."&lt;SEP&gt;"The duty to pay premiums on time."&lt;SEP&gt;"The duty to pay premiums."&lt;SEP&gt;"The obligation of the policyholder to pay premiums on time."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;06102&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POSTAL CODE"</data>
+  <data key="d4">"The ZIP code for the mailing address of the Claims Department."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;POLICY ANNIVERSARY DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The annual recurrence of the issue date."&lt;SEP&gt;"The date each year that corresponds to the issue date, used for policy tracking."&lt;SEP&gt;"The date each year that matches the issue date."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;FAMILY STRUCTURE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The composition of the insured's family, including spouse and children."&lt;SEP&gt;"The composition of the insured's family."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY TERM EXPIRY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The event marking the end of the policy term, resulting in loss of coverage."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;ISSUE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date when the policy was issued."&lt;SEP&gt;"The issue date is the date when the policy is issued and becomes effective."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;SARAH ELIZABETH ANDERSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The primary beneficiary, designated as the spouse of the insured."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;DEATH CLAIM PROCESS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"Steps to file a claim."&lt;SEP&gt;"The steps required to file and process a death benefit claim."&lt;SEP&gt;"The steps to file and process a death benefit claim."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;VALID CLAIMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Claims that meet all policy requirements and are eligible for payment."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;POLICY EXPIRATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The end of the policy term, resulting in the termination of coverage."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;DEATH BENEFIT CLAIM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The process of filing a claim for the death benefit."&lt;SEP&gt;"The process of filing a claim."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;LIABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The insurer's liability refers to the financial obligation the company has under the policy."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;EMMA GRACE ANDERSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The contingent beneficiary, daughter of the insured, entitled to 50% of the death benefit if the primary beneficiary predeceases the insured."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;PROOF OF DEATH REQUIREMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"A necessary condition for claim approval, requiring documentation of the insured's death."&lt;SEP&gt;"A necessary condition for claim approval."&lt;SEP&gt;"Requirement for claim approval."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;30 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The timeframe within which the insurer will pay a valid claim after receiving all required documents."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;AUTOMATIC PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT_METHOD"</data>
+  <data key="d4">"A method of premium payment where the insurer automatically deducts funds from the policyholder’s account."&lt;SEP&gt;"Monthly automatic deduction."&lt;SEP&gt;"The method by which the $45.00 premium is deducted monthly."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;INSURER RESPONSIBILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The obligation of the insurance company to honor the policy terms."&lt;SEP&gt;"The obligation to pay the death benefit."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The total amount of premiums paid by the insured."&lt;SEP&gt;"The total amount of premiums that have been paid by the insured."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;LUCAS JAMES ANDERSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The contingent beneficiary, son of the insured, entitled to 50% of the death benefit if the primary beneficiary predeceases the insured."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;LUMP SUM SETTLEMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SETTLEMENT_OPTION"</data>
+  <data key="d4">"A payment method where the entire death benefit is paid at once."&lt;SEP&gt;"One-time payment."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;DOCUMENTATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The required paperwork needed to process a claim."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;MONTHLY DEDUCTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT_METHOD"</data>
+  <data key="d4">"A recurring payment method where $45.00 is deducted each month."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY LAPSE CONSEQUENCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Loss of coverage due to non-payment."&lt;SEP&gt;"The loss of coverage and death benefit eligibility due to non-payment."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"A section of the policy outlining circumstances under which the death benefit may not be paid."&lt;SEP&gt;"Exclusions are conditions or circumstances that are not covered under the policy."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;PREMIUM DUE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The 15th day of each month, when the premium is due."&lt;SEP&gt;"The 15th of each month, when the premium is due."&lt;SEP&gt;"The 15th of each month."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;INSTALLMENT SETTLEMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SETTLEMENT_OPTION"</data>
+  <data key="d4">"A payment method where the death benefit is paid in periodic installments."&lt;SEP&gt;"Periodic payments."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;INCONTESTABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The incontestability clause prevents the insurer from challenging the validity of the policy after it has been in force for two years."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;DEATH BENEFIT PAYOUT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Disbursement of $500,000."&lt;SEP&gt;"The disbursement of $500,000 to the beneficiary upon the insured's death."&lt;SEP&gt;"The disbursement of $500,000 to the beneficiary."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;GRACE PERIOD PROTECTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COVERAGE_STATUS"</data>
+  <data key="d4">"Coverage remains active during the grace period."&lt;SEP&gt;"The continuation of coverage during the 31-day grace period."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY ANNIVERSARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The annual recurrence of the issue date, used for policy tracking."&lt;SEP&gt;"The annual recurrence of the issue date, used for tracking policy milestones."&lt;SEP&gt;"The annual recurrence of the issue date."&lt;SEP&gt;"The same day and month as the issue date in each subsequent year, used for policy tracking."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;CONVERSION PRIVILEGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The conversion privilege allows the policyholder to convert a temporary policy into a permanent life insurance policy without providing proof of insurability."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;ANNUITY SETTLEMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SETTLEMENT_OPTION"</data>
+  <data key="d4">"A payment method where the death benefit is paid out as a stream of income over time."&lt;SEP&gt;"A payment method where the death benefit is paid out as a stream of income."&lt;SEP&gt;"Stream of income."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;INSURED'S LIFETIME&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The period during which the policy remains active and in force."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;CONTINGENT BENEFICIARY SHARE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The 50% share each of Emma Grace Anderson and Lucas James Anderson is entitled to."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;BENEFICIARY CLAIM PROCESS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"Steps to file a claim."&lt;SEP&gt;"The steps to file a claim for the death benefit."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;PERMANENT LIFE INSURANCE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A type of life insurance that provides coverage for the entire lifetime of the insured and includes a cash value component."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;PROOF OF DEATH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A document acceptable to the insurer that verifies the death of the insured."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;COVERAGE CONTINUATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"Active during grace period."&lt;SEP&gt;"The state during the grace period."&lt;SEP&gt;"The state of the policy during the grace period, where coverage remains active."&lt;SEP&gt;"The state of the policy during the grace period."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Coverage continues during the grace period, which is a specified time after the premium due date during which the policy remains active."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;MISSTATEMENT OF AGE OR SEX&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"A situation where the insured's age or sex was incorrectly reported on the policy."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;PRIMARY BENEFICIARY SHARE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The 100% share of Sarah Elizabeth Anderson as the primary beneficiary."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Evidence of insurability refers to medical or financial documentation required to prove that the insured is eligible for insurance."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;LUMP SUM PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SETTLEMENT_OPTION"</data>
+  <data key="d4">"The default method of paying the death benefit in a single, immediate payment."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;DEATH BENEFIT PAYOUT DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date on which the death benefit is paid to the beneficiary."&lt;SEP&gt;"The date the benefit is paid."&lt;SEP&gt;"The date the death benefit is paid."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;CORRECT AGE AND SEX&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ATTRIBUTE"</data>
+  <data key="d4">"The accurate age and sex of the insured, which are used to recalibrate the death benefit."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;POLICYHOLDER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The individual who holds the policy, in this case John Michael Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;CONVERSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Conversion is the process of changing a temporary policy into a permanent one."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;ALTERNATE SETTLEMENT OPTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SETTLEMENT_OPTION"</data>
+  <data key="d4">"A payment method chosen by the beneficiary instead of a lump sum, such as installments or annuity."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;BENEFICIARY CLAIM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Filing a claim."&lt;SEP&gt;"The process by which a beneficiary files a claim for the death benefit."&lt;SEP&gt;"The process of filing a claim for the death benefit."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;ASSIGNMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The transfer of ownership or rights of the policy to another party."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;INSURED PERSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The person whose life is insured, in this case John Michael Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY EXPIRY DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"January 15, 2044, the end of the policy term."&lt;SEP&gt;"January 15, 2044."&lt;SEP&gt;"The date when the policy expires and coverage ends."&lt;SEP&gt;"The date when the policy term ends and coverage ceases, January 15, 2044."&lt;SEP&gt;"The date when the policy term ends, January 15, 2044."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY LAPSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Termination due to non-payment."&lt;SEP&gt;"The termination of coverage due to non-payment of premium beyond the grace period."&lt;SEP&gt;"The termination of coverage due to non-payment."&lt;SEP&gt;"The termination of coverage when the premium is not paid within the grace period."&lt;SEP&gt;"The termination of the policy due to non-payment."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;INSURED DEATH VERIFICATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Confirming the death."&lt;SEP&gt;"The process of confirming the death of the insured to initiate the claim."&lt;SEP&gt;"The process of confirming the death of the insured."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;VALIDITY OF ASSIGNMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The legal standing of an assignment, which the insurer does not guarantee."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;SPOUSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The marital relationship between John Michael Anderson and Sarah Elizabeth Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;65TH BIRTHDAY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The insured must convert the policy before reaching their 65th birthday."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;COVERAGE TERMINATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The end of the policy's active status, occurring when the policy lapses or expires."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICYHOLDER IDENTITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"John Michael Anderson, the individual who owns and is insured under the policy."&lt;SEP&gt;"John Michael Anderson."&lt;SEP&gt;"The individual who owns and is insured under the policy, John Michael Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;WRITTEN NOTICE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A formal written communication required to make an assignment effective."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;DAUGHTER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The parent-child relationship between John Michael Anderson and Emma Grace Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;ATTAINED AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The insured's age at the time of conversion."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;POLICY OWNER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The individual who owns the policy and has rights over it, in this case John Michael Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;BENEFICIARY DESIGNATION FORM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A form used to formally name beneficiaries."&lt;SEP&gt;"A form used to name beneficiaries."&lt;SEP&gt;"Form to name beneficiaries."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;HOME OFFICE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The main office of SecureLife Insurance Company where written notice must be received."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;SON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The parent-child relationship between John Michael Anderson and Lucas James Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;AMOUNT OF COVERAGE CONVERTED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The value of the original policy that is being converted into a permanent policy."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;PRIMARY BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Sarah Elizabeth Anderson, spouse of the insured, designated to receive 100% of the death benefit."&lt;SEP&gt;"Sarah Elizabeth Anderson."&lt;SEP&gt;"The person designated to receive the death benefit first, in this case Sarah Elizabeth Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;LIFE INSURANCE CONTRACT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Legal agreement."&lt;SEP&gt;"The legal agreement between the insured and the insurer."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;CHIEF UNDERWRITING OFFICER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The individual authorized to sign the policy on behalf of SecureLife Insurance Company."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;FAMILY RELATIONSHIP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The familial connections among the insured and the beneficiaries."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;GRACE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"31 days."&lt;SEP&gt;"A 31-day period after the due date."&lt;SEP&gt;"A 31-day period after the premium due date during which coverage remains active."&lt;SEP&gt;"A 31-day period following the premium due date during which coverage remains active even if the premium is not paid."&lt;SEP&gt;"A 31-day window after the due date during which the policy remains active."&lt;SEP&gt;"The grace period is a time frame after the premium due date during which coverage remains in effect, allowing for late payment without immediate policy lapse."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;CLASS OF PERMANENT POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The category or type of permanent life insurance policy selected during conversion."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;CONTINGENT BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Emma Grace Anderson and Lucas James Anderson, children of the insured, to receive 50% each if the primary beneficiary predeceases the insured."&lt;SEP&gt;"Emma Grace Anderson and Lucas James Anderson."&lt;SEP&gt;"The person who receives the death benefit if the primary beneficiary is deceased, in this case Emma Grace Anderson and Lucas James Anderson."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY EXPIRY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"End of term."&lt;SEP&gt;"End of the 20-year term."&lt;SEP&gt;"January 15, 2044."&lt;SEP&gt;"The end of the 20-year term, January 15, 2044."&lt;SEP&gt;"The end of the 20-year term."&lt;SEP&gt;"The end of the policy term, resulting in the cessation of coverage."&lt;SEP&gt;"The end of the policy term."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;JANUARY 15, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date the policy was issued."&lt;SEP&gt;"The date when the policy was officially issued."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;LIFE INSURANCE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A legal contract between the insured and the insurer, providing financial protection to beneficiaries upon the insured's death."&lt;SEP&gt;"The official contract between the insured and the insurer."&lt;SEP&gt;"The official contract."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The amount paid to the beneficiary, which may be adjusted based on correct age and sex."&lt;SEP&gt;"The amount payable to the beneficiary upon the death of the insured during the policy term."&lt;SEP&gt;"The death benefit is the amount paid to the beneficiary upon the insured's death."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;AUTOMATIC DEDUCTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT_METHOD"</data>
+  <data key="d4">"A method of premium payment where funds are automatically withdrawn from the policyholder’s account."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICY IN FORCE STATUS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"Active state."&lt;SEP&gt;"The active state of the policy during its term."&lt;SEP&gt;"The active state of the policy."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;AUTHORIZED SIGNATURE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A signature required to validate the policy."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;POLICY DOCUMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The official written record of the life insurance policy, including terms, conditions, and beneficiary designations."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual or individuals entitled to receive the death benefit upon the insured's death."&lt;SEP&gt;"The person designated to receive the death benefit."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10&lt;SEP&gt;chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;MONTHLY PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT_FREQUENCY"</data>
+  <data key="d4">"The frequency of premium payments, occurring once per month."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;PREMIUM PAYMENT HISTORY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RECORD"</data>
+  <data key="d4">"A record of all premium payments made on the policy."&lt;SEP&gt;"A record of all premium payments."&lt;SEP&gt;"Record of payments."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;SL-2024-TRM-00123&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_NUMBER"</data>
+  <data key="d4">"The unique identifier for the life insurance policy."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;INSURANCE CONTRACT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A formal agreement between the policyholder and the insurance company outlining rights and obligations."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;CLAIM FORM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A form that must be completed to initiate a claim."</data>
+  <data key="d2">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</node>
+<node id="&quot;POLICY TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"20 years."&lt;SEP&gt;"The 20-year period during which the policy is active."&lt;SEP&gt;"The period during which the policy remains in force, 20 years from issue date."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;POLICYHOLDER CONTACT INFORMATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INFORMATION"</data>
+  <data key="d4">"Contact details of the policyholder."&lt;SEP&gt;"Contact details."&lt;SEP&gt;"The contact details of the policyholder, not explicitly stated but implied."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;20-YEAR LEVEL TERM LIFE INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of life insurance that provides coverage for 20 years with a fixed premium and death benefit."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;COVERAGE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The time frame during which the policy provides protection, from January 15, 2024, to January 15, 2044."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<node id="&quot;JOHN MICHAEL ANDERSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The policy owner and the insured person, born on March 22, 1985, aged 38 at the time of policy issue."</data>
+  <data key="d2">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;To claim the death benefit, the beneficiary must submit: (a) Completed claim form, (b) Certified copy of the death certificate, (c) Original policy document (if available).&quot;" target="&quot;DEATH CERTIFICATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;To claim the death benefit, the beneficiary must submit: (a) Completed claim form, (b) Certified copy of the death certificate, (c) Original policy document (if available).&quot;" target="&quot;ORIGINAL POLICY DOCUMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;To claim the death benefit, the beneficiary must submit: (a) Completed claim form, (b) Certified copy of the death certificate, (c) Original policy document (if available).&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;To claim the death benefit, the beneficiary must submit: (a) Completed claim form, (b) Certified copy of the death certificate, (c) Original policy document (if available).&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;To claim the death benefit, the beneficiary must submit: (a) Completed claim form, (b) Certified copy of the death certificate, (c) Original policy document (if available).&quot;" target="&quot;CLAIM FORM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage continues during the grace period.&quot;" target="&quot;COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage continues during the grace period.&quot;" target="&quot;GRACE PERIOD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Claims should be sent to: SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102.&quot;" target="&quot;SECURELIFE INSURANCE COMPANY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Claims should be sent to: SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102.&quot;" target="&quot;CLAIMS DEPARTMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Claims should be sent to: SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102.&quot;" target="&quot;P.O. BOX 5000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Claims should be sent to: SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102.&quot;" target="&quot;HARTFORD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Claims should be sent to: SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102.&quot;" target="&quot;CT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Claims should be sent to: SecureLife Insurance Company, Claims Department, P.O. Box 5000, Hartford, CT 06102.&quot;" target="&quot;06102&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.&quot;" target="&quot;PREMIUM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.&quot;" target="&quot;TERMINATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.&quot;" target="&quot;LAPSE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We will pay valid claims within 30 days of receiving all required documentation.&quot;" target="&quot;VALID CLAIMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We will pay valid claims within 30 days of receiving all required documentation.&quot;" target="&quot;30 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We will pay valid claims within 30 days of receiving all required documentation.&quot;" target="&quot;DOCUMENTATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.&quot;" target="&quot;SUICIDE CLAUSE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.&quot;" target="&quot;INSURED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.&quot;" target="&quot;ISSUE DATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.&quot;" target="&quot;LIABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We cannot contest this policy after it has been in force during the insured's lifetime for two years from the issue date.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We cannot contest this policy after it has been in force during the insured's lifetime for two years from the issue date.&quot;" target="&quot;ISSUE DATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We cannot contest this policy after it has been in force during the insured's lifetime for two years from the issue date.&quot;" target="&quot;INCONTESTABILITY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We cannot contest this policy after it has been in force during the insured's lifetime for two years from the issue date.&quot;" target="&quot;INSURED'S LIFETIME&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Conversion must occur before the earlier of: (a) The policy expiry date, or (b) The insured's 65th birthday.&quot;" target="&quot;INSURED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Conversion must occur before the earlier of: (a) The policy expiry date, or (b) The insured's 65th birthday.&quot;" target="&quot;CONVERSION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Conversion must occur before the earlier of: (a) The policy expiry date, or (b) The insured's 65th birthday.&quot;" target="&quot;POLICY EXPIRY DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Conversion must occur before the earlier of: (a) The policy expiry date, or (b) The insured's 65th birthday.&quot;" target="&quot;65TH BIRTHDAY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the age or sex of the insured has been misstated, we will adjust the death benefit to what the premiums paid would have purchased at the correct age and sex.&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the age or sex of the insured has been misstated, we will adjust the death benefit to what the premiums paid would have purchased at the correct age and sex.&quot;" target="&quot;MISSTATEMENT OF AGE OR SEX&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the age or sex of the insured has been misstated, we will adjust the death benefit to what the premiums paid would have purchased at the correct age and sex.&quot;" target="&quot;CORRECT AGE AND SEX&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the age or sex of the insured has been misstated, we will adjust the death benefit to what the premiums paid would have purchased at the correct age and sex.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY TERM&quot;">
+  <data key="d5">285.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PREMIUM PAYMENT HISTORY&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;20-YEAR LEVEL TERM LIFE INSURANCE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;MONTHLY PAYMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH DURING POLICY TERM&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICYHOLDER CONTACT INFORMATION&quot;">
+  <data key="d5">240.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PREMIUM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;JOHN MICHAEL ANDERSON&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY TERM EXPIRY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;SECURELIFE INSURANCE COMPANY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY IN FORCE&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;BENEFICIARY CONTACT INFORMATION&quot;">
+  <data key="d5">240.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;MARCH 22, 1985&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH BENEFIT ELIGIBILITY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;GRACE PERIOD COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;INSURANCE COMPANY ADDRESS&quot;">
+  <data key="d5">225.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;38 YEARS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;GRACE PERIOD DURATION&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY LAPSE EVENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY ISSUE DATE&quot;">
+  <data key="d5">300.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;$500,000&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PREMIUM PAYMENT DEADLINE&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH BENEFIT PAYMENT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH BENEFIT AMOUNT&quot;">
+  <data key="d5">200.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;20 YEARS&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICYHOLDER RIGHTS&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PROOF OF DEATH SUBMISSION&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;MONTHLY PREMIUM&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;INSURED&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;JANUARY 15, 2044&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;BENEFICIARY RIGHTS&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;BENEFICIARY DESIGNATION&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;SPOUSE RELATIONSHIP&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;COVERAGE PERIOD&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;$45.00 PER MONTH&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;INSURER OBLIGATIONS&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY ANNIVERSARY DATE&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PARENT-CHILD RELATIONSHIP&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;MONTHLY AUTOMATIC DEDUCTION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICYHOLDER RESPONSIBILITY&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY EXPIRATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;FAMILY STRUCTURE&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;SARAH ELIZABETH ANDERSON&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH CLAIM PROCESS&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;AUTOMATIC PAYMENT&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH BENEFIT CLAIM&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;EMMA GRACE ANDERSON&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PROOF OF DEATH REQUIREMENT&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;MONTHLY DEDUCTION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;INSURER RESPONSIBILITY&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;LUCAS JAMES ANDERSON&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;LUMP SUM SETTLEMENT&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH BENEFIT PAYOUT&quot;">
+  <data key="d5">285.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY LAPSE CONSEQUENCE&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PREMIUM DUE DATE&quot;">
+  <data key="d5">635.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;INSTALLMENT SETTLEMENT&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;CONTINGENT BENEFICIARY SHARE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;GRACE PERIOD PROTECTION&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY ANNIVERSARY&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;ANNUITY SETTLEMENT&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PRIMARY BENEFICIARY SHARE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;BENEFICIARY CLAIM PROCESS&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PROOF OF DEATH&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;COVERAGE CONTINUATION&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICYHOLDER&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY EXPIRY DATE&quot;">
+  <data key="d5">570.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;LUMP SUM PAYMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH BENEFIT PAYOUT DATE&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;INSURED PERSON&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;ALTERNATE SETTLEMENT OPTION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;BENEFICIARY CLAIM&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;SPOUSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY LAPSE&quot;">
+  <data key="d5">540.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;INSURED DEATH VERIFICATION&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DAUGHTER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;COVERAGE TERMINATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICYHOLDER IDENTITY&quot;">
+  <data key="d5">500.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;SON&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;GRACE PERIOD&quot;">
+  <data key="d5">545.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;BENEFICIARY DESIGNATION FORM&quot;">
+  <data key="d5">255.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;FAMILY RELATIONSHIP&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;PRIMARY BENEFICIARY&quot;">
+  <data key="d5">285.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;LIFE INSURANCE CONTRACT&quot;">
+  <data key="d5">285.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;LIFE INSURANCE POLICY&quot;">
+  <data key="d5">300.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;CONTINGENT BENEFICIARY&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY EXPIRY&quot;">
+  <data key="d5">650.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;JANUARY 15, 2024&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY DOCUMENT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;AUTOMATIC DEDUCTION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;POLICY IN FORCE STATUS&quot;">
+  <data key="d5">270.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;INSURANCE CONTRACT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SECTION 7: EXCLUSIONS&quot;" target="&quot;SL-2024-TRM-00123&quot;">
+  <data key="d5">100.0</data>
+  <data key="d6">chunk-fde85eeed0e7ef938be9b3d18c3183ef</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No other exclusions apply to this policy.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No other exclusions apply to this policy.&quot;" target="&quot;EXCLUSIONS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The premium for the new policy will be based on: (a) The insured's attained age at conversion, (b) The amount of coverage converted, (c) The class of permanent policy selected.&quot;" target="&quot;PREMIUM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The premium for the new policy will be based on: (a) The insured's attained age at conversion, (b) The amount of coverage converted, (c) The class of permanent policy selected.&quot;" target="&quot;ATTAINED AGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The premium for the new policy will be based on: (a) The insured's attained age at conversion, (b) The amount of coverage converted, (c) The class of permanent policy selected.&quot;" target="&quot;AMOUNT OF COVERAGE CONVERTED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The premium for the new policy will be based on: (a) The insured's attained age at conversion, (b) The amount of coverage converted, (c) The class of permanent policy selected.&quot;" target="&quot;CLASS OF PERMANENT POLICY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may assign this policy. We are not responsible for the validity of any assignment. An assignment is not binding on us until we receive written notice at our home office.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may assign this policy. We are not responsible for the validity of any assignment. An assignment is not binding on us until we receive written notice at our home office.&quot;" target="&quot;ASSIGNMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may assign this policy. We are not responsible for the validity of any assignment. An assignment is not binding on us until we receive written notice at our home office.&quot;" target="&quot;VALIDITY OF ASSIGNMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may assign this policy. We are not responsible for the validity of any assignment. An assignment is not binding on us until we receive written notice at our home office.&quot;" target="&quot;WRITTEN NOTICE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may assign this policy. We are not responsible for the validity of any assignment. An assignment is not binding on us until we receive written notice at our home office.&quot;" target="&quot;HOME OFFICE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;" target="&quot;CONVERSION PRIVILEGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;" target="&quot;PERMANENT LIFE INSURANCE POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Authorized Signature: ___________________________ Chief Underwriting Officer SecureLife Insurance Company Date Issued: January 15, 2024.&quot;" target="&quot;SECURELIFE INSURANCE COMPANY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Authorized Signature: ___________________________ Chief Underwriting Officer SecureLife Insurance Company Date Issued: January 15, 2024.&quot;" target="&quot;CHIEF UNDERWRITING OFFICER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Authorized Signature: ___________________________ Chief Underwriting Officer SecureLife Insurance Company Date Issued: January 15, 2024.&quot;" target="&quot;JANUARY 15, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Authorized Signature: ___________________________ Chief Underwriting Officer SecureLife Insurance Company Date Issued: January 15, 2024.&quot;" target="&quot;AUTHORIZED SIGNATURE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-bd95d6b8fc6079aaa04ca42829989a10</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,2713 @@
+{
+    "name": "prudential essul life insurance",
+    "pairs": [
+        {
+            "question": "What is the type of account being referred to in the bank information?",
+            "answer": "Account type"
+        },
+        {
+            "question": "What is the name of the financial institution in the bank information?",
+            "answer": "Name of financial institution"
+        },
+        {
+            "question": "What is the bank routing number in the bank information?",
+            "answer": "Bank routing number (9 digits)"
+        },
+        {
+            "question": "What is the bank account number referred to in the bank information?",
+            "answer": "Bank account number Pre-Delivery Review Copy"
+        },
+        {
+            "question": "Is your personal information correct?",
+            "answer": "Yes, you should verify that your personal information is correct after reading your policy."
+        },
+        {
+            "question": "Do premiums or policy values vary from year to year?",
+            "answer": "Yes, premiums or policy values may vary from year to year."
+        },
+        {
+            "question": "What part of the premium or policy value isn't guaranteed?",
+            "answer": "The part of the premium or policy value that isn't guaranteed is specified in the policy and should be reviewed."
+        },
+        {
+            "question": "How will the timing of money paid and received affect any interest the policy might earn?",
+            "answer": "The timing of money paid and received can affect the interest the policy earns."
+        },
+        {
+            "question": "Who can help you understand anything that isn't clear in your policy?",
+            "answer": "Your insurance agent, financial advisor, or an insurance company representative can help."
+        },
+        {
+            "question": "What is the refund period if you're not satisfied with your new policy?",
+            "answer": "You can return the policy for a full refund within 10 days after receiving it."
+        },
+        {
+            "question": "What are the two types of death benefits mentioned in the contract?",
+            "answer": "Type A and Type B death benefit."
+        },
+        {
+            "question": "How is the death benefit calculated for a contract with a Type A death benefit?",
+            "answer": "The death benefit is the greater of (1) the basic insurance amount, and (2) the contract fund before deduction of any monthly charges due on that date, multiplied by the attained age factor that applies."
+        },
+        {
+            "question": "How is the death benefit calculated for a contract with a Type B death benefit?",
+            "answer": "The death benefit is the greater of (1) the basic insurance amount plus the contract fund before deduction of any monthly charges due on that date, and (2) the contract fund before deduction of any monthly charges due on that date, multiplied by the attained age factor that applies."
+        },
+        {
+            "question": "What happens if the contract fund is less than zero when computing the death benefit?",
+            "answer": "We will consider it to be zero."
+        },
+        {
+            "question": "Where can the basic insurance amount and attained age factors be found?",
+            "answer": "Your basic insurance amount and attained age factors are shown in the contract data pages."
+        },
+        {
+            "question": "What is the key difference between Type A and Type B death benefit calculations?",
+            "answer": "For Type B, the death benefit includes the basic insurance amount plus the contract fund in one of the two options, whereas Type A does not add the basic insurance amount to the contract fund."
+        },
+        {
+            "question": "What is the maximum charge deducted from the contract fund for a full surrender?",
+            "answer": "The maximum charge is shown in the Schedule of Maximum Surrender Charges."
+        },
+        {
+            "question": "When may a surrender charge be deducted besides a full surrender?",
+            "answer": "A surrender charge may also be deducted when decreasing the basic insurance amount, changing the type of death benefit, or making a withdrawal."
+        },
+        {
+            "question": "Which sections of the contract provide details about decreases in the basic insurance amount?",
+            "answer": "See the section 'Decrease in Basic Insurance Amount'."
+        },
+        {
+            "question": "Which sections of the contract provide details about changing the type of death benefit?",
+            "answer": "See the section 'Changing the Type of Death Benefit'."
+        },
+        {
+            "question": "Which sections of the contract provide details about withdrawals?",
+            "answer": "See the section 'Withdrawals'."
+        },
+        {
+            "question": "What is the payment structure for Option 2 (Life Income)?",
+            "answer": "Equal monthly payments for as long as the person on whose life the settlement is based lives."
+        },
+        {
+            "question": "For how long are payments certain under Option 2?",
+            "answer": "Payments are certain for 120 months."
+        },
+        {
+            "question": "What is the minimum payment period guaranteed under Option 2?",
+            "answer": "The minimum payment period is 120 months."
+        },
+        {
+            "question": "What documentation is required for Option 2?",
+            "answer": "Proof of the date of birth of the person on whose life the settlement is based."
+        },
+        {
+            "question": "How long must payments continue under Option 2 if the person outlives the certain period?",
+            "answer": "Payments continue for as long as the person lives."
+        },
+        {
+            "question": "What is the name of the first proposed insured?",
+            "answer": "FNAME CLOSEDADMINTESTTWO"
+        },
+        {
+            "question": "Which companies are part of Prudential Financial?",
+            "answer": "Pruco Life Insurance Company, The Prudential Insurance Company of America, Pruco Life Insurance Company of New Jersey"
+        },
+        {
+            "question": "What is the purpose of this document?",
+            "answer": "Consent for Electronic Policy Delivery"
+        },
+        {
+            "question": "What is the name of the second proposed insured?",
+            "answer": "Not provided"
+        },
+        {
+            "question": "How long does it take to pay a death claim after receiving proof of death?",
+            "answer": "Within seven days"
+        },
+        {
+            "question": "What is required to settle a death claim in one sum?",
+            "answer": "Proof of the Insured's death and any other information needed to pay the claim"
+        },
+        {
+            "question": "Where must the proof of death and other information be sent for a death claim?",
+            "answer": "To the Home Office"
+        },
+        {
+            "question": "What type of payment is made for a death claim under this contract?",
+            "answer": "A one-sum payment"
+        },
+        {
+            "question": "What is the name of the insurance company mentioned in the text?",
+            "answer": "Pruco Life Insurance Company"
+        },
+        {
+            "question": "Which financial company is Pruco Life Insurance Company a part of?",
+            "answer": "Prudential Financial"
+        },
+        {
+            "question": "What is the customer service office address for Pruco Life Insurance Company?",
+            "answer": "PO BOX 7390, Philadelphia, PA 19176"
+        },
+        {
+            "question": "What is the customer service phone number for Pruco Life Insurance Company?",
+            "answer": "(800) 944-8786"
+        },
+        {
+            "question": "What is the policy number listed in the document?",
+            "answer": "V8587562"
+        },
+        {
+            "question": "What is the date mentioned in the text, and what might it signify?",
+            "answer": "January 27, 2026; it may signify a future policy-related date, such as a renewal or effective date"
+        },
+        {
+            "question": "How can you apply for life insurance?",
+            "answer": "You can apply through life insurance agents, the mail, or online."
+        },
+        {
+            "question": "What personal information is typically required when applying for life insurance?",
+            "answer": "Basic information such as your name, address, employer, job title, and date of birth."
+        },
+        {
+            "question": "What might an insurer require depending on the type of policy?",
+            "answer": "They may require a doctor visit, health-related questions, or a medical professional to assess your health at home or office."
+        },
+        {
+            "question": "Why might a policy without detailed health information cost more?",
+            "answer": "Because it provides less coverage than a policy that requires detailed health information."
+        },
+        {
+            "question": "What happens if false statements are discovered on a life insurance application after the policy is issued?",
+            "answer": "The insurance company could reduce or cancel your coverage."
+        },
+        {
+            "question": "Why should you not name a minor child as a beneficiary?",
+            "answer": "Insurance companies won't pay a minor, so it's advised to leave the money to your estate or trust instead."
+        },
+        {
+            "question": "How many days does the account owner have to notify Prudential of an error related to a transfer?",
+            "answer": "60 days from the date of the withdrawal"
+        },
+        {
+            "question": "What types of damages is Prudential not liable for under this agreement?",
+            "answer": "Exemplary, special, consequential, punitive, indirect, or incidental damages"
+        },
+        {
+            "question": "What happens if a premium withdrawal date falls on a weekend or bank holiday?",
+            "answer": "The withdrawal will occur on the next business day"
+        },
+        {
+            "question": "What must be true about the withdrawal date in relation to the premium due date?",
+            "answer": "The withdrawal date must be on or before the premium due date"
+        },
+        {
+            "question": "What is the purpose of signing the authorization form below?",
+            "answer": "To authorize Prudential to make the fund transfer(s) from the account listed above"
+        },
+        {
+            "question": "What information is required in the signature section for the account owner?",
+            "answer": "Name of account owner (first, middle initial, last name), account owner's signature, and date (month/day/year)"
+        },
+        {
+            "question": "What are the two primary ways the proceeds from the contract can be paid?",
+            "answer": "In a single sum or under one of the optional modes of settlement."
+        },
+        {
+            "question": "How can someone obtain details about the optional settlement modes?",
+            "answer": "By requesting them from the Company."
+        },
+        {
+            "question": "What determines the minimum annuity benefits provided under the contract?",
+            "answer": "The application of the proceeds to purchase a single consideration immediate annuity contract at purchase rates offered by the Company."
+        },
+        {
+            "question": "Are the annuity benefits guaranteed to be at least as much as those from a single consideration immediate annuity?",
+            "answer": "Yes, they will not be less than those provided by such a purchase."
+        },
+        {
+            "question": "Does the minimum annuity benefit guarantee apply to both fixed and variable annuity payments?",
+            "answer": "Yes, it applies to fixed, variable, or both types of annuity benefits."
+        },
+        {
+            "question": "On what basis are the annuity benefits compared to a single consideration immediate annuity?",
+            "answer": "Based on the purchase rates offered by the Company at the time to the same class of annuitants."
+        },
+        {
+            "question": "What must be true about the form of a withdrawal request?",
+            "answer": "The withdrawal request must be in a form that meets the insurer's needs."
+        },
+        {
+            "question": "What is the minimum amount that may be withdrawn from the contract?",
+            "answer": "The withdrawal amount may not be less than the minimum amount shown under Contract Limitations."
+        },
+        {
+            "question": "What condition must be met regarding the contract fund after a withdrawal?",
+            "answer": "The contract fund, after deducting any withdrawal charges and an estimated amount for two monthly deductions, must not be less than or equal to zero."
+        },
+        {
+            "question": "How does a withdrawal affect the basic insurance amount for a Type A death benefit?",
+            "answer": "If a withdrawal would cause the net amount at risk to increase, the basic insurance amount will be reduced to offset this increase, but never by more than the withdrawal amount."
+        },
+        {
+            "question": "What happens to the contract fund on the date a withdrawal is approved?",
+            "answer": "The contract fund is reduced by the withdrawal amount and any charges listed under Adjustments to the Contract Fund."
+        },
+        {
+            "question": "Can a withdrawn amount be repaid to the contract?",
+            "answer": "Any amount withdrawn may not be repaid except as a premium subject to charges."
+        },
+        {
+            "question": "How long does the insurer have to pay a withdrawal after receiving the request?",
+            "answer": "The insurer will usually pay within seven days, but may postpone payment for up to six months."
+        },
+        {
+            "question": "What happens to the contract's charges and values if the basic insurance amount is reduced?",
+            "answer": "The contract's charges, values, and limitations will be recomputed, and new contract data pages will be sent to the policyholder."
+        },
+        {
+            "question": "What must be true for an assignment of the contract to be recognized by the company?",
+            "answer": "The request must be in a form that meets the company's needs, and the contract must be sent if requested, with both received at the Home Office."
+        },
+        {
+            "question": "When does an assignment take effect if no different effective date is specified?",
+            "answer": "It takes effect on the date the request was signed."
+        },
+        {
+            "question": "What is a restriction on assigning the contract if such assignment would violate a law?",
+            "answer": "It may not be assigned if such assignment would violate any federal, state, or local law or regulation prohibiting sex distinct rates for insurance."
+        },
+        {
+            "question": "What factors are considered when changing contract elements?",
+            "answer": "Mortality, persistency, policy funding, net amount at risk, expenses, taxes, and investment earnings and profit."
+        },
+        {
+            "question": "How frequently can the company change the rate of excess interest credit?",
+            "answer": "No more frequently than once per month."
+        },
+        {
+            "question": "What must be true for a change in plan to be approved?",
+            "answer": "It may be made only if the company consents and is subject to conditions and charges that are then determined."
+        },
+        {
+            "question": "What is the policy number if known?",
+            "answer": "V8587562"
+        },
+        {
+            "question": "What is the amount of insurance applied for?",
+            "answer": "$400,000"
+        },
+        {
+            "question": "What is the selected definition of life insurance?",
+            "answer": "Cash Value Accumulation Test (CVAT)"
+        },
+        {
+            "question": "What is the applicant's date of birth?",
+            "answer": "01/02/1980"
+        },
+        {
+            "question": "What is the applicant's gender?",
+            "answer": "Male"
+        },
+        {
+            "question": "What is the applicant's occupation?",
+            "answer": "CONSULTANT"
+        },
+        {
+            "question": "What is the applicant's earned annual income?",
+            "answer": "$120,000"
+        },
+        {
+            "question": "What is the applicant's net worth?",
+            "answer": "$985,000"
+        },
+        {
+            "question": "How often should you review your life insurance policy?",
+            "answer": "Every few years."
+        },
+        {
+            "question": "Who can you consult with to review your life insurance policy?",
+            "answer": "Your insurance agent, financial advisor, or an insurance company representative."
+        },
+        {
+            "question": "What should you check regarding premiums and benefits when reviewing your policy?",
+            "answer": "Whether the premiums or benefits have changed since your policy was issued."
+        },
+        {
+            "question": "Why should you review your death benefits periodically?",
+            "answer": "To ensure they still meet your current needs."
+        },
+        {
+            "question": "What life events might require a change in your life insurance coverage?",
+            "answer": "Birth, adoption, marriage, job change, death, or divorce."
+        },
+        {
+            "question": "What resources can the insurance company provide to help with policy review?",
+            "answer": "Policy statements and illustrations."
+        },
+        {
+            "question": "Can you change your beneficiaries without cost?",
+            "answer": "Yes, as the policy owner, you can change beneficiaries at no cost."
+        },
+        {
+            "question": "When should you particularly review your beneficiaries?",
+            "answer": "After major life events that affect your life insurance needs."
+        },
+        {
+            "question": "What are the sections that describe charges and withdrawals deducted from the contract?",
+            "answer": "Adjustments to the Contract Fund, Decrease in Basic Insurance Amount, Cost of Insurance, Changing the Type of Death Benefit, and Withdrawals."
+        },
+        {
+            "question": "Which section covers adjustments made to the contract fund?",
+            "answer": "Adjustments to the Contract Fund"
+        },
+        {
+            "question": "What is the section that discusses reducing the basic insurance amount?",
+            "answer": "Decrease in Basic Insurance Amount"
+        },
+        {
+            "question": "Which section details the cost of insurance charges?",
+            "answer": "Cost of Insurance"
+        },
+        {
+            "question": "What section explains changes to the type of death benefit?",
+            "answer": "Changing the Type of Death Benefit"
+        },
+        {
+            "question": "What are the four conditions for an annuity to qualify under Option 5?",
+            "answer": "It must be based on United States currency, bought by a single sum, not provide for dividends, and not normally provide for deferral of the first payment."
+        },
+        {
+            "question": "What type of currency must the annuity under Option 5 be based on?",
+            "answer": "United States currency."
+        },
+        {
+            "question": "How is the annuity under Option 5 purchased?",
+            "answer": "By a single sum."
+        },
+        {
+            "question": "Does Option 5 provide for dividends?",
+            "answer": "No, it does not provide for dividends."
+        },
+        {
+            "question": "What is required if a life income is chosen under Option 5?",
+            "answer": "Proof of the date of birth of any person on whose life the option is based."
+        },
+        {
+            "question": "How far in advance of the first payment's due date can Option 5 be chosen?",
+            "answer": "No more than 30 days before the due date of the first payment."
+        },
+        {
+            "question": "When is the net premium amount credited to the contract fund if the first premium payment is received on or before the contract date?",
+            "answer": "On the contract date."
+        },
+        {
+            "question": "When is the net premium amount credited to the contract fund if the first premium payment is received after the contract date?",
+            "answer": "On the date we receive your payment."
+        },
+        {
+            "question": "What condition must be met for the net premium amount to be credited on the contract date?",
+            "answer": "The first premium payment must be received on or before the contract date."
+        },
+        {
+            "question": "What determines the credit date of the net premium amount if the payment arrives after the contract date?",
+            "answer": "The date the payment is received."
+        },
+        {
+            "question": "What must be true about the amount of decrease in the basic insurance amount?",
+            "answer": "The amount of the decrease must be at least equal to the minimum decrease in basic insurance amount shown under Contract Limitations in the contract data pages."
+        },
+        {
+            "question": "What must the basic insurance amount be after a decrease?",
+            "answer": "The basic insurance amount after a decrease must be at least equal to the minimum basic insurance amount shown under Contract Limitations in the contract data pages."
+        },
+        {
+            "question": "Under what condition may the insurer decline a request to decrease the basic insurance amount?",
+            "answer": "We may decline the decrease if we determine it would cause the contract to fail to qualify as life insurance under the applicable tax law."
+        },
+        {
+            "question": "When does a decrease in the basic insurance amount take effect?",
+            "answer": "A decrease will take effect only if we approve your request for it at our Home Office, and will take effect on the date we approve it."
+        },
+        {
+            "question": "What happens if the Insured is not living on the effective date of the decrease?",
+            "answer": "If the Insured is not living on the effective date, the decrease will not take effect."
+        },
+        {
+            "question": "What must be done if the insurer requests it after a decrease request?",
+            "answer": "If we ask you to do so, you must send us the contract to be endorsed."
+        },
+        {
+            "question": "What is the condition regarding surrender charges when decreasing the basic insurance amount?",
+            "answer": "You may not decrease the basic insurance amount if any surrender charge on the decrease exceeds the amount in your contract fund less the administrative charge (shown under Adjustments to the Contract Fund) for the decrease."
+        },
+        {
+            "question": "How are the contract's charges and values affected after a decrease is approved?",
+            "answer": "If we approve the decrease, we will recompute the contract's charges and values in the appropriate tables."
+        },
+        {
+            "question": "How can you opt out of sharing your personal information among Prudential companies for marketing purposes?",
+            "answer": "By opting out through the privacy center online or by calling 1-877-248-4019."
+        },
+        {
+            "question": "Which entities are included in the list of Prudential companies that may share your information?",
+            "answer": "Broker-Dealers and Registered Investment Advisers such as AST Investment Services, Inc., Prudential Annuities Distributors, Inc., PGIM, Inc., and others listed."
+        },
+        {
+            "question": "What is the toll-free number to contact Prudential with questions about privacy or this notice?",
+            "answer": "1-877-248-4019."
+        },
+        {
+            "question": "Can you opt out of sharing your personal information for servicing and administration purposes?",
+            "answer": "No, you are not able to limit sharing for servicing and administration purposes."
+        },
+        {
+            "question": "What types of information can you opt out of sharing among Prudential companies?",
+            "answer": "Personal information for marketing purposes and consumer report information."
+        },
+        {
+            "question": "Where can you find this privacy notice and update your privacy choices?",
+            "answer": "At www.prudential.com or through the online privacy center at https://www.prudential.com/links/privacy-center."
+        },
+        {
+            "question": "What is the telephone number for the Alabama Department of Insurance?",
+            "answer": "334-269-3550"
+        },
+        {
+            "question": "Which department is responsible for insurance regulation in Alabama?",
+            "answer": "Alabama Department of Insurance"
+        },
+        {
+            "question": "What type of death benefit is mentioned in the text?",
+            "answer": "Type A"
+        },
+        {
+            "question": "Where can one find more information about death benefit provisions?",
+            "answer": "See Death Benefit Provisions"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 69?",
+            "answer": "61.4058"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 70?",
+            "answer": "64.6483"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 71?",
+            "answer": "68.05"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 72?",
+            "answer": "71.6167"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 73?",
+            "answer": "75.35083"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 75?",
+            "answer": "83.33333"
+        },
+        {
+            "question": "What is the maximum administrative charge deducted from each premium paid?",
+            "answer": "Up to 2.5% of the premium paid."
+        },
+        {
+            "question": "What is the sales expense charge rate for premiums within the Premium Allocation Amount?",
+            "answer": "Up to 12% of the premium paid."
+        },
+        {
+            "question": "What is the sales expense charge rate for premiums in excess of the Premium Allocation Amount?",
+            "answer": "Up to 35% of the premium paid."
+        },
+        {
+            "question": "In which contract years do these premium adjustment rules apply?",
+            "answer": "Contract Year 1 and later."
+        },
+        {
+            "question": "What is the term for the amount remaining after all premium deductions?",
+            "answer": "The net premium amount."
+        },
+        {
+            "question": "What is the factor value in Contract Year 1?",
+            "answer": "2.04"
+        },
+        {
+            "question": "What is the factor value in Contract Year 31?",
+            "answer": "1.25"
+        },
+        {
+            "question": "Which contract year has a factor of 1.15?",
+            "answer": "38 Copy"
+        },
+        {
+            "question": "What is the factor value in Contract Year 50?",
+            "answer": "1.05"
+        },
+        {
+            "question": "From which contract year does the factor remain constant at 1.01?",
+            "answer": "55"
+        },
+        {
+            "question": "What annotation appears in the row for Contract Year 16?",
+            "answer": "Pre-Delivery"
+        },
+        {
+            "question": "What is the contract fund defined as when you make your first premium payment?",
+            "answer": "The net premium amount, less any charges due on or before that day, becomes your contract fund."
+        },
+        {
+            "question": "How are amounts added to or subtracted from the contract fund?",
+            "answer": "Amounts are added to and subtracted from the contract fund as shown under Adjustments to the Contract Fund in the contract data pages."
+        },
+        {
+            "question": "What role does the contract fund play in determining whether the contract remains in force?",
+            "answer": "The contract fund will determine, in part, whether this contract will remain in force or go into default."
+        },
+        {
+            "question": "Which values are determined by the contract fund?",
+            "answer": "The contract fund is used to determine your loan and surrender values, the amount you may withdraw, and the death benefit."
+        },
+        {
+            "question": "When do additional amounts credited to the contract fund become nonforfeitable?",
+            "answer": "Additional amounts credited to the contract fund are nonforfeitable after crediting except indirectly due to surrender charges."
+        },
+        {
+            "question": "What happens to amounts credited to the contract fund if surrender charges apply?",
+            "answer": "Additional amounts credited to the contract fund are nonforfeitable after crediting except indirectly due to surrender charges."
+        },
+        {
+            "question": "What currency must all payments be made in?",
+            "answer": "United States currency"
+        },
+        {
+            "question": "Where must any amount owed be payable?",
+            "answer": "At our Corporate Office"
+        },
+        {
+            "question": "Who must receive payments in United States currency?",
+            "answer": "We"
+        },
+        {
+            "question": "Where are payments to be made when money is paid to us?",
+            "answer": "At our Corporate Office"
+        },
+        {
+            "question": "What is the processing date mentioned in the document?",
+            "answer": "JAN 27, 2026"
+        },
+        {
+            "question": "What is the policy number listed in the document?",
+            "answer": "V8 587 562"
+        },
+        {
+            "question": "What is the minimum premium the company will accept?",
+            "answer": "$25.00"
+        },
+        {
+            "question": "What is the minimum Basic Insurance Amount?",
+            "answer": "$25,000.00"
+        },
+        {
+            "question": "What is the minimum decrease allowed in the Basic Insurance Amount?",
+            "answer": "$5,000.00"
+        },
+        {
+            "question": "What is the minimum amount you may withdraw?",
+            "answer": "$250.00"
+        },
+        {
+            "question": "What does contract debt include at any given time?",
+            "answer": "The loan on the contract at that time, plus the interest charged that is not yet due and not yet added to the loan."
+        },
+        {
+            "question": "What is included in the loan portion of contract debt?",
+            "answer": "The loan on the contract at that time."
+        },
+        {
+            "question": "What type of interest is included in contract debt?",
+            "answer": "Interest that has been charged but is not yet due and has not yet been added to the loan."
+        },
+        {
+            "question": "When is interest considered part of contract debt?",
+            "answer": "When it has been charged but is not yet due and has not yet been added to the loan."
+        },
+        {
+            "question": "What is the purpose of a Lapse Protection Rider in an insurance policy?",
+            "answer": "To help prevent the policy from lapsing due to missed premium payments."
+        },
+        {
+            "question": "What is the 'Basic Insurance Amount' in the context of life insurance on the insured?",
+            "answer": "Basic Insurance Amount"
+        },
+        {
+            "question": "What is the loan value of a contract that is not in default?",
+            "answer": "The loan value is equal to the cash value."
+        },
+        {
+            "question": "What happens to the loan value if a contract is in default?",
+            "answer": "It has no loan value."
+        },
+        {
+            "question": "Under what condition does a contract have a loan value?",
+            "answer": "When the contract is not in default."
+        },
+        {
+            "question": "Can a contract in default have a loan value?",
+            "answer": "No, it has no loan value."
+        },
+        {
+            "question": "What should you consider before buying a life insurance policy?",
+            "answer": "You should ensure you can afford the premiums."
+        },
+        {
+            "question": "Why might life insurance premiums increase over time?",
+            "answer": "Premiums may increase due to worse-than-expected investment earnings, claims costs, or other expenses."
+        },
+        {
+            "question": "What factors can cause life insurance premiums to rise?",
+            "answer": "Changes in the company's investment earnings, claims costs, and other expenses."
+        },
+        {
+            "question": "What should you ask about regarding future premiums?",
+            "answer": "You should ask what the highest premium you might have to pay to keep your coverage would be."
+        },
+        {
+            "question": "What is a key concern if a life insurance premium increases later?",
+            "answer": "Whether you will still be able to afford it."
+        },
+        {
+            "question": "How are the premiums for many life insurance policies affected?",
+            "answer": "They are sensitive to changes in the company's investment earnings, claims costs, and other expenses."
+        },
+        {
+            "question": "What is the initial value of the no-lapse contract fund on the contract date?",
+            "answer": "On the Contract Date the no-lapse contract fund is equal to the no-lapse net premium amount credited on that date, minus any of the charges described below which may be due on that date."
+        },
+        {
+            "question": "What is added to the no-lapse contract fund on each day after the contract date?",
+            "answer": "On each day after the contract date, we will adjust the no-lapse contract fund by: adding any no-lapse net premium amounts. adding no-lapse interest on that portion of the no-lapse contract fund in excess of the amount of any loan"
+        },
+        {
+            "question": "What is the effective annual interest rate applied to the portion of the fund exceeding any loan?",
+            "answer": "Pre-Delivery Review Copy adding no-lapse interest on that portion of the no-lapse contract fund equal to the amount of any loan at an effective annual rate of 1% (0.00272616% a day)."
+        },
+        {
+            "question": "What is subtracted from the no-lapse contract fund on each monthly date?",
+            "answer": "And on each monthly date, we will adjust the no-lapse contract fund by: subtracting a monthly no-lapse charge for administrative expenses of: $0.20 per $1,000 of the basic insurance amount plus $10.00; changing on JAN 27, 2046 to $0.00 per $1,000 of the basic insurance amount plus $10.00 thereafter."
+        },
+        {
+            "question": "What is the monthly no-lapse charge before January 27, 2046?",
+            "answer": "$0.20 per $1,000 of the basic insurance amount plus $10.00"
+        },
+        {
+            "question": "What changes to the monthly no-lapse charge after January 27, 2046?",
+            "answer": "changing on JAN 27, 2046 to $0.00 per $1,000 of the basic insurance amount plus $10.00 thereafter."
+        },
+        {
+            "question": "What is the purpose of this form?",
+            "answer": "To pay initial premium, COD, or additional monies due at policy placement using E-Pay and/or to establish electronic funds transfers (EFT) for Life New Business only."
+        },
+        {
+            "question": "Which life products allow EFT payments on quarterly, semi-annual, and annual modes?",
+            "answer": "EssentialTerm Value and EssentialTerm Plus."
+        },
+        {
+            "question": "For which payment mode are EFT payments allowed for all life products except EssentialTerm Value and EssentialTerm Plus?",
+            "answer": "Monthly mode."
+        },
+        {
+            "question": "What does the term 'I, me, my, you, and your' refer to in this document?",
+            "answer": "The bank account owner."
+        },
+        {
+            "question": "What does the term 'Prudential, we, and us' refer to in this document?",
+            "answer": "The Prudential company that issued the policy."
+        },
+        {
+            "question": "What is the required format for the bank routing number?",
+            "answer": "9 digits."
+        },
+        {
+            "question": "What is the net amount at risk used for in insurance?",
+            "answer": "It is used to determine the cost of insurance as described under Adjustments to the Contract Fund."
+        },
+        {
+            "question": "How is the net amount at risk calculated?",
+            "answer": "It is equal to the death benefit, discounted for one month of interest, minus the contract fund."
+        },
+        {
+            "question": "What happens if the contract fund is less than zero when computing the net amount at risk?",
+            "answer": "We will consider it to be zero."
+        },
+        {
+            "question": "Which interest rate is used to calculate the one month of interest discounting?",
+            "answer": "The annual effective interest rate used to calculate the one month of interest discounting is shown in the contract data pages."
+        },
+        {
+            "question": "What is the relationship between the death benefit and the net amount at risk?",
+            "answer": "The death benefit is discounted for one month of interest and then subtracted by the contract fund to determine the net amount at risk."
+        },
+        {
+            "question": "Where can the annual effective interest rate used for discounting be found?",
+            "answer": "It is shown in the contract data pages."
+        },
+        {
+            "question": "Under what condition does a contract remain in force after a monthly evaluation?",
+            "answer": "The contract remains in force if the cash value is greater than zero and the contract has no excess contract debt."
+        },
+        {
+            "question": "When is a contract considered to be in default?",
+            "answer": "A contract is in default when the cash value is zero or less."
+        },
+        {
+            "question": "What happens if the cash value is zero or less but the contract still remains in force?",
+            "answer": "The contract remains in force if it is protected by a No-Lapse Guarantee."
+        },
+        {
+            "question": "What is the role of a No-Lapse Guarantee in the context of contract default?",
+            "answer": "A No-Lapse Guarantee allows the contract to remain in force even if the cash value is zero or less."
+        },
+        {
+            "question": "What is evaluated on each monthly date regarding the contract?",
+            "answer": "The cash value is evaluated on each monthly date."
+        },
+        {
+            "question": "Can a contract be in default even if it has a positive cash value?",
+            "answer": "No, a contract cannot be in default if it has a positive cash value, provided there is no excess contract debt."
+        },
+        {
+            "question": "What is the initial calculation of the contract fund on the Contract Date?",
+            "answer": "The contract fund is equal to the net premium amount credited on that date, minus any of the charges described below which may be due on that date."
+        },
+        {
+            "question": "What daily adjustments are made to the contract fund after the Contract Date?",
+            "answer": "We will adjust the contract fund by adding any net premium amounts, adding guaranteed interest at an effective annual rate of 1% (0.00272616% a day), adding any excess interest at an effective annual rate that Pruco Life declares, and adding guaranteed interest to the portion of the contract fund that has been loaned at an effective annual rate of 1% (0.00272616% a day)."
+        },
+        {
+            "question": "What charges are subtracted from the contract fund when a withdrawal is made?",
+            "answer": "We subtract an administrative charge of up to $25.00 for any withdrawals and any surrender charge that may result from a withdrawal, surrender, or reduction in the basic insurance amount."
+        },
+        {
+            "question": "What is the daily interest rate applied to the contract fund for guaranteed interest?",
+            "answer": "The daily interest rate is 0.00272616%."
+        },
+        {
+            "question": "What is the effective annual rate for guaranteed interest on the contract fund?",
+            "answer": "The effective annual rate is 1%."
+        },
+        {
+            "question": "What happens to the interest credited on the portion of the contract fund that has been loaned?",
+            "answer": "Guaranteed interest is added to the portion of the contract fund that has been loaned at an effective annual rate of 1% (0.00272616% a day)."
+        },
+        {
+            "question": "What is the maximum surrender charge for a surrender occurring during contract year 1?",
+            "answer": "$10,016.00 Copy"
+        },
+        {
+            "question": "What is the maximum surrender charge for a surrender occurring during contract year 6?",
+            "answer": "$7,108.00"
+        },
+        {
+            "question": "What is the maximum surrender charge for a surrender occurring during contract year 15 and later?",
+            "answer": "$0.00"
+        },
+        {
+            "question": "What mortality tables are used to determine the surrender charges?",
+            "answer": "Commissioners 2017 Standard Ordinary Smoker and Nonsmoker Ultimate Mortality Tables"
+        },
+        {
+            "question": "What is the effective interest rate used in the basis of computation?",
+            "answer": "3.75%"
+        },
+        {
+            "question": "Can the company charge less than the maximum surrender charge listed in the table?",
+            "answer": "Yes"
+        },
+        {
+            "question": "What provision describes the elements used to determine changes in surrender charges?",
+            "answer": "General Provisions"
+        },
+        {
+            "question": "Where is the basis for computation described?",
+            "answer": "The Basis of Computation provision"
+        },
+        {
+            "question": "What is the no-lapse interest effective annual rate for contract year 1?",
+            "answer": "0.000%"
+        },
+        {
+            "question": "What is the no-lapse interest effective annual rate for contract years 2 to 39?",
+            "answer": "4.580%"
+        },
+        {
+            "question": "What is the no-lapse interest effective annual rate for contract years 40 to 44?",
+            "answer": "3.700%"
+        },
+        {
+            "question": "What is the no-lapse interest effective annual rate for contract year 45?",
+            "answer": "3.000%"
+        },
+        {
+            "question": "What is the no-lapse interest effective annual rate for contract years 46 to 50?",
+            "answer": "2.500%"
+        },
+        {
+            "question": "What is the no-lapse interest effective annual rate for contract years 51 to 55?",
+            "answer": "1.500%"
+        },
+        {
+            "question": "What is the no-lapse interest effective annual rate for contract years 56 and later?",
+            "answer": "0.000%"
+        },
+        {
+            "question": "When must the owner's details be completed according to the instruction?",
+            "answer": "When the owner is other than the proposed insured."
+        },
+        {
+            "question": "What action will Prudential take regarding the initial premium E-Pay withdrawal request?",
+            "answer": "Prudential will process this withdrawal request immediately."
+        },
+        {
+            "question": "Can the initial premium E-Pay withdrawal request be revoked after processing?",
+            "answer": "No, it cannot be revoked."
+        },
+        {
+            "question": "What type of request is being processed immediately by Prudential?",
+            "answer": "The initial premium E-Pay withdrawal request."
+        },
+        {
+            "question": "Is the processing of the initial premium E-Pay withdrawal request reversible?",
+            "answer": "No, it cannot be revoked."
+        },
+        {
+            "question": "Who is referred to as 'You' or 'Your' in the policy?",
+            "answer": "The owner(s) of the contract."
+        },
+        {
+            "question": "What is the definition of 'Insured' in the policy?",
+            "answer": "The person named as the Insured on the first page. He or she need not be the owner."
+        },
+        {
+            "question": "When is the 'Issue Date' of the contract determined?",
+            "answer": "The contract date shown on the first page."
+        },
+        {
+            "question": "What does 'Anniversary' refer to in the context of this contract?",
+            "answer": "The same day and month as the contract date in each later year."
+        },
+        {
+            "question": "Under what condition can the company contest the contract after it has been in force for two years?",
+            "answer": "We will not contest this contract after it has been in force during the Insured's lifetime for two years from the Issue Date."
+        },
+        {
+            "question": "Who is authorized to modify the contract, and under what conditions?",
+            "answer": "Only a Pruco Life officer with the rank or title of vice president, or above, may agree to modify this contract, and then only in writing."
+        },
+        {
+            "question": "What should you consider when choosing a life insurance policy?",
+            "answer": "Find a policy that meets your needs and fits your budget."
+        },
+        {
+            "question": "How can you determine how much life insurance you need?",
+            "answer": "Decide how much insurance policy you need."
+        },
+        {
+            "question": "What should you do to make decisions when buying a life insurance policy?",
+            "answer": "Make informed decisions when you buy a policy."
+        },
+        {
+            "question": "What is the purpose of this guide?",
+            "answer": "This guide can help you shop for life insurance."
+        },
+        {
+            "question": "Who is the publisher of this guide?",
+            "answer": "Prudential, Prudential Financial, the Rock Logo, and the Rock Prudential Logo are registered service marks of The Prudential Insurance Company of America, Newark, NJ and its affiliates."
+        },
+        {
+            "question": "What is the name of the company that issued this insurance policy?",
+            "answer": "Pruco Life Insurance Company"
+        },
+        {
+            "question": "Where is the headquarters of Pruco Life Insurance Company located?",
+            "answer": "213 Washington Street, Newark, NJ 07102-2992"
+        },
+        {
+            "question": "What is the phone number for customer service for Pruco Life Insurance Company?",
+            "answer": "(800) 944-8786"
+        },
+        {
+            "question": "Which Prudential Financial companies are mentioned in the document?",
+            "answer": "The Prudential Insurance Company of America, Pruco Life Insurance Company of New Jersey, Pruco Life Insurance Company"
+        },
+        {
+            "question": "What should you do if you are making corrections to the form?",
+            "answer": "Initial any corrections or changes that you make."
+        },
+        {
+            "question": "What is the name of the Pruco Life representative listed in the document?",
+            "answer": "Virone Rider"
+        },
+        {
+            "question": "How long do you have to cancel the contract after receiving it?",
+            "answer": "You may return this contract to us on or before the tenth day after delivery of the contract."
+        },
+        {
+            "question": "What happens if the contract is a replacement under state law?",
+            "answer": "This duration will be extended to a minimum of 30 days or longer as required by law."
+        },
+        {
+            "question": "How can you cancel the contract?",
+            "answer": "All you have to do is take the contract or mail it to one of our offices or to the representative who sold it to you."
+        },
+        {
+            "question": "What will be returned if you cancel the contract?",
+            "answer": "We will return all premiums paid, including fees and charges."
+        },
+        {
+            "question": "What is the legal status of the policy document?",
+            "answer": "It is a legal contract between you and Pruco Life Insurance Company."
+        },
+        {
+            "question": "Which company is involved in this contract?",
+            "answer": "Pruco Life Insurance Company, an Arizona Corporation."
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 1?",
+            "answer": "0.16166"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 40?",
+            "answer": "7.33083"
+        },
+        {
+            "question": "Which contract year has a maximum monthly rate of 3.87583?",
+            "answer": "35"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 24?",
+            "answer": "1.04416"
+        },
+        {
+            "question": "What special label is associated with contract year 24?",
+            "answer": "Pre-Delivery"
+        },
+        {
+            "question": "What is the maximum monthly rate for contract year 56?",
+            "answer": "33.75166"
+        },
+        {
+            "question": "Which contract year corresponds to a maximum monthly rate of 58.31750?",
+            "answer": "68"
+        },
+        {
+            "question": "Who is the recipient of the letter?",
+            "answer": "Fname Closedadmintesttwo"
+        },
+        {
+            "question": "What is the purpose of the letter?",
+            "answer": "To confirm receipt of a life insurance policy and request review and acknowledgment"
+        },
+        {
+            "question": "What document is enclosed with the letter?",
+            "answer": "The Policy at a Glance document"
+        },
+        {
+            "question": "Who should the policyholder review the Policy at a Glance with?",
+            "answer": "Their financial professional"
+        },
+        {
+            "question": "What action is required from the policyholder?",
+            "answer": "Sign the Acknowledgement section to confirm the information is correct and the policy was received"
+        },
+        {
+            "question": "Where can complete details about the policy be found?",
+            "answer": "In the full policy document"
+        },
+        {
+            "question": "What is the processing date mentioned in the text?",
+            "answer": "JAN 27, 2026"
+        },
+        {
+            "question": "What is the monetary amount stated in the text?",
+            "answer": "$400,000.00"
+        },
+        {
+            "question": "What does the term 'Company' refer to in this document?",
+            "answer": "The company named at the beginning of the Application for Life Insurance."
+        },
+        {
+            "question": "What is required in the 'Signature of Second Proposed Insured' section?",
+            "answer": "A signature from the Second Proposed Insured."
+        },
+        {
+            "question": "What placeholder is used to indicate the signature of the Second Proposed Insured?",
+            "answer": "^Sign_Owner1^"
+        },
+        {
+            "question": "What placeholder is used to indicate the date of the Second Proposed Insured's signature?",
+            "answer": "^Date_Owner1_Sign^"
+        },
+        {
+            "question": "Under what circumstances may Prudential share personal information with non-Prudential companies?",
+            "answer": "We share information among Prudential companies and with non-Prudential companies that provide services for our business needs, such as account/policy administration and marketing."
+        },
+        {
+            "question": "When can Prudential disclose your information to another financial institution?",
+            "answer": "We may disclose your information to another financial institution if you consent to transfer your account or policy."
+        },
+        {
+            "question": "What types of disclosures are permitted under law?",
+            "answer": "We share information as permitted or required by law, including with law enforcement and regulators, in response to subpoenas, and to prevent fraud."
+        },
+        {
+            "question": "How is personal information shared for employer or organization-sponsored plans?",
+            "answer": "For products obtained through an employer or organization-sponsored plan, we disclose information as allowed by the plan agreement or our agreement with you."
+        },
+        {
+            "question": "Can consumers limit the sharing of consumer report information among Prudential companies?",
+            "answer": "We may share consumer report information among Prudential companies, including information from credit reports and other sources, but you can limit this sharing as described in this notice."
+        },
+        {
+            "question": "Does Prudential share personal information or phone numbers with non-Prudential companies for marketing purposes without consent?",
+            "answer": "We do not share your personal information or phone number with non-Prudential companies for their marketing or text messaging purposes without your consent."
+        },
+        {
+            "question": "What is the requirement for Prudential companies to contact you via text messaging?",
+            "answer": "Prudential companies may contact you via text messaging only with your prior express written consent."
+        },
+        {
+            "question": "What is PGIM, Inc.'s policy regarding the sale or sharing of Personal Information?",
+            "answer": "PGIM, Inc. and its affiliates do not sell or share Personal Information but may disclose it internally and to carefully vetted business partners and contractors, who are contractually obligated to protect your data."
+        },
+        {
+            "question": "Under what condition will a contract remain in force after a monthly date if it would otherwise be in default?",
+            "answer": "The contract will remain in force until the next monthly date if the no-lapse guarantee value is greater than zero and there is no excess contract debt."
+        },
+        {
+            "question": "When is a contract considered to be in default according to the text?",
+            "answer": "A contract is in default if the no-lapse guarantee value is zero or less, or if there is excess contract debt."
+        },
+        {
+            "question": "What is the purpose of the no-lapse guarantee value in the contract?",
+            "answer": "The no-lapse guarantee value is used only to determine if the contract is in default."
+        },
+        {
+            "question": "Are the no-lapse guarantee value and other no-lapse reference values used to determine actual contract benefits?",
+            "answer": "No, the no-lapse guarantee value, no-lapse contract fund, no-lapse charge for sales expenses, no-lapse cost of insurance, no-lapse net amount at risk, and no-lapse death benefit are reference values only and are not used in the determination of values and benefits under this contract."
+        },
+        {
+            "question": "What happens to the contract if the no-lapse guarantee value is zero or less?",
+            "answer": "If the no-lapse guarantee value is zero or less, the contract is in default."
+        },
+        {
+            "question": "What is the processing date for policy V8 587 562?",
+            "answer": "JAN 27, 2026"
+        },
+        {
+            "question": "What is the policy number associated with the processing date JAN 27, 2026?",
+            "answer": "V8 587 562"
+        },
+        {
+            "question": "Which section of the document covers loan-related information including Loan Value, Contract Debt, and Interest Charge?",
+            "answer": "Loans"
+        },
+        {
+            "question": "On which page can the 'General Provisions' section be found?",
+            "answer": "13"
+        },
+        {
+            "question": "What does the 'Basis of Computation' section include?",
+            "answer": "Mortality Basis and Interest Rate; Minimum Legal Values"
+        },
+        {
+            "question": "What are the two main components of the 'Settlement Options' section?",
+            "answer": "Options Described; Interest Rate"
+        },
+        {
+            "question": "Which section is described as having 'Options Described' and 'Interest Rate' as its components?",
+            "answer": "Settlement Options"
+        },
+        {
+            "question": "What is the no-lapse net amount at risk?",
+            "answer": "The no-lapse net amount at risk is equal to the no-lapse death benefit minus the no-lapse contract fund."
+        },
+        {
+            "question": "What is subtracted from the no-lapse death benefit to calculate the no-lapse net amount at risk?",
+            "answer": "The no-lapse contract fund"
+        },
+        {
+            "question": "What is added to the no-lapse contract fund to get the no-lapse death benefit?",
+            "answer": "The no-lapse net amount at risk"
+        },
+        {
+            "question": "What is the formula for calculating the no-lapse net amount at risk?",
+            "answer": "No-lapse death benefit minus no-lapse contract fund"
+        },
+        {
+            "question": "What is the maximum amount you can borrow?",
+            "answer": "any amount up to the current loan value less any existing contract debt"
+        },
+        {
+            "question": "What reduces the amount you can borrow?",
+            "answer": "any existing contract debt"
+        },
+        {
+            "question": "When can you borrow money under this provision?",
+            "answer": "At any time"
+        },
+        {
+            "question": "What condition must be met to borrow under this provision?",
+            "answer": "Subject to the requirements of this provision"
+        },
+        {
+            "question": "What is the basis for determining the borrowing limit?",
+            "answer": "The current loan value less any existing contract debt"
+        },
+        {
+            "question": "Is the borrowing limit fixed or variable?",
+            "answer": "It is variable, based on the current loan value and existing contract debt"
+        },
+        {
+            "question": "What is the current monthly administrative charge per $1,000 of the basic insurance amount?",
+            "answer": "$0.38"
+        },
+        {
+            "question": "What is the fixed monthly administrative charge regardless of the basic insurance amount?",
+            "answer": "$15.00"
+        },
+        {
+            "question": "When does the administrative charge change to $0.09 per $1,000 of the basic insurance amount?",
+            "answer": "JAN 27, 2046"
+        },
+        {
+            "question": "What is the monthly administrative charge per $1,000 of the basic insurance amount after January 27, 2046?",
+            "answer": "$0.09"
+        },
+        {
+            "question": "Where can the cost of insurance be found according to the contract?",
+            "answer": "see Cost of Insurance"
+        },
+        {
+            "question": "Does this contract share in profits?",
+            "answer": "No, this contract will not share in our profits."
+        },
+        {
+            "question": "Will this contract receive any surplus earnings?",
+            "answer": "No, this contract will not share in our surplus earnings."
+        },
+        {
+            "question": "Are dividends paid on this contract?",
+            "answer": "No, we will pay no dividends on it."
+        },
+        {
+            "question": "What is the financial benefit of this contract?",
+            "answer": "It receives no dividends and does not share in profits or surplus earnings."
+        },
+        {
+            "question": "What is subtracted from each premium paid?",
+            "answer": "A no-lapse charge for sales expenses"
+        },
+        {
+            "question": "Where can the premium allocation amounts and initial and ultimate rates be found?",
+            "answer": "In the No-Lapse Charge For Sales Expenses Rate Table"
+        },
+        {
+            "question": "What happens if a premium is received within 60 days before a contract anniversary where the rates decrease?",
+            "answer": "We will subtract a no-lapse charge for sales expenses no greater than the amount we would subtract if that premium were received on the contract anniversary"
+        },
+        {
+            "question": "What is the first step in determining the no-lapse charge for sales expenses?",
+            "answer": "We determine any premium amount already paid during the current contract year"
+        },
+        {
+            "question": "What is the result if the difference between the premium allocation amount and the premium already paid is less than zero?",
+            "answer": "We consider it to be zero"
+        },
+        {
+            "question": "How is the no-lapse charge calculated when the current premium amount exceeds the step 2 amount?",
+            "answer": "We multiply the step 2 amount by the initial rate, multiply the difference between the submitted premium and the step 2 amount by the ultimate rate, and sum the two amounts"
+        },
+        {
+            "question": "What is the purpose of the notice sent when a contract is in default?",
+            "answer": "To state the amount needed to keep the contract in force."
+        },
+        {
+            "question": "How long is the grace period after receiving the initial notice of default?",
+            "answer": "61 days."
+        },
+        {
+            "question": "What is the estimated duration for which the premium will keep the contract in force?",
+            "answer": "Three months from the date of default."
+        },
+        {
+            "question": "What happens if the required amount is not paid or postmarked by the end of the grace period?",
+            "answer": "The contract will end and have no value."
+        },
+        {
+            "question": "How far in advance of termination will a second notice be sent to the policyholder?",
+            "answer": "At least 30 days prior."
+        },
+        {
+            "question": "To whom is a notice sent at least 30 days before termination, in addition to the policyholder?",
+            "answer": "Any assignee of record."
+        },
+        {
+            "question": "What condition leads to a life insurance policy being in default due to excess contract debt?",
+            "answer": "When contract debt grows to be equal to or more than the cash value."
+        },
+        {
+            "question": "What happens if contract debt equals or exceeds the cash value of a policy?",
+            "answer": "The contract will have excess contract debt and will be in default."
+        },
+        {
+            "question": "What type of debt is relevant in determining whether a policy is in default?",
+            "answer": "Contract debt."
+        },
+        {
+            "question": "What is a requirement for a policy to be considered in default due to excess contract debt?",
+            "answer": "An outstanding loan on the policy."
+        },
+        {
+            "question": "What is the relationship between contract debt and cash value in the context of policy default?",
+            "answer": "If contract debt equals or exceeds the cash value, the policy is in default."
+        },
+        {
+            "question": "What is the minimum effective interest rate assumed for Option 1 for periods less than 10 years?",
+            "answer": "0.75% a year"
+        },
+        {
+            "question": "What is the minimum effective interest rate assumed for Option 4 for periods between 10 and 25 years?",
+            "answer": "1.5% a year"
+        },
+        {
+            "question": "What is the minimum effective interest rate assumed for Option 3?",
+            "answer": "0.5% a year"
+        },
+        {
+            "question": "What mortality table is used for Option 2?",
+            "answer": "The Annuity 2000 Mortality Table"
+        },
+        {
+            "question": "What interest rate is used in conjunction with the Annuity 2000 Mortality Table for Option 2?",
+            "answer": "3% interest"
+        },
+        {
+            "question": "How is the age used in the Annuity 2000 Mortality Table adjusted for Option 2?",
+            "answer": "The mortality rates used are for an age that is two years younger than the age of the person who is to receive the proceeds of this contract"
+        },
+        {
+            "question": "What does the text suggest about the possibility of interest rates beyond those specified?",
+            "answer": "We may include more interest"
+        },
+        {
+            "question": "What is the maximum duration a contract can be in default before reinstatement is no longer possible?",
+            "answer": "The contract must not have been in default for more than 5 years."
+        },
+        {
+            "question": "What must be proven about the Insured to reinstate the contract?",
+            "answer": "You must prove to us that the Insured is insurable for the contract at the same rating class that applied at the expiration of the grace period."
+        },
+        {
+            "question": "What two components must the premium payment cover when reinstating the contract?",
+            "answer": "The premium must cover (a) an amount required to bring the net cash value to zero when the grace period expired, plus (b) the deductions from the contract fund for three monthly dates starting on the date of reinstatement."
+        },
+        {
+            "question": "What additional charges must be included in the required payment amount during reinstatement?",
+            "answer": "Required payment amounts will reflect any charges due and unpaid from the period during which the policy was supported by a No-Lapse Guarantee in addition to charges due and unpaid during the grace period."
+        },
+        {
+            "question": "What happens to accrued loan interest due when the grace period expired during reinstatement?",
+            "answer": "Accrued loan interest due when the grace period expired, if any, must also be repaid."
+        },
+        {
+            "question": "What happens to any remaining contract debt after reinstatement?",
+            "answer": "Any remaining contract debt will be canceled and will not be reinstated."
+        },
+        {
+            "question": "When is the date of reinstatement determined?",
+            "answer": "The date of reinstatement will be the date we approve your request."
+        },
+        {
+            "question": "What happens to the surrender charge deducted at the expiration of the grace period after reinstatement?",
+            "answer": "We will credit the contract fund with a refund of that part of any surrender charge deducted at the expiration of the grace period which would have been charged if the contract were surrendered immediately after reinstatement."
+        },
+        {
+            "question": "What is the National Association of Insurance Commissioners?",
+            "answer": "An association of state insurance regulatory officials."
+        },
+        {
+            "question": "What is the purpose of the National Association of Insurance Commissioners?",
+            "answer": "To help coordinate insurance laws for the benefit of all consumers."
+        },
+        {
+            "question": "How does the National Association of Insurance Commissioners assist insurance departments?",
+            "answer": "By helping them coordinate insurance laws."
+        },
+        {
+            "question": "Does this guide endorse any company or policy?",
+            "answer": "No, it does not endorse any company or policy."
+        },
+        {
+            "question": "What is the minimum initial premium due on the Contract Date?",
+            "answer": "$208.61"
+        },
+        {
+            "question": "Who is the beneficiary mentioned in the text?",
+            "answer": "wife"
+        },
+        {
+            "question": "What are the two percentage rates mentioned for the wife as beneficiary?",
+            "answer": "1.05% and 2.00%"
+        },
+        {
+            "question": "What document or context is the minimum initial premium associated with?",
+            "answer": "Contract Date"
+        },
+        {
+            "question": "What is the name of the owner?",
+            "answer": "Name of owner:"
+        },
+        {
+            "question": "What is the Social Security/Tax identification number (SSN/TIN) of the owner?",
+            "answer": "Social Security/Tax identification number (SSN/TIN):"
+        },
+        {
+            "question": "What is the residence address of the owner (excluding PO boxes)?",
+            "answer": "Residence address (No PO boxes): Street Apt City State ZIP"
+        },
+        {
+            "question": "What is the owner's email address?",
+            "answer": "Owner's email address:"
+        },
+        {
+            "question": "If the owner is a trust, what form must be completed?",
+            "answer": "Complete the Trustee Statement and Agreement (COMB 86044)."
+        },
+        {
+            "question": "What details must be provided for existing life insurance or annuities?",
+            "answer": "List the following details for all existing coverage: Insurance Company, Face Amount, Type, Product, To Be Replaced?*, 1035 Exchange?"
+        },
+        {
+            "question": "If applying for or reinstating life insurance with another company, what information must be provided?",
+            "answer": "Give company name, amount applied for, and total amount to be placed, including this application."
+        },
+        {
+            "question": "If life or health insurance has been declined, postponed, rated, or issued with an increased premium, what information must be provided?",
+            "answer": "Give company name, type of insurance, date, action taken, and reason for action."
+        },
+        {
+            "question": "Under what condition is a death benefit payable to the beneficiary?",
+            "answer": "The death benefit is payable if the contract is in force at the time of the Insured's death; that is, if it has not been surrendered and it is not in default past the grace period."
+        },
+        {
+            "question": "What happens to the death benefit if the contract is in default but the death occurs during the grace period?",
+            "answer": "We will pay the death benefit reduced by any contract debt and the amount needed to pay charges through the date of death."
+        },
+        {
+            "question": "What is the amount of the death benefit if the contract is not in default?",
+            "answer": "The amount we will pay will be the death benefit determined as of the date of the Insured's death reduced by any contract debt."
+        },
+        {
+            "question": "What happens if the Insured's death occurs past the grace period?",
+            "answer": "No death benefit is payable."
+        },
+        {
+            "question": "How are payments received after the Insured's date of death treated?",
+            "answer": "Payments received after the Insured's date of death will be returned."
+        },
+        {
+            "question": "Are charges deducted for any period after the Insured's date of death?",
+            "answer": "Charges will not be deducted for any period after the Insured's date of death."
+        },
+        {
+            "question": "What is the effect of a contract being in default on the death benefit payment?",
+            "answer": "If the contract is in default and the death occurs in the grace period, the death benefit is reduced by any contract debt and the amount needed to pay charges through the date of death."
+        },
+        {
+            "question": "What is the significance of the grace period in the context of death benefit payments?",
+            "answer": "The grace period determines whether the death benefit is payable when the contract is in default; if death occurs during the grace period, a reduced benefit is paid."
+        },
+        {
+            "question": "When is the no-lapse cost of insurance charge deducted from the no-lapse contract fund?",
+            "answer": "On each monthly date."
+        },
+        {
+            "question": "What determines the no-lapse cost of insurance rate?",
+            "answer": "The monthly rate shown under the Table of No-Lapse Monthly Insurance Rates per $1,000 of No-Lapse Net Amount at Risk for the appropriate contract year."
+        },
+        {
+            "question": "How is the no-lapse cost of insurance charge calculated?",
+            "answer": "By multiplying the no-lapse cost of insurance rate by the no-lapse net amount at risk divided by $1,000."
+        },
+        {
+            "question": "What is the basis for the rate used in calculating the no-lapse cost of insurance?",
+            "answer": "The rate is based on the monthly rate per $1,000 of No-Lapse Net Amount at Risk."
+        },
+        {
+            "question": "What is the formula for computing the no-lapse cost of insurance charge?",
+            "answer": "Multiply the monthly rate (per $1,000 of No-Lapse Net Amount at Risk) by (No-Lapse Net Amount at Risk / $1,000)."
+        },
+        {
+            "question": "What penalty does Arizona law impose on someone who knowingly presents a false or fraudulent claim for insurance payment?",
+            "answer": "Criminal and civil penalties."
+        },
+        {
+            "question": "Which state's law states that submitting a claim with a false or deceptive statement with intent to defraud is considered insurance fraud?",
+            "answer": "Ohio (OH)."
+        },
+        {
+            "question": "What are the potential penalties for knowingly providing false information on an insurance application in Hawaii and Tennessee?",
+            "answer": "Fines, denial of insurance benefits, or confinement in prison."
+        },
+        {
+            "question": "What must a person in Colorado do if they knowingly provide false or misleading information to a policyholder or claimant to defraud them?",
+            "answer": "The insurance company or agent must report the act to the Colorado Division of Insurance within the Department of Regulatory Agencies."
+        },
+        {
+            "question": "What is the consequence for providing false or misleading information to an insurer in the District of Columbia?",
+            "answer": "Imprisonment and/or fines, and the insurer may deny insurance benefits if the false information is materially related to the claim."
+        },
+        {
+            "question": "What is the legal status of filing a claim with false, incomplete, or misleading information with intent to defraud in Arkansas, Louisiana, and Rhode Island?",
+            "answer": "It is a crime and may result in fines and confinement in prison."
+        },
+        {
+            "question": "What must a policyowner certify under penalties of perjury in the Owner's Tax Certification section?",
+            "answer": "That the taxpayer identification number (TIN) listed is correct, that they are a U.S. person, not subject to backup withholding, and not subject to FATCA reporting."
+        },
+        {
+            "question": "What is the primary benefit of the life insurance policy?",
+            "answer": "The primary benefit of your life insurance is the valuable protection it provides to the beneficiary."
+        },
+        {
+            "question": "What is the minimum initial premium amount required to issue the policy?",
+            "answer": "The minimum initial premium amount required to issue the policy is $208.61."
+        },
+        {
+            "question": "How much is the annual premium amount that you requested to be billed?",
+            "answer": "You have requested that we bill you $1,200.00 on an annual basis."
+        },
+        {
+            "question": "What type of policy is this, and what flexibility does it offer regarding premium payments?",
+            "answer": "This policy is a flexible premium policy that allows the option of varying the amount and timing of premium payments."
+        },
+        {
+            "question": "What factors can influence the payment amount needed to keep the policy in effect?",
+            "answer": "The payment amount needed depends on such things as actual policy charges, and any withdrawals or loans you make."
+        },
+        {
+            "question": "What is the responsibility regarding existing life insurance or annuity policies if this new policy is not part of a 1035 exchange?",
+            "answer": "If replacing coverage that is not part of a planned 1035 exchange to Prudential, it is your responsibility to cancel the existing coverage."
+        },
+        {
+            "question": "What is the type of life insurance policy described in the document?",
+            "answer": "Individual Flexible Premium Universal Life Insurance Policy."
+        },
+        {
+            "question": "When is the contract date for this policy?",
+            "answer": "JAN 27, 2026."
+        },
+        {
+            "question": "Under what condition will Pruco Life Insurance Company pay the death benefit?",
+            "answer": "Upon receipt of due proof that the Insured died."
+        },
+        {
+            "question": "What factors affect the death benefit amount and duration of coverage?",
+            "answer": "The death benefit option, payment of premiums, interest credited to the contract fund, and charges made."
+        },
+        {
+            "question": "Is there a guaranteed minimum cash value for this policy?",
+            "answer": "No, there is no guaranteed minimum cash value."
+        },
+        {
+            "question": "How can one resolve a question about this contract?",
+            "answer": "By seeing a Pruco Life Insurance Company representative or contacting one of their offices."
+        },
+        {
+            "question": "When must the minimum initial premium be paid to activate insurance coverage under the contract?",
+            "answer": "On or before the contract date."
+        },
+        {
+            "question": "What is the maximum attained age at which additional premiums may be paid?",
+            "answer": "121"
+        },
+        {
+            "question": "Where can additional premiums be paid according to the contract?",
+            "answer": "At the Home Office or to any of the insurer's authorized representatives."
+        },
+        {
+            "question": "Under what condition may the insurer refuse to accept a premium payment?",
+            "answer": "If the payment would cause the contract to fail to qualify as life insurance under applicable tax law."
+        },
+        {
+            "question": "What happens to a premium payment that exceeds the maximum allowed under Section 7702 of the Internal Revenue Code?",
+            "answer": "The excess is refunded, unless it is necessary to continue insurance coverage."
+        },
+        {
+            "question": "How are payments treated when a loan exists on the contract?",
+            "answer": "They are treated as premiums unless a written request is submitted to treat them as loan repayments."
+        },
+        {
+            "question": "When do new and existing loans become preferred loans?",
+            "answer": "On and after the 10th contract anniversary."
+        },
+        {
+            "question": "How is interest charged on preferred loans?",
+            "answer": "At an effective annual rate shown under preferred loan interest rate in the contract data pages."
+        },
+        {
+            "question": "What happens to the loan amount in relation to the contract fund?",
+            "answer": "The amount of the loan continues to be a part of the contract fund and is credited with interest as described in the contract data pages."
+        },
+        {
+            "question": "How long can the company postpone paying a loan?",
+            "answer": "Up to six months."
+        },
+        {
+            "question": "Are there any exceptions to the loan postponement policy?",
+            "answer": "Yes, any loan made to pay premiums due on any contracts you have with us is exempt from postponement."
+        },
+        {
+            "question": "How are policy provisions that conflict with Interstate Insurance Product Regulation Commission standards handled?",
+            "answer": "They will be amended to conform to the applicable Interstate Insurance Product Regulation Commission standards in effect as of the provision's effective date of Commission policy approval."
+        },
+        {
+            "question": "Is the proposed insured or proposed owner considering the transfer or sale of policy ownership or any interest in the policy benefits to a life settlement company or other investor?",
+            "answer": "Yes, if the applicant is considering such a transfer or sale; otherwise, No."
+        },
+        {
+            "question": "Have you flown as a pilot, student pilot, or crew member in the past five years?",
+            "answer": "Yes, if applicable; otherwise, No. If Yes, details must be provided."
+        },
+        {
+            "question": "Have you participated in any extreme sports or high-risk activities such as SCUBA diving, skydiving, or mountain climbing in the past five years?",
+            "answer": "Yes, if applicable; otherwise, No. If Yes, details must be provided."
+        },
+        {
+            "question": "Have you ever used tobacco or any other nicotine products such as cigarettes, cigars, or nicotine patches?",
+            "answer": "Yes, if applicable; otherwise, No. If Yes, provide product type, date last used, and frequency of use."
+        },
+        {
+            "question": "Within the past 10 years, have you been arrested, convicted, or imprisoned for any crime?",
+            "answer": "Yes, if applicable; otherwise, No. If Yes, provide details including question number and relevant information."
+        },
+        {
+            "question": "Will you live or travel outside the United States within the next 12 months?",
+            "answer": "Yes, if applicable; otherwise, No. If Yes, provide location (city/country), frequency, duration, and purpose of each trip."
+        },
+        {
+            "question": "Have you had your driver's license denied, suspended, or revoked in the past five years?",
+            "answer": "Yes, if applicable; otherwise, No. If Yes, provide details."
+        },
+        {
+            "question": "What is the required format for the routing number?",
+            "answer": "9 digits"
+        },
+        {
+            "question": "What does the 'E-PAY' in 'INITIAL PREMIUM(E-PAY)INFORMATION' stand for?",
+            "answer": "Electronic Payment"
+        },
+        {
+            "question": "To whom are copies of the initial premium information provided?",
+            "answer": "Home Office, Representative, and Applicant"
+        },
+        {
+            "question": "What is the purpose of the placeholder label '^EPAYEFT1_Question_Ans^'?",
+            "answer": "To indicate where a question and answer related to E-PAY and EFT should be inserted"
+        },
+        {
+            "question": "What is the time period during which suicide is excluded from death benefit payment after the policy's issue date?",
+            "answer": "Within two years from the Issue Date"
+        },
+        {
+            "question": "What happens to the death benefit if the insured dies by suicide within two years of the policy's issue date?",
+            "answer": "This contract will end without any death benefit paid"
+        },
+        {
+            "question": "What is returned to the policyholder if the insured dies by suicide within the exclusion period after the policy's issue date?",
+            "answer": "The premiums paid, less any contract debt, and less any withdrawals"
+        },
+        {
+            "question": "How does the suicide exclusion period differ when the policy is reinstated?",
+            "answer": "It applies to the effective date of the policy's reinstatement"
+        },
+        {
+            "question": "What is returned if the insured dies by suicide within the exclusion period after the policy is reinstated?",
+            "answer": "The reinstatement charge and any premiums paid after the reinstatement date, less any contract debt, and less any withdrawals"
+        },
+        {
+            "question": "Does the mental state of the insured (sane or insane) affect the application of the suicide exclusion?",
+            "answer": "No, the exclusion applies regardless of whether the insured is sane or insane"
+        },
+        {
+            "question": "Can the suicide exclusion period be shorter than two years, and if so, under what condition?",
+            "answer": "Yes, if required by applicable law in the state where the policy is delivered or issued for delivery"
+        },
+        {
+            "question": "Under what condition does the insurance contract end without a death benefit payment?",
+            "answer": "If the insured dies by suicide within two years from the Issue Date or any shorter period as required by law"
+        },
+        {
+            "question": "What is the processing date mentioned in the document?",
+            "answer": "JAN 27, 2026"
+        },
+        {
+            "question": "What is the policy number listed in the document?",
+            "answer": "V8 587 562"
+        },
+        {
+            "question": "What triggers the creation of the no-lapse contract fund?",
+            "answer": "When you make your first premium payment."
+        },
+        {
+            "question": "How is the initial amount of the no-lapse contract fund calculated?",
+            "answer": "The no-lapse net premium amount, less any no-lapse charges due on or before that day."
+        },
+        {
+            "question": "When does the no-lapse contract fund begin to be adjusted?",
+            "answer": "Beginning on the contract date."
+        },
+        {
+            "question": "What types of changes are made to the no-lapse contract fund after the contract date?",
+            "answer": "Amounts are added to and subtracted from the no-lapse contract fund."
+        },
+        {
+            "question": "What is the source of the adjustments to the no-lapse contract fund?",
+            "answer": "As shown under No-Lapse Adjustments to the No-Lapse Contract Fund."
+        },
+        {
+            "question": "How can I cancel my authorization for the electronic funds transfer program?",
+            "answer": "I may cancel the authorization at any time by giving Prudential prior written notification up to three business days preceding the scheduled date of the transfer."
+        },
+        {
+            "question": "What notice am I entitled to receive regarding transfers?",
+            "answer": "I have the right to receive notice of all varying transfers, which might occur on a different date or in a different amount than originally selected."
+        },
+        {
+            "question": "Can Prudential remove a policy from the electronic funds transfer program?",
+            "answer": "Yes, Prudential, in its sole discretion, reserves the right to remove any policy from the electronic funds transfer payment program at any time."
+        },
+        {
+            "question": "What happens to the payment frequency if a policy is removed from the EFT program?",
+            "answer": "The payment frequency on a non-EFT basis may be changed to quarterly or another less frequent mode."
+        },
+        {
+            "question": "Can an electronic funds transfer program be established if the dividend option is to reduce premiums?",
+            "answer": "No, Prudential cannot establish an electronic funds transfer program if the dividend option is to reduce premiums."
+        },
+        {
+            "question": "What happens if a withdrawal request is not honored by the financial institution?",
+            "answer": "Prudential will not consider the payment to be made, but may, in its sole discretion, resubmit the withdrawal request for collection."
+        },
+        {
+            "question": "How can I modify my EFT agreement to use a different bank account?",
+            "answer": "I may modify this Agreement by authorizing Prudential to make preauthorized electronic funds transfer or other forms of check withdrawals from any other bank account or financial institution that I designate verbally, in writing, or through an automated voice response system."
+        },
+        {
+            "question": "What is the insured's first name?",
+            "answer": "CLOSEDADMINTESTTWO"
+        },
+        {
+            "question": "What is the insured's gender?",
+            "answer": "Male"
+        },
+        {
+            "question": "What is the insured's issue age?",
+            "answer": "46"
+        },
+        {
+            "question": "What happens to the basic insurance amount when changing from a Type B to a Type A death benefit?",
+            "answer": "We will increase the basic insurance amount by the contract fund on the date the change takes effect."
+        },
+        {
+            "question": "How is the surrender charge calculated when the new basic insurance amount is below the surrender charge threshold?",
+            "answer": "We multiply the surrender charge by the difference between the threshold amount and the new basic insurance amount, and divide by the threshold amount."
+        },
+        {
+            "question": "What is the surrender charge threshold?",
+            "answer": "The surrender charge threshold is the lowest basic insurance amount since the contract was issued."
+        },
+        {
+            "question": "Under what condition is no surrender charge imposed after a decrease in the basic insurance amount?",
+            "answer": "If the basic insurance amount after the decrease is above the surrender charge threshold, we will not impose a surrender charge."
+        },
+        {
+            "question": "How is the maximum charge for the cost of insurance determined?",
+            "answer": "We multiply the maximum cost of insurance rate by the net amount at risk divided by $1,000."
+        },
+        {
+            "question": "What must be true if a Type C Death Benefit endorsement is attached and the basic insurance amount is reduced?",
+            "answer": "The basic insurance amount after the decrease must be at least equal to the minimum basic insurance amount shown in the contract data pages."
+        },
+        {
+            "question": "What happens if the insured's stated age and/or sex are incorrect?",
+            "answer": "We will change each benefit and any amount to be paid to what the most recent deductions from the contract fund would have provided at the Insured's correct age and/or sex."
+        },
+        {
+            "question": "How are benefits adjusted when there is a misstatement of age or sex?",
+            "answer": "Benefits are adjusted based on what the most recent deductions from the contract fund would have provided at the correct age and/or sex."
+        },
+        {
+            "question": "What determines the adjusted benefit amount in case of a misstatement?",
+            "answer": "The most recent deductions from the contract fund at the correct age and/or sex."
+        },
+        {
+            "question": "At what age and/or sex are benefits recalculated if there is a misstatement?",
+            "answer": "At the Insured's correct age and/or sex."
+        },
+        {
+            "question": "What is subtracted as a monthly charge in the no-lapse protection rider?",
+            "answer": "A monthly no-lapse charge for the no-lapse cost of insurance."
+        },
+        {
+            "question": "What is the no-lapse charge related to?",
+            "answer": "The no-lapse cost of insurance."
+        },
+        {
+            "question": "Where can the rider data be found after this page?",
+            "answer": "On the next page."
+        },
+        {
+            "question": "At what rate is interest credited on a death benefit requested as a single sum?",
+            "answer": "Interest is credited at a rate at least equal to the effective annual rate declared by the insurer for funds left on deposit, effective on the date of death."
+        },
+        {
+            "question": "When does the additional 10% annual interest on the death benefit begin?",
+            "answer": "The additional 10% annual interest begins 31 calendar days from the latest of: (a) the date of receipt of proof of death, (b) the date all required information to determine beneficiaries is received, or (c) the date legal impediments to payment are resolved."
+        },
+        {
+            "question": "What are examples of legal impediments that may delay the payment of a death benefit?",
+            "answer": "Legal impediments may include the establishment of legal guardians, appointment of trustees or executors, and the need for additional information required by state and federal reporting requirements."
+        },
+        {
+            "question": "What determines the latest date from which the additional 10% interest starts accruing?",
+            "answer": "The latest of the date proof of death is received, the date all beneficiary and payment information is received, or the date legal impediments to payment are resolved."
+        },
+        {
+            "question": "Can additional interest beyond the base and 10% rates be credited on a death benefit?",
+            "answer": "Yes, additional interest may be credited in accordance with the insurer’s current guidelines or applicable law at the time of claim."
+        },
+        {
+            "question": "What is the rating class for someone who does not smoke?",
+            "answer": "Nonsmoker"
+        },
+        {
+            "question": "How often is the annual report sent to the policyholder?",
+            "answer": "Once each contract year."
+        },
+        {
+            "question": "What key financial details are included in the annual report?",
+            "answer": "The current death benefit, the amount of the contract fund at the beginning and end of the report period, the net cash value, any contract debt and the interest rate charged, premiums paid, interest credited, charges deducted, and withdrawals taken."
+        },
+        {
+            "question": "What does the annual report indicate about the projected contract fund?",
+            "answer": "It indicates if the projected contract fund will not be sufficient to maintain insurance in force until the end of the next reporting period unless further premium payments are made."
+        },
+        {
+            "question": "Can the policyholder request an illustrative report, and is there a cost?",
+            "answer": "Yes, the policyholder may request an illustrative report once each contract year at no cost."
+        },
+        {
+            "question": "What is the fee for additional illustrative reports beyond the one free request?",
+            "answer": "A fee of up to the amount shown in the contract data pages may be charged."
+        },
+        {
+            "question": "What information does the annual report provide about the reporting period?",
+            "answer": "It includes the beginning and end dates of the current report period."
+        },
+        {
+            "question": "What is the purpose of the annual report regarding the contract fund?",
+            "answer": "To show whether the projected contract fund, assuming guaranteed interest and charges, will be sufficient to maintain insurance in force until the end of the next reporting period."
+        },
+        {
+            "question": "What is the processing date mentioned in the document?",
+            "answer": "JAN 27, 2026"
+        },
+        {
+            "question": "What is the policy number listed in the document?",
+            "answer": "V8 587 562"
+        },
+        {
+            "question": "What is the name of the bank and trust company mentioned in the text?",
+            "answer": "Prudential Trust Company"
+        },
+        {
+            "question": "Which investment vehicles are specifically named in the text?",
+            "answer": "PGIM Funds; Prudential Insurance Funds"
+        },
+        {
+            "question": "What are the acronyms that identify funds included in the investment vehicles list?",
+            "answer": "Prudential, PCP, PGIM, PEP, PCEP, or PSLO"
+        },
+        {
+            "question": "Which company provides services under the name Prudential Workplace Solutions Group Services, LLC?",
+            "answer": "Prudential Workplace Solutions Group Services, LLC"
+        },
+        {
+            "question": "What is the restriction on disclosing creditworthiness for Vermont residents?",
+            "answer": "We will not disclose information about your creditworthiness among Prudential companies, other than as permitted by Vermont law, unless you authorize us to make those disclosures."
+        },
+        {
+            "question": "Which entity is listed as an investment vehicle under PGIM Real Estate Finance, LLC?",
+            "answer": "PGIM Real Estate Finance, LLC"
+        },
+        {
+            "question": "What types of payment frequencies are available in Option 4?",
+            "answer": "Annual, semi-annual, quarterly, or monthly payments."
+        },
+        {
+            "question": "Are the payments in Option 4 fixed in amount?",
+            "answer": "Yes, the payments are of a fixed amount."
+        },
+        {
+            "question": "How long do the payments in Option 4 continue?",
+            "answer": "As long as the available proceeds provide."
+        },
+        {
+            "question": "What determines the duration of payments in Option 4?",
+            "answer": "The availability of proceeds."
+        },
+        {
+            "question": "Can payments in Option 4 be made quarterly?",
+            "answer": "Yes, quarterly payments are available."
+        },
+        {
+            "question": "Is there a fixed end date for payments in Option 4?",
+            "answer": "No, payments continue as long as the available proceeds last."
+        },
+        {
+            "question": "What is the name of the insured in the document?",
+            "answer": "FNAME CLOSEDADMINTESTTWO"
+        },
+        {
+            "question": "Which agency is associated with this document?",
+            "answer": "S - SARX - J"
+        },
+        {
+            "question": "What type of document is this guide for?",
+            "answer": "Contract Notifications, Client Documents, and Pre-Delivery Review Copy"
+        },
+        {
+            "question": "What process is mentioned in the document title?",
+            "answer": "Pre-Delivery Review Copy"
+        },
+        {
+            "question": "What is the no-lapse guarantee value equal to?",
+            "answer": "The no-lapse contract fund, less any contract debt."
+        },
+        {
+            "question": "What happens to contract debt on the date of default if the contract is reinstated?",
+            "answer": "It is not included in the no-lapse contract fund."
+        },
+        {
+            "question": "How is the no-lapse guarantee value calculated?",
+            "answer": "It is calculated by subtracting any contract debt from the no-lapse contract fund."
+        },
+        {
+            "question": "Does existing contract debt at the time of default affect the no-lapse contract fund after reinstatement?",
+            "answer": "No, it does not."
+        },
+        {
+            "question": "What is used to compute maximum monthly insurance rates?",
+            "answer": "The Mortality Table, issue age, sex, smoker and nonsmoker status, rating class, length of time since the contract date, age last birthday, and an effective interest rate."
+        },
+        {
+            "question": "Where can the Mortality Table be found?",
+            "answer": "Below the Table of Maximum Monthly Insurance Rates per $1,000 of Net Amount at Risk on the contract data pages."
+        },
+        {
+            "question": "What does the issue age of the insured affect in the computation of insurance rates?",
+            "answer": "It is one of the factors used to compute maximum monthly insurance rates."
+        },
+        {
+            "question": "What information about the insured is considered when computing maximum monthly insurance rates?",
+            "answer": "Issue age, sex, smoker and nonsmoker status, and rating class."
+        },
+        {
+            "question": "What is the significance of the age last birthday in the rate calculation?",
+            "answer": "It is used in the computation of maximum monthly insurance rates."
+        },
+        {
+            "question": "What is the role of the length of time since the contract date in determining insurance rates?",
+            "answer": "It is a factor used in computing maximum monthly insurance rates."
+        },
+        {
+            "question": "Where is the effective interest rate located in relation to the insurance rate table?",
+            "answer": "It is shown below the Table of Maximum Monthly Insurance Rates per $1,000 of Net Amount at Risk on the contract data pages."
+        },
+        {
+            "question": "What is the unit of measurement for the Net Amount at Risk in the rate table?",
+            "answer": "$1,000."
+        },
+        {
+            "question": "What types of safeguards does the organization maintain to protect personal information?",
+            "answer": "Physical, electronic, and procedural safeguards"
+        },
+        {
+            "question": "What are some examples of computer safeguards mentioned in the text?",
+            "answer": "Computer safeguards"
+        },
+        {
+            "question": "What are some examples of secured storage mentioned in the text?",
+            "answer": "Secured files and buildings"
+        },
+        {
+            "question": "Who is authorized to access personal information?",
+            "answer": "The people authorized to access your personal information need it to do their jobs"
+        },
+        {
+            "question": "What is required of personnel who are authorized to access personal information?",
+            "answer": "They must keep your information secure and confidential"
+        },
+        {
+            "question": "What regulatory model do the cash surrender values in this contract comply with?",
+            "answer": "Model #585"
+        },
+        {
+            "question": "Which organization sets the universal life insurance regulation that this contract follows?",
+            "answer": "The National Association of Insurance Commissioners"
+        },
+        {
+            "question": "What is the name of the commission that received a detailed statement on how values and benefits are computed?",
+            "answer": "The Interstate Insurance Product Regulation Commission"
+        },
+        {
+            "question": "What type of information did the company provide to the Interstate Insurance Product Regulation Commission?",
+            "answer": "A detailed statement of how they compute values and benefits"
+        },
+        {
+            "question": "Are the cash surrender values in this contract at least as large as those set by Model #585?",
+            "answer": "Yes"
+        },
+        {
+            "question": "What is the net cash value at any time?",
+            "answer": "the cash value less any contract debt."
+        },
+        {
+            "question": "When is the net cash value zero?",
+            "answer": "If the contract is in default."
+        },
+        {
+            "question": "What happens to the net cash value if the contract is in default?",
+            "answer": "The net cash value is zero."
+        },
+        {
+            "question": "What is subtracted from the cash value to get the net cash value?",
+            "answer": "Any contract debt."
+        },
+        {
+            "question": "Is the net cash value affected by contract debt?",
+            "answer": "Yes, it is reduced by any contract debt."
+        },
+        {
+            "question": "Under what condition is the net cash value not calculated as cash value minus contract debt?",
+            "answer": "If the contract is in default."
+        },
+        {
+            "question": "What is the primary purpose of life insurance?",
+            "answer": "Life insurance pays a death benefit if you die while the policy is in effect."
+        },
+        {
+            "question": "What do you pay in exchange for life insurance coverage?",
+            "answer": "You pay premiums before your death."
+        },
+        {
+            "question": "What financial hardship can the death benefit help protect against?",
+            "answer": "Loss of income, funeral expenses, medical or nursing care expenses, debt repayments, and childcare costs after your death."
+        },
+        {
+            "question": "What happens to the death benefit if the policyholder dies while the policy is active?",
+            "answer": "The death benefit is paid out."
+        },
+        {
+            "question": "Where can you find more information about life insurance?",
+            "answer": "You can get information from the NAIC InsureU Life Insurance website -- www.insureuonline.org/insureu_type_life.htm."
+        },
+        {
+            "question": "What is the name of the website recommended for learning about life insurance?",
+            "answer": "www.insureuonline.org/insureu_type_life.htm"
+        },
+        {
+            "question": "What is the policy number?",
+            "answer": "V8 587 562"
+        },
+        {
+            "question": "On what date was the contract issued?",
+            "answer": "January 27, 2026"
+        },
+        {
+            "question": "What is the duration of the premium period?",
+            "answer": "During the life of the Insured up to attained age 121"
+        },
+        {
+            "question": "Who is the beneficiary of the contract?",
+            "answer": "Not specified in the provided text"
+        },
+        {
+            "question": "What is the preferred loan interest rate for years 11 and later?",
+            "answer": "Not specified in the provided text"
+        },
+        {
+            "question": "What is the loan interest rate for years 1 through 10?",
+            "answer": "Not specified in the provided text"
+        },
+        {
+            "question": "When is interest due on a loan?",
+            "answer": "Interest is due on each contract anniversary, or when the loan is paid back, whichever comes first."
+        },
+        {
+            "question": "What happens if interest is not paid when due?",
+            "answer": "We will increase the loan amount by any unpaid interest."
+        },
+        {
+            "question": "How is interest charged on a loan?",
+            "answer": "We charge interest at an effective annual rate shown under Loan Interest Rate in the contract data pages."
+        },
+        {
+            "question": "Is interest charged daily on a loan?",
+            "answer": "Yes, we will charge interest daily on any loan."
+        },
+        {
+            "question": "What determines the interest rate for a loan?",
+            "answer": "The effective annual rate shown under Loan Interest Rate in the contract data pages."
+        },
+        {
+            "question": "When does the interest charge apply if the loan is paid back before the contract anniversary?",
+            "answer": "Interest is due when the loan is paid back, whichever comes first."
+        },
+        {
+            "question": "What happens if a withdrawal request is not honored by the financial institution?",
+            "answer": "Prudential will not consider the payment to be made."
+        },
+        {
+            "question": "What is the acceptable range for the withdrawal date?",
+            "answer": "Between the 1st and 28th of the month."
+        },
+        {
+            "question": "What is the maximum amount that can be withdrawn via EFT?",
+            "answer": "It cannot exceed the modal premium unless the policy has flexible payment arrangements."
+        },
+        {
+            "question": "What information is required for the account owner type?",
+            "answer": "The account owner type is a required field."
+        },
+        {
+            "question": "What address-related information is required in the EFT request?",
+            "answer": "Address, city, state, and ZIP code are required."
+        },
+        {
+            "question": "For which type of business is this EFT request form intended?",
+            "answer": "Life New Business only."
+        },
+        {
+            "question": "What must you do to surrender the contract?",
+            "answer": "You must ask us in a form that meets our needs."
+        },
+        {
+            "question": "What may the insurer require you to send when surrendering the contract?",
+            "answer": "The contract."
+        },
+        {
+            "question": "How long does the insurer usually take to pay the net cash value after receiving the request and contract?",
+            "answer": "Within seven days."
+        },
+        {
+            "question": "What is the maximum time the insurer can postpone paying the net cash value?",
+            "answer": "Up to six months."
+        },
+        {
+            "question": "What condition ensures the net cash value does not drop below a certain level after the grace period?",
+            "answer": "After the grace period and within thirty days after an anniversary, the net cash value will not be less than the net cash value on that anniversary adjusted for any loan you take out or pay back during those thirty days."
+        },
+        {
+            "question": "How is the net cash value adjusted if a loan is taken or repaid within thirty days after an anniversary?",
+            "answer": "It is adjusted for any loan you take out or pay back during those thirty days."
+        },
+        {
+            "question": "What is the policy number that was delivered?",
+            "answer": "V8587562"
+        },
+        {
+            "question": "Was the policy delivered to the individual?",
+            "answer": "Yes, this policy number V8587562 has been delivered to and reviewed with me."
+        },
+        {
+            "question": "Was the policy reviewed with the individual?",
+            "answer": "Yes, this policy number V8587562 has been delivered to and reviewed with me."
+        },
+        {
+            "question": "Did the individual confirm reading the document?",
+            "answer": "I have read this document and the information presented is correct."
+        },
+        {
+            "question": "Did the individual confirm the accuracy of the information in the document?",
+            "answer": "I have read this document and the information presented is correct."
+        },
+        {
+            "question": "Who issues the life insurance policy described in the text?",
+            "answer": "The Prudential Insurance Company of America"
+        },
+        {
+            "question": "Where is The Prudential Insurance Company of America located?",
+            "answer": "213 Washington Street, Newark, NJ 07102"
+        },
+        {
+            "question": "Does The Prudential Insurance Company of America have affiliates?",
+            "answer": "Yes, it has affiliates"
+        },
+        {
+            "question": "What is the label on this document?",
+            "answer": "Pre-Delivery Review Copy"
+        },
+        {
+            "question": "What is the code 'BindNonPerf' associated with in the document?",
+            "answer": "It is a document code or status identifier"
+        },
+        {
+            "question": "What are the three types of death benefits described in the contract?",
+            "answer": "Type A, Type B, and Type C death benefits."
+        },
+        {
+            "question": "How is the no-lapse death benefit calculated for a contract with a Type A death benefit?",
+            "answer": "It is the greater of (1) the basic insurance amount, or (2) the no-lapse contract fund before deduction of any no-lapse monthly charges due on that date, multiplied by the attained age factor that applies."
+        },
+        {
+            "question": "What is the formula for the no-lapse death benefit under a Type B death benefit?",
+            "answer": "It is the greater of (1) the basic insurance amount plus the no-lapse contract fund before deduction of any no-lapse monthly charges due on that date, and (2) the no-lapse contract fund before deduction of any no-lapse monthly charges due on that date, multiplied by the attained age factor that applies."
+        },
+        {
+            "question": "What components are included in the calculation of the Type C no-lapse death benefit?",
+            "answer": "The greater of (1) the basic insurance amount plus the lesser of (a) total premiums paid minus total withdrawals, and (b) the no-lapse contract fund before deduction of any monthly charge due on that date plus the product of the Type C Limiting Amount multiplied by the Type C Death Benefit Factor, and (2) the no-lapse contract fund before deduction of any monthly charges due on that date, multiplied by the attained age factor that applies."
+        },
+        {
+            "question": "How does the Total Disability Benefit rider affect the no-lapse contract fund?",
+            "answer": "On each monthly date benefits are paid under this rider, the no-lapse contract fund is credited with a no-lapse net premium amount equal to the total of the monthly deductions from the no-lapse contract fund on that monthly date."
+        },
+        {
+            "question": "When does the Total Disability Benefit rider terminate?",
+            "answer": "The rider terminates on the earliest of: (1) the end of the last day of the grace period if the contract is in default, or (2) the date the contract ends for any other reason."
+        },
+        {
+            "question": "What is the net premium amount?",
+            "answer": "The portion of each premium you pay that we add to the contract fund."
+        },
+        {
+            "question": "Where is the net premium amount added?",
+            "answer": "To the contract fund."
+        },
+        {
+            "question": "What components make up the net premium amount?",
+            "answer": "The premium paid minus the adjustments to premium payments."
+        },
+        {
+            "question": "How is the net premium amount calculated?",
+            "answer": "It is equal to the premium paid minus the adjustments to premium payments shown on a contract data page."
+        },
+        {
+            "question": "What is the relationship between the premium paid and the adjustments in determining the net premium amount?",
+            "answer": "The net premium amount is derived by subtracting the adjustments from the premium paid."
+        },
+        {
+            "question": "After how many years from the effective date of the policy can the validity no longer be contested, except for failure to pay premium?",
+            "answer": "Two years"
+        },
+        {
+            "question": "What is the applicant's obligation regarding the truthfulness of the statements in the application?",
+            "answer": "To the best of my knowledge and belief, the statements in this application are complete, true and correctly recorded."
+        },
+        {
+            "question": "What must the applicant have done if they requested the Acceleration of Death Benefits (Living Needs Benefit)?",
+            "answer": "I have read the disclosures in the Living Needs Benefit brochure."
+        },
+        {
+            "question": "What are the conditions that must be met before a policy takes effect?",
+            "answer": "My original signature has been affixed to this application, the original will be retained by the Company; a payment equal to the full first required premium is received by the Company; a signed copy of this Application is received by the Company; the form of payment submitted is honored; and the Owner has personally received the policy during the lifetime of and while the health of the Proposed Insured is as stated in this application."
+        },
+        {
+            "question": "What are the acceptable forms of payment for the first premium?",
+            "answer": "(i) a check in the amount of the full first required premium; (ii) a completed and signed payment form for the first full premium; or (iii) any other form of payment acceptable to the Company."
+        },
+        {
+            "question": "When is a payment considered honored if made by credit/debit card, wire transfer, or automatic bank draft?",
+            "answer": "No premium is considered to be honored until the Company actually receives the funds unless otherwise provided by applicable law."
+        },
+        {
+            "question": "Which level of Company officer is authorized to make or alter contracts or agree not to enforce rights?",
+            "answer": "An officer of the Company with the rank or title of Vice President"
+        },
+        {
+            "question": "What test did the policyholder elect for defining life insurance, and can this election be changed later?",
+            "answer": "The policyholder elected the Cash Value Accumulation Test, and this election may not be changed at a later date."
+        },
+        {
+            "question": "What is the requirement for electing the Overloan Protection Rider?",
+            "answer": "The Overloan Protection Rider must be elected at the time the policy is issued and requires election of the Guideline Premium Test definition of life insurance."
+        },
+        {
+            "question": "Is there a charge for electing the Overloan Protection Rider, and what fee applies when it is exercised?",
+            "answer": "There is no charge for electing the Overloan Protection Rider, but there would be a one-time charge deducted from the Contract Fund at the time the Rider is exercised."
+        },
+        {
+            "question": "What is the purpose of the Enhanced Cash Value Rider, and when must it be elected?",
+            "answer": "The Enhanced Cash Value Rider may provide for the payment of an additional amount upon surrender of the policy for its Net Cash Value, and it must be elected at the time the policy is issued."
+        },
+        {
+            "question": "What legal protection may non-residents of the United States lose when holding this policy?",
+            "answer": "Non-residents may not have the protections offered by State Guaranty Funds, which protect policyowners if an insurer becomes impaired or insolvent."
+        },
+        {
+            "question": "Why should non-residents consult a legal or tax adviser regarding this policy?",
+            "answer": "Because certain non-contractual rights may not be available, applicable law may differ from tax law, and there may be tax liabilities to consider."
+        },
+        {
+            "question": "What is the processing date mentioned in the document?",
+            "answer": "JAN 27, 2026"
+        },
+        {
+            "question": "What is the policy number listed in the document?",
+            "answer": "V8 587 562"
+        },
+        {
+            "question": "What is the monthly rate for contract year 1?",
+            "answer": "0.00000"
+        },
+        {
+            "question": "What is the monthly rate for contract year 35?",
+            "answer": "2.13738"
+        },
+        {
+            "question": "What is the monthly rate for contract year 70?",
+            "answer": "32.88"
+        },
+        {
+            "question": "At which contract year does the monthly rate first exceed 10?",
+            "answer": "49"
+        },
+        {
+            "question": "What is the difference between the monthly rate in contract year 35 and contract year 1?",
+            "answer": "2.13738"
+        },
+        {
+            "question": "What is the note associated with contract year 20?",
+            "answer": "Pre-Delivery"
+        },
+        {
+            "question": "What is the monthly rate in contract year 50?",
+            "answer": "10.6636"
+        },
+        {
+            "question": "What is the monthly rate in the year immediately after contract year 65?",
+            "answer": "26.742"
+        },
+        {
+            "question": "What are some financial needs that life insurance should cover after death?",
+            "answer": "Supporting your family, paying for child(ren)'s education, and paying off a mortgage."
+        },
+        {
+            "question": "What should you consider when evaluating whether you need life insurance?",
+            "answer": "Whether anyone depends on you financially, how much of the family income you provide, and how your family will pay final expenses and debts after your death."
+        },
+        {
+            "question": "What is the main difference between term insurance and cash value insurance?",
+            "answer": "Term insurance provides lower-cost coverage for a specific period, while cash value insurance may be more cost-effective for lifetime coverage and builds up cash values."
+        },
+        {
+            "question": "What is a key difference between whole life and universal life insurance?",
+            "answer": "Whole life insurance has fixed premium payments, while universal life allows flexible premium payment patterns as long as enough is paid to keep the policy in force."
+        },
+        {
+            "question": "How does a variable life policy differ from a non-variable life policy in terms of cash value?",
+            "answer": "Variable life policies have investments that directly impact cash value, offering higher potential gains but also greater risk of loss; non-variable policies have guaranteed minimums but less potential for growth."
+        },
+        {
+            "question": "What happens if you renew a term life insurance policy?",
+            "answer": "The premiums increase, even if your health has changed."
+        },
+        {
+            "question": "Why should you not cancel your current life insurance policy before getting a new one?",
+            "answer": "Because you may lose coverage and could face difficulties obtaining a new policy, especially if your health has changed."
+        },
+        {
+            "question": "How often can interest payments be made according to Option 3?",
+            "answer": "Annually, semi-annually, quarterly, or monthly."
+        },
+        {
+            "question": "What type of financial arrangement is described in Option 3?",
+            "answer": "Holding an amount at interest."
+        },
+        {
+            "question": "What is paid annually, semi-annually, quarterly, or monthly under Option 3?",
+            "answer": "The interest."
+        },
+        {
+            "question": "What is the purpose of holding an amount at interest in Option 3?",
+            "answer": "To pay interest periodically."
+        },
+        {
+            "question": "Which companies does this privacy notice apply to?",
+            "answer": "The Prudential companies listed at the end of this notice."
+        },
+        {
+            "question": "Who is the intended audience for this privacy notice?",
+            "answer": "Current and former customers of Prudential."
+        },
+        {
+            "question": "What is the main purpose of this privacy notice?",
+            "answer": "To describe how Prudential treats the information it receives about you, including ways it discloses your personal information within Prudential and your right to opt out."
+        },
+        {
+            "question": "What does Prudential value about its customers?",
+            "answer": "Your business and your trust."
+        },
+        {
+            "question": "What right do customers have regarding the disclosure of their personal information?",
+            "answer": "The right to opt out of such disclosing."
+        },
+        {
+            "question": "What must be assigned as sole security for the loan?",
+            "answer": "This contract must be assigned to us as sole security for the loan."
+        },
+        {
+            "question": "What condition must the Insured meet for loan approval?",
+            "answer": "The Insured must be living."
+        },
+        {
+            "question": "What is the maximum allowed contract debt relative to the loan value?",
+            "answer": "The resulting contract debt must not be more than the loan value."
+        },
+        {
+            "question": "How is existing contract debt handled when borrowing from the lender?",
+            "answer": "We will add the new amount you borrow to that debt."
+        },
+        {
+            "question": "How can a beneficiary be designated or changed?",
+            "answer": "By sending a request in a form that meets the insurer's needs, and possibly providing the contract to be endorsed."
+        },
+        {
+            "question": "When does a beneficiary change take effect if no future effective date is specified?",
+            "answer": "It takes effect on the date the request was signed."
+        },
+        {
+            "question": "What happens to payments made before a beneficiary change was received and recorded?",
+            "answer": "Any rights created by the request do not apply to payments made or actions taken before the request was received and recorded."
+        },
+        {
+            "question": "How are beneficiary classes prioritized when numbered classes are used?",
+            "answer": "The class with first priority is called class 1, the next is class 2, and so on."
+        },
+        {
+            "question": "What determines who receives payment if multiple beneficiaries are in the same class?",
+            "answer": "If no one else in the same class survives the Insured, the one who has the right to be paid will be the only one paid."
+        },
+        {
+            "question": "How are payments distributed among two or more beneficiaries in the same class who survive the Insured?",
+            "answer": "They will be paid in equal shares."
+        },
+        {
+            "question": "What right does the insurer have before making a payment to a beneficiary?",
+            "answer": "The insurer has the right to decide what proof is needed for identity, age, or other facts about the beneficiary."
+        },
+        {
+            "question": "What is the maximum additional illustrative report charge?",
+            "answer": "$25.00"
+        },
+        {
+            "question": "What are the two main topics covered in the guide?",
+            "answer": "Effect on Contract Fund and Effect on Basic Insurance Amount"
+        },
+        {
+            "question": "Where can a copy of the application and any riders or endorsements be found?",
+            "answer": "At the end of the contract"
+        },
+        {
+            "question": "What is the purpose of the guide titled 'Effect on Contract Fund; Effect on Basic Insurance Amount'?",
+            "answer": "To explain the impact on the contract fund and the basic insurance amount"
+        },
+        {
+            "question": "What type of documents are located at the end of the contract?",
+            "answer": "A copy of the application and any riders or endorsements"
+        },
+        {
+            "question": "What are the two main ways a death benefit can be paid?",
+            "answer": "A single sum or under one of the optional modes of settlement."
+        },
+        {
+            "question": "What is the first option for paying a death benefit?",
+            "answer": "A single sum."
+        },
+        {
+            "question": "What are the optional modes of settlement based on?",
+            "answer": "The Settlement Options provision."
+        },
+        {
+            "question": "Where can the optional modes of settlement be found?",
+            "answer": "In the Settlement Options provision."
+        },
+        {
+            "question": "Under which section of the Internal Revenue Code must the contract satisfy the definition of life insurance for Federal income tax purposes?",
+            "answer": "Section 7702 of the Internal Revenue Code of 1986, as amended."
+        },
+        {
+            "question": "What types of changes can the insurer decline if they risk causing the contract to fail to qualify as life insurance?",
+            "answer": "Changing the basic insurance amount, withdrawals, and changing the type of death benefit."
+        },
+        {
+            "question": "What actions can the insurer take to ensure the contract continues to qualify as life insurance?",
+            "answer": "Change the contract, require additional premium payments, or make distributions from the contract."
+        },
+        {
+            "question": "At what age do monthly charges from the contract fund cease?",
+            "answer": "On the first contract anniversary on or following the Insured's 121st birthday."
+        },
+        {
+            "question": "What happens to the cash value default provision after the first contract anniversary on or following the Insured's 121st birthday?",
+            "answer": "Cash value default may not occur on or following such anniversary."
+        },
+        {
+            "question": "What tax risk exists if the contract is continued after the Insured attains age 100?",
+            "answer": "The contract may not qualify as life insurance under Federal tax law and may be subject to adverse tax consequences."
+        },
+        {
+            "question": "What should a policyholder do before deciding to continue the contract after the Insured reaches age 100?",
+            "answer": "Consult a tax advisor."
+        },
+        {
+            "question": "What is one normal everyday business purpose for using personal information?",
+            "answer": "Providing services to you, administrating your products, account, or policy, running our business, and processing claims and other transactions."
+        },
+        {
+            "question": "How might personal information be used for strategic planning?",
+            "answer": "To effectuate certain business relationships and partnerships."
+        },
+        {
+            "question": "What kind of analysis might be conducted using personal information?",
+            "answer": "Business research and analysis."
+        },
+        {
+            "question": "In what way can personal information be used in data analytics?",
+            "answer": "Through modeling (such as predictive modeling), the deployment of automated tools, and in certain instances, artificial intelligence in accordance with applicable law or other regulatory guidance."
+        },
+        {
+            "question": "How is personal information used in marketing?",
+            "answer": "To market products and services of Prudential and other companies that may interest you."
+        },
+        {
+            "question": "What is a security-related reason for using personal information?",
+            "answer": "To detect and prevent identity theft, fraud, or misuse of your accounts."
+        },
+        {
+            "question": "What is the name of the policy?",
+            "answer": "PruLife Essential UL Type A - Level Death Benefit"
+        },
+        {
+            "question": "What is the policy number?",
+            "answer": "V8587562"
+        },
+        {
+            "question": "What types of personal identifiers does the organization collect?",
+            "answer": "Name, address, email address, telephone number, other contact information, and Government ID"
+        },
+        {
+            "question": "What financial and employment information is collected?",
+            "answer": "Employment and occupation, demographic, income, and financial information, transaction history"
+        },
+        {
+            "question": "Why is health-related information collected?",
+            "answer": "For insurance applications & products"
+        },
+        {
+            "question": "From which third parties is consumer report data obtained?",
+            "answer": "Consumer reporting agencies"
+        },
+        {
+            "question": "What kinds of biometric and sensory data are collected?",
+            "answer": "Video and audio recordings, and biometric data"
+        },
+        {
+            "question": "What type of information is gathered from internet or network activity?",
+            "answer": "Information gathered from your internet or network activity"
+        },
+        {
+            "question": "What should a user do if they want to correct information received from an external source?",
+            "answer": "Contact those sources directly"
+        },
+        {
+            "question": "Who is the insured?",
+            "answer": "Fname Closedadmintesttwo"
+        },
+        {
+            "question": "What is the beneficiary arrangement?",
+            "answer": "Arrangement See Policy For Details"
+        },
+        {
+            "question": "What is the basic insurance amount?",
+            "answer": "$400,000"
+        },
+        {
+            "question": "Where can additional details about the beneficiary arrangement be found?",
+            "answer": "See Policy For Details"
+        },
+        {
+            "question": "What is the full name of the insurance company?",
+            "answer": "Pruco Life Insurance Company"
+        },
+        {
+            "question": "Which financial company owns Pruco Life Insurance Company?",
+            "answer": "Prudential Financial"
+        },
+        {
+            "question": "What is the maximum duration for equal payments under Option 1?",
+            "answer": "25 years"
+        },
+        {
+            "question": "What type of payments are made under Option 1?",
+            "answer": "Equal payments"
+        },
+        {
+            "question": "What does the Option 1 Table show?",
+            "answer": "The minimum amounts we will pay"
+        },
+        {
+            "question": "How long can the payment period extend under Option 1?",
+            "answer": "Up to 25 years"
+        },
+        {
+            "question": "What must a customer do to receive life insurance documents electronically?",
+            "answer": "The customer must consent to electronic delivery and submission by completing the Electronic Policy Delivery Contact Information and Signatures sections and returning the form to their representative."
+        },
+        {
+            "question": "When does the consent to electronic delivery become effective?",
+            "answer": "The consent is effective on the date the customer affixes their signature below."
+        },
+        {
+            "question": "How can a customer withdraw their consent to electronic delivery?",
+            "answer": "A customer can withdraw their consent at any time by contacting their representative or Prudential at www.prudential.com/myaccess."
+        },
+        {
+            "question": "What is the time limit to view and electronically sign documents after receiving the email link?",
+            "answer": "The customer has 90 days to view and electronically sign the documents, unless the transaction is voided, declined, or all parties sign."
+        },
+        {
+            "question": "What are the required technical conditions to access electronically delivered documents?",
+            "answer": "The customer must have access to a computer with internet access, a compatible browser (such as Chrome, Firefox, Safari, Internet Explorer, or Edge), and software to view PDF files, such as Adobe Reader."
+        },
+        {
+            "question": "What happens to electronically delivered documents after they are voided, declined, or signed?",
+            "answer": "Once voided, declined, or signed, the documents remain accessible for 14 days."
+        },
+        {
+            "question": "What information is used exclusively for electronic policy delivery and authentication code delivery?",
+            "answer": "The email address(es) provided are used only for electronic policy delivery, and the authentication code delivery contact number and method are used only to deliver an authentication access code."
+        },
+        {
+            "question": "What is the no-lapse administrative charge as a percentage of the premium paid?",
+            "answer": "2.5%"
+        },
+        {
+            "question": "What is the purpose of the no-lapse charge for sales expenses?",
+            "answer": "It covers sales expenses as described under No-Lapse Charge for Sales Expenses."
+        },
+        {
+            "question": "What is the result of subtracting both the no-lapse administrative charge and the no-lapse charge for sales expenses from the premium paid?",
+            "answer": "The remainder is the no-lapse net premium amount."
+        },
+        {
+            "question": "What is the term used for the amount remaining after subtracting the no-lapse administrative charge and the no-lapse charge for sales expenses?",
+            "answer": "No-lapse net premium amount"
+        },
+        {
+            "question": "How is the no-lapse net premium amount calculated?",
+            "answer": "It is calculated by subtracting a 2.5% no-lapse administrative charge and the no-lapse charge for sales expenses from the premium paid."
+        },
+        {
+            "question": "How is the cash value of a contract calculated?",
+            "answer": "The cash value at any time is the contract fund less any surrender charge."
+        },
+        {
+            "question": "What is subtracted from the contract fund to determine the cash value?",
+            "answer": "Any surrender charge is subtracted from the contract fund to determine the cash value."
+        },
+        {
+            "question": "Where can the maximum surrender charge be found?",
+            "answer": "We show the maximum surrender charge in the Schedule of Maximum Surrender Charges."
+        },
+        {
+            "question": "What document contains the maximum surrender charge information?",
+            "answer": "The Schedule of Maximum Surrender Charges contains the maximum surrender charge information."
+        },
+        {
+            "question": "What is the minimum monthly payment per $1,000 for a 5-year term with Option 1, if the first payment is payable immediately?",
+            "answer": "$16.97"
+        },
+        {
+            "question": "How do you calculate the annual payment from the monthly payment for Years 1 through 9?",
+            "answer": "Multiply the monthly amount by 2.998 for annual."
+        },
+        {
+            "question": "What is the minimum monthly payment per $1,000 for a 25-year term for a male aged 35 at the last birthday under Option 2?",
+            "answer": "$8.02"
+        },
+        {
+            "question": "What is the minimum monthly payment per $1,000 for a female aged 25 at the last birthday under Option 2?",
+            "answer": "$6.26"
+        },
+        {
+            "question": "What is the difference in monthly payment per $1,000 between males and females aged 40 at the last birthday under Option 2?",
+            "answer": "$8.46 - $8.18 = $0.28"
+        },
+        {
+            "question": "What is the minimum monthly payment per $1,000 for a 10-year term for a male aged 10 at the last birthday under Option 2?",
+            "answer": "$2.82"
+        },
+        {
+            "question": "What is the monthly payment for a female aged 30 at the last birthday under Option 2 for a 15-year term?",
+            "answer": "$3.06"
+        },
+        {
+            "question": "Who is the default owner of the contract unless a different owner is named?",
+            "answer": "The Insured"
+        },
+        {
+            "question": "What must be done to change the ownership of the contract?",
+            "answer": "Send a request in a form that meets the insurer's needs, and possibly submit the contract for endorsement."
+        },
+        {
+            "question": "When does a change in ownership take effect if no future effective date is specified?",
+            "answer": "On the date the request was signed."
+        },
+        {
+            "question": "Are payments made or actions taken before a request is received and recorded affected by the ownership change?",
+            "answer": "No, any rights created by the request do not apply to payments made or actions taken before the request was received and recorded."
+        },
+        {
+            "question": "How are rights shared if the owner is a joint owner?",
+            "answer": "All rights under the contract will be equally shared."
+        },
+        {
+            "question": "What happens to the rights under the contract if there is a contingent owner?",
+            "answer": "All rights remain with the primary owner during the primary owner's lifetime."
+        },
+        {
+            "question": "What type of benefits may be payable on an Insured's death according to this contract?",
+            "answer": "Additional benefits"
+        },
+        {
+            "question": "Where are additional death benefits listed if they are included in the contract?",
+            "answer": "On a contract data page"
+        },
+        {
+            "question": "What document describing the additional benefit is included in the contract?",
+            "answer": "A form describing the benefit"
+        },
+        {
+            "question": "Under what condition must the contract be to receive an additional death benefit?",
+            "answer": "The contract has not been surrendered"
+        },
+        {
+            "question": "What is the status of the contract required at the time of death for additional death benefits to be payable?",
+            "answer": "It is not in default past the grace period"
+        }
+    ]
+}

@@ -1,0 +1,1893 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;8.2 PRE-EXISTING CONDITION LIMITATION: None. Group coverage has no pre-existing condition exclusions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Section 1 - About This Certificate: This certificate is evidence of coverage under the Master Group Policy issued to your employer.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Voluntary coverage requires enrollment within 31 days.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">32.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Employer (Policyholder): TechCorp Industries, Inc., Corporate Headquarters: San Jose, California.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.4 Benefits will be paid within 10 business days of receipt of complete claim documentation.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Voluntary coverage required enrollment within 31 days of hire (Late Entrant provisions apply if enrolling after 31 days).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The conversion policy will be issued at: • Your attained age at conversion • Standard premium rates for the individual policy • Maximum amount: Lesser of group coverage or $200,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Vice President, Group Operations&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The certificate is issued by Alliance Group Benefits.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">40.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If you are diagnosed with a terminal illness with life expectancy of 12 months or less, you may request acceleration of up to 75% of your death benefit.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Basic Life Insurance: 2x Annual Salary = $180,000, Voluntary Additional Coverage: $100,000 (employee-elected), Total Coverage: $280,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The basic benefit is 2 times the annual base salary.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">45.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;9.1 You may change your beneficiary at any time by submitting a change form to your employer's HR department.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Section 2 - Eligibility and Effective Date: You became eligible for coverage on your date of hire. Basic coverage became effective automatically without requiring evidence of insurability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Late entrants are subject to special provisions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">32.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Any amount accelerated reduces the death benefit payable to beneficiaries.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;11.1 If you become totally disabled before age 60 and remain disabled for 6 consecutive months, your voluntary life insurance premiums will be waived.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Ported coverage continues at the same amount you had under the group policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Issued: June 1, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The employer is TechCorp Industries, Inc.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">40.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The benefit is rounded to the next higher $1,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">40.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Your coverage terminates on the earliest of: (a) The date the Master Policy terminates (b) The last day of the month in which you cease to be an eligible employee (c) The date you cease active full-time employment (d) The date you request termination of voluntary coverage (e) The last day for which required premiums have been paid.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;9.2 If no beneficiary survives you, benefits will be paid to your estate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Section 3 - Benefit Amount Calculation: Basic Life: Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The total coverage is $280,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">36.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If you leave employment, you may port your coverage by continuing it as an individual policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;11.2 Coverage continues without premium payment during disability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may elect additional coverage in increments.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Evidence of insurability is NOT required for portability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;═══════════════════════════════════════════════════════════════════&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">0.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The coverage amount is $280,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You must apply within 31 days of termination of employment.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Minimum acceleration: $5,000 Maximum acceleration: $250,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The employee may elect additional coverage in increments.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">35.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;9.3 If you name multiple beneficiaries, benefits are divided equally unless you specify percentages.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Voluntary Supplemental: You may elect additional coverage in increments.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The primary beneficiary is Jordan Casey Taylor.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">36.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The effective date is June 1, 2024.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">48.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;11.3 You must provide proof of continuing disability annually.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;$5,000 Maximum acceleration: $250,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Group Term Life Insurance Certificate issued by Alliance Group Benefits.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The employee is Alex Morgan Taylor.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You must apply for conversion within 31 days of termination.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may elect additional coverage in increments of $10,000, up to a maximum of 5 times salary.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Effective Date: June 1, 2024, Premium Contribution: Employer pays basic; employee pays $12/month for voluntary coverage.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The certificate is valid under the Master Policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">40.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Total coverage cannot exceed $1,000,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.1 Beneficiaries should notify Alliance Group Benefits immediately upon death of the insured employee.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The Master Policy controls in case of any conflict with this certificate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">16.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The employee pays $12/month for voluntary coverage.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">40.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;11.4 Waiver ends when you return to work, recover, or reach age 65.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Accelerated amount will be reduced by an actuarial discount.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Certificate No: AGB-GT-2024-TechCorp-00842, Master Policy No: AGB-2024-TC-GROUP, Issue Date: June 1, 2024.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The beneficiary is Jordan Casey Taylor.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;7.4 Any amount accelerated reduces the death benefit payable to beneficiaries.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary Beneficiary: Jordan Casey Taylor (Spouse) - 100%, Contingent Beneficiary: Taylor Family Revocable Trust - 100%.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The employee became eligible on March 1, 2022.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">32.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.2 Required documents: • Completed claim form (available from employer or insurer) • Certified death certificate • Proof of beneficiary identity&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Your coverage is subject to the terms, conditions, and exclusions in the Master Policy and this certificate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium rates will be age-banded group rates, payable directly to the insurance company.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This certificate is issued under and governed by the laws of the state of California.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The primary beneficiary is Jordan Casey Taylor, spouse of the insured.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;No medical exam or health questions required for conversion.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Certificate Holder (Employee): Name: Alex Morgan Taylor, Employee ID: TC-8842, Department: Software Engineering, Date of Birth: February 14, 1990, Date of Hire: March 1, 2022.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The Master Policy governs any conflicts with this certificate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;8.1 SUICIDE: If death occurs by suicide within 12 months of the coverage effective date, we will not pay a death benefit.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If your group coverage terminates for any reason except non-payment of premium, you may convert to an individual whole life policy without evidence of insurability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;7.3 Accelerated amount will be reduced by an actuarial discount.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Basic coverage is effective without evidence of insurability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">36.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.3 Submit claims to: Alliance Group Benefits - Claims Department 1200 Insurance Plaza, Dallas, TX 75201 Claims Hotline: 1-888-555-CLAIM&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The contingent beneficiary is Taylor Family Revocable Trust.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">54.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;ALLIANCE GROUP BENEFITS Dallas, Texas&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The employee pays $12 per month for voluntary coverage.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Your basic benefit will be recalculated annually on your policy anniversary based on your current salary.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;31 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The deadline for enrolling in voluntary coverage."&lt;SEP&gt;"The deadline to apply for conversion is 31 days after termination."&lt;SEP&gt;"The deadline to apply for portability is 31 days after employment termination."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;10 BUSINESS DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The timeframe within which benefits are paid after complete documentation is received."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;INCREMENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RULE"</data>
+  <data key="d4">"The method by which additional coverage can be selected."&lt;SEP&gt;"The standard units in which additional coverage can be selected."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;BENEFICIARIES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Beneficiaries are required to notify Alliance Group Benefits immediately after the death of the insured."&lt;SEP&gt;"Beneficiaries are the individuals who receive the death benefit."&lt;SEP&gt;"The individuals designated to receive the death benefit."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;FEBRUARY 14, 1990&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Date of birth of Alex Morgan Taylor."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;STANDARD PREMIUM RATES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"Premiums for the individual policy are set at standard rates."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;TOTAL DISABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MEDICAL CONDITION"</data>
+  <data key="d4">"A condition where the individual is unable to perform any substantial gainful work."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;THIS CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The Group Term Life Insurance Certificate, which is subordinate to the Master Policy."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;SUICIDE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"If death occurs by suicide within 12 months of the coverage effective date, no death benefit is paid."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;MARCH 1, 2022&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Date of hire for Alex Morgan Taylor."&lt;SEP&gt;"The date the employee became eligible for coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;$200,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CURRENCY"</data>
+  <data key="d4">"The maximum amount for conversion is the lesser of the group coverage amount or $200,000."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;AGE 60&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age threshold before which total disability must occur for premium waiver."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;TERMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The rules and conditions governing the insurance coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;5 TIMES SALARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The maximum voluntary supplemental coverage is limited to 5 times the annual salary."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;COVERAGE EFFECTIVE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date when coverage officially begins, within 12 months of which suicide is excluded."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;TECHCORP INDUSTRIES, INC.&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The employer and policyholder of the group life insurance policy."&lt;SEP&gt;"The employer and policyholder."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;MEDICAL EXAM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"No medical exam is required when converting to an individual policy."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;6 CONSECUTIVE MONTHS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The duration of disability required for premium waiver."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;CONDITIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The circumstances under which coverage applies."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;BASIC BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"The basic benefit is calculated as 2 times the annual base salary, rounded up to the next higher $1,000."&lt;SEP&gt;"The basic benefit is recalculated annually based on the current salary."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;PRE-EXISTING CONDITION LIMITATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY TERM"</data>
+  <data key="d4">"There is no pre-existing condition limitation in group coverage."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;SAN JOSE, CALIFORNIA&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The corporate headquarters location of TechCorp Industries, Inc."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;HEALTH QUESTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"No health questions are required during the conversion process."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;VOLUNTARY LIFE INSURANCE PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Premiums for voluntary life insurance are waived under the specified conditions."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The situations or events not covered by the insurance policy."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;ANNUAL BASE SALARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The annual base salary is the primary factor used to calculate the basic benefit."&lt;SEP&gt;"The employee’s base salary used as the basis for calculating the basic life insurance benefit."&lt;SEP&gt;"The employee’s base salary used in the calculation."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"A beneficiary is an individual designated to receive benefits."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;BASIC LIFE INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COVERAGE"</data>
+  <data key="d4">"A standard life insurance benefit equal to twice the employee’s annual base salary, amounting to $180,000."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;PORTABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RIGHT"</data>
+  <data key="d4">"The right to continue coverage as an individual policy after leaving employment."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;PREMIUM PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Premium payment is suspended during disability."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;31 DAYS OF HIRE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The deadline for enrolling in voluntary coverage after being hired."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;CHANGE FORM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A form used to change a beneficiary designation."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;VOLUNTARY ADDITIONAL COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COVERAGE"</data>
+  <data key="d4">"An optional life insurance benefit elected by the employee, amounting to $100,000."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;PROOF OF CONTINUING DISABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Annual documentation is required to maintain the waiver of premiums."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;LATE ENTRANT PROVISIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RULE"</data>
+  <data key="d4">"Special terms that apply if an employee enrolls in voluntary coverage after the initial 31-day window."&lt;SEP&gt;"Special terms that apply to employees enrolling after the initial 31-day window."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;$10,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CURRENCY"</data>
+  <data key="d4">"Voluntary supplemental coverage is available in $10,000 increments."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;HR DEPARTMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The employer's HR department handles beneficiary change forms."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;$180,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The value of the basic life insurance benefit."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;POLICY ANNIVERSARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME EVENT"</data>
+  <data key="d4">"The basic benefit is recalculated on the policy anniversary."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;ANNUAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The frequency with which proof of disability must be provided."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;2 TIMES YOUR ANNUAL BASE SALARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FORMULA"</data>
+  <data key="d4">"The formula used to calculate the basic life insurance benefit."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;VOLUNTARY SUPPLEMENTAL COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"Additional coverage that can be elected in $10,000 increments, up to 5 times the annual salary."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;ESTATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL ENTITY"</data>
+  <data key="d4">"If no beneficiary survives the insured, benefits are paid to the estate."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;$100,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The value of the voluntary additional coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;INDIVIDUAL POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"A personal policy that continues coverage after employment ends."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;WAIVER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE TERM"</data>
+  <data key="d4">"The waiver of premium ends when the individual returns to work, recovers, or reaches age 65."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;ELECT ADDITIONAL COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The process by which an employee can choose to increase their life insurance coverage."&lt;SEP&gt;"The process by which an employee can increase their coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;CURRENT SALARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The current salary is used to recalculate the basic benefit."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;BENEFITS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Benefits are paid to the estate if no beneficiary survives."&lt;SEP&gt;"Benefits are paid within 10 business days after complete claim documentation is received."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;$280,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The total life insurance coverage amount, combining basic and voluntary coverage."&lt;SEP&gt;"The total life insurance coverage amount."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;EMPLOYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EMPLOYMENT STATUS"</data>
+  <data key="d4">"Leaving employment triggers the portability option."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;RETURN TO WORK&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The event that ends the premium waiver."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;CONTINGENT BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The secondary recipient of insurance benefits in case the primary beneficiary is unable to receive them."&lt;SEP&gt;"The secondary recipient of insurance benefits."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;TOTAL COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"The sum of basic and voluntary coverage, totaling $280,000."&lt;SEP&gt;"Total coverage includes basic and supplemental benefits and cannot exceed $1,000,000."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;MULTIPLE BENEFICIARIES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"When more than one beneficiary is named, benefits are divided equally unless otherwise specified."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;EMPLOYEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual responsible for paying $12 per month for voluntary coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;PORTED COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"Coverage amount remains unchanged after porting."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;RECOVER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The event that ends the premium waiver."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;$12 PER MONTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The monthly cost paid by the employee for additional coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;$1,000,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CURRENCY"</data>
+  <data key="d4">"The maximum total coverage allowed is $1,000,000."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;PERCENTAGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Percentages can be specified to determine how benefits are divided among multiple beneficiaries."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;$12/MONTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The monthly premium paid by the employee for voluntary additional coverage."&lt;SEP&gt;"The monthly premium paid by the employee."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;GROUP POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The original group policy governs the coverage amount before porting."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;AGE 65&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age at which the waiver ends, regardless of disability status."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;2 TIMES THE ANNUAL BASE SALARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FORMULA"</data>
+  <data key="d4">"The formula used to calculate the basic life insurance benefit."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;ALLIANCE GROUP BENEFITS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"Alliance Group Benefits is the entity that receives notification of death."&lt;SEP&gt;"The entity responsible for issuing the insurance certificate."&lt;SEP&gt;"The issuing entity of the certificate."&lt;SEP&gt;"The organization issuing the insurance certificate, based in Dallas, Texas."&lt;SEP&gt;"The organization that issued the Group Term Life Insurance Certificate."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"Coverage remains active even when premiums are not paid during disability."&lt;SEP&gt;"Coverage terminates under specific conditions, including policy termination, loss of eligibility, or non-payment."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;JORDAN CASEY TAYLOR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual designated to receive the insurance payout upon the death of the insured."&lt;SEP&gt;"The individual designated to receive the insurance proceeds."&lt;SEP&gt;"The primary beneficiary designated to receive the insurance proceeds upon the insured’s death."&lt;SEP&gt;"The primary beneficiary of the life insurance policy, designated as the spouse of Alex Morgan Taylor."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;TERMINATION OF EMPLOYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The event that triggers the portability window."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The Group Term Life Insurance Certificate, which is evidence of coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;MASTER POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The Master Policy is a document that governs the group insurance policy; its termination ends coverage."&lt;SEP&gt;"The overarching insurance policy that supersedes the certificate in case of conflict."&lt;SEP&gt;"The overarching policy that governs the certificate."&lt;SEP&gt;"The primary insurance policy that takes precedence over the certificate in case of conflicting terms."&lt;SEP&gt;"The primary insurance policy that takes precedence over the certificate."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;INSURED EMPLOYEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual covered by the insurance policy, whose death triggers the claim process."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;SPOUSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The marital relationship between Alex Morgan Taylor and Jordan Casey Taylor."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;AGE-BANDED GROUP RATES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"Premiums for ported coverage are based on age bands and group rates."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;STATE OF CALIFORNIA&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The legal jurisdiction under which this insurance certificate is issued and governed."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;ELIGIBLE FOR COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"The employee’s eligibility status for the insurance policy."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;ELIGIBLE EMPLOYEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"An employee who qualifies for coverage under the policy."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;CLAIM FORM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A completed claim form is required to file a claim."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;TAYLOR FAMILY REVOCABLE TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"A legal entity designated to receive benefits if the primary beneficiary is not alive."&lt;SEP&gt;"A trust designated to receive benefits if the primary beneficiary is not alive."&lt;SEP&gt;"A trust designated to receive benefits if the primary beneficiary predeceases the insured."&lt;SEP&gt;"The contingent beneficiary of the life insurance policy, designated to receive benefits if the primary beneficiary predeceases the insured."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;INSURANCE COMPANY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The insurance company receives premium payments for ported coverage."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;LAWS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL CONCEPT"</data>
+  <data key="d4">"The laws of California govern the terms and conditions of this certificate."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;BASIC COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COVERAGE"</data>
+  <data key="d4">"The standard life insurance benefit that becomes effective immediately."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;ACTIVE FULL-TIME EMPLOYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EMPLOYMENT STATUS"</data>
+  <data key="d4">"Coverage ends when active full-time employment ceases."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;CERTIFIED DEATH CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A certified death certificate is required as part of the claim documentation."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;100%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The percentage of benefit allocation to both primary and contingent beneficiaries."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;TERMINAL ILLNESS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MEDICAL CONDITION"</data>
+  <data key="d4">"A condition with a life expectancy of 12 months or less, qualifying for accelerated benefits."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;DALLAS, TEXAS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The location of Alliance Group Benefits."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;ENROLLMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The process of signing up for voluntary coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;VOLUNTARY COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COVERAGE"</data>
+  <data key="d4">"An optional life insurance benefit selected by the employee."&lt;SEP&gt;"Voluntary coverage can be terminated by the employee’s request."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;PROOF OF BENEFICIARY IDENTITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Proof of beneficiary identity is required to verify the claimant."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;SECTION 1 - ABOUT THIS CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT SECTION"</data>
+  <data key="d4">"A section explaining the purpose and nature of the certificate as evidence of group insurance coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;TERMINATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Termination of group coverage triggers the conversion window."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;VICE PRESIDENT, GROUP OPERATIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The individual responsible for group operations at Alliance Group Benefits."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;PRIMARY BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The first recipient of insurance benefits."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;EMPLOYER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The employer provides access to the claim form."&lt;SEP&gt;"The entity responsible for paying the premium for basic life insurance."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;MASTER GROUP POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The overarching policy issued to the employer, which governs the terms of the certificate."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;LIFE EXPECTANCY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MEDICAL TERM"</data>
+  <data key="d4">"Life expectancy of 12 months or less is a criterion for eligibility."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;JUNE 1, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date coverage begins."&lt;SEP&gt;"The date the certificate was issued."&lt;SEP&gt;"The date when the insurance coverage becomes active."&lt;SEP&gt;"The date when the insurance coverage becomes effective."&lt;SEP&gt;"The effective date when coverage begins."&lt;SEP&gt;"The issue date of the certificate, marking the start of coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;REQUIRED PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"Coverage continues only as long as required premiums are paid."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;ATTAINED AGE AT CONVERSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The conversion policy is issued based on the individual’s age at the time of conversion."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;SECTION 2 - ELIGIBILITY AND EFFECTIVE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT SECTION"</data>
+  <data key="d4">"A section detailing eligibility criteria and the effective date of coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;ACCELERATED DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"A portion of the death benefit paid early due to terminal illness."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;$1,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CURRENCY"</data>
+  <data key="d4">"The basic benefit is rounded up to the next higher $1,000."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;SEPARATOR LINE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FORMATTING ELEMENT"</data>
+  <data key="d4">"A visual separator used in the document layout."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;GROUP COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"Group coverage has no pre-existing condition exclusions."&lt;SEP&gt;"Group coverage is the original policy provided through employment."&lt;SEP&gt;"The group coverage amount is a factor in determining the maximum conversion amount."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;INSURER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The insurer provides access to the claim form."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;DATE OF HIRE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date on which the employee became eligible for coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;75% OF DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The maximum acceleration is 75% of the total death benefit."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;GROUP TERM LIFE INSURANCE CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A certificate issued by Alliance Group Benefits providing evidence of life insurance coverage for employees of TechCorp Industries, Inc."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;INDIVIDUAL WHOLE LIFE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"A personal life insurance policy that can be obtained after group coverage ends."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;ALLIANCE GROUP BENEFITS - CLAIMS DEPARTMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The department responsible for receiving and processing claims."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;COMPLETE CLAIM DOCUMENTATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"All required documents must be submitted for benefits to be paid."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;$5,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CURRENCY"</data>
+  <data key="d4">"The maximum amount that can be accelerated is $5,000."&lt;SEP&gt;"The minimum amount that can be accelerated is $5,000."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;AGB-GT-2024-TECHCORP-00842&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"IDENTIFIER"</data>
+  <data key="d4">"Unique certificate number assigned to this insurance certificate."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;CONVERSION PRIVILEGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RIGHT"</data>
+  <data key="d4">"The right to convert group coverage to an individual policy without proof of health."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</node>
+<node id="&quot;1200 INSURANCE PLAZA, DALLAS, TX 75201&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The physical address where claims should be submitted."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;SECTION 3 - BENEFIT AMOUNT CALCULATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT SECTION"</data>
+  <data key="d4">"A section outlining how the basic life insurance benefit is calculated."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;SOFTWARE ENGINEERING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEPARTMENT"</data>
+  <data key="d4">"The department in which Alex Morgan Taylor is employed."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;$250,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CURRENCY"</data>
+  <data key="d4">"The maximum acceleration amount is $250,000."&lt;SEP&gt;"The maximum amount that can be accelerated is $250,000."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;AGB-2024-TC-GROUP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"IDENTIFIER"</data>
+  <data key="d4">"Master policy number associated with this group insurance certificate."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"A requirement that may be needed to prove health status for insurance, waived for basic coverage."&lt;SEP&gt;"No medical exam or health questions are required for conversion."&lt;SEP&gt;"No proof of health is required to maintain ported coverage."&lt;SEP&gt;"Proof of health required for some insurance policies, waived for basic coverage."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;CLAIMS HOTLINE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONTACT METHOD"</data>
+  <data key="d4">"A phone line (1-888-555-CLAIM) for submitting claims."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;ROUNDED TO THE NEXT HIGHER $1,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RULE"</data>
+  <data key="d4">"A calculation rule applied to the basic life insurance benefit."&lt;SEP&gt;"A rounding rule applied to the calculated benefit."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;ACTUARIAL DISCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"An actuarial discount is applied to reduce the accelerated amount."&lt;SEP&gt;"The accelerated amount is reduced by an actuarial discount to reflect time value of money."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;ALEX MORGAN TAYLOR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The employee who holds the life insurance certificate, working in the Software Engineering department with Employee ID TC-8842."&lt;SEP&gt;"The insured individual covered under the life insurance policy."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;1-888-555-CLAIM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONTACT INFORMATION"</data>
+  <data key="d4">"The phone number for the claims hotline."</data>
+  <data key="d2">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;VOLUNTARY SUPPLEMENTAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COVERAGE"</data>
+  <data key="d4">"An optional life insurance benefit that employees can elect to increase their total coverage."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;ACCELERATED AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The amount paid early is subject to an actuarial discount."&lt;SEP&gt;"The amount that is accelerated is reduced by an actuarial discount."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<node id="&quot;TC-8842&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"IDENTIFIER"</data>
+  <data key="d4">"Employee ID assigned to Alex Morgan Taylor."</data>
+  <data key="d2">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The death benefit is not paid if death occurs by suicide within 12 months of the coverage effective date."&lt;SEP&gt;"The death benefit payable to beneficiaries is reduced when an amount is accelerated."&lt;SEP&gt;"The total amount payable to beneficiaries is reduced by any accelerated amount."</data>
+  <data key="d2">chunk-f76f4729fce4c46baba740129f000d3c&lt;SEP&gt;chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;8.2 PRE-EXISTING CONDITION LIMITATION: None. Group coverage has no pre-existing condition exclusions.&quot;" target="&quot;PRE-EXISTING CONDITION LIMITATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 PRE-EXISTING CONDITION LIMITATION: None. Group coverage has no pre-existing condition exclusions.&quot;" target="&quot;GROUP COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Section 1 - About This Certificate: This certificate is evidence of coverage under the Master Group Policy issued to your employer.&quot;" target="&quot;SECTION 1 - ABOUT THIS CERTIFICATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Section 1 - About This Certificate: This certificate is evidence of coverage under the Master Group Policy issued to your employer.&quot;" target="&quot;MASTER GROUP POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Voluntary coverage requires enrollment within 31 days.&quot;" target="&quot;ENROLLMENT&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Voluntary coverage requires enrollment within 31 days.&quot;" target="&quot;31 DAYS&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Employer (Policyholder): TechCorp Industries, Inc., Corporate Headquarters: San Jose, California.&quot;" target="&quot;TECHCORP INDUSTRIES, INC.&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Employer (Policyholder): TechCorp Industries, Inc., Corporate Headquarters: San Jose, California.&quot;" target="&quot;SAN JOSE, CALIFORNIA&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.4 Benefits will be paid within 10 business days of receipt of complete claim documentation.&quot;" target="&quot;10 BUSINESS DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.4 Benefits will be paid within 10 business days of receipt of complete claim documentation.&quot;" target="&quot;BENEFITS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.4 Benefits will be paid within 10 business days of receipt of complete claim documentation.&quot;" target="&quot;COMPLETE CLAIM DOCUMENTATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Voluntary coverage required enrollment within 31 days of hire (Late Entrant provisions apply if enrolling after 31 days).&quot;" target="&quot;31 DAYS OF HIRE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Voluntary coverage required enrollment within 31 days of hire (Late Entrant provisions apply if enrolling after 31 days).&quot;" target="&quot;LATE ENTRANT PROVISIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The conversion policy will be issued at: • Your attained age at conversion • Standard premium rates for the individual policy • Maximum amount: Lesser of group coverage or $200,000.&quot;" target="&quot;$200,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The conversion policy will be issued at: • Your attained age at conversion • Standard premium rates for the individual policy • Maximum amount: Lesser of group coverage or $200,000.&quot;" target="&quot;ATTAINED AGE AT CONVERSION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The conversion policy will be issued at: • Your attained age at conversion • Standard premium rates for the individual policy • Maximum amount: Lesser of group coverage or $200,000.&quot;" target="&quot;STANDARD PREMIUM RATES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The conversion policy will be issued at: • Your attained age at conversion • Standard premium rates for the individual policy • Maximum amount: Lesser of group coverage or $200,000.&quot;" target="&quot;GROUP COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Vice President, Group Operations&quot;" target="&quot;VICE PRESIDENT, GROUP OPERATIONS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The certificate is issued by Alliance Group Benefits.&quot;" target="&quot;ALLIANCE GROUP BENEFITS&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you are diagnosed with a terminal illness with life expectancy of 12 months or less, you may request acceleration of up to 75% of your death benefit.&quot;" target="&quot;TERMINAL ILLNESS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you are diagnosed with a terminal illness with life expectancy of 12 months or less, you may request acceleration of up to 75% of your death benefit.&quot;" target="&quot;LIFE EXPECTANCY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you are diagnosed with a terminal illness with life expectancy of 12 months or less, you may request acceleration of up to 75% of your death benefit.&quot;" target="&quot;ACCELERATED DEATH BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you are diagnosed with a terminal illness with life expectancy of 12 months or less, you may request acceleration of up to 75% of your death benefit.&quot;" target="&quot;75% OF DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic Life Insurance: 2x Annual Salary = $180,000, Voluntary Additional Coverage: $100,000 (employee-elected), Total Coverage: $280,000.&quot;" target="&quot;BASIC LIFE INSURANCE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic Life Insurance: 2x Annual Salary = $180,000, Voluntary Additional Coverage: $100,000 (employee-elected), Total Coverage: $280,000.&quot;" target="&quot;VOLUNTARY ADDITIONAL COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic Life Insurance: 2x Annual Salary = $180,000, Voluntary Additional Coverage: $100,000 (employee-elected), Total Coverage: $280,000.&quot;" target="&quot;$180,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic Life Insurance: 2x Annual Salary = $180,000, Voluntary Additional Coverage: $100,000 (employee-elected), Total Coverage: $280,000.&quot;" target="&quot;$100,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic Life Insurance: 2x Annual Salary = $180,000, Voluntary Additional Coverage: $100,000 (employee-elected), Total Coverage: $280,000.&quot;" target="&quot;$280,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic Life Insurance: 2x Annual Salary = $180,000, Voluntary Additional Coverage: $100,000 (employee-elected), Total Coverage: $280,000.&quot;" target="&quot;TOTAL COVERAGE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The basic benefit is 2 times the annual base salary.&quot;" target="&quot;ANNUAL BASE SALARY&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The basic benefit is 2 times the annual base salary.&quot;" target="&quot;2 TIMES THE ANNUAL BASE SALARY&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.1 You may change your beneficiary at any time by submitting a change form to your employer's HR department.&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.1 You may change your beneficiary at any time by submitting a change form to your employer's HR department.&quot;" target="&quot;CHANGE FORM&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.1 You may change your beneficiary at any time by submitting a change form to your employer's HR department.&quot;" target="&quot;HR DEPARTMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Section 2 - Eligibility and Effective Date: You became eligible for coverage on your date of hire. Basic coverage became effective automatically without requiring evidence of insurability.&quot;" target="&quot;SECTION 2 - ELIGIBILITY AND EFFECTIVE DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Section 2 - Eligibility and Effective Date: You became eligible for coverage on your date of hire. Basic coverage became effective automatically without requiring evidence of insurability.&quot;" target="&quot;DATE OF HIRE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Section 2 - Eligibility and Effective Date: You became eligible for coverage on your date of hire. Basic coverage became effective automatically without requiring evidence of insurability.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Late entrants are subject to special provisions.&quot;" target="&quot;LATE ENTRANT PROVISIONS&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Any amount accelerated reduces the death benefit payable to beneficiaries.&quot;" target="&quot;BENEFICIARIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Any amount accelerated reduces the death benefit payable to beneficiaries.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 If you become totally disabled before age 60 and remain disabled for 6 consecutive months, your voluntary life insurance premiums will be waived.&quot;" target="&quot;TOTAL DISABILITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 If you become totally disabled before age 60 and remain disabled for 6 consecutive months, your voluntary life insurance premiums will be waived.&quot;" target="&quot;AGE 60&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 If you become totally disabled before age 60 and remain disabled for 6 consecutive months, your voluntary life insurance premiums will be waived.&quot;" target="&quot;6 CONSECUTIVE MONTHS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 If you become totally disabled before age 60 and remain disabled for 6 consecutive months, your voluntary life insurance premiums will be waived.&quot;" target="&quot;VOLUNTARY LIFE INSURANCE PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;" target="&quot;2 TIMES YOUR ANNUAL BASE SALARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;" target="&quot;ROUNDED TO THE NEXT HIGHER $1,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Ported coverage continues at the same amount you had under the group policy.&quot;" target="&quot;PORTED COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Ported coverage continues at the same amount you had under the group policy.&quot;" target="&quot;GROUP POLICY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Issued: June 1, 2024&quot;" target="&quot;JUNE 1, 2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employer is TechCorp Industries, Inc.&quot;" target="&quot;TECHCORP INDUSTRIES, INC.&quot;">
+  <data key="d5">475.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The benefit is rounded to the next higher $1,000.&quot;" target="&quot;ROUNDED TO THE NEXT HIGHER $1,000&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;" target="&quot;BASIC BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;" target="&quot;ANNUAL BASE SALARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;" target="&quot;$1,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage terminates on the earliest of: (a) The date the Master Policy terminates (b) The last day of the month in which you cease to be an eligible employee (c) The date you cease active full-time employment (d) The date you request termination of voluntary coverage (e) The last day for which required premiums have been paid.&quot;" target="&quot;COVERAGE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage terminates on the earliest of: (a) The date the Master Policy terminates (b) The last day of the month in which you cease to be an eligible employee (c) The date you cease active full-time employment (d) The date you request termination of voluntary coverage (e) The last day for which required premiums have been paid.&quot;" target="&quot;MASTER POLICY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage terminates on the earliest of: (a) The date the Master Policy terminates (b) The last day of the month in which you cease to be an eligible employee (c) The date you cease active full-time employment (d) The date you request termination of voluntary coverage (e) The last day for which required premiums have been paid.&quot;" target="&quot;ELIGIBLE EMPLOYEE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage terminates on the earliest of: (a) The date the Master Policy terminates (b) The last day of the month in which you cease to be an eligible employee (c) The date you cease active full-time employment (d) The date you request termination of voluntary coverage (e) The last day for which required premiums have been paid.&quot;" target="&quot;ACTIVE FULL-TIME EMPLOYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage terminates on the earliest of: (a) The date the Master Policy terminates (b) The last day of the month in which you cease to be an eligible employee (c) The date you cease active full-time employment (d) The date you request termination of voluntary coverage (e) The last day for which required premiums have been paid.&quot;" target="&quot;VOLUNTARY COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage terminates on the earliest of: (a) The date the Master Policy terminates (b) The last day of the month in which you cease to be an eligible employee (c) The date you cease active full-time employment (d) The date you request termination of voluntary coverage (e) The last day for which required premiums have been paid.&quot;" target="&quot;REQUIRED PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.2 If no beneficiary survives you, benefits will be paid to your estate.&quot;" target="&quot;ESTATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.2 If no beneficiary survives you, benefits will be paid to your estate.&quot;" target="&quot;BENEFITS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Section 3 - Benefit Amount Calculation: Basic Life: Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;" target="&quot;ANNUAL BASE SALARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Section 3 - Benefit Amount Calculation: Basic Life: Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;" target="&quot;SECTION 3 - BENEFIT AMOUNT CALCULATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Section 3 - Benefit Amount Calculation: Basic Life: Your basic benefit equals 2 times your annual base salary, rounded to the next higher $1,000.&quot;" target="&quot;ROUNDED TO THE NEXT HIGHER $1,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The total coverage is $280,000.&quot;" target="&quot;$280,000&quot;">
+  <data key="d5">380.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you leave employment, you may port your coverage by continuing it as an individual policy.&quot;" target="&quot;PORTABILITY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you leave employment, you may port your coverage by continuing it as an individual policy.&quot;" target="&quot;INDIVIDUAL POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you leave employment, you may port your coverage by continuing it as an individual policy.&quot;" target="&quot;EMPLOYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.2 Coverage continues without premium payment during disability.&quot;" target="&quot;PREMIUM PAYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.2 Coverage continues without premium payment during disability.&quot;" target="&quot;COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may elect additional coverage in increments.&quot;" target="&quot;INCREMENTS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may elect additional coverage in increments.&quot;" target="&quot;ELECT ADDITIONAL COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Evidence of insurability is NOT required for portability.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;═══════════════════════════════════════════════════════════════════&quot;" target="&quot;SEPARATOR LINE&quot;">
+  <data key="d5">50.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The coverage amount is $280,000.&quot;" target="&quot;$280,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You must apply within 31 days of termination of employment.&quot;" target="&quot;TERMINATION OF EMPLOYMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You must apply within 31 days of termination of employment.&quot;" target="&quot;31 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum acceleration: $5,000 Maximum acceleration: $250,000.&quot;" target="&quot;$5,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum acceleration: $5,000 Maximum acceleration: $250,000.&quot;" target="&quot;$250,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee may elect additional coverage in increments.&quot;" target="&quot;INCREMENTS&quot;">
+  <data key="d5">400.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee may elect additional coverage in increments.&quot;" target="&quot;ELECT ADDITIONAL COVERAGE&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.3 If you name multiple beneficiaries, benefits are divided equally unless you specify percentages.&quot;" target="&quot;MULTIPLE BENEFICIARIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.3 If you name multiple beneficiaries, benefits are divided equally unless you specify percentages.&quot;" target="&quot;PERCENTAGES&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Voluntary Supplemental: You may elect additional coverage in increments.&quot;" target="&quot;INCREMENTS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Voluntary Supplemental: You may elect additional coverage in increments.&quot;" target="&quot;VOLUNTARY SUPPLEMENTAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The primary beneficiary is Jordan Casey Taylor.&quot;" target="&quot;JORDAN CASEY TAYLOR&quot;">
+  <data key="d5">380.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The primary beneficiary is Jordan Casey Taylor.&quot;" target="&quot;PRIMARY BENEFICIARY&quot;">
+  <data key="d5">360.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The effective date is June 1, 2024.&quot;" target="&quot;JUNE 1, 2024&quot;">
+  <data key="d5">540.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.3 You must provide proof of continuing disability annually.&quot;" target="&quot;PROOF OF CONTINUING DISABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.3 You must provide proof of continuing disability annually.&quot;" target="&quot;ANNUAL&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;$5,000 Maximum acceleration: $250,000&quot;" target="&quot;$5,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;$5,000 Maximum acceleration: $250,000&quot;" target="&quot;$250,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Group Term Life Insurance Certificate issued by Alliance Group Benefits.&quot;" target="&quot;ALLIANCE GROUP BENEFITS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Group Term Life Insurance Certificate issued by Alliance Group Benefits.&quot;" target="&quot;GROUP TERM LIFE INSURANCE CERTIFICATE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee is Alex Morgan Taylor.&quot;" target="&quot;ALEX MORGAN TAYLOR&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You must apply for conversion within 31 days of termination.&quot;" target="&quot;TERMINATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You must apply for conversion within 31 days of termination.&quot;" target="&quot;31 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may elect additional coverage in increments of $10,000, up to a maximum of 5 times salary.&quot;" target="&quot;5 TIMES SALARY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may elect additional coverage in increments of $10,000, up to a maximum of 5 times salary.&quot;" target="&quot;$10,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may elect additional coverage in increments of $10,000, up to a maximum of 5 times salary.&quot;" target="&quot;VOLUNTARY SUPPLEMENTAL COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Effective Date: June 1, 2024, Premium Contribution: Employer pays basic; employee pays $12/month for voluntary coverage.&quot;" target="&quot;EMPLOYEE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Effective Date: June 1, 2024, Premium Contribution: Employer pays basic; employee pays $12/month for voluntary coverage.&quot;" target="&quot;$12/MONTH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Effective Date: June 1, 2024, Premium Contribution: Employer pays basic; employee pays $12/month for voluntary coverage.&quot;" target="&quot;EMPLOYER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Effective Date: June 1, 2024, Premium Contribution: Employer pays basic; employee pays $12/month for voluntary coverage.&quot;" target="&quot;JUNE 1, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The certificate is valid under the Master Policy.&quot;" target="&quot;CERTIFICATE&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The certificate is valid under the Master Policy.&quot;" target="&quot;MASTER POLICY&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Total coverage cannot exceed $1,000,000.&quot;" target="&quot;TOTAL COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Total coverage cannot exceed $1,000,000.&quot;" target="&quot;$1,000,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 Beneficiaries should notify Alliance Group Benefits immediately upon death of the insured employee.&quot;" target="&quot;BENEFICIARIES&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 Beneficiaries should notify Alliance Group Benefits immediately upon death of the insured employee.&quot;" target="&quot;ALLIANCE GROUP BENEFITS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 Beneficiaries should notify Alliance Group Benefits immediately upon death of the insured employee.&quot;" target="&quot;INSURED EMPLOYEE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The Master Policy controls in case of any conflict with this certificate.&quot;" target="&quot;THIS CERTIFICATE&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The Master Policy controls in case of any conflict with this certificate.&quot;" target="&quot;MASTER POLICY&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee pays $12/month for voluntary coverage.&quot;" target="&quot;$12/MONTH&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee pays $12/month for voluntary coverage.&quot;" target="&quot;VOLUNTARY COVERAGE&quot;">
+  <data key="d5">450.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.4 Waiver ends when you return to work, recover, or reach age 65.&quot;" target="&quot;WAIVER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.4 Waiver ends when you return to work, recover, or reach age 65.&quot;" target="&quot;RETURN TO WORK&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.4 Waiver ends when you return to work, recover, or reach age 65.&quot;" target="&quot;RECOVER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.4 Waiver ends when you return to work, recover, or reach age 65.&quot;" target="&quot;AGE 65&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Accelerated amount will be reduced by an actuarial discount.&quot;" target="&quot;ACTUARIAL DISCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Accelerated amount will be reduced by an actuarial discount.&quot;" target="&quot;ACCELERATED AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Certificate No: AGB-GT-2024-TechCorp-00842, Master Policy No: AGB-2024-TC-GROUP, Issue Date: June 1, 2024.&quot;" target="&quot;JUNE 1, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Certificate No: AGB-GT-2024-TechCorp-00842, Master Policy No: AGB-2024-TC-GROUP, Issue Date: June 1, 2024.&quot;" target="&quot;AGB-GT-2024-TECHCORP-00842&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Certificate No: AGB-GT-2024-TechCorp-00842, Master Policy No: AGB-2024-TC-GROUP, Issue Date: June 1, 2024.&quot;" target="&quot;AGB-2024-TC-GROUP&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The beneficiary is Jordan Casey Taylor.&quot;" target="&quot;JORDAN CASEY TAYLOR&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.4 Any amount accelerated reduces the death benefit payable to beneficiaries.&quot;" target="&quot;BENEFICIARIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.4 Any amount accelerated reduces the death benefit payable to beneficiaries.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary Beneficiary: Jordan Casey Taylor (Spouse) - 100%, Contingent Beneficiary: Taylor Family Revocable Trust - 100%.&quot;" target="&quot;JORDAN CASEY TAYLOR&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary Beneficiary: Jordan Casey Taylor (Spouse) - 100%, Contingent Beneficiary: Taylor Family Revocable Trust - 100%.&quot;" target="&quot;SPOUSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary Beneficiary: Jordan Casey Taylor (Spouse) - 100%, Contingent Beneficiary: Taylor Family Revocable Trust - 100%.&quot;" target="&quot;TAYLOR FAMILY REVOCABLE TRUST&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary Beneficiary: Jordan Casey Taylor (Spouse) - 100%, Contingent Beneficiary: Taylor Family Revocable Trust - 100%.&quot;" target="&quot;100%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee became eligible on March 1, 2022.&quot;" target="&quot;MARCH 1, 2022&quot;">
+  <data key="d5">360.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee became eligible on March 1, 2022.&quot;" target="&quot;ELIGIBLE FOR COVERAGE&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 Required documents: • Completed claim form (available from employer or insurer) • Certified death certificate • Proof of beneficiary identity&quot;" target="&quot;CLAIM FORM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 Required documents: • Completed claim form (available from employer or insurer) • Certified death certificate • Proof of beneficiary identity&quot;" target="&quot;CERTIFIED DEATH CERTIFICATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 Required documents: • Completed claim form (available from employer or insurer) • Certified death certificate • Proof of beneficiary identity&quot;" target="&quot;PROOF OF BENEFICIARY IDENTITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 Required documents: • Completed claim form (available from employer or insurer) • Certified death certificate • Proof of beneficiary identity&quot;" target="&quot;EMPLOYER&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 Required documents: • Completed claim form (available from employer or insurer) • Certified death certificate • Proof of beneficiary identity&quot;" target="&quot;INSURER&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage is subject to the terms, conditions, and exclusions in the Master Policy and this certificate.&quot;" target="&quot;TERMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage is subject to the terms, conditions, and exclusions in the Master Policy and this certificate.&quot;" target="&quot;CONDITIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your coverage is subject to the terms, conditions, and exclusions in the Master Policy and this certificate.&quot;" target="&quot;EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium rates will be age-banded group rates, payable directly to the insurance company.&quot;" target="&quot;AGE-BANDED GROUP RATES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium rates will be age-banded group rates, payable directly to the insurance company.&quot;" target="&quot;INSURANCE COMPANY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This certificate is issued under and governed by the laws of the state of California.&quot;" target="&quot;STATE OF CALIFORNIA&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This certificate is issued under and governed by the laws of the state of California.&quot;" target="&quot;LAWS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The primary beneficiary is Jordan Casey Taylor, spouse of the insured.&quot;" target="&quot;JORDAN CASEY TAYLOR&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The primary beneficiary is Jordan Casey Taylor, spouse of the insured.&quot;" target="&quot;SPOUSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No medical exam or health questions required for conversion.&quot;" target="&quot;MEDICAL EXAM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No medical exam or health questions required for conversion.&quot;" target="&quot;HEALTH QUESTIONS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Certificate Holder (Employee): Name: Alex Morgan Taylor, Employee ID: TC-8842, Department: Software Engineering, Date of Birth: February 14, 1990, Date of Hire: March 1, 2022.&quot;" target="&quot;FEBRUARY 14, 1990&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Certificate Holder (Employee): Name: Alex Morgan Taylor, Employee ID: TC-8842, Department: Software Engineering, Date of Birth: February 14, 1990, Date of Hire: March 1, 2022.&quot;" target="&quot;MARCH 1, 2022&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Certificate Holder (Employee): Name: Alex Morgan Taylor, Employee ID: TC-8842, Department: Software Engineering, Date of Birth: February 14, 1990, Date of Hire: March 1, 2022.&quot;" target="&quot;SOFTWARE ENGINEERING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Certificate Holder (Employee): Name: Alex Morgan Taylor, Employee ID: TC-8842, Department: Software Engineering, Date of Birth: February 14, 1990, Date of Hire: March 1, 2022.&quot;" target="&quot;ALEX MORGAN TAYLOR&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Certificate Holder (Employee): Name: Alex Morgan Taylor, Employee ID: TC-8842, Department: Software Engineering, Date of Birth: February 14, 1990, Date of Hire: March 1, 2022.&quot;" target="&quot;TC-8842&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The Master Policy governs any conflicts with this certificate.&quot;" target="&quot;THIS CERTIFICATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The Master Policy governs any conflicts with this certificate.&quot;" target="&quot;MASTER POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.1 SUICIDE: If death occurs by suicide within 12 months of the coverage effective date, we will not pay a death benefit.&quot;" target="&quot;SUICIDE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.1 SUICIDE: If death occurs by suicide within 12 months of the coverage effective date, we will not pay a death benefit.&quot;" target="&quot;COVERAGE EFFECTIVE DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.1 SUICIDE: If death occurs by suicide within 12 months of the coverage effective date, we will not pay a death benefit.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If your group coverage terminates for any reason except non-payment of premium, you may convert to an individual whole life policy without evidence of insurability.&quot;" target="&quot;GROUP COVERAGE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If your group coverage terminates for any reason except non-payment of premium, you may convert to an individual whole life policy without evidence of insurability.&quot;" target="&quot;INDIVIDUAL WHOLE LIFE POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If your group coverage terminates for any reason except non-payment of premium, you may convert to an individual whole life policy without evidence of insurability.&quot;" target="&quot;CONVERSION PRIVILEGE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If your group coverage terminates for any reason except non-payment of premium, you may convert to an individual whole life policy without evidence of insurability.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.3 Accelerated amount will be reduced by an actuarial discount.&quot;" target="&quot;ACTUARIAL DISCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.3 Accelerated amount will be reduced by an actuarial discount.&quot;" target="&quot;ACCELERATED AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic coverage is effective without evidence of insurability.&quot;" target="&quot;BASIC COVERAGE&quot;">
+  <data key="d5">360.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Basic coverage is effective without evidence of insurability.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">340.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 Submit claims to: Alliance Group Benefits - Claims Department 1200 Insurance Plaza, Dallas, TX 75201 Claims Hotline: 1-888-555-CLAIM&quot;" target="&quot;ALLIANCE GROUP BENEFITS - CLAIMS DEPARTMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 Submit claims to: Alliance Group Benefits - Claims Department 1200 Insurance Plaza, Dallas, TX 75201 Claims Hotline: 1-888-555-CLAIM&quot;" target="&quot;1200 INSURANCE PLAZA, DALLAS, TX 75201&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 Submit claims to: Alliance Group Benefits - Claims Department 1200 Insurance Plaza, Dallas, TX 75201 Claims Hotline: 1-888-555-CLAIM&quot;" target="&quot;CLAIMS HOTLINE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 Submit claims to: Alliance Group Benefits - Claims Department 1200 Insurance Plaza, Dallas, TX 75201 Claims Hotline: 1-888-555-CLAIM&quot;" target="&quot;1-888-555-CLAIM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The contingent beneficiary is Taylor Family Revocable Trust.&quot;" target="&quot;CONTINGENT BENEFICIARY&quot;">
+  <data key="d5">425.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The contingent beneficiary is Taylor Family Revocable Trust.&quot;" target="&quot;TAYLOR FAMILY REVOCABLE TRUST&quot;">
+  <data key="d5">540.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;ALLIANCE GROUP BENEFITS Dallas, Texas&quot;" target="&quot;ALLIANCE GROUP BENEFITS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;ALLIANCE GROUP BENEFITS Dallas, Texas&quot;" target="&quot;DALLAS, TEXAS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-5aaa65a5e55c7850f1a0c0b56d45f0fd</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee pays $12 per month for voluntary coverage.&quot;" target="&quot;$12 PER MONTH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The employee pays $12 per month for voluntary coverage.&quot;" target="&quot;VOLUNTARY COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-c276027e56b361bd75ca63f5e15751d7</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your basic benefit will be recalculated annually on your policy anniversary based on your current salary.&quot;" target="&quot;BASIC BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your basic benefit will be recalculated annually on your policy anniversary based on your current salary.&quot;" target="&quot;POLICY ANNIVERSARY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Your basic benefit will be recalculated annually on your policy anniversary based on your current salary.&quot;" target="&quot;CURRENT SALARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f76f4729fce4c46baba740129f000d3c</data>
+</edge>
+</graph></graphml>

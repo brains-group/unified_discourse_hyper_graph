@@ -1,0 +1,2199 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;You may change allocations on any policy anniversary at no charge. First 4 reallocations per year are free; $25 fee thereafter.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Number: HWP-IUL-2024-7290 Date of Issue: October 3, 2024 Form: Equity-Indexed Universal Life&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;you also don't participate in dividends.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;October 3, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may pay premiums at any time in any amount between: Minimum: $100 per payment | Maximum: $50,000 per year (tax qualification limit)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.3 'Cap Rate' - The maximum interest rate that can be credited to an index account in any crediting period.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Total charges are deducted from account value on the 3rd of each month.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Available as optional rider: Guarantees coverage will not lapse even if account value drops to zero, as long as minimum guaranteed premiums are paid. Not currently elected on this policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Outstanding loans reduce death benefit at time of claim.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;12.2 Dividends from index components are NOT included in index performance calculations.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;While current caps and participation rates are shown above, we guarantee: Caps will never be less than 4%; Participation rates will never be less than 25%; Fixed account will never be less than 2%.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Phone: 1-888-HORIZON-1&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Owner: Jessica Lynn Thompson Insured: Jessica Lynn Thompson DOB: January 25, 1980 | Age: 44 | Gender: Female Underwriting Class: Standard Plus Non-Tobacco&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;[SEAL]&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;$6,000 annually is recommended to maintain coverage to age 100 based on current assumptions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.4 'Floor Rate' - The minimum interest rate (0%) that will be credited, protecting against market losses.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;COI rates are guaranteed not to exceed rates shown in the policy schedule.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.1 If account value is insufficient to pay monthly deductions, we will notify you at least 30 days before lapse.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Questions? Contact us: Horizon Wealth Protection Insurance&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;12.3 Cap rates, participation rates, and fixed account rates may change annually but will never go below guaranteed minimums.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;On each policy anniversary, we calculate: Index % Change = (Ending Index Value - Starting Index Value) ÷ Starting Index Value&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Initial Face Amount: $500,000 Death Benefit Option: Option 1 (Level) Planned Annual Premium: $6,000 Minimum Premium to Keep Policy in Force: Varies by year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;to age 100 based on current assumptions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;3.5% of each premium payment is deducted for&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.5 'Participation Rate' - The percentage of index gain that is credited to your account.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death Benefit = $500,000 (specified amount) – Lower ongoing charges.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.2 Grace period: 61 days to pay sufficient premium to bring policy back in force.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;NASDAQ-100 Index Account (Annual Point-to-Point): Current Cap: 9.0% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;12.4 Past index performance does not guarantee future results.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Interest Credited = Index % Change × Participation Rate (subject to Cap and Floor)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary: Matthew Scott Thompson (Spouse) - 100% Contingent: Thompson Family Trust - 100%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may skip premium payments as long as account value is sufficient to cover monthly deductions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">16.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.6 'Point-to-Point Method' - Interest crediting based on index change from beginning to end of crediting period (annual).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death Benefit = Specified Amount + Account Value – Higher ongoing charges, benefit grows with account.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.3 If premium not received within grace period, policy lapses and any remaining surrender value is paid to you.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Global Diversified Index Account: Current Cap: 8.5% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;12.5 Zero is your hero - you cannot lose money due to negative index performance, but you also don't participate in dividends.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Assume S&amp;P 500 Index: Started at 4,000 | Ended at 4,600 | Gain: 15% | With 100% participation and 10.5% cap | Interest credited: 10.5% (capped)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Web: www.horizonwealthprotection.com&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.1 'Index Account' - An account where interest credits are based on the performance of a stock market index.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;3.5% of each premium payment is deducted for expenses.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;8.2 Surrender charge is calculated as a percentage of premiums paid in the first 10 years.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.1 AVAILABLE INDEX ACCOUNTS: A) S&amp;P 500 Index Account (Annual Point-to-Point) Current Cap: 10.5% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may change options on any anniversary with 60 days notice. Evidence of insurability required to increase coverage.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Guaranteed interest rate: 3.0% annually | No cap, no floor variability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Questions? Contact us: Horizon Wealth Protection Insurance Phone: 1-888-HORIZON-1 Web: www.horizonwealthpro&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If index declined 5%: Floor protects at 0% | Interest credited: 0% (no loss)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Chief Executive Officer, Horizon Wealth Protection Insurance&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.2 'Fixed Account' - An account earning a guaranteed fixed interest rate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Deducted monthly based on: (Death Benefit - Account Value) × Monthly COI Rate ÷ 1,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;8.3 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;B) NASDAQ-100 Index Account (Annual Point-to-Point) Current Cap: 9.0% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Available after 1 year – Maximum: 90% of surrender value – Loan interest: 4% annually (fixed loan rate) – Loaned amounts earn fixed account rate (3%) – Net cost: 1% annually.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;11.2 CONTESTABILITY: We may contest this policy for material misrepresentation for 2 years from issue date.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;S&amp;P 500 Index: 50% | NASDAQ-100 Index: 30% | Fixed Account: 20%.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Executed at Chicago, Illinois&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;INDEXED UNIVERSAL LIFE INSURANCE POLICY Horizon Wealth Protection Insurance&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You never lose money due to market decline. The worst case is 0% interest for that year.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;$12 per month&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;8.4 FREE PARTIAL WITHDRAWAL: You may withdraw up to 10% of account value each year without surrender charge after Year 1.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;C&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Minimum: $500 – Maximum: Account value minus surrender charge – First 10 withdrawals free; $50 fee thereafter – Reduces death benefit dollar-for-dollar under Option 1.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;12.1 This is NOT a securities product. Index participation does not involve direct ownership of stocks or index funds.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;COST OF INSURANCE (COI)&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"Cost of Insurance is deducted monthly based on the formula: (Death Benefit - Account Value) × Monthly COI Rate ÷ 1,000."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;3.0%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The guaranteed annual interest rate for the Fixed Account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;INSURED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual covered by the policy."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;CONTACT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The text provides a way to reach out to the organization for assistance."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;OPTION 1&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY OPTION"</data>
+  <data key="d4">"Under Option 1, partial withdrawals reduce the death benefit dollar-for-dollar."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;0% INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The worst-case scenario for the account, where no interest is credited due to a market decline."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;EQUITY-INDEXED UNIVERSAL LIFE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE_TYPE"</data>
+  <data key="d4">"A type of life insurance that combines a death benefit with investment components linked to market indices."&lt;SEP&gt;"The form of the insurance policy, which allows for interest credits based on market index performance."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"Death Benefit is a key component in calculating the Cost of Insurance."&lt;SEP&gt;"Death benefit is reduced by the amount of outstanding loans at the time of claim."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;S&amp;P 500 INDEX&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL INDEX"</data>
+  <data key="d4">"A financial index representing a basket of large-cap U.S. stocks, currently allocated at 50% in the account."&lt;SEP&gt;"A financial index representing large-cap U.S. stocks, used as a benchmark for performance in the example."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;ISSUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The date the policy is issued."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"Outstanding Loans are subtracted from Account Value to determine Cash Surrender Value."&lt;SEP&gt;"Outstanding loans reduce the death benefit when a claim is made."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL PAYMENT"</data>
+  <data key="d4">"A payment made to the account, with a minimum of $100 per payment and a maximum of $50,000 per year."&lt;SEP&gt;"Failure to receive a premium within the grace period results in policy lapse."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;HWP-IUL-2024-7290&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_NUMBER"</data>
+  <data key="d4">"The unique identifier for the indexed universal life insurance policy."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;MONTHLY COI RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"Monthly COI Rate is used in the formula to calculate the Cost of Insurance."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;NASDAQ-100 INDEX&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL INDEX"</data>
+  <data key="d4">"A financial index representing 100 of the largest non-financial companies listed on the NASDAQ, currently allocated at 30% in the account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;REINSTATEMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The process of restoring a lapsed policy."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;1-888-HORIZON-1&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONTACT INFORMATION"</data>
+  <data key="d4">"Phone number for customer inquiries."&lt;SEP&gt;"This is the toll-free phone number provided by Horizon Wealth Protection Insurance for customer inquiries."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;SURRENDER CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"Surrender charges apply if the policy is surrendered within the first 12 years, with decreasing rates over time."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;$100&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The minimum amount allowed per premium payment."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;JESSICA LYNN THOMPSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The policy owner and insured individual, a 44-year-old female with a Standard Plus Non-Tobacco underwriting class."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;ADMINISTRATIVE CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"An administrative charge of $12 is deducted monthly."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;50%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The current allocation of the S&amp;P 500 Index in the account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Only premiums paid are returned in case of suicide within the exclusion period."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;QUESTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The text invites inquiries, suggesting a customer service or support function."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;YEAR 1&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Free partial withdrawal is available after Year 1."&lt;SEP&gt;"Surrender charge in Year 1 is 10%."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;$50,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The maximum annual premium payment allowed, subject to tax qualification."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;STANDARD PLUS NON-TOBACCO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"UNDERWRITING_CLASS"</data>
+  <data key="d4">"A classification indicating the insured is a non-smoker with favorable health and risk profile."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;TOTAL CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"Total charges, including COI and administrative fees, are deducted from the account value on the 3rd of each month."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;30%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The current allocation of the NASDAQ-100 Index in the account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;WITHDRAWALS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Withdrawals made from the policy are deducted from the payout."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;HORIZON WEALTH PROTECTION INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"A life insurance policy offering indexed universal life coverage with features tied to market performance."&lt;SEP&gt;"Horizon Wealth Protection Insurance is an insurance company offering financial protection services, as indicated by its name and contact information."&lt;SEP&gt;"The insurance company offering the policy."&lt;SEP&gt;"The organization is led by the Chief Executive Officer and provides wealth protection insurance services."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-1a7af86569d57b1c5ac171af26010622&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;YEAR 2&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Surrender charge in Year 2 is 9%."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;$6,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The planned annual premium payment for the policy."&lt;SEP&gt;"The recommended annual premium to maintain coverage up to age 100."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;JANUARY 25, 1980&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The birth date of Jessica Lynn Thompson."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;3RD OF EACH MONTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Total charges are deducted on the 3rd of each month."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;20%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The current allocation of the Fixed Account in the account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Charges are deducted from the payout."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;YEAR 3&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A surrender charge of 8% applies in Year 3."&lt;SEP&gt;"Surrender charge in Year 3 is 8%."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;WWW.HORIZONWEALTHPROTECTION.COM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"WEBSITE"</data>
+  <data key="d4">"This is the official website of Horizon Wealth Protection Insurance, used for online access to services and information."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;3.5%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The percentage of each premium payment deducted as a fee."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;44&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The current age of the insured, Jessica Lynn Thompson."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;COI RATES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"COI rates are guaranteed not to exceed the rates listed in the policy schedule."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;POLICY ANNIVERSARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME EVENT"</data>
+  <data key="d4">"A recurring date each year when the policy is reviewed and allocations may be changed."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;CONTESTABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY CLAUSE"</data>
+  <data key="d4">"The insurer may contest the policy for material misrepresentation within 2 years of the issue date."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;PHONE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COMMUNICATION CHANNEL"</data>
+  <data key="d4">"The phone number is a direct line for contacting the organization."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;YEAR 4&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Surrender charge in Year 4 is 7%."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;PREMIUM PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TRANSACTION"</data>
+  <data key="d4">"A payment made to the account, from which a 3.5% fee is deducted."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;OPTION 1 (LEVEL)&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEATH_BENEFIT_OPTION"</data>
+  <data key="d4">"A death benefit structure that remains level over time, not increasing with cash value."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;POLICY SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The policy schedule contains the maximum COI rates that are guaranteed not to be exceeded."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;REALLOCATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The process of changing the allocation of funds among investment accounts, with the first four per year being free and subsequent ones costing $25."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"False or misleading information provided during application."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;WEB&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COMMUNICATION CHANNEL"</data>
+  <data key="d4">"The web address is a digital platform for customer interaction."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;YEAR 5&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Surrender charge in Year 5 is 6%."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;FEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"A 3.5% deduction from each premium payment."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;MINIMUM PREMIUM TO KEEP POLICY IN FORCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"The minimum amount required to maintain the policy in active status, varying annually."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;OPTION 1 - LEVEL DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY OPTION"</data>
+  <data key="d4">"Option 1 provides a fixed death benefit of $500,000 and has lower ongoing charges."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;$25&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The fee charged for each reallocation beyond the first four per year."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;ISSUE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The contestability period begins on the issue date."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;CHICAGO, ILLINOIS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The document was executed in Chicago, Illinois, indicating the geographical jurisdiction or location of the transaction or agreement."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;YEAR 6&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A surrender charge of 5% applies in Year 6."&lt;SEP&gt;"Surrender charge in Year 6 is 5%."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Surrender charge is based on premiums paid."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;MATTHEW SCOTT THOMPSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The primary beneficiary, spouse of the insured, set to receive 100% of the death benefit."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;$500,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"The initial death benefit amount specified in the policy."&lt;SEP&gt;"The specified death benefit amount under Option 1 is $500,000."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;4%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The minimum guaranteed cap for any index account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;SECURITIES PRODUCT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL PRODUCT"</data>
+  <data key="d4">"This policy is not classified as a securities product."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;CHICAGO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CITY"</data>
+  <data key="d4">"Chicago is a major city in Illinois, USA, and the location where the document was executed."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;YEAR 7&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Surrender charge in Year 7 is 4%."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;FIRST 10 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Surrender charge applies to premiums paid within the first 10 years."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;THOMPSON FAMILY TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL_ENTITY"</data>
+  <data key="d4">"A contingent beneficiary entity that receives 100% of the death benefit if the primary beneficiary predeceases the insured."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;ONGOING CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"Option 1 has lower ongoing charges compared to other options."&lt;SEP&gt;"Option 2 has higher ongoing charges due to the increasing death benefit."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;25%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The minimum guaranteed participation rate for any index account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;INDEX PARTICIPATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Index participation does not grant direct ownership of stocks or index funds."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;ILLINOIS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATE"</data>
+  <data key="d4">"Illinois is a U.S. state, and the document was executed within its boundaries."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;YEAR 8&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A surrender charge of 3% applies in Year 8."&lt;SEP&gt;"Surrender charge in Year 8 is 3%."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Cash Surrender Value is calculated as Account Value minus Surrender Charge and Outstanding Loans."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;SPOUSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The familial relationship between Matthew Scott Thompson and Jessica Lynn Thompson."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;OPTION 2 - INCREASING DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY OPTION"</data>
+  <data key="d4">"Option 2 provides a death benefit equal to the specified amount plus the account value, with higher ongoing charges and a growing benefit."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;2%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The minimum guaranteed interest rate for the Fixed Account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;STOCKS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ASSET"</data>
+  <data key="d4">"Index participation does not involve direct ownership of stocks."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;YEAR 9&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A surrender charge of 2% applies in Year 9."&lt;SEP&gt;"Surrender charge in Year 9 is 2%."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;CHIEF EXECUTIVE OFFICER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The Chief Executive Officer is the highest-ranking executive in the organization, responsible for overall leadership and decision-making."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;FREE PARTIAL WITHDRAWAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"You may withdraw up to 10% of account value annually without surrender charge after Year 1."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;INDEX ACCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACCOUNT_TYPE"</data>
+  <data key="d4">"An investment account within the policy where interest is credited based on the performance of a stock market index."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;POLICY OPTION CHANGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Policyholders may change death benefit options on any policy anniversary with 60 days' notice."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;INDEX % CHANGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CALCULATION"</data>
+  <data key="d4">"The percentage change in an index value, calculated as (Ending Index Value - Starting Index Value) ÷ Starting Index Value."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;INDEX FUNDS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ASSET"</data>
+  <data key="d4">"Index participation does not involve direct ownership of index funds."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;OCTOBER 3, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date the policy was issued."&lt;SEP&gt;"This is the date the document was executed, indicating the time of signing or issuance."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;YEAR 10&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Surrender charge in Year 10 is 1%."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;10%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The maximum withdrawal allowed without charge is 10% of account value."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;STOCK MARKET INDEX&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_INSTRUMENT"</data>
+  <data key="d4">"A benchmark representing the performance of a group of stocks, used to determine interest credits."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;60 DAYS NOTICE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A 60-day notice period is required to change policy options."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;ENDING INDEX VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL VALUE"</data>
+  <data key="d4">"The value of an index at the end of the crediting period."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;INDEX COMPONENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ASSET"</data>
+  <data key="d4">"Dividends are paid by index components."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;MARKET DECLINE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RISK"</data>
+  <data key="d4">"A decrease in the value of financial indices, which does not result in loss of principal due to the floor protection."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"YEAR"</data>
+  <data key="d4">"The year in which the document was executed."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;YEAR 11&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A surrender charge of 0.5% applies in Year 11."&lt;SEP&gt;"Surrender charge in Year 11 is 0.5%."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;NO LAPSE GUARANTEE RIDER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY FEATURE"</data>
+  <data key="d4">"An optional rider that guarantees coverage will not lapse even if account value drops to zero, provided minimum guaranteed premiums are paid."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;GUARANTEED FIXED INTEREST RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_FEATURE"</data>
+  <data key="d4">"A rate of return that is guaranteed and not subject to market volatility."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;DIVIDENDS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Dividends are financial distributions paid to shareholders, and the text indicates that the subject does not participate in them."&lt;SEP&gt;"Dividends from index components are excluded from index performance calculations."&lt;SEP&gt;"The policyholder does not participate in dividends."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT REQUIREMENT"</data>
+  <data key="d4">"Evidence of insurability is required to increase coverage when changing options."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;STARTING INDEX VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL VALUE"</data>
+  <data key="d4">"The value of an index at the beginning of the crediting period."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;INDEX PERFORMANCE CALCULATIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Index performance calculations do not include dividends."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;OCTOBER 3&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The specific day and month the document was executed."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;YEAR 12+&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"No surrender charge applies after Year 12."&lt;SEP&gt;"Surrender charge is 0% after Year 12."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY CONCEPT"</data>
+  <data key="d4">"Coverage is guaranteed not to lapse under the No Lapse Guarantee Rider."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;CAP RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_FEATURE"</data>
+  <data key="d4">"The maximum interest rate that can be applied to the index account during a crediting period."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;POLICY LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL PRODUCT"</data>
+  <data key="d4">"Policy loans are available after one year, up to 90% of surrender value, with a fixed 4% annual interest rate."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;INTEREST CREDITED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The amount of interest credited to the account, calculated as Index % Change × Participation Rate, capped at the maximum cap and floored at 0%."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;CAP RATES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Cap rates may change annually but are protected by guaranteed minimums."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;SEAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SYMBOL"</data>
+  <data key="d4">"The seal is a formal emblem used to authenticate the document, indicating official approval or legal validity."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;NASDAQ-100 INDEX ACCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL PRODUCT"</data>
+  <data key="d4">"A financial product with annual point-to-point crediting, a current cap of 9.0%, 100% participation rate, 0% floor, and a 1-year crediting period."&lt;SEP&gt;"An index account linked to the NASDAQ-100 stock market index, using the point-to-point method with annual crediting."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;MINIMUM GUARANTEED PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Minimum guaranteed premiums must be paid to maintain coverage under the rider."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;CREDITING PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The time interval (e.g., annual) over which interest is calculated and credited."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;SURRENDER VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"Any remaining surrender value is paid to the policyholder upon lapse."&lt;SEP&gt;"Surrender value is the basis for the maximum loan amount, which is 90% of it."&lt;SEP&gt;"Surrender value is used to calculate the maximum loan amount and is affected by surrender charges."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;PARTICIPATION RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The percentage of the index's gain that is applied to the account's interest crediting."&lt;SEP&gt;"The percentage of the index's gain that is applied to the policy's account value."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;PARTICIPATION RATES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Participation rates may change annually but are protected by guaranteed minimums."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;INDEXING OPTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FEATURE"</data>
+  <data key="d4">"The policy includes options for indexing account allocations based on stock market indices."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;[SEAL]&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SYMBOL"</data>
+  <data key="d4">"The seal is a visual representation of authority and authenticity on the document."</data>
+  <data key="d2">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</node>
+<node id="&quot;9.0%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The current cap for the NASDAQ-100 Index Account."&lt;SEP&gt;"The current cap rate for the NASDAQ-100 Index Account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The policy does not currently have the No Lapse Guarantee Rider selected."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;FLOOR RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_FEATURE"</data>
+  <data key="d4">"A minimum interest rate (set at 0%) that ensures the account value does not decrease due to negative market performance."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;LOAN INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"Loan interest is fixed at 4% annually."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;CAP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LIMIT"</data>
+  <data key="d4">"The maximum interest rate that can be credited to the account, regardless of index performance."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;FIXED ACCOUNT RATES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Fixed account rates may change annually but are protected by guaranteed minimums."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;AGE 100&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The policy is designed to provide coverage up to age 100 based on current assumptions."&lt;SEP&gt;"The target age for maintaining coverage, based on current assumptions."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;100%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The participation rate for the Global Diversified Index Account."&lt;SEP&gt;"The participation rate for the NASDAQ-100 Index Account."&lt;SEP&gt;"The participation rate for the S&amp;P 500 Index Account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;LAPSE NOTICE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"A notice is sent at least 30 days before policy lapse."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;INDEX GAIN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_METRIC"</data>
+  <data key="d4">"The increase in value of the referenced stock market index over a crediting period."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;FIXED ACCOUNT RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"Loaned amounts earn a fixed account rate of 3%."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;FLOOR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LIMIT"</data>
+  <data key="d4">"The minimum interest rate that can be credited, set at 0% to prevent losses from market declines."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;GUARANTEED MINIMUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Guaranteed minimums ensure rates do not fall below a certain level."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;PREMIUM PAYMENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"Premium payments may be skipped if the account value is sufficient to cover monthly deductions."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;0%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The floor for the Global Diversified Index Account."&lt;SEP&gt;"The floor for the NASDAQ-100 Index Account."&lt;SEP&gt;"The floor that protects the account from negative interest, ensuring no loss."&lt;SEP&gt;"The interest credited when the index declines, protected by the floor."&lt;SEP&gt;"The minimum interest rate guaranteed to be credited to the index account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;GRACE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A 61-day grace period is provided to pay a sufficient premium to reinstate the policy."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;POINT-TO-POINT METHOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CREDITING_METHOD"</data>
+  <data key="d4">"A method of calculating interest credits based on the difference between the index value at the start and end of a crediting period."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;NET COST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"The net cost of a policy loan is 1% annually, reflecting the difference between interest paid and interest earned."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;4,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL VALUE"</data>
+  <data key="d4">"The starting value of the S&amp;P 500 Index in the example."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;PAST INDEX PERFORMANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Past performance is not indicative of future results."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;ACCOUNT VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"Account Value is a component in calculating Cash Surrender Value."&lt;SEP&gt;"Account Value is subtracted from Death Benefit in the COI calculation."&lt;SEP&gt;"Account value can drop to zero, but coverage remains active under the rider."&lt;SEP&gt;"Account value is added to the specified amount to determine the death benefit in Option 2."&lt;SEP&gt;"Account value is the basis for calculating the free partial withdrawal amount."&lt;SEP&gt;"Account value is the source from which total charges are deducted."&lt;SEP&gt;"Account value must be sufficient to cover monthly deductions when skipping premium payments."&lt;SEP&gt;"Insufficient account value triggers a lapse notice."&lt;SEP&gt;"The total value of the account, which must be sufficient to cover monthly deductions if premium payments are skipped."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6&lt;SEP&gt;chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;1 YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The crediting period for the Global Diversified Index Account."&lt;SEP&gt;"The crediting period for the NASDAQ-100 Index Account."&lt;SEP&gt;"The crediting period for the S&amp;P 500 Index Account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;SUFFICIENT PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"A sufficient premium must be paid during the grace period to bring the policy back in force."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;ANNUAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The duration of the crediting period, which is one year."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;PARTIAL WITHDRAWALS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"Partial withdrawals are allowed with a minimum of $500 and a maximum of account value minus surrender charge."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;4,600&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL VALUE"</data>
+  <data key="d4">"The ending value of the S&amp;P 500 Index in the example."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;FUTURE RESULTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Future index performance is not guaranteed by past performance."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;MONTHLY DEDUCTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"Monthly deductions are covered by the account value when premium payments are skipped."&lt;SEP&gt;"Monthly deductions are payments required to maintain the policy."&lt;SEP&gt;"Regular charges deducted from the account, which must be covered by the account value."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6&lt;SEP&gt;chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;GLOBAL DIVERSIFIED INDEX ACCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL PRODUCT"</data>
+  <data key="d4">"A financial product with a current cap of 8.5%, 100% participation rate, 0% floor, and a 1-year crediting period."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;POLICY IN FORCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY STATUS"</data>
+  <data key="d4">"The policy can be brought back in force during the grace period."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;S&amp;P 500 INDEX ACCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INDEX_ACCOUNT"</data>
+  <data key="d4">"An index account linked to the S&amp;P 500 stock market index, using the point-to-point method with annual crediting."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;$500&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"Minimum withdrawal amount is $500."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;15%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The index gain in the example, calculated as (4,600 - 4,000) / 4,000."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;ZERO IS YOUR HERO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The policy protects against negative index performance, ensuring no loss."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;PREMIUM LOAD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"3.5% of each premium payment is deducted for expenses."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;8.5%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The current cap for the Global Diversified Index Account."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;POLICY LAPSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY STATUS"</data>
+  <data key="d4">"The policy lapses if the premium is not received within the grace period."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;C&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PLACEHOLDER"</data>
+  <data key="d4">"An incomplete entry in the list of available index accounts, cut off mid-sentence."</data>
+  <data key="d2">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;SURRENDER CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Surrender Charge is subtracted from Account Value to determine Cash Surrender Value."&lt;SEP&gt;"Surrender charge is subtracted from account value to determine the maximum withdrawal amount."&lt;SEP&gt;"The surrender charge is calculated as a percentage of premiums paid in the first 10 years."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;10.5%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The cap applied to the interest credited in the example."&lt;SEP&gt;"The current cap rate for the S&amp;P 500 Index Account."&lt;SEP&gt;"The interest credited in the example, capped at 10.5% despite a 15% index gain."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;NEGATIVE INDEX PERFORMANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The policyholder cannot lose money due to negative index performance."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;EXPENSES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"Expenses are covered by a 3.5% deduction from each premium payment."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;FIXED ACCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL PRODUCT"</data>
+  <data key="d4">"A financial product with a guaranteed annual interest rate of 3.0%, no cap, and no floor variability."&lt;SEP&gt;"A financial product with a guaranteed interest rate, currently allocated at 20% in the account."&lt;SEP&gt;"An account within the policy that earns a guaranteed fixed interest rate, independent of market fluctuations."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</node>
+<node id="&quot;SUICIDE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"If the insured commits suicide within 2 years of issue or reinstatement, the payout is limited to premiums paid minus withdrawals and charges."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;FIRST 10 WITHDRAWALS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RULE"</data>
+  <data key="d4">"The first 10 withdrawals are free of fees."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<node id="&quot;5%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"The decline in the index value in the example."</data>
+  <data key="d2">chunk-8c5042e90fe6248acf672391208bb506</data>
+</node>
+<node id="&quot;WWW.HORIZONWEALTHPRO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"WEBSITE"</data>
+  <data key="d4">"Official website for Horizon Wealth Protection Insurance."</data>
+  <data key="d2">chunk-51042d483c612bb4904ff39555059fab</data>
+</node>
+<node id="&quot;$50 FEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"A $50 fee applies to each withdrawal after the first 10."</data>
+  <data key="d2">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;You may change allocations on any policy anniversary at no charge. First 4 reallocations per year are free; $25 fee thereafter.&quot;" target="&quot;POLICY ANNIVERSARY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change allocations on any policy anniversary at no charge. First 4 reallocations per year are free; $25 fee thereafter.&quot;" target="&quot;REALLOCATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change allocations on any policy anniversary at no charge. First 4 reallocations per year are free; $25 fee thereafter.&quot;" target="&quot;$25&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Number: HWP-IUL-2024-7290 Date of Issue: October 3, 2024 Form: Equity-Indexed Universal Life&quot;" target="&quot;EQUITY-INDEXED UNIVERSAL LIFE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Number: HWP-IUL-2024-7290 Date of Issue: October 3, 2024 Form: Equity-Indexed Universal Life&quot;" target="&quot;HWP-IUL-2024-7290&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Number: HWP-IUL-2024-7290 Date of Issue: October 3, 2024 Form: Equity-Indexed Universal Life&quot;" target="&quot;OCTOBER 3, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;you also don't participate in dividends.&quot;" target="&quot;DIVIDENDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;October 3, 2024&quot;" target="&quot;OCTOBER 3, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;October 3, 2024&quot;" target="&quot;2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;October 3, 2024&quot;" target="&quot;OCTOBER 3&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may pay premiums at any time in any amount between: Minimum: $100 per payment | Maximum: $50,000 per year (tax qualification limit)&quot;" target="&quot;PREMIUM&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may pay premiums at any time in any amount between: Minimum: $100 per payment | Maximum: $50,000 per year (tax qualification limit)&quot;" target="&quot;$100&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may pay premiums at any time in any amount between: Minimum: $100 per payment | Maximum: $50,000 per year (tax qualification limit)&quot;" target="&quot;$50,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 'Cap Rate' - The maximum interest rate that can be credited to an index account in any crediting period.&quot;" target="&quot;CAP RATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 'Cap Rate' - The maximum interest rate that can be credited to an index account in any crediting period.&quot;" target="&quot;CREDITING PERIOD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Total charges are deducted from account value on the 3rd of each month.&quot;" target="&quot;TOTAL CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Total charges are deducted from account value on the 3rd of each month.&quot;" target="&quot;3RD OF EACH MONTH&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Total charges are deducted from account value on the 3rd of each month.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available as optional rider: Guarantees coverage will not lapse even if account value drops to zero, as long as minimum guaranteed premiums are paid. Not currently elected on this policy.&quot;" target="&quot;NO LAPSE GUARANTEE RIDER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available as optional rider: Guarantees coverage will not lapse even if account value drops to zero, as long as minimum guaranteed premiums are paid. Not currently elected on this policy.&quot;" target="&quot;COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available as optional rider: Guarantees coverage will not lapse even if account value drops to zero, as long as minimum guaranteed premiums are paid. Not currently elected on this policy.&quot;" target="&quot;MINIMUM GUARANTEED PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available as optional rider: Guarantees coverage will not lapse even if account value drops to zero, as long as minimum guaranteed premiums are paid. Not currently elected on this policy.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available as optional rider: Guarantees coverage will not lapse even if account value drops to zero, as long as minimum guaranteed premiums are paid. Not currently elected on this policy.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Outstanding loans reduce death benefit at time of claim.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Outstanding loans reduce death benefit at time of claim.&quot;" target="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.2 Dividends from index components are NOT included in index performance calculations.&quot;" target="&quot;DIVIDENDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.2 Dividends from index components are NOT included in index performance calculations.&quot;" target="&quot;INDEX COMPONENTS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.2 Dividends from index components are NOT included in index performance calculations.&quot;" target="&quot;INDEX PERFORMANCE CALCULATIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;While current caps and participation rates are shown above, we guarantee: Caps will never be less than 4%; Participation rates will never be less than 25%; Fixed account will never be less than 2%.&quot;" target="&quot;4%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;While current caps and participation rates are shown above, we guarantee: Caps will never be less than 4%; Participation rates will never be less than 25%; Fixed account will never be less than 2%.&quot;" target="&quot;25%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;While current caps and participation rates are shown above, we guarantee: Caps will never be less than 4%; Participation rates will never be less than 25%; Fixed account will never be less than 2%.&quot;" target="&quot;2%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Phone: 1-888-HORIZON-1&quot;" target="&quot;1-888-HORIZON-1&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Phone: 1-888-HORIZON-1&quot;" target="&quot;PHONE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Owner: Jessica Lynn Thompson Insured: Jessica Lynn Thompson DOB: January 25, 1980 | Age: 44 | Gender: Female Underwriting Class: Standard Plus Non-Tobacco&quot;" target="&quot;JESSICA LYNN THOMPSON&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Owner: Jessica Lynn Thompson Insured: Jessica Lynn Thompson DOB: January 25, 1980 | Age: 44 | Gender: Female Underwriting Class: Standard Plus Non-Tobacco&quot;" target="&quot;STANDARD PLUS NON-TOBACCO&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Owner: Jessica Lynn Thompson Insured: Jessica Lynn Thompson DOB: January 25, 1980 | Age: 44 | Gender: Female Underwriting Class: Standard Plus Non-Tobacco&quot;" target="&quot;JANUARY 25, 1980&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Owner: Jessica Lynn Thompson Insured: Jessica Lynn Thompson DOB: January 25, 1980 | Age: 44 | Gender: Female Underwriting Class: Standard Plus Non-Tobacco&quot;" target="&quot;44&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;[SEAL]&quot;" target="&quot;SEAL&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;[SEAL]&quot;" target="&quot;[SEAL]&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;$6,000 annually is recommended to maintain coverage to age 100 based on current assumptions.&quot;" target="&quot;$6,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;$6,000 annually is recommended to maintain coverage to age 100 based on current assumptions.&quot;" target="&quot;AGE 100&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.4 'Floor Rate' - The minimum interest rate (0%) that will be credited, protecting against market losses.&quot;" target="&quot;0%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.4 'Floor Rate' - The minimum interest rate (0%) that will be credited, protecting against market losses.&quot;" target="&quot;FLOOR RATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COI rates are guaranteed not to exceed rates shown in the policy schedule.&quot;" target="&quot;COI RATES&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COI rates are guaranteed not to exceed rates shown in the policy schedule.&quot;" target="&quot;POLICY SCHEDULE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 If account value is insufficient to pay monthly deductions, we will notify you at least 30 days before lapse.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 If account value is insufficient to pay monthly deductions, we will notify you at least 30 days before lapse.&quot;" target="&quot;LAPSE NOTICE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 If account value is insufficient to pay monthly deductions, we will notify you at least 30 days before lapse.&quot;" target="&quot;MONTHLY DEDUCTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;SURRENDER CHARGES&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 1&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 2&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 3&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 4&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 5&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 6&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 7&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 8&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 9&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 10&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 11&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 12+&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender within first 12 years: Year 1: 10% | Year 4: 7% | Year 7: 4% | Year 10: 1% | Year 2: 9% | Year 5: 6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;SURRENDER VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Questions? Contact us: Horizon Wealth Protection Insurance&quot;" target="&quot;CONTACT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Questions? Contact us: Horizon Wealth Protection Insurance&quot;" target="&quot;QUESTIONS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Questions? Contact us: Horizon Wealth Protection Insurance&quot;" target="&quot;HORIZON WEALTH PROTECTION INSURANCE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.3 Cap rates, participation rates, and fixed account rates may change annually but will never go below guaranteed minimums.&quot;" target="&quot;CAP RATES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.3 Cap rates, participation rates, and fixed account rates may change annually but will never go below guaranteed minimums.&quot;" target="&quot;PARTICIPATION RATES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.3 Cap rates, participation rates, and fixed account rates may change annually but will never go below guaranteed minimums.&quot;" target="&quot;FIXED ACCOUNT RATES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.3 Cap rates, participation rates, and fixed account rates may change annually but will never go below guaranteed minimums.&quot;" target="&quot;GUARANTEED MINIMUMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;On each policy anniversary, we calculate: Index % Change = (Ending Index Value - Starting Index Value) ÷ Starting Index Value&quot;" target="&quot;INDEX % CHANGE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;On each policy anniversary, we calculate: Index % Change = (Ending Index Value - Starting Index Value) ÷ Starting Index Value&quot;" target="&quot;ENDING INDEX VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;On each policy anniversary, we calculate: Index % Change = (Ending Index Value - Starting Index Value) ÷ Starting Index Value&quot;" target="&quot;STARTING INDEX VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Initial Face Amount: $500,000 Death Benefit Option: Option 1 (Level) Planned Annual Premium: $6,000 Minimum Premium to Keep Policy in Force: Varies by year&quot;" target="&quot;$6,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Initial Face Amount: $500,000 Death Benefit Option: Option 1 (Level) Planned Annual Premium: $6,000 Minimum Premium to Keep Policy in Force: Varies by year&quot;" target="&quot;OPTION 1 (LEVEL)&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Initial Face Amount: $500,000 Death Benefit Option: Option 1 (Level) Planned Annual Premium: $6,000 Minimum Premium to Keep Policy in Force: Varies by year&quot;" target="&quot;$500,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Initial Face Amount: $500,000 Death Benefit Option: Option 1 (Level) Planned Annual Premium: $6,000 Minimum Premium to Keep Policy in Force: Varies by year&quot;" target="&quot;MINIMUM PREMIUM TO KEEP POLICY IN FORCE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;to age 100 based on current assumptions.&quot;" target="&quot;AGE 100&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.5% of each premium payment is deducted for&quot;" target="&quot;3.5%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.5% of each premium payment is deducted for&quot;" target="&quot;PREMIUM PAYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.5% of each premium payment is deducted for&quot;" target="&quot;FEE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.5 'Participation Rate' - The percentage of index gain that is credited to your account.&quot;" target="&quot;PARTICIPATION RATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.5 'Participation Rate' - The percentage of index gain that is credited to your account.&quot;" target="&quot;INDEX GAIN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit = $500,000 (specified amount) – Lower ongoing charges.&quot;" target="&quot;OPTION 1 - LEVEL DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit = $500,000 (specified amount) – Lower ongoing charges.&quot;" target="&quot;$500,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit = $500,000 (specified amount) – Lower ongoing charges.&quot;" target="&quot;ONGOING CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 Grace period: 61 days to pay sufficient premium to bring policy back in force.&quot;" target="&quot;GRACE PERIOD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 Grace period: 61 days to pay sufficient premium to bring policy back in force.&quot;" target="&quot;SUFFICIENT PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 Grace period: 61 days to pay sufficient premium to bring policy back in force.&quot;" target="&quot;POLICY IN FORCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;NASDAQ-100 Index Account (Annual Point-to-Point): Current Cap: 9.0% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;NASDAQ-100 INDEX ACCOUNT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;NASDAQ-100 Index Account (Annual Point-to-Point): Current Cap: 9.0% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;9.0%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;NASDAQ-100 Index Account (Annual Point-to-Point): Current Cap: 9.0% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;100%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;NASDAQ-100 Index Account (Annual Point-to-Point): Current Cap: 9.0% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;0%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;NASDAQ-100 Index Account (Annual Point-to-Point): Current Cap: 9.0% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;1 YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.4 Past index performance does not guarantee future results.&quot;" target="&quot;PAST INDEX PERFORMANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.4 Past index performance does not guarantee future results.&quot;" target="&quot;FUTURE RESULTS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest Credited = Index % Change × Participation Rate (subject to Cap and Floor)&quot;" target="&quot;INTEREST CREDITED&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest Credited = Index % Change × Participation Rate (subject to Cap and Floor)&quot;" target="&quot;PARTICIPATION RATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest Credited = Index % Change × Participation Rate (subject to Cap and Floor)&quot;" target="&quot;CAP&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest Credited = Index % Change × Participation Rate (subject to Cap and Floor)&quot;" target="&quot;FLOOR&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Matthew Scott Thompson (Spouse) - 100% Contingent: Thompson Family Trust - 100%&quot;" target="&quot;MATTHEW SCOTT THOMPSON&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Matthew Scott Thompson (Spouse) - 100% Contingent: Thompson Family Trust - 100%&quot;" target="&quot;THOMPSON FAMILY TRUST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Matthew Scott Thompson (Spouse) - 100% Contingent: Thompson Family Trust - 100%&quot;" target="&quot;SPOUSE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may skip premium payments as long as account value is sufficient to cover monthly deductions.&quot;" target="&quot;PREMIUM PAYMENTS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may skip premium payments as long as account value is sufficient to cover monthly deductions.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">175.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may skip premium payments as long as account value is sufficient to cover monthly deductions.&quot;" target="&quot;MONTHLY DEDUCTIONS&quot;">
+  <data key="d5">165.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506&lt;SEP&gt;chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 3&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 6&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 8&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 9&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 11&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;6% | Year 8: 3% | Year 11: 0.5% | Year 3: 8% | Year 6: 5% | Year 9: 2% | Year 12+: 0%&quot;" target="&quot;YEAR 12+&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.6 'Point-to-Point Method' - Interest crediting based on index change from beginning to end of crediting period (annual).&quot;" target="&quot;POINT-TO-POINT METHOD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.6 'Point-to-Point Method' - Interest crediting based on index change from beginning to end of crediting period (annual).&quot;" target="&quot;ANNUAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit = Specified Amount + Account Value – Higher ongoing charges, benefit grows with account.&quot;" target="&quot;ONGOING CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit = Specified Amount + Account Value – Higher ongoing charges, benefit grows with account.&quot;" target="&quot;OPTION 2 - INCREASING DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit = Specified Amount + Account Value – Higher ongoing charges, benefit grows with account.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 If premium not received within grace period, policy lapses and any remaining surrender value is paid to you.&quot;" target="&quot;POLICY LAPSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 If premium not received within grace period, policy lapses and any remaining surrender value is paid to you.&quot;" target="&quot;PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 If premium not received within grace period, policy lapses and any remaining surrender value is paid to you.&quot;" target="&quot;SURRENDER VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Global Diversified Index Account: Current Cap: 8.5% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;100%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Global Diversified Index Account: Current Cap: 8.5% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;0%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Global Diversified Index Account: Current Cap: 8.5% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;1 YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Global Diversified Index Account: Current Cap: 8.5% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;GLOBAL DIVERSIFIED INDEX ACCOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Global Diversified Index Account: Current Cap: 8.5% | Participation Rate: 100% | Floor: 0% | Crediting Period: 1 year.&quot;" target="&quot;8.5%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.5 Zero is your hero - you cannot lose money due to negative index performance, but you also don't participate in dividends.&quot;" target="&quot;DIVIDENDS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.5 Zero is your hero - you cannot lose money due to negative index performance, but you also don't participate in dividends.&quot;" target="&quot;NEGATIVE INDEX PERFORMANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.5 Zero is your hero - you cannot lose money due to negative index performance, but you also don't participate in dividends.&quot;" target="&quot;ZERO IS YOUR HERO&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Assume S&amp;P 500 Index: Started at 4,000 | Ended at 4,600 | Gain: 15% | With 100% participation and 10.5% cap | Interest credited: 10.5% (capped)&quot;" target="&quot;S&amp;P 500 INDEX&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Assume S&amp;P 500 Index: Started at 4,000 | Ended at 4,600 | Gain: 15% | With 100% participation and 10.5% cap | Interest credited: 10.5% (capped)&quot;" target="&quot;10.5%&quot;">
+  <data key="d5">175.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Assume S&amp;P 500 Index: Started at 4,000 | Ended at 4,600 | Gain: 15% | With 100% participation and 10.5% cap | Interest credited: 10.5% (capped)&quot;" target="&quot;4,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Assume S&amp;P 500 Index: Started at 4,000 | Ended at 4,600 | Gain: 15% | With 100% participation and 10.5% cap | Interest credited: 10.5% (capped)&quot;" target="&quot;4,600&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Assume S&amp;P 500 Index: Started at 4,000 | Ended at 4,600 | Gain: 15% | With 100% participation and 10.5% cap | Interest credited: 10.5% (capped)&quot;" target="&quot;15%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Web: www.horizonwealthprotection.com&quot;" target="&quot;WWW.HORIZONWEALTHPROTECTION.COM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Web: www.horizonwealthprotection.com&quot;" target="&quot;WEB&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 'Index Account' - An account where interest credits are based on the performance of a stock market index.&quot;" target="&quot;INDEX ACCOUNT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 'Index Account' - An account where interest credits are based on the performance of a stock market index.&quot;" target="&quot;STOCK MARKET INDEX&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.5% of each premium payment is deducted for expenses.&quot;" target="&quot;PREMIUM LOAD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.5% of each premium payment is deducted for expenses.&quot;" target="&quot;EXPENSES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 Surrender charge is calculated as a percentage of premiums paid in the first 10 years.&quot;" target="&quot;PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 Surrender charge is calculated as a percentage of premiums paid in the first 10 years.&quot;" target="&quot;FIRST 10 YEARS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 Surrender charge is calculated as a percentage of premiums paid in the first 10 years.&quot;" target="&quot;SURRENDER CHARGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 AVAILABLE INDEX ACCOUNTS: A) S&amp;P 500 Index Account (Annual Point-to-Point) Current Cap: 10.5% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;" target="&quot;10.5%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 AVAILABLE INDEX ACCOUNTS: A) S&amp;P 500 Index Account (Annual Point-to-Point) Current Cap: 10.5% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;" target="&quot;100%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 AVAILABLE INDEX ACCOUNTS: A) S&amp;P 500 Index Account (Annual Point-to-Point) Current Cap: 10.5% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;" target="&quot;1 YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 AVAILABLE INDEX ACCOUNTS: A) S&amp;P 500 Index Account (Annual Point-to-Point) Current Cap: 10.5% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;" target="&quot;S&amp;P 500 INDEX ACCOUNT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change options on any anniversary with 60 days notice. Evidence of insurability required to increase coverage.&quot;" target="&quot;POLICY OPTION CHANGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change options on any anniversary with 60 days notice. Evidence of insurability required to increase coverage.&quot;" target="&quot;60 DAYS NOTICE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change options on any anniversary with 60 days notice. Evidence of insurability required to increase coverage.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.&quot;" target="&quot;SUICIDE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.&quot;" target="&quot;INSURED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.&quot;" target="&quot;ISSUE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.&quot;" target="&quot;REINSTATEMENT&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.&quot;" target="&quot;WITHDRAWALS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.1 SUICIDE: If insured commits suicide within 2 years of issue or reinstatement, we pay only premiums paid minus any withdrawals and charges, without interest.&quot;" target="&quot;CHARGES&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed interest rate: 3.0% annually | No cap, no floor variability.&quot;" target="&quot;FIXED ACCOUNT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed interest rate: 3.0% annually | No cap, no floor variability.&quot;" target="&quot;3.0%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Questions? Contact us: Horizon Wealth Protection Insurance Phone: 1-888-HORIZON-1 Web: www.horizonwealthpro&quot;" target="&quot;WWW.HORIZONWEALTHPRO&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Questions? Contact us: Horizon Wealth Protection Insurance Phone: 1-888-HORIZON-1 Web: www.horizonwealthpro&quot;" target="&quot;1-888-HORIZON-1&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Questions? Contact us: Horizon Wealth Protection Insurance Phone: 1-888-HORIZON-1 Web: www.horizonwealthpro&quot;" target="&quot;HORIZON WEALTH PROTECTION INSURANCE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If index declined 5%: Floor protects at 0% | Interest credited: 0% (no loss)&quot;" target="&quot;5%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If index declined 5%: Floor protects at 0% | Interest credited: 0% (no loss)&quot;" target="&quot;0%&quot;">
+  <data key="d5">180.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Chief Executive Officer, Horizon Wealth Protection Insurance&quot;" target="&quot;HORIZON WEALTH PROTECTION INSURANCE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Chief Executive Officer, Horizon Wealth Protection Insurance&quot;" target="&quot;CHIEF EXECUTIVE OFFICER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 'Fixed Account' - An account earning a guaranteed fixed interest rate.&quot;" target="&quot;FIXED ACCOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 'Fixed Account' - An account earning a guaranteed fixed interest rate.&quot;" target="&quot;GUARANTEED FIXED INTEREST RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Deducted monthly based on: (Death Benefit - Account Value) × Monthly COI Rate ÷ 1,000.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Deducted monthly based on: (Death Benefit - Account Value) × Monthly COI Rate ÷ 1,000.&quot;" target="&quot;MONTHLY COI RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Deducted monthly based on: (Death Benefit - Account Value) × Monthly COI Rate ÷ 1,000.&quot;" target="&quot;COST OF INSURANCE (COI)&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Deducted monthly based on: (Death Benefit - Account Value) × Monthly COI Rate ÷ 1,000.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.3 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;" target="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.3 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;" target="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.3 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.3 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;" target="&quot;SURRENDER CHARGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;B) NASDAQ-100 Index Account (Annual Point-to-Point) Current Cap: 9.0% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;" target="&quot;NASDAQ-100 INDEX ACCOUNT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;B) NASDAQ-100 Index Account (Annual Point-to-Point) Current Cap: 9.0% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;" target="&quot;9.0%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;B) NASDAQ-100 Index Account (Annual Point-to-Point) Current Cap: 9.0% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;" target="&quot;100%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;B) NASDAQ-100 Index Account (Annual Point-to-Point) Current Cap: 9.0% | Participation Rate: 100% Floor: 0% | Crediting Period: 1 year&quot;" target="&quot;1 YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after 1 year – Maximum: 90% of surrender value – Loan interest: 4% annually (fixed loan rate) – Loaned amounts earn fixed account rate (3%) – Net cost: 1% annually.&quot;" target="&quot;POLICY LOANS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after 1 year – Maximum: 90% of surrender value – Loan interest: 4% annually (fixed loan rate) – Loaned amounts earn fixed account rate (3%) – Net cost: 1% annually.&quot;" target="&quot;SURRENDER VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after 1 year – Maximum: 90% of surrender value – Loan interest: 4% annually (fixed loan rate) – Loaned amounts earn fixed account rate (3%) – Net cost: 1% annually.&quot;" target="&quot;LOAN INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after 1 year – Maximum: 90% of surrender value – Loan interest: 4% annually (fixed loan rate) – Loaned amounts earn fixed account rate (3%) – Net cost: 1% annually.&quot;" target="&quot;FIXED ACCOUNT RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Available after 1 year – Maximum: 90% of surrender value – Loan interest: 4% annually (fixed loan rate) – Loaned amounts earn fixed account rate (3%) – Net cost: 1% annually.&quot;" target="&quot;NET COST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.2 CONTESTABILITY: We may contest this policy for material misrepresentation for 2 years from issue date.&quot;" target="&quot;CONTESTABILITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.2 CONTESTABILITY: We may contest this policy for material misrepresentation for 2 years from issue date.&quot;" target="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;11.2 CONTESTABILITY: We may contest this policy for material misrepresentation for 2 years from issue date.&quot;" target="&quot;ISSUE DATE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;S&amp;P 500 Index: 50% | NASDAQ-100 Index: 30% | Fixed Account: 20%.&quot;" target="&quot;FIXED ACCOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;S&amp;P 500 Index: 50% | NASDAQ-100 Index: 30% | Fixed Account: 20%.&quot;" target="&quot;S&amp;P 500 INDEX&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;S&amp;P 500 Index: 50% | NASDAQ-100 Index: 30% | Fixed Account: 20%.&quot;" target="&quot;NASDAQ-100 INDEX&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;S&amp;P 500 Index: 50% | NASDAQ-100 Index: 30% | Fixed Account: 20%.&quot;" target="&quot;50%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;S&amp;P 500 Index: 50% | NASDAQ-100 Index: 30% | Fixed Account: 20%.&quot;" target="&quot;30%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;S&amp;P 500 Index: 50% | NASDAQ-100 Index: 30% | Fixed Account: 20%.&quot;" target="&quot;20%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Chicago, Illinois&quot;" target="&quot;CHICAGO, ILLINOIS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Chicago, Illinois&quot;" target="&quot;CHICAGO&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Chicago, Illinois&quot;" target="&quot;ILLINOIS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-1a7af86569d57b1c5ac171af26010622</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;INDEXED UNIVERSAL LIFE INSURANCE POLICY Horizon Wealth Protection Insurance&quot;" target="&quot;INDEXING OPTIONS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;INDEXED UNIVERSAL LIFE INSURANCE POLICY Horizon Wealth Protection Insurance&quot;" target="&quot;EQUITY-INDEXED UNIVERSAL LIFE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;INDEXED UNIVERSAL LIFE INSURANCE POLICY Horizon Wealth Protection Insurance&quot;" target="&quot;HORIZON WEALTH PROTECTION INSURANCE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You never lose money due to market decline. The worst case is 0% interest for that year.&quot;" target="&quot;MARKET DECLINE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You never lose money due to market decline. The worst case is 0% interest for that year.&quot;" target="&quot;0% INTEREST&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c5042e90fe6248acf672391208bb506</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;$12 per month&quot;" target="&quot;ADMINISTRATIVE CHARGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.4 FREE PARTIAL WITHDRAWAL: You may withdraw up to 10% of account value each year without surrender charge after Year 1.&quot;" target="&quot;YEAR 1&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.4 FREE PARTIAL WITHDRAWAL: You may withdraw up to 10% of account value each year without surrender charge after Year 1.&quot;" target="&quot;FREE PARTIAL WITHDRAWAL&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.4 FREE PARTIAL WITHDRAWAL: You may withdraw up to 10% of account value each year without surrender charge after Year 1.&quot;" target="&quot;10%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.4 FREE PARTIAL WITHDRAWAL: You may withdraw up to 10% of account value each year without surrender charge after Year 1.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;C&quot;" target="&quot;C&quot;">
+  <data key="d5">50.0</data>
+  <data key="d6">chunk-29c4478dd9be0cdf43be914d5e56c59f</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum: $500 – Maximum: Account value minus surrender charge – First 10 withdrawals free; $50 fee thereafter – Reduces death benefit dollar-for-dollar under Option 1.&quot;" target="&quot;OPTION 1&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum: $500 – Maximum: Account value minus surrender charge – First 10 withdrawals free; $50 fee thereafter – Reduces death benefit dollar-for-dollar under Option 1.&quot;" target="&quot;PARTIAL WITHDRAWALS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum: $500 – Maximum: Account value minus surrender charge – First 10 withdrawals free; $50 fee thereafter – Reduces death benefit dollar-for-dollar under Option 1.&quot;" target="&quot;$500&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum: $500 – Maximum: Account value minus surrender charge – First 10 withdrawals free; $50 fee thereafter – Reduces death benefit dollar-for-dollar under Option 1.&quot;" target="&quot;SURRENDER CHARGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum: $500 – Maximum: Account value minus surrender charge – First 10 withdrawals free; $50 fee thereafter – Reduces death benefit dollar-for-dollar under Option 1.&quot;" target="&quot;FIRST 10 WITHDRAWALS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum: $500 – Maximum: Account value minus surrender charge – First 10 withdrawals free; $50 fee thereafter – Reduces death benefit dollar-for-dollar under Option 1.&quot;" target="&quot;$50 FEE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-49f6114331e9af8d645ae31de47f62d6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.1 This is NOT a securities product. Index participation does not involve direct ownership of stocks or index funds.&quot;" target="&quot;SECURITIES PRODUCT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.1 This is NOT a securities product. Index participation does not involve direct ownership of stocks or index funds.&quot;" target="&quot;INDEX PARTICIPATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.1 This is NOT a securities product. Index participation does not involve direct ownership of stocks or index funds.&quot;" target="&quot;STOCKS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;12.1 This is NOT a securities product. Index participation does not involve direct ownership of stocks or index funds.&quot;" target="&quot;INDEX FUNDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-51042d483c612bb4904ff39555059fab</data>
+</edge>
+</graph></graphml>

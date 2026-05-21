@@ -1,0 +1,1642 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of issue or reinstatement, we pay only premiums paid minus withdrawals.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The Money Market sub-account has a guaranteed minimum rate of 1.5% but other sub-accounts have no guaranteed minimum return.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Reduces death benefit dollar-for-dollar&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.1 'Sub-Account' means a segregated investment account that invests in shares of a designated mutual fund.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;OPTION I - Level Death Benefit: Death Benefit = Face Amount; Lower charges but no growth from investments&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Processing fee: $50&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;POLICY LOANS: • Maximum: 90% of surrender value • Interest Rate&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death while serving in military conflict in a war zone is excluded if it occurs within 24 months of issue.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Number: PIL-VUL-2024-5521&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Minimum: $1,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary: Michael Thomas Foster (Spouse) - 100%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;PREMIUM LOAD: 5.0% of each premium payment&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Loan amounts are moved to the Money Market sub-account&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;OPTION II - Variable Death Benefit (CURRENTLY SELECTED): Death Benefit = Face Amount + Account Value; Higher charges but death benefit grows with account&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Surrender charges may apply (see Section 3.6)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;VARIABLE UNIVERSAL LIFE INSURANCE POLICY Pinnacle Investment Life Corp.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death Benefit Option: Option II (Face + Account Value)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death resulting from operating an aircraft as pilot or crew member is excluded unless declared and approved with extra premium.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Maximum: 90% of surrender value&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;MORTALITY &amp; EXPENSE RISK CHARGE: 0.90% per annum of account value, deducted daily&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.4 'Mortality and Expense Risk Charge' (M&amp;E) is a daily charge of 0.90% annually to cover insurance risks and administrative costs.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Planned Annual Premium: $12,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may switch between options subject to: • Proof of insurability for increases • Minimum face amount requirements • $50 administrative fee&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Reduces face amount proportionally&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Interest Rate: 5.5% per annum (fixed)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy is issued in connection with Pinnacle Investment Life Separate Account A, a registered unit investment trust.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;ADMINISTRATIVE CHARGE: $15 per month&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.4 You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;IMPORTANT: The account value and death benefit (under Option II) are NOT guaranteed and will fluctuate based on sub-account performance.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If account value is insufficient to cover monthly deductions for 61 consecutive days, the policy will lapse.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.2 'Unit Value' means the value of one unit of a sub-account, calculated daily based on fund performance.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Date: April 5, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The prospectus for the Separate Account and underlying funds must be read carefully before investing.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;COST OF INSURANCE: Monthly charge based on: (Face Amount at Risk) × (Monthly COI Rate) / 1,000; Face Amount at Risk = Death Benefit - Account Value&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.3 Current Allocation: Equity Growth Fund: 40% Balanced Allocation Fund: 30% Government Bond Fund: 20% Money Market Fund: 10%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Investment risk is borne entirely by the policy owner.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Lapse notice will be sent at least 30 days before lapse.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Initial Face Amount: $1,000,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This is a securities product subject to SEC regulation.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.1 Premium payments (after premium load) are allocated to sub-accounts based on your investment instructions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;FUND EXPENSES: Each sub-account has its own expense ratio ranging from 0.45% to 1.25% annually (detailed in prospectus)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.2 Available Sub-Accounts: • Equity Growth Fund • Balanced Allocation Fund • Government Bond Fund • International Equity Fund • Money Market Fund (guaranteed minimum 1.5%) • Real Estate Securities Fund&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Poor investment performance can cause the policy to lapse if account value becomes insufficient to cover charges.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Reinstatement within 3 years requires: Evidence of insurability, Payment of all back charges plus 6% interest, Repayment of outstanding loans&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Secondary: Foster Children's Trust - 100%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Pinnacle Investment Life Corp. New York, New York ____________________________ April 5, 2024 President &amp; CEO&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.3 'Accumulation Units' means units held in sub-accounts before any distributions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;SURRENDER CHARGE SCHEDULE (% of premium paid): Year 1-2: 7% | Year 3-4: 5% | Year 5-6: 3% | Year 7+: 0%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Maximum: Account value minus $5,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Name: Dr. Amanda Katherine Foster&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;EQUITY GROWTH FUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SUB_ACCOUNT"</data>
+  <data key="d4">"A sub-account investing in equities with a focus on long-term capital appreciation."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;PILOT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"Operating an aircraft as a pilot triggers the aviation exclusion."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;POLICY OWNER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual who owns the policy and bears all investment risk."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;SURRENDER CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_COST"</data>
+  <data key="d4">"Surrender charges may apply to partial withdrawals, as referenced in Section 3.6."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;FUND EXPENSES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CHARGE"</data>
+  <data key="d4">"Annual fees associated with managing each sub-account, ranging from 0.45% to 1.25% of the account value."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;BALANCED ALLOCATION FUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SUB_ACCOUNT"</data>
+  <data key="d4">"A sub-account that balances equity and fixed-income investments to provide moderate growth and income."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;CREW MEMBER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"Operating an aircraft as a crew member triggers the aviation exclusion."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;POOR INVESTMENT PERFORMANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Sub-optimal returns from sub-accounts that may lead to insufficient account value."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;PREFERRED PLUS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CLASSIFICATION"</data>
+  <data key="d4">"A premium risk classification indicating the insured has excellent health and lifestyle factors, resulting in lower premiums."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;SECTION 3.6&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT_SECTION"</data>
+  <data key="d4">"Section 3.6 contains information about surrender charges."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;EXPENSE RATIO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RATE"</data>
+  <data key="d4">"The annual percentage fee charged to manage a sub-account, ranging from 0.45% to 1.25%."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;GOVERNMENT BOND FUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SUB_ACCOUNT"</data>
+  <data key="d4">"A sub-account investing in government-issued bonds, offering lower risk and stable income."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;EXTRA PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_COST"</data>
+  <data key="d4">"An extra premium is required to approve aviation risk."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Ongoing fees such as mortality, administrative, and cost of insurance charges that must be covered by the account value."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;$1,000,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The initial death benefit amount specified in the policy, which is the base sum payable upon the insured's death."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;MONTHLY DEDUCTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_OBLIGATION"</data>
+  <data key="d4">"Monthly deductions must be covered by the account value."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;SURRENDER CHARGE SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CHARGE"</data>
+  <data key="d4">"A fee applied if the policy is surrendered early, expressed as a percentage of the premium paid, decreasing over time."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;INTERNATIONAL EQUITY FUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SUB_ACCOUNT"</data>
+  <data key="d4">"A sub-account investing in equities of companies outside the home country, providing exposure to global markets."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;DECLARATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Aviation risk must be declared to be approved."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;GUARANTEED MINIMUM RATE OF 1.5%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RATE"</data>
+  <data key="d4">"A minimum return rate guaranteed for the Money Market sub-account."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;$12,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The planned annual premium amount the policyholder is expected to pay to maintain the policy."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;61 CONSECUTIVE DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The policy lapses if the account value is insufficient for 61 consecutive days."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;YEAR 1-2&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The first two years of the policy, during which a 7% surrender charge applies."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;MONEY MARKET FUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SUB_ACCOUNT"</data>
+  <data key="d4">"A sub-account investing in short-term, low-risk securities with a guaranteed minimum return of 1.5%."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;APPROVAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"Aviation risk must be approved with an extra premium."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;OTHER SUB-ACCOUNTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INVESTMENT VEHICLE"</data>
+  <data key="d4">"Sub-accounts that do not offer a guaranteed minimum return and are subject to market fluctuations."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;VARIABLE UNIVERSAL LIFE INSURANCE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY"</data>
+  <data key="d4">"A variable universal life insurance policy issued by Pinnacle Investment Life Corp., designed to provide a death benefit with investment components tied to sub-accounts."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;OPTION II&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT_OPTION"</data>
+  <data key="d4">"A death benefit option that pays the face amount plus the accumulated account value at the time of death."&lt;SEP&gt;"A death benefit option where the death benefit increases with the account value, currently selected by the policyholder."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;POLICY LAPSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The policy lapses if the account value is insufficient for 61 consecutive days."&lt;SEP&gt;"The termination of the policy due to insufficient funds to cover ongoing charges."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;YEAR 3-4&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The third and fourth years, during which a 5% surrender charge applies."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;REAL ESTATE SECURITIES FUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SUB_ACCOUNT"</data>
+  <data key="d4">"A sub-account investing in real estate investment trusts (REITs) and other real estate-related securities."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;PINNACLE INVESTMENT LIFE SEPARATE ACCOUNT A&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_PRODUCT"</data>
+  <data key="d4">"This policy is connected to Pinnacle Investment Life Separate Account A, a registered unit investment trust."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;NO GUARANTEED MINIMUM RETURN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"A characteristic of sub-accounts other than the Money Market, indicating no floor on returns."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;LAPSE NOTICE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"COMMUNICATION"</data>
+  <data key="d4">"A lapse notice is sent at least 30 days before the policy lapses."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The base death benefit amount specified in the policy, which is $1,000,000."&lt;SEP&gt;"The face amount is reduced proportionally with partial withdrawals."&lt;SEP&gt;"The fixed amount of the death benefit under Option I."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;YEAR 5-6&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The fifth and sixth years, during which a 3% surrender charge applies."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;REGISTERED UNIT INVESTMENT TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_STRUCTURE"</data>
+  <data key="d4">"Pinnacle Investment Life Separate Account A is a registered unit investment trust."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;POLICY LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL PRODUCT"</data>
+  <data key="d4">"A feature allowing the policyholder to borrow against the policy’s surrender value."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;ACCOUNT VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"The account value is used to calculate the maximum partial withdrawal."&lt;SEP&gt;"The account value must be sufficient to cover monthly deductions."&lt;SEP&gt;"The account value must remain sufficient to cover charges; if not, the policy may lapse."&lt;SEP&gt;"The accumulated value of the investment sub-accounts within the policy, which is added to the face amount under Option II."&lt;SEP&gt;"The current value of the investment account, subtracted from the death benefit to determine the face amount at risk."&lt;SEP&gt;"The current value of the policyholder’s investment account, used as the basis for the mortality and expense risk charge."&lt;SEP&gt;"The investment account value that contributes to the death benefit in Option II."&lt;SEP&gt;"The value of the investment account, which is not guaranteed and varies with sub-account performance."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;30 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The lapse notice is sent at least 30 days before the policy lapse."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;YEAR 7+&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The seventh year and beyond, during which no surrender charge applies."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;APRIL 5, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date on which the policy was issued."&lt;SEP&gt;"The policy was executed on April 5, 2024."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_PRODUCT"</data>
+  <data key="d4">"This policy is issued in connection with a separate account."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;MAXIMUM LOAN AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LIMIT"</data>
+  <data key="d4">"The highest amount that can be borrowed, set at 90% of the surrender value."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;MICHAEL THOMAS FOSTER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The primary beneficiary of the policy, designated as the spouse of the insured, receiving 100% of the death benefit."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;REINSTATEMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Reinstatement is a reference point for the suicide exclusion."&lt;SEP&gt;"Reinstatement within 3 years requires evidence of insurability, payment of back charges plus 6% interest, and repayment of outstanding loans."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;PREMIUM PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"The total amount of premiums paid into the policy, used as the base for calculating surrender charges."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;WRITTEN REQUEST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSTRUCTION"</data>
+  <data key="d4">"A formal method to change investment allocations, requiring a physical or digital document submitted to the insurer."&lt;SEP&gt;"A method to change allocations, requiring a formal written submission."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;PROSPECTUS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A detailed document providing information on fund expenses, including the expense ratios for each sub-account."&lt;SEP&gt;"The prospectus for the Separate Account and underlying funds must be read before investing."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;SPOUSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The familial relationship between Michael Thomas Foster and Dr. Amanda Katherine Foster, indicating they are legally married."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;3 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"Reinstatement must occur within 3 years of lapse."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;OPTION I&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEATH BENEFIT OPTION"</data>
+  <data key="d4">"A death benefit option where the death benefit remains constant at the face amount, with lower fees but no investment growth."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;PINNACLE INVESTMENT LIFE CORP.&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"Pinnacle Investment Life Corp. is the issuing company of the policy."&lt;SEP&gt;"The insurance company issuing the variable universal life insurance policy, responsible for managing the policy, investments, and claims."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;ONLINE PORTAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PLATFORM"</data>
+  <data key="d4">"A digital platform allowing users to modify allocations without incurring fees for the first 12 changes per year."&lt;SEP&gt;"A digital system provided by the insurer that allows the policyholder to manage and change investment allocations remotely."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;UNDERLYING FUNDS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_PRODUCT"</data>
+  <data key="d4">"The underlying funds are part of the Separate Account."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;FOSTER CHILDREN'S TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TRUST"</data>
+  <data key="d4">"A legal entity established to hold and manage assets for the benefit of the children of Dr. Amanda Katherine Foster, designated as the secondary beneficiary."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"Evidence of insurability is required for reinstatement."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;LEVEL DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEATH BENEFIT OPTION"</data>
+  <data key="d4">"A death benefit that does not change over time and equals the face amount."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;12 CHANGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LIMIT"</data>
+  <data key="d4">"The maximum number of free investment allocation changes allowed per year."&lt;SEP&gt;"The number of allocation changes allowed per year without incurring a fee."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;SECURITIES PRODUCT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_PRODUCT"</data>
+  <data key="d4">"This policy is a securities product regulated by the SEC."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;CHILDREN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The intended beneficiaries of the trust, the offspring of Dr. Amanda Katherine Foster, who will receive benefits upon the death of the insured if the primary beneficiary predeceases or is otherwise unable to claim."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;BACK CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_COST"</data>
+  <data key="d4">"All back charges must be paid during reinstatement."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;LOWER CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"A characteristic of Option I, indicating reduced fees compared to other options."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;$25&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AMOUNT"</data>
+  <data key="d4">"The fee charged for each investment allocation change beyond the first 12 per year."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;SEC&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REGULATORY_BODY"</data>
+  <data key="d4">"The Securities and Exchange Commission (SEC) regulates this securities product."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;6% INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_RATE"</data>
+  <data key="d4">"An additional 6% interest is applied to back charges during reinstatement."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;SUB-ACCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_INSTRUMENT"</data>
+  <data key="d4">"A component of the policy’s investment structure, each with its own expense ratio."&lt;SEP&gt;"A segregated investment account within the policy that invests in shares of a designated mutual fund, allowing for investment growth and risk diversification."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;NO GROWTH FROM INVESTMENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"A feature of Option I where the death benefit does not increase with investment performance."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;FEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EXPENSE"</data>
+  <data key="d4">"A $25 fee applies after the first 12 allocation changes per year."&lt;SEP&gt;"A charge applied for investment allocation changes after the free allowance is exhausted."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;MUTUAL FUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_INSTRUMENT"</data>
+  <data key="d4">"A pooled investment vehicle that invests in a diversified portfolio of securities, managed by a fund manager, and accessible through sub-accounts."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_OBLIGATION"</data>
+  <data key="d4">"Outstanding loans must be repaid for reinstatement."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;VARIABLE DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEATH BENEFIT OPTION"</data>
+  <data key="d4">"A death benefit that fluctuates based on the account value, increasing as the account grows."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;MAXIMUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_RULE"</data>
+  <data key="d4">"The maximum loan amount is 90% of the surrender value."&lt;SEP&gt;"The maximum partial withdrawal is the account value minus $5,000."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;NEW YORK, NEW YORK&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Pinnacle Investment Life Corp. is based in New York, New York."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;UNIT VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_METRIC"</data>
+  <data key="d4">"The daily calculated value of one unit in a sub-account, determined by the performance of the underlying mutual fund."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;SUICIDE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Suicide within 2 years of issue or reinstatement triggers a limited payout."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;CURRENTLY SELECTED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"The current choice of the policyholder, indicating that Option II is active."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;SURRENDER VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The cash value of the policy available for loan, with a maximum loan of 90% of this value."&lt;SEP&gt;"The surrender value is the basis for calculating the maximum loan amount."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;PRESIDENT &amp; CEO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The President &amp; CEO signed the policy."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;DAILY CALCULATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"The process of recalculating the unit value of a sub-account every day based on fund performance."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;2 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The suicide exclusion applies within 2 years of issue or reinstatement."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;HIGHER CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"A characteristic of Option II, indicating that it incurs higher fees than Option I."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;INTEREST RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_RATE"</data>
+  <data key="d4">"The interest rate for policy loans is fixed at 5.5% per annum."&lt;SEP&gt;"The rate applied to policy loans, not specified in the text but implied as a charged cost."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;EXECUTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The policy was executed on April 5, 2024, by the President &amp; CEO."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;ACCUMULATION UNITS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_INSTRUMENT"</data>
+  <data key="d4">"Units held in sub-accounts that represent the policyholder’s investment before any distributions or withdrawals are made."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;ISSUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The policy issue date is a reference point for the suicide exclusion."&lt;SEP&gt;"The policy issue date is a reference point for the war exclusion."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;SWITCH BETWEEN OPTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The ability to change from Option I to Option II or vice versa, subject to specific conditions."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;5.5% PER ANNUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_RATE"</data>
+  <data key="d4">"The fixed interest rate is 5.5% per year."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;ALLOCATIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"Allocations refer to the distribution of funds across investment sub-accounts, which can be modified at any time via written request or online portal."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;AMANDA KATHERINE FOSTER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The full name of the insured party, a female with a professional title of Dr., indicating a high level of education and possibly a medical or academic background."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"Only premiums paid minus withdrawals are paid in case of suicide."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;PROOF OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"Documentation required to prove the policyholder’s insurability when increasing the death benefit."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;MONEY MARKET SUB-ACCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_ACCOUNT"</data>
+  <data key="d4">"A sub-account offering a guaranteed minimum return of 1.5%, providing stability."&lt;SEP&gt;"Loan amounts are transferred to the Money Market sub-account."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;PREMIUM PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TRANSACTION"</data>
+  <data key="d4">"A payment made by the policyholder to maintain the policy, subject to a 5.0% premium load."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;DISTRIBUTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_ACTION"</data>
+  <data key="d4">"The process of paying out earnings or returns from the sub-account to the policyholder, which may affect the accumulation units."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;INVESTMENT INSTRUCTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSTRUCTION"</data>
+  <data key="d4">"The policyholder’s designated preferences for how premium payments are allocated among sub-accounts."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;MINIMUM FACE AMOUNT REQUIREMENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"A rule that sets a minimum death benefit level that must be maintained when switching options."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;LOAN AMOUNTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"Loan amounts are moved to the Money Market sub-account."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;PIL-VUL-2024-5521&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_NUMBER"</data>
+  <data key="d4">"The unique identifier assigned to this variable universal life insurance policy."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;MORTALITY &amp; EXPENSE RISK CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CHARGE"</data>
+  <data key="d4">"An annual charge of 0.90% of the account value, deducted daily, covering mortality risk and administrative expenses."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;INSURANCE RISKS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONCEPT"</data>
+  <data key="d4">"The financial risks associated with the insured’s mortality and the potential for claims, which the M&amp;E charge helps offset."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;WITHDRAWALS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_ACTION"</data>
+  <data key="d4">"Withdrawals reduce the payout in case of suicide."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;$50 ADMINISTRATIVE FEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"A fee charged for processing a switch between death benefit options."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The amount paid to beneficiaries upon the policyholder’s death, used in calculating the face amount at risk."&lt;SEP&gt;"The death benefit is reduced dollar-for-dollar by the loan amount."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;DAILY DEDUCTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROCESS"</data>
+  <data key="d4">"The method by which the mortality and expense risk charge is applied—deducted from the account value on a daily basis."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;ADMINISTRATIVE COSTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EXPENSE"</data>
+  <data key="d4">"The operational expenses incurred by the insurer in managing the policy, including record-keeping, customer service, and compliance."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;WAR ZONE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Death during military conflict in a war zone is excluded."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;DEATH BENEFIT (UNDER OPTION II)&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"The death benefit under Option II, which is not guaranteed and fluctuates with the account value."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;MINIMUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_RULE"</data>
+  <data key="d4">"The minimum partial withdrawal amount is $1,000."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;ADMINISTRATIVE CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CHARGE"</data>
+  <data key="d4">"A fixed monthly fee of $15 charged to cover administrative costs of managing the policy."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;PREMIUM PAYMENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_ACTION"</data>
+  <data key="d4">"The periodic payments made by the policyholder to maintain the policy, which are allocated to sub-accounts after the premium load is deducted."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;MILITARY CONFLICT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Military conflict in a war zone triggers the exclusion."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;NOT GUARANTEED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"A condition indicating that neither the account value nor the death benefit under Option II is assured."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;MONTHLY COI RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RATE"</data>
+  <data key="d4">"The monthly cost of insurance rate used in the formula to calculate the cost of insurance charge."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;$1,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The minimum partial withdrawal amount is $1,000."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;$15&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The amount of the monthly administrative charge."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;PREMIUM LOAD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FEE"</data>
+  <data key="d4">"A 5.0% fee applied to each premium payment, representing a cost associated with policy issuance."&lt;SEP&gt;"A fee deducted from the premium payment before allocation to sub-accounts, reducing the amount invested."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e&lt;SEP&gt;chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;24 MONTHS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The war exclusion applies within 24 months of issue."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;SUB-ACCOUNT PERFORMANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The investment results of individual sub-accounts, which directly affect the account value and death benefit."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;$5,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The account value is reduced by $5,000 to determine the maximum withdrawal."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;COST OF INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CHARGE"</data>
+  <data key="d4">"A monthly charge determined by the face amount at risk and the monthly COI rate, representing the cost of life insurance coverage."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;AVIATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Death from operating an aircraft as pilot or crew member is excluded."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;INVESTMENT RISK&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The risk associated with investment performance, fully assumed by the policyholder."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;DR. AMANDA KATHERINE FOSTER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual insured under the policy, a female born on September 3, 1975, classified as Preferred Plus, aged 48 at the time of policy issuance."</data>
+  <data key="d2">chunk-8c8ea823bb93481595962062aa15594e</data>
+</node>
+<node id="&quot;PROCESSING FEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_COST"</data>
+  <data key="d4">"A $50 processing fee applies to partial withdrawals."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<node id="&quot;FACE AMOUNT AT RISK&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL METRIC"</data>
+  <data key="d4">"The difference between the death benefit and the account value, used to calculate the cost of insurance."</data>
+  <data key="d2">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</node>
+<node id="&quot;$50&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The processing fee for partial withdrawals is $50."</data>
+  <data key="d2">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of issue or reinstatement, we pay only premiums paid minus withdrawals.&quot;" target="&quot;REINSTATEMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of issue or reinstatement, we pay only premiums paid minus withdrawals.&quot;" target="&quot;SUICIDE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of issue or reinstatement, we pay only premiums paid minus withdrawals.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of issue or reinstatement, we pay only premiums paid minus withdrawals.&quot;" target="&quot;ISSUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of issue or reinstatement, we pay only premiums paid minus withdrawals.&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs by suicide within 2 years of issue or reinstatement, we pay only premiums paid minus withdrawals.&quot;" target="&quot;WITHDRAWALS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The Money Market sub-account has a guaranteed minimum rate of 1.5% but other sub-accounts have no guaranteed minimum return.&quot;" target="&quot;GUARANTEED MINIMUM RATE OF 1.5%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The Money Market sub-account has a guaranteed minimum rate of 1.5% but other sub-accounts have no guaranteed minimum return.&quot;" target="&quot;OTHER SUB-ACCOUNTS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The Money Market sub-account has a guaranteed minimum rate of 1.5% but other sub-accounts have no guaranteed minimum return.&quot;" target="&quot;NO GUARANTEED MINIMUM RETURN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The Money Market sub-account has a guaranteed minimum rate of 1.5% but other sub-accounts have no guaranteed minimum return.&quot;" target="&quot;MONEY MARKET SUB-ACCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;WRITTEN REQUEST&quot;">
+  <data key="d5">75.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;ONLINE PORTAL&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;12 CHANGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;FEE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;ALLOCATIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Reduces death benefit dollar-for-dollar&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 'Sub-Account' means a segregated investment account that invests in shares of a designated mutual fund.&quot;" target="&quot;SUB-ACCOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 'Sub-Account' means a segregated investment account that invests in shares of a designated mutual fund.&quot;" target="&quot;MUTUAL FUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION I - Level Death Benefit: Death Benefit = Face Amount; Lower charges but no growth from investments&quot;" target="&quot;FACE AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION I - Level Death Benefit: Death Benefit = Face Amount; Lower charges but no growth from investments&quot;" target="&quot;OPTION I&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION I - Level Death Benefit: Death Benefit = Face Amount; Lower charges but no growth from investments&quot;" target="&quot;LEVEL DEATH BENEFIT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION I - Level Death Benefit: Death Benefit = Face Amount; Lower charges but no growth from investments&quot;" target="&quot;LOWER CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION I - Level Death Benefit: Death Benefit = Face Amount; Lower charges but no growth from investments&quot;" target="&quot;NO GROWTH FROM INVESTMENTS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Processing fee: $50&quot;" target="&quot;PROCESSING FEE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Processing fee: $50&quot;" target="&quot;$50&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;POLICY LOANS: • Maximum: 90% of surrender value • Interest Rate&quot;" target="&quot;POLICY LOANS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;POLICY LOANS: • Maximum: 90% of surrender value • Interest Rate&quot;" target="&quot;MAXIMUM LOAN AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;POLICY LOANS: • Maximum: 90% of surrender value • Interest Rate&quot;" target="&quot;SURRENDER VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;POLICY LOANS: • Maximum: 90% of surrender value • Interest Rate&quot;" target="&quot;INTEREST RATE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death while serving in military conflict in a war zone is excluded if it occurs within 24 months of issue.&quot;" target="&quot;ISSUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death while serving in military conflict in a war zone is excluded if it occurs within 24 months of issue.&quot;" target="&quot;WAR ZONE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death while serving in military conflict in a war zone is excluded if it occurs within 24 months of issue.&quot;" target="&quot;MILITARY CONFLICT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death while serving in military conflict in a war zone is excluded if it occurs within 24 months of issue.&quot;" target="&quot;24 MONTHS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Number: PIL-VUL-2024-5521&quot;" target="&quot;PIL-VUL-2024-5521&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum: $1,000&quot;" target="&quot;MINIMUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum: $1,000&quot;" target="&quot;$1,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Michael Thomas Foster (Spouse) - 100%&quot;" target="&quot;MICHAEL THOMAS FOSTER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Michael Thomas Foster (Spouse) - 100%&quot;" target="&quot;SPOUSE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;PREMIUM LOAD: 5.0% of each premium payment&quot;" target="&quot;PREMIUM PAYMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;PREMIUM LOAD: 5.0% of each premium payment&quot;" target="&quot;PREMIUM LOAD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan amounts are moved to the Money Market sub-account&quot;" target="&quot;MONEY MARKET SUB-ACCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan amounts are moved to the Money Market sub-account&quot;" target="&quot;LOAN AMOUNTS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION II - Variable Death Benefit (CURRENTLY SELECTED): Death Benefit = Face Amount + Account Value; Higher charges but death benefit grows with account&quot;" target="&quot;OPTION II&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION II - Variable Death Benefit (CURRENTLY SELECTED): Death Benefit = Face Amount + Account Value; Higher charges but death benefit grows with account&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION II - Variable Death Benefit (CURRENTLY SELECTED): Death Benefit = Face Amount + Account Value; Higher charges but death benefit grows with account&quot;" target="&quot;VARIABLE DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION II - Variable Death Benefit (CURRENTLY SELECTED): Death Benefit = Face Amount + Account Value; Higher charges but death benefit grows with account&quot;" target="&quot;CURRENTLY SELECTED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION II - Variable Death Benefit (CURRENTLY SELECTED): Death Benefit = Face Amount + Account Value; Higher charges but death benefit grows with account&quot;" target="&quot;HIGHER CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Surrender charges may apply (see Section 3.6)&quot;" target="&quot;SURRENDER CHARGES&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Surrender charges may apply (see Section 3.6)&quot;" target="&quot;SECTION 3.6&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;VARIABLE UNIVERSAL LIFE INSURANCE POLICY Pinnacle Investment Life Corp.&quot;" target="&quot;VARIABLE UNIVERSAL LIFE INSURANCE POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;VARIABLE UNIVERSAL LIFE INSURANCE POLICY Pinnacle Investment Life Corp.&quot;" target="&quot;PINNACLE INVESTMENT LIFE CORP.&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit Option: Option II (Face + Account Value)&quot;" target="&quot;OPTION II&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit Option: Option II (Face + Account Value)&quot;" target="&quot;FACE AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit Option: Option II (Face + Account Value)&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death resulting from operating an aircraft as pilot or crew member is excluded unless declared and approved with extra premium.&quot;" target="&quot;PILOT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death resulting from operating an aircraft as pilot or crew member is excluded unless declared and approved with extra premium.&quot;" target="&quot;CREW MEMBER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death resulting from operating an aircraft as pilot or crew member is excluded unless declared and approved with extra premium.&quot;" target="&quot;EXTRA PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death resulting from operating an aircraft as pilot or crew member is excluded unless declared and approved with extra premium.&quot;" target="&quot;DECLARATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death resulting from operating an aircraft as pilot or crew member is excluded unless declared and approved with extra premium.&quot;" target="&quot;APPROVAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death resulting from operating an aircraft as pilot or crew member is excluded unless declared and approved with extra premium.&quot;" target="&quot;AVIATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum: 90% of surrender value&quot;" target="&quot;MAXIMUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum: 90% of surrender value&quot;" target="&quot;SURRENDER VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;MORTALITY &amp; EXPENSE RISK CHARGE: 0.90% per annum of account value, deducted daily&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;MORTALITY &amp; EXPENSE RISK CHARGE: 0.90% per annum of account value, deducted daily&quot;" target="&quot;MORTALITY &amp; EXPENSE RISK CHARGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;MORTALITY &amp; EXPENSE RISK CHARGE: 0.90% per annum of account value, deducted daily&quot;" target="&quot;DAILY DEDUCTION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.4 'Mortality and Expense Risk Charge' (M&amp;E) is a daily charge of 0.90% annually to cover insurance risks and administrative costs.&quot;" target="&quot;INSURANCE RISKS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.4 'Mortality and Expense Risk Charge' (M&amp;E) is a daily charge of 0.90% annually to cover insurance risks and administrative costs.&quot;" target="&quot;ADMINISTRATIVE COSTS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Planned Annual Premium: $12,000&quot;" target="&quot;$12,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may switch between options subject to: • Proof of insurability for increases • Minimum face amount requirements • $50 administrative fee&quot;" target="&quot;SWITCH BETWEEN OPTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may switch between options subject to: • Proof of insurability for increases • Minimum face amount requirements • $50 administrative fee&quot;" target="&quot;PROOF OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may switch between options subject to: • Proof of insurability for increases • Minimum face amount requirements • $50 administrative fee&quot;" target="&quot;MINIMUM FACE AMOUNT REQUIREMENTS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may switch between options subject to: • Proof of insurability for increases • Minimum face amount requirements • $50 administrative fee&quot;" target="&quot;$50 ADMINISTRATIVE FEE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Reduces face amount proportionally&quot;" target="&quot;FACE AMOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest Rate: 5.5% per annum (fixed)&quot;" target="&quot;INTEREST RATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest Rate: 5.5% per annum (fixed)&quot;" target="&quot;5.5% PER ANNUM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is issued in connection with Pinnacle Investment Life Separate Account A, a registered unit investment trust.&quot;" target="&quot;PINNACLE INVESTMENT LIFE SEPARATE ACCOUNT A&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is issued in connection with Pinnacle Investment Life Separate Account A, a registered unit investment trust.&quot;" target="&quot;REGISTERED UNIT INVESTMENT TRUST&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is issued in connection with Pinnacle Investment Life Separate Account A, a registered unit investment trust.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;ADMINISTRATIVE CHARGE: $15 per month&quot;" target="&quot;ADMINISTRATIVE CHARGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;ADMINISTRATIVE CHARGE: $15 per month&quot;" target="&quot;$15&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.4 You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;WRITTEN REQUEST&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.4 You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;ONLINE PORTAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.4 You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;12 CHANGES&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.4 You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;$25&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.4 You may change allocations at any time by written request or through our online portal. No fee for first 12 changes per year; $25 fee thereafter.&quot;" target="&quot;FEE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IMPORTANT: The account value and death benefit (under Option II) are NOT guaranteed and will fluctuate based on sub-account performance.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IMPORTANT: The account value and death benefit (under Option II) are NOT guaranteed and will fluctuate based on sub-account performance.&quot;" target="&quot;DEATH BENEFIT (UNDER OPTION II)&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IMPORTANT: The account value and death benefit (under Option II) are NOT guaranteed and will fluctuate based on sub-account performance.&quot;" target="&quot;NOT GUARANTEED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;IMPORTANT: The account value and death benefit (under Option II) are NOT guaranteed and will fluctuate based on sub-account performance.&quot;" target="&quot;SUB-ACCOUNT PERFORMANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If account value is insufficient to cover monthly deductions for 61 consecutive days, the policy will lapse.&quot;" target="&quot;MONTHLY DEDUCTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If account value is insufficient to cover monthly deductions for 61 consecutive days, the policy will lapse.&quot;" target="&quot;61 CONSECUTIVE DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If account value is insufficient to cover monthly deductions for 61 consecutive days, the policy will lapse.&quot;" target="&quot;POLICY LAPSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If account value is insufficient to cover monthly deductions for 61 consecutive days, the policy will lapse.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 'Unit Value' means the value of one unit of a sub-account, calculated daily based on fund performance.&quot;" target="&quot;UNIT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 'Unit Value' means the value of one unit of a sub-account, calculated daily based on fund performance.&quot;" target="&quot;DAILY CALCULATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Date: April 5, 2024&quot;" target="&quot;APRIL 5, 2024&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The prospectus for the Separate Account and underlying funds must be read carefully before investing.&quot;" target="&quot;PROSPECTUS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The prospectus for the Separate Account and underlying funds must be read carefully before investing.&quot;" target="&quot;UNDERLYING FUNDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COST OF INSURANCE: Monthly charge based on: (Face Amount at Risk) × (Monthly COI Rate) / 1,000; Face Amount at Risk = Death Benefit - Account Value&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COST OF INSURANCE: Monthly charge based on: (Face Amount at Risk) × (Monthly COI Rate) / 1,000; Face Amount at Risk = Death Benefit - Account Value&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COST OF INSURANCE: Monthly charge based on: (Face Amount at Risk) × (Monthly COI Rate) / 1,000; Face Amount at Risk = Death Benefit - Account Value&quot;" target="&quot;MONTHLY COI RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COST OF INSURANCE: Monthly charge based on: (Face Amount at Risk) × (Monthly COI Rate) / 1,000; Face Amount at Risk = Death Benefit - Account Value&quot;" target="&quot;COST OF INSURANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COST OF INSURANCE: Monthly charge based on: (Face Amount at Risk) × (Monthly COI Rate) / 1,000; Face Amount at Risk = Death Benefit - Account Value&quot;" target="&quot;FACE AMOUNT AT RISK&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Investment risk is borne entirely by the policy owner.&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Investment risk is borne entirely by the policy owner.&quot;" target="&quot;INVESTMENT RISK&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Lapse notice will be sent at least 30 days before lapse.&quot;" target="&quot;LAPSE NOTICE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Lapse notice will be sent at least 30 days before lapse.&quot;" target="&quot;30 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Initial Face Amount: $1,000,000&quot;" target="&quot;$1,000,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a securities product subject to SEC regulation.&quot;" target="&quot;SECURITIES PRODUCT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a securities product subject to SEC regulation.&quot;" target="&quot;SEC&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 Premium payments (after premium load) are allocated to sub-accounts based on your investment instructions.&quot;" target="&quot;INVESTMENT INSTRUCTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 Premium payments (after premium load) are allocated to sub-accounts based on your investment instructions.&quot;" target="&quot;PREMIUM PAYMENTS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 Premium payments (after premium load) are allocated to sub-accounts based on your investment instructions.&quot;" target="&quot;PREMIUM LOAD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;FUND EXPENSES: Each sub-account has its own expense ratio ranging from 0.45% to 1.25% annually (detailed in prospectus)&quot;" target="&quot;FUND EXPENSES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;FUND EXPENSES: Each sub-account has its own expense ratio ranging from 0.45% to 1.25% annually (detailed in prospectus)&quot;" target="&quot;EXPENSE RATIO&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;FUND EXPENSES: Each sub-account has its own expense ratio ranging from 0.45% to 1.25% annually (detailed in prospectus)&quot;" target="&quot;PROSPECTUS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;FUND EXPENSES: Each sub-account has its own expense ratio ranging from 0.45% to 1.25% annually (detailed in prospectus)&quot;" target="&quot;SUB-ACCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.2 Available Sub-Accounts: • Equity Growth Fund • Balanced Allocation Fund • Government Bond Fund • International Equity Fund • Money Market Fund (guaranteed minimum 1.5%) • Real Estate Securities Fund&quot;" target="&quot;BALANCED ALLOCATION FUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.2 Available Sub-Accounts: • Equity Growth Fund • Balanced Allocation Fund • Government Bond Fund • International Equity Fund • Money Market Fund (guaranteed minimum 1.5%) • Real Estate Securities Fund&quot;" target="&quot;GOVERNMENT BOND FUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.2 Available Sub-Accounts: • Equity Growth Fund • Balanced Allocation Fund • Government Bond Fund • International Equity Fund • Money Market Fund (guaranteed minimum 1.5%) • Real Estate Securities Fund&quot;" target="&quot;INTERNATIONAL EQUITY FUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.2 Available Sub-Accounts: • Equity Growth Fund • Balanced Allocation Fund • Government Bond Fund • International Equity Fund • Money Market Fund (guaranteed minimum 1.5%) • Real Estate Securities Fund&quot;" target="&quot;MONEY MARKET FUND&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.2 Available Sub-Accounts: • Equity Growth Fund • Balanced Allocation Fund • Government Bond Fund • International Equity Fund • Money Market Fund (guaranteed minimum 1.5%) • Real Estate Securities Fund&quot;" target="&quot;REAL ESTATE SECURITIES FUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.2 Available Sub-Accounts: • Equity Growth Fund • Balanced Allocation Fund • Government Bond Fund • International Equity Fund • Money Market Fund (guaranteed minimum 1.5%) • Real Estate Securities Fund&quot;" target="&quot;EQUITY GROWTH FUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Poor investment performance can cause the policy to lapse if account value becomes insufficient to cover charges.&quot;" target="&quot;POOR INVESTMENT PERFORMANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Poor investment performance can cause the policy to lapse if account value becomes insufficient to cover charges.&quot;" target="&quot;CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Poor investment performance can cause the policy to lapse if account value becomes insufficient to cover charges.&quot;" target="&quot;POLICY LAPSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Poor investment performance can cause the policy to lapse if account value becomes insufficient to cover charges.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Reinstatement within 3 years requires: Evidence of insurability, Payment of all back charges plus 6% interest, Repayment of outstanding loans&quot;" target="&quot;REINSTATEMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Reinstatement within 3 years requires: Evidence of insurability, Payment of all back charges plus 6% interest, Repayment of outstanding loans&quot;" target="&quot;3 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Reinstatement within 3 years requires: Evidence of insurability, Payment of all back charges plus 6% interest, Repayment of outstanding loans&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Reinstatement within 3 years requires: Evidence of insurability, Payment of all back charges plus 6% interest, Repayment of outstanding loans&quot;" target="&quot;BACK CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Reinstatement within 3 years requires: Evidence of insurability, Payment of all back charges plus 6% interest, Repayment of outstanding loans&quot;" target="&quot;6% INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Reinstatement within 3 years requires: Evidence of insurability, Payment of all back charges plus 6% interest, Repayment of outstanding loans&quot;" target="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Secondary: Foster Children's Trust - 100%&quot;" target="&quot;FOSTER CHILDREN'S TRUST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Secondary: Foster Children's Trust - 100%&quot;" target="&quot;CHILDREN&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Pinnacle Investment Life Corp. New York, New York ____________________________ April 5, 2024 President &amp; CEO&quot;" target="&quot;APRIL 5, 2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Pinnacle Investment Life Corp. New York, New York ____________________________ April 5, 2024 President &amp; CEO&quot;" target="&quot;PINNACLE INVESTMENT LIFE CORP.&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Pinnacle Investment Life Corp. New York, New York ____________________________ April 5, 2024 President &amp; CEO&quot;" target="&quot;NEW YORK, NEW YORK&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Pinnacle Investment Life Corp. New York, New York ____________________________ April 5, 2024 President &amp; CEO&quot;" target="&quot;PRESIDENT &amp; CEO&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Pinnacle Investment Life Corp. New York, New York ____________________________ April 5, 2024 President &amp; CEO&quot;" target="&quot;EXECUTION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 'Accumulation Units' means units held in sub-accounts before any distributions.&quot;" target="&quot;ACCUMULATION UNITS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 'Accumulation Units' means units held in sub-accounts before any distributions.&quot;" target="&quot;DISTRIBUTIONS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SURRENDER CHARGE SCHEDULE (% of premium paid): Year 1-2: 7% | Year 3-4: 5% | Year 5-6: 3% | Year 7+: 0%&quot;" target="&quot;SURRENDER CHARGE SCHEDULE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SURRENDER CHARGE SCHEDULE (% of premium paid): Year 1-2: 7% | Year 3-4: 5% | Year 5-6: 3% | Year 7+: 0%&quot;" target="&quot;YEAR 1-2&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SURRENDER CHARGE SCHEDULE (% of premium paid): Year 1-2: 7% | Year 3-4: 5% | Year 5-6: 3% | Year 7+: 0%&quot;" target="&quot;YEAR 3-4&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SURRENDER CHARGE SCHEDULE (% of premium paid): Year 1-2: 7% | Year 3-4: 5% | Year 5-6: 3% | Year 7+: 0%&quot;" target="&quot;YEAR 5-6&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SURRENDER CHARGE SCHEDULE (% of premium paid): Year 1-2: 7% | Year 3-4: 5% | Year 5-6: 3% | Year 7+: 0%&quot;" target="&quot;YEAR 7+&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;SURRENDER CHARGE SCHEDULE (% of premium paid): Year 1-2: 7% | Year 3-4: 5% | Year 5-6: 3% | Year 7+: 0%&quot;" target="&quot;PREMIUM PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-e68116805ef199fd0e1849f02b5159ca</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum: Account value minus $5,000&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum: Account value minus $5,000&quot;" target="&quot;MAXIMUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum: Account value minus $5,000&quot;" target="&quot;$5,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7bc9423983c61b5e183512d32b1dda0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Dr. Amanda Katherine Foster&quot;" target="&quot;PREFERRED PLUS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Dr. Amanda Katherine Foster&quot;" target="&quot;AMANDA KATHERINE FOSTER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Dr. Amanda Katherine Foster&quot;" target="&quot;DR. AMANDA KATHERINE FOSTER&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-8c8ea823bb93481595962062aa15594e</data>
+</edge>
+</graph></graphml>

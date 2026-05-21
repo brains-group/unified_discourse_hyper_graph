@@ -1,0 +1,925 @@
+{
+    "name": "equi life insurance",
+    "pairs": [
+        {
+            "question": "What happens if a premium is not paid before the end of the grace period?",
+            "answer": "The Policy will lapse as of the due date of the unpaid premium, and coverage will terminate."
+        },
+        {
+            "question": "When does a policy lapse if a premium is not paid?",
+            "answer": "As of the due date of the unpaid premium."
+        },
+        {
+            "question": "What happens to coverage when a policy lapses?",
+            "answer": "Coverage will terminate."
+        },
+        {
+            "question": "Are benefits payable under a lapsed policy?",
+            "answer": "No, except as provided in the Reinstatement provision."
+        },
+        {
+            "question": "Under what condition can benefits still be payable after a policy lapses?",
+            "answer": "As provided in the Reinstatement provision."
+        },
+        {
+            "question": "What happens if a provision of this Policy is held to be invalid or unenforceable?",
+            "answer": "The remaining provisions shall remain in full force and effect to the extent permitted by law."
+        },
+        {
+            "question": "Under what condition does the severability clause apply?",
+            "answer": "When any provision of this Policy is held to be invalid or unenforceable under applicable law."
+        },
+        {
+            "question": "What is the legal principle described in this Policy?",
+            "answer": "Severability."
+        },
+        {
+            "question": "To what extent do the remaining provisions remain in effect after a provision is invalidated?",
+            "answer": "To the extent permitted by law."
+        },
+        {
+            "question": "What does interest accrue on?",
+            "answer": "The death benefit"
+        },
+        {
+            "question": "From when to when does interest accrue?",
+            "answer": "From the date of death to the date of payment"
+        },
+        {
+            "question": "At what rate does interest accrue?",
+            "answer": "At a rate not less than required by applicable state law"
+        },
+        {
+            "question": "What determines the minimum interest rate?",
+            "answer": "Applicable state law"
+        },
+        {
+            "question": "What is the sex of the individual?",
+            "answer": "Male"
+        },
+        {
+            "question": "How long is the grace period for premium payments after the first premium?",
+            "answer": "31 days"
+        },
+        {
+            "question": "What happens to the policy during the grace period?",
+            "answer": "The Policy shall remain in force."
+        },
+        {
+            "question": "What is deducted from the death benefit if the insured dies during the grace period?",
+            "answer": "Any unpaid premium due"
+        },
+        {
+            "question": "When does the grace period begin?",
+            "answer": "After the first premium"
+        },
+        {
+            "question": "Who has the authority to change the beneficiary in a life insurance policy?",
+            "answer": "The Policy Owner"
+        },
+        {
+            "question": "Under what condition can the beneficiary not be changed?",
+            "answer": "Unless an irrevocable Beneficiary has been designated"
+        },
+        {
+            "question": "What form must the request to change the beneficiary take?",
+            "answer": "A written request satisfactory to the Company"
+        },
+        {
+            "question": "When does a change of beneficiary take effect?",
+            "answer": "As of the date the request is signed"
+        },
+        {
+            "question": "Does the insured's current life status affect when the beneficiary change takes effect?",
+            "answer": "No, the change takes effect regardless of whether the Insured is alive at the time the change is recorded by the Company"
+        },
+        {
+            "question": "What happens if the insured is not alive when the beneficiary change is recorded by the company?",
+            "answer": "The change still takes effect as of the date the request was signed"
+        },
+        {
+            "question": "What type of information does the Company collect and maintain?",
+            "answer": "Personal information"
+        },
+        {
+            "question": "How is the personal information collected by the Company treated?",
+            "answer": "It shall be kept confidential"
+        },
+        {
+            "question": "For what purposes is the personal information used by the Company?",
+            "answer": "For underwriting, claims, and administrative purposes"
+        },
+        {
+            "question": "On what basis is the use of personal information by the Company governed?",
+            "answer": "In accordance with applicable privacy laws and regulations"
+        },
+        {
+            "question": "What types of documents might the Company provide periodically?",
+            "answer": "Periodic statements or confirmations of coverage, premium payment status, or other relevant information."
+        },
+        {
+            "question": "Under what condition can a statement or confirmation modify the terms of the Policy?",
+            "answer": "Only if accompanied by a properly authorized amendment or rider."
+        },
+        {
+            "question": "Do periodic statements or confirmations automatically change the terms of the Policy?",
+            "answer": "No, they do not modify the terms unless accompanied by a properly authorized amendment or rider."
+        },
+        {
+            "question": "What is required for a change to the Policy terms to be valid?",
+            "answer": "A properly authorized amendment or rider."
+        },
+        {
+            "question": "Who is the beneficiary?",
+            "answer": "Taylor Ellis"
+        },
+        {
+            "question": "What is the relationship between Taylor Ellis and the subject?",
+            "answer": "Spouse"
+        },
+        {
+            "question": "Within how many years from the date of lapse can a policy be reinstated?",
+            "answer": "Five (5) years"
+        },
+        {
+            "question": "What must the Policy Owner submit to apply for reinstatement?",
+            "answer": "A written application for reinstatement"
+        },
+        {
+            "question": "What type of evidence must be submitted regarding the Insured's insurability?",
+            "answer": "Satisfactory evidence of the Insured's insurability"
+        },
+        {
+            "question": "How are overdue premiums handled during reinstatement?",
+            "answer": "All overdue premiums are paid with interest at a rate determined by the Company, compounded annually"
+        },
+        {
+            "question": "What is the governing law specified in the document?",
+            "answer": "State of New York"
+        },
+        {
+            "question": "Which state's laws govern this agreement?",
+            "answer": "State of New York"
+        },
+        {
+            "question": "What jurisdiction is referenced for legal disputes?",
+            "answer": "State of New York"
+        },
+        {
+            "question": "Where is the legal authority for this document located?",
+            "answer": "State of New York"
+        },
+        {
+            "question": "Who is the Beneficiary in an insurance policy?",
+            "answer": "The person or persons designated by the Policy Owner to receive the death benefit upon the death of the Insured."
+        },
+        {
+            "question": "How must the beneficiary designation be made?",
+            "answer": "In writing and filed with the Company."
+        },
+        {
+            "question": "What happens if multiple beneficiaries are named but no distribution percentages are specified?",
+            "answer": "Proceeds will be paid in equal shares."
+        },
+        {
+            "question": "What is required for a beneficiary designation to be valid?",
+            "answer": "It must be made in writing and filed with the Company."
+        },
+        {
+            "question": "How are death benefits distributed among multiple beneficiaries if no percentages are given?",
+            "answer": "In equal shares."
+        },
+        {
+            "question": "Who is the Policy Owner?",
+            "answer": "The person who owns and controls all rights under this Policy."
+        },
+        {
+            "question": "What does the Policy Owner own?",
+            "answer": "All rights under this Policy."
+        },
+        {
+            "question": "What does the Policy Owner control?",
+            "answer": "All rights under this Policy."
+        },
+        {
+            "question": "What role does the Policy Owner play in relation to the Policy?",
+            "answer": "They own and control all rights under the Policy."
+        },
+        {
+            "question": "What is the annual premium?",
+            "answer": "$420"
+        },
+        {
+            "question": "How much is the annual premium?",
+            "answer": "$420"
+        },
+        {
+            "question": "What does the annual premium cost?",
+            "answer": "$420"
+        },
+        {
+            "question": "What is the cost of the premium per year?",
+            "answer": "$420"
+        },
+        {
+            "question": "What is the duration option for Premium Mode?",
+            "answer": "Annual"
+        },
+        {
+            "question": "What type of insurance policy is described in the text?",
+            "answer": "20-Year Level Term"
+        },
+        {
+            "question": "What does this legal agreement include?",
+            "answer": "This legal agreement includes the application, declarations, riders, and any endorsements issued by the Company."
+        },
+        {
+            "question": "What are the components of the legal agreement?",
+            "answer": "The components of the legal agreement are the application, declarations, riders, and any endorsements issued by the Company."
+        },
+        {
+            "question": "What is issued by the Company as part of the legal agreement?",
+            "answer": "The Company issues the application, declarations, riders, and any endorsements as part of the legal agreement."
+        },
+        {
+            "question": "What is the role of the Company in relation to the legal agreement?",
+            "answer": "The Company issues the application, declarations, riders, and any endorsements that are part of the legal agreement."
+        },
+        {
+            "question": "What is included in the application of the legal agreement?",
+            "answer": "The application is included in the legal agreement."
+        },
+        {
+            "question": "What are declarations in the context of this legal agreement?",
+            "answer": "Declarations are part of the legal agreement."
+        },
+        {
+            "question": "What are riders in the context of this legal agreement?",
+            "answer": "Riders are part of the legal agreement."
+        },
+        {
+            "question": "What are endorsements in the context of this legal agreement?",
+            "answer": "Endorsements are part of the legal agreement and are issued by the Company."
+        },
+        {
+            "question": "What is the policy number of the individual level term life insurance policy?",
+            "answer": "EML-2025-00028391"
+        },
+        {
+            "question": "On what date was the policy issued?",
+            "answer": "August 1, 2025"
+        },
+        {
+            "question": "Who is the policy owner of this insurance policy?",
+            "answer": "Jordan Ellis"
+        },
+        {
+            "question": "Who is the insured person under this policy?",
+            "answer": "Jordan Ellis"
+        },
+        {
+            "question": "Who is named as the beneficiary of the policy?",
+            "answer": "Taylor Ellis (Spouse)"
+        },
+        {
+            "question": "What is the face amount of the policy?",
+            "answer": "$500,000"
+        },
+        {
+            "question": "What type of life insurance policy is this?",
+            "answer": "20-Year Level Term"
+        },
+        {
+            "question": "Which state's laws govern this Policy?",
+            "answer": "The laws of the State of New York."
+        },
+        {
+            "question": "Where must disputes arising under this Policy be resolved?",
+            "answer": "In a court of competent jurisdiction located in the State of New York."
+        },
+        {
+            "question": "Is there an exception to resolving disputes in New York courts?",
+            "answer": "Yes, unless otherwise required by applicable law."
+        },
+        {
+            "question": "What is the basis for the jurisdiction of disputes under this Policy?",
+            "answer": "The dispute shall be resolved in a court of competent jurisdiction located in the State of New York."
+        },
+        {
+            "question": "What is required for the Policy Owner to assign this Policy or any rights under it?",
+            "answer": "A written notice satisfactory to the Company."
+        },
+        {
+            "question": "When does an assignment take effect?",
+            "answer": "Upon the Company's receipt and recording of the notice."
+        },
+        {
+            "question": "What responsibility does the Company assume regarding assignments?",
+            "answer": "The Company assumes no responsibility for the validity, sufficiency, or tax consequences of any assignment."
+        },
+        {
+            "question": "Under what condition are the rights of the assignee subordinate to those of a beneficiary?",
+            "answer": "Unless otherwise agreed in writing by an irrevocable beneficiary."
+        },
+        {
+            "question": "What effect can an assignment have on the rights under the Policy?",
+            "answer": "An assignment may limit or preclude the exercise of certain rights under the Policy."
+        },
+        {
+            "question": "What must be true for an assignee’s rights to not be subordinate to an irrevocable beneficiary’s rights?",
+            "answer": "There must be a written agreement otherwise with the irrevocable beneficiary."
+        },
+        {
+            "question": "What type of policy is described in the text?",
+            "answer": "A nonparticipating policy."
+        },
+        {
+            "question": "Does this policy share in any surplus or earnings of the company?",
+            "answer": "No, it does not share in any surplus or earnings."
+        },
+        {
+            "question": "Are dividends payable to the policy owner now or in the future?",
+            "answer": "No dividends are payable to the policy owner now or in the future."
+        },
+        {
+            "question": "What factors determine the premium rates for this policy?",
+            "answer": "Premium rates are based on the underwriting class of the insured and the company's pricing standards at the time of issue."
+        },
+        {
+            "question": "Under what condition may the insurance company pay proceeds to the insured's estate?",
+            "answer": "If no Beneficiary survives the Insured, or if a Beneficiary cannot be located within 90 days of the Insured's death."
+        },
+        {
+            "question": "Who might the company pay proceeds to if a beneficiary cannot be located within 90 days?",
+            "answer": "Any person deemed by the Company to be equitably entitled, including one who incurred expenses related to the Insured's last illness or burial."
+        },
+        {
+            "question": "What types of expenses might qualify someone as equitably entitled to insurance proceeds?",
+            "answer": "Expenses related to the Insured's last illness or burial."
+        },
+        {
+            "question": "What is the effect of a payment made to the insured's estate or an equitably entitled person?",
+            "answer": "Such payment shall discharge the Company's liability to the extent of the amount paid."
+        },
+        {
+            "question": "What is the time limit for locating a beneficiary after the insured's death?",
+            "answer": "90 days."
+        },
+        {
+            "question": "Who is referred to as the Insured Person in a policy?",
+            "answer": "The individual named on the Policy Specifications."
+        },
+        {
+            "question": "Where is the Insured Person named in the policy?",
+            "answer": "On the Policy Specifications."
+        },
+        {
+            "question": "What does the term 'Insured' refer to in insurance?",
+            "answer": "The individual named on the Policy Specifications as the Insured Person."
+        },
+        {
+            "question": "What is the role of the Insured Person in a policy?",
+            "answer": "The individual named on the Policy Specifications."
+        },
+        {
+            "question": "What is the face amount mentioned in the text?",
+            "answer": "$500,000"
+        },
+        {
+            "question": "What is required for any change or modification to this Policy to be valid?",
+            "answer": "An executive officer of the Company must approve the change in writing."
+        },
+        {
+            "question": "Who has the authority to alter or waive any provision of this Policy?",
+            "answer": "No agent, producer, or field representative has such authority."
+        },
+        {
+            "question": "Can a field representative extend the time for payment of premiums?",
+            "answer": "No, a field representative does not have the authority to extend the time for payment of premiums."
+        },
+        {
+            "question": "How are statutory or regulatory changes incorporated into this Policy?",
+            "answer": "They are incorporated automatically as required by governing law, with or without notice to the Policy Owner."
+        },
+        {
+            "question": "Is notice required to the Policy Owner when statutory changes are incorporated into the Policy?",
+            "answer": "No, notice is not required when statutory changes are incorporated into the Policy."
+        },
+        {
+            "question": "Under what condition is the Beneficiary presumed to have predeceased the Insured?",
+            "answer": "When the Insured and the Beneficiary die under circumstances that make the order of death uncertain."
+        },
+        {
+            "question": "What happens to the Beneficiary's status if they disclaim the insurance proceeds?",
+            "answer": "They are treated as having predeceased the Insured."
+        },
+        {
+            "question": "How is the order of death determined when it is uncertain between the Insured and the Beneficiary?",
+            "answer": "The Beneficiary is presumed to have predeceased the Insured."
+        },
+        {
+            "question": "What legal effect does a disclaimer of proceeds have on a Beneficiary's status?",
+            "answer": "It treats the Beneficiary as having predeceased the Insured."
+        },
+        {
+            "question": "What happens to the death benefit if the age or sex of the insured is misstated?",
+            "answer": "The amount of the death benefit payable under this Policy shall be the amount the premium paid would have purchased at the correct age and sex."
+        },
+        {
+            "question": "What occurs if correcting the misstated age or sex results in an overpayment of premiums?",
+            "answer": "The Company shall refund the excess to the Policy Owner without interest."
+        },
+        {
+            "question": "How is the death benefit adjusted if the correction leads to an underpayment of premiums?",
+            "answer": "The death benefit shall be reduced accordingly."
+        },
+        {
+            "question": "What is the consequence if the insured is found to be outside the insurable age range at issue?",
+            "answer": "The Policy shall be void ab initio and all premiums shall be refunded."
+        },
+        {
+            "question": "What is the basis for determining the death benefit when age or sex is misstated?",
+            "answer": "The amount the premium paid would have purchased at the correct age and sex."
+        },
+        {
+            "question": "Does the insurance company pay interest on overpaid premiums when correcting a misstatement?",
+            "answer": "No, the Company shall refund the excess to the Policy Owner without interest."
+        },
+        {
+            "question": "Does this policy automatically renew beyond the term period?",
+            "answer": "No, this Policy does not provide automatic renewal beyond the term period."
+        },
+        {
+            "question": "When must the request for conversion be made to be eligible?",
+            "answer": "The request must be made during the conversion period specified in the Policy Specifications."
+        },
+        {
+            "question": "What is the age restriction for converting the policy to permanent life insurance?",
+            "answer": "The Insured must not be older than the maximum conversion age established by the Company at the time of request."
+        },
+        {
+            "question": "Is evidence of insurability required to convert the policy?",
+            "answer": "No, the Policy Owner may convert the policy without evidence of insurability."
+        },
+        {
+            "question": "What must be done regarding premiums after converting to a permanent policy?",
+            "answer": "Premiums for the new policy must be paid in accordance with the terms of the selected product."
+        },
+        {
+            "question": "What does this Policy represent in terms of agreement between the parties?",
+            "answer": "This Policy constitutes the complete agreement between the parties."
+        },
+        {
+            "question": "Under what conditions is a waiver of any term or condition of this Policy valid?",
+            "answer": "No waiver of any term or condition of this Policy shall be valid unless made in writing and signed by an authorized officer of the Company."
+        },
+        {
+            "question": "What happens if the Company fails to enforce a provision of this Policy?",
+            "answer": "Failure to enforce any provision shall not constitute a waiver of future enforcement of that or any other provision."
+        },
+        {
+            "question": "Can a waiver of a term be implied from inaction or failure to act?",
+            "answer": "No, failure to enforce any provision shall not constitute a waiver of future enforcement of that or any other provision."
+        },
+        {
+            "question": "What is the name of the company mentioned in the text?",
+            "answer": "Equivita Mutual Life Insurance Company"
+        },
+        {
+            "question": "What is the risk class?",
+            "answer": "Standard Non-Smoker"
+        },
+        {
+            "question": "What type of smoker status is indicated?",
+            "answer": "Non-Smoker"
+        },
+        {
+            "question": "What is the risk category?",
+            "answer": "Standard"
+        },
+        {
+            "question": "Is the individual a smoker?",
+            "answer": "No"
+        },
+        {
+            "question": "What is the person's date of birth?",
+            "answer": "March 15, 1990"
+        },
+        {
+            "question": "On which day of the month was the person born?",
+            "answer": "15"
+        },
+        {
+            "question": "In which month was the person born?",
+            "answer": "March"
+        },
+        {
+            "question": "In which year was the person born?",
+            "answer": "1990"
+        },
+        {
+            "question": "What is the duration of the grace period?",
+            "answer": "31 Days"
+        },
+        {
+            "question": "How many days is the grace period?",
+            "answer": "31 Days"
+        },
+        {
+            "question": "What is the name of the period that lasts 31 days?",
+            "answer": "Grace Period"
+        },
+        {
+            "question": "What does 'Grace Period' refer to in this context?",
+            "answer": "31 Days"
+        },
+        {
+            "question": "How are death benefit proceeds typically paid?",
+            "answer": "In a lump sum"
+        },
+        {
+            "question": "Under what condition can death benefit proceeds be paid in a manner other than a lump sum?",
+            "answer": "If an alternative payment option is elected by the Policy Owner during the Insured's lifetime or by the Beneficiary after the Insured's death"
+        },
+        {
+            "question": "When are death benefit proceeds paid?",
+            "answer": "Promptly upon receipt and approval of all required claim documentation"
+        },
+        {
+            "question": "Who can elect an alternative payment option before the Insured's death?",
+            "answer": "The Policy Owner"
+        },
+        {
+            "question": "Who can elect an alternative payment option after the Insured's death?",
+            "answer": "The Beneficiary"
+        },
+        {
+            "question": "What is the process of restoring a lapsed Policy to active status called?",
+            "answer": "The process of restoring a lapsed Policy to active status as outlined in this Policy."
+        },
+        {
+            "question": "What is the duration of the Incontestability Period in the Policy?",
+            "answer": "A two-year period during which the Company may contest the validity of the Policy."
+        },
+        {
+            "question": "What is the Suicide Exclusion Period in the Policy?",
+            "answer": "A two-year period during which the death benefit is limited if the Insured dies by suicide."
+        },
+        {
+            "question": "What is an irrevocable beneficiary?",
+            "answer": "A beneficiary who cannot be changed by the policy owner without their written consent."
+        },
+        {
+            "question": "What rights does a policy owner lose when naming an irrevocable beneficiary?",
+            "answer": "The right to change the beneficiary or assign the policy."
+        },
+        {
+            "question": "What is required for a policy owner to change the beneficiary if it is irrevocable?",
+            "answer": "Written consent from the irrevocable beneficiary."
+        },
+        {
+            "question": "Can a policy owner assign the policy without the irrevocable beneficiary's consent?",
+            "answer": "No, without the written consent of the irrevocable beneficiary."
+        },
+        {
+            "question": "What must be true for the Policy Owner to exercise all contractual rights without consent?",
+            "answer": "The Policy Owner may exercise all contractual rights without the consent of any other person unless otherwise restricted by an assignment or irrevocable beneficiary designation."
+        },
+        {
+            "question": "What are four rights that the Policy Owner may exercise?",
+            "answer": "Changing the Beneficiary, assigning the Policy, electing optional forms of benefits, and requesting policy information."
+        },
+        {
+            "question": "What happens to the Policy Owner's actions regarding the policy?",
+            "answer": "Actions of the Policy Owner shall be binding on all parties with an interest in the Policy, subject to applicable law and the terms herein."
+        },
+        {
+            "question": "Can the Policy Owner change the beneficiary without consent?",
+            "answer": "Yes, the Policy Owner may change the beneficiary without consent, unless restricted by an assignment or irrevocable beneficiary designation."
+        },
+        {
+            "question": "What limits the Policy Owner's rights to act without consent?",
+            "answer": "The Policy Owner's rights may be limited by an assignment or an irrevocable beneficiary designation."
+        },
+        {
+            "question": "Who is bound by the Policy Owner's actions?",
+            "answer": "All parties with an interest in the Policy are bound by the Policy Owner's actions, subject to applicable law and the terms herein."
+        },
+        {
+            "question": "Who receives the death benefit under the policy?",
+            "answer": "The designated Beneficiary"
+        },
+        {
+            "question": "When is the death benefit payable?",
+            "answer": "When the Insured dies while this Policy is in force and before the Expiry Date"
+        },
+        {
+            "question": "What is the amount of the death benefit?",
+            "answer": "The Face Amount shown in the Policy Specifications, less any unpaid premiums or indebtedness"
+        },
+        {
+            "question": "What is deducted from the Face Amount to determine the death benefit?",
+            "answer": "Any unpaid premiums or indebtedness"
+        },
+        {
+            "question": "What determines the value of the death benefit?",
+            "answer": "The Face Amount shown in the Policy Specifications"
+        },
+        {
+            "question": "What happens to the policy upon reinstatement?",
+            "answer": "The Policy shall be deemed to be in full force as if it had never lapsed."
+        },
+        {
+            "question": "When does the new contestability period begin after reinstatement?",
+            "answer": "A new two-year contestability period shall begin as of the date of reinstatement."
+        },
+        {
+            "question": "How does the suicide exclusion apply after reinstatement?",
+            "answer": "The suicide exclusion shall apply anew from the date of reinstatement."
+        },
+        {
+            "question": "Is the Company liable for claims arising from events during the lapse period?",
+            "answer": "The Company shall not be liable for any claim arising from an event occurring during the period in which the Policy was lapsed."
+        },
+        {
+            "question": "What is the effect of reinstatement on the policy's validity?",
+            "answer": "The Policy shall be deemed to be in full force as if it had never lapsed."
+        },
+        {
+            "question": "Who is the insured person?",
+            "answer": "Jordan Ellis"
+        },
+        {
+            "question": "Who is a beneficiary in the context of insurance?",
+            "answer": "The person(s) designated to receive the death benefit proceeds upon the death of the Insured."
+        },
+        {
+            "question": "What do beneficiaries receive upon the death of the insured?",
+            "answer": "The death benefit proceeds."
+        },
+        {
+            "question": "When do beneficiaries receive the death benefit proceeds?",
+            "answer": "Upon the death of the Insured."
+        },
+        {
+            "question": "What is the role of the beneficiary in an insurance policy?",
+            "answer": "To receive the death benefit proceeds upon the death of the Insured."
+        },
+        {
+            "question": "What causes a policy to lapse?",
+            "answer": "Nonpayment of premiums after the grace period."
+        },
+        {
+            "question": "When does a policy lapse occur in relation to the grace period?",
+            "answer": "After the grace period has expired."
+        },
+        {
+            "question": "What is the result of a policy lapse?",
+            "answer": "The termination of the Policy."
+        },
+        {
+            "question": "What does the term 'lapse' refer to in insurance?",
+            "answer": "The termination of the Policy due to nonpayment of premiums after the grace period."
+        },
+        {
+            "question": "What is the start date of the coverage term?",
+            "answer": "August 1, 2025"
+        },
+        {
+            "question": "What is the end date of the coverage term?",
+            "answer": "July 31, 2045"
+        },
+        {
+            "question": "How long is the coverage term in years?",
+            "answer": "20 years"
+        },
+        {
+            "question": "What is the duration of the coverage term?",
+            "answer": "August 1, 2025 to July 31, 2045"
+        },
+        {
+            "question": "What happens if the insured dies by suicide within two years of the Issue Date?",
+            "answer": "The Company's liability is limited to the total premiums paid, without interest."
+        },
+        {
+            "question": "What is the payout amount if the insured dies by suicide within two years of the Issue Date?",
+            "answer": "The total premiums paid, without interest."
+        },
+        {
+            "question": "Does the mental state of the insured (sane or insane) affect the payout if they die by suicide within two years?",
+            "answer": "No, the rule applies regardless of whether the insured was sane or insane."
+        },
+        {
+            "question": "After how many years from the Issue Date is the full death benefit payable regardless of cause of death?",
+            "answer": "After two years."
+        },
+        {
+            "question": "What is the condition for the full death benefit to be payable after two years?",
+            "answer": "The full death benefit is payable after two years, subject to all other terms of the Policy."
+        },
+        {
+            "question": "Is the full death benefit payable if the insured dies by suicide after two years from the Issue Date?",
+            "answer": "Yes, the full death benefit is payable regardless of cause of death after two years, subject to all other terms of the Policy."
+        },
+        {
+            "question": "What is the face amount in an insurance policy?",
+            "answer": "The amount payable upon the death of the Insured, as shown in the Policy Specifications."
+        },
+        {
+            "question": "What is a premium in the context of an insurance policy?",
+            "answer": "The amount the Policy Owner must pay to keep this Policy in force."
+        },
+        {
+            "question": "What is a policy anniversary?",
+            "answer": "Each yearly anniversary of the Policy's Issue Date."
+        },
+        {
+            "question": "What is the grace period in an insurance policy?",
+            "answer": "A 31-day period after a premium due date during which the Policy remains in force."
+        },
+        {
+            "question": "What triggers the incontestability of the policy?",
+            "answer": "The policy becomes incontestable after it has been in force during the lifetime of the Insured for a period of two (2) years from the Issue Date."
+        },
+        {
+            "question": "During the contestability period, under what condition can the Company rescind the policy or deny a claim?",
+            "answer": "The Company may rescind the Policy or deny a claim if there was a material misrepresentation in the application."
+        },
+        {
+            "question": "What is the duration of the contestability period?",
+            "answer": "The contestability period is two (2) years from the Issue Date."
+        },
+        {
+            "question": "What is the only exception to the incontestability clause after the two-year period?",
+            "answer": "Nonpayment of premiums."
+        },
+        {
+            "question": "After the contestability period expires, under what condition can the Company still contest the policy?",
+            "answer": "Only if the misstatement constitutes fraud as defined by applicable state law."
+        },
+        {
+            "question": "What happens to the Company's right to contest the policy after the two-year period?",
+            "answer": "The Company may not contest the validity of the Policy, even in the event of misstatement, unless such misstatement constitutes fraud."
+        },
+        {
+            "question": "Within how many years from the date of lapse can a policy be reinstated?",
+            "answer": "Five years"
+        },
+        {
+            "question": "What is required for a written request for reinstatement?",
+            "answer": "A written request for reinstatement is received"
+        },
+        {
+            "question": "What must be submitted and accepted for reinstatement?",
+            "answer": "Evidence of insurability"
+        },
+        {
+            "question": "What must be paid to reinstate a lapsed policy?",
+            "answer": "All overdue premiums with interest at the rate specified by the Company at the time of reinstatement"
+        },
+        {
+            "question": "How does coverage resume after reinstatement?",
+            "answer": "As though the Policy had remained continuously in force"
+        },
+        {
+            "question": "What provisions start anew from the date of reinstatement?",
+            "answer": "The Incontestability and Suicide Exclusion provisions"
+        },
+        {
+            "question": "What documents constitute the entire contract according to this policy?",
+            "answer": "The policy, attached application, any supplemental applications, riders, endorsements, and amendments issued by the Company."
+        },
+        {
+            "question": "How are statements made by the Insured or the Policy Owner treated under this policy?",
+            "answer": "They are deemed representations and not warranties, in the absence of fraud."
+        },
+        {
+            "question": "Under what condition can a statement be used in defense of a claim under this policy?",
+            "answer": "Only if it is contained in the written application and a copy of such application is attached to the Policy at issue."
+        },
+        {
+            "question": "What is the legal status of a statement made by the Insured or Policy Owner if there is no fraud?",
+            "answer": "It is considered a representation, not a warranty."
+        },
+        {
+            "question": "Why is it important for the application to be attached to the Policy at issue?",
+            "answer": "Because only statements contained in the written application and a copy attached to the policy can be used in defense of a claim."
+        },
+        {
+            "question": "Who receives the insurance proceeds if no designated beneficiary survives the insured?",
+            "answer": "The Contingent Beneficiary, if any."
+        },
+        {
+            "question": "What happens to the insurance proceeds if no contingent beneficiary survives the insured?",
+            "answer": "Proceeds will be payable to the Policy Owner's estate."
+        },
+        {
+            "question": "How does the insurance company handle cases where the insured and the beneficiary die simultaneously?",
+            "answer": "The Company shall assume the Beneficiary predeceased the Insured unless otherwise governed by state law."
+        },
+        {
+            "question": "What assumption is made about the order of death when it is uncertain due to simultaneous death?",
+            "answer": "The Beneficiary predeceased the Insured."
+        },
+        {
+            "question": "Under what condition might the assumption that the beneficiary predeceased the insured not apply?",
+            "answer": "Unless otherwise governed by state law."
+        },
+        {
+            "question": "Who is the first recipient of proceeds if the primary beneficiary survives the insured?",
+            "answer": "The designated Beneficiary."
+        },
+        {
+            "question": "What is the role of the contingent beneficiary in the payout hierarchy?",
+            "answer": "To receive proceeds if the primary beneficiary does not survive the insured."
+        },
+        {
+            "question": "Where must all notices to the Company be sent?",
+            "answer": "To its Administrative Office as shown in the Policy Specifications"
+        },
+        {
+            "question": "How will the Company send notices to the Policy Owner?",
+            "answer": "To the last known address of the Policy Owner as reflected in its records"
+        },
+        {
+            "question": "Who is responsible for updating the Company about a change in address?",
+            "answer": "The Policy Owner"
+        },
+        {
+            "question": "What should the Policy Owner do if their address changes?",
+            "answer": "Notify the Company promptly"
+        },
+        {
+            "question": "What happens if the Company sends a notice to an outdated address?",
+            "answer": "The notice may not be received, as the Company uses the last known address in its records"
+        },
+        {
+            "question": "When does the new contestability period begin after policy reinstatement?",
+            "answer": "From the date of reinstatement."
+        },
+        {
+            "question": "How long is the contestability period after a policy is reinstated?",
+            "answer": "Two years."
+        },
+        {
+            "question": "What type of statements are subject to contestability after reinstatement?",
+            "answer": "Statements made in the reinstatement application."
+        },
+        {
+            "question": "Does the contestability period after reinstatement apply to all statements made in the original policy application?",
+            "answer": "No, it only applies to statements made in the reinstatement application."
+        },
+        {
+            "question": "When are premiums payable?",
+            "answer": "Premiums are payable in advance on or before the due date shown in the Policy Specifications."
+        },
+        {
+            "question": "Where must premiums be paid?",
+            "answer": "Premiums must be paid to the Company at its Administrative Office or to an authorized agent."
+        },
+        {
+            "question": "What is required to change the payment mode?",
+            "answer": "The Policy Owner may change the payment mode with the Company's approval."
+        },
+        {
+            "question": "What must be provided when paying premiums?",
+            "answer": "An official receipt must be provided in exchange for the payment."
+        },
+        {
+            "question": "Who can receive premium payments on behalf of the Company?",
+            "answer": "An authorized agent can receive premium payments on behalf of the Company."
+        },
+        {
+            "question": "What happens if a premium is paid after the due date?",
+            "answer": "The text does not specify consequences for late payment, only that premiums must be paid on or before the due date."
+        },
+        {
+            "question": "What is the issue date mentioned in the text?",
+            "answer": "August 1, 2025"
+        },
+        {
+            "question": "Who is the policy owner?",
+            "answer": "Jordan Ellis"
+        },
+        {
+            "question": "What must the Company receive before paying a death benefit?",
+            "answer": "Due proof of the Insured's death, including a certified death certificate and any additional documentation the Company reasonably requires."
+        },
+        {
+            "question": "What document is required as proof of death?",
+            "answer": "A certified death certificate."
+        },
+        {
+            "question": "Can the Company require additional documentation beyond the death certificate?",
+            "answer": "Yes, the Company may require any additional documentation it reasonably requires."
+        },
+        {
+            "question": "Does the Company have the right to investigate the cause and circumstances of death?",
+            "answer": "Yes, the Company reserves the right to investigate the cause and circumstances of death."
+        },
+        {
+            "question": "Can the Company contest a death benefit claim?",
+            "answer": "Yes, the Company can contest the claim if it is within the contestability period."
+        }
+    ]
+}

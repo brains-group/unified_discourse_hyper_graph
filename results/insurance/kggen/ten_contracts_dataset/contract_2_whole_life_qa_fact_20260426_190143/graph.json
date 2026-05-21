@@ -1,0 +1,727 @@
+{
+  "entities": [
+    "Margaret Rose Chen",
+    "application",
+    "Automatic application",
+    "Accumulate at Interest",
+    "Payment Frequency: Annual",
+    "President",
+    "Death benefit",
+    "full refund",
+    "Actual cash value",
+    "evidence of insurability",
+    "Cash value",
+    "Expense experience",
+    "Interest compounding",
+    "Policy in force",
+    "policy",
+    "Premium Reduction",
+    "Policy Loan",
+    "Chen Family Trust",
+    "Paid-Up Insurance",
+    "60 days of lapse",
+    "interest at 6% per annum",
+    "Extended Term Insurance",
+    "reinstatement",
+    "Annual Premium: $3,240",
+    "Guaranteed cash value at end of Year 10: $28,450",
+    "Face Amount",
+    "No further premiums",
+    "Full face amount",
+    "Limited period",
+    "Maximum loan amount",
+    "lapse",
+    "Cash Surrender Value",
+    "Cash Payment",
+    "misstatement of age",
+    "Dividend options",
+    "Stop paying premiums",
+    "Guardian Family Protection Corp.",
+    "7 days",
+    "first two years",
+    "no interest",
+    "Reduced paid-up insurance",
+    "Cash Value Accumulation",
+    "Paid-Up Additions",
+    "Policy No: GFP-WL-2024-8847",
+    "Participating policy",
+    "suicide",
+    "Face Amount: $250,000",
+    "Termination",
+    "Whole Life Insurance Policy",
+    "Sufficient payment",
+    "Guaranteed cash value",
+    "60 days",
+    "Claim documentation",
+    "31 days of notice",
+    "Beneficiary",
+    "Premium Payment Period: To age 100",
+    "Mortality experience",
+    "Guaranteed cash value at end of Year 20: $71,200",
+    "Tax-deferred basis",
+    "face amount",
+    "Investment experience",
+    "Year 20",
+    "Annual dividends",
+    "Dividend",
+    "Reduced death benefit",
+    "3 years",
+    "material misrepresentation",
+    "Attained age",
+    "Effective Date: February 1, 2024",
+    "Three years",
+    "Proof of death",
+    "Cash surrender",
+    "Policy loans",
+    "contestability",
+    "Total indebtedness",
+    "Loan interest",
+    "Boston, Massachusetts",
+    "Non-forfeiture options",
+    "free look period",
+    "David Chen",
+    "Loan interest rate",
+    "Dividend credits",
+    "30 days",
+    "policy loans",
+    "overdue premiums",
+    "Cash surrender value",
+    "two years from the issue date",
+    "Participating Whole Life",
+    "Maturity Date: Age 100 (July 8, 2078)",
+    "premiums paid",
+    "Policy termination",
+    "February 1, 2024",
+    "Extended term insurance",
+    "correct age"
+  ],
+  "relations": [
+    [
+      "Non-forfeiture options",
+      "include",
+      "Extended term insurance"
+    ],
+    [
+      "Guaranteed cash value",
+      "is available at end of",
+      "Year 20"
+    ],
+    [
+      "no interest",
+      "is applied to",
+      "premiums paid in suicide case"
+    ],
+    [
+      "Guardian Family Protection Corp.",
+      "issued on",
+      "February 1, 2024"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "builds cash value according to",
+      "guaranteed schedule shown in the policy values table"
+    ],
+    [
+      "Actual cash value",
+      "increases due to",
+      "Dividend credits"
+    ],
+    [
+      "misstatement of age",
+      "leads to adjustment of",
+      "face amount to what the premium would have purchased at the correct age"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "evidence of insurability"
+    ],
+    [
+      "Extended Term Insurance",
+      "applies when",
+      "no election is made within 60 days of lapse"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has payment frequency",
+      "Payment Frequency: Annual"
+    ],
+    [
+      "Stop paying premiums",
+      "must occur after",
+      "Three years"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has annual premium",
+      "Annual Premium: $3,240"
+    ],
+    [
+      "policy",
+      "is subject to",
+      "suicide exclusion within two years from issue date"
+    ],
+    [
+      "Guardian Family Protection Corp.",
+      "is located in",
+      "Boston, Massachusetts"
+    ],
+    [
+      "Death benefit payment",
+      "is made within",
+      "7 days"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "is of type",
+      "Participating Whole Life"
+    ],
+    [
+      "Policy termination",
+      "requires",
+      "Sufficient payment"
+    ],
+    [
+      "policy",
+      "is subject to",
+      "misstatement of age adjustment"
+    ],
+    [
+      "Guardian Family Protection Corp.",
+      "issued at",
+      "Boston, Massachusetts"
+    ],
+    [
+      "Cash Value Accumulation",
+      "may be higher due to",
+      "Dividend credits"
+    ],
+    [
+      "contestability",
+      "applies only for",
+      "material misrepresentation in the application"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has guaranteed cash value at end of Year 10",
+      "Guaranteed cash value at end of Year 10: $28,450"
+    ],
+    [
+      "Margaret Rose Chen",
+      "has issue age",
+      "45"
+    ],
+    [
+      "free look period",
+      "results in",
+      "full refund of premiums paid"
+    ],
+    [
+      "Participating policy",
+      "allows",
+      "Annual dividends"
+    ],
+    [
+      "reinstatement",
+      "is available within",
+      "3 years of lapse"
+    ],
+    [
+      "Cash Surrender Value",
+      "is defined as",
+      "The amount available if the policy is surrendered, equal to the cash value minus any outstanding loans and surrender charges"
+    ],
+    [
+      "policy",
+      "has a contestability period of",
+      "first two years"
+    ],
+    [
+      "policy",
+      "has a reinstatement period of",
+      "3 years after lapse"
+    ],
+    [
+      "Loan interest rate",
+      "is",
+      "5% per annum"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "payment of overdue premiums with interest at 6% per annum"
+    ],
+    [
+      "contestability",
+      "applies only within",
+      "first two years while the insured is living"
+    ],
+    [
+      "30 days",
+      "is the duration of",
+      "free look period"
+    ],
+    [
+      "Reduced paid-up insurance",
+      "provides",
+      "Reduced death benefit"
+    ],
+    [
+      "Non-forfeiture options",
+      "apply if",
+      "Stop paying premiums"
+    ],
+    [
+      "Annual dividends",
+      "are based on",
+      "Investment experience"
+    ],
+    [
+      "Dividend",
+      "is defined as",
+      "A return of premium that may be declared annually by the Board of Directors based on company experience"
+    ],
+    [
+      "Cash surrender",
+      "pays",
+      "Cash surrender value"
+    ],
+    [
+      "Chen Family Trust",
+      "is contingent beneficiary of",
+      "Whole Life Insurance Policy"
+    ],
+    [
+      "Policy in force",
+      "must be at least",
+      "one full year"
+    ],
+    [
+      "policy",
+      "can lapse",
+      "lapse"
+    ],
+    [
+      "President",
+      "signed",
+      "Guardian Family Protection Corp. policy"
+    ],
+    [
+      "policy",
+      "has a free look period of",
+      "30 days"
+    ],
+    [
+      "Dividend options",
+      "include",
+      "Paid-Up Additions"
+    ],
+    [
+      "two years from the issue date",
+      "is the time limit for",
+      "suicide exclusion"
+    ],
+    [
+      "Total indebtedness",
+      "exceeds",
+      "Cash value"
+    ],
+    [
+      "Margaret Rose Chen",
+      "has date of birth",
+      "July 8, 1978"
+    ],
+    [
+      "Non-forfeiture options",
+      "include",
+      "Reduced paid-up insurance"
+    ],
+    [
+      "Annual dividends",
+      "are based on",
+      "Mortality experience"
+    ],
+    [
+      "Annual dividends",
+      "are based on",
+      "Expense experience"
+    ],
+    [
+      "Guaranteed cash value",
+      "equals",
+      "$71,200"
+    ],
+    [
+      "correct age",
+      "determines",
+      "face amount"
+    ],
+    [
+      "Current selection",
+      "is",
+      "Paid-Up Additions"
+    ],
+    [
+      "60 days",
+      "is the deadline for",
+      "making an election after lapse"
+    ],
+    [
+      "Margaret Rose Chen",
+      "is the insured under",
+      "Whole Life Insurance Policy"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "repayment or reinstatement of policy loans with interest"
+    ],
+    [
+      "Guardian Family Protection Corp.",
+      "issues",
+      "Whole Life Insurance Policy"
+    ],
+    [
+      "evidence of insurability",
+      "must be provided for",
+      "reinstatement"
+    ],
+    [
+      "3 years",
+      "is the maximum time for",
+      "reinstatement"
+    ],
+    [
+      "Interest",
+      "may be paid",
+      "annually"
+    ],
+    [
+      "Dividend options",
+      "include",
+      "Premium Reduction"
+    ],
+    [
+      "suicide",
+      "results in payment of",
+      "premiums paid without interest if death occurs within two years from the issue date"
+    ],
+    [
+      "first two years",
+      "is the time limit for",
+      "contestability"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has maturity date",
+      "Maturity Date: Age 100 (July 8, 2078)"
+    ],
+    [
+      "Annual dividends",
+      "are not",
+      "Guaranteed"
+    ],
+    [
+      "Dividend options",
+      "include",
+      "Accumulate at Interest"
+    ],
+    [
+      "Interest",
+      "may be added to",
+      "loan balance"
+    ],
+    [
+      "David Chen",
+      "is primary beneficiary of",
+      "Whole Life Insurance Policy"
+    ],
+    [
+      "Cash Value Accumulation",
+      "occurs on",
+      "Tax-deferred basis"
+    ],
+    [
+      "material misrepresentation",
+      "can trigger",
+      "contestability"
+    ],
+    [
+      "Death benefit",
+      "equals",
+      "Face Amount + Paid-Up Additions - Policy Loans - Loan Interest"
+    ],
+    [
+      "Reduced paid-up insurance",
+      "is based on",
+      "Attained age"
+    ],
+    [
+      "Automatic application",
+      "applies after",
+      "60 days of lapse"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has effective date",
+      "Effective Date: February 1, 2024"
+    ],
+    [
+      "Cash surrender",
+      "results in",
+      "Termination"
+    ],
+    [
+      "Paid-Up Insurance",
+      "is defined as",
+      "A reduced death benefit with no further premiums required"
+    ],
+    [
+      "Extended Term Insurance",
+      "is automatically applied when",
+      "no election is made within 60 days of lapse"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has guaranteed cash value at end of Year 20",
+      "Guaranteed cash value at end of Year 20: $71,200"
+    ],
+    [
+      "Extended term insurance",
+      "provides",
+      "Full face amount"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has premium payment period",
+      "Premium Payment Period: To age 100"
+    ],
+    [
+      "Margaret Rose Chen",
+      "is in risk class",
+      "Standard Non-Tobacco"
+    ],
+    [
+      "Policy Loan",
+      "is defined as",
+      "A loan made by us using the cash value as collateral"
+    ],
+    [
+      "premiums paid",
+      "are refunded without interest during",
+      "free look period"
+    ],
+    [
+      "Policy loans",
+      "may be taken after",
+      "Policy in force"
+    ],
+    [
+      "No election",
+      "results in",
+      "Automatic application"
+    ],
+    [
+      "Maximum loan amount",
+      "is",
+      "90% of current cash surrender value"
+    ],
+    [
+      "Death benefit",
+      "is paid to",
+      "Beneficiary"
+    ],
+    [
+      "Actual cash value",
+      "may be higher than",
+      "Guaranteed cash value"
+    ],
+    [
+      "free look period",
+      "allows cancellation within",
+      "30 days of receipt"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has face amount",
+      "Face Amount: $250,000"
+    ],
+    [
+      "Dividend options",
+      "include",
+      "Cash Payment"
+    ],
+    [
+      "Claim documentation",
+      "must be complete for",
+      "Death benefit payment"
+    ],
+    [
+      "Reduced paid-up insurance",
+      "is based on",
+      "Cash value"
+    ],
+    [
+      "policy loans",
+      "must be repaid with",
+      "interest"
+    ],
+    [
+      "Extended term insurance",
+      "covers",
+      "Limited period"
+    ],
+    [
+      "Proof of death",
+      "is required for",
+      "Death benefit payment"
+    ],
+    [
+      "Reduced paid-up insurance",
+      "requires",
+      "No further premiums"
+    ],
+    [
+      "Whole Life Insurance Policy",
+      "has policy number",
+      "Policy No: GFP-WL-2024-8847"
+    ],
+    [
+      "Total indebtedness",
+      "leads to",
+      "Policy termination"
+    ],
+    [
+      "face amount",
+      "is adjusted based on",
+      "correct age"
+    ],
+    [
+      "overdue premiums",
+      "must be paid with",
+      "interest at 6% per annum"
+    ],
+    [
+      "application",
+      "can contain",
+      "material misrepresentation"
+    ],
+    [
+      "interest at 6% per annum",
+      "applies to",
+      "overdue premiums"
+    ],
+    [
+      "Non-forfeiture options",
+      "include",
+      "Cash surrender"
+    ],
+    [
+      "February 1, 2024",
+      "is the issue date of",
+      "policy"
+    ],
+    [
+      "Loan interest rate",
+      "is compounded",
+      "annually"
+    ],
+    [
+      "Extended term insurance",
+      "requires",
+      "No further premiums"
+    ],
+    [
+      "Sufficient payment",
+      "must be made within",
+      "31 days of notice"
+    ]
+  ],
+  "edges": [
+    "must be at least",
+    "is compounded",
+    "is paid to",
+    "has payment frequency",
+    "has policy number",
+    "must be provided for",
+    "exceeds",
+    "pays",
+    "increases due to",
+    "is the maximum time for",
+    "may be added to",
+    "determines",
+    "must be made within",
+    "has face amount",
+    "builds cash value according to",
+    "applies when",
+    "is defined as",
+    "may be higher due to",
+    "is contingent beneficiary of",
+    "are refunded without interest during",
+    "is made within",
+    "is subject to",
+    "applies to",
+    "apply if",
+    "is applied to",
+    "can trigger",
+    "is the issue date of",
+    "has a contestability period of",
+    "has date of birth",
+    "can lapse",
+    "has a reinstatement period of",
+    "has maturity date",
+    "covers",
+    "is based on",
+    "must be paid with",
+    "results in",
+    "are not",
+    "applies after",
+    "issues",
+    "is the duration of",
+    "results in payment of",
+    "leads to",
+    "has effective date",
+    "is required for",
+    "may be higher than",
+    "can contain",
+    "is of type",
+    "is located in",
+    "provides",
+    "is primary beneficiary of",
+    "leads to adjustment of",
+    "has issue age",
+    "must be complete for",
+    "may be paid",
+    "signed",
+    "is in risk class",
+    "issued at",
+    "must be repaid with",
+    "has annual premium",
+    "is the time limit for",
+    "include",
+    "allows",
+    "allows cancellation within",
+    "is automatically applied when",
+    "has premium payment period",
+    "requires",
+    "must occur after",
+    "is the deadline for",
+    "is",
+    "has guaranteed cash value at end of Year 10",
+    "issued on",
+    "is available at end of",
+    "equals",
+    "is the insured under",
+    "applies only within",
+    "occurs on",
+    "is adjusted based on",
+    "has a free look period of",
+    "applies only for",
+    "is available within",
+    "may be taken after",
+    "are based on",
+    "has guaranteed cash value at end of Year 20"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

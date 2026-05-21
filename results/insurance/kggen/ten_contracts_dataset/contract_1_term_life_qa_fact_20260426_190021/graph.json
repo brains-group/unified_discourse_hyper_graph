@@ -1,0 +1,557 @@
+{
+  "entities": [
+    "refund of premiums paid",
+    "20 years",
+    "incontestability",
+    "suicide clause",
+    "Monthly automatic deduction",
+    "January 15, 2024",
+    "class of permanent policy selected",
+    "correct sex",
+    "January 15, 2044",
+    "death benefit",
+    "CT 06102",
+    "38 years",
+    "policyholder",
+    "SecureLife Insurance Company",
+    "home office",
+    "15th of each month",
+    "attained age at conversion",
+    "assignment",
+    "$500,000",
+    "Date Issued",
+    "31 days",
+    "claim form",
+    "Primary Beneficiary",
+    "beneficiary",
+    "Lump sum",
+    "policy expiry date",
+    "misstatement of age",
+    "insured",
+    "Grace Period",
+    "conversion privilege",
+    "evidence of insurability",
+    "alternate settlement option",
+    "valid claims",
+    "Sarah Elizabeth Anderson",
+    "Claims Department",
+    "lifetime",
+    "Lucas James Anderson",
+    "P.O. Box 5000",
+    "Premium Due Date",
+    "policy",
+    "30 days",
+    "65th birthday",
+    "monthly",
+    "amount of coverage converted",
+    "validity of assignment",
+    "20-Year Level Term Life Insurance",
+    "premiums",
+    "issue date",
+    "lump sum",
+    "Chief Underwriting Officer",
+    "policy lapse",
+    "Contingent Beneficiary",
+    "written notice",
+    "coverage termination",
+    "grace period",
+    "two years from the issue date",
+    "original policy document",
+    "SL-2024-TRM-00123",
+    "John Michael Anderson",
+    "premiums paid",
+    "Hartford",
+    "March 22, 1985",
+    "certified copy of the death certificate",
+    "misstatement of age or sex",
+    "Policy Anniversary",
+    "$45.00 per month",
+    "permanent life insurance policy",
+    "Emma Grace Anderson",
+    "Death Benefit",
+    "two years",
+    "Policy expiry date",
+    "correct age",
+    "Proof of death"
+  ],
+  "relations": [
+    [
+      "suicide clause",
+      "limits liability to",
+      "refund of premiums paid"
+    ],
+    [
+      "claims",
+      "should be sent to",
+      "Claims Department"
+    ],
+    [
+      "John Michael Anderson",
+      "has premium amount",
+      "$45.00 per month"
+    ],
+    [
+      "premium",
+      "not paid by end of grace period",
+      "policy lapse"
+    ],
+    [
+      "claims",
+      "should be sent to",
+      "CT 06102"
+    ],
+    [
+      "policy",
+      "is issued by",
+      "SecureLife Insurance Company"
+    ],
+    [
+      "SecureLife Insurance Company",
+      "requires proof of death",
+      "Proof of death"
+    ],
+    [
+      "John Michael Anderson",
+      "is age at issue",
+      "38 years"
+    ],
+    [
+      "policy",
+      "is subject to",
+      "incontestability"
+    ],
+    [
+      "Lucas James Anderson",
+      "is contingent beneficiary",
+      "John Michael Anderson"
+    ],
+    [
+      "conversion",
+      "must occur before",
+      "policy expiry date"
+    ],
+    [
+      "Proof of death",
+      "must be received by insurer",
+      "SecureLife Insurance Company"
+    ],
+    [
+      "premium for new policy",
+      "is based on",
+      "class of permanent policy selected"
+    ],
+    [
+      "Emma Grace Anderson",
+      "is contingent beneficiary",
+      "John Michael Anderson"
+    ],
+    [
+      "Grace Period",
+      "allows continued coverage without lapse",
+      "20-Year Level Term Life Insurance"
+    ],
+    [
+      "assignment",
+      "requires",
+      "written notice"
+    ],
+    [
+      "assignment",
+      "can be made by",
+      "policyholder"
+    ],
+    [
+      "John Michael Anderson",
+      "has death benefit",
+      "$500,000"
+    ],
+    [
+      "premiums",
+      "are due on",
+      "15th of each month"
+    ],
+    [
+      "Sarah Elizabeth Anderson",
+      "is primary beneficiary",
+      "John Michael Anderson"
+    ],
+    [
+      "assignment",
+      "is not binding on",
+      "SecureLife Insurance Company"
+    ],
+    [
+      "Policy Anniversary",
+      "means same day and month as issue date",
+      "January 15, 2024"
+    ],
+    [
+      "policy",
+      "allows",
+      "assignment"
+    ],
+    [
+      "Date Issued",
+      "is",
+      "January 15, 2024"
+    ],
+    [
+      "Chief Underwriting Officer",
+      "authorizes",
+      "policy"
+    ],
+    [
+      "written notice",
+      "must be sent to",
+      "home office"
+    ],
+    [
+      "John Michael Anderson",
+      "has policy number",
+      "SL-2024-TRM-00123"
+    ],
+    [
+      "Death Benefit",
+      "is paid in one lump sum",
+      "Lump sum"
+    ],
+    [
+      "Death Benefit",
+      "means amount payable to beneficiary",
+      "Sarah Elizabeth Anderson"
+    ],
+    [
+      "incontestability",
+      "cannot be contested after",
+      "two years from issue date"
+    ],
+    [
+      "claims",
+      "should be sent to",
+      "P.O. Box 5000"
+    ],
+    [
+      "Premium Due Date",
+      "means the 15th day of each month",
+      "Monthly automatic deduction"
+    ],
+    [
+      "premium for new policy",
+      "is based on",
+      "attained age at conversion"
+    ],
+    [
+      "conversion",
+      "must occur before",
+      "65th birthday"
+    ],
+    [
+      "John Michael Anderson",
+      "is insured person",
+      "SecureLife Insurance Company"
+    ],
+    [
+      "policyholder",
+      "may perform",
+      "assignment"
+    ],
+    [
+      "Sarah Elizabeth Anderson",
+      "is spouse of",
+      "John Michael Anderson"
+    ],
+    [
+      "policy",
+      "is subject to",
+      "misstatement of age or sex"
+    ],
+    [
+      "claim form",
+      "must be submitted for",
+      "death benefit"
+    ],
+    [
+      "incontestability",
+      "applies after",
+      "two years from the issue date"
+    ],
+    [
+      "Death Benefit",
+      "is payable upon death of",
+      "John Michael Anderson"
+    ],
+    [
+      "conversion privilege",
+      "does not require",
+      "evidence of insurability"
+    ],
+    [
+      "misstatement of age or sex",
+      "leads to adjustment based on",
+      "premiums paid"
+    ],
+    [
+      "premium",
+      "has grace period of",
+      "31 days"
+    ],
+    [
+      "John Michael Anderson",
+      "has issue date",
+      "January 15, 2024"
+    ],
+    [
+      "claims",
+      "should be sent to",
+      "Hartford"
+    ],
+    [
+      "validity of assignment",
+      "depends on",
+      "written notice"
+    ],
+    [
+      "incontestability",
+      "applies during",
+      "lifetime"
+    ],
+    [
+      "incontestability",
+      "applies after",
+      "two years"
+    ],
+    [
+      "policy lapse",
+      "results in",
+      "coverage termination"
+    ],
+    [
+      "John Michael Anderson",
+      "has date of birth",
+      "March 22, 1985"
+    ],
+    [
+      "misstatement of age or sex",
+      "results in adjustment of",
+      "death benefit"
+    ],
+    [
+      "John Michael Anderson",
+      "has premium payment mode",
+      "Monthly automatic deduction"
+    ],
+    [
+      "misstatement of age or sex",
+      "adjusts death benefit to what",
+      "premiums paid would have purchased at correct age and sex"
+    ],
+    [
+      "conversion privilege",
+      "allows conversion to",
+      "permanent life insurance policy"
+    ],
+    [
+      "SecureLife Insurance Company",
+      "issues policy",
+      "SL-2024-TRM-00123"
+    ],
+    [
+      "written notice",
+      "must be received by",
+      "SecureLife Insurance Company"
+    ],
+    [
+      "certified copy of the death certificate",
+      "must be submitted for",
+      "death benefit"
+    ],
+    [
+      "original policy document",
+      "must be submitted for",
+      "death benefit"
+    ],
+    [
+      "suicide clause",
+      "applies if",
+      "insured commits suicide within two years from the issue date"
+    ],
+    [
+      "misstatement of age",
+      "is a general provision",
+      "in the policy"
+    ],
+    [
+      "John Michael Anderson",
+      "has policy type",
+      "20-Year Level Term Life Insurance"
+    ],
+    [
+      "John Michael Anderson",
+      "has policy expiry date",
+      "January 15, 2044"
+    ],
+    [
+      "death benefit",
+      "is paid in",
+      "lump sum"
+    ],
+    [
+      "SecureLife Insurance Company",
+      "is not responsible for",
+      "validity of assignment"
+    ],
+    [
+      "Lucas James Anderson",
+      "is son of",
+      "John Michael Anderson"
+    ],
+    [
+      "premium for new policy",
+      "is based on",
+      "amount of coverage converted"
+    ],
+    [
+      "Death Benefit",
+      "is payable during policy term",
+      "20-Year Level Term Life Insurance"
+    ],
+    [
+      "Emma Grace Anderson",
+      "is daughter of",
+      "John Michael Anderson"
+    ],
+    [
+      "SecureLife Insurance Company",
+      "maintains policy during grace period",
+      "Grace Period"
+    ],
+    [
+      "claims",
+      "should be sent to",
+      "SecureLife Insurance Company"
+    ],
+    [
+      "beneficiary",
+      "can choose",
+      "alternate settlement option"
+    ],
+    [
+      "incontestability",
+      "starts from",
+      "issue date"
+    ],
+    [
+      "grace period",
+      "allows continued",
+      "coverage"
+    ],
+    [
+      "John Michael Anderson",
+      "is policy owner",
+      "SecureLife Insurance Company"
+    ],
+    [
+      "policy",
+      "is issued on",
+      "Date Issued"
+    ],
+    [
+      "John Michael Anderson",
+      "has policy term",
+      "20 years"
+    ],
+    [
+      "valid claims",
+      "are paid within",
+      "30 days"
+    ],
+    [
+      "Grace Period",
+      "means 31-day period following premium due date",
+      "Premium Due Date"
+    ],
+    [
+      "Policy expiry date",
+      "is the date when policy term ends",
+      "January 15, 2044"
+    ],
+    [
+      "SecureLife Insurance Company",
+      "pays death benefit",
+      "Sarah Elizabeth Anderson"
+    ]
+  ],
+  "edges": [
+    "must be sent to",
+    "allows continued coverage without lapse",
+    "requires proof of death",
+    "adjusts death benefit to what",
+    "is based on",
+    "is paid in one lump sum",
+    "allows conversion to",
+    "is the date when policy term ends",
+    "is son of",
+    "is contingent beneficiary",
+    "is payable upon death of",
+    "depends on",
+    "has policy expiry date",
+    "can be made by",
+    "is paid in",
+    "not paid by end of grace period",
+    "is age at issue",
+    "has premium amount",
+    "results in",
+    "means 31-day period following premium due date",
+    "can choose",
+    "allows",
+    "applies after",
+    "has grace period of",
+    "has policy number",
+    "is subject to",
+    "is issued on",
+    "is not binding on",
+    "means the 15th day of each month",
+    "applies if",
+    "is insured person",
+    "issues policy",
+    "requires",
+    "should be sent to",
+    "cannot be contested after",
+    "has policy term",
+    "is",
+    "must be received by insurer",
+    "limits liability to",
+    "is not responsible for",
+    "has premium payment mode",
+    "must be submitted for",
+    "is a general provision",
+    "is policy owner",
+    "has death benefit",
+    "is issued by",
+    "must occur before",
+    "authorizes",
+    "may perform",
+    "is payable during policy term",
+    "are due on",
+    "has date of birth",
+    "is daughter of",
+    "does not require",
+    "has issue date",
+    "is primary beneficiary",
+    "applies during",
+    "results in adjustment of",
+    "allows continued",
+    "maintains policy during grace period",
+    "are paid within",
+    "pays death benefit",
+    "means same day and month as issue date",
+    "starts from",
+    "means amount payable to beneficiary",
+    "must be received by",
+    "is spouse of",
+    "leads to adjustment based on",
+    "has policy type"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

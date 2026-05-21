@@ -1,0 +1,1923 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;2.3 Beneficiaries must submit: • Certified death certificate • Completed claim form • Government-issued ID&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Conversion available: At any time before the policy expires, OR Before the insured's 65th birthday, whichever is earlier.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Type: 20-Year Return of Premium Term Life&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;No war, aviation, travel, or hazardous activity exclusions apply.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy loans are NOT available under this policy type.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If death occurs during the term, beneficiaries receive: Full death benefit ($300,000), PLUS A proportional premium refund based on the early surrender schedule above.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death Benefit: $300,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Partial withdrawals are NOT permitted.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Missed premiums cannot be made up. If a premium is paid late (during grace period), the ROP benefit is reduced by 10% for each late payment.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Marco Daniel Martinez (Son) - 50%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The ROP benefit is NOT considered a taxable gain when paid (consult your tax advisor).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Minimum conversion amount: $50,000; Maximum conversion amount: $300,000 (current face amount).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy does NOT build cash value that can be borrowed against during the term.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Upon reinstatement, the ROP benefit is recalculated to exclude the lapsed period.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Name: Nicole Christine Martinez&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the policy lapses, you may apply for reinstatement within 5 years if: • You provide satisfactory evidence of insurability • You pay all past due premiums with interest at 6% per annum • The insured is still alive&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Example: If death occurs in Year 8, beneficiaries receive: $300,000 death benefit + (30% × $12,960 premiums paid) = $300,000 + $3,888 = $303,888.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Term: 20 years (ending September 15, 2044)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.1 This is a Return of Premium (ROP) Term Life Insurance Policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy costs more than standard term life insurance because of the return of premium feature.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Upon conversion: New policy premium based on attained age; ROP benefit is forfeited; Premiums paid to date are&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Date of Birth: April 7, 1988&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Annual Premium: $1,620&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;ROP payments are made within 60 days of the applicable date.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the insured dies by suicide within 24 months of the issue date, we will pay only the premiums paid without interest. No death benefit is payable.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Changes must be submitted in writing to our home office.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.2 UNIQUE FEATURE: If the insured survives the 20-year term and all premiums have been paid, we will return 100% of all premiums paid ($32,400) to the policy owner.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;A new 2-year suicide and contestability period begins upon reinstatement.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy No: VG-ROP-2024-4183&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Gender: Female&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;• ROP benefit is forfeited&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;• Premiums paid to date are NOT returned&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Annual premium of $1,620 is due each September 15.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium Mode: Annual&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;For questions or service, contact: ValueGuard Life Insurance Company, Customer Service: 1-800-VALUE-GUARD, Email: service@valueguardlife.com.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;• New policy premium based on attained age&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.3 This policy combines: • Life insurance protection during the term • Return of all premiums if you outlive the term • Option to convert to permanent insurance&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;As policy owner, you may: Change beneficiaries at any time, Convert to permanent insurance, Assign the policy as collateral, Surrender the policy for the applicable ROP percentage.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Issued: September 15, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Age at Issue: 36&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;As policy owner, you may: • Change beneficiaries at any time&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Maximum conversion amount: $300,000 (current face amount)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premiums are LEVEL and will not increase during the term.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Return of Premium at End of Term: $32,400 (if policy maintained)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.1 If the insured dies during the policy term while the policy is in force, we will pay $300,000 to the beneficiary.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Date: September 15, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;President, ValueGuard Life Insurance Company&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the insured is alive on September 15, 2044, and all premiums have been paid, we will pay the policy owner $32,400 (100% of premiums paid over 20 years).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Smoker Status: Non-Smoker&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The only way to access cash value is through: • Full surrender (with applicable ROP percentage), OR • Waiting until end of term for full ROP payment&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;CRITICAL: To receive the full return of premium at end of term, ALL premiums must be paid on time.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary: Carlos Roberto Martinez (Husband) - 100%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;We may contest the policy within 2 years of issue if there was material misrepresentation in the application.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If age was misstated, we will adjust the death benefit to what the premium would have purchased at the correct age. ROP amount is not affected.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.2 The death benefit is payable in addition to any proportional premium refund (see Section 3).&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Executed at Minneapolis, Minnesota&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Rating: Preferred Plus&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Contingent: Sofia Isabella Martinez (Daughter) - 50%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Grace period: 31 days. If premium is not paid within grace period, policy lapses and return of premium benefit is forfeited.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;MINNESOTA&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Minnesota is the state where the document was executed."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;MISSTATED AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEMOGRAPHIC TERM"</data>
+  <data key="d4">"If the insured's age was misstated, the death benefit is adjusted to reflect the correct age."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;LATE PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"A payment made during the grace period, which triggers a reduction in the ROP benefit."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;PREMIUMS PAID WITHOUT INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"In the case of suicide within 24 months, only the premiums paid (without interest) are returned."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;PROPORTIONAL PREMIUM REFUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONDITION"</data>
+  <data key="d4">"A refund of a percentage of premiums paid, based on the early surrender schedule, paid to beneficiaries upon death."&lt;SEP&gt;"A refund of a portion of premiums based on time of death."&lt;SEP&gt;"A refund of a portion of premiums paid, depending on the time of death, if applicable."&lt;SEP&gt;"Refund of a portion of premiums based on time of death."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;CARLOS ROBERTO MARTINEZ&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The primary beneficiary of the policy, designated as the husband of the insured."&lt;SEP&gt;"The primary beneficiary, husband of the insured."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;CONVERSION AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The maximum amount that can be converted under the policy is $300,000, based on the current face amount."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;CORRECT AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEMOGRAPHIC TERM"</data>
+  <data key="d4">"The death benefit is adjusted based on the correct age of the insured."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;ROP BENEFIT REDUCED BY 10% PER LATE PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONSEQUENCE"</data>
+  <data key="d4">"A penalty applied to the return of premium benefit for each late payment."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Material misrepresentation in the application allows the insurer to contest the policy within 2 years of issue."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;EARLY SURRENDER SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL SCHEDULE"</data>
+  <data key="d4">"The schedule that determines the percentage of premiums returned based on the number of years the policy has been in force."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;HUSBAND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"Carlos Roberto Martinez is the husband of the insured."&lt;SEP&gt;"The relationship between Carlos Roberto Martinez and Nicole Christine Martinez."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;$300,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_AMOUNT"</data>
+  <data key="d4">"Death benefit."&lt;SEP&gt;"The amount payable to the beneficiary upon the death of the insured during the policy term."&lt;SEP&gt;"The death benefit amount payable to the beneficiary."&lt;SEP&gt;"The death benefit paid to the beneficiary if the insured dies during the policy term."&lt;SEP&gt;"The death benefit."&lt;SEP&gt;"The full death benefit paid to beneficiaries upon the insured's death."&lt;SEP&gt;"The maximum amount that can be converted to a permanent policy, equal to the current face amount."&lt;SEP&gt;"The maximum conversion amount is $300,000."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0&lt;SEP&gt;chunk-199ba25da5f9272ae08e1cf8f711cca1&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;PREMIUM WOULD HAVE PURCHASED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The death benefit is adjusted to what the premium would have purchased at the correct age."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;CONVERSION PRIVILEGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROVISION"</data>
+  <data key="d4">"A provision allowing the policyholder to convert the policy to a permanent life insurance policy without providing proof of insurability."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;CONTESTABILITY PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The policy may be contested within 2 years of issue due to material misrepresentation."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;MINNEAPOLIS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"Minneapolis is the city where the document was executed."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;YEAR 8&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The year in which death occurs, resulting in a 30% refund of premiums paid."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;SOFIA ISABELLA MARTINEZ&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"A contingent beneficiary, daughter of the insured, entitled to 50% of the benefit if the primary beneficiary predeceases the insured."&lt;SEP&gt;"A contingent beneficiary, daughter of the insured."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;CURRENT FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The conversion amount is based on the current face amount of the policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;ROP AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The ROP amount is not affected by age misstatement."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;PERMANENT LIFE INSURANCE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"A type of life insurance that provides lifelong coverage and may accumulate cash value."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;2 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The contestability period is 2 years from the issue date."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;$12,960&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The total premiums paid over 8 years, calculated as $1,620 × 8."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;DAUGHTER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"Sofia Isabella Martinez is the daughter of the insured."&lt;SEP&gt;"The relationship between Sofia Isabella Martinez and Nicole Christine Martinez."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;NEW POLICY PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The new policy premium after conversion is determined based on the attained age of the insured."&lt;SEP&gt;"The premium for the converted permanent policy, determined by the insured's attained age at conversion."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;CHANGE BENEFICIARIES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The policy owner may change beneficiaries at any time."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;WITHOUT EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"A requirement that the policyholder does not need to prove they are insurable to convert."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;WAR EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY EXCLUSION"</data>
+  <data key="d4">"No exclusions related to war apply to this policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;30% × $12,960&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CALCULATION"</data>
+  <data key="d4">"The proportional premium refund for death in Year 8, calculated as 30% of $12,960."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;MARCO DANIEL MARTINEZ&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"A contingent beneficiary, son of the insured, entitled to 50% of the benefit if the primary beneficiary predeceases the insured."&lt;SEP&gt;"A contingent beneficiary, son of the insured."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;VALUEGUARD LIFE INSURANCE COMPANY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The insurance company issuing the policy."&lt;SEP&gt;"The insurer issuing the policy."&lt;SEP&gt;"The issuing insurance company."&lt;SEP&gt;"ValueGuard Life Insurance Company is a life insurance provider offering policy services and customer support."&lt;SEP&gt;"ValueGuard Life Insurance Company is the issuing organization of the policy document."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6&lt;SEP&gt;chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;END OF TERM ROP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROVISION"</data>
+  <data key="d4">"A provision that pays the policy owner $32,400 (100% of premiums paid over 20 years) if the insured is alive on September 15, 2044, and all premiums have been paid."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;CONVERSION AVAILABLE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROVISION"</data>
+  <data key="d4">"The time window during which conversion is permitted."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;AVIATION EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY EXCLUSION"</data>
+  <data key="d4">"No exclusions related to aviation apply to this policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;$3,888&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The amount of the proportional premium refund for death in Year 8."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;SON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"Marco Daniel Martinez is the son of the insured."&lt;SEP&gt;"The relationship between Marco Daniel Martinez and Nicole Christine Martinez."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;SEPTEMBER 15, 2044&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Policy end date."&lt;SEP&gt;"The date by which the insured must be alive for the End of Term ROP to apply."&lt;SEP&gt;"The end date of the policy term, when the return of premium provision is triggered."&lt;SEP&gt;"The end date of the policy term."&lt;SEP&gt;"The policy end date."&lt;SEP&gt;"The policy expiration date."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;POLICY EXPIRES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The end of the term, after which conversion is no longer available."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;TRAVEL EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY EXCLUSION"</data>
+  <data key="d4">"No exclusions related to travel apply to this policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;$303,888&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The total amount received by beneficiaries in the example: $300,000 death benefit plus $3,888 refund."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;RETURN OF PREMIUM (ROP) TERM LIFE INSURANCE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of life insurance policy that returns all premiums paid if the insured survives the term."&lt;SEP&gt;"A type of term life insurance that returns all paid premiums if the insured survives the term."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;$32,400&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_AMOUNT"</data>
+  <data key="d4">"The amount paid to the policy owner under the End of Term ROP provision."&lt;SEP&gt;"The total amount of premiums returned to the policy owner if the insured survives the 20-year term and all premiums are paid."&lt;SEP&gt;"The total amount returned to the policy owner if the insured survives the term and all premiums are paid."&lt;SEP&gt;"The total return of premiums if the insured survives the term."&lt;SEP&gt;"The total return of premiums."&lt;SEP&gt;"Total return of premiums."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;INSURED'S 65TH BIRTHDAY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The age by which conversion must occur, whichever comes first."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;HAZARDOUS ACTIVITY EXCLUSIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY EXCLUSION"</data>
+  <data key="d4">"No exclusions related to hazardous activities apply to this policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;ROP PAYMENTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"Payments made under the Return of Premium provisions, delivered within 60 days of the applicable date."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;100% OF ALL PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONDITION"</data>
+  <data key="d4">"The condition under which the policy returns all premiums paid to the policy owner."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;ATTAINED AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEMOGRAPHIC TERM"</data>
+  <data key="d4">"The age of the insured at the time of conversion, used to calculate the new premium."&lt;SEP&gt;"The new policy premium is based on the insured's attained age at the time of conversion."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;20 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"Term length of the policy."&lt;SEP&gt;"The length of the policy term, from September 15, 2024, to September 15, 2044."&lt;SEP&gt;"The policy term is 20 years."&lt;SEP&gt;"The term length of the policy."&lt;SEP&gt;"The term over which premiums are paid to qualify for the full return of premium."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;WHICHEVER IS EARLIER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"A rule that limits conversion to the earlier of the policy expiration or the insured's 65th birthday."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;POLICY LAPSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"A policy lapse occurs when premiums are not paid, leading to loss of coverage."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;60 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The time frame within which ROP payments are made after the applicable date."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;LIFE INSURANCE PROTECTION DURING THE TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_FEATURE"</data>
+  <data key="d4">"A core feature of the policy providing death benefit coverage for the 20-year term."&lt;SEP&gt;"A feature providing death benefit coverage."&lt;SEP&gt;"Provides death benefit during the term."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;RETURN OF PREMIUM AT END OF TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_FEATURE"</data>
+  <data key="d4">"A feature of the policy that returns 100% of all premiums paid if the insured survives the term."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;ROP BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The ROP benefit is not considered a taxable gain when paid."&lt;SEP&gt;"The Return of Premium (ROP) benefit is forfeited upon conversion."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The total amount of premiums paid over 20 years, which determines the return of premium amount."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;MINIMUM CONVERSION AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL LIMIT"</data>
+  <data key="d4">"The lowest amount that can be converted to a permanent policy: $50,000."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;PERMANENT INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"Permanent insurance is a type of life insurance that provides coverage for the entire lifetime of the insured and includes a cash value component."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;REINSTATEMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"Reinstatement is the process of restoring a lapsed policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;APPLICABLE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date triggering the ROP payment, such as the end of term, surrender date, or death date."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;RETURN OF ALL PREMIUMS IF YOU OUTLIVE THE TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_FEATURE"</data>
+  <data key="d4">"A feature returning all paid premiums."&lt;SEP&gt;"A feature that returns all premiums paid if the insured survives the policy term."&lt;SEP&gt;"Returns all premiums paid if the insured survives."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;CUSTOMER SERVICE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SERVICE"</data>
+  <data key="d4">"Customer Service is a support function provided by ValueGuard Life Insurance Company, accessible via phone and email."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;EARLY SURRENDER ROP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROVISION"</data>
+  <data key="d4">"A provision that determines the percentage of premiums returned if the policy is surrendered before the end of the term, based on the number of years the policy has been in force."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;MAXIMUM CONVERSION AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL LIMIT"</data>
+  <data key="d4">"The highest amount that can be converted to a permanent policy: $300,000."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;5 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"Reinstatement can be applied for within 5 years of policy lapse."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;ANNUAL PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The yearly payment of $1,620 required to maintain the policy."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;OPTION TO CONVERT TO PERMANENT INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_FEATURE"</data>
+  <data key="d4">"A feature allowing conversion to permanent life insurance."&lt;SEP&gt;"A feature allowing the policyholder to convert the term policy into a permanent life insurance policy without further underwriting."&lt;SEP&gt;"Allows conversion to permanent life insurance."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;PREMIUMS PAID TO DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The premiums paid up to the time of conversion are not returned."&lt;SEP&gt;"The total premiums already paid on the original policy, which are not refunded but are not carried forward as a benefit."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;YEARS 1-5&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The period during which surrendering the policy results in 0% return of premiums."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;$50,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"MONETARY VALUE"</data>
+  <data key="d4">"The minimum amount that can be converted to a permanent policy."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT TYPE"</data>
+  <data key="d4">"Satisfactory evidence of insurability must be provided to reinstate the policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;$1,620&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_AMOUNT"</data>
+  <data key="d4">"Annual premium."&lt;SEP&gt;"The annual amount due for the policy."&lt;SEP&gt;"The annual cost of the policy premium."&lt;SEP&gt;"The annual premium amount."&lt;SEP&gt;"The annual premium."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The individual(s) designated to receive the death benefit."&lt;SEP&gt;"The individual(s) who receive the death benefit."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;POLICY LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"Policy loans are not available for this type of policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;ROP BENEFIT IS FORFEITED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONSEQUENCE"</data>
+  <data key="d4">"The loss of the return of premium benefit upon conversion."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;PAST DUE PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"All past due premiums must be paid to reinstate the policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;SEPTEMBER 15&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date each year by which the annual premium is due."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;CERTIFIED DEATH CERTIFICATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A legal document required to claim the death benefit."&lt;SEP&gt;"A legal document required to verify the death of the insured."&lt;SEP&gt;"Required to verify death."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;THIS POLICY TYPE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY TYPE"</data>
+  <data key="d4">"This policy type does not allow for policy loans."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;YEARS 6-10&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The period during which surrendering the policy results in 30% return of premiums."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;VG-ROP-2024-4183&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_NUMBER"</data>
+  <data key="d4">"A unique identifier for the Return of Premium Term Life Insurance Policy."&lt;SEP&gt;"The unique policy identifier."&lt;SEP&gt;"Unique policy identifier."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;POLICY AS COLLATERAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL INSTRUMENT"</data>
+  <data key="d4">"The policy can be assigned as collateral for a loan or financial obligation."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;INTEREST AT 6% PER ANNUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"Interest at 6% per annum is applied to past due premiums during reinstatement."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;LEVEL PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Premiums that remain constant throughout the term and do not increase."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;COMPLETED CLAIM FORM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A form required to initiate a death benefit claim."&lt;SEP&gt;"A form that must be filled out and submitted to initiate a death benefit claim."&lt;SEP&gt;"Required to file a claim."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;PARTIAL WITHDRAWALS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"Partial withdrawals are not allowed under this policy."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;YEARS 11-15&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The period during which surrendering the policy results in 60% return of premiums."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;20-YEAR RETURN OF PREMIUM TERM LIFE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of life insurance policy that provides coverage for 20 years and returns all premiums paid if the insured survives the term."&lt;SEP&gt;"A type of term life insurance with a return of premiums."&lt;SEP&gt;"Term life insurance with return of premiums."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;BENEFICIARIES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"Beneficiaries are individuals or entities designated to receive policy benefits upon the policyholder's death."&lt;SEP&gt;"Beneficiaries can be changed by the policy owner at any time."&lt;SEP&gt;"The individuals who receive the death benefit and premium refund upon the insured's death."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6&lt;SEP&gt;chunk-199ba25da5f9272ae08e1cf8f711cca1&lt;SEP&gt;chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;INSURED IS STILL ALIVE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"The insured must still be alive to qualify for reinstatement."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The 20-year period during which premiums remain level."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;GOVERNMENT-ISSUED ID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"An official ID required for claim verification."&lt;SEP&gt;"An official identification document issued by a government authority."&lt;SEP&gt;"Required for identity verification."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;CASH VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The cash value of the policy can only be accessed through full surrender or waiting until the end of the term for full ROP payment."&lt;SEP&gt;"This policy does not build cash value during the term."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;YEARS 16-19&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The period during which surrendering the policy results in 90% return of premiums."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;NICOLE CHRISTINE MARTINEZ&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The insured individual under the policy, a female born on April 7, 1988, with a Preferred Plus rating."&lt;SEP&gt;"The insured individual under the policy."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;HOME OFFICE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The home office is the central administrative office responsible for processing policy changes."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;ROP BENEFIT RECALCULATED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"After reinstatement, the ROP benefit is recalculated to exclude the lapsed period."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;FULL RETURN OF PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The 100% return of premiums paid, available only if all premiums are paid on time."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;ALL PREMIUMS HAVE BEEN PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONDITION"</data>
+  <data key="d4">"A condition required for the return of premiums."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;PRESIDENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The President is an executive officer of ValueGuard Life Insurance Company responsible for overseeing company operations."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;YEAR 20&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The final year of the term, during which surrendering the policy results in 100% return of premiums."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;APRIL 7, 1988&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The birth date of the insured, Nicole Christine Martinez."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;LAPSED PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The lapsed period is excluded from the ROP benefit calculation upon reinstatement."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;ALL PREMIUMS MUST BE PAID ON TIME&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"A requirement for qualifying for the full return of premium at the end of the term."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;RETURN OF PREMIUM PROVISION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_FEATURE"</data>
+  <data key="d4">"A clause enabling return of premiums upon survival."&lt;SEP&gt;"A clause in the policy that allows for the return of all paid premiums if the insured survives the term."&lt;SEP&gt;"Clause enabling return of premiums upon survival."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;1-800-VALUE-GUARD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONTACT INFORMATION"</data>
+  <data key="d4">"1-800-VALUE-GUARD is the toll-free phone number for contacting ValueGuard Life Insurance Company's customer service."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;0% PREMIUM RETURN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The return of premium when surrendering the policy in Years 1-5."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;ROP PERCENTAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"ROP stands for Return of Premium, and the applicable percentage refers to the portion of premiums returned if the policy is surrendered."&lt;SEP&gt;"The ROP percentage applies when the policy is surrendered fully."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6&lt;SEP&gt;chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;SEPTEMBER 15, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Policy issuance date."&lt;SEP&gt;"September 15, 2024 is the date on which the document was executed."&lt;SEP&gt;"The date the policy was issued."&lt;SEP&gt;"The policy issuance date."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6&lt;SEP&gt;chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;GRACE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"A 31-day window after the due date during which a late premium can be paid without penalty."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;30% OF PREMIUMS PAID RETURNED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The return of premium when surrendering the policy in Years 6-10."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;FULL SURRENDER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"Full surrender is one method to access cash value, subject to an applicable ROP percentage."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;FEMALE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"GENDER"</data>
+  <data key="d4">"The gender of the insured, Nicole Christine Martinez."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;POLICY OWNER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The individual who owns the policy and is entitled to receive the return of premiums."&lt;SEP&gt;"The individual who owns the policy."&lt;SEP&gt;"The policy owner has the right to change beneficiaries at any time."&lt;SEP&gt;"The policy owner has the right to change beneficiaries, convert to permanent insurance, assign the policy as collateral, or surrender the policy for the applicable ROP percentage."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6&lt;SEP&gt;chunk-ca51dc15ca1d4c642c64ecef44f3c6a0&lt;SEP&gt;chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;NEW 2-YEAR SUICIDE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A new 2-year suicide exclusion period begins upon reinstatement."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;31 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The length of the grace period."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;END OF TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The other method to access cash value is by waiting until the end of the term for full ROP payment."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;60% OF PREMIUMS PAID RETURNED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The return of premium when surrendering the policy in Years 11-15."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;36&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age of the insured at the time the policy was issued."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;NEW CONTESTABILITY PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A new 2-year contestability period begins upon reinstatement."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;BORROW AGAINST DURING THE TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"The policy does not allow borrowing against cash value during the term."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;SUICIDE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"If the insured dies by suicide within 24 months of the issue date, the death benefit is not payable."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;90% OF PREMIUMS PAID RETURNED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The return of premium when surrendering the policy in Years 16-19."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;NON-SMOKER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"HEALTH_STATUS"</data>
+  <data key="d4">"The insured does not smoke."&lt;SEP&gt;"The insured's smoking status, indicating they do not smoke."&lt;SEP&gt;"The insured's smoking status."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;CHANGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"Changes to the policy must be submitted in writing to the home office."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;STANDARD TERM LIFE INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY TYPE"</data>
+  <data key="d4">"This policy is more expensive than standard term life insurance."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;POLICY LAPSES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The termination of the policy if the premium is not paid within the grace period."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;24 MONTHS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The suicide exclusion applies within 24 months of the issue date."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;100% OF PREMIUMS PAID RETURNED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The return of premium when surrendering the policy in Year 20."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;RETURN OF PREMIUM FEATURE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY FEATURE"</data>
+  <data key="d4">"The return of premium feature is the reason this policy costs more."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;RETURN OF PREMIUM BENEFIT IS FORFEITED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OUTCOME"</data>
+  <data key="d4">"The loss of the right to receive a return of premiums if the policy lapses."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;SERVICE@VALUEGUARDLIFE.COM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONTACT INFORMATION"</data>
+  <data key="d4">"service@valueguardlife.com is the email address for contacting ValueGuard Life Insurance Company's customer service."</data>
+  <data key="d2">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</node>
+<node id="&quot;DEATH DURING TERM ROP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROVISION"</data>
+  <data key="d4">"A provision that provides beneficiaries with the full death benefit and a proportional premium refund based on the early surrender schedule if the insured dies during the term."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;PREFERRED PLUS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RATING_CLASS"</data>
+  <data key="d4">"A health rating indicating excellent health."&lt;SEP&gt;"A premium rating classification indicating the insured is in excellent health and qualifies for the lowest available premiums."&lt;SEP&gt;"A premium rating for individuals in excellent health."&lt;SEP&gt;"Excellent health rating."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;TAXABLE GAIN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The ROP benefit is not treated as a taxable gain."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;MISSED PREMIUMS CANNOT BE MADE UP&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY RULE"</data>
+  <data key="d4">"A rule stating that late payments cannot be corrected after the grace period."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;ISSUE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The suicide exclusion period begins on the issue date."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<node id="&quot;FULL DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The $300,000 payout to beneficiaries upon the insured's death during the term."</data>
+  <data key="d2">chunk-76f7968940652a9b1983b6200ac06471</data>
+</node>
+<node id="&quot;ANNUAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT_FREQUENCY"</data>
+  <data key="d4">"Premiums are paid once per year."&lt;SEP&gt;"Premiums paid annually."&lt;SEP&gt;"The frequency of premium payments, which is once per year."&lt;SEP&gt;"The frequency of premium payments."</data>
+  <data key="d2">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</node>
+<node id="&quot;TAX ADVISOR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROFESSIONAL"</data>
+  <data key="d4">"Policyholders are advised to consult a tax advisor regarding the tax implications of ROP payments."</data>
+  <data key="d2">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;2.3 Beneficiaries must submit: • Certified death certificate • Completed claim form • Government-issued ID&quot;" target="&quot;CERTIFIED DEATH CERTIFICATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.3 Beneficiaries must submit: • Certified death certificate • Completed claim form • Government-issued ID&quot;" target="&quot;COMPLETED CLAIM FORM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.3 Beneficiaries must submit: • Certified death certificate • Completed claim form • Government-issued ID&quot;" target="&quot;GOVERNMENT-ISSUED ID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Conversion available: At any time before the policy expires, OR Before the insured's 65th birthday, whichever is earlier.&quot;" target="&quot;CONVERSION AVAILABLE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Conversion available: At any time before the policy expires, OR Before the insured's 65th birthday, whichever is earlier.&quot;" target="&quot;POLICY EXPIRES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Conversion available: At any time before the policy expires, OR Before the insured's 65th birthday, whichever is earlier.&quot;" target="&quot;INSURED'S 65TH BIRTHDAY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Conversion available: At any time before the policy expires, OR Before the insured's 65th birthday, whichever is earlier.&quot;" target="&quot;WHICHEVER IS EARLIER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Type: 20-Year Return of Premium Term Life&quot;" target="&quot;20-YEAR RETURN OF PREMIUM TERM LIFE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No war, aviation, travel, or hazardous activity exclusions apply.&quot;" target="&quot;WAR EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No war, aviation, travel, or hazardous activity exclusions apply.&quot;" target="&quot;AVIATION EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No war, aviation, travel, or hazardous activity exclusions apply.&quot;" target="&quot;TRAVEL EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No war, aviation, travel, or hazardous activity exclusions apply.&quot;" target="&quot;HAZARDOUS ACTIVITY EXCLUSIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy loans are NOT available under this policy type.&quot;" target="&quot;POLICY LOANS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy loans are NOT available under this policy type.&quot;" target="&quot;THIS POLICY TYPE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs during the term, beneficiaries receive: Full death benefit ($300,000), PLUS A proportional premium refund based on the early surrender schedule above.&quot;" target="&quot;PROPORTIONAL PREMIUM REFUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs during the term, beneficiaries receive: Full death benefit ($300,000), PLUS A proportional premium refund based on the early surrender schedule above.&quot;" target="&quot;EARLY SURRENDER SCHEDULE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs during the term, beneficiaries receive: Full death benefit ($300,000), PLUS A proportional premium refund based on the early surrender schedule above.&quot;" target="&quot;$300,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs during the term, beneficiaries receive: Full death benefit ($300,000), PLUS A proportional premium refund based on the early surrender schedule above.&quot;" target="&quot;BENEFICIARIES&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs during the term, beneficiaries receive: Full death benefit ($300,000), PLUS A proportional premium refund based on the early surrender schedule above.&quot;" target="&quot;DEATH DURING TERM ROP&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If death occurs during the term, beneficiaries receive: Full death benefit ($300,000), PLUS A proportional premium refund based on the early surrender schedule above.&quot;" target="&quot;FULL DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit: $300,000&quot;" target="&quot;$300,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Partial withdrawals are NOT permitted.&quot;" target="&quot;PARTIAL WITHDRAWALS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Missed premiums cannot be made up. If a premium is paid late (during grace period), the ROP benefit is reduced by 10% for each late payment.&quot;" target="&quot;LATE PAYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Missed premiums cannot be made up. If a premium is paid late (during grace period), the ROP benefit is reduced by 10% for each late payment.&quot;" target="&quot;ROP BENEFIT REDUCED BY 10% PER LATE PAYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Missed premiums cannot be made up. If a premium is paid late (during grace period), the ROP benefit is reduced by 10% for each late payment.&quot;" target="&quot;MISSED PREMIUMS CANNOT BE MADE UP&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Marco Daniel Martinez (Son) - 50%&quot;" target="&quot;MARCO DANIEL MARTINEZ&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Marco Daniel Martinez (Son) - 50%&quot;" target="&quot;SON&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The ROP benefit is NOT considered a taxable gain when paid (consult your tax advisor).&quot;" target="&quot;ROP BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The ROP benefit is NOT considered a taxable gain when paid (consult your tax advisor).&quot;" target="&quot;TAXABLE GAIN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The ROP benefit is NOT considered a taxable gain when paid (consult your tax advisor).&quot;" target="&quot;TAX ADVISOR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum conversion amount: $50,000; Maximum conversion amount: $300,000 (current face amount).&quot;" target="&quot;$300,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum conversion amount: $50,000; Maximum conversion amount: $300,000 (current face amount).&quot;" target="&quot;MINIMUM CONVERSION AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum conversion amount: $50,000; Maximum conversion amount: $300,000 (current face amount).&quot;" target="&quot;MAXIMUM CONVERSION AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum conversion amount: $50,000; Maximum conversion amount: $300,000 (current face amount).&quot;" target="&quot;$50,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;PROPORTIONAL PREMIUM REFUND&quot;">
+  <data key="d5">595.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;CARLOS ROBERTO MARTINEZ&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;HUSBAND&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;$300,000&quot;">
+  <data key="d5">760.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;SOFIA ISABELLA MARTINEZ&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;DAUGHTER&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;MARCO DANIEL MARTINEZ&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;VALUEGUARD LIFE INSURANCE COMPANY&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;SON&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;SEPTEMBER 15, 2044&quot;">
+  <data key="d5">810.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;RETURN OF PREMIUM (ROP) TERM LIFE INSURANCE POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;$32,400&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;20 YEARS&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;LIFE INSURANCE PROTECTION DURING THE TERM&quot;">
+  <data key="d5">630.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;RETURN OF ALL PREMIUMS IF YOU OUTLIVE THE TERM&quot;">
+  <data key="d5">665.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;OPTION TO CONVERT TO PERMANENT INSURANCE&quot;">
+  <data key="d5">595.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;$1,620&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d5">630.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;CERTIFIED DEATH CERTIFICATE&quot;">
+  <data key="d5">630.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;VG-ROP-2024-4183&quot;">
+  <data key="d5">665.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;COMPLETED CLAIM FORM&quot;">
+  <data key="d5">630.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;20-YEAR RETURN OF PREMIUM TERM LIFE&quot;">
+  <data key="d5">665.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;GOVERNMENT-ISSUED ID&quot;">
+  <data key="d5">595.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;NICOLE CHRISTINE MARTINEZ&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;ALL PREMIUMS HAVE BEEN PAID&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;RETURN OF PREMIUM PROVISION&quot;">
+  <data key="d5">760.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;SEPTEMBER 15, 2024&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;NON-SMOKER&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;PREFERRED PLUS&quot;">
+  <data key="d5">720.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 END OF TERM ROP: If the insured is alive on September 15, 2044, and all premiums have been paid, we&quot;" target="&quot;ANNUAL&quot;">
+  <data key="d5">680.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy does NOT build cash value that can be borrowed against during the term.&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy does NOT build cash value that can be borrowed against during the term.&quot;" target="&quot;BORROW AGAINST DURING THE TERM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon reinstatement, the ROP benefit is recalculated to exclude the lapsed period.&quot;" target="&quot;ROP BENEFIT RECALCULATED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon reinstatement, the ROP benefit is recalculated to exclude the lapsed period.&quot;" target="&quot;LAPSED PERIOD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Nicole Christine Martinez&quot;" target="&quot;NICOLE CHRISTINE MARTINEZ&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the policy lapses, you may apply for reinstatement within 5 years if: • You provide satisfactory evidence of insurability • You pay all past due premiums with interest at 6% per annum • The insured is still alive&quot;" target="&quot;POLICY LAPSE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the policy lapses, you may apply for reinstatement within 5 years if: • You provide satisfactory evidence of insurability • You pay all past due premiums with interest at 6% per annum • The insured is still alive&quot;" target="&quot;REINSTATEMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the policy lapses, you may apply for reinstatement within 5 years if: • You provide satisfactory evidence of insurability • You pay all past due premiums with interest at 6% per annum • The insured is still alive&quot;" target="&quot;5 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the policy lapses, you may apply for reinstatement within 5 years if: • You provide satisfactory evidence of insurability • You pay all past due premiums with interest at 6% per annum • The insured is still alive&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the policy lapses, you may apply for reinstatement within 5 years if: • You provide satisfactory evidence of insurability • You pay all past due premiums with interest at 6% per annum • The insured is still alive&quot;" target="&quot;PAST DUE PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the policy lapses, you may apply for reinstatement within 5 years if: • You provide satisfactory evidence of insurability • You pay all past due premiums with interest at 6% per annum • The insured is still alive&quot;" target="&quot;INTEREST AT 6% PER ANNUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the policy lapses, you may apply for reinstatement within 5 years if: • You provide satisfactory evidence of insurability • You pay all past due premiums with interest at 6% per annum • The insured is still alive&quot;" target="&quot;INSURED IS STILL ALIVE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Example: If death occurs in Year 8, beneficiaries receive: $300,000 death benefit + (30% × $12,960 premiums paid) = $300,000 + $3,888 = $303,888.&quot;" target="&quot;YEAR 8&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Example: If death occurs in Year 8, beneficiaries receive: $300,000 death benefit + (30% × $12,960 premiums paid) = $300,000 + $3,888 = $303,888.&quot;" target="&quot;$12,960&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Example: If death occurs in Year 8, beneficiaries receive: $300,000 death benefit + (30% × $12,960 premiums paid) = $300,000 + $3,888 = $303,888.&quot;" target="&quot;30% × $12,960&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Example: If death occurs in Year 8, beneficiaries receive: $300,000 death benefit + (30% × $12,960 premiums paid) = $300,000 + $3,888 = $303,888.&quot;" target="&quot;$3,888&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Example: If death occurs in Year 8, beneficiaries receive: $300,000 death benefit + (30% × $12,960 premiums paid) = $300,000 + $3,888 = $303,888.&quot;" target="&quot;$303,888&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Term: 20 years (ending September 15, 2044)&quot;" target="&quot;SEPTEMBER 15, 2044&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Term: 20 years (ending September 15, 2044)&quot;" target="&quot;20 YEARS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 This is a Return of Premium (ROP) Term Life Insurance Policy.&quot;" target="&quot;RETURN OF PREMIUM (ROP) TERM LIFE INSURANCE POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy costs more than standard term life insurance because of the return of premium feature.&quot;" target="&quot;STANDARD TERM LIFE INSURANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy costs more than standard term life insurance because of the return of premium feature.&quot;" target="&quot;RETURN OF PREMIUM FEATURE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon conversion: New policy premium based on attained age; ROP benefit is forfeited; Premiums paid to date are&quot;" target="&quot;NEW POLICY PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon conversion: New policy premium based on attained age; ROP benefit is forfeited; Premiums paid to date are&quot;" target="&quot;ATTAINED AGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon conversion: New policy premium based on attained age; ROP benefit is forfeited; Premiums paid to date are&quot;" target="&quot;PREMIUMS PAID TO DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon conversion: New policy premium based on attained age; ROP benefit is forfeited; Premiums paid to date are&quot;" target="&quot;ROP BENEFIT IS FORFEITED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Date of Birth: April 7, 1988&quot;" target="&quot;APRIL 7, 1988&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual Premium: $1,620&quot;" target="&quot;$1,620&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;ROP payments are made within 60 days of the applicable date.&quot;" target="&quot;ROP PAYMENTS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;ROP payments are made within 60 days of the applicable date.&quot;" target="&quot;60 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;ROP payments are made within 60 days of the applicable date.&quot;" target="&quot;APPLICABLE DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured dies by suicide within 24 months of the issue date, we will pay only the premiums paid without interest. No death benefit is payable.&quot;" target="&quot;PREMIUMS PAID WITHOUT INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured dies by suicide within 24 months of the issue date, we will pay only the premiums paid without interest. No death benefit is payable.&quot;" target="&quot;SUICIDE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured dies by suicide within 24 months of the issue date, we will pay only the premiums paid without interest. No death benefit is payable.&quot;" target="&quot;24 MONTHS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured dies by suicide within 24 months of the issue date, we will pay only the premiums paid without interest. No death benefit is payable.&quot;" target="&quot;ISSUE DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Changes must be submitted in writing to our home office.&quot;" target="&quot;HOME OFFICE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Changes must be submitted in writing to our home office.&quot;" target="&quot;CHANGES&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 UNIQUE FEATURE: If the insured survives the 20-year term and all premiums have been paid, we will return 100% of all premiums paid ($32,400) to the policy owner.&quot;" target="&quot;$32,400&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 UNIQUE FEATURE: If the insured survives the 20-year term and all premiums have been paid, we will return 100% of all premiums paid ($32,400) to the policy owner.&quot;" target="&quot;100% OF ALL PREMIUMS PAID&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 UNIQUE FEATURE: If the insured survives the 20-year term and all premiums have been paid, we will return 100% of all premiums paid ($32,400) to the policy owner.&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A new 2-year suicide and contestability period begins upon reinstatement.&quot;" target="&quot;NEW 2-YEAR SUICIDE PERIOD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A new 2-year suicide and contestability period begins upon reinstatement.&quot;" target="&quot;NEW CONTESTABILITY PERIOD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy No: VG-ROP-2024-4183&quot;" target="&quot;VG-ROP-2024-4183&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Gender: Female&quot;" target="&quot;FEMALE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;• ROP benefit is forfeited&quot;" target="&quot;ROP BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;• Premiums paid to date are NOT returned&quot;" target="&quot;PREMIUMS PAID TO DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual premium of $1,620 is due each September 15.&quot;" target="&quot;ANNUAL PREMIUM&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual premium of $1,620 is due each September 15.&quot;" target="&quot;$1,620&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual premium of $1,620 is due each September 15.&quot;" target="&quot;SEPTEMBER 15&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium Mode: Annual&quot;" target="&quot;ANNUAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;For questions or service, contact: ValueGuard Life Insurance Company, Customer Service: 1-800-VALUE-GUARD, Email: service@valueguardlife.com.&quot;" target="&quot;VALUEGUARD LIFE INSURANCE COMPANY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;For questions or service, contact: ValueGuard Life Insurance Company, Customer Service: 1-800-VALUE-GUARD, Email: service@valueguardlife.com.&quot;" target="&quot;CUSTOMER SERVICE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;For questions or service, contact: ValueGuard Life Insurance Company, Customer Service: 1-800-VALUE-GUARD, Email: service@valueguardlife.com.&quot;" target="&quot;1-800-VALUE-GUARD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;For questions or service, contact: ValueGuard Life Insurance Company, Customer Service: 1-800-VALUE-GUARD, Email: service@valueguardlife.com.&quot;" target="&quot;SERVICE@VALUEGUARDLIFE.COM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;• New policy premium based on attained age&quot;" target="&quot;NEW POLICY PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;• New policy premium based on attained age&quot;" target="&quot;ATTAINED AGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 This policy combines: • Life insurance protection during the term • Return of all premiums if you outlive the term • Option to convert to permanent insurance&quot;" target="&quot;LIFE INSURANCE PROTECTION DURING THE TERM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 This policy combines: • Life insurance protection during the term • Return of all premiums if you outlive the term • Option to convert to permanent insurance&quot;" target="&quot;RETURN OF ALL PREMIUMS IF YOU OUTLIVE THE TERM&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 This policy combines: • Life insurance protection during the term • Return of all premiums if you outlive the term • Option to convert to permanent insurance&quot;" target="&quot;OPTION TO CONVERT TO PERMANENT INSURANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;As policy owner, you may: Change beneficiaries at any time, Convert to permanent insurance, Assign the policy as collateral, Surrender the policy for the applicable ROP percentage.&quot;" target="&quot;PERMANENT INSURANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;As policy owner, you may: Change beneficiaries at any time, Convert to permanent insurance, Assign the policy as collateral, Surrender the policy for the applicable ROP percentage.&quot;" target="&quot;POLICY AS COLLATERAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;As policy owner, you may: Change beneficiaries at any time, Convert to permanent insurance, Assign the policy as collateral, Surrender the policy for the applicable ROP percentage.&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;As policy owner, you may: Change beneficiaries at any time, Convert to permanent insurance, Assign the policy as collateral, Surrender the policy for the applicable ROP percentage.&quot;" target="&quot;ROP PERCENTAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;As policy owner, you may: Change beneficiaries at any time, Convert to permanent insurance, Assign the policy as collateral, Surrender the policy for the applicable ROP percentage.&quot;" target="&quot;BENEFICIARIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Issued: September 15, 2024&quot;" target="&quot;SEPTEMBER 15, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Age at Issue: 36&quot;" target="&quot;36&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;As policy owner, you may: • Change beneficiaries at any time&quot;" target="&quot;CHANGE BENEFICIARIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;As policy owner, you may: • Change beneficiaries at any time&quot;" target="&quot;POLICY OWNER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;As policy owner, you may: • Change beneficiaries at any time&quot;" target="&quot;BENEFICIARIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum conversion amount: $300,000 (current face amount)&quot;" target="&quot;CONVERSION AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum conversion amount: $300,000 (current face amount)&quot;" target="&quot;$300,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum conversion amount: $300,000 (current face amount)&quot;" target="&quot;CURRENT FACE AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums are LEVEL and will not increase during the term.&quot;" target="&quot;LEVEL PREMIUMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums are LEVEL and will not increase during the term.&quot;" target="&quot;TERM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Return of Premium at End of Term: $32,400 (if policy maintained)&quot;" target="&quot;$32,400&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Return of Premium at End of Term: $32,400 (if policy maintained)&quot;" target="&quot;RETURN OF PREMIUM AT END OF TERM&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 If the insured dies during the policy term while the policy is in force, we will pay $300,000 to the beneficiary.&quot;" target="&quot;$300,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 If the insured dies during the policy term while the policy is in force, we will pay $300,000 to the beneficiary.&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;" target="&quot;CONVERSION PRIVILEGE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;" target="&quot;PERMANENT LIFE INSURANCE POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert this policy to a permanent life insurance policy without evidence of insurability.&quot;" target="&quot;WITHOUT EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Date: September 15, 2024&quot;" target="&quot;SEPTEMBER 15, 2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;President, ValueGuard Life Insurance Company&quot;" target="&quot;VALUEGUARD LIFE INSURANCE COMPANY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;President, ValueGuard Life Insurance Company&quot;" target="&quot;PRESIDENT&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured is alive on September 15, 2044, and all premiums have been paid, we will pay the policy owner $32,400 (100% of premiums paid over 20 years).&quot;" target="&quot;END OF TERM ROP&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured is alive on September 15, 2044, and all premiums have been paid, we will pay the policy owner $32,400 (100% of premiums paid over 20 years).&quot;" target="&quot;SEPTEMBER 15, 2044&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured is alive on September 15, 2044, and all premiums have been paid, we will pay the policy owner $32,400 (100% of premiums paid over 20 years).&quot;" target="&quot;$32,400&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured is alive on September 15, 2044, and all premiums have been paid, we will pay the policy owner $32,400 (100% of premiums paid over 20 years).&quot;" target="&quot;20 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured is alive on September 15, 2044, and all premiums have been paid, we will pay the policy owner $32,400 (100% of premiums paid over 20 years).&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Smoker Status: Non-Smoker&quot;" target="&quot;NON-SMOKER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The only way to access cash value is through: • Full surrender (with applicable ROP percentage), OR • Waiting until end of term for full ROP payment&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The only way to access cash value is through: • Full surrender (with applicable ROP percentage), OR • Waiting until end of term for full ROP payment&quot;" target="&quot;ROP PERCENTAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The only way to access cash value is through: • Full surrender (with applicable ROP percentage), OR • Waiting until end of term for full ROP payment&quot;" target="&quot;FULL SURRENDER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The only way to access cash value is through: • Full surrender (with applicable ROP percentage), OR • Waiting until end of term for full ROP payment&quot;" target="&quot;END OF TERM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;CRITICAL: To receive the full return of premium at end of term, ALL premiums must be paid on time.&quot;" target="&quot;FULL RETURN OF PREMIUM&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;CRITICAL: To receive the full return of premium at end of term, ALL premiums must be paid on time.&quot;" target="&quot;ALL PREMIUMS MUST BE PAID ON TIME&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Carlos Roberto Martinez (Husband) - 100%&quot;" target="&quot;CARLOS ROBERTO MARTINEZ&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Carlos Roberto Martinez (Husband) - 100%&quot;" target="&quot;HUSBAND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest the policy within 2 years of issue if there was material misrepresentation in the application.&quot;" target="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest the policy within 2 years of issue if there was material misrepresentation in the application.&quot;" target="&quot;CONTESTABILITY PERIOD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest the policy within 2 years of issue if there was material misrepresentation in the application.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If age was misstated, we will adjust the death benefit to what the premium would have purchased at the correct age. ROP amount is not affected.&quot;" target="&quot;MISSTATED AGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If age was misstated, we will adjust the death benefit to what the premium would have purchased at the correct age. ROP amount is not affected.&quot;" target="&quot;CORRECT AGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If age was misstated, we will adjust the death benefit to what the premium would have purchased at the correct age. ROP amount is not affected.&quot;" target="&quot;PREMIUM WOULD HAVE PURCHASED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If age was misstated, we will adjust the death benefit to what the premium would have purchased at the correct age. ROP amount is not affected.&quot;" target="&quot;ROP AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-199ba25da5f9272ae08e1cf8f711cca1</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.2 The death benefit is payable in addition to any proportional premium refund (see Section 3).&quot;" target="&quot;PROPORTIONAL PREMIUM REFUND&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Minneapolis, Minnesota&quot;" target="&quot;MINNESOTA&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Minneapolis, Minnesota&quot;" target="&quot;MINNEAPOLIS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4c0467bfee3e7beacaacc7e64b6c14e6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Rating: Preferred Plus&quot;" target="&quot;PREFERRED PLUS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;EARLY SURRENDER ROP&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;YEARS 1-5&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;YEARS 6-10&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;YEARS 11-15&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;YEARS 16-19&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;YEAR 20&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;0% PREMIUM RETURN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;30% OF PREMIUMS PAID RETURNED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;60% OF PREMIUMS PAID RETURNED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;90% OF PREMIUMS PAID RETURNED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you surrender this policy before the end of term: Years 1-5: 0% premium return; Years 6-10: 30% of premiums paid returned; Years 11-15: 60% of premiums paid returned; Years 16-19: 90% of premiums paid returned; Year 20: 100% of premiums paid returned.&quot;" target="&quot;100% OF PREMIUMS PAID RETURNED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Contingent: Sofia Isabella Martinez (Daughter) - 50%&quot;" target="&quot;SOFIA ISABELLA MARTINEZ&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Contingent: Sofia Isabella Martinez (Daughter) - 50%&quot;" target="&quot;DAUGHTER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-ca51dc15ca1d4c642c64ecef44f3c6a0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Grace period: 31 days. If premium is not paid within grace period, policy lapses and return of premium benefit is forfeited.&quot;" target="&quot;GRACE PERIOD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Grace period: 31 days. If premium is not paid within grace period, policy lapses and return of premium benefit is forfeited.&quot;" target="&quot;31 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Grace period: 31 days. If premium is not paid within grace period, policy lapses and return of premium benefit is forfeited.&quot;" target="&quot;POLICY LAPSES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Grace period: 31 days. If premium is not paid within grace period, policy lapses and return of premium benefit is forfeited.&quot;" target="&quot;RETURN OF PREMIUM BENEFIT IS FORFEITED&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-76f7968940652a9b1983b6200ac06471</data>
+</edge>
+</graph></graphml>

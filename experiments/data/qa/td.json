@@ -1,0 +1,1241 @@
+{
+    "name": "td life insurance",
+    "pairs": [
+        {
+            "question": "Under what conditions is a waiver of a policy condition considered valid?",
+            "answer": "A waiver or change of any condition of this policy is only valid if clearly expressed in writing and signed by an officer of TD Life Insurance Company."
+        },
+        {
+            "question": "What is the minimum time period that must pass before legal action can be taken on the policy?",
+            "answer": "No legal action can be brought to recover on the policy prior to the expiration of 120 days after proof of claim has been furnished."
+        },
+        {
+            "question": "What law governs the time limit for actions or proceedings in Alberta and British Columbia?",
+            "answer": "The Insurance Act governs the time limit for actions or proceedings in Alberta and British Columbia."
+        },
+        {
+            "question": "What legislation sets the time limit for actions or proceedings in Ontario?",
+            "answer": "The Limitations Act, 2002 sets the time limit for actions or proceedings in Ontario."
+        },
+        {
+            "question": "How is the governing law for the insurance policy determined?",
+            "answer": "The insurance policy is governed by the laws of the province where the applicant was resident when they initially applied for insurance, without reference to that province's rules about conflicts of laws."
+        },
+        {
+            "question": "In which language must this policy and related documents be written?",
+            "answer": "This policy and all related documents must be drawn up in the English language only."
+        },
+        {
+            "question": "What is the purpose of the document?",
+            "answer": "Request for Change of Beneficiary"
+        },
+        {
+            "question": "Where is the document addressed to?",
+            "answer": "P.O Box 1, TD Centre"
+        },
+        {
+            "question": "What is the reference line in the document?",
+            "answer": "Re:"
+        },
+        {
+            "question": "What contact number is listed in the document?",
+            "answer": "123 456 789"
+        },
+        {
+            "question": "With whom may your information be shared according to the text?",
+            "answer": "TD affiliates, fraud prevention agencies and registries, health-care professionals, companies that we work with to provide products or services, insurance companies (including prospective insurers and reinsurers), and organizations who manage public information data banks, or insurance information bureaus, including the MIB, LLC and the Insurance Bureau of Canada."
+        },
+        {
+            "question": "What type of organizations are included among the parties that may receive shared information?",
+            "answer": "Fraud prevention agencies and registries, health-care professionals, companies providing products or services, insurance companies, and organizations managing public information data banks or insurance information bureaus."
+        },
+        {
+            "question": "Which specific insurance information bureau is mentioned in the text?",
+            "answer": "The MIB, LLC and the Insurance Bureau of Canada."
+        },
+        {
+            "question": "Are any of the parties that may receive shared information located outside Canada?",
+            "answer": "Yes, some of the parties may be located outside your province/territory or outside Canada."
+        },
+        {
+            "question": "What is the purpose of sharing information with insurance companies?",
+            "answer": "To provide products or services and for purposes related to insurance, including prospective insurers and reinsurers."
+        },
+        {
+            "question": "What kind of companies might receive your information for product or service provision?",
+            "answer": "Companies that we work with to provide products or services."
+        },
+        {
+            "question": "When is the first monthly premium due?",
+            "answer": "The first premium will be due on the First Premium Due Date specified in the Policy Schedule."
+        },
+        {
+            "question": "How often are subsequent monthly premiums due after the first one?",
+            "answer": "Each subsequent premium due date will follow one calendar month later."
+        },
+        {
+            "question": "What happens to premiums paid after the death of the insured person?",
+            "answer": "Any premium that we have collected that relates to insurance coverage after the date of death of the insured person will be refunded in the same manner as the Sum Insured."
+        },
+        {
+            "question": "How is the premium adjusted if someone becomes ineligible for a discount?",
+            "answer": "We will adjust your premiums accordingly."
+        },
+        {
+            "question": "What must you do if you want to change your payment method or frequency?",
+            "answer": "You must notify us."
+        },
+        {
+            "question": "How often are annual premiums due after the first one?",
+            "answer": "Each subsequent premium due date will follow one year later."
+        },
+        {
+            "question": "Will my premiums increase if my health changes during the term of my coverage?",
+            "answer": "No, your premium is set and guaranteed for each 20-year term and will not change regardless of changes in your age or health."
+        },
+        {
+            "question": "What happens to my coverage at the end of each 20-year term?",
+            "answer": "Your coverage will automatically renew for another 20-year term with no medical questions, as long as premiums are paid."
+        },
+        {
+            "question": "Do I need to re-apply for coverage at the end of each 20-year term?",
+            "answer": "No, you do not need to re-apply; coverage automatically renews."
+        },
+        {
+            "question": "What is the maximum age for renewing my TD 20-Year Term Life insurance coverage?",
+            "answer": "Coverage cannot be renewed beyond your 80th birthday."
+        },
+        {
+            "question": "Who receives the benefit amount from my TD 20-Year Term Life insurance if I die?",
+            "answer": "The benefit amount is payable to the beneficiary(ies) you designated, such as your spouse, child, friend, or any other person you selected."
+        },
+        {
+            "question": "What happens to the insurance benefit if I haven’t designated a beneficiary?",
+            "answer": "The benefit amount will be payable to the policy owner or the policy owner's estate as applicable."
+        },
+        {
+            "question": "What type of insurance policy is mentioned?",
+            "answer": "TD 20-Year Term Life insurance."
+        },
+        {
+            "question": "What is the policy number?",
+            "answer": "123 456 789."
+        },
+        {
+            "question": "Where is the policy enclosed?",
+            "answer": "in this booklet."
+        },
+        {
+            "question": "What is the duration of the review period for the policy?",
+            "answer": "30 days"
+        },
+        {
+            "question": "When does the 30-day review period begin?",
+            "answer": "From your effective date of the original policy"
+        },
+        {
+            "question": "What must be true for a policy to be canceled during the review period?",
+            "answer": "No claim has been made"
+        },
+        {
+            "question": "What happens to the premium if the policy is canceled during the review period?",
+            "answer": "Any premium paid will be promptly refunded"
+        },
+        {
+            "question": "When do the insurer's obligations under the policy end?",
+            "answer": "Immediately when we receive your request to cancel the policy"
+        },
+        {
+            "question": "What is a revocable beneficiary designation?",
+            "answer": "A beneficiary who has no right to the policy proceeds during the insured's lifetime, because the owner has the unrestricted right to change the beneficiary designation at any time."
+        },
+        {
+            "question": "Who is a trustee in a trust relationship?",
+            "answer": "A Trust is a relationship in which one or more persons, known as the trustee, holds legal title to property known as the trust fund - for the benefit of another person."
+        },
+        {
+            "question": "Why should care be taken when naming minor beneficiaries?",
+            "answer": "Because the law does not allow an insurer to pay benefits directly to minors."
+        },
+        {
+            "question": "What is a trust fund?",
+            "answer": "Property held in trust by a trustee for the benefit of another person."
+        },
+        {
+            "question": "What types of relationships are listed in the definitions sample?",
+            "answer": "Spouse, child, mother, father, brother, sister, aunt, uncle, cousin, niece, nephew, grandmother, grandfather, sister-in-law, brother-in-law, mother-in-law, father-in-law, friend, estate."
+        },
+        {
+            "question": "What does the term 'TD 20-Year Term Life insurance' refer to in the text?",
+            "answer": "It is mentioned as a reference point but no further details are provided in the text."
+        },
+        {
+            "question": "What type of life insurance is being referred to in the text?",
+            "answer": "Term life insurance"
+        },
+        {
+            "question": "What is the duration of the term life insurance policy mentioned?",
+            "answer": "20 years"
+        },
+        {
+            "question": "What does 'TD' likely stand for in the context of this insurance product?",
+            "answer": "TD (likely referring to Toronto-Dominion Bank or TD Insurance)"
+        },
+        {
+            "question": "What is the primary purpose of a 20-year term life insurance policy?",
+            "answer": "To provide financial protection for beneficiaries in the event of the policyholder's death within the 20-year term"
+        },
+        {
+            "question": "Under what condition is a subsequent period of total disability considered a continuation of a prior period?",
+            "answer": "If the insured person recovers but within 6 months again becomes totally disabled from the same or a related cause."
+        },
+        {
+            "question": "What triggers the waiver of premiums under this provision?",
+            "answer": "The insured person becoming totally disabled."
+        },
+        {
+            "question": "Until what age are premiums for the waiver of premiums benefit payable?",
+            "answer": "Until the insured person's 65th birthday."
+        },
+        {
+            "question": "Where can the premiums for this waiver of premiums benefit be found?",
+            "answer": "In the Policy Schedule."
+        },
+        {
+            "question": "What is the time frame for the recurrence of total disability to be considered a continuation of the previous period?",
+            "answer": "Within 6 months."
+        },
+        {
+            "question": "What is the phone number to contact TD Insurance for help completing this form?",
+            "answer": "1-888-788-0839"
+        },
+        {
+            "question": "Under what condition are benefits paid to someone other than the beneficiaries named in section 1a)?",
+            "answer": "If the beneficiaries named in section 1a) are not living"
+        },
+        {
+            "question": "What happens to the benefits if the beneficiaries listed in section 1a) are not alive?",
+            "answer": "Benefits will be paid to another party (not specified in the text)"
+        },
+        {
+            "question": "What is the next step in the beneficiary payout process if the beneficiaries in section 1a) are not living?",
+            "answer": "Benefits will be paid to the party specified in section 1b)"
+        },
+        {
+            "question": "What happens when insurance coverage ends?",
+            "answer": "Insurance coverage ends, and the policyholder is no longer protected by the insurance plan."
+        },
+        {
+            "question": "What should you do when your insurance coverage ends?",
+            "answer": "You should review your options, such as renewing the policy, switching to a new plan, or enrolling in a different insurance program."
+        },
+        {
+            "question": "Can insurance coverage be extended after it ends?",
+            "answer": "In some cases, limited extensions may be available, but generally, coverage cannot be extended without a new policy or renewal."
+        },
+        {
+            "question": "What are common reasons insurance coverage ends?",
+            "answer": "Common reasons include non-payment of premiums, expiration of the policy term, or cancellation by the insurer."
+        },
+        {
+            "question": "What is the duration of the grace period for unpaid premiums?",
+            "answer": "Thirty (30) calendar days"
+        },
+        {
+            "question": "What happens to the policy during the grace period if premiums are not paid by the due date?",
+            "answer": "This policy will remain in effect"
+        },
+        {
+            "question": "How are outstanding premiums handled if a claim becomes payable during the grace period?",
+            "answer": "All outstanding premiums will be deducted from any claim payable"
+        },
+        {
+            "question": "What happens to the policy if outstanding premiums are not paid by the end of the grace period?",
+            "answer": "This policy will lapse"
+        },
+        {
+            "question": "What type of life insurance policy is being referenced in the document?",
+            "answer": "TD 20-Year Term Life insurance"
+        },
+        {
+            "question": "What is the purpose of the 'Validation' section in the document?",
+            "answer": "To verify or confirm the authenticity of the document"
+        },
+        {
+            "question": "What information is required in the 'Date Signed (MM/DD/YR)' field?",
+            "answer": "The date the document was signed in MM/DD/YR format"
+        },
+        {
+            "question": "Under what condition should the corporate seal be placed on the document?",
+            "answer": "If the owner of this coverage is a Corporation"
+        },
+        {
+            "question": "How long do we keep your information?",
+            "answer": "We keep your information for as long as we reasonably need it for the purposes set out above."
+        },
+        {
+            "question": "How might we communicate with you about your application?",
+            "answer": "We may contact you by phone or text at the number(s) you have provided, or by mail, email or other electronic methods."
+        },
+        {
+            "question": "What types of products and services might we contact you about?",
+            "answer": "We may communicate with you about other products and services that may be of interest to you."
+        },
+        {
+            "question": "How can you opt out of receiving marketing offers?",
+            "answer": "You can opt out of receiving offers or choose how we contact you for marketing campaign purposes."
+        },
+        {
+            "question": "What is the phone number to contact for opting out of marketing communications?",
+            "answer": "You may do so by contacting us at 1-888-788-0839."
+        },
+        {
+            "question": "Under what condition will premiums not be waived due to total disability?",
+            "answer": "If total disability results, either directly or indirectly, from one or more of the following causes:"
+        },
+        {
+            "question": "Is attempted suicide a reason for not waiving premiums?",
+            "answer": "Yes, attempted suicide or self-inflicted injury (whether the insured person is aware or not aware of the result of their actions, regardless of the insured person's state of mind)"
+        },
+        {
+            "question": "Does service in the armed forces affect premium waiver eligibility?",
+            "answer": "Yes, war, whether declared or undeclared, any act of war or activities directly related to service in the armed forces of any country"
+        },
+        {
+            "question": "What happens if the insured commits a criminal act?",
+            "answer": "The commission or attempted commission by the insured person of a criminal act"
+        },
+        {
+            "question": "What is the blood alcohol limit condition for premium waiver denial?",
+            "answer": "An accident that occurs while the insured person is operating any kind of conveyance while their blood alcohol level exceeds the legal limit where the accident occurs"
+        },
+        {
+            "question": "When must proof of total disability be submitted after notice?",
+            "answer": "Within 3 months of the date notice was provided to us"
+        },
+        {
+            "question": "What happens if proof of ongoing total disability is not provided when requested?",
+            "answer": "The insured person will be deemed to no longer be totally disabled on the day prior to the date on which we asked for the proof and monthly premiums will begin again"
+        },
+        {
+            "question": "After how many years from the effective date or reinstatement effective date are answers treated as true evidence of insurability?",
+            "answer": "Two (2) years"
+        },
+        {
+            "question": "What is the exception to the rule that answers are treated as true after two years?",
+            "answer": "Cases of fraudulent misrepresentation"
+        },
+        {
+            "question": "Which specific information is not covered by the two-year rule regarding truthfulness of answers?",
+            "answer": "Information about the date of birth of the insured person"
+        },
+        {
+            "question": "What section applies to misstatements about the date of birth of the insured person?",
+            "answer": "Misstatement of Age and Sex at Birth"
+        },
+        {
+            "question": "What does the two-year rule not apply to, even if the answers were given at the start of the policy?",
+            "answer": "Misstatements about the date of birth of the insured person"
+        },
+        {
+            "question": "What must you do if you are issued a TD 20-Year Term Life insurance policy?",
+            "answer": "You must inspect the policy to verify that its terms are satisfactory."
+        },
+        {
+            "question": "What happens if you conceal, misrepresent, or make a false declaration in your insurance application?",
+            "answer": "The insurance policy could be voided if issued."
+        },
+        {
+            "question": "What determines the payment of benefits under the policy?",
+            "answer": "The limitations and exclusions described in the policy if issued."
+        },
+        {
+            "question": "How long is the review period after the effective date of coverage to decide whether the coverage meets your needs?",
+            "answer": "30 days."
+        },
+        {
+            "question": "What is the consequence of cancelling the insured person's coverage during the 30-day review period?",
+            "answer": "The policy will be cancelled as of the effective date."
+        },
+        {
+            "question": "When can you cancel the policy after the 30-day review period and still receive a refund of unearned premiums?",
+            "answer": "After the 30-day period, provided there are no claims pending."
+        },
+        {
+            "question": "When does insurance coverage under the policy begin?",
+            "answer": "Coverage does not take effect until the earliest of TD Life's written approval or the effective date of the policy if issued."
+        },
+        {
+            "question": "Who is the insured person under this TD 20-Year Term Life insurance policy?",
+            "answer": "Jane Sample"
+        },
+        {
+            "question": "What is the sum insured under this policy?",
+            "answer": "$181,700.00"
+        },
+        {
+            "question": "When does the coverage under this policy end?",
+            "answer": "March 21, 2103"
+        },
+        {
+            "question": "What is the premium payment frequency for this policy?",
+            "answer": "Monthly"
+        },
+        {
+            "question": "What is the effective date of this policy?",
+            "answer": "September 7, 2023"
+        },
+        {
+            "question": "Until what age does the Waiver of Premiums benefit apply?",
+            "answer": "Age 65"
+        },
+        {
+            "question": "Are TD Bank Financial Group's insurance sales agents paid on commission?",
+            "answer": "No, they do not receive commission with respect to the sale of insurance."
+        },
+        {
+            "question": "What type of employment status do insurance sales agents have at TD Bank Financial Group?",
+            "answer": "They are salaried employees of TD Bank Financial Group."
+        },
+        {
+            "question": "What determines eligibility for an annual bonus for TD Bank's insurance agents?",
+            "answer": "Their overall performance."
+        },
+        {
+            "question": "Do insurance sales agents at TD Bank Financial Group receive any form of performance-based compensation?",
+            "answer": "Yes, they may be eligible for an annual bonus based on their overall performance."
+        },
+        {
+            "question": "What type of life insurance is being referred to in the note?",
+            "answer": "Term life insurance"
+        },
+        {
+            "question": "What is the duration of the term life insurance mentioned?",
+            "answer": "20 years"
+        },
+        {
+            "question": "Which company or brand is associated with this insurance product?",
+            "answer": "TD"
+        },
+        {
+            "question": "Up to what age can the conversion option be exercised?",
+            "answer": "The conversion option can be exercised up to and including the policy anniversary nearest to the insured person's 69th birthday."
+        },
+        {
+            "question": "Is the health of the insured person considered when exercising the conversion option?",
+            "answer": "No, the conversion option can be exercised regardless of the health of the insured person."
+        },
+        {
+            "question": "What is the maximum amount of insurance that can be converted?",
+            "answer": "The converted insurance will be for an amount not to exceed the Sum Insured (provided on the Policy Schedule)."
+        },
+        {
+            "question": "What are the two requirements to exercise the conversion option?",
+            "answer": "You must complete an application form provided by the insurer and pay the first premium required for the converted insurance."
+        },
+        {
+            "question": "What factors affect the amount of the first premium for the converted insurance?",
+            "answer": "The amount of the first premium depends on the age of the insured person at the time of conversion, the risk classification used for this policy, and the plan of the converted insurance."
+        },
+        {
+            "question": "Does the converted policy include waiver of premium benefits?",
+            "answer": "No, the converted policy will not include any waiver of premium benefits that were present on the original policy."
+        },
+        {
+            "question": "What is one purpose for which information is collected from users?",
+            "answer": "To determine the right product, premium or coverage"
+        },
+        {
+            "question": "Which organization is mentioned as an example of an insurance information bureau?",
+            "answer": "MIB, LLC"
+        },
+        {
+            "question": "From what source is information collected regarding user interactions with TD?",
+            "answer": "From your interactions with us, including on your mobile device or the Internet"
+        },
+        {
+            "question": "What type of report is prepared to verify information provided in an insurance application?",
+            "answer": "A personal investigation report"
+        },
+        {
+            "question": "Why is information collected from health care professionals and medical facilities?",
+            "answer": "To verify and/or authenticate the information you provide in your life or health insurance application"
+        },
+        {
+            "question": "How does TD use collected information to protect users?",
+            "answer": "To protect against fraud, financial abuse and error"
+        },
+        {
+            "question": "What is one legal reason for collecting user information?",
+            "answer": "To meet legal and regulatory obligations"
+        },
+        {
+            "question": "Which entity manages public information data banks that may provide information about users?",
+            "answer": "Government agency, organizations who manage public information data banks"
+        },
+        {
+            "question": "Under what condition can the insurer adjust the premium after policy issuance?",
+            "answer": "If incorrect information was provided during the application process that qualified the insured person for preferred rates."
+        },
+        {
+            "question": "What action can the insurer take if incorrect information leads to preferred rates?",
+            "answer": "Re-issue the policy with an adjusted premium based on the correct information."
+        },
+        {
+            "question": "When can information provided after the policy's effective date impact the premium?",
+            "answer": "Only at the time of notification."
+        },
+        {
+            "question": "What is required for post-effective-date information affecting the premium to be honored?",
+            "answer": "It must be notified to the insurer."
+        },
+        {
+            "question": "To whom is the death benefit paid if the insured person named in the policy is still living at the time of death?",
+            "answer": "The death benefit is paid to the Insured named above, if living."
+        },
+        {
+            "question": "What happens if the beneficiary designated is a trust?",
+            "answer": "TD Life is relieved of all responsibility upon making payment to such Trust and need not inquire into the Trustee's use of such funds nor the scope of the Trustee's authority."
+        },
+        {
+            "question": "When does a beneficiary change take effect after being recorded by TD Life?",
+            "answer": "It takes effect as of the date the request is signed, or the date of receipt by TD Life, whichever is later."
+        },
+        {
+            "question": "What is the legal effect of a payment made by TD Life before the beneficiary change is received?",
+            "answer": "Any payment made by TD Life prior to the receipt of this change shall be without prejudice to TD Life."
+        },
+        {
+            "question": "Who must sign the beneficiary change form if the policy owner is a corporation?",
+            "answer": "The Signature & Title of Owner (if a Corporation) must be provided."
+        },
+        {
+            "question": "What is required for a beneficiary change to be valid if a witness is needed?",
+            "answer": "A Signature of Witness is required."
+        },
+        {
+            "question": "What does the user consent to regarding their personal information?",
+            "answer": "The user consents to TD Insurance handling their personal information as outlined in the Privacy Policy."
+        },
+        {
+            "question": "Who is included in the term 'TD' as used in the consent statement?",
+            "answer": "TD includes the Toronto Dominion Bank and affiliated companies."
+        },
+        {
+            "question": "Where can the full Privacy Policy be accessed?",
+            "answer": "The Privacy Policy can be found online at td.com/privacy."
+        },
+        {
+            "question": "What options do users have regarding consent to the handling of their personal information?",
+            "answer": "Users have the option to refuse or withdraw their consent, where available."
+        },
+        {
+            "question": "What is the primary purpose of the consent statement?",
+            "answer": "To inform users that they consent to TD Insurance handling their personal information as described in the Privacy Policy."
+        },
+        {
+            "question": "How can you cancel your insurance policy?",
+            "answer": "Please provide your verbal or written request to TD Life Insurance Company, P.O. Box 1, TD Centre; Toronto, Ontario, M5K 1A2. TD Insurance at 1-888-788-0839."
+        },
+        {
+            "question": "What does 'Beneficiary' mean in this policy?",
+            "answer": "The person or persons you name in writing to receive all benefits under this policy."
+        },
+        {
+            "question": "What is the 'Grace Period' in this policy?",
+            "answer": "The length of time after the premium is due and unpaid during which the policy remains in effect."
+        },
+        {
+            "question": "What happens if the premium is not paid within the grace period?",
+            "answer": "The policy lapses."
+        },
+        {
+            "question": "Who is the 'Insured person' under this policy?",
+            "answer": "The person whose life is insured under this policy."
+        },
+        {
+            "question": "What is required to be eligible to apply for insurance coverage under this policy?",
+            "answer": "The proposed insured person must be a Canadian citizen; or have applied for or been granted Permanent Resident (Landed Immigrant) status by the Canadian Government; and be at least 18 years old and within 6 months of the 60th birthday."
+        },
+        {
+            "question": "When does this policy end?",
+            "answer": "On the date the insured person dies."
+        },
+        {
+            "question": "Under what condition is a document that affects rights under the contract considered binding?",
+            "answer": "Unless the document itself or written notice of it is received at our Head Office."
+        },
+        {
+            "question": "Where must a document or written notice be received to be binding under this contract?",
+            "answer": "At our Head Office."
+        },
+        {
+            "question": "Is the company responsible for ensuring that a document affecting rights under the contract is valid?",
+            "answer": "We are not responsible for ensuring that any such document is valid."
+        },
+        {
+            "question": "Is the company responsible for ensuring that a document has the desired effect under the contract?",
+            "answer": "We are not responsible for ensuring that any such document has the desired effect."
+        },
+        {
+            "question": "What type of licenses do the agents hold in Canada?",
+            "answer": "Life and health insurance licenses"
+        },
+        {
+            "question": "In which country do the agents hold their licenses?",
+            "answer": "Canada"
+        },
+        {
+            "question": "What kind of disclosure is being provided in the text?",
+            "answer": "A disclosure confirmation made by agents in their telephone conversation"
+        },
+        {
+            "question": "What can you do if you need more information about the agents' qualifications?",
+            "answer": "Request additional information from the company"
+        },
+        {
+            "question": "What is the purpose of the disclosure mentioned in the text?",
+            "answer": "To confirm the agents' qualifications and the nature of their business relationships"
+        },
+        {
+            "question": "Which company's life and health insurance products do the agents promote?",
+            "answer": "TD Life Insurance Company"
+        },
+        {
+            "question": "Who sponsors the agents who promote life and health insurance products?",
+            "answer": "TD Life"
+        },
+        {
+            "question": "What company employs the agents who promote life and health insurance products?",
+            "answer": "TD Assurance Agency Inc."
+        },
+        {
+            "question": "What is the relationship between TD Assurance Agency Inc. and TD Life?",
+            "answer": "TD Assurance Agency Inc. holds contracts with TD Life."
+        },
+        {
+            "question": "What type of insurance products do the agents promote?",
+            "answer": "Life and health insurance products"
+        },
+        {
+            "question": "What happens to premium waivers when the conversion option is exercised during total disability?",
+            "answer": "Premiums will not be waived for the converted insurance policy."
+        },
+        {
+            "question": "Under what condition does the policy not waive premiums after conversion?",
+            "answer": "When the insured person is totally disabled."
+        },
+        {
+            "question": "What policy provision is discussed in the text?",
+            "answer": "The conversion option during total disability."
+        },
+        {
+            "question": "Is there a premium waiver for the converted policy if the insured is totally disabled at the time of conversion?",
+            "answer": "No, premiums are not waived."
+        },
+        {
+            "question": "What is the maximum amount you can receive as a Living Benefit under this policy?",
+            "answer": "$100,000"
+        },
+        {
+            "question": "What is the percentage of the Death Benefit that can be advanced as a Living Benefit?",
+            "answer": "50%"
+        },
+        {
+            "question": "What condition must the insured person meet to qualify for the Living Benefit?",
+            "answer": "A diagnosis of a terminal illness with a life expectancy of 12 months or less"
+        },
+        {
+            "question": "What must be true about the policy for a Living Benefit claim to be valid?",
+            "answer": "The policy must be in force and paid current"
+        },
+        {
+            "question": "Who receives the Living Benefit payment?",
+            "answer": "The insured person"
+        },
+        {
+            "question": "What is required from an irrevocable beneficiary or policy owner when claiming a Living Benefit?",
+            "answer": "They must consent to the payment of the benefit"
+        },
+        {
+            "question": "How is the Living Benefit administered to ensure it is non-taxable in most cases?",
+            "answer": "Through a special collateral assignment arrangement that treats the benefit as a loan"
+        },
+        {
+            "question": "Who is entitled to change the beneficiary on an insurance policy?",
+            "answer": "The owner of this insurance coverage"
+        },
+        {
+            "question": "Can the beneficiary be changed if the coverage is for the entire family?",
+            "answer": "Yes, the owner can change the beneficiary regardless of whether the coverage is for yourself or for your entire family"
+        },
+        {
+            "question": "What is required when changing a beneficiary if there are previously designated irrevocable beneficiaries?",
+            "answer": "Consent of any previously designated irrevocable beneficiaries must be obtained"
+        },
+        {
+            "question": "Is the policy owner the only person who can change the beneficiary?",
+            "answer": "Yes, the owner of this insurance coverage is the only person entitled to change the beneficiary"
+        },
+        {
+            "question": "Are life insurance benefits paid to beneficiaries tax-free under current tax law?",
+            "answer": "Yes, under current tax law, benefits paid on your insurance are tax-free to the designated beneficiary."
+        },
+        {
+            "question": "What is the Waiver of Premium Benefit in TD 20-Year Term Life Insurance?",
+            "answer": "It is a benefit that ensures your coverage remains in place should you become disabled and cannot return to work, and may have problems paying for the policy."
+        },
+        {
+            "question": "When must the Waiver of Premium Benefit be added to the policy?",
+            "answer": "It must be added at the same time that you purchase TD 20-Year Term Life insurance."
+        },
+        {
+            "question": "What financial protection does life insurance provide in the event of death?",
+            "answer": "It can help to provide financial security for your family in the event of your death."
+        },
+        {
+            "question": "What additional recovery plans does TD Insurance offer for critical illness or accidents?",
+            "answer": "TD Insurance offers the Critical Illness Recovery Plan, Critical Accident Recovery Plan, and an array of insurance solutions to meet your needs."
+        },
+        {
+            "question": "Is life insurance the only protection I need for financial security?",
+            "answer": "No, life insurance is not the only protection you need; additional plans like the Critical Illness Recovery Plan may be necessary."
+        },
+        {
+            "question": "What is required if the owner of the insurance coverage is a corporation?",
+            "answer": "A corporate seal must accompany the signature of the signing officer. If a corporate seal is not available, the signatures of two signing officers with their titles are acceptable."
+        },
+        {
+            "question": "Who must witness the form, and what are the restrictions on the witness?",
+            "answer": "The form must be witnessed by someone who is not related to you and who is also not named as a beneficiary."
+        },
+        {
+            "question": "What is the difference between a revocable and an irrevocable beneficiary?",
+            "answer": "An irrevocable beneficiary cannot be changed without the consent of the beneficiary, while a revocable beneficiary can be changed at any time."
+        },
+        {
+            "question": "What happens to insurance proceeds if a beneficiary is named other than 'Estate'?",
+            "answer": "Proceeds are paid directly to the beneficiary and do not flow through the estate, avoiding probate and executor fees."
+        },
+        {
+            "question": "In Quebec, what is the default status of a spouse regarding beneficiary designation?",
+            "answer": "In Quebec, your spouse is automatically deemed to be an irrevocable beneficiary unless specifically designated as revocable."
+        },
+        {
+            "question": "What is required to revoke a minor child's irrevocable beneficiary designation?",
+            "answer": "A court order is required to revoke a minor child's irrevocable beneficiary designation."
+        },
+        {
+            "question": "What is a contingent beneficiary, and when do they receive the proceeds?",
+            "answer": "A contingent beneficiary is a secondary list of beneficiaries who receive the proceeds if none of the primary beneficiaries are alive at the time of death."
+        },
+        {
+            "question": "Within how many days must a claim for insurance benefits be made after the date of death of the insured person?",
+            "answer": "365 days"
+        },
+        {
+            "question": "What is the time frame within which suicide must occur for the insurance benefit to not be paid?",
+            "answer": "Within 2 years of the effective date of coverage or the most recent reinstatement effective date"
+        },
+        {
+            "question": "What happens if the insured person dies due to suicide within 2 years of the policy's effective date?",
+            "answer": "No insurance benefit is payable"
+        },
+        {
+            "question": "If no insurance benefit is payable due to suicide, what will the policy owner receive?",
+            "answer": "100% of premiums paid since the effective date or since the most recent reinstatement effective date"
+        },
+        {
+            "question": "Under what condition does the insurance policy end earliest due to the insured person?",
+            "answer": "The insured person dies."
+        },
+        {
+            "question": "At what age does the policy automatically end regardless of renewal terms?",
+            "answer": "The insured person's 80th birthday."
+        },
+        {
+            "question": "How long is each renewal period for the policy after the initial 20-year term?",
+            "answer": "Successive 20-year renewal periods."
+        },
+        {
+            "question": "To whom is the benefit paid if there is a beneficiary designated?",
+            "answer": "Your beneficiary(ies)."
+        },
+        {
+            "question": "What happens to the benefit if there is no beneficiary when the insured dies?",
+            "answer": "It is paid to you or your estate."
+        },
+        {
+            "question": "What must be done to change a beneficiary under this policy?",
+            "answer": "Submit a written request to us."
+        },
+        {
+            "question": "Up to what age can I convert my temporary life insurance to permanent life insurance?",
+            "answer": "Up to and including the policy anniversary nearest the insured's 69th birthday."
+        },
+        {
+            "question": "Are medical questions required when converting to permanent life insurance?",
+            "answer": "No, there are no medical questions required."
+        },
+        {
+            "question": "Can I be denied coverage when converting to permanent life insurance?",
+            "answer": "No, regardless of health, you cannot be turned down for coverage under this conversion option."
+        },
+        {
+            "question": "What determines the premiums for the converted permanent life insurance policy?",
+            "answer": "The premiums depend on the type and amount of coverage chosen."
+        },
+        {
+            "question": "What is the key benefit of the conversion option for individuals with health issues?",
+            "answer": "Regardless of health, you cannot be turned down for coverage under this conversion option."
+        },
+        {
+            "question": "What type of life insurance has the user chosen?",
+            "answer": "TD 20-Year Term Life insurance"
+        },
+        {
+            "question": "Why is life insurance considered important in a financial plan?",
+            "answer": "It is the cornerstone of a sound financial plan."
+        },
+        {
+            "question": "What is the main purpose of the TD 20-Year Term Life insurance policy?",
+            "answer": "To protect the financial security of your loved ones if you were to die."
+        },
+        {
+            "question": "What should the user do with the policy document?",
+            "answer": "Read it carefully to ensure full understanding and keep it in a safe place with other important documents."
+        },
+        {
+            "question": "What form should the user complete and return?",
+            "answer": "The Beneficiary Designation Form"
+        },
+        {
+            "question": "Under what condition does the Waiver of Premiums Benefit section apply?",
+            "answer": "If you selected the Waiver of Premiums Benefit when you applied for TD 20-Year Term Life Insurance."
+        },
+        {
+            "question": "What happens if a policy is issued based on an incorrect age and the insured person is still eligible for insurance?",
+            "answer": "The premium amount will be adjusted to the correct amount based on the correct date of birth at the insured person's effective date."
+        },
+        {
+            "question": "How is an overpayment of premiums handled when age is misstated and the insured is still eligible?",
+            "answer": "We will refund the excess premiums calculated at the time a claim is made against this policy."
+        },
+        {
+            "question": "What occurs if there is an underpayment of premiums due to incorrect age and the insured is still eligible?",
+            "answer": "We will decrease the benefit amount by the amount underpaid at the time a claim is made against this policy."
+        },
+        {
+            "question": "What happens if the insured person is not eligible for insurance due to a misstatement of age?",
+            "answer": "All coverages under this policy will be considered never to have been in force and we will refund all premiums paid."
+        },
+        {
+            "question": "How is the premium adjusted if the sex assigned at birth is incorrectly stated?",
+            "answer": "The premium amount will be adjusted to the correct amount based on the correct sex assigned at birth at the insured person's effective date."
+        },
+        {
+            "question": "What is the consequence of overpaying premiums due to incorrect sex assigned at birth?",
+            "answer": "We will refund the excess premiums calculated at the time a claim is made against this policy."
+        },
+        {
+            "question": "How are underpayments handled when the sex assigned at birth is misstated?",
+            "answer": "We will decrease the benefit amount by the amount underpaid at the time a claim is made against this policy."
+        },
+        {
+            "question": "When did Jane Sample's TD 20-Year Term Life insurance coverage take effect?",
+            "answer": "January 1, 2023"
+        },
+        {
+            "question": "How is the first monthly premium for the policy scheduled to be paid?",
+            "answer": "It is scheduled to be deducted from the payment account on January 1, 2023, and thereafter on the first of every month."
+        },
+        {
+            "question": "Who receives the benefits from the policy if no beneficiary is named?",
+            "answer": "The benefits will be paid to your estate."
+        },
+        {
+            "question": "What is the maximum age by which the policyholder can convert their term life insurance to permanent life insurance?",
+            "answer": "The policy anniversary nearest the insured's 69th birthday."
+        },
+        {
+            "question": "What is the duration of the review period during which Jane Sample can cancel the policy and receive a full refund?",
+            "answer": "30 days from the effective date."
+        },
+        {
+            "question": "What is the contact number for TD Insurance if Jane Sample has further questions about her policy?",
+            "answer": "1-888-788-0839"
+        },
+        {
+            "question": "What is the basis for determining insurability under this policy?",
+            "answer": "The truth and completeness of the statements and answers you give us."
+        },
+        {
+            "question": "What may happen if you conceal or misrepresent information?",
+            "answer": "We may void your insurance coverage under this policy."
+        },
+        {
+            "question": "What can lead to the voiding of insurance coverage?",
+            "answer": "Concealing or misrepresenting any information."
+        },
+        {
+            "question": "Who has the authority to void insurance coverage based on the provided text?",
+            "answer": "We (the insurer)."
+        },
+        {
+            "question": "What kind of information is expected to be truthful and complete?",
+            "answer": "The statements and answers you give us."
+        },
+        {
+            "question": "What is the purpose of the document?",
+            "answer": "To request a change of beneficiary under the life insurance policy."
+        },
+        {
+            "question": "What happens to prior beneficiary designations under this request?",
+            "answer": "They are revoked."
+        },
+        {
+            "question": "Who is the insured person mentioned in the policy?",
+            "answer": "Jane Sample."
+        },
+        {
+            "question": "What is the condition for a spouse's beneficiary designation in Quebec?",
+            "answer": "It is deemed irrevocable unless specified as revocable."
+        },
+        {
+            "question": "What must the sum of the beneficiary designations (a+b+c+d+e+f+g) equal?",
+            "answer": "100%."
+        },
+        {
+            "question": "What is the contact address for TD Insurance TD Life Insurance Company?",
+            "answer": "P.O. Box 1, TD Centre, Toronto, Ontario M5K 1A2."
+        },
+        {
+            "question": "What is the requirement for agents regarding personal conflicts of interest?",
+            "answer": "Our agents are prohibited from having personal conflicts of interest in regards to the sales transaction that you are considering."
+        },
+        {
+            "question": "What tool must agents use to make recommendations?",
+            "answer": "The agent is required to make a recommendation based solely on a review of the Needs Assessment Tool."
+        },
+        {
+            "question": "What does the Needs Assessment Tool identify?",
+            "answer": "The Needs Assessment Tool identified a gap in your insurance coverage."
+        },
+        {
+            "question": "What is the basis for an agent’s recommendation?",
+            "answer": "The agent is required to make a recommendation based solely on a review of the Needs Assessment Tool that identified a gap in your insurance coverage."
+        },
+        {
+            "question": "What is the relationship between i TD Assurance Agency and TD Bank Financial Group?",
+            "answer": "i TD Assurance Agency is a member of TD Bank Financial Group."
+        },
+        {
+            "question": "Does the affiliation with TD Bank Financial Group create a conflict of interest?",
+            "answer": "No, as long as recommendations are based solely on the Needs Assessment Tool."
+        },
+        {
+            "question": "Under what condition will the insurer waive premiums?",
+            "answer": "If the insured person becomes totally disabled and remains totally disabled for a continuous period of six months."
+        },
+        {
+            "question": "What is the maximum age up to which premium waivers can be applied?",
+            "answer": "The insured person's 80th birthday."
+        },
+        {
+            "question": "How is 'total disability' defined in the first two years after injury or disease onset?",
+            "answer": "The insured person is wholly prevented from performing the substantial duties of their own occupation."
+        },
+        {
+            "question": "After the first two years, what must the insured person be prevented from doing to qualify as totally disabled?",
+            "answer": "Engaging in any gainful occupation for which they are or may reasonably become qualified by training, education, or experience."
+        },
+        {
+            "question": "What change occurs to the premium payment frequency if it is not already monthly?",
+            "answer": "The policy premium payment frequency is automatically changed to monthly, beginning with the date the insurer agrees to waive premiums."
+        },
+        {
+            "question": "Can the insured person choose a payment frequency other than monthly after recovery from total disability?",
+            "answer": "Yes, but only if they notify the insurer after the end of the period of total disability."
+        },
+        {
+            "question": "What is the minimum duration of total disability required for premium waiver to begin?",
+            "answer": "Six months of continuous total disability."
+        },
+        {
+            "question": "At what age does the total disability waiver provision no longer apply?",
+            "answer": "The waiver applies up to the insured person's 80th birthday."
+        },
+        {
+            "question": "Who can be covered by the life insurance mentioned?",
+            "answer": "Spouse, partner, or other family members"
+        },
+        {
+            "question": "What types of financial hardships can occur after a spouse's death?",
+            "answer": "Childcare expenses, medical bills, funeral expenses"
+        },
+        {
+            "question": "What is the name of the life insurance product recommended?",
+            "answer": "TD 20-year Term Life insurance"
+        },
+        {
+            "question": "What is the duration of the term life insurance product mentioned?",
+            "answer": "20 years"
+        },
+        {
+            "question": "Why might a spouse or partner consider purchasing life insurance?",
+            "answer": "To help ensure they will have the money needed to maintain their lifestyle and raise their family"
+        },
+        {
+            "question": "What is one benefit of having this insurance?",
+            "answer": "It could help ensure you will have the money you need to maintain your lifestyle and raise your family"
+        },
+        {
+            "question": "What is the process called when a lapsed policy is restored to active status?",
+            "answer": "This process is called reinstatement."
+        },
+        {
+            "question": "What is the maximum time frame within which you can apply to reinstate a lapsed policy?",
+            "answer": "You may apply to us within 2 years of the lapse date to have your policy reinstated."
+        },
+        {
+            "question": "What must be true about the insured person to qualify for policy reinstatement?",
+            "answer": "The insured person must be alive."
+        },
+        {
+            "question": "What financial obligation must be fulfilled to reinstate a policy?",
+            "answer": "You must pay us all unpaid premiums due from the lapse date up to and including the reinstatement effective date."
+        },
+        {
+            "question": "What form must be submitted as part of the reinstatement application?",
+            "answer": "You must provide us with a completed Reinstatement Application."
+        },
+        {
+            "question": "What type of evidence is required to support reinstatement, and what condition must it meet?",
+            "answer": "You must provide us with new evidence of insurability for the insured person that we consider satisfactory."
+        },
+        {
+            "question": "What is the general meaning of 'Exceptions' in programming?",
+            "answer": "Exceptions are events that disrupt the normal flow of instructions in a program, typically due to errors or unusual conditions."
+        },
+        {
+            "question": "What is the primary purpose of life and health insurance?",
+            "answer": "To help provide for your family if the unexpected happens (illness, injury, or death)."
+        },
+        {
+            "question": "Which company offers life and health insurance products mentioned in the text?",
+            "answer": "TD Insurance."
+        },
+        {
+            "question": "What types of unexpected events does life and health insurance help protect against?",
+            "answer": "Illness, injury, or death."
+        },
+        {
+            "question": "What is the phone number to contact TD Insurance for more information?",
+            "answer": "1-888-788-0839."
+        },
+        {
+            "question": "What are the operating hours for TD Insurance on weekdays?",
+            "answer": "Monday to Friday, 8 a.m. to 10 p.m., Eastern Time."
+        },
+        {
+            "question": "What does travel medical insurance protect against?",
+            "answer": "Costly medical bills when traveling out-of-province and out-of-country."
+        },
+        {
+            "question": "What types of travel insurance coverage are available?",
+            "answer": "Per trip, annual, and multi-trip coverages."
+        },
+        {
+            "question": "What additional protections are offered with travel insurance?",
+            "answer": "Trip cancellation and interruption insurance options."
+        },
+        {
+            "question": "How can one get more details about travel insurance?",
+            "answer": "By calling 1-866-368-6509 to speak to a licensed insurance representative."
+        },
+        {
+            "question": "What is the phone number to contact TD Insurance for help with this form?",
+            "answer": "1-888-788-0839"
+        },
+        {
+            "question": "What types of events does home and auto insurance help cover?",
+            "answer": "A fire, accident, or break-in"
+        },
+        {
+            "question": "What is the purpose of home and auto insurance?",
+            "answer": "To provide the resources you'll need should a fire, accident or break-in happen in your home or car"
+        },
+        {
+            "question": "What is the phone number to contact TD Insurance for home and auto insurance?",
+            "answer": "1-888-588-5999"
+        },
+        {
+            "question": "On which days is the TD Insurance representative available to speak with customers?",
+            "answer": "Monday to Friday, and Saturday"
+        },
+        {
+            "question": "What are the operating hours for TD Insurance on weekdays?",
+            "answer": "8 a.m. to 8 p.m., Eastern Time"
+        },
+        {
+            "question": "What is the date mentioned in the text?",
+            "answer": "January 1, 2023"
+        },
+        {
+            "question": "Who is the person mentioned in the text?",
+            "answer": "Jane Sample"
+        },
+        {
+            "question": "What is the address associated with Jane Sample?",
+            "answer": "123 Address City, Province"
+        },
+        {
+            "question": "What is the postal code provided in the text?",
+            "answer": "A1A 1A1"
+        },
+        {
+            "question": "What must the claimant provide to prove the insured person has died?",
+            "answer": "Proof, satisfactory to us, that the insured person has died"
+        },
+        {
+            "question": "What medical records might the insurer request to assess a claim?",
+            "answer": "An attending physician's statement and a coroner's report"
+        },
+        {
+            "question": "What additional proof of claim may be required?",
+            "answer": "Further proof of claim, if applicable"
+        },
+        {
+            "question": "Within how many years must all proof be provided after the date of death?",
+            "answer": "One (1) year"
+        },
+        {
+            "question": "Who is responsible for the costs incurred in providing proof of claim?",
+            "answer": "The claimant"
+        },
+        {
+            "question": "What type of pen should be used when filling out the forms?",
+            "answer": "A ball point pen"
+        },
+        {
+            "question": "What should not be used on the forms?",
+            "answer": "Correction fluid (liquid paper)"
+        },
+        {
+            "question": "What must be done when making corrections on the forms?",
+            "answer": "Initial any corrections/changes"
+        },
+        {
+            "question": "Is it necessary to use all lines provided on the form?",
+            "answer": "No, use of all lines is not required"
+        },
+        {
+            "question": "What can be done if more space is needed for beneficiary designations?",
+            "answer": "Use a separate piece of paper to list all of your beneficiary designations"
+        },
+        {
+            "question": "What is the recommended method for listing beneficiary designations if the form lines are insufficient?",
+            "answer": "Use a separate piece of paper"
+        },
+        {
+            "question": "Why do we collect your information?",
+            "answer": "To identify you"
+        },
+        {
+            "question": "What is one reason we use your information?",
+            "answer": "To process your application and assess your eligibility"
+        },
+        {
+            "question": "How do we use your information in the context of insurance?",
+            "answer": "To underwrite insurance"
+        },
+        {
+            "question": "What is a purpose for retaining your information?",
+            "answer": "To provide you ongoing service"
+        },
+        {
+            "question": "How do we communicate with you using your information?",
+            "answer": "To communicate with you"
+        },
+        {
+            "question": "In what way do we personalize our relationship with you?",
+            "answer": "To personalize our relationship with you"
+        },
+        {
+            "question": "What information must be provided for each primary beneficiary?",
+            "answer": "First, Middle and Last Name, Date of Birth or Age, Percent of Benefit to be paid in the event of your death, and if the proceeds will be Revocable or Irrevocable."
+        },
+        {
+            "question": "When should a contingent beneficiary be designated?",
+            "answer": "After the statement 'if living, otherwise to' when designating a secondary beneficiary."
+        },
+        {
+            "question": "What is recommended when designating a child as a beneficiary?",
+            "answer": "To also name a Trustee."
+        },
+        {
+            "question": "Where should you refer to if you wish to designate a trustee for minor children?",
+            "answer": "Page 2 of the form."
+        },
+        {
+            "question": "What details must be included for a beneficiary designated as a trustee for minor children?",
+            "answer": "First, Middle and Last Name, Date of Birth or Age, Percent of Benefit to be paid in the event of your passing, and if the proceeds will be Revocable or Irrevocable."
+        },
+        {
+            "question": "What does 'Revocable' mean in the context of beneficiary designations?",
+            "answer": "It indicates that the beneficiary designation can be changed or revoked by the account holder."
+        },
+        {
+            "question": "What is the purpose of designating a contingent beneficiary?",
+            "answer": "To specify who will receive the proceeds if the primary beneficiary is not alive at the time of death."
+        },
+        {
+            "question": "What is the primary purpose of TD 20-Year Term Life Insurance?",
+            "answer": "To help secure the financial future of those you love if you were to die."
+        },
+        {
+            "question": "What can the tax-free lump sum benefit from TD 20-Year Term Life Insurance be used for?",
+            "answer": "Help cover tuition costs, pay down a mortgage, cover funeral expenses, provide day-to-day living expenses, and pay medical bills or outstanding debts."
+        },
+        {
+            "question": "How long are premiums guaranteed to remain fixed under TD 20-Year Term Life Insurance?",
+            "answer": "For each 20-year term."
+        },
+        {
+            "question": "What happens to the coverage after the initial 20-year term ends?",
+            "answer": "Coverage renews automatically every 20 years until the insured person turns 80 years old, as long as premiums are paid."
+        },
+        {
+            "question": "Is a medical examination required for automatic renewals of TD 20-Year Term Life Insurance?",
+            "answer": "No, there is no medical examination required for automatic renewals."
+        },
+        {
+            "question": "By what age can you convert your TD 20-Year Term Life Insurance to permanent life insurance without a medical exam?",
+            "answer": "Up to and including the policy anniversary nearest the insured's 69th birthday."
+        },
+        {
+            "question": "Who is included under the term 'reinsurers' in this authorization?",
+            "answer": "Those acting on their behalf."
+        },
+        {
+            "question": "What happens to the validity of this authorization if you are no longer a client of TD Life?",
+            "answer": "It shall no longer be valid."
+        },
+        {
+            "question": "What types of organizations can release information to TD Life or its reinsurers under this authorization?",
+            "answer": "Licensed physicians, medical practitioners, hospitals, clinics, other medical or medically related facilities, insurance companies, MIB, Inc., or other organizations, institutions, or persons with records or knowledge of you and your health."
+        },
+        {
+            "question": "What is the purpose of TD Life making a brief report of personal health information to the MIB?",
+            "answer": "To operate an information exchange on behalf of its members, which are life insurance companies."
+        },
+        {
+            "question": "What information must heirs and the executor or administrator of the estate provide in the event of a claim?",
+            "answer": "All the information and authorizations needed for claims purposes."
+        },
+        {
+            "question": "How can you opt out of receiving direct marketing offers from TD Life?",
+            "answer": "By informing TD Life."
+        }
+    ]
+}

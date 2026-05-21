@@ -1,0 +1,1442 @@
+{
+  "entities": [
+    "Fixed Account",
+    "Year 9",
+    "Option 2",
+    "Age",
+    "61 days",
+    "$500,000",
+    "charges",
+    "Planned Annual Premium",
+    "Exclusions",
+    "past index performance",
+    "Primary Beneficiary",
+    "10.5%",
+    "Tax Qualification Limit",
+    "Premium Load",
+    "future results",
+    "1-888-HORIZON-1",
+    "not currently elected",
+    "Caps",
+    "premium not received",
+    "Cost",
+    "Year 8",
+    "Year 4",
+    "policy",
+    "Matthew Scott Thompson",
+    "Death Benefit Reduction",
+    "negative index performance",
+    "Guaranteed Rates",
+    "Chicago, Illinois",
+    "issue date",
+    "4%",
+    "index participation",
+    "Year 12",
+    "participation rates",
+    "Year 1",
+    "Starting Index Value",
+    "Minimum Premium to Keep Policy in Force",
+    "Floor Rate",
+    "Free reallocations",
+    "Evidence of Insurability",
+    "Option 1 (Level)",
+    "each year",
+    "Premium Flexibility",
+    "Ending Index Value",
+    "reinstatement",
+    "cap rates",
+    "minimum guaranteed premiums",
+    "Policy Loans",
+    "Policy Lapse",
+    "Minimum Premium Payment",
+    "Account Value",
+    "Fee",
+    "9.0%",
+    "after Year 1",
+    "Year 5",
+    "Point-to-Point Method",
+    "Surrender Charges",
+    "Horizon Wealth Protection Insurance",
+    "Year 10",
+    "Cap",
+    "Policy Schedule",
+    "1%",
+    "securities product",
+    "index performance calculations",
+    "Optional rider",
+    "Year 6",
+    "Cash Surrender Value",
+    "October 3, 2024",
+    "Premiums paid in the first 10 years",
+    "Jessica Lynn Thompson",
+    "Participation Rate",
+    "9%",
+    "First 10 Withdrawals",
+    "Increasing Death Benefit",
+    "2 years",
+    "Cost of Insurance (COI)",
+    "Underwriting Class",
+    "Surrender Charge",
+    "Market Decline",
+    "0% Interest",
+    "Contingent Beneficiary",
+    "Date of Issue",
+    "$50 Fee After First 10",
+    "Crediting Period",
+    "3%",
+    "Maximum Premium Payment",
+    "S&P 500 Index",
+    "1% Annual Net Cost",
+    "withdrawals",
+    "guaranteed minimums",
+    "Outstanding Loans",
+    "Interest Credited",
+    "Monthly COI Rate",
+    "Chief Executive Officer",
+    "Level Death Benefit",
+    "suicide",
+    "fixed account rates",
+    "Fixed Account Rate",
+    "policy lapses",
+    "Stock market index",
+    "stocks",
+    "3.5% Premium Load",
+    "DOB",
+    "Surrender Value",
+    "Floor",
+    "account value drops to zero",
+    "Fixed Loan Rate",
+    "Anniversary",
+    "FREE PARTIAL WITHDRAWAL",
+    "Guaranteed interest rate",
+    "Thompson Family Trust",
+    "Index Account",
+    "1 Year Waiting Period",
+    "Year 11",
+    "Death Benefit Option",
+    "direct ownership",
+    "Specified Amount",
+    "S&P 500 Index Account",
+    "Net Cost",
+    "Initial Face Amount",
+    "30%",
+    "Female",
+    "0%",
+    "Year 3",
+    "hero",
+    "Coverage to Age 100",
+    "Maximum Loan Amount",
+    "30 days before lapse",
+    "Participation rates",
+    "Annual",
+    "material misrepresentation",
+    "Monthly Policy Charges",
+    "10% of account value",
+    "8.5%",
+    "January 25, 1980",
+    "2%",
+    "Planned Premium",
+    "Fixed account rate",
+    "NASDAQ-100 Index Account",
+    "44",
+    "$500 Minimum",
+    "Cap Rate",
+    "Standard Plus Non-Tobacco",
+    "contestability",
+    "dividends",
+    "index funds",
+    "Administrative Charge",
+    "remaining surrender value",
+    "25%",
+    "100%",
+    "20%",
+    "Current Cap",
+    "Death Benefit at Claim Time",
+    "index components",
+    "6%",
+    "Year 7",
+    "Policy anniversary",
+    "$6,000",
+    "Gender",
+    "Minimum Withdrawal Amount",
+    "Grace Period",
+    "Policy Number",
+    "3.0%",
+    "Partial Withdrawals",
+    "interest",
+    "Equity-Indexed Universal Life",
+    "Spouse",
+    "HWP-IUL-2024-7290",
+    "Monthly Deductions",
+    "50%",
+    "Reallocations",
+    "zero",
+    "Maximum Withdrawal Amount",
+    "1 year",
+    "4% Annual Loan Interest",
+    "NASDAQ-100 Index",
+    "premiums paid",
+    "monthly deductions",
+    "www.horizonwealthprotection.com",
+    "Option 1",
+    "notify you",
+    "Global Diversified Index Account",
+    "No Lapse Guarantee Rider",
+    "Year 2",
+    "7%",
+    "Death Benefit",
+    "5%",
+    "Index % Change",
+    "0.5%",
+    "8%",
+    "10%",
+    "Coverage will not lapse"
+  ],
+  "relations": [
+    [
+      "FREE PARTIAL WITHDRAWAL",
+      "applies after",
+      "Year 1"
+    ],
+    [
+      "100%",
+      "is the Participation Rate for",
+      "Global Diversified Index Account"
+    ],
+    [
+      "Year 10",
+      "has surrender charge of",
+      "1%"
+    ],
+    [
+      "Horizon Wealth Protection Insurance",
+      "offers",
+      "Equity-Indexed Universal Life"
+    ],
+    [
+      "Crediting Period",
+      "is associated with",
+      "NASDAQ-100 Index Account"
+    ],
+    [
+      "Planned Premium",
+      "is",
+      "$6,000 annually"
+    ],
+    [
+      "Premium Flexibility",
+      "allows",
+      "payment at any time"
+    ],
+    [
+      "Planned Premium",
+      "is recommended to maintain",
+      "Coverage to Age 100"
+    ],
+    [
+      "3.5% Premium Load",
+      "is deducted for",
+      "expenses"
+    ],
+    [
+      "Level Death Benefit",
+      "equals",
+      "$500,000 (specified amount)"
+    ],
+    [
+      "Year 1",
+      "has surrender charge of",
+      "10%"
+    ],
+    [
+      "Crediting Period",
+      "is associated with",
+      "S&P 500 Index Account"
+    ],
+    [
+      "Matthew Scott Thompson",
+      "is relationship to",
+      "Jessica Lynn Thompson"
+    ],
+    [
+      "Outstanding Loans",
+      "reduce",
+      "Death Benefit at Claim Time"
+    ],
+    [
+      "October 3, 2024",
+      "is execution date of",
+      "Horizon Wealth Protection Insurance"
+    ],
+    [
+      "Interest Credited",
+      "is subject to",
+      "Floor"
+    ],
+    [
+      "Matthew Scott Thompson",
+      "is primary beneficiary of",
+      "Equity-Indexed Universal Life"
+    ],
+    [
+      "Equity-Indexed Universal Life",
+      "requires minimum premium to keep in force",
+      "Minimum Premium to Keep Policy in Force"
+    ],
+    [
+      "premiums paid",
+      "are reduced by",
+      "charges"
+    ],
+    [
+      "NASDAQ-100 Index Account",
+      "has Participation Rate of",
+      "100%"
+    ],
+    [
+      "Fixed Account",
+      "has no cap",
+      "variability"
+    ],
+    [
+      "S&P 500 Index Account",
+      "has allocation of",
+      "50%"
+    ],
+    [
+      "8.5%",
+      "is the Current Cap for",
+      "Global Diversified Index Account"
+    ],
+    [
+      "index participation",
+      "does not involve",
+      "index funds"
+    ],
+    [
+      "Cash Surrender Value",
+      "minus",
+      "Surrender Charge"
+    ],
+    [
+      "Thompson Family Trust",
+      "is contingent beneficiary of",
+      "Equity-Indexed Universal Life"
+    ],
+    [
+      "Guaranteed Rates",
+      "guarantee that",
+      "Participation rates will never be less than 25%"
+    ],
+    [
+      "FREE PARTIAL WITHDRAWAL",
+      "allows withdrawal of",
+      "10% of account value"
+    ],
+    [
+      "Grace Period",
+      "is provided to",
+      "pay sufficient premium to bring policy back in force"
+    ],
+    [
+      "zero",
+      "is",
+      "hero"
+    ],
+    [
+      "FREE PARTIAL WITHDRAWAL",
+      "is available",
+      "each year"
+    ],
+    [
+      "Floor Rate",
+      "is the minimum interest rate credited to",
+      "Index Account"
+    ],
+    [
+      "S&P 500 Index Account",
+      "has Participation Rate of",
+      "100%"
+    ],
+    [
+      "Year 8",
+      "has surrender charge of",
+      "3%"
+    ],
+    [
+      "Year 11",
+      "has surrender charge of",
+      "0.5%"
+    ],
+    [
+      "Free reallocations",
+      "are available up to",
+      "4 per year"
+    ],
+    [
+      "Fixed Account",
+      "must be at least",
+      "2%"
+    ],
+    [
+      "Crediting Period",
+      "is associated with",
+      "Global Diversified Index Account"
+    ],
+    [
+      "Premium Flexibility",
+      "allows",
+      "skipping premium payments"
+    ],
+    [
+      "Participation Rate",
+      "is associated with",
+      "NASDAQ-100 Index Account"
+    ],
+    [
+      "Year 2",
+      "has surrender charge of",
+      "9%"
+    ],
+    [
+      "Partial Withdrawals",
+      "maximum amount",
+      "Account value minus surrender charge"
+    ],
+    [
+      "Floor",
+      "is associated with",
+      "NASDAQ-100 Index Account"
+    ],
+    [
+      "S&P 500 Index Account",
+      "uses",
+      "Point-to-Point Method"
+    ],
+    [
+      "Administrative Charge",
+      "amount",
+      "$12 per month"
+    ],
+    [
+      "Surrender charge",
+      "is calculated as a percentage of",
+      "Premiums paid in the first 10 years"
+    ],
+    [
+      "Horizon Wealth Protection Insurance",
+      "has website",
+      "www.horizonwealthprotection.com"
+    ],
+    [
+      "S&P 500 Index",
+      "has starting value of",
+      "4,000"
+    ],
+    [
+      "Participation Rate",
+      "can be",
+      "100%"
+    ],
+    [
+      "premiums paid",
+      "are paid without interest",
+      "interest"
+    ],
+    [
+      "Equity-Indexed Universal Life",
+      "issued on",
+      "October 3, 2024"
+    ],
+    [
+      "Jessica Lynn Thompson",
+      "is insured under",
+      "Equity-Indexed Universal Life"
+    ],
+    [
+      "Cap Rate",
+      "is the maximum interest rate credited to",
+      "Index Account"
+    ],
+    [
+      "Global Diversified Index Account",
+      "has Floor of",
+      "0%"
+    ],
+    [
+      "Floor",
+      "is associated with",
+      "S&P 500 Index Account"
+    ],
+    [
+      "Fixed Account",
+      "has Guaranteed interest rate of",
+      "3.0% annually"
+    ],
+    [
+      "Annual",
+      "is the frequency of",
+      "Crediting Period"
+    ],
+    [
+      "NASDAQ-100 Index Account",
+      "has Crediting Period of",
+      "1 year"
+    ],
+    [
+      "Premium Flexibility",
+      "allows",
+      "payment in any amount"
+    ],
+    [
+      "0%",
+      "is the Floor for",
+      "NASDAQ-100 Index Account"
+    ],
+    [
+      "Policy Loans",
+      "have net cost",
+      "1% Annual Net Cost"
+    ],
+    [
+      "Jessica Lynn Thompson",
+      "is age",
+      "44"
+    ],
+    [
+      "Cap Rate",
+      "is guaranteed to be at least",
+      "4%"
+    ],
+    [
+      "Account Value",
+      "must be sufficient to cover",
+      "Monthly Deductions"
+    ],
+    [
+      "fixed account rates",
+      "never go below",
+      "guaranteed minimums"
+    ],
+    [
+      "Index Account",
+      "is based on",
+      "Stock market index"
+    ],
+    [
+      "25%",
+      "is the minimum guaranteed Participation Rate",
+      "Participation Rate"
+    ],
+    [
+      "Jessica Lynn Thompson",
+      "is owner of",
+      "Equity-Indexed Universal Life"
+    ],
+    [
+      "S&P 500 Index",
+      "has ending value of",
+      "4,600"
+    ],
+    [
+      "Cap",
+      "can be",
+      "10.5%"
+    ],
+    [
+      "You",
+      "may change",
+      "Death Benefit Options"
+    ],
+    [
+      "Equity-Indexed Universal Life",
+      "has initial face amount",
+      "$500,000"
+    ],
+    [
+      "Jessica Lynn Thompson",
+      "has date of birth",
+      "January 25, 1980"
+    ],
+    [
+      "Loaned amounts",
+      "earn",
+      "Fixed Account Rate"
+    ],
+    [
+      "Fixed Account",
+      "has no floor",
+      "variability"
+    ],
+    [
+      "Monthly Policy Charges",
+      "includes",
+      "Administrative Charge"
+    ],
+    [
+      "Equity-Indexed Universal Life",
+      "has death benefit option",
+      "Option 1 (Level)"
+    ],
+    [
+      "3.0%",
+      "is the Guaranteed interest rate for",
+      "Fixed Account"
+    ],
+    [
+      "fixed account rates",
+      "may change annually",
+      "cap rates"
+    ],
+    [
+      "S&P 500 Index",
+      "is associated with",
+      "S&P 500 Index Account"
+    ],
+    [
+      "No Lapse Guarantee Rider",
+      "guarantees",
+      "Coverage will not lapse"
+    ],
+    [
+      "Policy Lapse",
+      "occurs if",
+      "premium not received within grace period"
+    ],
+    [
+      "Interest Credited",
+      "is calculated as",
+      "Index % Change multiplied by Participation Rate"
+    ],
+    [
+      "Coverage will not lapse",
+      "as long as",
+      "minimum guaranteed premiums are paid"
+    ],
+    [
+      "Total charges",
+      "deducted on",
+      "3rd of each month"
+    ],
+    [
+      "participation rates",
+      "never go below",
+      "guaranteed minimums"
+    ],
+    [
+      "Global Diversified Index Account",
+      "has Participation Rate of",
+      "100%"
+    ],
+    [
+      "Floor",
+      "protects against",
+      "Market Decline"
+    ],
+    [
+      "Withdrawals after first 10",
+      "have fee",
+      "$50 Fee After First 10"
+    ],
+    [
+      "Partial Withdrawals",
+      "reduce death benefit dollar-for-dollar",
+      "Option 1"
+    ],
+    [
+      "Index Account",
+      "is defined as",
+      "An account where interest credits are based on the performance of a stock market index"
+    ],
+    [
+      "No Lapse Guarantee Rider",
+      "is",
+      "Optional rider"
+    ],
+    [
+      "Participation Rate",
+      "is the percentage of index gain credited to",
+      "Account"
+    ],
+    [
+      "Premium Load",
+      "is",
+      "3.5% of each premium payment"
+    ],
+    [
+      "Partial Withdrawals",
+      "reduce under",
+      "Option 1"
+    ],
+    [
+      "Floor",
+      "is associated with",
+      "Global Diversified Index Account"
+    ],
+    [
+      "S&P 500 Index",
+      "is an example of",
+      "Index used in crediting calculation"
+    ],
+    [
+      "Increasing Death Benefit",
+      "equals",
+      "Specified Amount + Account Value"
+    ],
+    [
+      "monthly deductions",
+      "require payment of",
+      "sufficient premium"
+    ],
+    [
+      "Coverage will not lapse",
+      "if",
+      "account value drops to zero"
+    ],
+    [
+      "Year 6",
+      "has surrender charge of",
+      "5%"
+    ],
+    [
+      "policy",
+      "is subject to",
+      "contestability"
+    ],
+    [
+      "NASDAQ-100 Index Account",
+      "uses",
+      "Point-to-Point Method"
+    ],
+    [
+      "Fee",
+      "is charged for",
+      "reallocations after first 4 per year"
+    ],
+    [
+      "4%",
+      "is the minimum guaranteed Cap",
+      "Cap Rate"
+    ],
+    [
+      "Jessica Lynn Thompson",
+      "has underwriting class",
+      "Standard Plus Non-Tobacco"
+    ],
+    [
+      "premiums paid",
+      "are reduced by",
+      "withdrawals"
+    ],
+    [
+      "Increasing Death Benefit",
+      "grows with",
+      "Account Value"
+    ],
+    [
+      "Year 4",
+      "has surrender charge of",
+      "7%"
+    ],
+    [
+      "suicide",
+      "results in payment of",
+      "premiums paid minus withdrawals and charges"
+    ],
+    [
+      "cap rates",
+      "may change annually",
+      "fixed account rates"
+    ],
+    [
+      "Maximum Premium Payment",
+      "is limited by",
+      "Tax Qualification Limit"
+    ],
+    [
+      "Change of Death Benefit Options",
+      "requires",
+      "60 days notice"
+    ],
+    [
+      "Policy Lapse",
+      "is triggered by",
+      "premium not received"
+    ],
+    [
+      "Cash Surrender Value",
+      "equals",
+      "Account Value"
+    ],
+    [
+      "cap rates",
+      "may change annually",
+      "participation rates"
+    ],
+    [
+      "Participation Rate",
+      "is associated with",
+      "S&P 500 Index Account"
+    ],
+    [
+      "Fixed Account",
+      "earns",
+      "guaranteed fixed interest rate"
+    ],
+    [
+      "Cash Surrender Value",
+      "minus",
+      "Outstanding Loans"
+    ],
+    [
+      "No Lapse Guarantee Rider",
+      "is",
+      "not currently elected"
+    ],
+    [
+      "Minimum Premium Payment",
+      "is",
+      "$100"
+    ],
+    [
+      "index participation",
+      "does not involve",
+      "stocks"
+    ],
+    [
+      "Horizon Wealth Protection Insurance",
+      "has contact phone",
+      "1-888-HORIZON-1"
+    ],
+    [
+      "zero",
+      "prevents participation in",
+      "dividends"
+    ],
+    [
+      "Grace Period",
+      "is",
+      "61 days"
+    ],
+    [
+      "Horizon Wealth Protection Insurance",
+      "is located in",
+      "Chicago, Illinois"
+    ],
+    [
+      "0%",
+      "is the Floor for",
+      "S&P 500 Index Account"
+    ],
+    [
+      "9.0%",
+      "is the Current Cap for",
+      "NASDAQ-100 Index Account"
+    ],
+    [
+      "Monthly Policy Charges",
+      "includes",
+      "Cost of Insurance (COI)"
+    ],
+    [
+      "Jessica Lynn Thompson",
+      "is gender",
+      "Female"
+    ],
+    [
+      "Guaranteed interest rate",
+      "is",
+      "3.0% annually"
+    ],
+    [
+      "Horizon Wealth Protection Insurance",
+      "has chief executive officer",
+      "Chief Executive Officer"
+    ],
+    [
+      "Current Cap",
+      "is associated with",
+      "NASDAQ-100 Index Account"
+    ],
+    [
+      "Policy Lapse",
+      "results in",
+      "remaining surrender value being paid to you"
+    ],
+    [
+      "dividends from index components",
+      "are not included in",
+      "index performance calculations"
+    ],
+    [
+      "Year 5",
+      "has surrender charge of",
+      "6%"
+    ],
+    [
+      "issue date",
+      "is reference point for",
+      "2 years"
+    ],
+    [
+      "10.5%",
+      "is the Current Cap for",
+      "S&P 500 Index Account"
+    ],
+    [
+      "NASDAQ-100 Index Account",
+      "has allocation of",
+      "30%"
+    ],
+    [
+      "Participation Rate",
+      "is used in calculation of",
+      "Interest Credited"
+    ],
+    [
+      "Policy anniversary",
+      "is the date when",
+      "you may change allocations"
+    ],
+    [
+      "Increasing Death Benefit",
+      "is",
+      "Option 2"
+    ],
+    [
+      "Current Cap",
+      "is associated with",
+      "S&P 500 Index Account"
+    ],
+    [
+      "S&P 500 Index",
+      "achieved gain of",
+      "15%"
+    ],
+    [
+      "Level Death Benefit",
+      "is",
+      "Option 1"
+    ],
+    [
+      "Account value",
+      "is insufficient to pay",
+      "monthly deductions"
+    ],
+    [
+      "NASDAQ-100 Index Account",
+      "has Current Cap of",
+      "9.0%"
+    ],
+    [
+      "Surrender Charges",
+      "apply if surrendered within",
+      "first 12 years"
+    ],
+    [
+      "Year 3",
+      "has surrender charge of",
+      "8%"
+    ],
+    [
+      "suicide",
+      "is subject to",
+      "2 years from issue or reinstatement"
+    ],
+    [
+      "Fixed Account",
+      "has allocation of",
+      "20%"
+    ],
+    [
+      "Equity-Indexed Universal Life",
+      "has policy number",
+      "HWP-IUL-2024-7290"
+    ],
+    [
+      "Index % Change",
+      "is calculated as",
+      "Ending Index Value minus Starting Index Value divided by Starting Index Value"
+    ],
+    [
+      "Maximum Premium Payment",
+      "is",
+      "$50,000"
+    ],
+    [
+      "Horizon Wealth Protection Insurance",
+      "executed at",
+      "Chicago, Illinois"
+    ],
+    [
+      "Participation Rate",
+      "is associated with",
+      "Global Diversified Index Account"
+    ],
+    [
+      "Year 9",
+      "has surrender charge of",
+      "2%"
+    ],
+    [
+      "Exclusions",
+      "is a section of",
+      "the policy document"
+    ],
+    [
+      "NASDAQ-100 Index Account",
+      "has Floor of",
+      "0%"
+    ],
+    [
+      "Reallocations after first 4 per year",
+      "have a fee of",
+      "$25"
+    ],
+    [
+      "Interest Credited",
+      "cannot be less than",
+      "0%"
+    ],
+    [
+      "Cost of Insurance (COI)",
+      "calculated as",
+      "Death Benefit - Account Value \u00d7 Monthly COI Rate \u00f7 1,000"
+    ],
+    [
+      "4% Annual Loan Interest",
+      "is",
+      "Fixed Loan Rate"
+    ],
+    [
+      "Partial Withdrawals",
+      "minimum amount",
+      "$500 Minimum"
+    ],
+    [
+      "2 years",
+      "is the period for",
+      "contestability"
+    ],
+    [
+      "Participation Rate",
+      "is guaranteed to be at least",
+      "25%"
+    ],
+    [
+      "0%",
+      "is the Floor for",
+      "Global Diversified Index Account"
+    ],
+    [
+      "Total charges",
+      "deducted from",
+      "Account Value"
+    ],
+    [
+      "First 10 Withdrawals",
+      "are",
+      "free"
+    ],
+    [
+      "policy",
+      "is not",
+      "securities product"
+    ],
+    [
+      "Global Diversified Index Account",
+      "uses",
+      "Point-to-Point Method"
+    ],
+    [
+      "Interest Credited",
+      "is subject to",
+      "Cap"
+    ],
+    [
+      "Participation Rate",
+      "must be at least",
+      "25%"
+    ],
+    [
+      "S&P 500 Index Account",
+      "has Current Cap of",
+      "10.5%"
+    ],
+    [
+      "past index performance",
+      "does not guarantee",
+      "future results"
+    ],
+    [
+      "Year 12",
+      "has surrender charge of",
+      "0%"
+    ],
+    [
+      "cap rates",
+      "never go below",
+      "guaranteed minimums"
+    ],
+    [
+      "Fixed Account Rate",
+      "is",
+      "3%"
+    ],
+    [
+      "Increase in coverage",
+      "requires",
+      "Evidence of Insurability"
+    ],
+    [
+      "Monthly Policy Charges",
+      "include",
+      "Cost"
+    ],
+    [
+      "1 year",
+      "is the duration of",
+      "Crediting Period"
+    ],
+    [
+      "Current Cap",
+      "is associated with",
+      "Global Diversified Index Account"
+    ],
+    [
+      "S&P 500 Index",
+      "declined by",
+      "5%"
+    ],
+    [
+      "100%",
+      "is the Participation Rate for",
+      "NASDAQ-100 Index Account"
+    ],
+    [
+      "Cap",
+      "limits",
+      "Interest Credited"
+    ],
+    [
+      "S&P 500 Index Account",
+      "has Crediting Period of",
+      "1 year"
+    ],
+    [
+      "First 4 reallocations per year",
+      "are",
+      "free"
+    ],
+    [
+      "Level Death Benefit",
+      "has",
+      "Lower ongoing charges"
+    ],
+    [
+      "100%",
+      "is the Participation Rate for",
+      "S&P 500 Index Account"
+    ],
+    [
+      "Global Diversified Index Account",
+      "has Crediting Period of",
+      "1 year"
+    ],
+    [
+      "contestability",
+      "applies to",
+      "material misrepresentation"
+    ],
+    [
+      "Increasing Death Benefit",
+      "has",
+      "Higher ongoing charges"
+    ],
+    [
+      "Partial Withdrawals",
+      "reduce",
+      "Death Benefit"
+    ],
+    [
+      "Outstanding Loans",
+      "reduce death benefit at",
+      "Time of Claim"
+    ],
+    [
+      "Index Account",
+      "has interest credited based on",
+      "stock market index performance"
+    ],
+    [
+      "Cost of Insurance (COI)",
+      "deducted monthly based on",
+      "Death Benefit - Account Value \u00d7 Monthly COI Rate \u00f7 1,000"
+    ],
+    [
+      "NASDAQ-100 Index",
+      "is associated with",
+      "NASDAQ-100 Index Account"
+    ],
+    [
+      "Point-to-Point Method",
+      "is the method used for interest crediting based on",
+      "index change from beginning to end of crediting period"
+    ],
+    [
+      "participation rates",
+      "may change annually",
+      "fixed account rates"
+    ],
+    [
+      "Market Decline",
+      "results in",
+      "0% Interest"
+    ],
+    [
+      "Guaranteed Rates",
+      "guarantee that",
+      "Fixed account rate will never be less than 2%"
+    ],
+    [
+      "Year 7",
+      "has surrender charge of",
+      "4%"
+    ],
+    [
+      "suicide",
+      "occurs within",
+      "2 years"
+    ],
+    [
+      "We",
+      "will notify you",
+      "at least 30 days before lapse"
+    ],
+    [
+      "zero",
+      "prevents loss due to",
+      "negative index performance"
+    ],
+    [
+      "Reallocations",
+      "are free on",
+      "policy anniversary"
+    ],
+    [
+      "index participation",
+      "does not involve",
+      "direct ownership"
+    ],
+    [
+      "Floor",
+      "ensures minimum",
+      "0% Interest"
+    ],
+    [
+      "Policy Loans",
+      "maximum amount",
+      "90% of surrender value"
+    ],
+    [
+      "Policy Loans",
+      "available after",
+      "1 Year Waiting Period"
+    ],
+    [
+      "Crediting Period",
+      "is",
+      "1 year"
+    ],
+    [
+      "reinstatement",
+      "is reference point for",
+      "2 years"
+    ],
+    [
+      "Equity-Indexed Universal Life",
+      "has planned annual premium",
+      "$6,000"
+    ],
+    [
+      "Fixed Account",
+      "is guaranteed to have rate at least",
+      "2%"
+    ],
+    [
+      "2%",
+      "is the minimum guaranteed Fixed account rate",
+      "Fixed Account"
+    ],
+    [
+      "COI rates",
+      "guaranteed not to exceed",
+      "rates shown in the policy schedule"
+    ],
+    [
+      "S&P 500 Index Account",
+      "has Floor of",
+      "0%"
+    ],
+    [
+      "Global Diversified Index Account",
+      "has Current Cap of",
+      "8.5%"
+    ],
+    [
+      "Chief Executive Officer",
+      "executes",
+      "Horizon Wealth Protection Insurance"
+    ],
+    [
+      "Policy Loans",
+      "have interest rate",
+      "4% Annual Loan Interest"
+    ],
+    [
+      "Guaranteed Rates",
+      "guarantee that",
+      "Caps will never be less than 4%"
+    ]
+  ],
+  "edges": [
+    "is gender",
+    "require payment of",
+    "must be at least",
+    "prevents loss due to",
+    "declined by",
+    "as long as",
+    "must be sufficient to cover",
+    "does not guarantee",
+    "has policy number",
+    "has surrender charge of",
+    "requires minimum premium to keep in force",
+    "occurs within",
+    "have interest rate",
+    "is charged for",
+    "is relationship to",
+    "have a fee of",
+    "are paid without interest",
+    "is calculated as",
+    "does not involve",
+    "has Guaranteed interest rate of",
+    "deducted from",
+    "occurs if",
+    "is deducted for",
+    "earn",
+    "is the Floor for",
+    "is triggered by",
+    "is the minimum interest rate credited to",
+    "is the frequency of",
+    "will notify you",
+    "are free on",
+    "have net cost",
+    "calculated as",
+    "is the period for",
+    "has allocation of",
+    "is defined as",
+    "is contingent beneficiary of",
+    "is reference point for",
+    "minus",
+    "has underwriting class",
+    "is associated with",
+    "reduce",
+    "reduce under",
+    "limits",
+    "is subject to",
+    "available after",
+    "are",
+    "applies to",
+    "protects against",
+    "may change",
+    "reduce death benefit dollar-for-dollar",
+    "is execution date of",
+    "are available up to",
+    "apply if surrendered within",
+    "is the Current Cap for",
+    "includes",
+    "uses",
+    "has date of birth",
+    "has contact phone",
+    "is an example of",
+    "has Participation Rate of",
+    "is guaranteed to have rate at least",
+    "reduce death benefit at",
+    "is the Participation Rate for",
+    "is the maximum interest rate credited to",
+    "may change annually",
+    "is the minimum guaranteed Cap",
+    "is based on",
+    "deducted on",
+    "is insufficient to pay",
+    "minimum amount",
+    "executed at",
+    "results in",
+    "applies after",
+    "earns",
+    "have fee",
+    "is guaranteed to be at least",
+    "grows with",
+    "is the duration of",
+    "results in payment of",
+    "is the Guaranteed interest rate for",
+    "is owner of",
+    "is limited by",
+    "guarantee that",
+    "is not",
+    "never go below",
+    "is located in",
+    "cannot be less than",
+    "is insured under",
+    "is the minimum guaranteed Participation Rate",
+    "are reduced by",
+    "is primary beneficiary of",
+    "is age",
+    "has ending value of",
+    "offers",
+    "allows withdrawal of",
+    "has no cap",
+    "guarantees",
+    "has interest credited based on",
+    "if",
+    "is the date when",
+    "has chief executive officer",
+    "are not included in",
+    "achieved gain of",
+    "prevents participation in",
+    "is the minimum guaranteed Fixed account rate",
+    "has website",
+    "has starting value of",
+    "include",
+    "amount",
+    "has death benefit option",
+    "allows",
+    "ensures minimum",
+    "has Floor of",
+    "has Crediting Period of",
+    "requires",
+    "is a section of",
+    "is available",
+    "is calculated as a percentage of",
+    "executes",
+    "is recommended to maintain",
+    "is",
+    "issued on",
+    "has Current Cap of",
+    "equals",
+    "has",
+    "is provided to",
+    "is the percentage of index gain credited to",
+    "has initial face amount",
+    "has no floor",
+    "is used in calculation of",
+    "maximum amount",
+    "is the method used for interest crediting based on",
+    "guaranteed not to exceed",
+    "can be",
+    "has planned annual premium",
+    "deducted monthly based on"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

@@ -1,0 +1,2024 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;Beneficiary changes may be made at any time by written request.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;• All future premiums are waived&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Accident must be the direct cause of death&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Olivia Grace Bennett (Daughter) - 20%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;• Coverage continues in full&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Issued in Denver, Colorado&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death must occur within 90 days of accident&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.3 EXCLUSION - SUICIDE: If death occurs by suicide within 2 years of the issue date, we will pay only the premiums paid, without interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;'Disability' means the complete inability to perform the material and substantial duties of your regular occupation due to sickness or injury.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;President and CEO, ProtectPlus Family Insurance Co.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Excludes: suicide, self-inflicted injury, war, aviation (as pilot/crew)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Date: July 12, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;ProtectPlus Family Insurance Co.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;No payment if insured was under influence of drugs/alcohol&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;All future premiums are waived&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Term Life Insurance Policy with Riders&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Terminates at insured's age 70&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;'Terminal Illness' means a condition expected to result in death within 24 months as certified by a physician.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Must exercise within 90 days of option date.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Coverage continues in full force&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Allows purchase of additional coverage without medical underwriting:&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Waiver continues until you recover, return to work, or age 65&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium based on age and class at time of exercise.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;May purchase up to $100,000 additional coverage per option date&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.1 We will pay the death benefit if the insured dies while this policy is in force and all premiums have been paid.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;All options terminate at age 50.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Must submit annual proof of continuing disability&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Option dates: Ages 40, 43, 46, 49 and at birth/adoption of child&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Issue Age: 37&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Annual Premium: $1,089.00 (base + all riders)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If diagnosed with a terminal illness:&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Must exercise within 90 days of option date&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Name: Christopher David Bennett&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Due Date: July 12 of each year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;May access up to 95% of death benefit while living&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium based on age and class at time of exercise&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Underwriting Class: Preferred Non-Smoker&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Payment Mode: Annual (monthly/quarterly available upon request)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Minimum advance: $10,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;All options terminate at age 50&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Date of Birth: May 20, 1987&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;GRACE PERIOD: 31 days from due date. Coverage continues during grace period. If death occurs during grace period, unpaid premium will be deducted from death benefit.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Maximum advance: $500,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium: Included at no charge&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.2 Payment will be made to the beneficiary within 30 days of receiving satisfactory proof of death.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy is guaranteed renewable to age 95 at increased premiums shown in the renewal rate schedule.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Benefit reduced by actuarial discount (approximately 8% per year)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium: $48/year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Remaining death benefit paid to beneficiaries upon death&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may convert all or part of this policy to permanent life insurance without evidence of insurability:&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium: $156/year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Base Annual Premium: $612.00&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Before the policy expiration date, or before your 70th birthday, whichever is earlier&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium: $94/year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;May access up to 2% of face amount per month&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium: $89/year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Face Amount: $750,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Period: 30 years (expires July 12, 2054)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Maximum total advance: 50% of face amount&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Contingent: Bennett Family Irrevocable Trust - 100%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Minimum conversion amount: $50,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;No actuarial discount applied&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Must be certified by licensed healthcare practitioner&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;We will not contest this policy after it has been in force for 2 years during the insured's lifetime, except for non-payment of premiums.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary: Rachel Marie Bennett (Wife) - 60%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Number: PP-TL-2024-6729R&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Christopher Bennett Jr. (Son) - 20%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Provides $15,000 coverage on each eligible child:&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Sex: Male&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;The standard aviation exclusion has been waived for this policy based on the insured's declared private pilot activities.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Covers all natural and legally adopted children&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Type: 30-Year Level Premium Term&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Additional premium of $175/year is included in the base premium.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Coverage from birth (or adoption) to age 25&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Policy Date: July 12, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Total Annual Premium (including riders): $1,089.00&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Coverage includes death while: Operating or riding as a passenger in any aircraft&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Automatically includes future children&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;'Chronic Illness' means the inability to perform at least 2 of 6 Activities of Daily Living for at least 90 days.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Exception: military combat operations&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;No medical exam required&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;══&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">0.0</data>
+  <data key="d2">chunk-ae4a16fcc17d13583fada557996e9230</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;RIDER 1: WAIVER OF PREMIUM DUE TO DISABILITY&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Riders may be added or removed on any policy anniversary with 30 days written notice.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Children may convert to individual policy at age 25 without evidence of insurability, up to 5 times the rider amount&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premium: $102/year&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">18.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Adding riders may require evidence of insurability.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Covered Children: Christopher Bennett Jr. (Age 8), Olivia Grace Bennett (Age 5)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If you become totally disabled before age 60 and remain disabled for 6 consecutive months:&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">17.0</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Pays an additional $750,000 if death results from accidental injury:&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;SON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The relationship between Christopher Bennett Jr. and Christopher David Bennett."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;PERMANENT LIFE INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"A type of life insurance that provides lifelong coverage."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The total death benefit amount of the insurance policy."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;TERM LIFE INSURANCE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of life insurance that provides coverage for a specified term."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;PRESIDENT AND CEO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The executive officer responsible for the company's leadership."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;ALCOHOL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SUBSTANCE"</data>
+  <data key="d4">"Alcohol consumption that disqualifies the claim."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;BENNETT FAMILY IRREVOCABLE TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TRUST"</data>
+  <data key="d4">"A legal entity designated as the contingent beneficiary, receiving 100% of the death benefit if primary beneficiaries predecease the insured."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"Documentation proving health or risk status, which is not required for conversion."&lt;SEP&gt;"Documentation proving health or risk status, which may be required when adding riders."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;50% OF FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The maximum cumulative amount that can be advanced under the chronic illness rider."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;RIDERS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_ADDITION"</data>
+  <data key="d4">"Additional coverage options that can be added or removed from the policy."&lt;SEP&gt;"Additional coverage options that increase the base premium."&lt;SEP&gt;"Additional provisions attached to the base policy to extend or modify coverage."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;PREMIUM WAIVER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"All future premiums are waived if the insured becomes totally disabled before age 60 and remains disabled for 6 consecutive months."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AGE 70&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age at which the accidental death benefit rider ends."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;IRREVOCABLE TRUST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TRUST_TYPE"</data>
+  <data key="d4">"A type of trust that cannot be easily modified or revoked once established."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;POLICY EXPIRATION DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date when the policy ends, which limits the window for conversion."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;NO ACTUARIAL DISCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONDITION"</data>
+  <data key="d4">"The advance amount is not reduced by time value of money adjustments."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;OPTION DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date from which the option must be exercised within 90 days."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;CHRISTOPHER BENNETT JR.&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"A covered child, age 8, under the children's term insurance rider."&lt;SEP&gt;"The primary beneficiary, son of the insured, entitled to 20% of the death benefit."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;FUTURE PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL OBLIGATION"</data>
+  <data key="d4">"The ongoing annual premium payments are waived after qualifying for disability."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;ADDITIONAL COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE POLICY"</data>
+  <data key="d4">"Extra life insurance that can be purchased without a medical exam."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;DISABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEFINITION"</data>
+  <data key="d4">"A condition defined as the complete inability to perform the material and substantial duties of one's regular occupation due to sickness or injury."&lt;SEP&gt;"A condition where an individual is totally disabled before age 60 and remains disabled for 6 consecutive months, triggering premium waiver."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;70TH BIRTHDAY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The age by which conversion must occur, whichever comes first."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;LICENSED HEALTHCARE PRACTITIONER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PROFESSIONAL"</data>
+  <data key="d4">"A qualified medical professional authorized to certify chronic illness."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;CHRISTOPHER DAVID BENNETT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual insured under the policy, a male born on May 20, 1987, and classified as a Preferred Non-Smoker."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;EXERCISE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The action of exercising an option, required within 90 days of the option date."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;RECOVERY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"The waiver ends when the insured recovers from disability."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;WITHOUT MEDICAL UNDERWRITING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"No health evaluation required to purchase additional coverage."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;TERMINAL ILLNESS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEFINITION"</data>
+  <data key="d4">"A medical condition expected to result in death within 24 months, as certified by a physician."&lt;SEP&gt;"A medical condition with a prognosis of limited life expectancy, triggering the accelerated death benefit."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;MINIMUM CONVERSION AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The smallest amount that can be converted to permanent life insurance, set at $50,000."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;$15,000 COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The death benefit amount provided per eligible child."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The cost of the policy, determined by the insured's age and class at the time of exercise."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;RETURN TO WORK&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The waiver ends when the insured returns to employment."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$100,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The maximum amount of additional coverage that can be purchased per option date."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;CHRONIC ILLNESS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEFINITION"</data>
+  <data key="d4">"A condition defined as the inability to perform at least two of six Activities of Daily Living (ADLs) for a continuous period of at least 90 days."&lt;SEP&gt;"A long-term health condition that impairs the ability to perform two or more Activities of Daily Living."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$50,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The minimum value that can be converted to permanent life insurance."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;ELIGIBLE CHILD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"A natural or legally adopted child who qualifies for coverage under the rider."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ATTRIBUTE"</data>
+  <data key="d4">"A determinant of premium cost at the time of purchase."&lt;SEP&gt;"A factor used to determine the premium at the time of exercise."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AGE 65&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The waiver terminates when the insured reaches age 65."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AGE 40&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"An option date for purchasing additional coverage."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;INCONTESTABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL TERM"</data>
+  <data key="d4">"A clause stating the insurer cannot challenge the policy after it has been in force for 2 years, except for non-payment."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;NATURAL CHILDREN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Children born to the insured."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;CLASS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ATTRIBUTE"</data>
+  <data key="d4">"A classification used to determine the premium at the time of exercise."&lt;SEP&gt;"A risk classification used to determine premium rates."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;ANNUAL PROOF&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"The insured must provide yearly documentation confirming continued disability."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AGE 43&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"An option date for purchasing additional coverage."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;NON-PAYMENT OF PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EXCEPTION"</data>
+  <data key="d4">"The only reason the insurer may contest the policy after 2 years."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;LEGALLY ADOPTED CHILDREN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Children adopted through legal process."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;OPTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"All options expire and can no longer be exercised after the insured reaches age 50."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;ACCELERATED DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"A provision allowing access to a portion of the death benefit while still alive."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AGE 46&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"An option date for purchasing additional coverage."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"The amount of $750,000 paid to beneficiaries upon the insured's death, provided the policy is active and premiums are current."&lt;SEP&gt;"The amount paid to beneficiaries upon the insured's death, reduced by any unpaid premium if death occurs during the grace period."&lt;SEP&gt;"The total amount paid to beneficiaries upon the insured’s death."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AVIATION EXCLUSION WAIVER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE TERM"</data>
+  <data key="d4">"A provision that removes the standard exclusion for aviation-related deaths, based on the insured's declared private pilot status."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;BIRTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The starting point of coverage for natural children."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;PP-TL-2024-6729R&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_NUMBER"</data>
+  <data key="d4">"A unique identifier assigned to the term life insurance policy."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;AGE 50&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The age at which all guaranteed insurability options expire."&lt;SEP&gt;"The age at which all options terminate."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;95% OF DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The maximum percentage of the death benefit that can be accessed while living."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;DRUGS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SUBSTANCE"</data>
+  <data key="d4">"Illicit or controlled substances that disqualify the claim."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AGE 49&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"An option date for purchasing additional coverage."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;POLICY IN FORCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"The condition of the policy being active and valid."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;PRIVATE PILOT ACTIVITIES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"The insured's declared involvement in private flying, which triggered the waiver."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;ADOPTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The starting point of coverage for adopted children."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;JULY 12, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date the policy was issued."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;ANNUAL PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The yearly payment required for the policy, totaling $1,089.00, including base and all riders."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;$10,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The minimum amount that can be advanced under the accelerated death benefit."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;BIRTH OF CHILD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"An option date triggered by the birth of a child."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"The requirement that all premiums must be paid for the death benefit to be payable."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;AVIATION EXCLUSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE TERM"</data>
+  <data key="d4">"A standard policy clause excluding coverage for deaths related to aviation."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;AGE 25&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age at which children may convert to individual policies."&lt;SEP&gt;"The age at which coverage for children ends."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;MALE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"GENDER"</data>
+  <data key="d4">"The gender of the insured person."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;BASE PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The foundational cost of the policy before adding riders."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;$500,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The maximum total amount that can be advanced under the accelerated death benefit."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;ADOPTION OF CHILD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"An option date triggered by the legal adoption of a child."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;30 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIMEFRAME"</data>
+  <data key="d4">"The period within which the death benefit must be paid after receipt of satisfactory proof of death."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;ADDITIONAL PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"An extra $175 per year added to the base premium due to the aviation exclusion waiver."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;FUTURE CHILDREN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Children born or adopted after the policy is issued."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;DUE DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date by which the annual premium must be paid each year."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;30-YEAR LEVEL PREMIUM TERM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of life insurance policy that provides coverage for 30 years with a fixed premium amount."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;ACTUARIAL DISCOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ADJUSTMENT"</data>
+  <data key="d4">"A reduction applied to the advance amount based on time value of money, approximately 8% per year."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;NO CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONDITION"</data>
+  <data key="d4">"The accelerated death benefit for terminal illness is included at no additional cost."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;SATISFACTORY PROOF OF DEATH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Documentation required to verify the insured's death, such as a death certificate."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;NO MEDICAL EXAM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"No health screening is required to add children to the policy."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;MAY 20, 1987&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The birth date of the insured."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;JULY 12&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The specific date each year when the annual premium is due."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;8% PER YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RATE"</data>
+  <data key="d4">"The annual actuarial discount rate applied to the advance."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$48/YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The annual cost of the chronic illness accelerated death benefit rider."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;SUICIDE EXCLUSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_EXCLUSION"</data>
+  <data key="d4">"A clause that limits payout to only the premiums paid (without interest) if the insured dies by suicide within two years of the policy issue date."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;$175/YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The annual cost of the aviation exclusion waiver."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;CONVERT TO INDIVIDUAL POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The process by which a child can obtain a standalone insurance policy."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;PREFERRED NON-SMOKER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"UNDERWRITING_CLASS"</data>
+  <data key="d4">"A classification indicating the insured is a non-smoker with favorable health, resulting in lower premiums."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;PAYMENT MODE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The method of premium payment, primarily annual, with monthly or quarterly options available upon request."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;REMAINING DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The portion of the death benefit not accessed during life, paid to beneficiaries after death."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$156/YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The annual cost of the children's term insurance rider."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;2 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIMEFRAME"</data>
+  <data key="d4">"The duration after which the policy becomes incontestable."&lt;SEP&gt;"The period during which suicide is subject to the exclusion clause."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;DEATH COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE TERM"</data>
+  <data key="d4">"The policy covers death resulting from operating or riding as a passenger in any aircraft."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;WITHOUT EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"The conversion does not require proof of good health."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$750,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FACE_AMOUNT"</data>
+  <data key="d4">"The additional death benefit paid if death is due to accidental injury."&lt;SEP&gt;"The death benefit amount payable upon the insured's death while the policy is in force."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;ANNUAL PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The standard payment method for the policy."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;ACTIVITIES OF DAILY LIVING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CATEGORY"</data>
+  <data key="d4">"A set of basic self-care tasks including bathing, dressing, eating, toileting, transferring, and continence."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$94/YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The annual cost of the accidental death benefit rider."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;WAIVER OF PREMIUM DUE TO DISABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RIDER"</data>
+  <data key="d4">"An optional policy add-on that waives future premiums if the insured becomes totally disabled before age 60."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;OPERATING AIRCRAFT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"The act of piloting an aircraft, covered under the policy."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;5 TIMES THE RIDER AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The maximum coverage available upon conversion, based on the original rider amount."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;30 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_PERIOD"</data>
+  <data key="d4">"The duration of coverage, which is 30 years from the issue date."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;MONTHLY PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"An alternative payment method available upon request."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;BATHING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"A basic self-care task included in Activities of Daily Living."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$89/YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The annual cost of the guaranteed insurability option."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;OLIVIA GRACE BENNETT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"A covered child, age 5, under the children's term insurance rider."&lt;SEP&gt;"The primary beneficiary, daughter of the insured, entitled to 20% of the death benefit."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;RIDING AS PASSENGER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"The act of being a passenger in an aircraft, covered under the policy."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;ACCIDENTAL INJURY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"An injury caused by an unforeseen and external event, not self-inflicted."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;QUARTERLY PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"An alternative payment method available upon request."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;DRESSING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"A basic self-care task included in Activities of Daily Living."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$102/YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RIDER_PREMIUM"</data>
+  <data key="d4">"The annual cost of the Waiver of Premium due to Disability rider."&lt;SEP&gt;"The annual cost of the base policy premium."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;MILITARY COMBAT OPERATIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"An exception to coverage; death during military combat operations is not covered."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;JULY 12, 2054&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The expiration date of the policy."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;DAUGHTER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The relationship between Olivia Grace Bennett and Christopher David Bennett."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;EATING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"A basic self-care task included in Activities of Daily Living."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;TOTALLY DISABLED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DISABILITY_STATUS"</data>
+  <data key="d4">"A condition where the insured is unable to perform the material and substantial duties of their regular occupation."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;37&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age of the insured at the time the policy was issued."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;POLICY ANNIVERSARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The annual date when the policy is reviewed and changes can be made."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;DIRECT CAUSE OF DEATH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONDITION"</data>
+  <data key="d4">"The accident must be the primary and immediate reason for death."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$612.00&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BASE_ANNUAL_PREMIUM"</data>
+  <data key="d4">"The annual cost of the base policy without riders."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;GRACE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"A 31-day window after the due date during which coverage remains active."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;TOILETING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"A basic self-care task included in Activities of Daily Living."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;AGE 60&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE_THRESHOLD"</data>
+  <data key="d4">"The age threshold before which disability must occur to qualify for the waiver."&lt;SEP&gt;"The upper age limit by which the insured must become disabled for the rider to apply."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;30 DAYS WRITTEN NOTICE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"The notice period required to add or remove riders."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;90 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The time window to exercise the option to purchase additional coverage."&lt;SEP&gt;"The time window within which death must occur after an accident to qualify for the benefit."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;$1,089.00&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TOTAL_ANNUAL_PREMIUM"</data>
+  <data key="d4">"The total annual cost of the policy including all attached riders."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE TERM"</data>
+  <data key="d4">"The insurance coverage remains active and fully effective even after premium waiver."&lt;SEP&gt;"The policy's protection remains in effect during the grace period."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;CONVERSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The ability to convert the current policy into permanent life insurance without providing proof of insurability."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;6 CONSECUTIVE MONTHS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION_THRESHOLD"</data>
+  <data key="d4">"The minimum duration of disability required for the rider to activate."&lt;SEP&gt;"The minimum duration of disability required to qualify for the premium waiver."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual designated to receive the death benefit."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;SUICIDE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"A prohibited cause of death under the rider."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;RACHEL MARIE BENNETT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The primary beneficiary, wife of the insured, entitled to 60% of the death benefit."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE PRODUCT"</data>
+  <data key="d4">"A life insurance policy that is guaranteed renewable up to age 95."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;TRANSFERRING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"A basic self-care task included in Activities of Daily Living."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;FUTURE PREMIUMS WAIVED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"The rider's benefit that eliminates the need to pay future premiums after disability onset."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;WRITTEN REQUEST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The formal method required to change the beneficiary."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;SELF-INFLICTED INJURY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"An injury intentionally caused by the insured."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;WIFE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"RELATIONSHIP"</data>
+  <data key="d4">"The relationship between Rachel Marie Bennett and Christopher David Bennett."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;AGE 95&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The maximum age to which the policy can be renewed."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;CONTINENCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTIVITY"</data>
+  <data key="d4">"A basic self-care task included in Activities of Daily Living."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;COVERAGE CONTINUES IN FULL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"BENEFIT"</data>
+  <data key="d4">"The rider ensures that the policy's death benefit remains active even after premium payments are waived."</data>
+  <data key="d2">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;DENVER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The city where the policy was issued."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;WAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Conflict or military engagement, excluded from coverage."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;RENEWAL RATE SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A schedule showing the increased premiums for policy renewal."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;2% OF FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL AMOUNT"</data>
+  <data key="d4">"The maximum monthly advance amount based on the policy’s face value."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;PROTECTPLUS FAMILY INSURANCE CO.&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"INSURANCE_COMPANY"</data>
+  <data key="d4">"The company issuing the term life insurance policy."&lt;SEP&gt;"The insurance company that issued the policy."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b&lt;SEP&gt;chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</node>
+<node id="&quot;COLORADO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The state where the policy was issued."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<node id="&quot;AVIATION (AS PILOT/CREW)&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"OCCUPATION"</data>
+  <data key="d4">"Being a pilot or crew member in aviation, excluded from coverage."</data>
+  <data key="d2">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</node>
+<node id="&quot;INCREASED PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL TERM"</data>
+  <data key="d4">"The higher premiums required for renewal after the initial term."</data>
+  <data key="d2">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;Beneficiary changes may be made at any time by written request.&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Beneficiary changes may be made at any time by written request.&quot;" target="&quot;WRITTEN REQUEST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;• All future premiums are waived&quot;" target="&quot;FUTURE PREMIUMS WAIVED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Accident must be the direct cause of death&quot;" target="&quot;DIRECT CAUSE OF DEATH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Olivia Grace Bennett (Daughter) - 20%&quot;" target="&quot;OLIVIA GRACE BENNETT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Olivia Grace Bennett (Daughter) - 20%&quot;" target="&quot;DAUGHTER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;• Coverage continues in full&quot;" target="&quot;COVERAGE CONTINUES IN FULL&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Issued in Denver, Colorado&quot;" target="&quot;DENVER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Issued in Denver, Colorado&quot;" target="&quot;COLORADO&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death must occur within 90 days of accident&quot;" target="&quot;90 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 EXCLUSION - SUICIDE: If death occurs by suicide within 2 years of the issue date, we will pay only the premiums paid, without interest.&quot;" target="&quot;SUICIDE EXCLUSION&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 EXCLUSION - SUICIDE: If death occurs by suicide within 2 years of the issue date, we will pay only the premiums paid, without interest.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Disability' means the complete inability to perform the material and substantial duties of your regular occupation due to sickness or injury.&quot;" target="&quot;DISABILITY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;President and CEO, ProtectPlus Family Insurance Co.&quot;" target="&quot;PRESIDENT AND CEO&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;President and CEO, ProtectPlus Family Insurance Co.&quot;" target="&quot;PROTECTPLUS FAMILY INSURANCE CO.&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Excludes: suicide, self-inflicted injury, war, aviation (as pilot/crew)&quot;" target="&quot;SUICIDE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Excludes: suicide, self-inflicted injury, war, aviation (as pilot/crew)&quot;" target="&quot;SELF-INFLICTED INJURY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Excludes: suicide, self-inflicted injury, war, aviation (as pilot/crew)&quot;" target="&quot;WAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Excludes: suicide, self-inflicted injury, war, aviation (as pilot/crew)&quot;" target="&quot;AVIATION (AS PILOT/CREW)&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Date: July 12, 2024&quot;" target="&quot;JULY 12, 2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;ProtectPlus Family Insurance Co.&quot;" target="&quot;PROTECTPLUS FAMILY INSURANCE CO.&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No payment if insured was under influence of drugs/alcohol&quot;" target="&quot;ALCOHOL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No payment if insured was under influence of drugs/alcohol&quot;" target="&quot;DRUGS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;All future premiums are waived&quot;" target="&quot;FUTURE PREMIUMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Term Life Insurance Policy with Riders&quot;" target="&quot;TERM LIFE INSURANCE POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Term Life Insurance Policy with Riders&quot;" target="&quot;RIDERS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Terminates at insured's age 70&quot;" target="&quot;AGE 70&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Terminal Illness' means a condition expected to result in death within 24 months as certified by a physician.&quot;" target="&quot;TERMINAL ILLNESS&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must exercise within 90 days of option date.&quot;" target="&quot;OPTION DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must exercise within 90 days of option date.&quot;" target="&quot;EXERCISE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage continues in full force&quot;" target="&quot;COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Allows purchase of additional coverage without medical underwriting:&quot;" target="&quot;ADDITIONAL COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Allows purchase of additional coverage without medical underwriting:&quot;" target="&quot;WITHOUT MEDICAL UNDERWRITING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Waiver continues until you recover, return to work, or age 65&quot;" target="&quot;RECOVERY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Waiver continues until you recover, return to work, or age 65&quot;" target="&quot;RETURN TO WORK&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Waiver continues until you recover, return to work, or age 65&quot;" target="&quot;AGE 65&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium based on age and class at time of exercise.&quot;" target="&quot;PREMIUM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium based on age and class at time of exercise.&quot;" target="&quot;AGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium based on age and class at time of exercise.&quot;" target="&quot;CLASS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;May purchase up to $100,000 additional coverage per option date&quot;" target="&quot;$100,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 We will pay the death benefit if the insured dies while this policy is in force and all premiums have been paid.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 We will pay the death benefit if the insured dies while this policy is in force and all premiums have been paid.&quot;" target="&quot;POLICY IN FORCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 We will pay the death benefit if the insured dies while this policy is in force and all premiums have been paid.&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;All options terminate at age 50.&quot;" target="&quot;OPTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;All options terminate at age 50.&quot;" target="&quot;AGE 50&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must submit annual proof of continuing disability&quot;" target="&quot;ANNUAL PROOF&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Option dates: Ages 40, 43, 46, 49 and at birth/adoption of child&quot;" target="&quot;AGE 40&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Option dates: Ages 40, 43, 46, 49 and at birth/adoption of child&quot;" target="&quot;AGE 43&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Option dates: Ages 40, 43, 46, 49 and at birth/adoption of child&quot;" target="&quot;AGE 46&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Option dates: Ages 40, 43, 46, 49 and at birth/adoption of child&quot;" target="&quot;AGE 49&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Option dates: Ages 40, 43, 46, 49 and at birth/adoption of child&quot;" target="&quot;BIRTH OF CHILD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Option dates: Ages 40, 43, 46, 49 and at birth/adoption of child&quot;" target="&quot;ADOPTION OF CHILD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Issue Age: 37&quot;" target="&quot;37&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual Premium: $1,089.00 (base + all riders)&quot;" target="&quot;RIDERS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual Premium: $1,089.00 (base + all riders)&quot;" target="&quot;ANNUAL PREMIUM&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Annual Premium: $1,089.00 (base + all riders)&quot;" target="&quot;BASE PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If diagnosed with a terminal illness:&quot;" target="&quot;TERMINAL ILLNESS&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If diagnosed with a terminal illness:&quot;" target="&quot;ACCELERATED DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must exercise within 90 days of option date&quot;" target="&quot;90 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Christopher David Bennett&quot;" target="&quot;CHRISTOPHER DAVID BENNETT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Due Date: July 12 of each year&quot;" target="&quot;DUE DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Due Date: July 12 of each year&quot;" target="&quot;JULY 12&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;May access up to 95% of death benefit while living&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;May access up to 95% of death benefit while living&quot;" target="&quot;95% OF DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium based on age and class at time of exercise&quot;" target="&quot;AGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium based on age and class at time of exercise&quot;" target="&quot;CLASS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Underwriting Class: Preferred Non-Smoker&quot;" target="&quot;PREFERRED NON-SMOKER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Payment Mode: Annual (monthly/quarterly available upon request)&quot;" target="&quot;PAYMENT MODE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Payment Mode: Annual (monthly/quarterly available upon request)&quot;" target="&quot;ANNUAL PAYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Payment Mode: Annual (monthly/quarterly available upon request)&quot;" target="&quot;MONTHLY PAYMENT&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Payment Mode: Annual (monthly/quarterly available upon request)&quot;" target="&quot;QUARTERLY PAYMENT&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum advance: $10,000&quot;" target="&quot;$10,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;All options terminate at age 50&quot;" target="&quot;AGE 50&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Date of Birth: May 20, 1987&quot;" target="&quot;MAY 20, 1987&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;GRACE PERIOD: 31 days from due date. Coverage continues during grace period. If death occurs during grace period, unpaid premium will be deducted from death benefit.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;GRACE PERIOD: 31 days from due date. Coverage continues during grace period. If death occurs during grace period, unpaid premium will be deducted from death benefit.&quot;" target="&quot;GRACE PERIOD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;GRACE PERIOD: 31 days from due date. Coverage continues during grace period. If death occurs during grace period, unpaid premium will be deducted from death benefit.&quot;" target="&quot;COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum advance: $500,000&quot;" target="&quot;$500,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium: Included at no charge&quot;" target="&quot;NO CHARGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 Payment will be made to the beneficiary within 30 days of receiving satisfactory proof of death.&quot;" target="&quot;30 DAYS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 Payment will be made to the beneficiary within 30 days of receiving satisfactory proof of death.&quot;" target="&quot;SATISFACTORY PROOF OF DEATH&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is guaranteed renewable to age 95 at increased premiums shown in the renewal rate schedule.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is guaranteed renewable to age 95 at increased premiums shown in the renewal rate schedule.&quot;" target="&quot;AGE 95&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is guaranteed renewable to age 95 at increased premiums shown in the renewal rate schedule.&quot;" target="&quot;RENEWAL RATE SCHEDULE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy is guaranteed renewable to age 95 at increased premiums shown in the renewal rate schedule.&quot;" target="&quot;INCREASED PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Benefit reduced by actuarial discount (approximately 8% per year)&quot;" target="&quot;ACTUARIAL DISCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Benefit reduced by actuarial discount (approximately 8% per year)&quot;" target="&quot;8% PER YEAR&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium: $48/year&quot;" target="&quot;$48/YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Remaining death benefit paid to beneficiaries upon death&quot;" target="&quot;REMAINING DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert all or part of this policy to permanent life insurance without evidence of insurability:&quot;" target="&quot;PERMANENT LIFE INSURANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert all or part of this policy to permanent life insurance without evidence of insurability:&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may convert all or part of this policy to permanent life insurance without evidence of insurability:&quot;" target="&quot;CONVERSION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium: $156/year&quot;" target="&quot;$156/YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Base Annual Premium: $612.00&quot;" target="&quot;$612.00&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Before the policy expiration date, or before your 70th birthday, whichever is earlier&quot;" target="&quot;POLICY EXPIRATION DATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Before the policy expiration date, or before your 70th birthday, whichever is earlier&quot;" target="&quot;70TH BIRTHDAY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;" target="&quot;CHRONIC ILLNESS&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;" target="&quot;ACTIVITIES OF DAILY LIVING&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;" target="&quot;BATHING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;" target="&quot;DRESSING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;" target="&quot;EATING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;" target="&quot;TOILETING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;" target="&quot;TRANSFERRING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become chronically ill and cannot perform 2+ Activities of Daily Living (bathing, dressing, eating, toileting, transferring, continence):&quot;" target="&quot;CONTINENCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium: $94/year&quot;" target="&quot;$94/YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;May access up to 2% of face amount per month&quot;" target="&quot;FACE AMOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;May access up to 2% of face amount per month&quot;" target="&quot;2% OF FACE AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium: $89/year&quot;" target="&quot;$89/YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Face Amount: $750,000&quot;" target="&quot;$750,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Period: 30 years (expires July 12, 2054)&quot;" target="&quot;30 YEARS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Period: 30 years (expires July 12, 2054)&quot;" target="&quot;JULY 12, 2054&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum total advance: 50% of face amount&quot;" target="&quot;50% OF FACE AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Contingent: Bennett Family Irrevocable Trust - 100%&quot;" target="&quot;IRREVOCABLE TRUST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Contingent: Bennett Family Irrevocable Trust - 100%&quot;" target="&quot;BENNETT FAMILY IRREVOCABLE TRUST&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum conversion amount: $50,000&quot;" target="&quot;MINIMUM CONVERSION AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum conversion amount: $50,000&quot;" target="&quot;$50,000&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No actuarial discount applied&quot;" target="&quot;NO ACTUARIAL DISCOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Must be certified by licensed healthcare practitioner&quot;" target="&quot;LICENSED HEALTHCARE PRACTITIONER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We will not contest this policy after it has been in force for 2 years during the insured's lifetime, except for non-payment of premiums.&quot;" target="&quot;INCONTESTABILITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We will not contest this policy after it has been in force for 2 years during the insured's lifetime, except for non-payment of premiums.&quot;" target="&quot;NON-PAYMENT OF PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We will not contest this policy after it has been in force for 2 years during the insured's lifetime, except for non-payment of premiums.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Rachel Marie Bennett (Wife) - 60%&quot;" target="&quot;RACHEL MARIE BENNETT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Rachel Marie Bennett (Wife) - 60%&quot;" target="&quot;WIFE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Number: PP-TL-2024-6729R&quot;" target="&quot;PP-TL-2024-6729R&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Christopher Bennett Jr. (Son) - 20%&quot;" target="&quot;SON&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Christopher Bennett Jr. (Son) - 20%&quot;" target="&quot;CHRISTOPHER BENNETT JR.&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Provides $15,000 coverage on each eligible child:&quot;" target="&quot;$15,000 COVERAGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Provides $15,000 coverage on each eligible child:&quot;" target="&quot;ELIGIBLE CHILD&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Sex: Male&quot;" target="&quot;MALE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The standard aviation exclusion has been waived for this policy based on the insured's declared private pilot activities.&quot;" target="&quot;AVIATION EXCLUSION WAIVER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The standard aviation exclusion has been waived for this policy based on the insured's declared private pilot activities.&quot;" target="&quot;PRIVATE PILOT ACTIVITIES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;The standard aviation exclusion has been waived for this policy based on the insured's declared private pilot activities.&quot;" target="&quot;AVIATION EXCLUSION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Covers all natural and legally adopted children&quot;" target="&quot;NATURAL CHILDREN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Covers all natural and legally adopted children&quot;" target="&quot;LEGALLY ADOPTED CHILDREN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Type: 30-Year Level Premium Term&quot;" target="&quot;30-YEAR LEVEL PREMIUM TERM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Additional premium of $175/year is included in the base premium.&quot;" target="&quot;ADDITIONAL PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Additional premium of $175/year is included in the base premium.&quot;" target="&quot;$175/YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage from birth (or adoption) to age 25&quot;" target="&quot;BIRTH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage from birth (or adoption) to age 25&quot;" target="&quot;ADOPTION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage from birth (or adoption) to age 25&quot;" target="&quot;AGE 25&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Policy Date: July 12, 2024&quot;" target="&quot;JULY 12, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Total Annual Premium (including riders): $1,089.00&quot;" target="&quot;$1,089.00&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage includes death while: Operating or riding as a passenger in any aircraft&quot;" target="&quot;DEATH COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage includes death while: Operating or riding as a passenger in any aircraft&quot;" target="&quot;OPERATING AIRCRAFT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Coverage includes death while: Operating or riding as a passenger in any aircraft&quot;" target="&quot;RIDING AS PASSENGER&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Automatically includes future children&quot;" target="&quot;FUTURE CHILDREN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Chronic Illness' means the inability to perform at least 2 of 6 Activities of Daily Living for at least 90 days.&quot;" target="&quot;CHRONIC ILLNESS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Exception: military combat operations&quot;" target="&quot;MILITARY COMBAT OPERATIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;No medical exam required&quot;" target="&quot;NO MEDICAL EXAM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;RIDER 1: WAIVER OF PREMIUM DUE TO DISABILITY&quot;" target="&quot;WAIVER OF PREMIUM DUE TO DISABILITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Riders may be added or removed on any policy anniversary with 30 days written notice.&quot;" target="&quot;RIDERS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Riders may be added or removed on any policy anniversary with 30 days written notice.&quot;" target="&quot;POLICY ANNIVERSARY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Riders may be added or removed on any policy anniversary with 30 days written notice.&quot;" target="&quot;30 DAYS WRITTEN NOTICE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Children may convert to individual policy at age 25 without evidence of insurability, up to 5 times the rider amount&quot;" target="&quot;AGE 25&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Children may convert to individual policy at age 25 without evidence of insurability, up to 5 times the rider amount&quot;" target="&quot;CONVERT TO INDIVIDUAL POLICY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Children may convert to individual policy at age 25 without evidence of insurability, up to 5 times the rider amount&quot;" target="&quot;WITHOUT EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Children may convert to individual policy at age 25 without evidence of insurability, up to 5 times the rider amount&quot;" target="&quot;5 TIMES THE RIDER AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premium: $102/year&quot;" target="&quot;$102/YEAR&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Adding riders may require evidence of insurability.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-a2e6f31241e42a8a4194769f5be2b84b</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Covered Children: Christopher Bennett Jr. (Age 8), Olivia Grace Bennett (Age 5)&quot;" target="&quot;OLIVIA GRACE BENNETT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Covered Children: Christopher Bennett Jr. (Age 8), Olivia Grace Bennett (Age 5)&quot;" target="&quot;CHRISTOPHER BENNETT JR.&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become totally disabled before age 60 and remain disabled for 6 consecutive months:&quot;" target="&quot;PREMIUM WAIVER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become totally disabled before age 60 and remain disabled for 6 consecutive months:&quot;" target="&quot;DISABILITY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become totally disabled before age 60 and remain disabled for 6 consecutive months:&quot;" target="&quot;TOTALLY DISABLED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become totally disabled before age 60 and remain disabled for 6 consecutive months:&quot;" target="&quot;AGE 60&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you become totally disabled before age 60 and remain disabled for 6 consecutive months:&quot;" target="&quot;6 CONSECUTIVE MONTHS&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-3ff600a97374f8ae4b80dc26269076f6&lt;SEP&gt;chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Pays an additional $750,000 if death results from accidental injury:&quot;" target="&quot;$750,000&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Pays an additional $750,000 if death results from accidental injury:&quot;" target="&quot;ACCIDENTAL INJURY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f79b0ac08b81cf480934cc31ef561396</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,741 @@
+{
+  "entities": [
+    "Bank draft on 1st of each month",
+    "full benefits",
+    "table",
+    "May 1, 2024",
+    "payment fails",
+    "beneficiary",
+    "full refund",
+    "Cash value",
+    "Benefit Amount: $10,000",
+    "policy",
+    "1-800-COMFORT",
+    "issue date",
+    "May 1, 2025",
+    "Year 1",
+    "portability",
+    "death certificate",
+    "ComfortCare Claims",
+    "cancel",
+    "aviation exclusion",
+    "incontestability",
+    "monthly premium",
+    "Guaranteed level premium for life",
+    "quarterly payments",
+    "$3,000",
+    "policy cancels",
+    "claim form",
+    "10 years",
+    "non-payment of premiums",
+    "1st of each month",
+    "Guaranteed Issue Whole Life",
+    "Graded death",
+    "death within 90 days",
+    "after Year 2",
+    "2 years",
+    "annual payments",
+    "70% of face amount",
+    "injury",
+    "graded benefit schedule",
+    "move to another state",
+    "15th",
+    "30% of face amount",
+    "$7,000",
+    "borrow against the cash value",
+    "April 30, 2026",
+    "Tampa",
+    "50-85",
+    "P.O. Box 777",
+    "never increase",
+    "1-800-266-3678",
+    "5 business days",
+    "travel restrictions",
+    "Premium Payer: Dorothy Mae Johnson",
+    "suicide",
+    "accidental death",
+    "No medical exams",
+    "cash value",
+    "death benefit",
+    "approximate cash value",
+    "war exclusion",
+    "change beneficiary",
+    "Primary Beneficiary: Linda Sue Johnson",
+    "FL",
+    "30-day free look",
+    "$3,200",
+    "premiums",
+    "Final Expense Life Insurance",
+    "sudden unexpected event",
+    "waiting period",
+    "ComfortCare Senior Insurance",
+    "bank account",
+    "completed claim form",
+    "Tampa, Florida",
+    "guaranteed cash values",
+    "full benefit amount",
+    "age limits",
+    "$87.50",
+    "33601",
+    "Chief Operating Officer",
+    "Policy # CC-FE-2024-9903",
+    "Daughter",
+    "$10,000",
+    "certified copy",
+    "valid claims",
+    "30 days",
+    "Funeral and final expenses",
+    "Linda Sue Johnson",
+    "Dorothy Mae Johnson",
+    "surrender the policy",
+    "Monthly Premium: $87.50",
+    "written request",
+    "grace period",
+    "premiums paid",
+    "all premiums paid",
+    "No health questions",
+    "Year 2",
+    "May 1, 2026",
+    "reduced benefit amount",
+    "stop paying premiums"
+  ],
+  "relations": [
+    [
+      "Linda Sue Johnson",
+      "is primary beneficiary",
+      "Final Expense Life Insurance"
+    ],
+    [
+      "stop paying premiums",
+      "after 2 years leads to automatic continuation",
+      "policy"
+    ],
+    [
+      "after Year 2",
+      "results in payment of",
+      "full benefit amount"
+    ],
+    [
+      "accidental death",
+      "results in immediate payment of",
+      "full benefit amount"
+    ],
+    [
+      "accidental death",
+      "is defined as",
+      "sudden unexpected event"
+    ],
+    [
+      "this policy",
+      "has no aviation exclusion",
+      "aviation exclusion"
+    ],
+    [
+      "grace period",
+      "is",
+      "30 days"
+    ],
+    [
+      "Dorothy Mae Johnson",
+      "has birth date",
+      "June 12, 1951"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has premium payer",
+      "Premium Payer: Dorothy Mae Johnson"
+    ],
+    [
+      "policy",
+      "is issued in",
+      "Tampa, Florida"
+    ],
+    [
+      "grace period",
+      "applies when",
+      "payment is not received"
+    ],
+    [
+      "cash value",
+      "builds slowly",
+      "policy"
+    ],
+    [
+      "cash value",
+      "can be borrowed against",
+      "borrow against the cash value"
+    ],
+    [
+      "change beneficiary",
+      "can be done by calling",
+      "1-800-COMFORT"
+    ],
+    [
+      "death certificate",
+      "must be certified copy",
+      "certified copy"
+    ],
+    [
+      "Year 1",
+      "results in payment of",
+      "all premiums paid"
+    ],
+    [
+      "ComfortCare Senior Insurance",
+      "issued",
+      "policy"
+    ],
+    [
+      "reduced benefit amount",
+      "is based on",
+      "cash value"
+    ],
+    [
+      "change beneficiary",
+      "can be done by sending",
+      "written request"
+    ],
+    [
+      "Dorothy Mae Johnson",
+      "is gender",
+      "Female"
+    ],
+    [
+      "70% of face amount",
+      "equals",
+      "$7,000"
+    ],
+    [
+      "policy",
+      "allows change to",
+      "annual payments"
+    ],
+    [
+      "death benefit",
+      "depends on",
+      "Year 2"
+    ],
+    [
+      "30-day free look",
+      "allows cancellation",
+      "cancel"
+    ],
+    [
+      "policy",
+      "continues with reduced benefit amount",
+      "reduced benefit amount"
+    ],
+    [
+      "Chief Operating Officer",
+      "signed",
+      "policy"
+    ],
+    [
+      "full benefit amount",
+      "equals",
+      "$10,000"
+    ],
+    [
+      "death benefit",
+      "depends on",
+      "Year 1"
+    ],
+    [
+      "beneficiary",
+      "should send completed claim form",
+      "completed claim form"
+    ],
+    [
+      "policy",
+      "builds",
+      "cash value"
+    ],
+    [
+      "policy",
+      "will automatically continue with",
+      "reduced benefit amount"
+    ],
+    [
+      "Year 2",
+      "results in payment of",
+      "all premiums paid"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has guaranteed level premium for life",
+      "Guaranteed level premium for life"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has primary beneficiary",
+      "Primary Beneficiary: Linda Sue Johnson"
+    ],
+    [
+      "monthly premium",
+      "is deducted from",
+      "bank account"
+    ],
+    [
+      "policy",
+      "allows change to",
+      "quarterly payments"
+    ],
+    [
+      "monthly premium",
+      "never increases",
+      "policy"
+    ],
+    [
+      "Year 1",
+      "results in payment of",
+      "30% of face amount"
+    ],
+    [
+      "we",
+      "will pay valid claims within",
+      "5 business days"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has graded death provision",
+      "Graded death"
+    ],
+    [
+      "ComfortCare Claims",
+      "is located at",
+      "P.O. Box 777"
+    ],
+    [
+      "policy",
+      "has",
+      "waiting period"
+    ],
+    [
+      "Linda Sue Johnson",
+      "is relationship to Dorothy Mae Johnson",
+      "Daughter"
+    ],
+    [
+      "you",
+      "can borrow against the cash value",
+      "cash value"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "requires no medical exams",
+      "No medical exams"
+    ],
+    [
+      "Year 2",
+      "results in payment of",
+      "70% of face amount"
+    ],
+    [
+      "policy",
+      "can be surrendered for",
+      "cash value"
+    ],
+    [
+      "policy",
+      "was signed on",
+      "May 1, 2024"
+    ],
+    [
+      "30-day free look",
+      "results in full refund",
+      "full refund"
+    ],
+    [
+      "accidental death",
+      "results in payment of",
+      "all premiums paid"
+    ],
+    [
+      "bank account",
+      "receives deduction of",
+      "monthly premium"
+    ],
+    [
+      "approximate cash value",
+      "after",
+      "10 years"
+    ],
+    [
+      "ComfortCare Claims",
+      "is located in",
+      "FL"
+    ],
+    [
+      "policy",
+      "was issued without",
+      "medical questions or exams"
+    ],
+    [
+      "beneficiary",
+      "should send this policy",
+      "policy"
+    ],
+    [
+      "you",
+      "can move to another state",
+      "move to another state"
+    ],
+    [
+      "policy",
+      "applies",
+      "graded benefit schedule"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "builds cash value over time",
+      "Cash value"
+    ],
+    [
+      "Dorothy Mae Johnson",
+      "is insured person",
+      "Final Expense Life Insurance"
+    ],
+    [
+      "policy",
+      "requires payment of",
+      "missed premiums with interest"
+    ],
+    [
+      "Dorothy Mae Johnson",
+      "is premium payer",
+      "Final Expense Life Insurance"
+    ],
+    [
+      "death benefit",
+      "depends on",
+      "after Year 2"
+    ],
+    [
+      "sudden unexpected event",
+      "causes",
+      "injury"
+    ],
+    [
+      "policy",
+      "can be cancelled by taking",
+      "cash value"
+    ],
+    [
+      "this policy",
+      "has no war exclusion",
+      "war exclusion"
+    ],
+    [
+      "coverage",
+      "is available for",
+      "age limits"
+    ],
+    [
+      "suicide",
+      "results in return of premiums paid",
+      "premiums paid"
+    ],
+    [
+      "cash value",
+      "has guaranteed values",
+      "guaranteed cash values"
+    ],
+    [
+      "cash value",
+      "is available after 10 years",
+      "10 years"
+    ],
+    [
+      "guaranteed cash values",
+      "are shown in",
+      "table"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "requires no health questions",
+      "No health questions"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "provides benefit amount",
+      "Benefit Amount: $10,000"
+    ],
+    [
+      "cash value",
+      "can be used to",
+      "surrender the policy"
+    ],
+    [
+      "injury",
+      "results in",
+      "death within 90 days"
+    ],
+    [
+      "you",
+      "can surrender the policy for the cash value",
+      "cash value"
+    ],
+    [
+      "you",
+      "can change beneficiary",
+      "change beneficiary"
+    ],
+    [
+      "policy",
+      "requires no further",
+      "premiums"
+    ],
+    [
+      "beneficiary",
+      "should call",
+      "1-800-COMFORT"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has monthly premium",
+      "Monthly Premium: $87.50"
+    ],
+    [
+      "suicide",
+      "occurs within 2 years of issue date",
+      "2 years"
+    ],
+    [
+      "portability",
+      "means policy stays with you",
+      "policy"
+    ],
+    [
+      "waiting period",
+      "applies to",
+      "full benefits"
+    ],
+    [
+      "age limits",
+      "are",
+      "50-85"
+    ],
+    [
+      "1-800-COMFORT",
+      "is equivalent to",
+      "1-800-266-3678"
+    ],
+    [
+      "mail",
+      "should be sent to",
+      "ComfortCare Claims"
+    ],
+    [
+      "30% of face amount",
+      "equals",
+      "$3,000"
+    ],
+    [
+      "you",
+      "can stop paying premiums",
+      "stop paying premiums"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has payment method",
+      "Bank draft on 1st of each month"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "covers",
+      "Funeral and final expenses"
+    ],
+    [
+      "ComfortCare Claims",
+      "has zip code",
+      "33601"
+    ],
+    [
+      "cash value",
+      "can be used to",
+      "borrow against the cash value"
+    ],
+    [
+      "ComfortCare Claims",
+      "is located in",
+      "Tampa"
+    ],
+    [
+      "payment is not received",
+      "leads to",
+      "policy cancels"
+    ],
+    [
+      "monthly premium",
+      "is",
+      "$87.50"
+    ],
+    [
+      "claim form",
+      "must be completed",
+      "completed claim form"
+    ],
+    [
+      "policy",
+      "can be restarted within",
+      "2 years"
+    ],
+    [
+      "beneficiary",
+      "should send death certificate",
+      "death certificate"
+    ],
+    [
+      "policy",
+      "has incontestability after",
+      "2 years"
+    ],
+    [
+      "Dorothy Mae Johnson",
+      "is age",
+      "72 years"
+    ],
+    [
+      "this policy",
+      "has no travel restrictions",
+      "travel restrictions"
+    ],
+    [
+      "approximate cash value after 10 years",
+      "equals",
+      "$3,200"
+    ],
+    [
+      "incontestability",
+      "cannot cancel policy or deny claims except for",
+      "non-payment of premiums"
+    ],
+    [
+      "payment fails",
+      "triggers retry on",
+      "15th"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has policy number",
+      "Policy # CC-FE-2024-9903"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has type",
+      "Guaranteed Issue Whole Life"
+    ],
+    [
+      "after Year 2",
+      "results in payment of",
+      "all premiums paid"
+    ],
+    [
+      "ComfortCare Senior Insurance",
+      "has contact number",
+      "1-800-COMFORT"
+    ],
+    [
+      "Final Expense Life Insurance",
+      "has effective date",
+      "May 1, 2024"
+    ]
+  ],
+  "edges": [
+    "allows cancellation",
+    "is gender",
+    "receives deduction of",
+    "builds cash value over time",
+    "is available for",
+    "is located at",
+    "will pay valid claims within",
+    "can be done by calling",
+    "requires no further",
+    "has policy number",
+    "is relationship to Dorothy Mae Johnson",
+    "should send death certificate",
+    "has no aviation exclusion",
+    "can surrender the policy for the cash value",
+    "never increases",
+    "requires no health questions",
+    "is primary beneficiary",
+    "must be completed",
+    "can borrow against the cash value",
+    "occurs within 2 years of issue date",
+    "issued",
+    "has guaranteed level premium for life",
+    "can be restarted within",
+    "after 2 years leads to automatic continuation",
+    "applies",
+    "has payment method",
+    "can change beneficiary",
+    "applies when",
+    "is equivalent to",
+    "is defined as",
+    "continues with reduced benefit amount",
+    "depends on",
+    "can be surrendered for",
+    "has primary beneficiary",
+    "are",
+    "applies to",
+    "results in immediate payment of",
+    "must be certified copy",
+    "allows change to",
+    "was issued without",
+    "has premium payer",
+    "results in full refund",
+    "after",
+    "covers",
+    "will automatically continue with",
+    "can be done by sending",
+    "is based on",
+    "is premium payer",
+    "has no war exclusion",
+    "should send this policy",
+    "should send completed claim form",
+    "can stop paying premiums",
+    "should call",
+    "has birth date",
+    "results in",
+    "can be borrowed against",
+    "results in return of premiums paid",
+    "can be cancelled by taking",
+    "results in payment of",
+    "should be sent to",
+    "has incontestability after",
+    "leads to",
+    "has effective date",
+    "is located in",
+    "can move to another state",
+    "was signed on",
+    "requires no medical exams",
+    "is age",
+    "is issued in",
+    "signed",
+    "builds",
+    "has zip code",
+    "has monthly premium",
+    "cannot cancel policy or deny claims except for",
+    "has graded death provision",
+    "is available after 10 years",
+    "are shown in",
+    "means policy stays with you",
+    "is insured person",
+    "builds slowly",
+    "has guaranteed values",
+    "is deducted from",
+    "is",
+    "causes",
+    "requires payment of",
+    "has type",
+    "equals",
+    "can be used to",
+    "triggers retry on",
+    "has contact number",
+    "provides benefit amount",
+    "has",
+    "has no travel restrictions"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

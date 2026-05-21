@@ -1,0 +1,68 @@
+encoding_model: cl100k_base
+skip_workflows: []
+models:
+  default_chat_model:
+    api_key: EMPTY
+    type: chat
+    model_provider: openai
+    model: Qwen/Qwen3-30B-A3B-Instruct-2507-FP8
+    encoding_model: cl100k_base
+    api_base: http://localhost:8000/v1
+    tokens_per_minute: 100000
+    requests_per_minute: 1000
+    max_retries: 5
+    concurrent_requests: 25
+    max_tokens: 10000
+  default_embedding_model:
+    api_key: EMPTY
+    type: embedding
+    model_provider: openai
+    model: google/embeddinggemma-300m
+    encoding_model: cl100k_base
+    api_base: http://localhost:8001/v1
+    tokens_per_minute: 100000
+    requests_per_minute: 1000
+    concurrent_requests: 25
+chunks:
+  # Default: size=1200, overlap=100.
+  # Set to match the chunk_size/overlap used by KGGen and HyperGraphRAG
+  # for fair cross-system comparison.
+  size: 600
+  overlap: 50
+  group_by_columns: [id]
+entity_extraction:
+  prompt: "prompts/entity_extraction.txt"
+  entity_types: [organization, person, geo, event]
+  max_gleanings: 1
+summarize_descriptions:
+  prompt: "prompts/summarize_descriptions.txt"
+  max_length: 500        # default: 500 — unchanged
+  max_input_tokens: 4000 # default: 4000 — unchanged
+claim_extraction:
+  enabled: false
+community_reports:
+  prompt: "prompts/community_report.txt"
+  # Default: max_length=2000, max_input_length=8000.
+  # max_length reduced from 2000 to 1500: the GraphRAG default assumes
+  # OpenAI text-embedding-3-small (8191-token limit). Our model
+  # (google/embeddinggemma-300m) uses SentencePiece and has a 2048-token
+  # limit. SentencePiece tokenises legal text ~5-20% more aggressively
+  # than cl100k_base, so 2000 cl100k tokens → ~2100-2400 SentencePiece
+  # tokens → ContextWindowExceededError on long-form contracts.
+  # 1500 cl100k tokens → ~1575-1800 SentencePiece tokens → safely under 2048.
+  max_length: 1500
+  max_input_length: 8000 # default: 8000 — unchanged
+cluster_graph:
+  max_cluster_size: 10   # default: 10 — unchanged
+embed_graph:
+  enabled: false         # default: false — node2vec embeddings are not
+                         # used by local search; enabling adds cost with
+                         # no benefit for this evaluation.
+embed_text:
+  enabled: true
+  # batch_max_tokens default is 8191 (sized for OpenAI text-embedding-3-small).
+  # Lowered to 1700 as a safety net: the TokenTextSplitter uses cl100k_base
+  # to count tokens, but the embedding model uses SentencePiece. Any text
+  # over 1700 cl100k tokens is split and its chunk embeddings averaged,
+  # keeping each individual embed request under the 2048 SentencePiece limit.
+  batch_max_tokens: 1700

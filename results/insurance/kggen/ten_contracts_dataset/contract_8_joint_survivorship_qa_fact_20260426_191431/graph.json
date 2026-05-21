@@ -1,0 +1,858 @@
+{
+  "entities": [
+    "joint survivorship policies",
+    "divorce",
+    "Issue Date: August 20, 2024",
+    "Elizabeth Anne Hartford",
+    "coverage amount",
+    "annual exclusion gift planning",
+    "maximum guaranteed premium",
+    "Estate Planning",
+    "CONTESTABILITY",
+    "first death benefits",
+    "same accident or incident",
+    "Joint Survivorship Life Insurance",
+    "full refund",
+    "William Alexander Hartford",
+    "48,600 per year",
+    "after year 10",
+    "assign the policy",
+    "ARTICLE IX - SIMULTANEOUS DEATH",
+    "Death Benefit: $2,500,000",
+    "complete documentation",
+    "evidence of insurability",
+    "5.5% per annum",
+    "DOB: March 18, 1958",
+    "POLICY LOANS",
+    "policy",
+    "return of premiums paid",
+    "taxable estates",
+    "trustee authorization",
+    "incident",
+    "August 20, 2024",
+    "interest rate",
+    "death benefit provisions",
+    "end of year 20",
+    "issue date",
+    "beneficiaries",
+    "premium payment obligation",
+    "Crummey power",
+    "projected cash value",
+    "Article I - Nature of Coverage",
+    "Policy Continuation After First Death",
+    "death certificate",
+    "policy owner",
+    "Hartford Family Irrevocable Life Insurance Trust",
+    "reinstated",
+    "policy cancels",
+    "Estate Tax Liquidity",
+    "10 policy years",
+    "ARTICLE VI - SPLIT OPTION",
+    "Risk Class: Preferred",
+    "2 years",
+    "Premium Payor: Hartford Family Irrevocable Trust",
+    "Age: 67",
+    "Guaranteed Level Premium for 10 Years",
+    "Policy Form: Second-to-Die Whole Life",
+    "Estate Planning Life Assurance Ltd.",
+    "Policy Number: EPL-JSL-2024-1156",
+    "Death Benefit Trigger",
+    "First National Bank of Connecticut",
+    "simultaneous death",
+    "Sex: Male",
+    "designated beneficiary",
+    "trust document",
+    "90%",
+    "trust modification",
+    "Article II - Death Benefit Provisions",
+    "suicide",
+    "ARTICLE VIII - ESTATE TAX PLANNING PROVISIONS",
+    "premium waiver",
+    "Dated: August 1, 2024",
+    "two separate single-life policies",
+    "second insured",
+    "cash surrender value",
+    "August 20th",
+    "cash value",
+    "three-year lookback rule",
+    "death benefit",
+    "60 days",
+    "Trust",
+    "annual premium",
+    "surviving insured",
+    "estate planning attorney",
+    "SUICIDE CLAUSE",
+    "insured",
+    "actuarial allocation",
+    "Chairman & Chief Executive Officer",
+    "90% of cash surrender value",
+    "first death premium continuation",
+    "Second-to-Die Whole Life",
+    "claim forms",
+    "Beneficiary: Hartford Family Irrevocable Life Insurance Trust",
+    "ownership rights",
+    "proceeds",
+    "policy continues in force",
+    "material misrepresentation",
+    "first death",
+    "determine who died first",
+    "partial withdrawals",
+    "no death benefit",
+    "travel exclusions",
+    "written confirmation",
+    "accident",
+    "estate tax liquidity",
+    "premium guarantee period",
+    "Risk Class: Standard",
+    "estate planning",
+    "Age: 66",
+    "war exclusions",
+    "free look period",
+    "Hartford, Connecticut",
+    "Sex: Female",
+    "premium paid",
+    "Survivorship Basis",
+    "30 days",
+    "aviation exclusions",
+    "end of year 10",
+    "ARTICLE VII - EXCLUSIONS",
+    "guaranteed schedule",
+    "claim purposes",
+    "surrender the policy",
+    "policy loans",
+    "premium",
+    "712,000",
+    "first insured",
+    "grace period",
+    "variable",
+    "split",
+    "single-life whole life policy",
+    "irrevocable trust",
+    "Annual Premium: $32,400",
+    "insureds",
+    "policy receipt",
+    "DOB: December 5, 1956",
+    "285,000",
+    "outstanding loans"
+  ],
+  "relations": [
+    [
+      "Joint Survivorship Life Insurance",
+      "has policy number",
+      "Policy Number: EPL-JSL-2024-1156"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "is a type of",
+      "Second-to-Die Whole Life"
+    ],
+    [
+      "POLICY LOANS",
+      "available before or after",
+      "first death"
+    ],
+    [
+      "Chairman & Chief Executive Officer",
+      "is held by",
+      "August 20, 2024"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "has death benefit",
+      "Death Benefit: $2,500,000"
+    ],
+    [
+      "designated beneficiary",
+      "receives",
+      "2,500,000 minus outstanding loans"
+    ],
+    [
+      "Hartford Family Irrevocable Life Insurance Trust",
+      "is trustee of",
+      "First National Bank of Connecticut"
+    ],
+    [
+      "First National Bank of Connecticut",
+      "is trustee of",
+      "Hartford Family Irrevocable Life Insurance Trust"
+    ],
+    [
+      "accident",
+      "results in",
+      "simultaneous death"
+    ],
+    [
+      "split",
+      "face amount determined by",
+      "actuarial allocation"
+    ],
+    [
+      "ownership rights",
+      "include",
+      "assign the policy"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "has death benefit trigger",
+      "Death Benefit Trigger"
+    ],
+    [
+      "partial withdrawals",
+      "not permitted under",
+      "policy"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "is designed for",
+      "Estate Tax Liquidity"
+    ],
+    [
+      "ARTICLE IX - SIMULTANEOUS DEATH",
+      "applies if deaths occur within",
+      "30 days"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "has guaranteed level premium for",
+      "Guaranteed Level Premium for 10 Years"
+    ],
+    [
+      "estate tax liquidity",
+      "is purpose of policy",
+      "death benefit provisions"
+    ],
+    [
+      "death benefit provisions",
+      "requires proof of both deaths",
+      "death certificate of first insured"
+    ],
+    [
+      "insured",
+      "does not have",
+      "ownership rights"
+    ],
+    [
+      "August 20, 2024",
+      "is the date of",
+      "Chairman & Chief Executive Officer"
+    ],
+    [
+      "first death benefits",
+      "policy owner receives",
+      "written confirmation"
+    ],
+    [
+      "surviving insured",
+      "becomes",
+      "single-life whole life policy"
+    ],
+    [
+      "ownership rights",
+      "include",
+      "changing beneficiaries"
+    ],
+    [
+      "policy loans",
+      "maximum loan amount is",
+      "90% of cash surrender value"
+    ],
+    [
+      "Elizabeth Anne Hartford",
+      "has age",
+      "Age: 66"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "is governed by",
+      "Article I - Nature of Coverage"
+    ],
+    [
+      "insureds",
+      "die in",
+      "incident"
+    ],
+    [
+      "single-life whole life policy",
+      "has unchanged coverage amount",
+      "coverage amount"
+    ],
+    [
+      "grace period",
+      "if payment not received, policy cancels after",
+      "60 days"
+    ],
+    [
+      "SUICIDE CLAUSE",
+      "applies if",
+      "suicide within 2 years of issue date"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "uses",
+      "Survivorship Basis"
+    ],
+    [
+      "split",
+      "may require",
+      "evidence of insurability"
+    ],
+    [
+      "policy loans",
+      "available after policy has been in force for",
+      "2 years"
+    ],
+    [
+      "split",
+      "primarily used for",
+      "divorce"
+    ],
+    [
+      "incident",
+      "results in",
+      "simultaneous death"
+    ],
+    [
+      "split",
+      "available in rare cases of",
+      "simultaneous death situations"
+    ],
+    [
+      "cash value",
+      "accumulates on",
+      "guaranteed schedule"
+    ],
+    [
+      "death benefit provisions",
+      "deducts",
+      "outstanding loans"
+    ],
+    [
+      "Estate Planning Life Assurance Ltd.",
+      "is located in",
+      "Hartford, Connecticut"
+    ],
+    [
+      "ARTICLE VIII - ESTATE TAX PLANNING PROVISIONS",
+      "states policy is owned by",
+      "irrevocable trust"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "has beneficiary",
+      "Beneficiary: Hartford Family Irrevocable Life Insurance Trust"
+    ],
+    [
+      "policy",
+      "has no",
+      "war exclusions"
+    ],
+    [
+      "insureds",
+      "die in",
+      "accident"
+    ],
+    [
+      "policy loans",
+      "current interest rate is",
+      "5.5% per annum"
+    ],
+    [
+      "split",
+      "results in",
+      "two separate single-life policies"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "has premium payor",
+      "Premium Payor: Hartford Family Irrevocable Trust"
+    ],
+    [
+      "first death benefits",
+      "policy continues in force when first insured dies",
+      "policy continues in force"
+    ],
+    [
+      "CONTESTABILITY",
+      "applies while",
+      "both insureds are living"
+    ],
+    [
+      "ARTICLE IX - SIMULTANEOUS DEATH",
+      "death benefit paid immediately if",
+      "cannot determine who died first"
+    ],
+    [
+      "policy",
+      "has no",
+      "aviation exclusions"
+    ],
+    [
+      "premiums",
+      "are payable annually on",
+      "August 20th"
+    ],
+    [
+      "policy",
+      "may not be assigned",
+      "without trustee authorization"
+    ],
+    [
+      "premium paid",
+      "is refunded",
+      "in full"
+    ],
+    [
+      "ownership rights",
+      "require",
+      "trust document"
+    ],
+    [
+      "SUICIDE CLAUSE",
+      "limits death benefit to",
+      "return of premiums paid"
+    ],
+    [
+      "estate planning attorney",
+      "should be consulted regarding",
+      "three-year lookback rule"
+    ],
+    [
+      "William Alexander Hartford",
+      "is first insured in",
+      "Joint Survivorship Life Insurance"
+    ],
+    [
+      "first death benefits",
+      "premium payment obligation continues when first insured dies",
+      "premium payment obligation"
+    ],
+    [
+      "premium waiver",
+      "is not available on",
+      "joint survivorship policies"
+    ],
+    [
+      "split",
+      "requires both insureds to be alive at",
+      "first death"
+    ],
+    [
+      "William Alexander Hartford",
+      "has age",
+      "Age: 67"
+    ],
+    [
+      "ownership rights",
+      "include",
+      "designating beneficiaries"
+    ],
+    [
+      "split",
+      "primarily used for",
+      "trust modification"
+    ],
+    [
+      "death benefit provisions",
+      "includes payment upon death of second insured",
+      "2,500,000 to designated beneficiary"
+    ],
+    [
+      "deaths occurring within 30 days",
+      "are treated as",
+      "simultaneous for claim purposes"
+    ],
+    [
+      "policy loans",
+      "interest rate is",
+      "variable"
+    ],
+    [
+      "first death premium continuation",
+      "premiums continue after first death at",
+      "same rate"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "has annual premium",
+      "Annual Premium: $32,400"
+    ],
+    [
+      "POLICY LOANS",
+      "maximum amount",
+      "90% of cash surrender value"
+    ],
+    [
+      "ARTICLE VII - EXCLUSIONS",
+      "includes",
+      "SUICIDE CLAUSE"
+    ],
+    [
+      "William Alexander Hartford",
+      "has risk class",
+      "Risk Class: Standard"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "continues in force after first death",
+      "Policy Continuation After First Death"
+    ],
+    [
+      "estate planning attorney",
+      "should be consulted regarding",
+      "annual exclusion gift planning"
+    ],
+    [
+      "after year 10",
+      "premium may increase but never exceeds",
+      "maximum guaranteed premium"
+    ],
+    [
+      "POLICY LOANS",
+      "available after",
+      "2 years"
+    ],
+    [
+      "simultaneous death",
+      "triggers",
+      "death benefit"
+    ],
+    [
+      "death benefit provisions",
+      "requires proof of both deaths",
+      "death certificate of second insured"
+    ],
+    [
+      "ARTICLE VI - SPLIT OPTION",
+      "describes option to split",
+      "split"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "is governed by",
+      "Article II - Death Benefit Provisions"
+    ],
+    [
+      "Estate Planning Life Assurance Ltd.",
+      "issued",
+      "Joint Survivorship Life Insurance"
+    ],
+    [
+      "ownership rights",
+      "include",
+      "take policy loans"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "has issue date",
+      "Issue Date: August 20, 2024"
+    ],
+    [
+      "Elizabeth Anne Hartford",
+      "has risk class",
+      "Risk Class: Preferred"
+    ],
+    [
+      "first death benefits",
+      "pays no death benefit when first insured dies",
+      "no death benefit"
+    ],
+    [
+      "ownership rights",
+      "include",
+      "surrender the policy"
+    ],
+    [
+      "death benefit",
+      "is paid",
+      "immediately"
+    ],
+    [
+      "premium guarantee period",
+      "guarantees level annual premium for",
+      "10 policy years"
+    ],
+    [
+      "CONTESTABILITY",
+      "applies within",
+      "2 years of issue"
+    ],
+    [
+      "Trust",
+      "has",
+      "ownership rights"
+    ],
+    [
+      "policy owner",
+      "may cancel",
+      "within 30 days of policy receipt"
+    ],
+    [
+      "Elizabeth Anne Hartford",
+      "has sex",
+      "Sex: Female"
+    ],
+    [
+      "death benefit provisions",
+      "payment made after receiving",
+      "complete documentation"
+    ],
+    [
+      "first death benefits",
+      "death certificate must be filed with",
+      "policy owner"
+    ],
+    [
+      "SUICIDE CLAUSE",
+      "resets if",
+      "policy is reinstated"
+    ],
+    [
+      "estate planning",
+      "is purpose of policy",
+      "death benefit provisions"
+    ],
+    [
+      "death benefit provisions",
+      "requires proof of both deaths",
+      "completed claim forms"
+    ],
+    [
+      "death benefit provisions",
+      "payment made within",
+      "30 days"
+    ],
+    [
+      "free look period",
+      "allows",
+      "full refund of premium paid"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "is designed for",
+      "Estate Planning"
+    ],
+    [
+      "single-life whole life policy",
+      "has unchanged premium",
+      "premium"
+    ],
+    [
+      "estate planning attorney",
+      "should be consulted regarding",
+      "Crummey power requirements"
+    ],
+    [
+      "ARTICLE IX - SIMULTANEOUS DEATH",
+      "describes payment when",
+      "both insureds die in same accident or incident"
+    ],
+    [
+      "maximum guaranteed premium",
+      "is",
+      "48,600 per year"
+    ],
+    [
+      "CONTESTABILITY",
+      "may contest for",
+      "material misrepresentation"
+    ],
+    [
+      "policy owner",
+      "is",
+      "Trust"
+    ],
+    [
+      "Elizabeth Anne Hartford",
+      "is second insured in",
+      "Joint Survivorship Life Insurance"
+    ],
+    [
+      "projected cash value",
+      "at end of year 20 is",
+      "712,000"
+    ],
+    [
+      "proceeds",
+      "should not be includable in",
+      "insureds' estate"
+    ],
+    [
+      "Hartford Family Irrevocable Life Insurance Trust",
+      "is policy owner of",
+      "Joint Survivorship Life Insurance"
+    ],
+    [
+      "William Alexander Hartford",
+      "has sex",
+      "Sex: Male"
+    ],
+    [
+      "POLICY LOANS",
+      "reduces",
+      "death benefit"
+    ],
+    [
+      "POLICY LOANS",
+      "interest rate",
+      "5.5% per annum"
+    ],
+    [
+      "William Alexander Hartford",
+      "has date of birth",
+      "DOB: December 5, 1956"
+    ],
+    [
+      "irrevocable trust",
+      "excludes",
+      "proceeds from taxable estates"
+    ],
+    [
+      "grace period",
+      "allows",
+      "60 days"
+    ],
+    [
+      "projected cash value",
+      "at end of year 10 is",
+      "285,000"
+    ],
+    [
+      "Joint Survivorship Life Insurance",
+      "has policy form",
+      "Policy Form: Second-to-Die Whole Life"
+    ],
+    [
+      "split",
+      "requires election within",
+      "2 years of first death"
+    ],
+    [
+      "policy",
+      "has no",
+      "travel exclusions"
+    ],
+    [
+      "deaths",
+      "occur within",
+      "30 days"
+    ],
+    [
+      "Elizabeth Anne Hartford",
+      "has date of birth",
+      "DOB: March 18, 1958"
+    ],
+    [
+      "annual premium",
+      "is guaranteed at",
+      "32,400"
+    ],
+    [
+      "policy receipt",
+      "is the start of",
+      "free look period"
+    ]
+  ],
+  "edges": [
+    "premium payment obligation continues when first insured dies",
+    "has no",
+    "describes payment when",
+    "is held by",
+    "pays no death benefit when first insured dies",
+    "is governed by",
+    "policy continues in force when first insured dies",
+    "limits death benefit to",
+    "has sex",
+    "includes payment upon death of second insured",
+    "if payment not received, policy cancels after",
+    "triggers",
+    "are treated as",
+    "may not be assigned",
+    "deducts",
+    "has policy number",
+    "payment made after receiving",
+    "is a type of",
+    "policy owner receives",
+    "applies if",
+    "applies while",
+    "interest rate",
+    "requires election within",
+    "has unchanged coverage amount",
+    "premiums continue after first death at",
+    "payment made within",
+    "primarily used for",
+    "may contest for",
+    "available after policy has been in force for",
+    "maximum loan amount is",
+    "applies within",
+    "issued",
+    "requires both insureds to be alive at",
+    "has guaranteed level premium for",
+    "becomes",
+    "is first insured in",
+    "is the start of",
+    "applies if deaths occur within",
+    "available after",
+    "may cancel",
+    "should not be includable in",
+    "face amount determined by",
+    "has death benefit trigger",
+    "available in rare cases of",
+    "does not have",
+    "continues in force after first death",
+    "is policy owner of",
+    "uses",
+    "includes",
+    "has date of birth",
+    "available before or after",
+    "is paid",
+    "premium may increase but never exceeds",
+    "is purpose of policy",
+    "may require",
+    "interest rate is",
+    "die in",
+    "results in",
+    "excludes",
+    "has policy form",
+    "has risk class",
+    "occur within",
+    "receives",
+    "requires proof of both deaths",
+    "is guaranteed at",
+    "is located in",
+    "is not available on",
+    "has issue date",
+    "require",
+    "at end of year 10 is",
+    "not permitted under",
+    "is refunded",
+    "at end of year 20 is",
+    "states policy is owned by",
+    "has annual premium",
+    "current interest rate is",
+    "has age",
+    "should be consulted regarding",
+    "include",
+    "has beneficiary",
+    "accumulates on",
+    "resets if",
+    "allows",
+    "death certificate must be filed with",
+    "death benefit paid immediately if",
+    "is",
+    "has death benefit",
+    "is trustee of",
+    "are payable annually on",
+    "has",
+    "has premium payor",
+    "has unchanged premium",
+    "is designed for",
+    "is the date of",
+    "is second insured in",
+    "reduces",
+    "guarantees level annual premium for",
+    "maximum amount",
+    "describes option to split"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

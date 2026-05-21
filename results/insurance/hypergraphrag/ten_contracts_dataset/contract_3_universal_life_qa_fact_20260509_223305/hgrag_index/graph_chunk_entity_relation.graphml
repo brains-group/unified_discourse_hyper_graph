@@ -1,0 +1,1355 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;Interest may be paid annually or added to loan balance&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;7.3 Interest may be paid annually or added to loan balance&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.3 You may skip payments as long as the Account Value is sufficient to cover monthly deductions.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Planned Premium: $200/month&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Interest is credited to Account Value daily based on the current credited interest rate.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.3 Upon lapse, any Account Value in excess of surrender charges will be paid to you automatically.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.1 'Account Value' means the accumulation of premiums paid, less deductions for monthly charges and expenses, plus interest credited.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may make partial withdrawals from Account Value at any time.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.4 If Account Value falls below the amount needed to pay monthly charges, the policy will enter a 61-day grace period.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Outstanding loan reduces death benefit dollar-for-dollar&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.2 If sufficient premium is not received within 61 days, policy lapses.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;═══════════════════════════════════════════════════════════════════&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;8.1 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Minimum Premium: $75/month&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Guaranteed minimum rate: 2.0% per annum Current rate: 3.5% per annum (subject to change monthly)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.2 'Cost of Insurance' (COI) means the monthly charge for the death benefit based on the insured's age, sex, and risk class.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Minimum withdrawal: $500 Maximum: Account Value minus amount needed to keep policy in force&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.5%, minimum 4%, adjusted annually each January 1&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;10.1 If Account Value is insufficient to pay monthly deductions, we will notify you. Policy continues for 61 days.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Contract Number: FPS-UL-24-03391&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;On each Monthly Deduction Date, we deduct from Account Value: (a) Cost of Insurance charge (b) Administrative expense charge: $8.00/month (c) Any outstanding policy loan interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Target Premium: $200/month&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;We may declare different rates for different policy years or account value amounts.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;8.2 Surrender Charge Schedule (% of Specified Amount): Year 1: 8% | Year 5: 5% | Year 10: 2% | Year 15+: 0%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.3 'Monthly Deduction Date' is the 10th day of each month.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Withdrawal charges: Years 1-10: $25 per withdrawal Years 11+: No charge&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Issue Date: March 10, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death Benefit Option: Level (Option A)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;OPTION A (Level Death Benefit) - Currently Selected Death Benefit = Specified Amount&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;1.4 'Surrender Charge' is a percentage-based charge applied if the policy is surrendered in the first 15 years.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Withdrawals reduce Account Value and may reduce death benefit if Account Value falls below minimum required.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Executed at Phoenix, Arizona&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;8.3 Upon surrender, the policy terminates and coverage ends.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Owner: Robert James Wilson&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary: Jennifer Ann Wilson (Wife) - 100%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;OPTION B (Increasing Death Benefit) - Available by Request Death Benefit = Specified Amount + Account Value&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.1 You may pay premiums at any time and in any amount, subject to the following limits: Minimum: $75 per payment; Maximum: $50,000 per year (subject to tax limitations)&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Maximum loan: 90% of current Account Value&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;7.4 Outstanding loan reduces death benefit dollar-for-dollar&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Insured: Robert James Wilson&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Cost of Insurance is calculated as: (Specified Amount - Account Value) × Monthly COI Rate / 1,000.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Contingent: Robert Wilson Jr. (Son) - 50%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may change death benefit options subject to: (a) Evidence of insurability if increasing coverage (b) Payment of a $50 processing fee&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;2.2 Premiums are allocated to the Account Value after deduction of a 3% premium expense charge.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Loan interest rate: Variable rate = Moody's Corporate Bond Index + 1.5%, minimum 4%, adjusted annually each January 1&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;9.2 CONTESTABILITY: We may contest this policy for material misrepresentation within 2 years of issue date while insured is living.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Specified Amount (Face Value): $400,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;COI rates are guaranteed not to exceed those shown in the rate schedule attached to this policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Emily Rose Wilson (Daughter) - 50%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Death benefit is paid minus any outstanding policy loans.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;9.1 SUICIDE EXCLUSION: If insured dies by suicide within 24 months of issue date, we pay only the Account Value, without interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;FLEXPROTECT INSURANCE SOLUTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"Insurance company."&lt;SEP&gt;"Insurance provider."&lt;SEP&gt;"The company that issued the policy, with a Chief Executive Officer signing the document."&lt;SEP&gt;"The insurance company issuing the Universal Life Insurance Policy."&lt;SEP&gt;"The insurance company issuing the policy."&lt;SEP&gt;"The insurance provider offering the policy."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49&lt;SEP&gt;chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;$75/MONTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"Minimum monthly premium."&lt;SEP&gt;"The minimum amount that must be paid per month to maintain the policy."&lt;SEP&gt;"The minimum monthly premium required to maintain the policy."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;OPTION B&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEATH BENEFIT OPTION"</data>
+  <data key="d4">"A death benefit option available by request, providing a death benefit equal to the sum of the Specified Amount and Account Value."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"A return credited daily to the Account Value based on the current credited interest rate."&lt;SEP&gt;"Interest can be paid annually or added to the loan balance, indicating a choice in how interest is handled."&lt;SEP&gt;"The interest on a policy loan, which can be paid annually or added to the loan balance."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3&lt;SEP&gt;chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;CHIEF EXECUTIVE OFFICER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The highest-ranking executive of FlexProtect Insurance Solutions, responsible for signing the document."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;LEVEL (OPTION A)&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_OPTION"</data>
+  <data key="d4">"A death benefit option that remains constant over time, not subject to change based on account value fluctuations."&lt;SEP&gt;"A death benefit option that remains constant over time."&lt;SEP&gt;"A death benefit option that remains constant."&lt;SEP&gt;"Constant death benefit."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;SURRENDER CHARGE SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL POLICY"</data>
+  <data key="d4">"A schedule defining the percentage of the specified amount deducted as a surrender charge, varying by policy year."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;INCREASING DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEATH BENEFIT TYPE"</data>
+  <data key="d4">"A death benefit that increases over time as the Account Value grows."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;MARCH 10, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Policy issue date."&lt;SEP&gt;"The date on which the document was signed."&lt;SEP&gt;"The date on which the insurance policy was issued."&lt;SEP&gt;"The issue date of the policy."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49&lt;SEP&gt;chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;JENNIFER ANN WILSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Primary beneficiary, wife of the insured, receives 100% of the death benefit."&lt;SEP&gt;"Primary beneficiary, wife of the insured."&lt;SEP&gt;"Primary beneficiary."&lt;SEP&gt;"The primary beneficiary of the policy, designated as the wife of the insured. She receives 100% of the death benefit."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;YEAR 1: 8%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RULE"</data>
+  <data key="d4">"In the first year, the surrender charge is 8% of the specified amount."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;CHANGE DEATH BENEFIT OPTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The process of switching between death benefit options, subject to conditions."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;ARTICLE 8 - SURRENDER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SECTION"</data>
+  <data key="d4">"A section of the document detailing surrender terms."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;ROBERT WILSON JR.&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"A contingent beneficiary, son of the insured. Receives 50% of the death benefit if the primary beneficiary predeceases the insured."&lt;SEP&gt;"Contingent beneficiary, son of the insured, receives 50% of the death benefit."&lt;SEP&gt;"Contingent beneficiary, son of the insured."&lt;SEP&gt;"Contingent beneficiary."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;YEAR 5: 5%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RULE"</data>
+  <data key="d4">"In the fifth year, the surrender charge is 5% of the specified amount."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"REQUIREMENT"</data>
+  <data key="d4">"Proof that the policyholder is still insurable, required when increasing coverage."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;OUTSTANDING LOAN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"A loan that remains unpaid and reduces the death benefit by the same amount."&lt;SEP&gt;"An unpaid loan amount that directly reduces the death benefit by the same dollar amount."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3&lt;SEP&gt;chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;ARTICLE 9 - LIMITATIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SECTION"</data>
+  <data key="d4">"A section of the document detailing policy limitations."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;EMILY ROSE WILSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"A contingent beneficiary, daughter of the insured. Receives 50% of the death benefit if the primary beneficiary predeceases the insured."&lt;SEP&gt;"Contingent beneficiary, daughter of the insured, receives 50% of the death benefit."&lt;SEP&gt;"Contingent beneficiary, daughter of the insured."&lt;SEP&gt;"Contingent beneficiary."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;1.5%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"A percentage value of 1.5% mentioned in the text, likely referring to a rate that is adjusted annually."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;YEAR 10: 2%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RULE"</data>
+  <data key="d4">"In the tenth year, the surrender charge is 2% of the specified amount."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;$50 PROCESSING FEE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"A fee of $50 required to process a change in death benefit options."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;JANUARY 1&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date each year when the loan interest rate is adjusted."&lt;SEP&gt;"The date on which the rate adjustment occurs annually."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3&lt;SEP&gt;chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;ARTICLE 10 - GRACE PERIOD AND LAPSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SECTION"</data>
+  <data key="d4">"A section of the document detailing grace period and lapse conditions."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;COST OF INSURANCE (COI)&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Monthly charge for death benefit."&lt;SEP&gt;"Monthly charge for the death benefit based on age, sex, and risk class."&lt;SEP&gt;"Monthly charge for the death benefit."&lt;SEP&gt;"Monthly death benefit charge."&lt;SEP&gt;"The monthly charge for maintaining the death benefit, based on the insured's age, sex, and risk class."&lt;SEP&gt;"The monthly charge for the death benefit, based on the insured's risk profile."&lt;SEP&gt;"The monthly fee charged to maintain the death benefit, determined by the insured's age, gender, and risk classification."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;OUTSTANDING POLICY LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL LIABILITY"</data>
+  <data key="d4">"Loans taken against the policy that remain unpaid and reduce the death benefit."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;YEAR 15+: 0%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RULE"</data>
+  <data key="d4">"After 15 years, the surrender charge is 0%."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;10TH DAY OF EACH MONTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"Fixed date for monthly deductions."&lt;SEP&gt;"Fixed deduction date."&lt;SEP&gt;"The fixed date each month when deductions are made from the Account Value."&lt;SEP&gt;"The fixed date for monthly deductions."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;SURRENDER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The act of terminating the policy, resulting in the end of coverage."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;PARTIAL WITHDRAWALS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ACTION"</data>
+  <data key="d4">"The ability to withdraw a portion of the Account Value at any time."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;ANNUAL PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"Interest may be paid once per year."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;$75 PER PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The minimum amount that can be paid in a single premium payment."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A financial contract that terminates upon surrender."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;MINIMUM WITHDRAWAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL LIMIT"</data>
+  <data key="d4">"The smallest amount that can be withdrawn, set at $500."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;MONTHLY DEDUCTION DATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"10th of each month."&lt;SEP&gt;"The 10th day of each month, when deductions are made from the Account Value."&lt;SEP&gt;"The 10th of each month, when deductions are made from the Account Value."&lt;SEP&gt;"The 10th of each month, when deductions are made."&lt;SEP&gt;"The 10th of each month."&lt;SEP&gt;"The date on which deductions are made from the Account Value, including Cost of Insurance, administrative fees, and policy loan interest."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3&lt;SEP&gt;chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;$50,000 PER YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"Maximum annual premium, subject to tax limits."&lt;SEP&gt;"Maximum annual premium."&lt;SEP&gt;"The maximum annual premium allowed, subject to tax rules."&lt;SEP&gt;"The maximum annual premium amount allowed, subject to IRS tax limitations."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;COVERAGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The protection provided by the policy, which ends upon surrender."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;MAXIMUM WITHDRAWAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL LIMIT"</data>
+  <data key="d4">"The largest amount that can be withdrawn, equal to Account Value minus the amount needed to keep the policy active."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;LOAN BALANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Interest may be added to the outstanding loan balance, increasing the total debt."&lt;SEP&gt;"The total amount of the loan, including any unpaid interest added to it."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3&lt;SEP&gt;chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;COST OF INSURANCE CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"A charge deducted from Account Value based on the difference between the Specified Amount and Account Value."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;3% PREMIUM EXPENSE CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"A 3% fee deducted from each premium payment before it is allocated to the Account Value."&lt;SEP&gt;"A fee deducted from each premium payment before allocation to the Account Value, amounting to 3% of the payment."&lt;SEP&gt;"A fee deducted from each premium payment before it is allocated to the Account Value."&lt;SEP&gt;"Fee deducted from each premium payment before allocation."&lt;SEP&gt;"Fee deducted from each premium."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;SUICIDE EXCLUSION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY CLAUSE"</data>
+  <data key="d4">"A clause that limits payout if the insured dies by suicide within 24 months of the policy issue date."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;AMOUNT NEEDED TO KEEP POLICY IN FORCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL REQUIREMENT"</data>
+  <data key="d4">"The minimum Account Value required to maintain the policy's validity."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;ADMINISTRATIVE EXPENSE CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"A fixed monthly charge of $8.00 deducted from Account Value."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;61-DAY GRACE PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"A 61-day window after insufficient Account Value to cover charges, during which the policy remains active."&lt;SEP&gt;"A 61-day window during which the policy remains active after the Account Value is insufficient to cover charges, allowing the policyholder to make a payment without lapsing."&lt;SEP&gt;"A period of 61 days after the Account Value is insufficient to cover charges, during which the policy remains active."&lt;SEP&gt;"Grace period after insufficient funds."&lt;SEP&gt;"Period after insufficient funds to cover charges, during which the policy remains active."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;INSURED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual covered by the policy, whose death may trigger the suicide exclusion."&lt;SEP&gt;"The individual whose application may be subject to contestability."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;WITHDRAWAL CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"A fee of $25 per withdrawal applied during the first 10 policy years."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;POLICY LOAN INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"Interest on any outstanding policy loan that is deducted from Account Value."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;UNIVERSAL LIFE INSURANCE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A flexible premium life insurance policy with a death benefit and cash value accumulation."&lt;SEP&gt;"A flexible premium life insurance policy with cash value accumulation."&lt;SEP&gt;"A type of life insurance that provides a death benefit and allows flexible premium payments and accumulation of cash value."&lt;SEP&gt;"Flexible premium life insurance with cash value."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;YEARS 1-10&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The first 10 years of the policy, during which withdrawal charges apply."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;24 MONTHS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The time window (24 months) after the issue date during which the suicide exclusion applies."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;COST OF INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CHARGE"</data>
+  <data key="d4">"A charge calculated based on the difference between the Specified Amount and Account Value, multiplied by the Monthly COI Rate and divided by 1,000."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;CONTESTABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY CLAUSE"</data>
+  <data key="d4">"A clause allowing the insurer to challenge the policy due to material misrepresentation within two years of issue."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;YEARS 11+&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The period after the 10th policy year, during which no withdrawal charges apply."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;SPECIFIED AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The amount specified in the policy, used as a reference point for calculating the Cost of Insurance."&lt;SEP&gt;"The fixed amount used to determine the death benefit under Option A."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL CONCEPT"</data>
+  <data key="d4">"False or misleading information provided during application that could affect the policy."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;MINIMUM REQUIRED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL THRESHOLD"</data>
+  <data key="d4">"The minimum Account Value required to maintain the policy and death benefit."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;MONTHLY COI RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"The rate used in the calculation of the Cost of Insurance, applied monthly."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;2 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The period during which the policy can be contested."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;MAXIMUM LOAN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL LIMIT"</data>
+  <data key="d4">"The highest amount that can be borrowed, set at 90% of the current Account Value."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;COI RATES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"The rates used to calculate the Cost of Insurance, guaranteed not to exceed those in the attached rate schedule."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;MONTHLY DEDUCTIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL ACTION"</data>
+  <data key="d4">"Regular payments required to maintain the policy, deducted from the Account Value."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;CURRENT ACCOUNT VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The present value of the account used to determine the maximum loan amount."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;RATE SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A document attached to the policy that lists the maximum COI rates allowed."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Loans taken against the policy that are subtracted from the Account Value when calculating Cash Surrender Value."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;61 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The grace period during which the policy remains active after insufficient Account Value."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;LOAN INTEREST RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"The variable interest rate for policy loans, calculated as Moody's Corporate Bond Index plus 1.5%, with a minimum of 4%."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;CREDITED INTEREST RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"The rate used to calculate daily interest credited to the Account Value."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;SUFFICIENT PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL REQUIREMENT"</data>
+  <data key="d4">"The required amount of payment to prevent policy lapse."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;MOODY'S CORPORATE BOND INDEX&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL INDEX"</data>
+  <data key="d4">"A benchmark index used to determine the variable component of the loan interest rate."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;GUARANTEED MINIMUM RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"The lowest interest rate guaranteed per annum, set at 2.0%."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The amount paid upon death, reduced by any outstanding policy loans."&lt;SEP&gt;"The amount paid upon death, reduced dollar-for-dollar by any outstanding loan."&lt;SEP&gt;"The amount paid upon the insured's death, reduced dollar-for-dollar by the outstanding loan."&lt;SEP&gt;"The death benefit that may be reduced if the Account Value falls below the minimum required."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3&lt;SEP&gt;chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;LAPSE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The termination of the policy due to non-payment of premium within the grace period."&lt;SEP&gt;"The termination of the policy, triggering automatic payment of excess Account Value."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;MINIMUM 4%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"The lowest possible interest rate for policy loans, set at 4%."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;CURRENT RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL RATE"</data>
+  <data key="d4">"The current interest rate applied to the Account Value, set at 3.5% per annum and subject to monthly change."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;SURRENDER CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Fees deducted from Account Value when the policy lapses."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;FPS-UL-24-03391&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CONTRACT_NUMBER"</data>
+  <data key="d4">"A unique identifier assigned to the Universal Life Insurance Policy."&lt;SEP&gt;"The unique contract identifier for the policy."&lt;SEP&gt;"Unique identifier for the policy."&lt;SEP&gt;"Unique policy ID."&lt;SEP&gt;"Unique policy identifier."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;PER ANNUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME UNIT"</data>
+  <data key="d4">"A time unit representing one year."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;YOU&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The policyholder who receives the excess Account Value upon lapse."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;ROBERT JAMES WILSON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"Insured and policy owner."&lt;SEP&gt;"Policyholder and insured."&lt;SEP&gt;"The individual who owns the insurance policy and is also the insured. Male, born on November 15, 1982, aged 41."&lt;SEP&gt;"The individual whose life is covered by the insurance policy. Same as the policy owner."&lt;SEP&gt;"The insured and policy owner, male, age 41, born 11/15/1982."&lt;SEP&gt;"The policyholder and insured, male, born November 15, 1982, age 41."&lt;SEP&gt;"The policyholder and insured."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The amount paid to the policyholder upon surrender, calculated as Account Value minus Surrender Charge and Outstanding Loans."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;POLICY YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME UNIT"</data>
+  <data key="d4">"A period of one year from the policy's inception, during which different interest rates may apply."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;4%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERCENTAGE"</data>
+  <data key="d4">"A minimum percentage value of 4% mentioned in the text, likely referring to a minimum rate that is adjusted annually."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;PHOENIX, ARIZONA&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The city and state where the document was executed."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</node>
+<node id="&quot;$400,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The death benefit amount payable upon the insured's death, also known as the face value of the policy."&lt;SEP&gt;"The face value of the policy, the amount payable upon the insured's death."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;ACCOUNT VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Accumulated policy value."&lt;SEP&gt;"Accumulated value of the policy."&lt;SEP&gt;"The account value from which partial withdrawals are made."&lt;SEP&gt;"The account value that is reduced by withdrawals."&lt;SEP&gt;"The accumulated value in the policy that can be used to cover monthly deductions if premium payments are skipped."&lt;SEP&gt;"The accumulated value of the policy, including premiums paid, interest credited, and deductions."&lt;SEP&gt;"The accumulated value of the policy, used to cover charges and grow over time."&lt;SEP&gt;"The accumulated value of the policy."&lt;SEP&gt;"The amount paid upon suicide within 24 months, without interest."&lt;SEP&gt;"The current value of the policy account, used to determine if monthly deductions can be paid."&lt;SEP&gt;"The current value of the policy's account, used as a base in calculating Cash Surrender Value."&lt;SEP&gt;"The fund from which monthly deductions are made on the 10th of each month."&lt;SEP&gt;"The remaining value after surrender charges, paid automatically upon lapse."&lt;SEP&gt;"The total value of the policy's accumulated funds, calculated as premiums paid minus charges and expenses, plus credited interest."&lt;SEP&gt;"The value of the account that is added to the Specified Amount to determine the death benefit under Option B."&lt;SEP&gt;"The value of the account to which interest is credited daily."&lt;SEP&gt;"The value of the account used as a basis for calculating charges, withdrawals, and benefits."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3&lt;SEP&gt;chunk-b7ef370e6bc76180ad91d299da4bee49&lt;SEP&gt;chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;ACCOUNT VALUE AMOUNTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The varying levels of Account Value that may trigger different interest rates."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;$200/MONTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"Planned and target monthly premium."&lt;SEP&gt;"Planned monthly premium."&lt;SEP&gt;"The intended monthly premium payment amount the policyholder plans to pay."&lt;SEP&gt;"The planned and target monthly premium payment."&lt;SEP&gt;"The planned and target monthly premium."&lt;SEP&gt;"The target monthly premium amount, consistent with the planned premium."</data>
+  <data key="d2">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;SURRENDER CHARGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"A fee applied if the policy is surrendered within the first 15 years."&lt;SEP&gt;"A fee applied if the policy is terminated within the first 15 years."&lt;SEP&gt;"A fee deducted from the Account Value when surrendering the policy, based on the surrender charge schedule."&lt;SEP&gt;"A fee imposed if the policyholder cancels the policy within the first 15 years, calculated as a percentage of the surrender value."&lt;SEP&gt;"Fee applied if the policy is surrendered within the first 15 years."&lt;SEP&gt;"Fee for early policy surrender."&lt;SEP&gt;"Fee for early surrender."</data>
+  <data key="d2">chunk-b7ef370e6bc76180ad91d299da4bee49&lt;SEP&gt;chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</node>
+<node id="&quot;OPTION A&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEATH BENEFIT OPTION"</data>
+  <data key="d4">"A death benefit option currently selected, providing a level death benefit equal to the Specified Amount."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<node id="&quot;LEVEL DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEATH BENEFIT TYPE"</data>
+  <data key="d4">"A death benefit that remains constant and equal to the Specified Amount."</data>
+  <data key="d2">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;Interest may be paid annually or added to loan balance&quot;" target="&quot;INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest may be paid annually or added to loan balance&quot;" target="&quot;LOAN BALANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.3 Interest may be paid annually or added to loan balance&quot;" target="&quot;INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.3 Interest may be paid annually or added to loan balance&quot;" target="&quot;ANNUAL PAYMENT&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.3 Interest may be paid annually or added to loan balance&quot;" target="&quot;LOAN BALANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.3 You may skip payments as long as the Account Value is sufficient to cover monthly deductions.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Planned Premium: $200/month&quot;" target="&quot;$200/MONTH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest is credited to Account Value daily based on the current credited interest rate.&quot;" target="&quot;INTEREST&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest is credited to Account Value daily based on the current credited interest rate.&quot;" target="&quot;CREDITED INTEREST RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest is credited to Account Value daily based on the current credited interest rate.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 Upon lapse, any Account Value in excess of surrender charges will be paid to you automatically.&quot;" target="&quot;LAPSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 Upon lapse, any Account Value in excess of surrender charges will be paid to you automatically.&quot;" target="&quot;SURRENDER CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 Upon lapse, any Account Value in excess of surrender charges will be paid to you automatically.&quot;" target="&quot;YOU&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.3 Upon lapse, any Account Value in excess of surrender charges will be paid to you automatically.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.1 'Account Value' means the accumulation of premiums paid, less deductions for monthly charges and expenses, plus interest credited.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may make partial withdrawals from Account Value at any time.&quot;" target="&quot;PARTIAL WITHDRAWALS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may make partial withdrawals from Account Value at any time.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.4 If Account Value falls below the amount needed to pay monthly charges, the policy will enter a 61-day grace period.&quot;" target="&quot;61-DAY GRACE PERIOD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Outstanding loan reduces death benefit dollar-for-dollar&quot;" target="&quot;OUTSTANDING LOAN&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Outstanding loan reduces death benefit dollar-for-dollar&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 If sufficient premium is not received within 61 days, policy lapses.&quot;" target="&quot;SUFFICIENT PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.2 If sufficient premium is not received within 61 days, policy lapses.&quot;" target="&quot;LAPSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;═══════════════════════════════════════════════════════════════════&quot;" target="&quot;ARTICLE 8 - SURRENDER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;═══════════════════════════════════════════════════════════════════&quot;" target="&quot;ARTICLE 9 - LIMITATIONS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;═══════════════════════════════════════════════════════════════════&quot;" target="&quot;ARTICLE 10 - GRACE PERIOD AND LAPSE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.1 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;" target="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.1 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;" target="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.1 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.1 Cash Surrender Value = Account Value - Surrender Charge - Outstanding Loans&quot;" target="&quot;SURRENDER CHARGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum Premium: $75/month&quot;" target="&quot;$75/MONTH&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed minimum rate: 2.0% per annum Current rate: 3.5% per annum (subject to change monthly)&quot;" target="&quot;GUARANTEED MINIMUM RATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed minimum rate: 2.0% per annum Current rate: 3.5% per annum (subject to change monthly)&quot;" target="&quot;CURRENT RATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed minimum rate: 2.0% per annum Current rate: 3.5% per annum (subject to change monthly)&quot;" target="&quot;PER ANNUM&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.2 'Cost of Insurance' (COI) means the monthly charge for the death benefit based on the insured's age, sex, and risk class.&quot;" target="&quot;COST OF INSURANCE (COI)&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum withdrawal: $500 Maximum: Account Value minus amount needed to keep policy in force&quot;" target="&quot;MINIMUM WITHDRAWAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum withdrawal: $500 Maximum: Account Value minus amount needed to keep policy in force&quot;" target="&quot;MAXIMUM WITHDRAWAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Minimum withdrawal: $500 Maximum: Account Value minus amount needed to keep policy in force&quot;" target="&quot;AMOUNT NEEDED TO KEEP POLICY IN FORCE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.5%, minimum 4%, adjusted annually each January 1&quot;" target="&quot;1.5%&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.5%, minimum 4%, adjusted annually each January 1&quot;" target="&quot;JANUARY 1&quot;">
+  <data key="d5">65.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.5%, minimum 4%, adjusted annually each January 1&quot;" target="&quot;4%&quot;">
+  <data key="d5">70.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;$75/MONTH&quot;">
+  <data key="d5">880.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;MARCH 10, 2024&quot;">
+  <data key="d5">900.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;LEVEL (OPTION A)&quot;">
+  <data key="d5">935.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;JENNIFER ANN WILSON&quot;">
+  <data key="d5">990.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;ROBERT WILSON JR.&quot;">
+  <data key="d5">935.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;EMILY ROSE WILSON&quot;">
+  <data key="d5">935.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;MONTHLY DEDUCTION DATE&quot;">
+  <data key="d5">935.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;COST OF INSURANCE (COI)&quot;">
+  <data key="d5">1140.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;10TH DAY OF EACH MONTH&quot;">
+  <data key="d5">850.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;$50,000 PER YEAR&quot;">
+  <data key="d5">935.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;3% PREMIUM EXPENSE CHARGE&quot;">
+  <data key="d5">1020.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;61-DAY GRACE PERIOD&quot;">
+  <data key="d5">1020.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;UNIVERSAL LIFE INSURANCE POLICY&quot;">
+  <data key="d5">990.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;FLEXPROTECT INSURANCE SOLUTIONS&quot;">
+  <data key="d5">935.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;FPS-UL-24-03391&quot;">
+  <data key="d5">1045.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;ROBERT JAMES WILSON&quot;">
+  <data key="d5">1045.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;$400,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">1135.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;$200/MONTH&quot;">
+  <data key="d5">935.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;3.1 On each Monthly Deduction Date, we deduct from Account Value&quot;" target="&quot;SURRENDER CHARGE&quot;">
+  <data key="d5">1020.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 If Account Value is insufficient to pay monthly deductions, we will notify you. Policy continues for 61 days.&quot;" target="&quot;MONTHLY DEDUCTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 If Account Value is insufficient to pay monthly deductions, we will notify you. Policy continues for 61 days.&quot;" target="&quot;61 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;10.1 If Account Value is insufficient to pay monthly deductions, we will notify you. Policy continues for 61 days.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Contract Number: FPS-UL-24-03391&quot;" target="&quot;FPS-UL-24-03391&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;On each Monthly Deduction Date, we deduct from Account Value: (a) Cost of Insurance charge (b) Administrative expense charge: $8.00/month (c) Any outstanding policy loan interest.&quot;" target="&quot;MONTHLY DEDUCTION DATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;On each Monthly Deduction Date, we deduct from Account Value: (a) Cost of Insurance charge (b) Administrative expense charge: $8.00/month (c) Any outstanding policy loan interest.&quot;" target="&quot;COST OF INSURANCE CHARGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;On each Monthly Deduction Date, we deduct from Account Value: (a) Cost of Insurance charge (b) Administrative expense charge: $8.00/month (c) Any outstanding policy loan interest.&quot;" target="&quot;ADMINISTRATIVE EXPENSE CHARGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;On each Monthly Deduction Date, we deduct from Account Value: (a) Cost of Insurance charge (b) Administrative expense charge: $8.00/month (c) Any outstanding policy loan interest.&quot;" target="&quot;POLICY LOAN INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;On each Monthly Deduction Date, we deduct from Account Value: (a) Cost of Insurance charge (b) Administrative expense charge: $8.00/month (c) Any outstanding policy loan interest.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Target Premium: $200/month&quot;" target="&quot;$200/MONTH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may declare different rates for different policy years or account value amounts.&quot;" target="&quot;POLICY YEARS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may declare different rates for different policy years or account value amounts.&quot;" target="&quot;ACCOUNT VALUE AMOUNTS&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 Surrender Charge Schedule (% of Specified Amount): Year 1: 8% | Year 5: 5% | Year 10: 2% | Year 15+: 0%&quot;" target="&quot;SURRENDER CHARGE SCHEDULE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 Surrender Charge Schedule (% of Specified Amount): Year 1: 8% | Year 5: 5% | Year 10: 2% | Year 15+: 0%&quot;" target="&quot;YEAR 1: 8%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 Surrender Charge Schedule (% of Specified Amount): Year 1: 8% | Year 5: 5% | Year 10: 2% | Year 15+: 0%&quot;" target="&quot;YEAR 5: 5%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 Surrender Charge Schedule (% of Specified Amount): Year 1: 8% | Year 5: 5% | Year 10: 2% | Year 15+: 0%&quot;" target="&quot;YEAR 10: 2%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.2 Surrender Charge Schedule (% of Specified Amount): Year 1: 8% | Year 5: 5% | Year 10: 2% | Year 15+: 0%&quot;" target="&quot;YEAR 15+: 0%&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.3 'Monthly Deduction Date' is the 10th day of each month.&quot;" target="&quot;10TH DAY OF EACH MONTH&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Withdrawal charges: Years 1-10: $25 per withdrawal Years 11+: No charge&quot;" target="&quot;WITHDRAWAL CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Withdrawal charges: Years 1-10: $25 per withdrawal Years 11+: No charge&quot;" target="&quot;YEARS 1-10&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Withdrawal charges: Years 1-10: $25 per withdrawal Years 11+: No charge&quot;" target="&quot;YEARS 11+&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Issue Date: March 10, 2024&quot;" target="&quot;MARCH 10, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death Benefit Option: Level (Option A)&quot;" target="&quot;LEVEL (OPTION A)&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION A (Level Death Benefit) - Currently Selected Death Benefit = Specified Amount&quot;" target="&quot;SPECIFIED AMOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION A (Level Death Benefit) - Currently Selected Death Benefit = Specified Amount&quot;" target="&quot;OPTION A&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION A (Level Death Benefit) - Currently Selected Death Benefit = Specified Amount&quot;" target="&quot;LEVEL DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;1.4 'Surrender Charge' is a percentage-based charge applied if the policy is surrendered in the first 15 years.&quot;" target="&quot;SURRENDER CHARGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Withdrawals reduce Account Value and may reduce death benefit if Account Value falls below minimum required.&quot;" target="&quot;MINIMUM REQUIRED&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Withdrawals reduce Account Value and may reduce death benefit if Account Value falls below minimum required.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Withdrawals reduce Account Value and may reduce death benefit if Account Value falls below minimum required.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Phoenix, Arizona&quot;" target="&quot;CHIEF EXECUTIVE OFFICER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Phoenix, Arizona&quot;" target="&quot;MARCH 10, 2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Phoenix, Arizona&quot;" target="&quot;FLEXPROTECT INSURANCE SOLUTIONS&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Executed at Phoenix, Arizona&quot;" target="&quot;PHOENIX, ARIZONA&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.3 Upon surrender, the policy terminates and coverage ends.&quot;" target="&quot;SURRENDER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.3 Upon surrender, the policy terminates and coverage ends.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;8.3 Upon surrender, the policy terminates and coverage ends.&quot;" target="&quot;COVERAGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Owner: Robert James Wilson&quot;" target="&quot;ROBERT JAMES WILSON&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: Jennifer Ann Wilson (Wife) - 100%&quot;" target="&quot;JENNIFER ANN WILSON&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION B (Increasing Death Benefit) - Available by Request Death Benefit = Specified Amount + Account Value&quot;" target="&quot;INCREASING DEATH BENEFIT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION B (Increasing Death Benefit) - Available by Request Death Benefit = Specified Amount + Account Value&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;OPTION B (Increasing Death Benefit) - Available by Request Death Benefit = Specified Amount + Account Value&quot;" target="&quot;OPTION B&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 You may pay premiums at any time and in any amount, subject to the following limits: Minimum: $75 per payment; Maximum: $50,000 per year (subject to tax limitations)&quot;" target="&quot;$75 PER PAYMENT&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.1 You may pay premiums at any time and in any amount, subject to the following limits: Minimum: $75 per payment; Maximum: $50,000 per year (subject to tax limitations)&quot;" target="&quot;$50,000 PER YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum loan: 90% of current Account Value&quot;" target="&quot;MAXIMUM LOAN&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum loan: 90% of current Account Value&quot;" target="&quot;CURRENT ACCOUNT VALUE&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.4 Outstanding loan reduces death benefit dollar-for-dollar&quot;" target="&quot;OUTSTANDING LOAN&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;7.4 Outstanding loan reduces death benefit dollar-for-dollar&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Insured: Robert James Wilson&quot;" target="&quot;ROBERT JAMES WILSON&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Cost of Insurance is calculated as: (Specified Amount - Account Value) × Monthly COI Rate / 1,000.&quot;" target="&quot;COST OF INSURANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Cost of Insurance is calculated as: (Specified Amount - Account Value) × Monthly COI Rate / 1,000.&quot;" target="&quot;SPECIFIED AMOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Cost of Insurance is calculated as: (Specified Amount - Account Value) × Monthly COI Rate / 1,000.&quot;" target="&quot;MONTHLY COI RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Contingent: Robert Wilson Jr. (Son) - 50%&quot;" target="&quot;ROBERT WILSON JR.&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change death benefit options subject to: (a) Evidence of insurability if increasing coverage (b) Payment of a $50 processing fee&quot;" target="&quot;CHANGE DEATH BENEFIT OPTIONS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change death benefit options subject to: (a) Evidence of insurability if increasing coverage (b) Payment of a $50 processing fee&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may change death benefit options subject to: (a) Evidence of insurability if increasing coverage (b) Payment of a $50 processing fee&quot;" target="&quot;$50 PROCESSING FEE&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;2.2 Premiums are allocated to the Account Value after deduction of a 3% premium expense charge.&quot;" target="&quot;3% PREMIUM EXPENSE CHARGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan interest rate: Variable rate = Moody's Corporate Bond Index + 1.5%, minimum 4%, adjusted annually each January 1&quot;" target="&quot;JANUARY 1&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan interest rate: Variable rate = Moody's Corporate Bond Index + 1.5%, minimum 4%, adjusted annually each January 1&quot;" target="&quot;LOAN INTEREST RATE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan interest rate: Variable rate = Moody's Corporate Bond Index + 1.5%, minimum 4%, adjusted annually each January 1&quot;" target="&quot;MOODY'S CORPORATE BOND INDEX&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan interest rate: Variable rate = Moody's Corporate Bond Index + 1.5%, minimum 4%, adjusted annually each January 1&quot;" target="&quot;MINIMUM 4%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.2 CONTESTABILITY: We may contest this policy for material misrepresentation within 2 years of issue date while insured is living.&quot;" target="&quot;INSURED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.2 CONTESTABILITY: We may contest this policy for material misrepresentation within 2 years of issue date while insured is living.&quot;" target="&quot;CONTESTABILITY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.2 CONTESTABILITY: We may contest this policy for material misrepresentation within 2 years of issue date while insured is living.&quot;" target="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.2 CONTESTABILITY: We may contest this policy for material misrepresentation within 2 years of issue date while insured is living.&quot;" target="&quot;2 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Specified Amount (Face Value): $400,000&quot;" target="&quot;$400,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COI rates are guaranteed not to exceed those shown in the rate schedule attached to this policy.&quot;" target="&quot;COI RATES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;COI rates are guaranteed not to exceed those shown in the rate schedule attached to this policy.&quot;" target="&quot;RATE SCHEDULE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Emily Rose Wilson (Daughter) - 50%&quot;" target="&quot;EMILY ROSE WILSON&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-6368dbe6c1dffc8d09fe0ec57fddf275</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death benefit is paid minus any outstanding policy loans.&quot;" target="&quot;OUTSTANDING POLICY LOANS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Death benefit is paid minus any outstanding policy loans.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4ea37bf3a2e4632c9eae76c3d06a11e3</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.1 SUICIDE EXCLUSION: If insured dies by suicide within 24 months of issue date, we pay only the Account Value, without interest.&quot;" target="&quot;SUICIDE EXCLUSION&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.1 SUICIDE EXCLUSION: If insured dies by suicide within 24 months of issue date, we pay only the Account Value, without interest.&quot;" target="&quot;INSURED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.1 SUICIDE EXCLUSION: If insured dies by suicide within 24 months of issue date, we pay only the Account Value, without interest.&quot;" target="&quot;24 MONTHS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;9.1 SUICIDE EXCLUSION: If insured dies by suicide within 24 months of issue date, we pay only the Account Value, without interest.&quot;" target="&quot;ACCOUNT VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-b7ef370e6bc76180ad91d299da4bee49</data>
+</edge>
+</graph></graphml>

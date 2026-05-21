@@ -1,0 +1,485 @@
+{
+    "name": "sen life insurance",
+    "pairs": [
+        {
+            "question": "Under what condition can the policyowner cancel the policy?",
+            "answer": "The policyowner may cancel this policy at any time by submitting a written request."
+        },
+        {
+            "question": "What happens to insurance coverage after the policy is canceled?",
+            "answer": "Insurance coverage will terminate."
+        },
+        {
+            "question": "Are any benefits payable after the policy is canceled?",
+            "answer": "No further benefits will be payable."
+        },
+        {
+            "question": "What is refunded if the policy has unearned premiums?",
+            "answer": "Unearned premiums will be refunded as specified under applicable law."
+        },
+        {
+            "question": "How must the cancellation request be submitted?",
+            "answer": "By submitting a written request."
+        },
+        {
+            "question": "What determines the refund amount for unearned premiums?",
+            "answer": "Applicable law."
+        },
+        {
+            "question": "Who has the right to elect or change the method of death benefit payment?",
+            "answer": "The Policyowner"
+        },
+        {
+            "question": "What is required for a change in the death benefit payment method?",
+            "answer": "Approval by the Company"
+        },
+        {
+            "question": "What determines the available settlement options for the death benefit?",
+            "answer": "The terms of the settlement options offered"
+        },
+        {
+            "question": "What must the policyowner consider when electing a settlement option?",
+            "answer": "The terms of the settlement options offered and approval by the Company"
+        },
+        {
+            "question": "Who has the right to assign this policy?",
+            "answer": "The Policyowner"
+        },
+        {
+            "question": "How must a policy assignment be submitted?",
+            "answer": "By submitting a written assignment acceptable to the Company"
+        },
+        {
+            "question": "Is the Company responsible for the validity of any assignment?",
+            "answer": "No, the Company shall not be responsible for the validity"
+        },
+        {
+            "question": "What is the Company not responsible for regarding assignments?",
+            "answer": "The tax consequences of any assignment"
+        },
+        {
+            "question": "What are the rights of the Owner and Beneficiary subject to?",
+            "answer": "The terms of the assignment"
+        },
+        {
+            "question": "Who has the right to change the beneficiary in the policy?",
+            "answer": "The Policyowner"
+        },
+        {
+            "question": "When can the beneficiary be changed?",
+            "answer": "At any time during the Insured's lifetime"
+        },
+        {
+            "question": "How must a beneficiary change be requested?",
+            "answer": "By submitting a written request to the Company"
+        },
+        {
+            "question": "When does the beneficiary change take effect?",
+            "answer": "As of the date the request is signed"
+        },
+        {
+            "question": "Does the Insured need to be alive when the Company receives the request for the change to take effect?",
+            "answer": "No, the change takes effect regardless of whether the Insured is living at the time of the Company's receipt of the request"
+        },
+        {
+            "question": "What determines the effective date of a beneficiary change?",
+            "answer": "The date the request is signed"
+        },
+        {
+            "question": "What information can the policyowner request according to the policy?",
+            "answer": "A copy of the policy, premium payment history, beneficiary designations, and any applicable riders or endorsements."
+        },
+        {
+            "question": "Who has the right to request policy information?",
+            "answer": "The Policyowner."
+        },
+        {
+            "question": "What is the company's obligation when a request for policy information is made?",
+            "answer": "To provide the requested information within a reasonable time."
+        },
+        {
+            "question": "In what context must the company provide the requested information?",
+            "answer": "In accordance with applicable laws and regulations."
+        },
+        {
+            "question": "What must the company ensure when delivering policy information?",
+            "answer": "That it is provided within a reasonable time."
+        },
+        {
+            "question": "What documents constitute the entire contract between the Policy Owner and the Company?",
+            "answer": "The policy, together with the application and any attached riders or endorsements."
+        },
+        {
+            "question": "Can an agent or representative alter any provision of this policy?",
+            "answer": "No, unless expressly authorized in writing by an officer of the Company."
+        },
+        {
+            "question": "What is required for an agent or representative to waive a provision of the policy?",
+            "answer": "Express written authorization from an officer of the Company."
+        },
+        {
+            "question": "Who has the authority to modify or waive provisions of this policy?",
+            "answer": "An officer of the Company."
+        },
+        {
+            "question": "Is the Automatic Premium Loan (APL) provision included by default in this policy?",
+            "answer": "No, this policy does not include an Automatic Premium Loan provision unless endorsed or added by rider."
+        },
+        {
+            "question": "How can the Automatic Premium Loan (APL) provision be added to the policy?",
+            "answer": "The APL provision can be added by rider."
+        },
+        {
+            "question": "What happens to unpaid premiums after the grace period if APL is in force?",
+            "answer": "Unpaid premiums due at the end of the grace period will be paid automatically by a policy loan."
+        },
+        {
+            "question": "What condition must be met for a policy loan to cover unpaid premiums under APL?",
+            "answer": "There must be sufficient loan value available."
+        },
+        {
+            "question": "What is the maximum percentage of the death benefit that can be paid early under the Accelerated Death Benefit Rider?",
+            "answer": "50%"
+        },
+        {
+            "question": "What is required for a policyowner to receive an accelerated benefit?",
+            "answer": "A written request and medical documentation acceptable to the Company"
+        },
+        {
+            "question": "What happens to the death benefit after an accelerated benefit is paid?",
+            "answer": "It is reduced by the amount paid, including any applicable administrative charges and interest"
+        },
+        {
+            "question": "Under what circumstances is an accelerated benefit not paid?",
+            "answer": "If the terminal illness is the result of intentional self-inflicted injury, participation in a felony, or war-related activities"
+        },
+        {
+            "question": "Can the policyowner revoke a request for accelerated benefits, and if so, under what conditions?",
+            "answer": "Yes, the policyowner may revoke the request at any time before the benefit is paid by providing written notice to the Company"
+        },
+        {
+            "question": "What is the legal consequence of knowingly providing materially false information on an insurance application or claim?",
+            "answer": "It constitutes a fraudulent insurance act"
+        },
+        {
+            "question": "What is the face amount of Jordan Everett Hughes's life insurance policy?",
+            "answer": "$500,000"
+        },
+        {
+            "question": "What is the initial monthly premium for this policy?",
+            "answer": "$42.00"
+        },
+        {
+            "question": "What is the duration of the guaranteed premium period for this policy?",
+            "answer": "20 Years"
+        },
+        {
+            "question": "Who is the primary beneficiary of the policy?",
+            "answer": "Elaine M. Hughes (Wife)"
+        },
+        {
+            "question": "What rider is attached to this policy?",
+            "answer": "Accelerated Death Benefit Rider"
+        },
+        {
+            "question": "What is the coverage term for this policy?",
+            "answer": "August 7, 2025 - August 7, 2045"
+        },
+        {
+            "question": "Who has the authority to change the beneficiary designation?",
+            "answer": "The Policy Owner"
+        },
+        {
+            "question": "How can the beneficiary designation be changed?",
+            "answer": "By submitting a written request to the Company"
+        },
+        {
+            "question": "When does the change of beneficiary take effect?",
+            "answer": "As of the date the request is signed"
+        },
+        {
+            "question": "Does the insured need to be alive for the change to take effect?",
+            "answer": "No, the change takes effect regardless of whether the Insured is living at the time of the Company's receipt"
+        },
+        {
+            "question": "What does the term 'Policy' refer to in this insurance contract?",
+            "answer": "This Individual Term Life Insurance contract, including the application, policy schedule, riders, and endorsements."
+        },
+        {
+            "question": "Who is the 'Company' referred to in this policy?",
+            "answer": "Sentinel Life Assurance Company."
+        },
+        {
+            "question": "Who is the 'Insured' under this policy?",
+            "answer": "The person whose life is covered under this policy."
+        },
+        {
+            "question": "Who is the 'Owner' of the policy?",
+            "answer": "The person who has all rights of ownership under the policy."
+        },
+        {
+            "question": "Who is the 'Beneficiary' in this policy?",
+            "answer": "The person(s) designated to receive the Death Benefit upon the Insured's death."
+        },
+        {
+            "question": "What is the 'Death Benefit' in this policy?",
+            "answer": "The amount payable to the Beneficiary upon the Insured's death, subject to the terms of this policy."
+        },
+        {
+            "question": "What is meant by 'Premium' in this context?",
+            "answer": "The payment required to keep the policy in force."
+        },
+        {
+            "question": "What is the 'Grace Period' for missed premiums?",
+            "answer": "A 31-day period following a missed premium during which the policy remains in force."
+        },
+        {
+            "question": "Within how many years after lapse can a policy be reinstated?",
+            "answer": "Five (5) years"
+        },
+        {
+            "question": "What must be provided to reinstate a lapsed policy?",
+            "answer": "Evidence of insurability satisfactory to the Company"
+        },
+        {
+            "question": "What financial obligations must be fulfilled to reinstate a lapsed policy?",
+            "answer": "Payment of all past due premiums with interest"
+        },
+        {
+            "question": "Who determines the amount of interest on past due premiums during reinstatement?",
+            "answer": "The Company"
+        },
+        {
+            "question": "What two factors are considered when issuing this policy?",
+            "answer": "The statements made in the application and the payment of the first premium."
+        },
+        {
+            "question": "What is required for the policy to be initially issued?",
+            "answer": "The payment of the first premium and the statements made in the application."
+        },
+        {
+            "question": "What condition must be met to maintain continued coverage under this policy?",
+            "answer": "The timely payment of all subsequent premiums due."
+        },
+        {
+            "question": "Is continued coverage guaranteed after the first premium is paid?",
+            "answer": "No, continued coverage is subject to the timely payment of all subsequent premiums due."
+        },
+        {
+            "question": "What determines whether the policy remains in force after issuance?",
+            "answer": "The timely payment of all subsequent premiums due."
+        },
+        {
+            "question": "What triggers the payment of the Death Benefit?",
+            "answer": "The Insured's death while the policy is in force."
+        },
+        {
+            "question": "How is the Death Benefit paid, unless otherwise elected?",
+            "answer": "In a lump sum."
+        },
+        {
+            "question": "What forms of proof of death are acceptable?",
+            "answer": "A certified copy of the death certificate and any other documentation the Company may reasonably require."
+        },
+        {
+            "question": "When does the Company pay the Death Benefit?",
+            "answer": "Promptly upon receipt of satisfactory proof of death."
+        },
+        {
+            "question": "What interest is paid on the Death Benefit?",
+            "answer": "Interest as required by applicable law, accruing from the date of death until the date of payment."
+        },
+        {
+            "question": "Who receives the Death Benefit if no beneficiary survives the insured?",
+            "answer": "The Policy Owner, if living, or the Owner's estate."
+        },
+        {
+            "question": "How is the Beneficiary determined?",
+            "answer": "The person or entity named in the application or most recent written designation on file with the Company."
+        },
+        {
+            "question": "What rights does the Policy Owner have?",
+            "answer": "The Policy Owner possesses all contractual rights, including the right to change beneficiaries, assign the policy, and request cancellation."
+        },
+        {
+            "question": "Who is considered the Owner if no Policy Owner is named?",
+            "answer": "If no Owner is named, the Insured shall be deemed the Owner."
+        },
+        {
+            "question": "What can the Policy Owner do regarding beneficiaries?",
+            "answer": "The Policy Owner has the right to change beneficiaries."
+        },
+        {
+            "question": "What action can the Policy Owner take to transfer the policy to someone else?",
+            "answer": "The Policy Owner has the right to assign the policy."
+        },
+        {
+            "question": "What can the Policy Owner do if they wish to end the policy?",
+            "answer": "The Policy Owner has the right to request cancellation."
+        },
+        {
+            "question": "How long does the Owner have to examine the policy?",
+            "answer": "20 days from receipt"
+        },
+        {
+            "question": "What can the Owner do if not satisfied with the policy?",
+            "answer": "Return the policy to the Company for a full refund of any premium paid"
+        },
+        {
+            "question": "What happens to the premium if the policy is returned within the examination period?",
+            "answer": "The Owner receives a full refund of any premium paid"
+        },
+        {
+            "question": "What is the effect of returning the policy after the examination period?",
+            "answer": "The policy shall be void from inception and treated as if never issued"
+        },
+        {
+            "question": "What is the status of the policy after it is returned?",
+            "answer": "Void from inception and treated as if never issued"
+        },
+        {
+            "question": "When does the examination period begin?",
+            "answer": "From receipt of the policy"
+        },
+        {
+            "question": "After how many years from the Effective Date does the policy become incontestable, excluding nonpayment of premium?",
+            "answer": "Two years"
+        },
+        {
+            "question": "What is the Company's liability if the Insured dies by suicide within two years from the Effective Date?",
+            "answer": "The Company's liability shall be limited to a refund of premiums paid, without interest, less any indebtedness"
+        },
+        {
+            "question": "How is the insurance amount adjusted if the Insured's age or gender is misstated?",
+            "answer": "The amount of insurance shall be adjusted to the amount that the premium paid would have purchased at the correct age or gender"
+        },
+        {
+            "question": "How long is the grace period for premium payment after the first premium?",
+            "answer": "31 days"
+        },
+        {
+            "question": "What happens to the policy if a premium is not paid before the end of the grace period?",
+            "answer": "This policy shall lapse as of the due date of the unpaid premium, and coverage shall terminate with no further benefits payable, except as provided under the Reinstatement provision"
+        },
+        {
+            "question": "What is deducted from the Death Benefit if the Insured dies during the grace period?",
+            "answer": "Any unpaid premium due"
+        },
+        {
+            "question": "What is the condition for a policy to be considered incontestable, aside from nonpayment of premium?",
+            "answer": "It has been in force during the lifetime of the Insured for two years from the Effective Date"
+        },
+        {
+            "question": "When is the first premium due?",
+            "answer": "The first premium is due on the Effective Date of the policy."
+        },
+        {
+            "question": "How often are subsequent premiums due?",
+            "answer": "Subsequent premiums are due on each premium due date according to the payment mode selected."
+        },
+        {
+            "question": "How can the Policy Owner request a change in premium payment mode?",
+            "answer": "The Policy Owner may request a change in the frequency or method of premium payment by written notice to the Company."
+        },
+        {
+            "question": "When does a change in premium payment mode become effective?",
+            "answer": "Such change shall become effective upon approval by the Company."
+        },
+        {
+            "question": "What happens if the premium is not paid by the end of the grace period?",
+            "answer": "Failure to pay the premium by the end of the grace period will cause the policy to lapse, and coverage will terminate without value except as provided under the Reinstatement provision."
+        },
+        {
+            "question": "Under what condition can the policy be reinstated after lapsing?",
+            "answer": "The policy can be reinstated under the Reinstatement provision."
+        },
+        {
+            "question": "What is the policy number for the individual term life insurance policy?",
+            "answer": "SLAC-2025-001"
+        },
+        {
+            "question": "Who is the insurer for this life insurance policy?",
+            "answer": "Sentinel Life Assurance Company"
+        },
+        {
+            "question": "Who is the insured under this policy?",
+            "answer": "Jordan Everett Hughes"
+        },
+        {
+            "question": "Who is the policy owner of this life insurance policy?",
+            "answer": "Jordan Everett Hughes"
+        },
+        {
+            "question": "What is the effective date of this policy?",
+            "answer": "August 7, 2025"
+        },
+        {
+            "question": "What type of life insurance policy is this?",
+            "answer": "Level Term Life Insurance - 20 Years"
+        },
+        {
+            "question": "Where can the premium amount and payment mode be found?",
+            "answer": "The Schedule of Benefits."
+        },
+        {
+            "question": "When are premiums payable?",
+            "answer": "In advance."
+        },
+        {
+            "question": "What are the available payment frequencies for premiums?",
+            "answer": "Monthly, quarterly, semi-annual, or annual."
+        },
+        {
+            "question": "Who selects the premium payment mode?",
+            "answer": "The Policy Owner."
+        },
+        {
+            "question": "Is Company approval required for the selected payment mode?",
+            "answer": "Yes."
+        },
+        {
+            "question": "Is the premium payment mode automatically assigned?",
+            "answer": "No."
+        },
+        {
+            "question": "What must happen after the Policy Owner elects a payment mode?",
+            "answer": "The Company must approve it."
+        },
+        {
+            "question": "Where can the Effective Date of this policy be found?",
+            "answer": "On the Schedule of Benefits"
+        },
+        {
+            "question": "At what time does coverage begin?",
+            "answer": "12:01 A.M."
+        },
+        {
+            "question": "What time zone is used to determine when coverage begins?",
+            "answer": "Standard Time"
+        },
+        {
+            "question": "Where does coverage begin on the Effective Date?",
+            "answer": "At the Owner's address"
+        },
+        {
+            "question": "What is required for a change or waiver of any provision in this policy to be valid?",
+            "answer": "It must be made in writing and signed by an authorized officer of the Company."
+        },
+        {
+            "question": "Who is authorized to modify this policy?",
+            "answer": "An authorized officer of the Company."
+        },
+        {
+            "question": "Are agents or brokers authorized to modify this policy?",
+            "answer": "No, agents or brokers are not authorized to modify."
+        },
+        {
+            "question": "What form must a modification to the policy take to be valid?",
+            "answer": "It must be in writing."
+        },
+        {
+            "question": "What must accompany a written modification to be valid?",
+            "answer": "It must be signed by an authorized officer of the Company."
+        }
+    ]
+}

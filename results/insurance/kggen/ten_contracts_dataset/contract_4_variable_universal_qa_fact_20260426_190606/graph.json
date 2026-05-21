@@ -1,0 +1,999 @@
+{
+  "entities": [
+    "6% interest",
+    "Year 7+",
+    "fixed interest rate",
+    "maximum withdrawal amount",
+    "Fund Expenses",
+    "Investment Risk",
+    "Administrative costs",
+    "charges",
+    "Planned Annual Premium",
+    "Primary Beneficiary",
+    "Premium Load",
+    "M&E",
+    "surrender value",
+    "Monthly Charge",
+    "Government Bond Fund",
+    "evidence of insurability",
+    "$1,000,000",
+    "5.5% per annum",
+    "$50",
+    "Class",
+    "Insurance risks",
+    "Face + Account Value",
+    "extra premium",
+    "policy lapse",
+    "Investment Performance",
+    "Pinnacle Investment Life Separate Account A",
+    "0.90% annually",
+    "investment risk",
+    "underlying funds",
+    "Premium payments",
+    "40%",
+    "reinstatement",
+    "Policy Lapse",
+    "policy owner",
+    "Available Sub-Accounts",
+    "Face Amount",
+    "account value minus $5,000",
+    "Account Value",
+    "sub-account",
+    "Annual Expense Ratio",
+    "proportionally",
+    "Fee After 12 Changes",
+    "Year 1-2",
+    "securities product",
+    "Real Estate Securities Fund",
+    "Age at Issue",
+    "Dr. Amanda Katherine Foster",
+    "Michael Thomas Foster",
+    "Insured Party",
+    "2 years",
+    "April 5, 2024",
+    "New York, New York",
+    "Surrender Charge Schedule",
+    "Date of Birth",
+    "Variable Universal Life Insurance Policy",
+    "operating an aircraft",
+    "withdrawals",
+    "Sub-account",
+    "Administrative Fee",
+    "Account Value Fluctuation",
+    "Level Death Benefit",
+    "minimum withdrawal amount",
+    "suicide",
+    "PIL-VUL-2024-5521",
+    "Premium Payment",
+    "surrender charges",
+    "back charges",
+    "account value",
+    "Face Amount at Risk",
+    "Mortality & Expense Risk Charge",
+    "death benefit",
+    "Option II",
+    "Guaranteed minimum 1.5%",
+    "Money Market",
+    "war exclusion",
+    "Separate Account",
+    "Accumulation Units",
+    "Minimum Face Amount Requirements",
+    "Foster Children's Trust",
+    "Death Benefit Option",
+    "military conflict",
+    "crew member",
+    "Money Market Fund",
+    "Initial Face Amount",
+    "30%",
+    "prospectus",
+    "24 months",
+    "declared and approved",
+    "Female",
+    "Balanced Allocation Fund",
+    "Unit Value",
+    "other sub-accounts",
+    "war zone",
+    "Policy Date",
+    "International Equity Fund",
+    "Online Portal",
+    "face amount",
+    "issue",
+    "Secondary Beneficiary",
+    "Mortality and Expense Risk Charge",
+    "3 years",
+    "Money Market sub-account",
+    "$12,000",
+    "Mutual fund",
+    "partial withdrawals",
+    "registered unit investment trust",
+    "1.5%",
+    "processing fee",
+    "Sub-Account",
+    "Variable Death Benefit",
+    "Section 2: Investment Allocation",
+    "Cost of Insurance",
+    "Policy Owner",
+    "Administrative Charge",
+    "Investment instructions",
+    "aviation",
+    "First 12 Changes Per Year",
+    "20%",
+    "Prospectus",
+    "pilot",
+    "Current Allocation",
+    "President & CEO",
+    "Pinnacle Investment Life Corp.",
+    "Section 3.6",
+    "Segregated investment account",
+    "Premium load",
+    "Year 5-6",
+    "Gender",
+    "Equity Growth Fund",
+    "Policy Number",
+    "Preferred Plus",
+    "lapse notice",
+    "investing",
+    "30 days",
+    "Spouse",
+    "guaranteed minimum rate",
+    "policy loans",
+    "Written Request",
+    "September 3, 1975",
+    "Section 1: Important Definitions",
+    "premiums paid",
+    "COI Rate",
+    "SEC regulation",
+    "Proof of Insurability",
+    "48",
+    "Year 3-4",
+    "Death Benefit",
+    "loan amounts",
+    "outstanding loans"
+  ],
+  "relations": [
+    [
+      "policy loans",
+      "reduce",
+      "death benefit"
+    ],
+    [
+      "Government Bond Fund",
+      "has allocation percentage of",
+      "20%"
+    ],
+    [
+      "Written Request",
+      "allows changes to allocations",
+      "Online Portal"
+    ],
+    [
+      "Available Sub-Accounts",
+      "include",
+      "Government Bond Fund"
+    ],
+    [
+      "death benefit",
+      "is reduced dollar-for-dollar by",
+      "policy loans"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "charges",
+      "0% in Year 7+"
+    ],
+    [
+      "Account Value",
+      "can become insufficient to cover",
+      "Charges"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "evidence of insurability"
+    ],
+    [
+      "Sub-account",
+      "has its own",
+      "Fund Expenses"
+    ],
+    [
+      "Mortality and Expense Risk Charge",
+      "covers",
+      "Insurance risks"
+    ],
+    [
+      "Government Bond Fund",
+      "has allocation percentage",
+      "20%"
+    ],
+    [
+      "Current Allocation",
+      "includes",
+      "Balanced Allocation Fund"
+    ],
+    [
+      "Section 1: Important Definitions",
+      "defines",
+      "Sub-Account"
+    ],
+    [
+      "Premium Load",
+      "is charged at",
+      "5.0% of each premium payment"
+    ],
+    [
+      "guaranteed minimum rate",
+      "is",
+      "1.5%"
+    ],
+    [
+      "Dr. Amanda Katherine Foster",
+      "has gender",
+      "Female"
+    ],
+    [
+      "processing fee",
+      "is",
+      "$50"
+    ],
+    [
+      "Money Market",
+      "is part of",
+      "Current Allocation"
+    ],
+    [
+      "aviation",
+      "is excluded unless",
+      "declared and approved with extra premium"
+    ],
+    [
+      "monthly deductions",
+      "are not covered for",
+      "61 consecutive days"
+    ],
+    [
+      "Pinnacle Investment Life Separate Account A",
+      "is associated with",
+      "Pinnacle Investment Life Corp."
+    ],
+    [
+      "minimum withdrawal amount",
+      "is",
+      "$1,000"
+    ],
+    [
+      "Dr. Amanda Katherine Foster",
+      "has date of birth",
+      "September 3, 1975"
+    ],
+    [
+      "Account Value Fluctuation",
+      "is based on",
+      "Sub-account performance"
+    ],
+    [
+      "Premium payments",
+      "after",
+      "Premium load"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "has policy number",
+      "PIL-VUL-2024-5521"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "issued by",
+      "Pinnacle Investment Life Corp."
+    ],
+    [
+      "Face Amount at Risk",
+      "is equal to",
+      "Death Benefit - Account Value"
+    ],
+    [
+      "Current Allocation",
+      "includes",
+      "Money Market"
+    ],
+    [
+      "Accumulation Units",
+      "are units held in",
+      "Sub-Accounts before distributions"
+    ],
+    [
+      "Equity Growth Fund",
+      "has allocation percentage",
+      "40%"
+    ],
+    [
+      "Balanced Allocation Fund",
+      "has allocation percentage",
+      "30%"
+    ],
+    [
+      "Mortality & Expense Risk Charge",
+      "is deducted",
+      "daily"
+    ],
+    [
+      "Available Sub-Accounts",
+      "include",
+      "Balanced Allocation Fund"
+    ],
+    [
+      "maximum withdrawal amount",
+      "is",
+      "account value minus $5,000"
+    ],
+    [
+      "Account Value",
+      "is not guaranteed",
+      "Death Benefit under Option II"
+    ],
+    [
+      "Prospectus",
+      "contains details of",
+      "Fund Expenses"
+    ],
+    [
+      "Premium payments",
+      "are allocated based on",
+      "Investment instructions"
+    ],
+    [
+      "Michael Thomas Foster",
+      "is",
+      "Spouse"
+    ],
+    [
+      "Level Death Benefit",
+      "has death benefit equal to",
+      "Face Amount"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "payment of all back charges plus 6% interest"
+    ],
+    [
+      "Mortality and Expense Risk Charge",
+      "is a daily charge",
+      "0.90% annually"
+    ],
+    [
+      "account value",
+      "is insufficient to cover",
+      "monthly deductions"
+    ],
+    [
+      "Variable Death Benefit",
+      "grows with",
+      "Account Value"
+    ],
+    [
+      "prospectus",
+      "is for",
+      "the Separate Account and underlying funds"
+    ],
+    [
+      "Fund Expenses",
+      "are detailed in",
+      "Prospectus"
+    ],
+    [
+      "First 12 Changes Per Year",
+      "have no fee",
+      "Fee After 12 Changes"
+    ],
+    [
+      "Money Market Fund",
+      "has guaranteed minimum",
+      "1.5%"
+    ],
+    [
+      "face amount",
+      "is reduced proportionally by",
+      "partial withdrawals"
+    ],
+    [
+      "Cost of Insurance",
+      "is calculated as",
+      "(Face Amount at Risk) \u00d7 (Monthly COI Rate) / 1,000"
+    ],
+    [
+      "Account Value",
+      "is affected by",
+      "Investment Performance"
+    ],
+    [
+      "Pinnacle Investment Life Corp.",
+      "is located in",
+      "New York, New York"
+    ],
+    [
+      "account value",
+      "becomes insufficient to cover",
+      "charges"
+    ],
+    [
+      "Monthly Charge",
+      "is part of",
+      "Cost of Insurance"
+    ],
+    [
+      "Mortality & Expense Risk Charge",
+      "is deducted at",
+      "0.90% per annum of account value"
+    ],
+    [
+      "Available Sub-Accounts",
+      "include",
+      "Real Estate Securities Fund"
+    ],
+    [
+      "Mortality and Expense Risk Charge",
+      "covers",
+      "Administrative costs"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "applies",
+      "Year 3-4"
+    ],
+    [
+      "policy",
+      "will lapse if",
+      "account value is insufficient to cover monthly deductions for 61 consecutive days"
+    ],
+    [
+      "Pinnacle Investment Life Separate Account A",
+      "is a",
+      "registered unit investment trust"
+    ],
+    [
+      "Administrative Fee",
+      "is charged for",
+      "Switching between death benefit options"
+    ],
+    [
+      "Variable Death Benefit",
+      "has death benefit equal to",
+      "Face Amount + Account Value"
+    ],
+    [
+      "Fund Expenses",
+      "have annual expense ratio ranging from",
+      "0.45% to 1.25%"
+    ],
+    [
+      "prospectus",
+      "relates to",
+      "Separate Account"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "charges",
+      "7% in Year 1-2"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "applies",
+      "Year 5-6"
+    ],
+    [
+      "surrender charges",
+      "apply if",
+      "partial withdrawals"
+    ],
+    [
+      "partial withdrawals",
+      "may be subject to",
+      "surrender charges"
+    ],
+    [
+      "Administrative Charge",
+      "is charged at",
+      "$15 per month"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "applies",
+      "Year 1-2"
+    ],
+    [
+      "Unit Value",
+      "is the value of",
+      "One unit of a sub-account"
+    ],
+    [
+      "Separate Account",
+      "is part of",
+      "Pinnacle Investment Life Separate Account A"
+    ],
+    [
+      "Switching between death benefit options",
+      "requires",
+      "Minimum Face Amount Requirements"
+    ],
+    [
+      "Option II",
+      "includes",
+      "Face + Account Value"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "has planned annual premium",
+      "$12,000"
+    ],
+    [
+      "Death Benefit under Option II",
+      "fluctuates based on",
+      "Sub-account performance"
+    ],
+    [
+      "Sub-Account",
+      "invests in",
+      "Mutual fund"
+    ],
+    [
+      "Money Market Fund",
+      "has allocation percentage of",
+      "10%"
+    ],
+    [
+      "Face Amount at Risk",
+      "is derived from",
+      "Death Benefit and Account Value"
+    ],
+    [
+      "Investment Risk",
+      "is disclosed in",
+      "Section 5: Investment Risk Disclosure"
+    ],
+    [
+      "Switching between death benefit options",
+      "requires",
+      "Proof of Insurability for increases"
+    ],
+    [
+      "Available Sub-Accounts",
+      "include",
+      "Money Market Fund"
+    ],
+    [
+      "partial withdrawals",
+      "have maximum",
+      "maximum withdrawal amount"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "charges",
+      "5% in Year 3-4"
+    ],
+    [
+      "prospectus",
+      "must be read carefully before",
+      "investing"
+    ],
+    [
+      "aviation",
+      "is excluded if",
+      "death results from operating an aircraft as pilot or crew member"
+    ],
+    [
+      "suicide",
+      "results in payment of",
+      "premiums paid minus withdrawals"
+    ],
+    [
+      "COI Rate",
+      "is used in calculation of",
+      "Cost of Insurance"
+    ],
+    [
+      "suicide",
+      "occurs within",
+      "2 years of reinstatement"
+    ],
+    [
+      "prospectus",
+      "relates to",
+      "underlying funds"
+    ],
+    [
+      "Investment Performance",
+      "can affect",
+      "Account Value"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "has death benefit option",
+      "Option II"
+    ],
+    [
+      "partial withdrawals",
+      "have processing fee",
+      "processing fee"
+    ],
+    [
+      "policy loans",
+      "have interest rate",
+      "5.5% per annum"
+    ],
+    [
+      "Real Estate Securities Fund",
+      "is part of",
+      "Current Allocation"
+    ],
+    [
+      "Level Death Benefit",
+      "has lower charges than",
+      "Variable Death Benefit"
+    ],
+    [
+      "Online Portal",
+      "allows changes to allocations",
+      "Written Request"
+    ],
+    [
+      "underlying funds",
+      "are part of",
+      "Separate Account"
+    ],
+    [
+      "poor investment performance",
+      "can cause",
+      "policy lapse"
+    ],
+    [
+      "Section 2: Investment Allocation",
+      "describes",
+      "Premium payments"
+    ],
+    [
+      "Available Sub-Accounts",
+      "include",
+      "International Equity Fund"
+    ],
+    [
+      "Equity Growth Fund",
+      "has allocation percentage of",
+      "40%"
+    ],
+    [
+      "Balanced Allocation Fund",
+      "has allocation percentage of",
+      "30%"
+    ],
+    [
+      "other sub-accounts",
+      "have no",
+      "guaranteed minimum return"
+    ],
+    [
+      "loan amounts",
+      "are moved to",
+      "Money Market sub-account"
+    ],
+    [
+      "lapse notice",
+      "is sent at least",
+      "30 days before lapse"
+    ],
+    [
+      "Pinnacle Investment Life Separate Account A",
+      "is",
+      "registered unit investment trust"
+    ],
+    [
+      "April 5, 2024",
+      "is date of",
+      "execution"
+    ],
+    [
+      "Unit Value",
+      "is calculated",
+      "Daily based on fund performance"
+    ],
+    [
+      "war exclusion",
+      "applies if",
+      "death occurs within 24 months of issue"
+    ],
+    [
+      "Switching between death benefit options",
+      "incurs",
+      "$50 administrative fee"
+    ],
+    [
+      "reinstatement",
+      "requires",
+      "repayment of outstanding loans"
+    ],
+    [
+      "President & CEO",
+      "is position held by",
+      "Pinnacle Investment Life Corp."
+    ],
+    [
+      "reinstatement",
+      "is allowed within",
+      "3 years"
+    ],
+    [
+      "partial withdrawals",
+      "have minimum",
+      "minimum withdrawal amount"
+    ],
+    [
+      "Investment Risk",
+      "is borne by",
+      "Policy Owner"
+    ],
+    [
+      "Level Death Benefit",
+      "does not provide growth from investments",
+      "Variable Death Benefit"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "issued on",
+      "April 5, 2024"
+    ],
+    [
+      "Dr. Amanda Katherine Foster",
+      "has insurance class",
+      "Preferred Plus"
+    ],
+    [
+      "Sub-Account",
+      "is a",
+      "Segregated investment account"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "has primary beneficiary",
+      "Michael Thomas Foster"
+    ],
+    [
+      "Available Sub-Accounts",
+      "include",
+      "Equity Growth Fund"
+    ],
+    [
+      "Policy Lapse",
+      "can result from",
+      "Insufficient Account Value"
+    ],
+    [
+      "Fee After 12 Changes",
+      "is charged at",
+      "$25"
+    ],
+    [
+      "policy loans",
+      "have fixed interest rate",
+      "fixed interest rate"
+    ],
+    [
+      "Premium payments",
+      "are allocated to",
+      "Sub-Accounts"
+    ],
+    [
+      "prospectus",
+      "covers",
+      "underlying funds"
+    ],
+    [
+      "Sub-account",
+      "affects",
+      "Account Value Fluctuation"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "has initial face amount",
+      "$1,000,000"
+    ],
+    [
+      "Current Allocation",
+      "includes",
+      "Government Bond Fund"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "has insured party",
+      "Dr. Amanda Katherine Foster"
+    ],
+    [
+      "policy loans",
+      "have maximum",
+      "90% of surrender value"
+    ],
+    [
+      "Variable Death Benefit",
+      "has higher charges than",
+      "Level Death Benefit"
+    ],
+    [
+      "securities product",
+      "is subject to",
+      "SEC regulation"
+    ],
+    [
+      "Poor Investment Performance",
+      "can cause",
+      "Policy Lapse"
+    ],
+    [
+      "partial withdrawals",
+      "reduce",
+      "face amount"
+    ],
+    [
+      "Premium Payment",
+      "is subject to",
+      "Premium Load"
+    ],
+    [
+      "Variable Death Benefit",
+      "is currently selected",
+      "Option II"
+    ],
+    [
+      "war exclusion",
+      "applies if",
+      "death occurs while serving in military conflict in a war zone"
+    ],
+    [
+      "Money Market sub-account",
+      "has",
+      "guaranteed minimum rate"
+    ],
+    [
+      "Variable Universal Life Insurance Policy",
+      "has secondary beneficiary",
+      "Foster Children's Trust"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "applies",
+      "Year 7+"
+    ],
+    [
+      "investment risk",
+      "is borne by",
+      "policy owner"
+    ],
+    [
+      "suicide",
+      "occurs within",
+      "2 years of issue"
+    ],
+    [
+      "Annual Expense Ratio",
+      "is part of",
+      "Fund Expenses"
+    ],
+    [
+      "Surrender Charge Schedule",
+      "charges",
+      "3% in Year 5-6"
+    ],
+    [
+      "Current Allocation",
+      "includes",
+      "Equity Growth Fund"
+    ],
+    [
+      "Dr. Amanda Katherine Foster",
+      "has age at issue",
+      "48"
+    ]
+  ],
+  "edges": [
+    "relates to",
+    "contains details of",
+    "has gender",
+    "charges",
+    "is reduced proportionally by",
+    "has policy number",
+    "invests in",
+    "applies if",
+    "occurs within",
+    "have interest rate",
+    "is charged for",
+    "has allocation percentage of",
+    "is deducted",
+    "is calculated as",
+    "has insurance class",
+    "have processing fee",
+    "have annual expense ratio ranging from",
+    "must be read carefully before",
+    "are detailed in",
+    "are moved to",
+    "is currently selected",
+    "is deducted at",
+    "has death benefit equal to",
+    "has age at issue",
+    "applies",
+    "has higher charges than",
+    "have no fee",
+    "is associated with",
+    "reduce",
+    "has primary beneficiary",
+    "are units held in",
+    "is subject to",
+    "apply if",
+    "is date of",
+    "allows changes to allocations",
+    "includes",
+    "are not covered for",
+    "is for",
+    "has date of birth",
+    "is the value of",
+    "is derived from",
+    "is sent at least",
+    "after",
+    "have fixed interest rate",
+    "incurs",
+    "covers",
+    "becomes insufficient to cover",
+    "is insufficient to cover",
+    "are allocated based on",
+    "is based on",
+    "is not guaranteed",
+    "is excluded if",
+    "have maximum",
+    "grows with",
+    "have minimum",
+    "can result from",
+    "results in payment of",
+    "affects",
+    "defines",
+    "has allocation percentage",
+    "is position held by",
+    "is located in",
+    "are allocated to",
+    "can cause",
+    "issued by",
+    "is a daily charge",
+    "is equal to",
+    "is reduced dollar-for-dollar by",
+    "can become insufficient to cover",
+    "has secondary beneficiary",
+    "describes",
+    "include",
+    "is borne by",
+    "has insured party",
+    "has death benefit option",
+    "is excluded unless",
+    "requires",
+    "is a",
+    "has lower charges than",
+    "does not provide growth from investments",
+    "can affect",
+    "is affected by",
+    "is",
+    "fluctuates based on",
+    "issued on",
+    "is allowed within",
+    "will lapse if",
+    "is disclosed in",
+    "has guaranteed minimum",
+    "has",
+    "is charged at",
+    "is calculated",
+    "has initial face amount",
+    "are part of",
+    "is used in calculation of",
+    "may be subject to",
+    "has its own",
+    "is part of",
+    "have no",
+    "has planned annual premium"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}

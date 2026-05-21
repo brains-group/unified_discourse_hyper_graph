@@ -1,0 +1,1287 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="description" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="role" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;hyperedge&gt;&quot;Maximum loan amount: 90% of current cash surrender value.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Upon receipt of proof of death, we will pay the beneficiary: Face Amount + Paid-Up Additions - Policy Loans - Loan Interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the insured dies by suicide within two years from the issue date, we will pay only the premiums paid, without interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;'Paid-Up Insurance' - A reduced death benefit with no further premiums required.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If total indebtedness exceeds the cash value, the policy will terminate unless sufficient payment is made within 31 days of notice.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This is a participating policy. Annual dividends may be declared based on our mortality, investment, and expense experience.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may borrow against the cash value after the policy has been in force for one full year.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;WHOLE LIFE INSURANCE POLICY&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If you stop paying premiums after the policy has been in force for three years, you may elect:&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;'Policy Loan' - A loan made by us using the cash value as collateral.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Dividends are not guaranteed.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;REDUCED PAID-UP INSURANCE: Continue coverage for a reduced death benefit with no further premiums required. Amount based on cash value and insured's attained age.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Premiums paid, without interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">5.0</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;CASH SURRENDER: Receive the cash surrender value and terminate the policy.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Name: Margaret Rose Chen&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;This policy builds cash value according to the guaranteed schedule shown in the policy values table.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Outstanding loans and accrued interest will be deducted from the death benefit or cash surrender value.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;DIVIDEND OPTIONS (select one):&lt;br&gt;✓ Cash Payment - Dividend paid directly to you&lt;br&gt;□ Premium Reduction - Applied to reduce next premium&lt;br&gt;□ Accumulate at Interest - Left with us to accumulate&lt;br&gt;□ Paid-Up Additions - Purchase additional insurance&lt;br&gt;[Current selection: Paid-Up Additions]&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Payment will be made within 7 days of receiving complete claim documentation.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">16.0</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0&lt;SEP&gt;chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;EXTENDED TERM INSURANCE: Continue the full face amount for a limited period based on cash value. No further premiums.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Face Amount: $250,000&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Cash value grows on a tax-deferred basis.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;A loan made by us using the cash value as collateral.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Loan interest rate: 5% per annum, compounded annually.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may cancel this policy within 30 days of receipt for a full refund of premiums paid.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Primary: David Chen (Husband) - 100%&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;We may contest this policy only within the first two years while the insured is living, and only for material misrepresentation in the application.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Guaranteed cash value at end of Year 10: $28,450&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;GUARDIAN FAMILY PROTECTION CORP. Issued at: Boston, Massachusetts.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;If no election is made within 60 days of lapse, Extended Term Insurance will automatically apply.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Interest may be paid annually or added to the loan balance.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">7.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;'Cash Surrender Value' - The amount available if the policy is surrendered, equal to the cash value minus any outstanding loans and surrender charges.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Guaranteed cash value at end of Year 20: $71,200&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">10.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;_____________________________          February 1, 2024&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">6.0</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;'Dividend' - A return of premium that may be declared annually by the Board of Directors based on company experience.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;Actual cash value may be higher due to dividend credits.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">9.0</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&lt;hyperedge&gt;&quot;You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest.&quot;">
+  <data key="d0">hyperedge</data>
+  <data key="d1">8.0</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;NON-GUARANTEED DIVIDENDS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Dividends are not guaranteed and may vary from year to year based on the insurer’s financial performance."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;ANNUAL PREMIUM: $3,240&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The yearly amount the policyholder must pay to keep the policy active, which is used to fund the death benefit and cash value accumulation."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;PREMIUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The premium is the payment made for insurance coverage, which determines the face amount at the correct age."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;60 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The deadline to elect a non-forfeiture option after policy lapse."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;CASH PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DIVIDEND_OPTION"</data>
+  <data key="d4">"A dividend option where the policyholder receives the dividend amount in cash."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;INTEREST PAYMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_ACTION"</data>
+  <data key="d4">"Interest can be paid annually or added to the loan balance."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;PAYMENT FREQUENCY: ANNUAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PAYMENT_SCHEDULE"</data>
+  <data key="d4">"The frequency with which premiums are paid, in this case, once per year."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;CORRECT AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ATTRIBUTE"</data>
+  <data key="d4">"The actual age of the insured, used as a benchmark to recalibrate the policy’s face amount."&lt;SEP&gt;"The actual age of the insured, used to recalculate the face amount."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0&lt;SEP&gt;chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;AUTOMATIC APPLICATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"Extended Term Insurance is applied by default if no election is made."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;PREMIUM REDUCTION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DIVIDEND_OPTION"</data>
+  <data key="d4">"A dividend option where the dividend is applied to reduce the next premium payment."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;LOAN BALANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The loan balance may include accrued interest."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;PREMIUM PAYMENT PERIOD: TO AGE 100&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DURATION"</data>
+  <data key="d4">"The period during which the policyholder is required to pay premiums, extending until the insured reaches age 100."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A policy that allows borrowing against cash value after one full year of being in force."&lt;SEP&gt;"The insurance policy can be canceled within 30 days of receipt."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0&lt;SEP&gt;chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;REINSTATEMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"OPTION"</data>
+  <data key="d4">"A process to restore a lapsed policy within 3 years."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;ACCUMULATE AT INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DIVIDEND_OPTION"</data>
+  <data key="d4">"A dividend option where the dividend is left with the insurer to earn interest over time."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;TOTAL INDEBTEDNESS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Total indebtedness refers to the sum of outstanding loans and accrued interest."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;MATURITY DATE: AGE 100 (JULY 8, 2078)&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date when the policy matures, which is the insured’s 100th birthday, July 8, 2078, at which point the policy may pay out the face amount or cash value."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"The base death benefit amount specified in the policy."&lt;SEP&gt;"The face amount is the death benefit of the policy, which is adjusted based on correct age."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0&lt;SEP&gt;chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;3 YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The maximum time frame to reinstate a lapsed policy."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;CURRENT SELECTION: PAID-UP ADDITIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"SELECTION"</data>
+  <data key="d4">"The selected dividend option for this policy, indicating that dividends are used to purchase additional paid-up insurance."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ATTRIBUTE"</data>
+  <data key="d4">"Age is a critical factor in determining insurance terms; misstatement of age triggers adjustments."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;POLICY TERMINATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The policy terminates if total indebtedness exceeds cash value and no payment is made within 31 days."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;DAVID CHEN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The primary beneficiary of the policy, designated to receive the death benefit upon the insured’s passing. He is the husband of Margaret Rose Chen."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;30 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The free look period is 30 days from the date of receipt."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"Proof that the insured is still eligible for coverage."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;CASH VALUE AS COLLATERAL&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The policy’s accumulated cash value serves as security for a policy loan, ensuring the insurer can recover the loan amount if the policy is surrendered."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;31 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"A grace period of 31 days is provided after notice to make payment."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;CONTINGENT: CHEN FAMILY TRUST - 100%&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The contingent beneficiary, which will receive the death benefit if the primary beneficiary predeceases the insured. The trust is established to manage the funds for the benefit of the family."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;FULL REFUND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"A full refund of premiums paid is provided if the policy is canceled within the free look period."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;LIMITED PERIOD&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The duration of coverage under extended term insurance, determined by cash value."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Loans that have not been repaid and are still active."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;SURRENDER CHARGES&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Fees imposed by the insurer if the policy is surrendered before a certain period, reducing the amount the policyholder receives."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;RECEIPT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The date when the policy is received by the insured, marking the start of the free look period."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;OVERDUE PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Premiums that were not paid on time."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;ACCRUED INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Interest that has accumulated on outstanding loans."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;DIVIDEND&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"A distribution of profits paid to policyholders of a participating policy, based on the insurer’s financial performance in mortality, investment, and expenses. Dividends are not guaranteed."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;CONTESTABILITY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL CONCEPT"</data>
+  <data key="d4">"The policy can be contested only within the first two years if the insured is alive."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;6% PER ANNUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_RATE"</data>
+  <data key="d4">"Interest rate applied to overdue premiums during reinstatement."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The amount paid to the beneficiary upon the insured's death, reduced by loans and interest."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;BOARD OF DIRECTORS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"The governing body of Guardian Family Protection Corp. responsible for declaring annual dividends based on company performance."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;FIRST TWO YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME PERIOD"</data>
+  <data key="d4">"The contestability period is limited to the first two years of the policy."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;FULL FACE AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The original death benefit amount remains unchanged under extended term insurance."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;PAID-UP ADDITIONS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"A dividend option where the dividend is used to purchase additional insurance coverage, increasing the death benefit and cash value without additional premiums."&lt;SEP&gt;"Additional insurance purchased through paid-up additions, increasing the death benefit."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d&lt;SEP&gt;chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;PAID-UP INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_OPTION"</data>
+  <data key="d4">"A feature of participating policies that allows the policyholder to convert the policy into a fully paid-up policy with a reduced death benefit, eliminating the need for future premium payments."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;INSURED IS LIVING&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"STATUS"</data>
+  <data key="d4">"Contestability applies only while the insured is alive."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;SUICIDE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"A cause of death that triggers a limited payout if occurring within two years of issue."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;POLICY LOANS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Loans taken against the policy, subtracted from the death benefit."&lt;SEP&gt;"Loans that must be repaid or reinstated during policy reinstatement."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;POLICY LOAN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_PRODUCT"</data>
+  <data key="d4">"A loan issued by the insurer to the policyholder, secured by the policy’s cash value, allowing access to funds while maintaining the policy’s active status."&lt;SEP&gt;"A loan provided by the insurer to the policyholder, secured by the policy’s cash value. The loan must be repaid with interest, and if not, it reduces the death benefit."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LEGAL CONCEPT"</data>
+  <data key="d4">"A significant false statement in the application that can lead to policy contestation."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;TWO YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The period from issue date during which suicide results in a limited payout."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;LOAN INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Interest accrued on policy loans, subtracted from the death benefit."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;GUARANTEED SCHEDULE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_SCHEDULE"</data>
+  <data key="d4">"A predefined, legally binding schedule that outlines the expected growth of the policy’s cash value over time, guaranteed by the insurer."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;APPLICATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The document submitted by the insured to apply for the policy, which may contain misrepresentations."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;PREMIUMS PAID&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The total amount of premiums paid by the insured, which is the payout in case of suicide within two years."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;BENEFICIARY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual designated to receive the death benefit."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;POLICY VALUES TABLE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"A table included in the policy document that displays the guaranteed cash value, death benefit, and other financial details at various points in time."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;GUARDIAN FAMILY PROTECTION CORP.&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ORGANIZATION"</data>
+  <data key="d4">"A corporation issuing the insurance policy, based in Boston, Massachusetts."&lt;SEP&gt;"The insurance company issuing the policy, responsible for managing the terms, benefits, and financial aspects of the whole life insurance policy."&lt;SEP&gt;"The insurer that provides policy loans, using the policyholder’s cash value as collateral."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0&lt;SEP&gt;chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;WITHOUT INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_TERM"</data>
+  <data key="d4">"The payout for suicide within two years does not include interest."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;INSURED&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual whose life is covered by the insurance policy; age misstatement applies to this person."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;7 DAYS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The time frame within which payment is made after complete documentation is received."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;TAX-DEFERRED GROWTH&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The accumulation of cash value within the policy is not subject to income tax until withdrawn, allowing for compound growth over time."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;BOSTON&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The city where the policy was issued."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;MISSTATEMENT OF AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"An error in the insured's reported age that triggers a face amount adjustment."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;PREMIUMS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Premiums paid refers to the amount of money paid for insurance coverage, without any interest applied."&lt;SEP&gt;"Regular payments made to keep the policy active."&lt;SEP&gt;"The amount paid by the insured, used to determine what coverage would have been purchased at the correct age."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0&lt;SEP&gt;chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;CLAIM DOCUMENTATION&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DOCUMENT"</data>
+  <data key="d4">"The set of documents required to process a death benefit claim."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;YEAR 10&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"A milestone in the policy’s life where the guaranteed cash value reaches $28,450."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;MASSACHUSETTS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"LOCATION"</data>
+  <data key="d4">"The state where the policy was issued."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;FACE AMOUNT ADJUSTMENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_ACTION"</data>
+  <data key="d4">"The face amount is recalculated based on the correct age."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;THREE YEARS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The minimum duration the policy must be in force before non-forfeiture options apply."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;$28,450&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The guaranteed cash value of the policy at the end of the 10th year, as specified in the policy."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;PRESIDENT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"ROLE"</data>
+  <data key="d4">"The President of the corporation signed the policy on this date."&lt;SEP&gt;"The individual holding the position of President in the corporation, signing the policy."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;WHOLE LIFE INSURANCE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY"</data>
+  <data key="d4">"A type of life insurance that provides coverage for the entire lifetime of the insured, with guaranteed cash value accumulation and the potential for dividends. This policy is participating, meaning the policyholder may receive dividends based on the insurer's performance."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;COMPOUNDED ANNUALLY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_TERM"</data>
+  <data key="d4">"Interest is compounded once per year."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;CASH SURRENDER&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"OPTION"</data>
+  <data key="d4">"A non-forfeiture option allowing the policyholder to receive the cash surrender value and end the policy."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;YEAR 20&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"A milestone in the policy’s life where the guaranteed cash value reaches $71,200."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;FEBRUARY 1, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date the policy was issued, indicated on the document."&lt;SEP&gt;"The date the policy was issued."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</node>
+<node id="&quot;POLICY NO: GFP-WL-2024-8847&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"IDENTIFIER"</data>
+  <data key="d4">"A unique identification number assigned to this specific insurance policy for tracking and administrative purposes."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;TERMINATE THE POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"EVENT"</data>
+  <data key="d4">"The policy ends after cash surrender is elected."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;$71,200&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The guaranteed cash value of the policy at the end of the 20th year, as specified in the policy."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;EFFECTIVE DATE: FEBRUARY 1, 2024&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date on which the policy becomes active and coverage begins."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;CASH VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The cash value is a component of the policy that can be borrowed against."&lt;SEP&gt;"The cash value is the threshold that, when exceeded by indebtedness, triggers policy termination."&lt;SEP&gt;"The savings component of a whole life insurance policy that accumulates over time and can be used as collateral for policy loans or surrendered for cash."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d&lt;SEP&gt;chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;REDUCED PAID-UP INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"OPTION"</data>
+  <data key="d4">"A non-forfeiture option that provides continued coverage with a reduced death benefit and no further premiums."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;DIVIDEND CREDITS&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"Additional amounts added to the cash value of the policy based on declared dividends, which can increase the actual cash value beyond the guaranteed amount."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;ONE FULL YEAR&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"TIME_PERIOD"</data>
+  <data key="d4">"The policy must be in force for one full year before borrowing is allowed."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;POLICY TYPE: PARTICIPATING WHOLE LIFE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of whole life insurance that allows the policyholder to share in the insurer’s profits through dividends, which can be used to increase coverage, reduce premiums, or be paid out in cash."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;REDUCED DEATH BENEFIT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The death benefit is reduced based on cash value and the insured's attained age."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;PARTICIPATING POLICY&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"POLICY_TYPE"</data>
+  <data key="d4">"A type of life insurance policy that allows policyholders to share in the insurer’s profits through dividends, which are based on the company’s performance in mortality, investment returns, and operating expenses."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;MAXIMUM LOAN AMOUNT&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The maximum loan amount is 90% of the current cash surrender value."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;MARGARET ROSE CHEN&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"PERSON"</data>
+  <data key="d4">"The individual insured under the policy, whose life is covered for the duration of the policy. She was issued the policy at age 45."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;ATTAINED AGE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DEMOGRAPHIC_CONCEPT"</data>
+  <data key="d4">"The current age of the insured, used in calculating reduced paid-up insurance."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;MORTALITY EXPERIENCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The actual death claims experience of the insurer compared to expected mortality rates, which influences dividend declarations."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The amount a policyholder receives if they voluntarily terminate the policy before maturity, calculated as the accumulated cash value minus any loans, fees, or surrender charges."&lt;SEP&gt;"The amount received under the cash surrender option."&lt;SEP&gt;"The cash surrender value is reduced by outstanding loans and accrued interest."&lt;SEP&gt;"The cash surrender value is the amount available for loan or withdrawal."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d&lt;SEP&gt;chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;DOB: JULY 8, 1978&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"DATE"</data>
+  <data key="d4">"The date of birth of the insured, used to determine age, premium rates, and maturity date."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;EXTENDED TERM INSURANCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"OPTION"</data>
+  <data key="d4">"A non-forfeiture option that maintains the full face amount for a limited time using the cash value."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;INVESTMENT EXPERIENCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The performance of the insurer’s investment portfolio, which affects the profitability and potential for dividends."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;LOAN INTEREST RATE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The loan interest rate is 5% per annum, compounded annually."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;ISSUE AGE: 45&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"AGE"</data>
+  <data key="d4">"The age of the insured at the time the policy was issued, which affects premium calculations and underwriting."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;INTEREST&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL CONCEPT"</data>
+  <data key="d4">"Interest is not applied to the premiums paid, indicating a flat payment structure."&lt;SEP&gt;"Interest on policy loans during reinstatement."</data>
+  <data key="d2">chunk-f4df5d777eaf88d69afa87f3f4bd50c0&lt;SEP&gt;chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;EXPENSE EXPERIENCE&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_CONCEPT"</data>
+  <data key="d4">"The actual operating expenses of the insurer compared to projected expenses, which impacts profitability and dividend potential."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;5% PER ANNUM&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_RATE"</data>
+  <data key="d4">"The annual interest rate on the loan is 5%, compounded yearly."</data>
+  <data key="d2">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</node>
+<node id="&quot;RISK CLASS: STANDARD NON-TOBACCO&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"CLASSIFICATION"</data>
+  <data key="d4">"A risk classification indicating that the insured is considered a standard risk and does not use tobacco, which affects premium rates."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<node id="&quot;FACE AMOUNT: $250,000&quot;">
+  <data key="d0">entity</data>
+  <data key="d3">"FINANCIAL_VALUE"</data>
+  <data key="d4">"The death benefit amount payable to the beneficiary upon the insured’s death, representing the primary financial protection provided by the policy."</data>
+  <data key="d2">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</node>
+<edge source="&lt;hyperedge&gt;&quot;Maximum loan amount: 90% of current cash surrender value.&quot;" target="&quot;MAXIMUM LOAN AMOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Maximum loan amount: 90% of current cash surrender value.&quot;" target="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon receipt of proof of death, we will pay the beneficiary: Face Amount + Paid-Up Additions - Policy Loans - Loan Interest.&quot;" target="&quot;FACE AMOUNT&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon receipt of proof of death, we will pay the beneficiary: Face Amount + Paid-Up Additions - Policy Loans - Loan Interest.&quot;" target="&quot;PAID-UP ADDITIONS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon receipt of proof of death, we will pay the beneficiary: Face Amount + Paid-Up Additions - Policy Loans - Loan Interest.&quot;" target="&quot;POLICY LOANS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon receipt of proof of death, we will pay the beneficiary: Face Amount + Paid-Up Additions - Policy Loans - Loan Interest.&quot;" target="&quot;LOAN INTEREST&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Upon receipt of proof of death, we will pay the beneficiary: Face Amount + Paid-Up Additions - Policy Loans - Loan Interest.&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured dies by suicide within two years from the issue date, we will pay only the premiums paid, without interest.&quot;" target="&quot;SUICIDE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured dies by suicide within two years from the issue date, we will pay only the premiums paid, without interest.&quot;" target="&quot;TWO YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured dies by suicide within two years from the issue date, we will pay only the premiums paid, without interest.&quot;" target="&quot;PREMIUMS PAID&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured dies by suicide within two years from the issue date, we will pay only the premiums paid, without interest.&quot;" target="&quot;WITHOUT INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Paid-Up Insurance' - A reduced death benefit with no further premiums required.&quot;" target="&quot;PAID-UP INSURANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If total indebtedness exceeds the cash value, the policy will terminate unless sufficient payment is made within 31 days of notice.&quot;" target="&quot;TOTAL INDEBTEDNESS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If total indebtedness exceeds the cash value, the policy will terminate unless sufficient payment is made within 31 days of notice.&quot;" target="&quot;POLICY TERMINATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If total indebtedness exceeds the cash value, the policy will terminate unless sufficient payment is made within 31 days of notice.&quot;" target="&quot;31 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If total indebtedness exceeds the cash value, the policy will terminate unless sufficient payment is made within 31 days of notice.&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a participating policy. Annual dividends may be declared based on our mortality, investment, and expense experience.&quot;" target="&quot;PARTICIPATING POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a participating policy. Annual dividends may be declared based on our mortality, investment, and expense experience.&quot;" target="&quot;MORTALITY EXPERIENCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a participating policy. Annual dividends may be declared based on our mortality, investment, and expense experience.&quot;" target="&quot;INVESTMENT EXPERIENCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This is a participating policy. Annual dividends may be declared based on our mortality, investment, and expense experience.&quot;" target="&quot;EXPENSE EXPERIENCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may borrow against the cash value after the policy has been in force for one full year.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may borrow against the cash value after the policy has been in force for one full year.&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may borrow against the cash value after the policy has been in force for one full year.&quot;" target="&quot;ONE FULL YEAR&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;WHOLE LIFE INSURANCE POLICY&quot;" target="&quot;GUARDIAN FAMILY PROTECTION CORP.&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;WHOLE LIFE INSURANCE POLICY&quot;" target="&quot;WHOLE LIFE INSURANCE POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;WHOLE LIFE INSURANCE POLICY&quot;" target="&quot;POLICY NO: GFP-WL-2024-8847&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;WHOLE LIFE INSURANCE POLICY&quot;" target="&quot;EFFECTIVE DATE: FEBRUARY 1, 2024&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;WHOLE LIFE INSURANCE POLICY&quot;" target="&quot;POLICY TYPE: PARTICIPATING WHOLE LIFE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you stop paying premiums after the policy has been in force for three years, you may elect:&quot;" target="&quot;PREMIUMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If you stop paying premiums after the policy has been in force for three years, you may elect:&quot;" target="&quot;THREE YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Policy Loan' - A loan made by us using the cash value as collateral.&quot;" target="&quot;POLICY LOAN&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Policy Loan' - A loan made by us using the cash value as collateral.&quot;" target="&quot;CASH VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Dividends are not guaranteed.&quot;" target="&quot;NON-GUARANTEED DIVIDENDS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;REDUCED PAID-UP INSURANCE: Continue coverage for a reduced death benefit with no further premiums required. Amount based on cash value and insured's attained age.&quot;" target="&quot;REDUCED PAID-UP INSURANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;REDUCED PAID-UP INSURANCE: Continue coverage for a reduced death benefit with no further premiums required. Amount based on cash value and insured's attained age.&quot;" target="&quot;REDUCED DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;REDUCED PAID-UP INSURANCE: Continue coverage for a reduced death benefit with no further premiums required. Amount based on cash value and insured's attained age.&quot;" target="&quot;ATTAINED AGE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums paid, without interest.&quot;" target="&quot;PREMIUMS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Premiums paid, without interest.&quot;" target="&quot;INTEREST&quot;">
+  <data key="d5">80.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;CASH SURRENDER: Receive the cash surrender value and terminate the policy.&quot;" target="&quot;CASH SURRENDER&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;CASH SURRENDER: Receive the cash surrender value and terminate the policy.&quot;" target="&quot;TERMINATE THE POLICY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;CASH SURRENDER: Receive the cash surrender value and terminate the policy.&quot;" target="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Margaret Rose Chen&quot;" target="&quot;MARGARET ROSE CHEN&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Margaret Rose Chen&quot;" target="&quot;DOB: JULY 8, 1978&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Margaret Rose Chen&quot;" target="&quot;ISSUE AGE: 45&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Name: Margaret Rose Chen&quot;" target="&quot;RISK CLASS: STANDARD NON-TOBACCO&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy builds cash value according to the guaranteed schedule shown in the policy values table.&quot;" target="&quot;GUARANTEED SCHEDULE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;This policy builds cash value according to the guaranteed schedule shown in the policy values table.&quot;" target="&quot;POLICY VALUES TABLE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Outstanding loans and accrued interest will be deducted from the death benefit or cash surrender value.&quot;" target="&quot;OUTSTANDING LOANS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Outstanding loans and accrued interest will be deducted from the death benefit or cash surrender value.&quot;" target="&quot;ACCRUED INTEREST&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Outstanding loans and accrued interest will be deducted from the death benefit or cash surrender value.&quot;" target="&quot;DEATH BENEFIT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Outstanding loans and accrued interest will be deducted from the death benefit or cash surrender value.&quot;" target="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;DIVIDEND OPTIONS (select one):&lt;br&gt;✓ Cash Payment - Dividend paid directly to you&lt;br&gt;□ Premium Reduction - Applied to reduce next premium&lt;br&gt;□ Accumulate at Interest - Left with us to accumulate&lt;br&gt;□ Paid-Up Additions - Purchase additional insurance&lt;br&gt;[Current selection: Paid-Up Additions]&quot;" target="&quot;CASH PAYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;DIVIDEND OPTIONS (select one):&lt;br&gt;✓ Cash Payment - Dividend paid directly to you&lt;br&gt;□ Premium Reduction - Applied to reduce next premium&lt;br&gt;□ Accumulate at Interest - Left with us to accumulate&lt;br&gt;□ Paid-Up Additions - Purchase additional insurance&lt;br&gt;[Current selection: Paid-Up Additions]&quot;" target="&quot;PREMIUM REDUCTION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;DIVIDEND OPTIONS (select one):&lt;br&gt;✓ Cash Payment - Dividend paid directly to you&lt;br&gt;□ Premium Reduction - Applied to reduce next premium&lt;br&gt;□ Accumulate at Interest - Left with us to accumulate&lt;br&gt;□ Paid-Up Additions - Purchase additional insurance&lt;br&gt;[Current selection: Paid-Up Additions]&quot;" target="&quot;ACCUMULATE AT INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;DIVIDEND OPTIONS (select one):&lt;br&gt;✓ Cash Payment - Dividend paid directly to you&lt;br&gt;□ Premium Reduction - Applied to reduce next premium&lt;br&gt;□ Accumulate at Interest - Left with us to accumulate&lt;br&gt;□ Paid-Up Additions - Purchase additional insurance&lt;br&gt;[Current selection: Paid-Up Additions]&quot;" target="&quot;CURRENT SELECTION: PAID-UP ADDITIONS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;DIVIDEND OPTIONS (select one):&lt;br&gt;✓ Cash Payment - Dividend paid directly to you&lt;br&gt;□ Premium Reduction - Applied to reduce next premium&lt;br&gt;□ Accumulate at Interest - Left with us to accumulate&lt;br&gt;□ Paid-Up Additions - Purchase additional insurance&lt;br&gt;[Current selection: Paid-Up Additions]&quot;" target="&quot;PAID-UP ADDITIONS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Payment will be made within 7 days of receiving complete claim documentation.&quot;" target="&quot;7 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Payment will be made within 7 days of receiving complete claim documentation.&quot;" target="&quot;CLAIM DOCUMENTATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;" target="&quot;FACE AMOUNT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;" target="&quot;CORRECT AGE&quot;">
+  <data key="d5">170.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0&lt;SEP&gt;chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;" target="&quot;PREMIUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;" target="&quot;AGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;" target="&quot;INSURED&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;" target="&quot;MISSTATEMENT OF AGE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;" target="&quot;PREMIUMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If the insured's age was misstated, we will adjust the face amount to what the premium would have purchased at the correct age.&quot;" target="&quot;FACE AMOUNT ADJUSTMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXTENDED TERM INSURANCE: Continue the full face amount for a limited period based on cash value. No further premiums.&quot;" target="&quot;LIMITED PERIOD&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXTENDED TERM INSURANCE: Continue the full face amount for a limited period based on cash value. No further premiums.&quot;" target="&quot;FULL FACE AMOUNT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;EXTENDED TERM INSURANCE: Continue the full face amount for a limited period based on cash value. No further premiums.&quot;" target="&quot;EXTENDED TERM INSURANCE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Face Amount: $250,000&quot;" target="&quot;ANNUAL PREMIUM: $3,240&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Face Amount: $250,000&quot;" target="&quot;PAYMENT FREQUENCY: ANNUAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Face Amount: $250,000&quot;" target="&quot;PREMIUM PAYMENT PERIOD: TO AGE 100&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Face Amount: $250,000&quot;" target="&quot;MATURITY DATE: AGE 100 (JULY 8, 2078)&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Face Amount: $250,000&quot;" target="&quot;FACE AMOUNT: $250,000&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Cash value grows on a tax-deferred basis.&quot;" target="&quot;TAX-DEFERRED GROWTH&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A loan made by us using the cash value as collateral.&quot;" target="&quot;CASH VALUE AS COLLATERAL&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A loan made by us using the cash value as collateral.&quot;" target="&quot;POLICY LOAN&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;A loan made by us using the cash value as collateral.&quot;" target="&quot;GUARDIAN FAMILY PROTECTION CORP.&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan interest rate: 5% per annum, compounded annually.&quot;" target="&quot;COMPOUNDED ANNUALLY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan interest rate: 5% per annum, compounded annually.&quot;" target="&quot;LOAN INTEREST RATE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Loan interest rate: 5% per annum, compounded annually.&quot;" target="&quot;5% PER ANNUM&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may cancel this policy within 30 days of receipt for a full refund of premiums paid.&quot;" target="&quot;POLICY&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may cancel this policy within 30 days of receipt for a full refund of premiums paid.&quot;" target="&quot;30 DAYS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may cancel this policy within 30 days of receipt for a full refund of premiums paid.&quot;" target="&quot;FULL REFUND&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may cancel this policy within 30 days of receipt for a full refund of premiums paid.&quot;" target="&quot;RECEIPT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: David Chen (Husband) - 100%&quot;" target="&quot;DAVID CHEN&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Primary: David Chen (Husband) - 100%&quot;" target="&quot;CONTINGENT: CHEN FAMILY TRUST - 100%&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy only within the first two years while the insured is living, and only for material misrepresentation in the application.&quot;" target="&quot;CONTESTABILITY&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy only within the first two years while the insured is living, and only for material misrepresentation in the application.&quot;" target="&quot;FIRST TWO YEARS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy only within the first two years while the insured is living, and only for material misrepresentation in the application.&quot;" target="&quot;INSURED IS LIVING&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy only within the first two years while the insured is living, and only for material misrepresentation in the application.&quot;" target="&quot;MATERIAL MISREPRESENTATION&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;We may contest this policy only within the first two years while the insured is living, and only for material misrepresentation in the application.&quot;" target="&quot;APPLICATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed cash value at end of Year 10: $28,450&quot;" target="&quot;YEAR 10&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed cash value at end of Year 10: $28,450&quot;" target="&quot;$28,450&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;GUARDIAN FAMILY PROTECTION CORP. Issued at: Boston, Massachusetts.&quot;" target="&quot;GUARDIAN FAMILY PROTECTION CORP.&quot;">
+  <data key="d5">95.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;GUARDIAN FAMILY PROTECTION CORP. Issued at: Boston, Massachusetts.&quot;" target="&quot;BOSTON&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;GUARDIAN FAMILY PROTECTION CORP. Issued at: Boston, Massachusetts.&quot;" target="&quot;MASSACHUSETTS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;GUARDIAN FAMILY PROTECTION CORP. Issued at: Boston, Massachusetts.&quot;" target="&quot;PRESIDENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;GUARDIAN FAMILY PROTECTION CORP. Issued at: Boston, Massachusetts.&quot;" target="&quot;FEBRUARY 1, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If no election is made within 60 days of lapse, Extended Term Insurance will automatically apply.&quot;" target="&quot;60 DAYS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;If no election is made within 60 days of lapse, Extended Term Insurance will automatically apply.&quot;" target="&quot;AUTOMATIC APPLICATION&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest may be paid annually or added to the loan balance.&quot;" target="&quot;INTEREST PAYMENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Interest may be paid annually or added to the loan balance.&quot;" target="&quot;LOAN BALANCE&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Cash Surrender Value' - The amount available if the policy is surrendered, equal to the cash value minus any outstanding loans and surrender charges.&quot;" target="&quot;SURRENDER CHARGES&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Cash Surrender Value' - The amount available if the policy is surrendered, equal to the cash value minus any outstanding loans and surrender charges.&quot;" target="&quot;CASH SURRENDER VALUE&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed cash value at end of Year 20: $71,200&quot;" target="&quot;YEAR 20&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Guaranteed cash value at end of Year 20: $71,200&quot;" target="&quot;$71,200&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;_____________________________          February 1, 2024&quot;" target="&quot;PRESIDENT&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;_____________________________          February 1, 2024&quot;" target="&quot;FEBRUARY 1, 2024&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-f4df5d777eaf88d69afa87f3f4bd50c0</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Dividend' - A return of premium that may be declared annually by the Board of Directors based on company experience.&quot;" target="&quot;DIVIDEND&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;'Dividend' - A return of premium that may be declared annually by the Board of Directors based on company experience.&quot;" target="&quot;BOARD OF DIRECTORS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;Actual cash value may be higher due to dividend credits.&quot;" target="&quot;DIVIDEND CREDITS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-50bd298a3b0f04dca6e62ad3a0259fac</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest.&quot;" target="&quot;REINSTATEMENT&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest.&quot;" target="&quot;3 YEARS&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest.&quot;" target="&quot;EVIDENCE OF INSURABILITY&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest.&quot;" target="&quot;OVERDUE PREMIUMS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest.&quot;" target="&quot;6% PER ANNUM&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest.&quot;" target="&quot;POLICY LOANS&quot;">
+  <data key="d5">90.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+<edge source="&lt;hyperedge&gt;&quot;You may reinstate this policy within 3 years of lapse if: (a) You provide evidence of insurability satisfactory to us (b) You pay all overdue premiums with interest at 6% per annum (c) You repay or reinstate any policy loans with interest.&quot;" target="&quot;INTEREST&quot;">
+  <data key="d5">85.0</data>
+  <data key="d6">chunk-4f8527575d3cf5f681b0be617575250d</data>
+</edge>
+</graph></graphml>

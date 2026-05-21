@@ -1,0 +1,779 @@
+{
+  "entities": [
+    "group coverage",
+    "$200,000",
+    "$5,000",
+    "TC-8842",
+    "disability",
+    "attained age at conversion",
+    "exclusions and limitations",
+    "beneficiary",
+    "basic benefit",
+    "Basic Life Insurance",
+    "termination of employment",
+    "percentages",
+    "$280,000",
+    "salary changes",
+    "conversion privilege",
+    "evidence of insurability",
+    "$1,000,000",
+    "Vice President, Group Operations",
+    "terminal illness",
+    "estate",
+    "standard premium rates",
+    "Master Policy terminates",
+    "Effective Date",
+    "$250,000",
+    "no pre-existing condition exclusions",
+    "annual base salary",
+    "non-payment of premium",
+    "portability",
+    "maximum acceleration",
+    "actuarial discount",
+    "required premiums",
+    "equally divided",
+    "$100,000",
+    "voluntary coverage",
+    "basic coverage",
+    "date of hire",
+    "$180,000",
+    "minimum acceleration",
+    "6 consecutive months",
+    "75201",
+    "TX",
+    "Jordan Casey Taylor",
+    "insurance company",
+    "1200 Insurance Plaza",
+    "employee pays $12/month",
+    "multiple beneficiaries",
+    "Claims Department",
+    "certificate",
+    "Alex Morgan Taylor",
+    "suicide",
+    "increments of $10,000",
+    "AGB-GT-2024-TechCorp-00842",
+    "Claims Hotline",
+    "$1,000",
+    "June 1, 2024",
+    "individual whole life policy",
+    "$12/month",
+    "leave employment",
+    "request termination of voluntary coverage",
+    "Alliance Group Benefits",
+    "individual policy",
+    "change beneficiary",
+    "pre-existing condition limitation",
+    "death benefit payable to beneficiaries",
+    "1-888-555-CLAIM",
+    "AGB-2024-TC-GROUP",
+    "insured employee",
+    "Master Group Policy",
+    "5 times salary",
+    "health questions",
+    "total disability",
+    "Master Policy",
+    "life expectancy",
+    "voluntary life insurance",
+    "medical exam",
+    "31 days of hire",
+    "return to work",
+    "Voluntary Additional Coverage",
+    "TechCorp Industries, Inc.",
+    "Dallas",
+    "Employer pays basic",
+    "March 1, 2022",
+    "Jordan",
+    "Premium Contribution",
+    "Late Entrant provisions",
+    "maximum benefit",
+    "policy anniversary",
+    "age 65",
+    "age 60",
+    "February 14, 1990",
+    "31 days",
+    "recovery",
+    "Total Coverage",
+    "Software Engineering",
+    "voluntary supplemental coverage",
+    "2x Annual Salary",
+    "cease active full-time employment",
+    "San Jose, California",
+    "beneficiary designation",
+    "HR department",
+    "age-banded group rates",
+    "same amount",
+    "accelerated death benefit",
+    "premium payment",
+    "coverage termination",
+    "75% of death benefit",
+    "Taylor Family Revocable Trust",
+    "12 months of coverage effective date",
+    "state of California",
+    "12 months",
+    "maximum amount",
+    "change form",
+    "last day of the month in which you cease to be an eligible employee",
+    "employer"
+  ],
+  "relations": [
+    [
+      "coverage termination",
+      "occurs on earliest of",
+      "last day of the month in which you cease to be an eligible employee"
+    ],
+    [
+      "multiple beneficiaries",
+      "are divided equally unless",
+      "percentages"
+    ],
+    [
+      "Claims Department",
+      "is located at",
+      "1200 Insurance Plaza"
+    ],
+    [
+      "claim",
+      "must be submitted to",
+      "Claims Department"
+    ],
+    [
+      "exclusions and limitations",
+      "includes",
+      "suicide"
+    ],
+    [
+      "voluntary supplemental coverage",
+      "can be elected in increments of",
+      "increments of $10,000"
+    ],
+    [
+      "you",
+      "became eligible for coverage on",
+      "date of hire"
+    ],
+    [
+      "Vice President, Group Operations",
+      "issues",
+      "certificate"
+    ],
+    [
+      "accelerated death benefit",
+      "allows acceleration of up to",
+      "75% of death benefit"
+    ],
+    [
+      "Alex Morgan Taylor",
+      "is employee of",
+      "TechCorp Industries, Inc."
+    ],
+    [
+      "conversion privilege",
+      "does not require",
+      "health questions"
+    ],
+    [
+      "accelerated death benefit",
+      "applies when diagnosed with",
+      "terminal illness"
+    ],
+    [
+      "Total Coverage",
+      "is sum of",
+      "Voluntary Additional Coverage"
+    ],
+    [
+      "maximum amount",
+      "is lesser of",
+      "group coverage"
+    ],
+    [
+      "Alliance Group Benefits",
+      "requires",
+      "completed claim form"
+    ],
+    [
+      "Total Coverage",
+      "equals",
+      "$280,000"
+    ],
+    [
+      "coverage termination",
+      "occurs on earliest of",
+      "last day for which required premiums have been paid"
+    ],
+    [
+      "TechCorp Industries, Inc.",
+      "has headquarters in",
+      "San Jose, California"
+    ],
+    [
+      "maximum amount",
+      "is lesser of",
+      "$200,000"
+    ],
+    [
+      "accelerated death benefit",
+      "has minimum acceleration",
+      "$5,000"
+    ],
+    [
+      "estate",
+      "receives benefits if",
+      "no beneficiary survives"
+    ],
+    [
+      "beneficiaries",
+      "should notify",
+      "Alliance Group Benefits"
+    ],
+    [
+      "beneficiary",
+      "must be named",
+      "insured employee"
+    ],
+    [
+      "total disability",
+      "must occur before",
+      "age 60"
+    ],
+    [
+      "portability",
+      "applies when",
+      "leave employment"
+    ],
+    [
+      "Jordan Casey Taylor",
+      "is primary designated beneficiary of",
+      "certificate"
+    ],
+    [
+      "certificate",
+      "is issued under",
+      "laws of the state of California"
+    ],
+    [
+      "terminal illness",
+      "has life expectancy of",
+      "12 months or less"
+    ],
+    [
+      "change form",
+      "is submitted to",
+      "HR department"
+    ],
+    [
+      "coverage",
+      "is subject to terms, conditions, and exclusions in",
+      "certificate"
+    ],
+    [
+      "beneficiary",
+      "receives benefits if",
+      "insured employee dies"
+    ],
+    [
+      "accelerated amount",
+      "reduces",
+      "death benefit payable to beneficiaries"
+    ],
+    [
+      "voluntary life insurance",
+      "has premium waiver if",
+      "total disability"
+    ],
+    [
+      "waiver",
+      "ends when",
+      "return to work"
+    ],
+    [
+      "certificate",
+      "is issued on",
+      "June 1, 2024"
+    ],
+    [
+      "Alliance Group Benefits",
+      "requires",
+      "proof of beneficiary identity"
+    ],
+    [
+      "disability",
+      "requires annual proof of",
+      "continuing disability"
+    ],
+    [
+      "portability",
+      "requires application within",
+      "31 days"
+    ],
+    [
+      "claim",
+      "is processed within",
+      "10 business days"
+    ],
+    [
+      "certificate",
+      "is governed by",
+      "laws of the state of California"
+    ],
+    [
+      "Alex Morgan Taylor",
+      "was hired on",
+      "March 1, 2022"
+    ],
+    [
+      "premium payment",
+      "is waived during",
+      "disability"
+    ],
+    [
+      "Total Coverage",
+      "is sum of",
+      "Basic Life Insurance"
+    ],
+    [
+      "enrollment after 31 days of hire",
+      "is subject to",
+      "Late Entrant provisions"
+    ],
+    [
+      "waiver",
+      "ends when",
+      "age 65"
+    ],
+    [
+      "beneficiary designation",
+      "allows change of beneficiary",
+      "change beneficiary"
+    ],
+    [
+      "portability",
+      "allows continuation as",
+      "individual policy"
+    ],
+    [
+      "conversion privilege",
+      "does not require",
+      "medical exam"
+    ],
+    [
+      "pre-existing condition limitation",
+      "has",
+      "no pre-existing condition exclusions"
+    ],
+    [
+      "Jordan",
+      "is primary beneficiary of",
+      "Alex Morgan Taylor"
+    ],
+    [
+      "AGB-GT-2024-TechCorp-00842",
+      "is issued on",
+      "June 1, 2024"
+    ],
+    [
+      "Alex Morgan Taylor",
+      "has designated beneficiary",
+      "Jordan"
+    ],
+    [
+      "conversion privilege",
+      "applies when group coverage terminates due to",
+      "non-payment of premium"
+    ],
+    [
+      "Basic Life Insurance",
+      "has coverage amount",
+      "$180,000"
+    ],
+    [
+      "accelerated death benefit",
+      "has maximum acceleration",
+      "$250,000"
+    ],
+    [
+      "total coverage",
+      "cannot exceed",
+      "$1,000,000"
+    ],
+    [
+      "Alex Morgan Taylor",
+      "has Employee ID",
+      "TC-8842"
+    ],
+    [
+      "Claims Department",
+      "is located in",
+      "TX"
+    ],
+    [
+      "Alliance Group Benefits",
+      "requires",
+      "certified death certificate"
+    ],
+    [
+      "Basic Life Insurance",
+      "is covered under",
+      "AGB-2024-TC-GROUP"
+    ],
+    [
+      "Claims Department",
+      "is located in",
+      "Dallas"
+    ],
+    [
+      "beneficiary",
+      "survives",
+      "insured employee"
+    ],
+    [
+      "Alex Morgan Taylor",
+      "works in department",
+      "Software Engineering"
+    ],
+    [
+      "portability",
+      "does not require",
+      "evidence of insurability"
+    ],
+    [
+      "conversion policy",
+      "has maximum amount",
+      "maximum amount"
+    ],
+    [
+      "suicide",
+      "occurs within",
+      "12 months of coverage effective date"
+    ],
+    [
+      "voluntary coverage",
+      "requires enrollment within",
+      "31 days of hire"
+    ],
+    [
+      "certificate",
+      "is evidence of coverage under",
+      "Master Group Policy"
+    ],
+    [
+      "Claims Department",
+      "has hotline number",
+      "1-888-555-CLAIM"
+    ],
+    [
+      "Alex Morgan Taylor",
+      "was born on",
+      "February 14, 1990"
+    ],
+    [
+      "portability",
+      "uses",
+      "age-banded group rates"
+    ],
+    [
+      "accelerated amount",
+      "is reduced by",
+      "actuarial discount"
+    ],
+    [
+      "Premium Contribution",
+      "is paid by",
+      "Employer pays basic"
+    ],
+    [
+      "voluntary supplemental coverage",
+      "has maximum of",
+      "5 times salary"
+    ],
+    [
+      "beneficiary designation",
+      "if multiple beneficiaries named, divides equally unless",
+      "percentages"
+    ],
+    [
+      "Premium Contribution",
+      "is paid by",
+      "employee pays $12/month"
+    ],
+    [
+      "Taylor Family Revocable Trust",
+      "is contingent designated beneficiary of",
+      "certificate"
+    ],
+    [
+      "Master Policy",
+      "controls in case of conflict with",
+      "certificate"
+    ],
+    [
+      "Alliance Group Benefits",
+      "is based in",
+      "Dallas, Texas"
+    ],
+    [
+      "exclusions and limitations",
+      "includes",
+      "pre-existing condition limitation"
+    ],
+    [
+      "portability",
+      "is paid directly to",
+      "insurance company"
+    ],
+    [
+      "total disability",
+      "must last for",
+      "6 consecutive months"
+    ],
+    [
+      "change beneficiary",
+      "requires submission of",
+      "change form"
+    ],
+    [
+      "suicide",
+      "results in no death benefit payment",
+      "death benefit"
+    ],
+    [
+      "basic benefit",
+      "equals",
+      "2 times annual base salary"
+    ],
+    [
+      "conversion privilege",
+      "applies if group coverage terminates for reason other than",
+      "non-payment of premium"
+    ],
+    [
+      "ported coverage",
+      "continues at",
+      "same amount"
+    ],
+    [
+      "coverage",
+      "continues without",
+      "premium payment"
+    ],
+    [
+      "AGB-GT-2024-TechCorp-00842",
+      "is certificate number of",
+      "Alex Morgan Taylor"
+    ],
+    [
+      "Claims Department",
+      "has postal code",
+      "75201"
+    ],
+    [
+      "2x Annual Salary",
+      "equals",
+      "$180,000"
+    ],
+    [
+      "AGB-GT-2024-TechCorp-00842",
+      "is associated with",
+      "AGB-2024-TC-GROUP"
+    ],
+    [
+      "beneficiary designation",
+      "if no beneficiary survives, pays to",
+      "estate"
+    ],
+    [
+      "claim",
+      "is processed after receipt of",
+      "complete claim documentation"
+    ],
+    [
+      "conversion policy",
+      "is issued at",
+      "attained age at conversion"
+    ],
+    [
+      "coverage termination",
+      "occurs on earliest of",
+      "Master Policy terminates"
+    ],
+    [
+      "Voluntary Additional Coverage",
+      "is elected by",
+      "Alex Morgan Taylor"
+    ],
+    [
+      "Basic Life Insurance",
+      "is based on",
+      "2x Annual Salary"
+    ],
+    [
+      "coverage",
+      "is subject to terms, conditions, and exclusions in",
+      "Master Policy"
+    ],
+    [
+      "conversion privilege",
+      "requires application within",
+      "31 days"
+    ],
+    [
+      "conversion privilege",
+      "allows conversion to",
+      "individual whole life policy"
+    ],
+    [
+      "Effective Date",
+      "is",
+      "June 1, 2024"
+    ],
+    [
+      "basic benefit",
+      "is rounded to the next higher",
+      "$1,000"
+    ],
+    [
+      "salary changes",
+      "trigger recalculation of",
+      "basic benefit"
+    ],
+    [
+      "basic coverage",
+      "became effective automatically without requiring",
+      "evidence of insurability"
+    ],
+    [
+      "basic benefit",
+      "is recalculated annually on",
+      "policy anniversary"
+    ],
+    [
+      "AGB-2024-TC-GROUP",
+      "is master policy number of",
+      "TechCorp Industries, Inc."
+    ],
+    [
+      "waiver",
+      "ends when",
+      "recovery"
+    ],
+    [
+      "multiple beneficiaries",
+      "divide benefits equally unless",
+      "percentages specified"
+    ],
+    [
+      "coverage termination",
+      "occurs on earliest of",
+      "cease active full-time employment"
+    ],
+    [
+      "Voluntary Additional Coverage",
+      "has coverage amount",
+      "$100,000"
+    ],
+    [
+      "conversion policy",
+      "uses",
+      "standard premium rates"
+    ],
+    [
+      "coverage termination",
+      "occurs on earliest of",
+      "request termination of voluntary coverage"
+    ]
+  ],
+  "edges": [
+    "is waived during",
+    "if no beneficiary survives, pays to",
+    "must be submitted to",
+    "is governed by",
+    "became eligible for coverage on",
+    "is contingent designated beneficiary of",
+    "is located at",
+    "is covered under",
+    "is processed after receipt of",
+    "results in no death benefit payment",
+    "is paid by",
+    "is issued on",
+    "has life expectancy of",
+    "are divided equally unless",
+    "has headquarters in",
+    "occurs within",
+    "divide benefits equally unless",
+    "is subject to terms, conditions, and exclusions in",
+    "must occur before",
+    "must last for",
+    "occurs on earliest of",
+    "is processed within",
+    "requires annual proof of",
+    "became effective automatically without requiring",
+    "requires enrollment within",
+    "is rounded to the next higher",
+    "allows change of beneficiary",
+    "is lesser of",
+    "is certificate number of",
+    "applies when",
+    "is associated with",
+    "receives benefits if",
+    "has postal code",
+    "is subject to",
+    "is paid directly to",
+    "applies if group coverage terminates for reason other than",
+    "was hired on",
+    "if multiple beneficiaries named, divides equally unless",
+    "uses",
+    "cannot exceed",
+    "includes",
+    "is sum of",
+    "has Employee ID",
+    "continues at",
+    "is employee of",
+    "requires submission of",
+    "is based on",
+    "ends when",
+    "allows continuation as",
+    "has maximum amount",
+    "issues",
+    "controls in case of conflict with",
+    "is issued at",
+    "can be elected in increments of",
+    "is recalculated annually on",
+    "is reduced by",
+    "is primary designated beneficiary of",
+    "allows acceleration of up to",
+    "has maximum of",
+    "is issued under",
+    "is located in",
+    "applies when diagnosed with",
+    "applies when group coverage terminates due to",
+    "is primary beneficiary of",
+    "has maximum acceleration",
+    "requires application within",
+    "has hotline number",
+    "is evidence of coverage under",
+    "has designated beneficiary",
+    "has coverage amount",
+    "is elected by",
+    "allows conversion to",
+    "must be named",
+    "has minimum acceleration",
+    "is submitted to",
+    "works in department",
+    "trigger recalculation of",
+    "was born on",
+    "requires",
+    "is based in",
+    "survives",
+    "has premium waiver if",
+    "is",
+    "should notify",
+    "equals",
+    "continues without",
+    "has",
+    "does not require",
+    "reduces",
+    "is master policy number of"
+  ],
+  "entity_clusters": null,
+  "edge_clusters": null
+}
