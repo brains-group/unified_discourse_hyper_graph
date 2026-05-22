@@ -152,12 +152,18 @@ def build_index_from_file(
         edge_threshold: float = 0.5,
         top_k: int = 10,
         max_sub_workers: int = 10,
-        fact_batch_size: int = 10
+        fact_batch_size: int = 10,
+        edge_mode: str = "linear"
 ) -> Graph:
     """
     Reads a single text file, breaks it into chunks via tokenizer, processes chunks
     in parallel to build local subgraphs, merges them all into a global graph,
-    and constructs linear fact-to-fact edges across the entire document scope.
+    and constructs cross-chunk fact-to-fact edges across the entire document scope.
+
+    edge_mode controls the global fact edge construction strategy:
+      "linear"    — one LLM call per candidate fact pair (original method)
+      "clustered" — groups facts into clusters via similarity + Leiden, then one
+                    bulk LLM call per cluster (much fewer LLM calls total)
     """
     # Step 1: Read the text file
     if not os.path.exists(filepath):
@@ -210,14 +216,13 @@ def build_index_from_file(
     print(
         f"Merge complete. Base Graph Size: {global_graph.network.number_of_nodes()} nodes, {global_graph.network.number_of_edges()} edges")
 
-    # Step 5: Global Linear Edge Construction
-    # This evaluates Fact-to-Fact connections across different chunks using the top_k linear vector search.
-    print(f"\n--- Constructing global cross-chunk edges (Linear Vector Search, Top K: {top_k}) ---")
+    # Step 5: Global Cross-Chunk Edge Construction
+    print(f"\n--- Constructing global cross-chunk edges (mode={edge_mode}, top_k={top_k}) ---")
     construct_edges_during_merge(
         global_graph,
         threshold=edge_threshold,
         max_workers=max_sub_workers,
-        mode="linear",
+        mode=edge_mode,
         top_k=top_k
     )
 
@@ -236,18 +241,19 @@ if __name__ == "__main__":
 
     # Execute linear pipeline on a single file
     final_graph = build_index_from_file(
-        filepath="./evaluation_data/ten_contracts_dataset/contracts/contract_7_term_with_riders.txt",  # Update with your target file
+        filepath="./evaluation_data/ten_contracts_dataset/contracts/contract_10_indexed_universal.txt",  # Update with your target file
         model_name="Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
         max_workers=50,  # Threads for processing chunks concurrently
         chunk_size=600,
         overlap=50,
         edge_threshold=0.5,
-        top_k=5,  # Number of K-nearest facts to sample
-        max_sub_workers=100  # Threads used internally by LLM batching
+        top_k=12,  # Number of K-nearest facts to sample
+        max_sub_workers=100,  # Threads used internally by LLM batching
+        edge_mode="clustered"
     )
 
     # Export pre-deduplication
-    final_graph.export_graph("./kg_outputs/c7riders_3.graphml")
+    final_graph.export_graph("./kg_outputs/c10_iu_1.graphml")
 
     print(
         f"\nRaw Graph Size: {final_graph.network.number_of_nodes()} nodes, {final_graph.network.number_of_edges()} edges")
@@ -260,14 +266,14 @@ if __name__ == "__main__":
     
     retrieval_model = SentenceTransformer("google/embeddinggemma-300m")
     deduplicator = GraphDeduplicator(retrieval_model=retrieval_model)
-    final_graph = deduplicator.deduplicate(final_graph, max_workers=100)
+    final_graph = deduplicator.deduplicate(final_graph, max_workers=100, iterations=1)
 
     print(
         f"Final Graph Size: {final_graph.network.number_of_nodes()} nodes, {final_graph.network.number_of_edges()} edges")
     print(f"Average Entity Edges: {final_graph.avg_entity_edges()}")
 
     # Export final product
-    final_graph.export_graph("./kg_outputs/c7riders_3.graphml")
+    final_graph.export_graph("./kg_outputs/c10_iu_1.graphml")
 
 
 # if __name__ == "__main__":

@@ -290,9 +290,15 @@ class Graph:
         self.fact_answered_questions_embeddings = self.model.encode(fact_answered_questions)
         self.fact_follow_up_questions_embeddings = self.model.encode(fact_follow_up_questions)
 
-    def get_relevant_seeds(self, fact, top_k: int = 8, get_all: bool = False) -> tuple[list[str], list[float]]:
+    def get_relevant_seeds(self, fact, top_k: int = 8, get_all: bool = False,
+                           sent_weight: float = 1.0, topic_weight: float = 1.0,
+                           entity_weight: float = 1.0, questions_weight: float = 1.0) -> tuple[list[str], list[float]]:
         """
-        Use rank fusion across multiple embedding dimensions to retrieve top-k fact IDs.
+        Use weighted rank fusion across multiple embedding dimensions to retrieve top-k fact IDs.
+
+        Weight parameters control the contribution of each similarity dimension.
+        Set a weight to 0.0 to ignore that dimension entirely.
+        All weights default to 1.0 to preserve the original equal-weighting behavior.
         """
 
         # 1. Format query dimensions identically to init_fact_embeddings
@@ -302,7 +308,6 @@ class Graph:
         query_follow_up_questions = str([x + " " for x in fact.follow_up_questions])
 
         # 2. Generate embeddings for the query fact
-        # Note: Assumes self.model is the initialized SentenceTransformer
         query_sent_embedding = self.model.encode([query_sentence], show_progress_bar=False)
         query_topic_embedding = self.model.encode([query_topics], show_progress_bar=False)
         query_entity_embedding = self.model.encode([query_entities], show_progress_bar=False)
@@ -313,14 +318,14 @@ class Graph:
         topic_scores = cosine_similarity(query_topic_embedding, self.fact_topic_embeddings).flatten()
         entity_scores = cosine_similarity(query_entity_embedding, self.fact_entities_embeddings).flatten()
         questions_scores = cosine_similarity(query_follow_up_embeddings,
-                                                      self.fact_answered_questions_embeddings).flatten()
+                                             self.fact_answered_questions_embeddings).flatten()
 
-        # 4. Rank Fusion (Equal Weighting)
+        # 4. Weighted combination — each dimension scaled by its weight
         combined_scores = (
-                sent_scores +
-                topic_scores +
-                entity_scores +
-                questions_scores
+            sent_weight      * sent_scores +
+            topic_weight     * topic_scores +
+            entity_weight    * entity_scores +
+            questions_weight * questions_scores
         )
 
         # 5. Sort and Retrieve Top-K

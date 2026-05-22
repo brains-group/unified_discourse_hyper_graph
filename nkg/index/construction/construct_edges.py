@@ -6,6 +6,7 @@ import dspy
 from nkg.index.extraction.extract_relations import *
 from nkg.utils.general import batch_list
 from nkg.utils.math_utils import sample_results
+from graspologic.partition import hierarchical_leiden
 
 def construct_edges_between_chunks(graph: Graph):
     chunk_ids = graph.get_chunk_ids()
@@ -225,6 +226,160 @@ def construct_edges_between_same_chunk_facts_parallel(graph: Graph, max_workers:
                 print(f"Error processing intra-chunk fact edge: {e}")
 
     print("Finished constructing edges between facts in the same chunk")
+
+
+def construct_edges_between_same_chunk_facts_bulk(graph: Graph):
+    """
+    Constructs intra-chunk fact-to-fact edges using a single LLM call per chunk.
+
+    Instead of one LLM call per fact pair, all facts in a chunk are passed together
+    using sequential integer IDs. The LLM identifies relevant pairs and emits all
+    edges at once. Integer IDs are then mapped back to UUIDs to build graph edges.
+    """
+    bulk_edge_constructor = dspy.ChainOfThought(BulkIntraChunkFactEdges)
+
+    for chunk_id in graph.get_chunk_ids():
+        fact_ids = graph.get_fact_ids(by_chunk_id=chunk_id)
+
+        if len(fact_ids) < 2:
+            continue
+
+        chunk_summary = graph.chunks[chunk_id].summary
+
+        # Assign sequential integer IDs and build the numbered facts prompt string.
+        # We use ints instead of UUIDs because LLMs are far more reliable at selecting
+        # and referencing small integers than full UUID strings.
+        int_to_uuid = {}
+        numbered_lines = []
+        for idx, fact_id in enumerate(fact_ids, start=1):
+            int_to_uuid[idx] = fact_id
+            numbered_lines.append(f"{idx}: {graph.facts[fact_id].sentence}")
+
+        numbered_facts_str = "\n".join(numbered_lines)
+
+        try:
+            result = bulk_edge_constructor(
+                chunk_summary=chunk_summary,
+                numbered_facts=numbered_facts_str
+            )
+
+            for edge_pair in result.fact_edges:
+                src_int = edge_pair.source_id
+                tgt_int = edge_pair.target_id
+
+                # Validate that the LLM used real integer IDs from the list
+                if src_int not in int_to_uuid or tgt_int not in int_to_uuid:
+                    continue
+                if src_int == tgt_int:
+                    continue
+                if edge_pair.relevance_score <= 0.0:
+                    continue
+
+                fact_id1 = int_to_uuid[src_int]
+                fact_id2 = int_to_uuid[tgt_int]
+
+                if graph.network.has_edge(fact_id1, fact_id2):
+                    continue
+
+                graph.network.add_edge(
+                    fact_id1, fact_id2,
+                    description=edge_pair.description_forward,
+                    label=edge_pair.label_forward,
+                    edge_type="fact_fact",
+                    score=edge_pair.relevance_score
+                )
+                graph.network.add_edge(
+                    fact_id2, fact_id1,
+                    description=edge_pair.description_backward,
+                    label=edge_pair.label_backward,
+                    edge_type="fact_fact",
+                    score=edge_pair.relevance_score
+                )
+
+        except Exception as e:
+            print(f"Error constructing bulk intra-chunk edges for chunk {chunk_id}: {e}")
+
+    print("Finished constructing bulk intra-chunk fact edges.")
+
+
+def _bulk_same_chunk_fact_worker(bulk_edge_constructor, chunk_id, chunk_summary, int_to_uuid, numbered_facts_str):
+    """Worker: runs one bulk LLM call for a chunk and returns raw results for the main thread to add to the graph."""
+    result = bulk_edge_constructor(
+        chunk_summary=chunk_summary,
+        numbered_facts=numbered_facts_str
+    )
+    return chunk_id, int_to_uuid, result
+
+
+def construct_edges_between_same_chunk_facts_bulk_parallel(graph: Graph, max_workers: int = 10):
+    """
+    Parallel version of construct_edges_between_same_chunk_facts_bulk.
+    One LLM call per chunk, all calls run in parallel across a thread pool.
+    """
+    bulk_edge_constructor = dspy.ChainOfThought(BulkIntraChunkFactEdges)
+
+    tasks = []
+    for chunk_id in graph.get_chunk_ids():
+        fact_ids = graph.get_fact_ids(by_chunk_id=chunk_id)
+        if len(fact_ids) < 2:
+            continue
+
+        chunk_summary = graph.chunks[chunk_id].summary
+        int_to_uuid = {}
+        numbered_lines = []
+        for idx, fact_id in enumerate(fact_ids, start=1):
+            int_to_uuid[idx] = fact_id
+            numbered_lines.append(f"{idx}: {graph.facts[fact_id].sentence}")
+
+        tasks.append((chunk_id, chunk_summary, int_to_uuid, "\n".join(numbered_lines)))
+
+    print(f"Executing {len(tasks)} bulk intra-chunk fact evaluations across {max_workers} threads...")
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {
+            executor.submit(_bulk_same_chunk_fact_worker, bulk_edge_constructor, t[0], t[1], t[2], t[3]): t
+            for t in tasks
+        }
+
+        for future in as_completed(futures):
+            try:
+                chunk_id, int_to_uuid, result = future.result()
+
+                for edge_pair in result.fact_edges:
+                    src_int = edge_pair.source_id
+                    tgt_int = edge_pair.target_id
+
+                    if src_int not in int_to_uuid or tgt_int not in int_to_uuid:
+                        continue
+                    if src_int == tgt_int:
+                        continue
+                    if edge_pair.relevance_score <= 0.0:
+                        continue
+
+                    fact_id1 = int_to_uuid[src_int]
+                    fact_id2 = int_to_uuid[tgt_int]
+
+                    if graph.network.has_edge(fact_id1, fact_id2):
+                        continue
+
+                    graph.network.add_edge(
+                        fact_id1, fact_id2,
+                        description=edge_pair.description_forward,
+                        label=edge_pair.label_forward,
+                        edge_type="fact_fact",
+                        score=edge_pair.relevance_score
+                    )
+                    graph.network.add_edge(
+                        fact_id2, fact_id1,
+                        description=edge_pair.description_backward,
+                        label=edge_pair.label_backward,
+                        edge_type="fact_fact",
+                        score=edge_pair.relevance_score
+                    )
+            except Exception as e:
+                print(f"Error processing bulk intra-chunk fact edge: {e}")
+
+    print("Finished constructing bulk intra-chunk fact edges (parallel).")
 
 
 def construct_edges_between_all_facts(graph: Graph, threshold: float = 0.5):
@@ -857,14 +1012,227 @@ def construct_edges_between_facts_linear_parallel(graph: Graph, top_k: int, skip
 
     print("Finished constructing parallel linear fact edges.")
 
+
+def _bulk_global_fact_worker(bulk_edge_constructor, int_to_uuid, numbered_facts_str):
+    """Worker: runs one bulk LLM call for a cluster and returns raw results for the main thread."""
+    result = bulk_edge_constructor(numbered_facts=numbered_facts_str)
+    return int_to_uuid, result
+
+
+def _run_bulk_fact_edge_llm(graph: Graph, cluster_lists: list, bulk_edge_constructor, max_workers: int):
+    """
+    Prepares numbered-fact strings for each cluster, runs parallel LLM calls,
+    then writes the resulting edges to the graph (main thread only).
+    Called once per clustering round.
+    """
+    tasks = []
+    for cluster_fact_ids in cluster_lists:
+        int_to_uuid = {}
+        numbered_lines = []
+        for idx, fact_id in enumerate(cluster_fact_ids, start=1):
+            int_to_uuid[idx] = fact_id
+            fact = graph.facts[fact_id]
+            chunk_summary = _get_parent_chunk_summary(graph, fact_id)
+            numbered_lines.append(f"{idx}: [Context: {chunk_summary}] {fact.sentence}")
+        tasks.append((int_to_uuid, "\n".join(numbered_lines)))
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {
+            executor.submit(_bulk_global_fact_worker, bulk_edge_constructor, t[0], t[1]): t
+            for t in tasks
+        }
+        for future in as_completed(futures):
+            try:
+                int_to_uuid, result = future.result()
+                for edge_pair in result.fact_edges:
+                    src_int = edge_pair.source_id
+                    tgt_int = edge_pair.target_id
+
+                    if src_int not in int_to_uuid or tgt_int not in int_to_uuid:
+                        continue
+                    if src_int == tgt_int:
+                        continue
+                    if edge_pair.relevance_score <= 0.0:
+                        continue
+
+                    fact_id1 = int_to_uuid[src_int]
+                    fact_id2 = int_to_uuid[tgt_int]
+
+                    if graph.network.has_edge(fact_id1, fact_id2):
+                        continue
+
+                    graph.network.add_edge(
+                        fact_id1, fact_id2,
+                        description=edge_pair.description_forward,
+                        label=edge_pair.label_forward,
+                        edge_type="fact_fact",
+                        score=edge_pair.relevance_score
+                    )
+                    graph.network.add_edge(
+                        fact_id2, fact_id1,
+                        description=edge_pair.description_backward,
+                        label=edge_pair.label_backward,
+                        edge_type="fact_fact",
+                        score=edge_pair.relevance_score
+                    )
+            except Exception as e:
+                print(f"Error processing clustered fact edge batch: {e}")
+
+
+def construct_edges_between_facts_clustered(graph: Graph, top_k: int = 10, skip_percent: float = 0.33,
+                                            max_cluster_size: int = 20, max_workers: int = 10,
+                                            retrieval_model: str = "all-MiniLM-L6-v2"):
+    """
+    Builds global cross-chunk fact-to-fact edges using 3 rounds of similarity-based
+    clustering followed by one bulk LLM call per cluster.
+
+    Round 1 — Entity-based (entity_weight=1.0, all others=0.0), top_k:
+        Groups facts that share the same entities/roles. Catches relationships
+        between facts about the same real-world objects even if their sentences
+        are phrased very differently.
+
+    Round 2 — Balanced top_k (entity_weight=0.5, all others=1.0):
+        Groups the most semantically similar facts overall, with entity overlap
+        as a secondary signal.
+
+    Round 3 — Balanced middle_k (same weights as Round 2, skipping the top percentile):
+        Discovery round — surfaces less-obvious but still meaningful connections
+        that were too similar to appear in the top-k (already covered) but still
+        sit in a plausible relevance band.
+
+    In all rounds, fact pairs that already share an edge in the graph are excluded
+    from the similarity graph before clustering, so no LLM work is duplicated.
+    Edges created in Round 1 are naturally excluded by Round 2's filter, and so on.
+    """
+    print("Initializing fact embeddings for clustered edge construction...")
+    graph.init_fact_embeddings(retrieval_model=retrieval_model)
+
+    fact_ids = graph.get_fact_ids()
+    bulk_edge_constructor = dspy.ChainOfThought(BulkGlobalFactEdges)
+
+    # ==========================================
+    # ROUND 1: Entity-based clustering → top_k
+    # entity_weight=1.0, all others=0.0
+    # ==========================================
+    print("Round 1: Building entity-based similarity graph...")
+    entity_sim_graph = nx.Graph()
+    entity_sim_graph.add_nodes_from(fact_ids)
+
+    for fact_id in fact_ids:
+        fact = graph.facts[fact_id]
+        all_ids, all_scores = graph.get_relevant_seeds(
+            fact, get_all=True,
+            sent_weight=0.0, topic_weight=0.0, entity_weight=1.0, questions_weight=0.0
+        )
+        id_to_score = dict(zip(all_ids, all_scores))
+        top_ids, _ = sample_results(all_ids, all_scores, strategy="top_k", k=top_k)
+
+        for candidate_id in top_ids:
+            if candidate_id == fact_id:
+                continue
+            if graph.network.has_edge(fact_id, candidate_id):
+                continue  # Already linked — skip
+            entity_sim_graph.add_edge(fact_id, candidate_id,
+                                      weight=max(0.01, float(id_to_score[candidate_id])))
+
+    print(f"Round 1 sim graph: {entity_sim_graph.number_of_edges()} candidate edges.")
+    if entity_sim_graph.number_of_edges() > 0:
+        entity_clusters_raw = hierarchical_leiden(entity_sim_graph, max_cluster_size=max_cluster_size, random_seed=42)
+        entity_clusters = {}
+        for node in entity_clusters_raw:
+            entity_clusters.setdefault(node.cluster, []).append(node.node)
+        entity_cluster_lists = [c for c in entity_clusters.values() if len(c) > 1]
+        print(f"Round 1: {len(entity_cluster_lists)} clusters → running {len(entity_cluster_lists)} bulk LLM calls...")
+        _run_bulk_fact_edge_llm(graph, entity_cluster_lists, bulk_edge_constructor, max_workers)
+    else:
+        print("Round 1: No candidate edges found, skipping.")
+
+    # ==========================================
+    # ROUND 2: Balanced top-k clustering
+    # sent=1.0, topic=1.0, entity=0.5, questions=1.0
+    # ==========================================
+    print("Round 2: Building balanced top-k similarity graph...")
+    balanced_topk_sim_graph = nx.Graph()
+    balanced_topk_sim_graph.add_nodes_from(fact_ids)
+
+    for fact_id in fact_ids:
+        fact = graph.facts[fact_id]
+        all_ids, all_scores = graph.get_relevant_seeds(
+            fact, get_all=True,
+            sent_weight=1.0, topic_weight=1.0, entity_weight=0.5, questions_weight=1.0
+        )
+        id_to_score = dict(zip(all_ids, all_scores))
+        top_ids, _ = sample_results(all_ids, all_scores, strategy="top_k", k=top_k)
+
+        for candidate_id in top_ids:
+            if candidate_id == fact_id:
+                continue
+            if graph.network.has_edge(fact_id, candidate_id):
+                continue
+            balanced_topk_sim_graph.add_edge(fact_id, candidate_id,
+                                             weight=max(0.01, float(id_to_score[candidate_id])))
+
+    print(f"Round 2 sim graph: {balanced_topk_sim_graph.number_of_edges()} candidate edges.")
+    if balanced_topk_sim_graph.number_of_edges() > 0:
+        topk_clusters_raw = hierarchical_leiden(balanced_topk_sim_graph, max_cluster_size=max_cluster_size, random_seed=42)
+        topk_clusters = {}
+        for node in topk_clusters_raw:
+            topk_clusters.setdefault(node.cluster, []).append(node.node)
+        topk_cluster_lists = [c for c in topk_clusters.values() if len(c) > 1]
+        print(f"Round 2: {len(topk_cluster_lists)} clusters → running {len(topk_cluster_lists)} bulk LLM calls...")
+        _run_bulk_fact_edge_llm(graph, topk_cluster_lists, bulk_edge_constructor, max_workers)
+    else:
+        print("Round 2: No candidate edges found, skipping.")
+
+    # ==========================================
+    # ROUND 3: Balanced middle-k clustering
+    # Same weights as Round 2, skip_percent_top_k strategy
+    # ==========================================
+    print("Round 3: Building balanced middle-k similarity graph...")
+    balanced_midk_sim_graph = nx.Graph()
+    balanced_midk_sim_graph.add_nodes_from(fact_ids)
+
+    for fact_id in fact_ids:
+        fact = graph.facts[fact_id]
+        all_ids, all_scores = graph.get_relevant_seeds(
+            fact, get_all=True,
+            sent_weight=1.0, topic_weight=1.0, entity_weight=0.5, questions_weight=1.0
+        )
+        id_to_score = dict(zip(all_ids, all_scores))
+        mid_ids, _ = sample_results(all_ids, all_scores, strategy="skip_percent_top_k",
+                                    k=top_k, skip_top_percent=skip_percent)
+
+        for candidate_id in mid_ids:
+            if candidate_id == fact_id:
+                continue
+            if graph.network.has_edge(fact_id, candidate_id):
+                continue
+            balanced_midk_sim_graph.add_edge(fact_id, candidate_id,
+                                             weight=max(0.01, float(id_to_score[candidate_id])))
+
+    print(f"Round 3 sim graph: {balanced_midk_sim_graph.number_of_edges()} candidate edges.")
+    if balanced_midk_sim_graph.number_of_edges() > 0:
+        midk_clusters_raw = hierarchical_leiden(balanced_midk_sim_graph, max_cluster_size=max_cluster_size, random_seed=42)
+        midk_clusters = {}
+        for node in midk_clusters_raw:
+            midk_clusters.setdefault(node.cluster, []).append(node.node)
+        midk_cluster_lists = [c for c in midk_clusters.values() if len(c) > 1]
+        print(f"Round 3: {len(midk_cluster_lists)} clusters → running {len(midk_cluster_lists)} bulk LLM calls...")
+        _run_bulk_fact_edge_llm(graph, midk_cluster_lists, bulk_edge_constructor, max_workers)
+    else:
+        print("Round 3: No candidate edges found, skipping.")
+
+    print("Finished constructing clustered global fact edges.")
+
+
 def construct_initial_edges(graph: Graph, threshold: float = 0.5, max_workers: int = 10, mode:str = "linear"):
     if mode == "linear":
         if max_workers == 1:
             construct_edges_between_entities_and_facts(graph, entity_batch_size=5)
-            #construct_edges_between_same_chunk_facts(graph)
+            construct_edges_between_same_chunk_facts_bulk(graph)
         else:
             construct_edges_between_entities_and_facts_parallel(graph, entity_batch_size=5, max_workers=max_workers)
-            #construct_edges_between_same_chunk_facts_parallel(graph, max_workers=max_workers)
+            construct_edges_between_same_chunk_facts_bulk_parallel(graph, max_workers=max_workers)
     else:
         if max_workers == 1:
             construct_edges_between_entities_and_facts(graph, entity_batch_size=5)
@@ -877,16 +1245,20 @@ def construct_initial_edges(graph: Graph, threshold: float = 0.5, max_workers: i
             construct_edges_between_same_chunk_facts_parallel(graph, max_workers=max_workers)
             construct_edges_between_all_facts_parallel(graph, threshold, max_workers=max_workers)
 
-def construct_edges_during_merge(graph: Graph, threshold: float = 0.5, max_workers: int = 10, mode:str ="linear", top_k: int = 10):
+def construct_edges_during_merge(graph: Graph, threshold: float = 0.5, max_workers: int = 10, mode: str = "linear", top_k: int = 10):
     if mode == "linear":
         if max_workers == 1:
             construct_edges_between_facts_linear(graph, top_k=top_k, skip_percent=.33)
         else:
             construct_edges_between_facts_linear_parallel(graph, top_k=top_k, skip_percent=.33, max_workers=max_workers)
+    elif mode == "clustered":
+        # One LLM call per cluster instead of one per fact-pair.
+        # max_workers controls parallel LLM calls across clusters within each round.
+        construct_edges_between_facts_clustered(graph, top_k=top_k, skip_percent=.33, max_workers=max_workers)
     else:
         if max_workers == 1:
             construct_edges_between_chunks(graph)
             construct_edges_between_all_facts(graph, threshold)
         else:
-            construct_edges_between_chunks_parallel(graph,max_workers=max_workers)
-            construct_edges_between_all_facts_parallel(graph, threshold,max_workers=max_workers)
+            construct_edges_between_chunks_parallel(graph, max_workers=max_workers)
+            construct_edges_between_all_facts_parallel(graph, threshold, max_workers=max_workers)

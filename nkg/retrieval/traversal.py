@@ -229,10 +229,15 @@ def expand_paths(
 
 from collections import defaultdict
 
-def expand_paths_batched(engine, seeds, plan, max_depth=3, beam_width=3, mode="all"):
+def expand_paths_batched(engine, seeds, plan, max_depth=3, beam_width=3, mode="all", total_depth=None):
     graph = engine.graph
     active_paths = [Path(seed, seed in graph.facts) for seed in seeds]
     completed_paths = []
+
+    # total_depth caps full traversal hops (including entity nodes) so paths through
+    # entity-heavy graphs cannot grow unboundedly before fact_depth reaches max_depth.
+    if total_depth is None:
+        total_depth = max_depth * 2
 
     valid_edge_types = {
         "all": {"fact_fact", "entity_fact", "fact_entity"},
@@ -247,10 +252,16 @@ def expand_paths_batched(engine, seeds, plan, max_depth=3, beam_width=3, mode="a
     while active_paths:
         frontier = []
         next_active = []
+        # Cache out_edges per node for this iteration.
+        # Multiple active paths sharing the same current_node pay the NetworkX
+        # adjacency lookup cost only once instead of once per path.
+        edge_cache = {}
 
         for path_idx, path in enumerate(active_paths):
             current_id = path.current_node
-            outgoing_edges = list(graph.network.out_edges(current_id, data=True))
+            if current_id not in edge_cache:
+                edge_cache[current_id] = list(graph.network.out_edges(current_id, data=True))
+            outgoing_edges = edge_cache[current_id]
 
             found_any = False
             for u, v, edge_data in outgoing_edges:
@@ -341,7 +352,9 @@ def expand_paths_batched(engine, seeds, plan, max_depth=3, beam_width=3, mode="a
 
                 new_path = path.branch(target, is_fact, e_type, e_data)
 
-                if new_path.fact_depth >= max_depth:
+                # Stop if we've hit the desired fact depth OR if the total hop count
+                # has reached the absolute ceiling (prevents explosion through entity nodes).
+                if new_path.fact_depth >= max_depth or new_path.full_depth >= total_depth:
                     completed_paths.append(new_path)
                 else:
                     next_active.append(new_path)

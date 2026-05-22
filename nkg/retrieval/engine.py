@@ -5,8 +5,8 @@ from sentence_transformers import SentenceTransformer
 
 from nkg.models.Graph import Graph
 from nkg.retrieval.planner import QueryPlan  # Assuming you wrapped the signature in a module here
-from nkg.retrieval.scoring import score_fact, score_entity
-from nkg.utils.math_utils import compute_mmr
+from nkg.retrieval.scoring import score_fact, score_entity, FACT_WEIGHTS, ENTITY_WEIGHTS
+from nkg.utils.math_utils import compute_mmr, normalize_rows
 from .traversal import *
 
 
@@ -110,8 +110,10 @@ class Retriever:
         # --- Massive Batch Encoding ---
         if verbose:
             print(f"Encoding {len(flat_strings)} total text segments...")
-        # model.encode returns an (N, D) numpy array
-        all_embs = self.retrieval_model.encode(flat_strings, show_progress_bar=True)
+        # Normalize immediately so all stored embeddings are unit-norm.
+        # This lets every downstream similarity computation use dot products instead of sklearn.
+        all_embs = normalize_rows(self.retrieval_model.encode(flat_strings, show_progress_bar=True))
+        self.emb_dim = all_embs.shape[1]   # stored for use in expand_paths_batched fallback zeros
 
         # --- Unflatten into Dictionaries ---
         if verbose:
@@ -137,6 +139,28 @@ class Retriever:
                 "macro": all_embs[m_slice[0]:m_slice[1]] if m_slice else None,
                 "chunk": all_embs[c_slice[0]:c_slice[1]] if c_slice else None
             }
+
+        # Build contiguous stacked matrices for vectorized seed scoring.
+        # All rows are already unit-norm (inherited from normalized all_embs).
+        self.all_entity_ids = list(self.graph.entities.keys())
+        if self.all_entity_ids:
+            self.entity_name_mat = np.vstack(
+                [self.entity_embs[i]["name"][0] for i in self.all_entity_ids]
+            ).astype(np.float32)   # (N_ent, D)
+            self.entity_role_mat = np.vstack(
+                [self.entity_embs[i]["role"][0] for i in self.all_entity_ids]
+            ).astype(np.float32)   # (N_ent, D)
+        else:
+            self.entity_name_mat = np.zeros((0, self.emb_dim), dtype=np.float32)
+            self.entity_role_mat = np.zeros((0, self.emb_dim), dtype=np.float32)
+
+        self.all_fact_ids = list(self.graph.facts.keys())
+        if self.all_fact_ids:
+            self.fact_sent_mat = np.vstack(
+                [self.fact_embs[i]["sentence"][0] for i in self.all_fact_ids]
+            ).astype(np.float32)   # (N_fact, D)
+        else:
+            self.fact_sent_mat = np.zeros((0, self.emb_dim), dtype=np.float32)
 
     def _initialize_edge_embeddings(self, verbose=False):
         """
@@ -175,18 +199,18 @@ class Retriever:
         if verbose:
             print(f"Encoding {len(ff_edges)} Fact-Fact edges (Descriptions & Labels)...")
         if ff_edges:
-            ff_desc_matrix = self.retrieval_model.encode(ff_descs, show_progress_bar=True)
-            ff_label_matrix = self.retrieval_model.encode(ff_labels, show_progress_bar=True)
+            ff_desc_matrix = normalize_rows(self.retrieval_model.encode(ff_descs, show_progress_bar=True))
+            ff_label_matrix = normalize_rows(self.retrieval_model.encode(ff_labels, show_progress_bar=True))
 
         if verbose:
             print(f"Encoding {len(ef_edges)} Entity-Fact edge labels...")
         if ef_edges:
-            ef_label_matrix = self.retrieval_model.encode(ef_labels, show_progress_bar=True)
+            ef_label_matrix = normalize_rows(self.retrieval_model.encode(ef_labels, show_progress_bar=True))
 
         if verbose:
             print(f"Encoding {len(fe_edges)} Fact-Entity edge labels...")
         if fe_edges:
-            fe_label_matrix = self.retrieval_model.encode(fe_labels, show_progress_bar=True)
+            fe_label_matrix = normalize_rows(self.retrieval_model.encode(fe_labels, show_progress_bar=True))
 
         # 3. Map back to Dictionaries
         if verbose:
@@ -217,47 +241,83 @@ class Retriever:
             print(f"Planning query strategy for: '{query}'")
         plan = self.planner(user_query=query)
 
-        # 2. Embed the Query Plan components
-        # Note: If the LLM returns empty lists, encode returns an empty array,
-        # which our max_pooled_list_similarity handles gracefully (returns 0.0)
-        plan_rewrite_emb = self.retrieval_model.encode([plan.rewritten_query], show_progress_bar=False)
-        plan_targets_embs = self.retrieval_model.encode(plan.target_entities,show_progress_bar=False) if plan.target_entities else np.array([])
-        plan_broad_embs = self.retrieval_model.encode(plan.broad_anchors,show_progress_bar=False) if plan.broad_anchors else np.array([])
-        plan_topics_embs = self.retrieval_model.encode(plan.target_topics,show_progress_bar=False) if plan.target_topics else np.array([])
+        # 2. Embed the Query Plan components and immediately normalize.
+        # Pre-normalized query vectors allow all downstream comparisons to use
+        # cheap dot products instead of sklearn cosine_similarity.
+        plan_rewrite_emb = normalize_rows(self.retrieval_model.encode([plan.rewritten_query], show_progress_bar=False))
+        plan_targets_embs = normalize_rows(self.retrieval_model.encode(plan.target_entities, show_progress_bar=False)) if plan.target_entities else np.zeros((0, self.emb_dim), dtype=np.float32)
+        plan_broad_embs = normalize_rows(self.retrieval_model.encode(plan.broad_anchors, show_progress_bar=False)) if plan.broad_anchors else np.zeros((0, self.emb_dim), dtype=np.float32)
+        plan_topics_embs = normalize_rows(self.retrieval_model.encode(plan.target_topics, show_progress_bar=False)) if plan.target_topics else np.zeros((0, self.emb_dim), dtype=np.float32)
 
         candidate_ids = []
         candidate_scores = []
         candidate_diversity_embs = []  # Used exclusively for MMR redundancy checks
 
         # 3. Score all Entities
+        # Name and role scores are vectorized via matrix multiply — one op covers all entities.
+        # Anchor scores are kept per-entity because anchor lists are ragged (variable length).
         if mode:
-            for ent_id, embs in self.entity_embs.items():
-                score = score_entity(
-                    plan_target_embs=plan_targets_embs,
-                    plan_broad_embs=plan_broad_embs,
-                    entity_name_emb=embs["name"],
-                    entity_role_emb=embs["role"],
-                    entity_anchor_embs=embs["anchors"]
-                )
-                candidate_ids.append(ent_id)
-                candidate_scores.append(score)
-                # Use the entity's name embedding to represent it during the MMR diversity check
-                candidate_diversity_embs.append(embs["role"][0])
+            N_ent = len(self.all_entity_ids)
+            if N_ent > 0:
+                candidate_ids.extend(self.all_entity_ids)
+
+                # (L_targets, D) @ (D, N_ent) → (L_targets, N_ent) → max over query axis → (N_ent,)
+                name_scores_v = (plan_targets_embs @ self.entity_name_mat.T).max(axis=0).astype(np.float32) \
+                    if len(plan_targets_embs) > 0 else np.zeros(N_ent, dtype=np.float32)
+                role_scores_v = (plan_broad_embs @ self.entity_role_mat.T).max(axis=0).astype(np.float32) \
+                    if len(plan_broad_embs) > 0 else np.zeros(N_ent, dtype=np.float32)
+
+                w = ENTITY_WEIGHTS
+                for j, ent_id in enumerate(self.all_entity_ids):
+                    anchor_embs = self.entity_embs[ent_id]["anchors"]
+                    name_s = float(name_scores_v[j])
+                    role_s = float(role_scores_v[j])
+
+                    if anchor_embs is not None and len(anchor_embs) > 0 and len(plan_targets_embs) > 0:
+                        # dot product valid — anchor_embs already unit-norm
+                        anchor_s = float((plan_targets_embs @ anchor_embs.T).max(axis=1).mean())
+                        score = w["name"] * name_s + w["role"] * role_s + w["anchors"] * anchor_s
+                    else:
+                        redistribute = w["anchors"] / 2
+                        score = (w["name"] + redistribute) * name_s + (w["role"] + redistribute) * role_s
+
+                    candidate_scores.append(score)
+                    candidate_diversity_embs.append(self.entity_role_mat[j])
 
         # 4. Score all Facts
+        # Sentence score (weight 0.6) is vectorized via matrix multiply.
+        # Macro/chunk topic scores are kept per-fact because topics lists are ragged.
         if mode:
-            for fact_id, embs in self.fact_embs.items():
-                score = score_fact(
-                    plan_rewrite_emb=plan_rewrite_emb,
-                    plan_topics_embs=plan_topics_embs,
-                    fact_sent_emb=embs["sentence"],
-                    fact_macro_embs=embs["macro"],
-                    fact_chunk_embs=embs["chunk"]
-                )
-                candidate_ids.append(fact_id)
-                candidate_scores.append(score)
-                # Use the fact's sentence embedding to represent it during the MMR diversity check
-                candidate_diversity_embs.append(embs["sentence"][0])
+            N_fact = len(self.all_fact_ids)
+            if N_fact > 0:
+                candidate_ids.extend(self.all_fact_ids)
+
+                # (1, D) @ (D, N_fact) → (1, N_fact) → flatten → (N_fact,)
+                sent_scores_v = (plan_rewrite_emb @ self.fact_sent_mat.T).flatten().astype(np.float32)
+
+                fw = FACT_WEIGHTS
+                for j, fact_id in enumerate(self.all_fact_ids):
+                    embs = self.fact_embs[fact_id]
+                    sent_s = float(sent_scores_v[j])
+                    weights = fw.copy()
+
+                    macro_s = 0.0
+                    if embs["macro"] is not None and len(embs["macro"]) > 0 and len(plan_topics_embs) > 0:
+                        macro_s = float((plan_topics_embs @ embs["macro"].T).max(axis=1).mean())
+                    else:
+                        weights["sentence"] += weights["macro"]
+                        weights["macro"] = 0.0
+
+                    chunk_s = 0.0
+                    if embs["chunk"] is not None and len(embs["chunk"]) > 0 and len(plan_topics_embs) > 0:
+                        chunk_s = float((plan_topics_embs @ embs["chunk"].T).max(axis=1).mean())
+                    else:
+                        weights["sentence"] += weights["chunk"]
+                        weights["chunk"] = 0.0
+
+                    score = weights["sentence"] * sent_s + weights["macro"] * macro_s + weights["chunk"] * chunk_s
+                    candidate_scores.append(score)
+                    candidate_diversity_embs.append(self.fact_sent_mat[j])
 
         # 5. Apply MMR (Maximal Marginal Relevance)
         selected_indices = compute_mmr(
@@ -338,30 +398,63 @@ class Retriever:
         return context_string
 
     def get_seeds_precomputed(self, plan_embs_dict: dict, top_k: int = 10, lambda_mmr: float = 0.6, mode="all") -> list[str]:
-        """Bypasses Query Planner and Encoding."""
-        plan_rewrite_emb = plan_embs_dict.get("rewritten_query", np.array([]))
-        plan_targets_embs = plan_embs_dict.get("target_entities", np.array([]))
-        plan_broad_embs = plan_embs_dict.get("broad_anchors", np.array([]))
-        plan_topics_embs = plan_embs_dict.get("target_topics", np.array([]))
+        """Bypasses Query Planner and Encoding. Caller must supply pre-normalized embeddings."""
+        plan_rewrite_emb = plan_embs_dict.get("rewritten_query", np.zeros((0, self.emb_dim), dtype=np.float32))
+        plan_targets_embs = plan_embs_dict.get("target_entities", np.zeros((0, self.emb_dim), dtype=np.float32))
+        plan_broad_embs = plan_embs_dict.get("broad_anchors", np.zeros((0, self.emb_dim), dtype=np.float32))
+        plan_topics_embs = plan_embs_dict.get("target_topics", np.zeros((0, self.emb_dim), dtype=np.float32))
 
         candidate_ids = []
         candidate_scores = []
         candidate_diversity_embs = []
 
         if mode in ["all", "hypergraph"]:
-            for ent_id, embs in self.entity_embs.items():
-                score = score_entity(plan_targets_embs, plan_broad_embs, embs["name"], embs["role"], embs["anchors"])
-                candidate_ids.append(ent_id)
-                candidate_scores.append(score)
-                candidate_diversity_embs.append(embs["name"][0])
-
+            N_ent = len(self.all_entity_ids)
+            if N_ent > 0:
+                candidate_ids.extend(self.all_entity_ids)
+                name_scores_v = (plan_targets_embs @ self.entity_name_mat.T).max(axis=0).astype(np.float32) \
+                    if len(plan_targets_embs) > 0 else np.zeros(N_ent, dtype=np.float32)
+                role_scores_v = (plan_broad_embs @ self.entity_role_mat.T).max(axis=0).astype(np.float32) \
+                    if len(plan_broad_embs) > 0 else np.zeros(N_ent, dtype=np.float32)
+                w = ENTITY_WEIGHTS
+                for j, ent_id in enumerate(self.all_entity_ids):
+                    anchor_embs = self.entity_embs[ent_id]["anchors"]
+                    name_s = float(name_scores_v[j])
+                    role_s = float(role_scores_v[j])
+                    if anchor_embs is not None and len(anchor_embs) > 0 and len(plan_targets_embs) > 0:
+                        anchor_s = float((plan_targets_embs @ anchor_embs.T).max(axis=1).mean())
+                        score = w["name"] * name_s + w["role"] * role_s + w["anchors"] * anchor_s
+                    else:
+                        redistribute = w["anchors"] / 2
+                        score = (w["name"] + redistribute) * name_s + (w["role"] + redistribute) * role_s
+                    candidate_scores.append(score)
+                    candidate_diversity_embs.append(self.entity_name_mat[j])
 
         if mode in ["all", "discourse"]:
-            for fact_id, embs in self.fact_embs.items():
-                score = score_fact(plan_rewrite_emb, plan_topics_embs, embs["sentence"], embs["macro"], embs["chunk"])
-                candidate_ids.append(fact_id)
-                candidate_scores.append(score)
-                candidate_diversity_embs.append(embs["sentence"][0])
+            N_fact = len(self.all_fact_ids)
+            if N_fact > 0:
+                candidate_ids.extend(self.all_fact_ids)
+                sent_scores_v = (plan_rewrite_emb @ self.fact_sent_mat.T).flatten().astype(np.float32)
+                fw = FACT_WEIGHTS
+                for j, fact_id in enumerate(self.all_fact_ids):
+                    embs = self.fact_embs[fact_id]
+                    sent_s = float(sent_scores_v[j])
+                    weights = fw.copy()
+                    macro_s = 0.0
+                    if embs["macro"] is not None and len(embs["macro"]) > 0 and len(plan_topics_embs) > 0:
+                        macro_s = float((plan_topics_embs @ embs["macro"].T).max(axis=1).mean())
+                    else:
+                        weights["sentence"] += weights["macro"]
+                        weights["macro"] = 0.0
+                    chunk_s = 0.0
+                    if embs["chunk"] is not None and len(embs["chunk"]) > 0 and len(plan_topics_embs) > 0:
+                        chunk_s = float((plan_topics_embs @ embs["chunk"].T).max(axis=1).mean())
+                    else:
+                        weights["sentence"] += weights["chunk"]
+                        weights["chunk"] = 0.0
+                    score = weights["sentence"] * sent_s + weights["macro"] * macro_s + weights["chunk"] * chunk_s
+                    candidate_scores.append(score)
+                    candidate_diversity_embs.append(self.fact_sent_mat[j])
 
         selected_indices = compute_mmr(candidate_scores, np.array(candidate_diversity_embs), top_k, lambda_mmr)
         return [candidate_ids[i] for i in selected_indices]

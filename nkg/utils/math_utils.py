@@ -1,30 +1,26 @@
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
 
 
 def cosine_similarity_single(emb1: np.ndarray, emb2: np.ndarray) -> float:
     """
     Computes the cosine similarity between two single embedding vectors.
-    Expects 1D or 2D arrays of a single vector.
+    Assumes pre-normalized (unit-length) inputs — uses dot product directly.
     """
-    # Reshape to 2D for sklearn (1, D)
-    e1 = np.atleast_2d(emb1)
-    e2 = np.atleast_2d(emb2)
-    return float(cosine_similarity(e1, e2)[0][0])
+    return float(np.dot(np.atleast_1d(emb1).ravel(), np.atleast_1d(emb2).ravel()))
 
 
 def max_pooled_list_similarity(query_embs: np.ndarray, target_embs: np.ndarray) -> float:
     """
     Computes the S_list similarity between a list of query embeddings and target embeddings.
+    Assumes pre-normalized inputs — uses dot product instead of sklearn cosine_similarity.
     """
-    # ADD THIS SAFETY CHECK:
     if query_embs is None or target_embs is None:
         return 0.0
 
     if len(query_embs) == 0 or len(target_embs) == 0:
         return 0.0
 
-    sim_matrix = cosine_similarity(query_embs, target_embs)
+    sim_matrix = query_embs @ target_embs.T   # (Q, T) — valid for unit-norm vectors
     max_sims = np.max(sim_matrix, axis=1)
     return float(np.mean(max_sims))
 
@@ -39,56 +35,49 @@ def compute_mmr(
     Selects top_k items using Maximal Marginal Relevance (MMR).
     Balances relevance (candidate_scores) with diversity (candidate_embeddings).
 
+    Assumes pre-normalized embeddings — uses dot products for all similarity
+    computations and a vectorized numpy inner loop (no Python for-loop per candidate).
+
     lambda_param: 1.0 means pure relevance (standard top-k). 0.0 means pure diversity.
     Returns: A list of indices corresponding to the selected candidates.
     """
     if len(candidate_scores) == 0:
         return []
 
-    # Ensure inputs are numpy arrays for fast math
-    scores = np.array(candidate_scores)
-    embs = np.atleast_2d(candidate_embeddings)
+    scores = np.array(candidate_scores, dtype=np.float32)
+    embs = np.atleast_2d(candidate_embeddings).astype(np.float32)
 
-    # Handle cases where we ask for more K than we have candidates
     top_k = min(top_k, len(scores))
 
     selected_indices = []
-    unselected_indices = list(range(len(scores)))
+    # Boolean mask replaces Python list + O(N) .remove() — flipping a bit is O(1)
+    mask = np.ones(len(scores), dtype=bool)
 
-    # Pre-compute the NxN similarity matrix between ALL candidates
-    # This prevents recalculating cosine similarity in the loop
-    sim_matrix = cosine_similarity(embs)
+    # Pre-compute the NxN similarity matrix via dot product.
+    # Valid because embeddings are pre-normalized (unit vectors → dot = cosine).
+    sim_matrix = embs @ embs.T
 
     for _ in range(top_k):
+        unsel = np.where(mask)[0]
+
         if not selected_indices:
-            # First iteration: just pick the one with the highest raw relevance score
-            best_idx = unselected_indices[np.argmax(scores[unselected_indices])]
+            # First pick: highest raw relevance among all candidates
+            best_idx = int(unsel[np.argmax(scores[unsel])])
         else:
-            # Calculate MMR score for all unselected items
-            best_mmr_score = -np.inf
-            best_idx = -1
-
-            for idx in unselected_indices:
-                # 1. Relevance: The raw score passed into the function
-                relevance = scores[idx]
-
-                # 2. Penalty: Max similarity to items already selected
-                # (How redundant is this item compared to what we already chose?)
-                redundancy_penalty = np.max(sim_matrix[idx, selected_indices])
-
-                # 3. MMR Equation
-                mmr_score = (lambda_param * relevance) - ((1 - lambda_param) * redundancy_penalty)
-
-                if mmr_score > best_mmr_score:
-                    best_mmr_score = mmr_score
-                    best_idx = idx
+            sel = np.array(selected_indices, dtype=np.intp)
+            # For every unselected candidate: max similarity to any already-selected item.
+            # sim_matrix[np.ix_(unsel, sel)] → shape (|unsel|, |sel|)
+            # .max(axis=1)                   → shape (|unsel|,)
+            # Entire inner loop replaced by two numpy ops — no Python iteration.
+            max_sim_to_selected = sim_matrix[np.ix_(unsel, sel)].max(axis=1)
+            mmr_scores = lambda_param * scores[unsel] - (1.0 - lambda_param) * max_sim_to_selected
+            best_idx = int(unsel[np.argmax(mmr_scores)])
 
         selected_indices.append(best_idx)
-        unselected_indices.remove(best_idx)
+        mask[best_idx] = False   # O(1) — replaces O(N) list.remove()
 
     return selected_indices
 
-import numpy as np
 
 def normalize_rows(x: np.ndarray) -> np.ndarray:
     x = np.asarray(x, dtype=np.float32)
@@ -102,7 +91,6 @@ def batch_mean_cos(plan_norm: np.ndarray, cand_norm: np.ndarray) -> np.ndarray:
     return (plan_norm @ cand_norm.T).mean(axis=0).astype(np.float32)
 
 
-import numpy as np
 import math
 
 
