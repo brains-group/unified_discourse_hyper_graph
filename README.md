@@ -1,4 +1,4 @@
-# Unified Discourse-Hypergraph RAG
+# Unified Discourse Hypergraph: Rich graph representation combining discourse graph and hypergraph.
 
 This repository contains the implementation of a **Unified Discourse-Hypergraph RAG** framework for graph-based retrieval-augmented generation over complex documents.
 
