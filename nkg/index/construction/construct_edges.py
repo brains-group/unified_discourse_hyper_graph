@@ -286,6 +286,7 @@ def construct_edges_between_same_chunk_facts_bulk(graph: Graph):
                     description=edge_pair.description_forward,
                     label=edge_pair.label_forward,
                     edge_type="fact_fact",
+                    edge_sub_type="same_chunk",
                     score=edge_pair.relevance_score
                 )
                 graph.network.add_edge(
@@ -293,6 +294,7 @@ def construct_edges_between_same_chunk_facts_bulk(graph: Graph):
                     description=edge_pair.description_backward,
                     label=edge_pair.label_backward,
                     edge_type="fact_fact",
+                    edge_sub_type="same_chunk",
                     score=edge_pair.relevance_score
                 )
 
@@ -367,6 +369,7 @@ def construct_edges_between_same_chunk_facts_bulk_parallel(graph: Graph, max_wor
                         description=edge_pair.description_forward,
                         label=edge_pair.label_forward,
                         edge_type="fact_fact",
+                        edge_sub_type="same_chunk",
                         score=edge_pair.relevance_score
                     )
                     graph.network.add_edge(
@@ -374,6 +377,7 @@ def construct_edges_between_same_chunk_facts_bulk_parallel(graph: Graph, max_wor
                         description=edge_pair.description_backward,
                         label=edge_pair.label_backward,
                         edge_type="fact_fact",
+                        edge_sub_type="same_chunk",
                         score=edge_pair.relevance_score
                     )
             except Exception as e:
@@ -887,16 +891,19 @@ def construct_edges_between_facts_linear(graph: Graph, top_k: int, skip_percent:
 
         source_chunk_summary = _get_parent_chunk_summary(graph, source_id)
 
-        # 5. Evaluate valid candidates
-        for target_id in candidate_targets:
-            # Skip if an edge was already established
+        # 5. Evaluate top-k candidates first, then mid-k only candidates
+        # Tracking them separately so we can tag the edge_sub_type accurately.
+        top_set = set(top_ids) - {source_id}
+        mid_only_set = (set(mid_ids) - {source_id}) - top_set
+
+        for target_id, edge_sub_type in [(tid, "global_topk_linear") for tid in top_set] + \
+                                         [(tid, "global_midk_linear") for tid in mid_only_set]:
             if graph.network.has_edge(source_id, target_id):
                 continue
 
             target_fact = graph.facts[target_id]
             target_chunk_summary = _get_parent_chunk_summary(graph, target_id)
 
-            # Call LLM
             edge_info = fact_edge_constructor(
                 fact_sentence_1=source_fact.sentence,
                 chunk_summary_1=source_chunk_summary,
@@ -904,20 +911,20 @@ def construct_edges_between_facts_linear(graph: Graph, top_k: int, skip_percent:
                 chunk_summary_2=target_chunk_summary
             )
 
-            # Add bidirectional edges
             graph.network.add_edge(
                 source_id, target_id,
                 description=edge_info.description_1_2,
                 label=edge_info.label_1_2,
                 edge_type="fact_fact",
+                edge_sub_type=edge_sub_type,
                 score=edge_info.relevance_score
             )
-
             graph.network.add_edge(
                 target_id, source_id,
                 description=edge_info.description_2_1,
                 label=edge_info.label_2_1,
                 edge_type="fact_fact",
+                edge_sub_type=edge_sub_type,
                 score=edge_info.relevance_score
             )
 
@@ -942,69 +949,69 @@ def construct_edges_between_facts_linear_parallel(graph: Graph, top_k: int, skip
     # ==========================================
     # PHASE 1: Fast Vector Search & Sampling
     # ==========================================
+    # Tasks are 7-tuples: (src_id, tgt_id, src_sent, tgt_sent, src_chunk, tgt_chunk, edge_sub_type)
+    # Top-k and mid-k pairs are tracked separately so we can tag edge_sub_type accurately.
     print("Calculating vector similarities and generating task queue...")
     for source_id in fact_ids:
         source_fact = graph.facts[source_id]
 
-        # Retrieve and sample
         all_ids, all_scores = graph.get_relevant_seeds(source_fact, get_all=True)
         top_ids, _ = sample_results(all_ids, all_scores, strategy="top_k", k=top_k)
         mid_ids, _ = sample_results(all_ids, all_scores, strategy="skip_percent_top_k", k=top_k,
                                     skip_top_percent=skip_percent)
 
-        candidate_targets = set(top_ids + mid_ids)
-        if source_id in candidate_targets:
-            candidate_targets.remove(source_id)
+        top_set = set(top_ids) - {source_id}
+        mid_only_set = (set(mid_ids) - {source_id}) - top_set
 
         source_chunk_summary = _get_parent_chunk_summary(graph, source_id)
 
-        for target_id in candidate_targets:
-            # 1. Enforce strict pair uniqueness (A->B is the same logic check as B->A)
+        for target_id, edge_sub_type in [(tid, "global_topk_linear") for tid in top_set] + \
+                                         [(tid, "global_midk_linear") for tid in mid_only_set]:
             pair_key = tuple(sorted([source_id, target_id]))
-
-            # 2. Add to task list if it hasn't been checked and no edge exists
             if pair_key not in seen_pairs and not graph.network.has_edge(source_id, target_id):
                 seen_pairs.add(pair_key)
-
                 target_fact = graph.facts[target_id]
                 target_chunk_summary = _get_parent_chunk_summary(graph, target_id)
-
                 tasks.append((
                     source_id, target_id,
                     source_fact.sentence, target_fact.sentence,
-                    source_chunk_summary, target_chunk_summary
+                    source_chunk_summary, target_chunk_summary,
+                    edge_sub_type
                 ))
 
     # ==========================================
     # PHASE 2: Parallel LLM Execution
     # ==========================================
+    # Worker only receives the first 6 elements (not edge_sub_type).
+    # We retrieve edge_sub_type from the task via the futures dict after completion.
     print(f"Executing {len(tasks)} Fact-to-Fact evaluations across {max_workers} threads...")
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # Re-using the _cross_chunk_fact_worker you already wrote
         futures = {
-            executor.submit(_cross_chunk_fact_worker, fact_edge_constructor, *t): t
+            executor.submit(_cross_chunk_fact_worker, fact_edge_constructor, *t[:6]): t
             for t in tasks
         }
 
         for future in as_completed(futures):
             try:
+                task = futures[future]
+                edge_sub_type = task[6]
                 f1_id, f2_id, edge_info = future.result()
 
-                # Safely mutate the graph in the main thread
                 graph.network.add_edge(
                     f1_id, f2_id,
                     description=edge_info.description_1_2,
                     label=edge_info.label_1_2,
                     edge_type="fact_fact",
+                    edge_sub_type=edge_sub_type,
                     score=edge_info.relevance_score
                 )
-
                 graph.network.add_edge(
                     f2_id, f1_id,
                     description=edge_info.description_2_1,
                     label=edge_info.label_2_1,
                     edge_type="fact_fact",
+                    edge_sub_type=edge_sub_type,
                     score=edge_info.relevance_score
                 )
             except Exception as e:
@@ -1019,11 +1026,11 @@ def _bulk_global_fact_worker(bulk_edge_constructor, int_to_uuid, numbered_facts_
     return int_to_uuid, result
 
 
-def _run_bulk_fact_edge_llm(graph: Graph, cluster_lists: list, bulk_edge_constructor, max_workers: int):
+def _run_bulk_fact_edge_llm(graph: Graph, cluster_lists: list, bulk_edge_constructor, max_workers: int, edge_sub_type: str):
     """
     Prepares numbered-fact strings for each cluster, runs parallel LLM calls,
     then writes the resulting edges to the graph (main thread only).
-    Called once per clustering round.
+    Called once per clustering round with the appropriate edge_sub_type tag.
     """
     tasks = []
     for cluster_fact_ids in cluster_lists:
@@ -1066,6 +1073,7 @@ def _run_bulk_fact_edge_llm(graph: Graph, cluster_lists: list, bulk_edge_constru
                         description=edge_pair.description_forward,
                         label=edge_pair.label_forward,
                         edge_type="fact_fact",
+                        edge_sub_type=edge_sub_type,
                         score=edge_pair.relevance_score
                     )
                     graph.network.add_edge(
@@ -1073,6 +1081,7 @@ def _run_bulk_fact_edge_llm(graph: Graph, cluster_lists: list, bulk_edge_constru
                         description=edge_pair.description_backward,
                         label=edge_pair.label_backward,
                         edge_type="fact_fact",
+                        edge_sub_type=edge_sub_type,
                         score=edge_pair.relevance_score
                     )
             except Exception as e:
@@ -1143,7 +1152,7 @@ def construct_edges_between_facts_clustered(graph: Graph, top_k: int = 10, skip_
             entity_clusters.setdefault(node.cluster, []).append(node.node)
         entity_cluster_lists = [c for c in entity_clusters.values() if len(c) > 1]
         print(f"Round 1: {len(entity_cluster_lists)} clusters → running {len(entity_cluster_lists)} bulk LLM calls...")
-        _run_bulk_fact_edge_llm(graph, entity_cluster_lists, bulk_edge_constructor, max_workers)
+        _run_bulk_fact_edge_llm(graph, entity_cluster_lists, bulk_edge_constructor, max_workers, edge_sub_type="global_topk_entity_cluster")
     else:
         print("Round 1: No candidate edges found, skipping.")
 
@@ -1180,7 +1189,7 @@ def construct_edges_between_facts_clustered(graph: Graph, top_k: int = 10, skip_
             topk_clusters.setdefault(node.cluster, []).append(node.node)
         topk_cluster_lists = [c for c in topk_clusters.values() if len(c) > 1]
         print(f"Round 2: {len(topk_cluster_lists)} clusters → running {len(topk_cluster_lists)} bulk LLM calls...")
-        _run_bulk_fact_edge_llm(graph, topk_cluster_lists, bulk_edge_constructor, max_workers)
+        _run_bulk_fact_edge_llm(graph, topk_cluster_lists, bulk_edge_constructor, max_workers, edge_sub_type="global_topk_balanced")
     else:
         print("Round 2: No candidate edges found, skipping.")
 
@@ -1218,7 +1227,7 @@ def construct_edges_between_facts_clustered(graph: Graph, top_k: int = 10, skip_
             midk_clusters.setdefault(node.cluster, []).append(node.node)
         midk_cluster_lists = [c for c in midk_clusters.values() if len(c) > 1]
         print(f"Round 3: {len(midk_cluster_lists)} clusters → running {len(midk_cluster_lists)} bulk LLM calls...")
-        _run_bulk_fact_edge_llm(graph, midk_cluster_lists, bulk_edge_constructor, max_workers)
+        _run_bulk_fact_edge_llm(graph, midk_cluster_lists, bulk_edge_constructor, max_workers, edge_sub_type="global_middlek_balanced_cluster")
     else:
         print("Round 3: No candidate edges found, skipping.")
 
@@ -1227,11 +1236,11 @@ def construct_edges_between_facts_clustered(graph: Graph, top_k: int = 10, skip_
 
 def construct_initial_edges(graph: Graph, threshold: float = 0.5, max_workers: int = 10, mode:str = "linear"):
     if mode == "linear":
+        # Entity→fact edges are created during fact extraction (BatchedFactAssembler) using
+        # entity_relation_labels stored on each Fact, so no separate entity edge step is needed here.
         if max_workers == 1:
-            construct_edges_between_entities_and_facts(graph, entity_batch_size=5)
             construct_edges_between_same_chunk_facts_bulk(graph)
         else:
-            construct_edges_between_entities_and_facts_parallel(graph, entity_batch_size=5, max_workers=max_workers)
             construct_edges_between_same_chunk_facts_bulk_parallel(graph, max_workers=max_workers)
     else:
         if max_workers == 1:

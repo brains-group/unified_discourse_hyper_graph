@@ -46,7 +46,7 @@ class Attribute(BaseModel):
 class Fact(BaseModel):
     # Add this configuration to make instances hashable
     model_config = ConfigDict(frozen=True)
-    
+
     name: str
     sentence: str
     macro_topics: List[str]
@@ -54,6 +54,9 @@ class Fact(BaseModel):
     answered_questions: Optional[List[str]]
     follow_up_questions: Optional[List[str]]
     entities: List[EntityFingerprint]
+    # Populated during batch metadata extraction so Graph.add_fact can create entity→fact edges
+    # without a separate LLM call. Each entry is (entity_name, relation_label).
+    entity_relation_labels: Tuple[Tuple[str, str], ...] = Field(default=())
 
 class Chunk(BaseModel):
     # Add this configuration to make instances hashable

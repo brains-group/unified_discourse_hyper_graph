@@ -58,6 +58,19 @@ class FactAssembler(dspy.Module):
 # Batched fact extraction
 # ---------------------------------------------------------------------------
 
+class EntityRelation(BaseModel):
+    """Holds the relation label for one entity's role within a specific fact."""
+    entity_name: str = Field(
+        ...,
+        description="Entity name exactly as it appears in the entity_names list. Do NOT alter casing or spelling."
+    )
+    relation_label: str = Field(
+        ...,
+        description="Strict 2-4 word UPPERCASE label for this entity's precise action, state, or role in the fact "
+                    "(e.g., IS_POLICYHOLDER, INITIATED_ACTION, LOCATED_AT, DEFINES_TERM, SUFFERED_LOSS)."
+    )
+
+
 class FactBatchItem(BaseModel):
     """Holds metadata for one fact within a batch LLM call."""
 
@@ -85,6 +98,11 @@ class FactBatchItem(BaseModel):
         ...,
         description="Subset of the provided entity_names that appear in this specific fact. May be empty."
     )
+    entity_relations: List[EntityRelation] = Field(
+        default_factory=list,
+        description="For each entity in entity_names, its precise functional role in this specific fact. "
+                    "Must have exactly one EntityRelation per entry in entity_names."
+    )
 
 
 class BatchedFactMetaExtractor(dspy.Signature):
@@ -103,6 +121,11 @@ class BatchedFactMetaExtractor(dspy.Signature):
     - answered_questions: 2-4 questions this fact answers.
     - follow_up_questions: 2-4 follow-up questions a reader might have.
     - entity_names: Choose ONLY from the provided entity_names — pick the subset that appear in this specific fact.
+    - entity_relations: For each entity you listed in entity_names, output one EntityRelation with:
+        - entity_name: EXACTLY as provided in entity_names (do NOT alter casing or spelling).
+        - relation_label: a strict 2-4 word UPPERCASE label for the entity's role in this specific fact
+          (e.g., IS_POLICYHOLDER, INITIATED_ACTION, LOCATED_AT, DEFINES_TERM, SUFFERED_LOSS).
+      You MUST produce one EntityRelation per entity in entity_names. Do not skip any.
 
     You MUST return exactly one result per numbered fact. Do NOT skip any fact IDs.
     """
@@ -220,10 +243,21 @@ class BatchedFactAssembler(dspy.Module):
                         chunk_topics=["unknown"],
                         entities=[],
                         answered_questions=[],
-                        follow_up_questions=[]
+                        follow_up_questions=[],
+                        entity_relation_labels=()
                     )
                 else:
                     linked_entities = _link_entity_names_to_fingerprints(item.entity_names, chunk_entities)
+
+                    # Build a name→label map from the LLM output and align it with linked entities.
+                    # We use the linked entity fingerprint name (not the raw LLM name) as the key
+                    # so the mapping survives the fuzzy name-matching done in _link_entity_names_to_fingerprints.
+                    relation_map = {rel.entity_name: rel.relation_label for rel in item.entity_relations}
+                    entity_relation_labels = tuple(
+                        (ef.name, relation_map.get(ef.name, ef.type))
+                        for ef in linked_entities
+                    )
+
                     fact = Fact(
                         name=item.name,
                         sentence=sentence,
@@ -231,7 +265,8 @@ class BatchedFactAssembler(dspy.Module):
                         chunk_topics=item.chunk_topics,
                         entities=linked_entities,
                         answered_questions=item.answered_questions,
-                        follow_up_questions=item.follow_up_questions
+                        follow_up_questions=item.follow_up_questions,
+                        entity_relation_labels=entity_relation_labels
                     )
 
                 all_facts.append(fact)

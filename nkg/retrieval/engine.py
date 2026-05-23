@@ -341,17 +341,38 @@ class Retriever:
             max_depth: int = 3,
             beam_width: int = 3,
             final_top_k: int = 5,
+            beam_mmr_lambda: float = 0.5,
+            final_mmr_lambda: float = 0.6,
             return_raw_paths: bool = False,
             verbose=False,
-            mode="all"
+            mode="all",
+            search_mode: str = "beam_search"
     ) -> str:
         """
         The main public API for the Retriever.
         Takes a natural language query and returns a single formatted context string
         containing the most logically sound traversal paths.
+
+        search_mode:      Controls the graph expansion strategy.
+                          "beam_search"     → Bounded beam search with local MMR at every
+                                             propagation layer (original behaviour).
+                          "blind_expansion" → Follows ALL valid edges from each seed up to
+                                             max_depth with no pruning during traversal.
+                                             The full candidate set is then ranked globally
+                                             by the cross-encoder + MMR.
+        beam_mmr_lambda:  (beam_search only) Relevance/diversity trade-off during expansion.
+                          Higher → more relevant edges chosen; lower → more diverse branches.
+                          Range [0.0, 1.0].
+        final_mmr_lambda: Controls the relevance/diversity trade-off in the final global
+                          re-ranking pass (cross-encoder scores vs path-embedding diversity).
+                          Higher → top-ranked paths by relevance; lower → maximally diverse
+                          context paragraphs. Range [0.0, 1.0].
         """
+        if search_mode not in ("beam_search", "blind_expansion"):
+            raise ValueError(f"Unknown search_mode '{search_mode}'. Choose 'beam_search' or 'blind_expansion'.")
+
         if verbose:
-            print(f"\n--- Starting Retrieval Pipeline for: '{query}' ---")
+            print(f"\n--- Starting Retrieval Pipeline for: '{query}' (search_mode={search_mode}) ---")
 
         # Step 1: Query Planning & Seed Selection
         seeds, plan = self.get_seeds(query, top_k=top_k_seeds, mode=mode)
@@ -360,17 +381,27 @@ class Retriever:
             print("No relevant seeds found.")
             return ""
 
-        # Step 2: Bounded Beam Search (Local MMR Edge Expansion)
+        # Step 2: Graph Expansion
         if verbose:
             print(f"Expanding {len(seeds)} seeds to a max fact depth of {max_depth}...")
-        completed_paths = expand_paths_batched(
-            engine=self,
-            seeds=seeds,
-            plan=plan,
-            max_depth=max_depth,
-            beam_width=beam_width,
-            mode=mode
-        )
+
+        if search_mode == "beam_search":
+            completed_paths = expand_paths_batched(
+                engine=self,
+                seeds=seeds,
+                plan=plan,
+                max_depth=max_depth,
+                beam_width=beam_width,
+                mode=mode,
+                mmr_lambda=beam_mmr_lambda
+            )
+        else:  # blind_expansion
+            completed_paths = expand_paths_blind(
+                engine=self,
+                seeds=seeds,
+                max_depth=max_depth,
+                mode=mode
+            )
 
         if verbose:
             print(f"Graph traversal generated {len(completed_paths)} candidate paths.")
@@ -381,7 +412,8 @@ class Retriever:
             query=query,
             completed_paths=completed_paths,
             cross_encoder=self.cross_encoder,
-            final_top_k=final_top_k
+            final_top_k=final_top_k,
+            mmr_lambda=final_mmr_lambda
         )
 
         # Step 4: Final Context Formatting

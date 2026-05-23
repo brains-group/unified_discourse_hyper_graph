@@ -229,7 +229,71 @@ def expand_paths(
 
 from collections import defaultdict
 
-def expand_paths_batched(engine, seeds, plan, max_depth=3, beam_width=3, mode="all", total_depth=None):
+
+def expand_paths_blind(engine, seeds, max_depth=3, mode="all", total_depth=None):
+    """
+    Blind expansion: starting from each seed, follow ALL valid edges outward up to
+    max_depth (fact hops) without any scoring or beam pruning during traversal.
+    The full set of completed paths is then passed to the global cross-encoder +
+    MMR ranking stage.
+
+    mode controls which edge types are followed:
+      "all"        → fact_fact, entity_fact, fact_entity
+      "discourse"  → fact_fact only
+      "hypergraph" → entity_fact, fact_entity only
+    """
+    graph = engine.graph
+    active_paths = [Path(seed, seed in graph.facts) for seed in seeds]
+    completed_paths = []
+
+    # total_depth caps full hop count so entity-heavy graphs don't explode
+    if total_depth is None:
+        total_depth = max_depth * 2
+
+    valid_edge_types = {
+        "all": {"fact_fact", "entity_fact", "fact_entity"},
+        "hypergraph": {"entity_fact", "fact_entity"},
+        "discourse": {"fact_fact"},
+    }[mode]
+
+    # Cache out-edges per node so multiple paths sharing a frontier node
+    # only pay the NetworkX adjacency lookup once per BFS level.
+    while active_paths:
+        next_active = []
+        edge_cache = {}
+
+        for path in active_paths:
+            current_id = path.current_node
+            if current_id not in edge_cache:
+                edge_cache[current_id] = list(graph.network.out_edges(current_id, data=True))
+
+            found_any = False
+            for u, v, edge_data in edge_cache[current_id]:
+                edge_type = edge_data.get("edge_type")
+
+                if edge_type not in valid_edge_types:
+                    continue
+                if v in path.visited_nodes:
+                    continue
+
+                found_any = True
+                is_fact = v in graph.facts
+                new_path = path.branch(v, is_fact, edge_type, edge_data)
+
+                if new_path.fact_depth >= max_depth or new_path.full_depth >= total_depth:
+                    completed_paths.append(new_path)
+                else:
+                    next_active.append(new_path)
+
+            if not found_any:
+                completed_paths.append(path)
+
+        active_paths = next_active
+
+    return completed_paths
+
+
+def expand_paths_batched(engine, seeds, plan, max_depth=3, beam_width=3, mode="all", total_depth=None, mmr_lambda=0.5):
     graph = engine.graph
     active_paths = [Path(seed, seed in graph.facts) for seed in seeds]
     completed_paths = []
@@ -336,11 +400,12 @@ def expand_paths_batched(engine, seeds, plan, max_depth=3, beam_width=3, mode="a
             cand_scores = [scores[i] for i, _ in items]
             cand_embs = np.vstack([diversity_vecs[i] for i, _ in items])
 
+
             chosen_local = compute_mmr(
                 candidate_scores=cand_scores,
                 candidate_embeddings=cand_embs,
                 top_k=beam_width,
-                lambda_param=0.5
+                lambda_param=mmr_lambda
             )
 
             for local_idx in chosen_local:
@@ -374,6 +439,7 @@ def rank_paths_global(
         completed_paths: List[Path],
         cross_encoder: CrossEncoder,
         final_top_k: int = 5,
+        mmr_lambda: float = 0.6,
         verbose=False
 ) -> Tuple[List[str], List[Path]]:
     """
@@ -401,7 +467,7 @@ def rank_paths_global(
         candidate_scores=list(ce_scores),
         candidate_embeddings=path_embeddings,
         top_k=final_top_k,
-        lambda_param=0.6  # Lean slightly towards relevance for the final output
+        lambda_param=mmr_lambda
     )
 
     final_strings = [assembled_strings[i] for i in selected_indices]

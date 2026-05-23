@@ -50,18 +50,23 @@ class ClusterResolution(dspy.Signature):
 # Default weights for the 3 embedding arrays
 SIM_WEIGHTS = {"name": 0.6, "role": 0.3, "type": 0.1}
 
-
 class GraphDeduplicator:
     def __init__(self, retrieval_model: SentenceTransformer):
         self.retrieval_model = retrieval_model
         self.resolver = dspy.ChainOfThought(ClusterResolution)
 
-    def _build_similarity_graph(self, graph: Graph, top_k: int = 15, threshold: float = 0.75) -> nx.Graph:
+    def _build_similarity_graph(self, graph: Graph, top_k: int = 15, threshold: float = 0.75,
+                                sim_weights: dict = None) -> nx.Graph:
         """
         Extracts entities, does 3 separate embedding passes, calculates combined cosine similarity,
         and builds a sparse, UNDIRECTED graph for Leiden clustering.
+
+        sim_weights controls the blend of name/role/type similarity. Defaults to the module-level
+        SIM_WEIGHTS constant if not provided.
         """
         print("Building similarity matrix for clustering...")
+
+        weights = sim_weights if sim_weights is not None else SIM_WEIGHTS
 
         entity_ids = list(graph.entities.keys())
         if not entity_ids:
@@ -83,9 +88,9 @@ class GraphDeduplicator:
 
         # Combine based on weights
         sim_total = (
-                (SIM_WEIGHTS["name"] * sim_name) +
-                (SIM_WEIGHTS["role"] * sim_role) +
-                (SIM_WEIGHTS["type"] * sim_type)
+                (weights["name"] * sim_name) +
+                (weights["role"] * sim_role) +
+                (weights["type"] * sim_type)
         )
 
         # Build Undirected Graph
@@ -167,21 +172,25 @@ class GraphDeduplicator:
             print(f"Error resolving cluster: {e}")
             return []
 
-    def deduplicate(self, graph: Graph, iterations: int = 1, max_workers: int = 15) -> Graph:
+    def deduplicate(self, graph: Graph, iterations: int = 1, max_workers: int = 15,
+                    max_cluster_size: int = 64, sim_weights: dict = None) -> Graph:
         """
         Main entry point. Iteratively clusters, calls LLM workers, and executes
         surgical rewiring on the main thread.
+
+        max_cluster_size controls the Leiden clustering granularity.
+        sim_weights overrides the default name/role/type blending (see SIM_WEIGHTS constant).
         """
         for iteration in range(iterations):
             print(f"\n--- Deduplication Iteration {iteration + 1} ---")
 
             # STEP 1: Fast clustering
-            sim_graph = self._build_similarity_graph(graph)
+            sim_graph = self._build_similarity_graph(graph, sim_weights=sim_weights)
             if len(sim_graph.nodes) == 0:
                 print("Graph is empty. Skipping deduplication.")
                 break
 
-            clusters_raw = hierarchical_leiden(sim_graph, max_cluster_size=64, random_seed=42)
+            clusters_raw = hierarchical_leiden(sim_graph, max_cluster_size=max_cluster_size, random_seed=42)
 
             # Group into list of lists
             clusters = {}

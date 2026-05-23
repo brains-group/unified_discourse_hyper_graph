@@ -8,6 +8,7 @@ from nkg.index.construction.construct_edges import construct_initial_edges, cons
 from nkg.utils.general import batch_list  # Adjust import path if needed
 from nkg.utils.config import configure_dspy
 from nkg.utils.chunking import chunk_text_by_tokens
+from nkg.deduplication.entity_deduplication import GraphDeduplicator
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -152,18 +153,31 @@ def build_index_from_file(
         edge_threshold: float = 0.5,
         top_k: int = 10,
         max_sub_workers: int = 10,
-        fact_batch_size: int = 10,
-        edge_mode: str = "linear"
+        fact_batch_size: int = 15,
+        edge_mode: str = "linear",
+        run_deduplication: bool = True,
+        dedup_model_name: str = "all-MiniLM-L6-v2",
+        dedup_sim_weights: dict = None,
+        dedup_iterations: int = 1,
+        dedup_max_cluster_size: int = 64,
 ) -> Graph:
     """
     Reads a single text file, breaks it into chunks via tokenizer, processes chunks
-    in parallel to build local subgraphs, merges them all into a global graph,
-    and constructs cross-chunk fact-to-fact edges across the entire document scope.
+    in parallel to build local subgraphs, merges them into a global graph, runs
+    entity deduplication, then constructs cross-chunk fact-to-fact edges.
 
     edge_mode controls the global fact edge construction strategy:
       "linear"    — one LLM call per candidate fact pair (original method)
       "clustered" — groups facts into clusters via similarity + Leiden, then one
                     bulk LLM call per cluster (much fewer LLM calls total)
+
+    Deduplication parameters:
+      run_deduplication    — set False to skip deduplication entirely
+      dedup_model_name     — sentence-transformers model used for entity similarity
+      dedup_sim_weights    — dict with keys "name", "role", "type" controlling the
+                             blend of embedding dimensions (default: {"name":0.6, "role":0.3, "type":0.1})
+      dedup_iterations     — number of deduplicate-then-re-cluster passes
+      dedup_max_cluster_size — max Leiden cluster size during deduplication
     """
     # Step 1: Read the text file
     if not os.path.exists(filepath):
@@ -206,17 +220,33 @@ def build_index_from_file(
                 print(f"Error processing chunk subgraph: {e}")
 
     # Step 4: Global Merge
-    # We combine all subgraphs into one master graph BEFORE cross-chunk comparisons
-    # to ensure the vector search has access to the entire document's context.
+    # We combine all subgraphs into one master graph BEFORE deduplication and cross-chunk
+    # comparisons so the vector search has access to the entire document's context.
     print("\n--- Merging all local subgraphs into a Unified Global Graph ---")
     global_graph = Graph()
     for local_graph in local_graphs:
         global_graph.merge(local_graph)
 
-    print(
-        f"Merge complete. Base Graph Size: {global_graph.network.number_of_nodes()} nodes, {global_graph.network.number_of_edges()} edges")
+    print(f"Merge complete. Base Graph Size: {global_graph.network.number_of_nodes()} nodes, "
+          f"{global_graph.network.number_of_edges()} edges")
 
-    # Step 5: Global Cross-Chunk Edge Construction
+    # Step 5: Entity Deduplication (before global edges so deduped entities feed into vector search)
+    if run_deduplication:
+        print(f"\n--- Running Entity Deduplication ({dedup_iterations} iteration(s)) ---")
+        from sentence_transformers import SentenceTransformer
+        retrieval_model = SentenceTransformer(dedup_model_name)
+        deduplicator = GraphDeduplicator(retrieval_model=retrieval_model)
+        global_graph = deduplicator.deduplicate(
+            global_graph,
+            iterations=dedup_iterations,
+            max_workers=max_sub_workers,
+            max_cluster_size=dedup_max_cluster_size,
+            sim_weights=dedup_sim_weights,
+        )
+        print(f"After deduplication: {global_graph.network.number_of_nodes()} nodes, "
+              f"{global_graph.network.number_of_edges()} edges")
+
+    # Step 6: Global Cross-Chunk Edge Construction
     print(f"\n--- Constructing global cross-chunk edges (mode={edge_mode}, top_k={top_k}) ---")
     construct_edges_during_merge(
         global_graph,
@@ -231,49 +261,36 @@ def build_index_from_file(
 
 
 if __name__ == "__main__":
-    # Example execution configuration
     configure_dspy(max_tokens=45000)
 
     import litellm
-
-    # Tell litellm to wait up to 2 minutes for a response
     litellm.request_timeout = 120
 
-    # Execute linear pipeline on a single file
+    # Deduplication, global edge construction, and the full pipeline are now all done inside
+    # build_index_from_file. Pass dedup_* params to control deduplication behavior.
     final_graph = build_index_from_file(
-        filepath="./evaluation_data/ten_contracts_dataset/contracts/contract_10_indexed_universal.txt",  # Update with your target file
+        filepath="./evaluation_data/ten_contracts_dataset/contracts/contract_7_term_with_riders.txt",
         model_name="Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
-        max_workers=50,  # Threads for processing chunks concurrently
+        max_workers=100,
         chunk_size=600,
         overlap=50,
         edge_threshold=0.5,
-        top_k=12,  # Number of K-nearest facts to sample
-        max_sub_workers=100,  # Threads used internally by LLM batching
-        edge_mode="clustered"
+        top_k=12,
+        max_sub_workers=10,
+        edge_mode="clustered",
+        run_deduplication=True,
+        dedup_model_name="google/embeddinggemma-300m",
+        dedup_iterations=1,
+        dedup_max_cluster_size=64,
+        dedup_sim_weights={"name": 0.5, "role": 0.3, "type": 0.2},
+        fact_batch_size=10
     )
 
-    # Export pre-deduplication
-    final_graph.export_graph("./kg_outputs/c10_iu_1.graphml")
-
-    print(
-        f"\nRaw Graph Size: {final_graph.network.number_of_nodes()} nodes, {final_graph.network.number_of_edges()} edges")
+    print(f"\nFinal Graph Size: {final_graph.network.number_of_nodes()} nodes, "
+          f"{final_graph.network.number_of_edges()} edges")
     print(f"Average Entity Edges: {final_graph.avg_entity_edges()}")
 
-    # Run Deduplication
-    print("\nRunning Entity Deduplication...")
-    from nkg.deduplication.entity_deduplication import GraphDeduplicator
-    from sentence_transformers import SentenceTransformer
-    
-    retrieval_model = SentenceTransformer("google/embeddinggemma-300m")
-    deduplicator = GraphDeduplicator(retrieval_model=retrieval_model)
-    final_graph = deduplicator.deduplicate(final_graph, max_workers=100, iterations=1)
-
-    print(
-        f"Final Graph Size: {final_graph.network.number_of_nodes()} nodes, {final_graph.network.number_of_edges()} edges")
-    print(f"Average Entity Edges: {final_graph.avg_entity_edges()}")
-
-    # Export final product
-    final_graph.export_graph("./kg_outputs/c10_iu_1.graphml")
+    final_graph.export_graph("./kg_outputs/c7riders_7.graphml")
 
 
 # if __name__ == "__main__":

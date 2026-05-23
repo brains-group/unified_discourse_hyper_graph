@@ -74,10 +74,18 @@ class Graph:
         if not cascading:
             return id
 
+        # Build name→label lookup from entity_relation_labels so we can tag entity→fact edges
+        name_to_relation = dict(fact.entity_relation_labels)
+
         entity_ids = self.add_entities(fact.entities)
         for entity_id in entity_ids:
-            entity_type = self.entities[entity_id].type
-            self.network.add_edge(id, entity_id, edge_type="fact_entity", label=entity_type)
+            entity = self.entities[entity_id]
+            self.network.add_edge(id, entity_id, edge_type="fact_entity", label=entity.type)
+            # Create the reverse entity→fact edge using the LLM-generated relation label.
+            # Falls back to entity type if no label was produced for this entity.
+            relation_label = name_to_relation.get(entity.name, entity.type)
+            self.network.add_edge(entity_id, id, edge_type="entity_fact", label=relation_label)
+
         return id
 
     def add_chunk(self, chunk, cascading=True):
