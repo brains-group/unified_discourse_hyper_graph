@@ -1,0 +1,3 @@
+Title: Fish curve
+
+A fish curve is an ellipse negative pedal curve that is shaped like a fish. In a fish curve, the pedal point is at the focus for the special case of the squared eccentricity formula_1. The parametric equations for a fish curve correspond to those of the associated ellipse.

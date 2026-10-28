@@ -1,0 +1,3 @@
+Title: BoardGameGeek
+
+BoardGameGeek is an online forum for board gaming hobbyists and a game database that holds reviews, images and videos for over 84,000 different tabletop games, including European-style board games, wargames, and card games. In addition to the game database, the site allows users to rate games on a 1–10 scale and publishes a ranked list of board games.

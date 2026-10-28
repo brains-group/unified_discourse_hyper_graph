@@ -1,0 +1,26 @@
+% ---- New Table 5: offline construction tokens, HotpotQA / MuSiQue / G-Medical (replaces QuALITY) / Contract QA (5 long-form contracts).
+% ---- Same accounting as the previous table: LLM input/output tokens of index construction only (query-time calls excluded).
+\begin{table*}[t]
+\centering
+\caption{\normalfont \textbf{Offline construction tokens (millions), paid once per corpus}. In and Out denote LLM input and output tokens. Contract QA sums the five per-contract indexes. Red shades are evenly spaced by distinct rank within each column; darker indicates fewer tokens, and ties share a shade. LogicRAG performs no offline construction; \sys{} with appended passages uses the same index as \sys{}. Reader-context sizes appear in Table~\ref{tab:all_results}.}
+\label{tab:cost_context_new}  % rename to tab:cost_context when this replaces the current table
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}l*{8}{>{\centering\arraybackslash}X}@{}}
+\toprule
+& \multicolumn{2}{c}{HotpotQA} & \multicolumn{2}{c}{MuSiQue} & \multicolumn{2}{c}{G-Medical} & \multicolumn{2}{c}{Contract QA} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(l){8-9}
+Method & In & Out & In & Out & In & Out & In & Out \\
+\midrule
+HippoRAG 2 & \cellcolor{UNHTokenRed!47}9.25 & \cellcolor{UNHTokenRed!47}3.59 & \cellcolor{UNHTokenRed!47}10.50 & \cellcolor{UNHTokenRed!47}3.75 & \cellcolor{UNHTokenRed!39}1.18 & \cellcolor{UNHTokenRed!39}0.47 & \cellcolor{UNHTokenRed!47}0.28 & \cellcolor{UNHTokenRed!47}0.08 \\
+MemGraphRAG & \cellcolor{UNHTokenRed!16}158.70 & \cellcolor{UNHTokenRed!32}16.51 & \cellcolor{UNHTokenRed!16}153.45 & \cellcolor{UNHTokenRed!32}16.05 & \cellcolor{UNHTokenRed!8}23.67 & \cellcolor{UNHTokenRed!16}2.42 & \cellcolor{UNHTokenRed!8}7.12 & \cellcolor{UNHTokenRed!16}0.79 \\
+HyGRAG & \cellcolor{UNHTokenRed!39}13.77 & \cellcolor{UNHTokenRed!39}4.33 & \cellcolor{UNHTokenRed!39}15.26 & \cellcolor{UNHTokenRed!39}4.52 & \cellcolor{UNHTokenRed!47}1.04 & \cellcolor{UNHTokenRed!47}0.27 & \cellcolor{UNHTokenRed!39}0.46 & \cellcolor{UNHTokenRed!39}0.09 \\
+\textbf{\sys{}} & \cellcolor{UNHTokenRed!24}108.12 & \cellcolor{UNHTokenRed!8}50.57 & \cellcolor{UNHTokenRed!24}96.43 & \cellcolor{UNHTokenRed!8}42.74 & \cellcolor{UNHTokenRed!16}14.16 & \cellcolor{UNHTokenRed!8}4.21 & \cellcolor{UNHTokenRed!16}3.08 & \cellcolor{UNHTokenRed!8}1.27 \\
+\midrule
+MS GraphRAG & \cellcolor{UNHTokenRed!32}47.37 & \cellcolor{UNHTokenRed!16}21.40 & \cellcolor{UNHTokenRed!32}49.33 & \cellcolor{UNHTokenRed!16}22.43 & \cellcolor{UNHTokenRed!32}4.09 & \cellcolor{UNHTokenRed!32}1.72 & \cellcolor{UNHTokenRed!32}1.26 & \cellcolor{UNHTokenRed!32}0.44 \\
+HyperGraphRAG & \cellcolor{UNHTokenRed!8}161.93 & \cellcolor{UNHTokenRed!24}17.57 & \cellcolor{UNHTokenRed!8}189.95 & \cellcolor{UNHTokenRed!24}19.59 & \cellcolor{UNHTokenRed!24}6.54 & \cellcolor{UNHTokenRed!24}1.93 & \cellcolor{UNHTokenRed!24}2.68 & \cellcolor{UNHTokenRed!24}0.74 \\
+\midrule
+LogicRAG & \cellcolor{UNHTokenRed!55}0 & \cellcolor{UNHTokenRed!55}0 & \cellcolor{UNHTokenRed!55}0 & \cellcolor{UNHTokenRed!55}0 & \cellcolor{UNHTokenRed!55}0 & \cellcolor{UNHTokenRed!55}0 & \cellcolor{UNHTokenRed!55}0 & \cellcolor{UNHTokenRed!55}0 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

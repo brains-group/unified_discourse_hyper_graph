@@ -1,0 +1,25 @@
+{
+ "contract": "capital_health_plan",
+ "source": "long_qa (QA only) from long",
+ "tokens_cl100k": 48640,
+ "chars": 407598,
+ "chunks_1200": 45,
+ "qa": 111,
+ "facts": 0,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 40,
+  "CAT2_RELATIONAL_LOOKUP": 27,
+  "CAT3_CONDITIONAL_REASONING": 19,
+  "CAT4_MULTIHOP_REASONING": 15,
+  "CAT5_UNANSWERABLE": 10
+ },
+ "sha256": {
+  "questions.json": "1db0b164f75dbd0ee667626bbfb21b4ee0d9b8865b30cbb8d4b9093bdc5f5323",
+  "documents.json": "71b5dc67577c0ba370c62a505c19beaea0d212414257d78d348facf579082bd2",
+  "chunks.json": "45c3c370a57be261ffc80266c57fca4ae1a8981475249f1367a57df3245d2d60",
+  "chunks_logicrag.json": "45c3c370a57be261ffc80266c57fca4ae1a8981475249f1367a57df3245d2d60",
+  "memgraphrag_corpus.txt": "f7fa437d19e057c27d6df30e77efbb9f1ea1a2cb992d61bfedef03b828a8818f",
+  "contract.txt": "f7fa437d19e057c27d6df30e77efbb9f1ea1a2cb992d61bfedef03b828a8818f",
+  "ms_graphrag_input/capital_health_plan.txt": "f7fa437d19e057c27d6df30e77efbb9f1ea1a2cb992d61bfedef03b828a8818f"
+ }
+}

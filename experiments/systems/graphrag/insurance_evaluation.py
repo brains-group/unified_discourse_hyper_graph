@@ -1,36 +1,46 @@
 #!/usr/bin/env python3
 """
-Microsoft GraphRAG Insurance Contract Evaluation — Single Script
+Microsoft GraphRAG Insurance Contract Evaluation
 Targets graphrag==2.7.0.
 
-Runs graph construction (via the graphrag CLI) followed by QA and/or Fact
-evaluation, using the SAME judge prompts as the KGGen and HyperGraphRAG
-scripts so the three systems can be compared fairly.
+Three modes:
+  construction  — build and save the GraphRAG workspace for each contract
+  evaluation    — run QA/Fact evaluation on already-built workspaces
+  auto          — construction + evaluation in one go (legacy behaviour)
 
-Single contract:
-    python graphrag_eval.py \
-        --contract path/to/contract.txt \
-        --qa-file path/to/qa.json \
-        --fact-file path/to/facts.json \
-        --out-dir ./results
+Construction mode saves graphrag_workspace/ + construction.json per contract under:
+    out_dir/contract_name/
 
-All contracts in both dataset sections:
-    python graphrag_eval.py \
-        --all \
-        --eval-data-dir ./evaluation_data \
-        --out-dir ./results
+Evaluation mode scans a target directory for construction directories, skips any
+already evaluated under the same retrieval settings, and saves eval JSON output.
 
-Only ten_contracts_dataset:
-    python graphrag_eval.py \
-        --ten-contracts-dataset \
-        --eval-data-dir ./evaluation_data \
-        --out-dir ./results
+---------------------------------------------------------------------
+Construction examples:
+    python insurance_evaluation.py --mode construction \\
+        --ten-contracts-dataset --eval-data-dir ./evaluation_data \\
+        --out-dir ./latest_results/insurance/graphrag/ten_contracts_dataset
 
-Only long_form_contracts:
-    python graphrag_eval.py \
-        --long-form-contracts \
-        --eval-data-dir ./evaluation_data \
-        --out-dir ./results
+    python insurance_evaluation.py --mode construction \\
+        --contract evaluation_data/ten_contracts_dataset/contracts/contract_1.txt \\
+        --out-dir ./latest_results/insurance/graphrag
+
+Evaluation examples:
+    # Evaluate all workspaces under a parent directory
+    python insurance_evaluation.py --mode evaluation \\
+        --target-dir ./latest_results/insurance/graphrag/ten_contracts_dataset \\
+        --eval-data-dir ./evaluation_data \\
+        --eval-type both
+
+    # Evaluate a single workspace directory
+    python insurance_evaluation.py --mode evaluation \\
+        --target-dir ./latest_results/insurance/graphrag/ten_contracts_dataset/contract_1 \\
+        --eval-data-dir ./evaluation_data --eval-type qa
+
+Auto mode example (legacy — construction + evaluation together):
+    python insurance_evaluation.py --mode auto \\
+        --ten-contracts-dataset --eval-data-dir ./evaluation_data \\
+        --out-dir ./latest_results/insurance/graphrag/ten_contracts_dataset
+---------------------------------------------------------------------
 
 ARCHITECTURE
 ------------
@@ -66,6 +76,7 @@ import sys
 import json
 import time
 import uuid
+import hashlib
 import shutil
 import argparse
 import subprocess
@@ -97,6 +108,13 @@ from graphrag.query.structured_search.local_search.mixed_context import LocalSea
 from graphrag.config.models.vector_store_schema_config import VectorStoreSchemaConfig
 from graphrag.vector_stores.lancedb import LanceDBVectorStore
 from graphrag.tokenizer.get_tokenizer import get_tokenizer as graphrag_get_tokenizer
+
+
+# =============================================================================
+# CONSTANTS
+# =============================================================================
+DATASET_SUBDIRS  = ["ten_contracts_dataset", "long_form_contracts"]
+CONSTRUCTION_JSON = "construction.json"
 
 
 # =============================================================================
@@ -176,12 +194,6 @@ class LiteLLMEmbedder:
 
 
 # =============================================================================
-# DATASET PATH RESOLUTION  (identical to kggen_eval.py / hgrag_eval.py)
-# =============================================================================
-DATASET_SUBDIRS = ["ten_contracts_dataset", "long_form_contracts"]
-
-
-# =============================================================================
 # TEE STREAM — duplicates all stdout to a log file
 # =============================================================================
 class TeeStream:
@@ -244,12 +256,15 @@ class ErrorTracker:
             }
 
 
+# =============================================================================
+# DATASET PATH RESOLUTION
+# =============================================================================
 def resolve_paths_for_contract(contract_path: str, dataset_root: str):
     base        = os.path.splitext(os.path.basename(contract_path))[0]
     section_dir = None
     for subdir in DATASET_SUBDIRS:
         candidate = os.path.join(dataset_root, subdir)
-        if contract_path.startswith(os.path.abspath(candidate)):
+        if os.path.abspath(contract_path).startswith(os.path.abspath(candidate)):
             section_dir = candidate
             break
 
@@ -275,9 +290,6 @@ def resolve_paths_for_contract(contract_path: str, dataset_root: str):
 def collect_all_contracts(eval_data_dir: str, subdirs=None):
     if subdirs is None:
         subdirs = DATASET_SUBDIRS
-    # Contracts that are skipped in kggen_eval.py for known compatibility reasons.
-    # Keeping the same exclusion list ensures all three systems are evaluated on
-    # an identical set of contracts for fair comparison.
     SKIP_CONTRACTS = {} #{"2025_pdp_contract.txt", "all_state_auto_insurance.txt"}
     triplets = []
     for subdir in subdirs:
@@ -303,13 +315,43 @@ def collect_all_contracts(eval_data_dir: str, subdirs=None):
 
 
 # =============================================================================
+# RETRIEVAL ARGS HELPERS
+# =============================================================================
+def retrieval_params_hash(retrieval_params: dict) -> str:
+    serialized = json.dumps(retrieval_params, sort_keys=True)
+    return hashlib.md5(serialized.encode()).hexdigest()[:10]
+
+
+def eval_output_filename(eval_type: str, retrieval_params: dict) -> str:
+    h = retrieval_params_hash(retrieval_params)
+    return f"eval_{eval_type}_{h}.json"
+
+
+def is_construction_dir(path: str) -> bool:
+    if not os.path.isdir(path):
+        return False
+    cj = os.path.join(path, CONSTRUCTION_JSON)
+    if not os.path.exists(cj):
+        return False
+    try:
+        with open(cj, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        output_dir = data.get("output_dir", "")
+        return os.path.exists(os.path.join(output_dir, "entities.parquet"))
+    except Exception:
+        return False
+
+
+# =============================================================================
 # WORKSPACE SETUP — graphrag init + custom settings.yaml
 # =============================================================================
 def setup_graphrag_workspace(workspace_dir: str, source_file: str,
                              model: str, embed_model: str,
                              api_base: str, embed_api_base: str, api_key: str,
                              chunk_size: int, chunk_overlap: int,
-                             max_gleanings: int, concurrent_requests: int):
+                             max_gleanings: int, concurrent_requests: int,
+                             community_max_length: int = 1500,
+                             batch_max_tokens: int = 1700):
     """
     1. graphrag init  — creates the workspace skeleton + default prompts.
     2. Copy contract into input/.
@@ -347,7 +389,6 @@ def setup_graphrag_workspace(workspace_dir: str, source_file: str,
             requests_per_minute: 1000
             max_retries: 5
             concurrent_requests: {concurrent_requests}
-            max_tokens: 10000
           default_embedding_model:
             api_key: {api_key}
             type: embedding
@@ -385,7 +426,7 @@ def setup_graphrag_workspace(workspace_dir: str, source_file: str,
           # than cl100k_base, so 2000 cl100k tokens → ~2100-2400 SentencePiece
           # tokens → ContextWindowExceededError on long-form contracts.
           # 1500 cl100k tokens → ~1575-1800 SentencePiece tokens → safely under 2048.
-          max_length: 1500
+          max_length: {community_max_length}
           max_input_length: 8000 # default: 8000 — unchanged
         cluster_graph:
           max_cluster_size: 10   # default: 10 — unchanged
@@ -395,12 +436,7 @@ def setup_graphrag_workspace(workspace_dir: str, source_file: str,
                                  # no benefit for this evaluation.
         embed_text:
           enabled: true
-          # batch_max_tokens default is 8191 (sized for OpenAI text-embedding-3-small).
-          # Lowered to 1700 as a safety net: the TokenTextSplitter uses cl100k_base
-          # to count tokens, but the embedding model uses SentencePiece. Any text
-          # over 1700 cl100k tokens is split and its chunk embeddings averaged,
-          # keeping each individual embed request under the 2048 SentencePiece limit.
-          batch_max_tokens: 1700
+          batch_max_tokens: {batch_max_tokens}
     """)
 
     with open(os.path.join(workspace_dir, "settings.yaml"), "w", encoding="utf-8") as f:
@@ -515,6 +551,8 @@ def build_graph(
     max_gleanings: int,
     concurrent_requests: int,
     error_tracker: ErrorTracker,
+    community_max_length: int = 1500,
+    batch_max_tokens: int = 1700,
 ):
     """Runs `graphrag index`, parses parquet artifacts, returns (output_dir, metrics)."""
     try:
@@ -530,6 +568,8 @@ def build_graph(
             chunk_overlap=chunk_overlap,
             max_gleanings=max_gleanings,
             concurrent_requests=concurrent_requests,
+            community_max_length=community_max_length,
+            batch_max_tokens=batch_max_tokens,
         )
     except Exception:
         error_tracker.record("graph_construction")
@@ -960,7 +1000,258 @@ def run_fact_evaluation(
 
 
 # =============================================================================
-# SINGLE CONTRACT PIPELINE
+# EVALUATE A SINGLE CONSTRUCTION DIRECTORY
+# =============================================================================
+def evaluate_construction_dir(
+    construction_dir: str,
+    eval_data_dir: str,
+    eval_type: str,
+    retrieval_params: dict,
+    embed_model: str,
+    embed_api_base: str,
+    api_key: str,
+    community_level: int,
+    tokenizer,
+    max_context_tokens: int,
+    max_workers: int,
+    force_evaluation: bool,
+):
+    """
+    Loads the GraphRAG workspace in construction_dir, resolves qa/fact files via
+    construction.json, runs evaluation, and saves the eval JSON output.
+    Skips if the same (eval_type, retrieval_params) was already evaluated unless
+    force_evaluation is True.
+    """
+    construction_json_path = os.path.join(construction_dir, CONSTRUCTION_JSON)
+
+    if not os.path.exists(construction_json_path):
+        print(f"[SKIP] {construction_dir}: missing {CONSTRUCTION_JSON}")
+        return
+
+    out_filename = eval_output_filename(eval_type, retrieval_params)
+    out_path     = os.path.join(construction_dir, out_filename)
+    if os.path.exists(out_path) and not force_evaluation:
+        print(f"[SKIP] Already evaluated ({out_filename}): {construction_dir}")
+        return
+
+    with open(construction_json_path, "r", encoding="utf-8") as f:
+        construction_record = json.load(f)
+
+    contract_path = construction_record["contract_file"]
+    output_dir    = construction_record["output_dir"]
+
+    if not os.path.exists(os.path.join(output_dir, "entities.parquet")):
+        print(f"[SKIP] {construction_dir}: GraphRAG output artifacts not found at {output_dir}")
+        return
+
+    print(f"\n[Eval] Contract  : {os.path.basename(contract_path)}")
+    print(f"[Eval] Directory : {construction_dir}")
+
+    # Resolve QA / Fact files from the eval data directory
+    qa_file = fact_file = None
+    try:
+        resolved_qa, resolved_fact = resolve_paths_for_contract(contract_path, eval_data_dir)
+        if eval_type in ("qa", "both"):
+            qa_file = resolved_qa
+        if eval_type in ("fact", "both"):
+            fact_file = resolved_fact
+    except (ValueError, FileNotFoundError) as e:
+        print(f"[WARN] Could not resolve eval files for {os.path.basename(contract_path)}: {e}")
+
+    if not qa_file and not fact_file:
+        print(f"[SKIP] No evaluation files resolved for {os.path.basename(contract_path)}")
+        return
+
+    print(f"[Eval] Loading GraphRAG artifacts from {output_dir}...")
+    try:
+        context_builder = setup_local_context_builder(
+            output_dir=output_dir,
+            embed_model=embed_model,
+            embed_api_base=embed_api_base,
+            api_key=api_key,
+            community_level=community_level,
+        )
+    except Exception as e:
+        print(f"[FATAL] Context builder setup failed for {os.path.basename(contract_path)}: {e}")
+        traceback.print_exc()
+        return
+
+    effective_params = dict(retrieval_params)
+    if not getattr(context_builder, "community_reports", None):
+        effective_params["community_prop"] = 0.0
+        print("[*] community_prop forced to 0 (no community reports loaded).")
+
+    error_tracker    = ErrorTracker()
+    qa_eval_result   = None
+    fact_eval_result = None
+
+    if qa_file:
+        print("\n[*] QA EVALUATION")
+        qa_eval_result = run_qa_evaluation(
+            qa_file=qa_file,
+            context_builder=context_builder,
+            retrieval_params=effective_params,
+            tokenizer=tokenizer,
+            max_context_tokens=max_context_tokens,
+            max_workers=max_workers,
+            error_tracker=error_tracker,
+        )
+
+    if fact_file:
+        print("\n[*] FACT RECALL EVALUATION")
+        fact_eval_result = run_fact_evaluation(
+            fact_file=fact_file,
+            context_builder=context_builder,
+            retrieval_params=effective_params,
+            tokenizer=tokenizer,
+            max_context_tokens=max_context_tokens,
+            max_workers=max_workers,
+            error_tracker=error_tracker,
+        )
+
+    error_summary = error_tracker.summary()
+
+    final_output = {
+        "run_id":             f"graphrag_eval_{uuid.uuid4().hex[:8]}",
+        "timestamp":          datetime.now().strftime("%Y%m%d_%H%M%S"),
+        "system":             "GRAPHRAG",
+        "eval_type":          eval_type,
+        "construction":       construction_record,
+        "retrieval_params":   effective_params,
+        "embed_model":        embed_model,
+        "community_level":    community_level,
+        "max_context_tokens": max_context_tokens,
+        "qa_evaluation":      qa_eval_result,
+        "fact_evaluation":    fact_eval_result,
+        "error_summary":      error_summary,
+    }
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(final_output, f, indent=2, default=str)
+
+    print(f"\n[Eval] Saved → {out_path}")
+    if qa_eval_result:
+        print(f"  QA (excl CAT5)  : {qa_eval_result['overall_avg_score_excl_cat5']}")
+        for cat, s in qa_eval_result["by_category"].items():
+            print(f"    {cat}: {s['avg_score']}  (n={s['count']})")
+    if fact_eval_result:
+        print(f"  Fact Recall     : {fact_eval_result['overall_recall_score']}  "
+              f"({fact_eval_result['total_recalled']}/{fact_eval_result['total_facts']})")
+    print(f"  Errors (total)  : {error_summary['total_errors']}")
+    if error_summary["by_section"]:
+        for section, count in error_summary["by_section"].items():
+            print(f"    {section}: {count}")
+
+
+# =============================================================================
+# CONSTRUCTION-ONLY PIPELINE
+# =============================================================================
+def run_construction_only(
+    contract_path: str,
+    out_dir: str,
+    model: str,
+    embed_model: str,
+    api_base: str,
+    embed_api_base: str,
+    api_key: str,
+    chunk_size: int,
+    chunk_overlap: int,
+    max_gleanings: int,
+    concurrent_requests: int,
+    community_max_length: int,
+    batch_max_tokens: int,
+):
+    """
+    Builds the GraphRAG index for a single contract and saves construction.json.
+    Output directory: out_dir/contract_name/
+    """
+    contract_name    = os.path.splitext(os.path.basename(contract_path))[0]
+    construction_dir = os.path.join(out_dir, contract_name)
+    workspace_dir    = os.path.join(construction_dir, "graphrag_workspace")
+    os.makedirs(construction_dir, exist_ok=True)
+
+    log_path   = os.path.join(construction_dir, "construction.log")
+    tee        = TeeStream(log_path, sys.stdout)
+    sys.stdout = tee
+
+    error_tracker = ErrorTracker()
+
+    print("\n" + "=" * 65)
+    print(f" CONTRACT: {contract_name}")
+    print(f" Output  : {construction_dir}")
+    print("=" * 65)
+    print("\n[*] GRAPH CONSTRUCTION")
+
+    try:
+        output_dir, metrics = build_graph(
+            file_path=contract_path,
+            workspace_dir=workspace_dir,
+            model=model,
+            embed_model=embed_model,
+            api_base=api_base,
+            embed_api_base=embed_api_base,
+            api_key=api_key,
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+            max_gleanings=max_gleanings,
+            concurrent_requests=concurrent_requests,
+            error_tracker=error_tracker,
+            community_max_length=community_max_length,
+            batch_max_tokens=batch_max_tokens,
+        )
+    except Exception as e:
+        print(f"[FATAL] Construction failed for {contract_name}: {e}")
+        traceback.print_exc()
+        sys.stdout = tee._stream
+        tee.close()
+        return
+
+    construction_args = {
+        "model":               model,
+        "embed_model":         embed_model,
+        "api_base":            api_base,
+        "embed_api_base":      embed_api_base,
+        "chunk_size":          chunk_size,
+        "chunk_overlap":       chunk_overlap,
+        "max_gleanings":       max_gleanings,
+        "concurrent_requests": concurrent_requests,
+        "community_max_length": community_max_length,
+        "batch_max_tokens":    batch_max_tokens,
+    }
+
+    construction_record = {
+        "system":            "GRAPHRAG",
+        "timestamp":         datetime.now().strftime("%Y%m%d_%H%M%S"),
+        "contract_file":     os.path.abspath(contract_path),
+        "workspace_dir":     os.path.abspath(workspace_dir),
+        "output_dir":        os.path.abspath(output_dir),
+        "construction_args": construction_args,
+        "metrics":           metrics,
+    }
+
+    construction_json_path = os.path.join(construction_dir, CONSTRUCTION_JSON)
+    with open(construction_json_path, "w", encoding="utf-8") as f:
+        json.dump(construction_record, f, indent=2, default=str)
+
+    cm = metrics
+    print(f"\n[Construction] Saved → {construction_json_path}")
+    print(f"  Document tokens   : {cm['total_document_tokens']}")
+    print(f"  Chunks            : {cm['total_chunks']}  "
+          f"({cm['chunk_size']} tok, {cm['chunk_overlap']} overlap, "
+          f"{cm['max_gleanings']} gleanings)")
+    print(f"  Entities          : {cm['entities']}")
+    print(f"  Edges             : {cm['edges']}")
+    print(f"  Communities       : {cm['communities']}")
+    print(f"  Community reports : {cm['community_reports']}")
+    print(f"  LLM tokens (cache): {cm['llm_total_tokens']}  ({cm['llm_api_calls']} cache entries)")
+    print(f"  Wall time         : {cm['execution_time_sec']}s")
+
+    sys.stdout = tee._stream
+    tee.close()
+
+
+# =============================================================================
+# AUTO (CONSTRUCTION + EVALUATION) PIPELINE
 # =============================================================================
 def run_single_contract(
     contract_path: str,
@@ -976,6 +1267,8 @@ def run_single_contract(
     chunk_overlap: int,
     max_gleanings: int,
     concurrent_requests: int,
+    community_max_length: int,
+    batch_max_tokens: int,
     max_workers: int,
     retrieval_top_k_entities: int,
     retrieval_top_k_relationships: int,
@@ -1003,16 +1296,11 @@ def run_single_contract(
     error_tracker = ErrorTracker()
 
     retrieval_params = {
-        "text_unit_prop":              text_unit_prop,
-        "community_prop":              community_prop,
-        "top_k_mapped_entities":       retrieval_top_k_entities,
-        "top_k_relationships":         retrieval_top_k_relationships,
-        "max_context_tokens":          retrieval_max_tokens,
-        "include_entity_rank":         True,
-        "include_relationship_weight": True,
-        "include_community_rank":      False,
-        "return_candidate_context":    False,
-        "use_community_summary":       False,
+        "text_unit_prop":        text_unit_prop,
+        "community_prop":        community_prop,
+        "top_k_mapped_entities": retrieval_top_k_entities,
+        "top_k_relationships":   retrieval_top_k_relationships,
+        "max_context_tokens":    retrieval_max_tokens,
     }
 
     print("\n" + "=" * 65)
@@ -1036,6 +1324,8 @@ def run_single_contract(
             max_gleanings=max_gleanings,
             concurrent_requests=concurrent_requests,
             error_tracker=error_tracker,
+            community_max_length=community_max_length,
+            batch_max_tokens=batch_max_tokens,
         )
     except Exception as e:
         print(f"[FATAL] Construction failed for {contract_name}: {e}")
@@ -1045,6 +1335,32 @@ def run_single_contract(
         return
 
     print(f"[*] Output stored in → {output_dir}")
+
+    # Save construction.json so this run_dir can be used as a target for
+    # subsequent standalone evaluation mode runs.
+    construction_record = {
+        "system":            "GRAPHRAG",
+        "timestamp":         timestamp,
+        "contract_file":     os.path.abspath(contract_path),
+        "workspace_dir":     os.path.abspath(workspace_dir),
+        "output_dir":        os.path.abspath(output_dir),
+        "construction_args": {
+            "model":               model,
+            "embed_model":         embed_model,
+            "api_base":            api_base,
+            "embed_api_base":      embed_api_base,
+            "chunk_size":          chunk_size,
+            "chunk_overlap":       chunk_overlap,
+            "max_gleanings":       max_gleanings,
+            "concurrent_requests": concurrent_requests,
+            "community_max_length": community_max_length,
+            "batch_max_tokens":    batch_max_tokens,
+        },
+        "metrics": construction_metrics,
+    }
+    construction_json_path = os.path.join(run_dir, CONSTRUCTION_JSON)
+    with open(construction_json_path, "w", encoding="utf-8") as f:
+        json.dump(construction_record, f, indent=2, default=str)
 
     # ---- Phase 2: Build context-only retrieval engine ----
     print("\n[*] PHASE 2 — BUILDING CONTEXT-ONLY RETRIEVAL ENGINE")
@@ -1175,30 +1491,50 @@ def run_single_contract(
 # =============================================================================
 def main():
     parser = argparse.ArgumentParser(
-        description="GraphRAG 2.7.0: single-script construction + QA/Fact evaluation"
+        description="GraphRAG 2.7.0: Insurance Contract Evaluation — construction / evaluation / auto modes"
     )
 
     # ---- Mode ----
-    mode = parser.add_mutually_exclusive_group(required=True)
-    mode.add_argument("--contract", type=str,
-                      help="Path to a single contract .txt file")
-    mode.add_argument("--all", action="store_true",
-                      help="Evaluate every contract in both dataset sections")
-    mode.add_argument("--ten-contracts-dataset", action="store_true",
-                      help="Evaluate only the ten_contracts_dataset section")
-    mode.add_argument("--long-form-contracts", action="store_true",
-                      help="Evaluate only the long_form_contracts section")
+    parser.add_argument(
+        "--mode", type=str, required=True,
+        choices=["construction", "evaluation", "auto"],
+        help="construction: build GraphRAG index only. evaluation: evaluate existing indexes. auto: both."
+    )
 
-    parser.add_argument("--qa-file",       type=str, default=None)
-    parser.add_argument("--fact-file",     type=str, default=None)
-    parser.add_argument("--eval-data-dir", type=str, default=None)
-    parser.add_argument("--out-dir",       type=str, default="./results")
+    # ---- Dataset selection (construction + auto) ----
+    dataset = parser.add_mutually_exclusive_group()
+    dataset.add_argument("--contract", type=str,
+                         help="Path to a single contract .txt file")
+    dataset.add_argument("--all", action="store_true",
+                         help="All contracts in both dataset sections under --eval-data-dir")
+    dataset.add_argument("--ten-contracts-dataset", action="store_true",
+                         help="Only ten_contracts_dataset section under --eval-data-dir")
+    dataset.add_argument("--long-form-contracts", action="store_true",
+                         help="Only long_form_contracts section under --eval-data-dir")
+
+    parser.add_argument("--qa-file",       type=str, default=None,
+                        help="QA JSON for single-contract auto mode")
+    parser.add_argument("--fact-file",     type=str, default=None,
+                        help="Fact JSON for single-contract auto mode")
+    parser.add_argument("--eval-data-dir", type=str, default=None,
+                        help="Root evaluation_data/ directory (required for multi-contract and evaluation modes)")
+    parser.add_argument("--out-dir",       type=str, default="./results",
+                        help="Output root for construction and auto modes")
+    parser.add_argument("--target-dir",    type=str, default=None,
+                        help="Directory to evaluate (evaluation mode). "
+                             "If it contains construction.json, evaluate it directly. "
+                             "Otherwise scan subdirectories.")
+
+    # ---- Eval type (evaluation + auto) ----
+    parser.add_argument("--eval-type", type=str, default="both",
+                        choices=["qa", "fact", "both"],
+                        help="Which evaluation(s) to run (evaluation and auto modes)")
 
     # ---- Models & API ----
     parser.add_argument("--model",          type=str,
                         default="Qwen/Qwen3-30B-A3B-Instruct-2507-FP8")
     parser.add_argument("--embed-model",    type=str,
-                        default="Qwen/Qwen3-Embedding-4B")
+                        default="voyageai/voyage-4-nano")
     parser.add_argument("--api-base",       type=str,
                         default="http://localhost:8000/v1")
     parser.add_argument("--embed-api-base", type=str,
@@ -1206,10 +1542,14 @@ def main():
     parser.add_argument("--api-key",        type=str, default="EMPTY")
 
     # ---- Construction ----
-    parser.add_argument("--chunk-size",          type=int,   default=600)
-    parser.add_argument("--chunk-overlap",       type=int,   default=50)
-    parser.add_argument("--max-gleanings",       type=int,   default=1)
-    parser.add_argument("--concurrent-requests", type=int,   default=25,
+    parser.add_argument("--chunk-size",            type=int,   default=1200)
+    parser.add_argument("--chunk-overlap",         type=int,   default=100)
+    parser.add_argument("--max-gleanings",         type=int,   default=1)
+    parser.add_argument("--community-max-length",  type=int,   default=2000,
+                        help="community_reports.max_length in settings.yaml.")
+    parser.add_argument("--batch-max-tokens",      type=int,   default=8191,
+                        help="embed_text.batch_max_tokens in settings.yaml.")
+    parser.add_argument("--concurrent-requests",   type=int,   default=25,
                         help="Indexer concurrent_requests (chat and embedding).")
 
     # ---- Evaluation parallelism ----
@@ -1219,71 +1559,224 @@ def main():
     # ---- Retrieval ----
     parser.add_argument("--retrieval-top-k-entities",      type=int,   default=10)
     parser.add_argument("--retrieval-top-k-relationships", type=int,   default=10)
-    parser.add_argument("--retrieval-max-tokens",          type=int,   default=8000,
+    parser.add_argument("--retrieval-max-tokens",          type=int,   default=12000,
                         help="Context builder's internal token budget (before truncation).")
     parser.add_argument("--community-level",               type=int,   default=2)
     parser.add_argument("--text-unit-prop",                type=float, default=0.5)
-    parser.add_argument("--community-prop",                type=float, default=0.1)
-    parser.add_argument("--max-context-tokens",            type=int,   default=2000,
+    parser.add_argument("--community-prop",                type=float, default=0.15)
+    parser.add_argument("--max-context-tokens",            type=int,   default=12000,
                         help="Final context budget passed to the LLM judge.")
 
     # ---- Judge LLM ----
     parser.add_argument("--judge-max-tokens", type=int, default=8000)
 
+    # ---- Evaluation helpers ----
+    parser.add_argument("--force-evaluation", action="store_true",
+                        help="Re-run evaluation even if output for the same settings already exists")
+
+    # ---- Pure defaults mode ----
+    parser.add_argument("--use-graphrag-defaults", action="store_true",
+                        help="Override all KG-quality parameters to exact GraphRAG package "
+                             "defaults (chunk_size=1200, chunk_overlap=100, "
+                             "community_max_length=2000, batch_max_tokens=8191, "
+                             "retrieval_max_tokens=12000, community_prop=0.15, "
+                             "max_context_tokens=12000). Infrastructure params "
+                             "(concurrent_requests, judge_max_tokens, etc.) are unchanged.")
+
     args = parser.parse_args()
 
+    # ---- Apply pure GraphRAG defaults if requested ----
+    if args.use_graphrag_defaults:
+        args.chunk_size           = 1200
+        args.chunk_overlap        = 100
+        args.max_gleanings        = 1
+        args.community_max_length = 2000
+        args.batch_max_tokens     = 8191
+        args.retrieval_max_tokens = 12000
+        args.community_prop       = 0.15
+        args.max_context_tokens   = 12000
+        print("[*] --use-graphrag-defaults: all KG-quality params set to GraphRAG package defaults.")
+
     # ---- Validate ----
-    multi_mode = args.all or args.ten_contracts_dataset or args.long_form_contracts
-    if multi_mode and not args.eval_data_dir:
-        parser.error("--all, --ten-contracts-dataset, and --long-form-contracts require --eval-data-dir")
-    if args.contract and not args.qa_file and not args.fact_file:
-        parser.error("Single-contract mode requires at least one of --qa-file or --fact-file")
+    multi_contract = args.all or args.ten_contracts_dataset or args.long_form_contracts
+
+    if args.mode in ("construction", "auto"):
+        if not args.contract and not multi_contract:
+            parser.error(
+                f"--mode {args.mode} requires one of: --contract, --all, "
+                "--ten-contracts-dataset, --long-form-contracts"
+            )
+        if multi_contract and not args.eval_data_dir:
+            parser.error(
+                "--all, --ten-contracts-dataset, and --long-form-contracts require --eval-data-dir"
+            )
+        if args.mode == "auto" and args.contract and not args.qa_file and not args.fact_file:
+            parser.error("Auto mode with --contract requires at least one of --qa-file or --fact-file "
+                         "(or --eval-data-dir to resolve them automatically)")
+
+    if args.mode == "evaluation":
+        if not args.target_dir:
+            parser.error("--mode evaluation requires --target-dir")
+        if not args.eval_data_dir:
+            parser.error("--mode evaluation requires --eval-data-dir to resolve QA/Fact files")
+
+    # ---- Build retrieval params dict ----
+    retrieval_params = {
+        "text_unit_prop":        args.text_unit_prop,
+        "community_prop":        args.community_prop,
+        "top_k_mapped_entities": args.retrieval_top_k_entities,
+        "top_k_relationships":   args.retrieval_top_k_relationships,
+        "max_context_tokens":    args.retrieval_max_tokens,
+    }
 
     configure_dspy(max_tokens=args.judge_max_tokens)
     tokenizer = AutoTokenizer.from_pretrained(args.model)
 
-    if args.all:
-        subdirs_to_scan = DATASET_SUBDIRS;  mode_label = "--all"
-    elif args.ten_contracts_dataset:
-        subdirs_to_scan = ["ten_contracts_dataset"];  mode_label = "--ten-contracts-dataset"
-    elif args.long_form_contracts:
-        subdirs_to_scan = ["long_form_contracts"];  mode_label = "--long-form-contracts"
-    else:
-        subdirs_to_scan = None
+    # ---- Collect contracts (construction + auto) ----
+    if args.mode in ("construction", "auto"):
+        if args.contract:
+            contract_path = os.path.abspath(args.contract)
+            if args.mode == "auto":
+                # Resolve qa/fact from eval-data-dir if not explicitly given
+                qa_path = fact_path = None
+                if args.eval_data_dir:
+                    try:
+                        qa_path, fact_path = resolve_paths_for_contract(
+                            contract_path, os.path.abspath(args.eval_data_dir)
+                        )
+                    except (ValueError, FileNotFoundError) as e:
+                        if not (args.qa_file or args.fact_file):
+                            parser.error(f"Could not resolve qa/fact files: {e}")
+                if args.qa_file:
+                    qa_path = args.qa_file
+                if args.fact_file:
+                    fact_path = args.fact_file
+                triplets = [(contract_path, qa_path, fact_path)]
+            else:
+                triplets = [(contract_path, None, None)]
+        else:
+            if args.all:
+                subdirs_to_scan = DATASET_SUBDIRS
+            elif args.ten_contracts_dataset:
+                subdirs_to_scan = ["ten_contracts_dataset"]
+            else:
+                subdirs_to_scan = ["long_form_contracts"]
 
-    shared = dict(
-        out_dir=args.out_dir,
-        model=args.model,
-        embed_model=args.embed_model,
-        api_base=args.api_base,
-        embed_api_base=args.embed_api_base,
-        api_key=args.api_key,
-        chunk_size=args.chunk_size,
-        chunk_overlap=args.chunk_overlap,
-        max_gleanings=args.max_gleanings,
-        concurrent_requests=args.concurrent_requests,
-        max_workers=args.max_workers,
-        retrieval_top_k_entities=args.retrieval_top_k_entities,
-        retrieval_top_k_relationships=args.retrieval_top_k_relationships,
-        retrieval_max_tokens=args.retrieval_max_tokens,
-        community_level=args.community_level,
-        text_unit_prop=args.text_unit_prop,
-        community_prop=args.community_prop,
-        max_context_tokens=args.max_context_tokens,
-        judge_max_tokens=args.judge_max_tokens,
-        tokenizer=tokenizer,
-    )
+            triplets = collect_all_contracts(
+                os.path.abspath(args.eval_data_dir), subdirs=subdirs_to_scan
+            )
+            if not triplets:
+                print("[ERROR] No contracts found. Check --eval-data-dir.")
+                sys.exit(1)
+            print(f"[*] Found {len(triplets)} contracts.\n")
 
-    if multi_mode:
-        print(f"\n[*] {mode_label} mode: scanning {args.eval_data_dir}")
-        triplets = collect_all_contracts(args.eval_data_dir, subdirs=subdirs_to_scan)
-        if not triplets:
-            print("[ERROR] No contracts found. Check --eval-data-dir.")
-            sys.exit(1)
-        print(f"[*] Found {len(triplets)} contracts to evaluate.\n")
+    # ==========================================================================
+    # CONSTRUCTION MODE
+    # ==========================================================================
+    if args.mode == "construction":
+        for i, (contract_path, _qa, _fact) in enumerate(triplets, 1):
+            contract_name = os.path.splitext(os.path.basename(contract_path))[0]
+            print(f"\n{'#' * 65}")
+            print(f"# CONSTRUCTION {i}/{len(triplets)}: {contract_name}")
+            print(f"{'#' * 65}")
+            try:
+                run_construction_only(
+                    contract_path=contract_path,
+                    out_dir=args.out_dir,
+                    model=args.model,
+                    embed_model=args.embed_model,
+                    api_base=args.api_base,
+                    embed_api_base=args.embed_api_base,
+                    api_key=args.api_key,
+                    chunk_size=args.chunk_size,
+                    chunk_overlap=args.chunk_overlap,
+                    max_gleanings=args.max_gleanings,
+                    concurrent_requests=args.concurrent_requests,
+                    community_max_length=args.community_max_length,
+                    batch_max_tokens=args.batch_max_tokens,
+                )
+            except Exception as e:
+                print(f"[FATAL] Construction failed for {contract_name}: {e}")
+                traceback.print_exc()
+                continue
+
+    # ==========================================================================
+    # EVALUATION MODE
+    # ==========================================================================
+    elif args.mode == "evaluation":
+        target_dir    = os.path.abspath(args.target_dir)
+        eval_data_dir = os.path.abspath(args.eval_data_dir)
+
+        if is_construction_dir(target_dir):
+            dirs_to_eval = [target_dir]
+            print(f"[*] Single construction directory: {target_dir}")
+        else:
+            dirs_to_eval = []
+            for name in sorted(os.listdir(target_dir)):
+                sub = os.path.join(target_dir, name)
+                if is_construction_dir(sub):
+                    dirs_to_eval.append(sub)
+            if not dirs_to_eval:
+                print(f"[ERROR] No construction directories found under {target_dir}")
+                sys.exit(1)
+            print(f"[*] Found {len(dirs_to_eval)} construction directories to evaluate.")
+
+        for i, cdir in enumerate(dirs_to_eval, 1):
+            print(f"\n{'#' * 65}")
+            print(f"# EVAL {i}/{len(dirs_to_eval)}: {os.path.basename(cdir)}")
+            print(f"{'#' * 65}")
+            try:
+                evaluate_construction_dir(
+                    construction_dir=cdir,
+                    eval_data_dir=eval_data_dir,
+                    eval_type=args.eval_type,
+                    retrieval_params=retrieval_params,
+                    embed_model=args.embed_model,
+                    embed_api_base=args.embed_api_base,
+                    api_key=args.api_key,
+                    community_level=args.community_level,
+                    tokenizer=tokenizer,
+                    max_context_tokens=args.max_context_tokens,
+                    max_workers=args.max_workers,
+                    force_evaluation=args.force_evaluation,
+                )
+            except Exception as e:
+                print(f"[FATAL] Evaluation failed for {cdir}: {e}")
+                traceback.print_exc()
+                continue
+
+    # ==========================================================================
+    # AUTO MODE
+    # ==========================================================================
+    elif args.mode == "auto":
+        shared = dict(
+            out_dir=args.out_dir,
+            model=args.model,
+            embed_model=args.embed_model,
+            api_base=args.api_base,
+            embed_api_base=args.embed_api_base,
+            api_key=args.api_key,
+            chunk_size=args.chunk_size,
+            chunk_overlap=args.chunk_overlap,
+            max_gleanings=args.max_gleanings,
+            community_max_length=args.community_max_length,
+            batch_max_tokens=args.batch_max_tokens,
+            concurrent_requests=args.concurrent_requests,
+            max_workers=args.max_workers,
+            retrieval_top_k_entities=args.retrieval_top_k_entities,
+            retrieval_top_k_relationships=args.retrieval_top_k_relationships,
+            retrieval_max_tokens=args.retrieval_max_tokens,
+            community_level=args.community_level,
+            text_unit_prop=args.text_unit_prop,
+            community_prop=args.community_prop,
+            max_context_tokens=args.max_context_tokens,
+            judge_max_tokens=args.judge_max_tokens,
+            tokenizer=tokenizer,
+        )
+
         for i, (contract_path, qa_path, fact_path) in enumerate(triplets, 1):
             print(f"\n{'#' * 65}")
-            print(f"# CONTRACT {i}/{len(triplets)}: {os.path.basename(contract_path)}")
+            print(f"# AUTO {i}/{len(triplets)}: {os.path.basename(contract_path)}")
             print(f"{'#' * 65}")
             try:
                 run_single_contract(
@@ -1296,13 +1789,6 @@ def main():
                 print(f"[FATAL] Contract {contract_path} failed: {e}")
                 traceback.print_exc()
                 continue
-    else:
-        run_single_contract(
-            contract_path=args.contract,
-            qa_file=args.qa_file,
-            fact_file=args.fact_file,
-            **shared,
-        )
 
 
 if __name__ == "__main__":

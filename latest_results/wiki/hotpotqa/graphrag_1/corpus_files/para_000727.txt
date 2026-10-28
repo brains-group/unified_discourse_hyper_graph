@@ -1,0 +1,3 @@
+Title: Plasma railgun
+
+A plasma railgun is a linear accelerator which, like a projectile railgun, uses two long parallel electrodes to accelerate a "sliding short" armature. However, in a plasma railgun, the armature and ejected projectile consists of plasma, or hot, ionized, gas-like particles, instead of a solid slug of material. Scientific plasma railguns are typically operated in vacuum and not at air pressure. They are of value because they produce muzzle velocities of up to several hundreds of kilometers per second. Because of this, these devices have applications in magnetic confinement fusion (MCF), magneto-inertial fusion (MIF), High Energy Density Physics research (HEDP), laboratory astrophysics, and as a plasma propulsion engine for spacecraft.

@@ -1,4 +1,5 @@
 from typing import List, Tuple
+from pydantic import BaseModel, Field
 from nkg.models.index_objects import EntityFingerprint
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import dspy
@@ -54,24 +55,24 @@ class ExtractEntityFingerprintBatch(dspy.Signature):
 
 #TODO: Possibly consider making this process each entity 1 by 1 since its already in parallel and is not a botteneck
 # We can add additional parameters to control this.
-def process_entities_batch(source_text: str, entities: list[str]):
-    batch_fingerprint_generator = dspy.ChainOfThought(ExtractEntityFingerprintBatch)
-    return batch_fingerprint_generator(source_text=source_text, entities=entities).fingerprints
+def process_entities_batch(source_text: str, entities: list[str], use_cot: bool = True):
+    predictor = (dspy.ChainOfThought if use_cot else dspy.Predict)(ExtractEntityFingerprintBatch)
+    return predictor(source_text=source_text, entities=entities).fingerprints
 
-def extract_entity_fingerprints(text: str, mode="single_step", batched=True) -> List[EntityFingerprint]:
+def extract_entity_fingerprints(text: str, mode="single_step", batched=True, use_cot: bool = True) -> List[EntityFingerprint]:
     if mode not in ["single_step", "multi_step"]:
         raise ValueError(f"Invalid mode in function extract_entities. You chose: {mode}")
 
     if mode == "single_step":
-        generator = dspy.ChainOfThought(TextEntityFingerprints)
+        generator = (dspy.ChainOfThought if use_cot else dspy.Predict)(TextEntityFingerprints)
         return generator(source_text=text).fingerprints
     elif mode == "multi_step":
-        generator = dspy.ChainOfThought(TextEntities)
+        generator = (dspy.ChainOfThought if use_cot else dspy.Predict)(TextEntities)
         entities_str = generator(source_text=text).entities
         if not batched:
             fingerprints = []
             for entity in entities_str:
-                entity_fingerprint_extractor = dspy.ChainOfThought(ExtractEntityFingerprintSingle)
+                entity_fingerprint_extractor = (dspy.ChainOfThought if use_cot else dspy.Predict)(ExtractEntityFingerprintSingle)
                 fingerprint = entity_fingerprint_extractor(source_text=text,target_entity=entity).fingerprint
                 fingerprints.append(fingerprint)
             return fingerprints
@@ -83,7 +84,8 @@ def extract_entity_fingerprints(text: str, mode="single_step", batched=True) -> 
                     executor.submit(
                         process_entities_batch,
                         text,
-                        entities_group
+                        entities_group,
+                        use_cot
                     ): i
                     for i, entities_group in enumerate(batches)
                 }
@@ -95,15 +97,14 @@ def extract_entity_fingerprints(text: str, mode="single_step", batched=True) -> 
 
 class ExtractChunkEntities(dspy.Signature):
     __doc__ = """
-    Analyze the source_text and extract a complete, deduplicated list of entity fingerprints.
-    This is the canonical entity pool for the chunk — all facts in this chunk will draw their
-    entities from this list.
+    Extract every named entity from source_text as a deduplicated fingerprint list.
+    This is the canonical entity pool for the chunk — all facts draw their entities from it.
 
-    For each entity, provide:
-    - name: The exact surface text or best normalized form.
-    - type: High-level ontological category (PERSON, ORGANIZATION, LOCATION, CONCEPT, DATE, etc.)
-    - role: A 3-8 word micro-role describing what the entity is doing in this specific text.
-    - relational_anchors: Specific identifiers linked to this entity (policy numbers, IDs, etc.).
+    For each entity:
+    - name: Canonical name. Resolve pronouns to proper referents (e.g., "you" → "Policyholder").
+    - type: One of: PERSON, ORGANIZATION, LOCATION, DATE, POLICY, COVERAGE, DOCUMENT, CONCEPT.
+    - role: 3-8 word micro-role describing its function in this specific text.
+    - relational_anchors: Specific identifiers tied to this entity (policy numbers, codes, IDs). Empty list if none.
     """
 
     source_text: str = dspy.InputField()
@@ -112,10 +113,43 @@ class ExtractChunkEntities(dspy.Signature):
     )
 
 
-def extract_chunk_entities(text: str) -> list[EntityFingerprint]:
-    """Extract all entity fingerprints from a chunk. Used once per chunk as a shared entity pool."""
-    generator = dspy.ChainOfThought(ExtractChunkEntities)
-    return generator(source_text=text).entities
+class ShortEntityItem(BaseModel):
+    name: str = Field(..., description="Canonical entity name. Resolve pronouns to proper referents.")
+    role: str = Field(..., description="3-8 word micro-role describing this entity's function in the text.")
+
+
+class ExtractChunkEntitiesShort(dspy.Signature):
+    __doc__ = """
+    Extract every named entity from source_text.
+    For each entity provide:
+    - name: Canonical name. Resolve pronouns to proper referents (e.g., "you" → "Policyholder").
+    - role: 3-8 word micro-role describing its function in this specific text.
+    Do not include type or relational anchors.
+    """
+
+    source_text: str = dspy.InputField()
+    entities: list[ShortEntityItem] = dspy.OutputField(
+        desc="Complete list of all entities found in this chunk"
+    )
+
+
+def extract_chunk_entities(text: str, use_cot: bool = True, full_profile: bool = True,
+                            chunk_summary: str = "") -> list[EntityFingerprint]:
+    """Extract entity fingerprints from a chunk. full_profile=False returns name+role only."""
+    predict = dspy.ChainOfThought if use_cot else dspy.Predict
+    if full_profile:
+        return predict(ExtractChunkEntities)(source_text=text).entities
+    else:
+        short_items = predict(ExtractChunkEntitiesShort)(source_text=text).entities
+        return [
+            EntityFingerprint(
+                name=item.name,
+                type="",
+                role=item.role,
+                relational_anchors=(chunk_summary,) if chunk_summary else ()
+            )
+            for item in short_items
+        ]
 
 
 def main():

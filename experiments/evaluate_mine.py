@@ -9,10 +9,47 @@ import dspy
 from sentence_transformers import SentenceTransformer, CrossEncoder
 
 # Update these imports based on your new architecture
-from nkg.utils.config import configure_dspy
-from nkg.utils.general import batch_list
-from nkg.retrieval.engine import Retriever
-from nkg.index.construction.build_index import build_index_from_directory  # Assuming you have a wrapper for this
+#from nkg.utils.general import batch_list
+#from nkg.retrieval.engine import Retriever
+#from nkg.index.construction.build_index import build_index_from_directory  # Assuming you have a wrapper for this
+
+
+# ==========================================
+# DSPY CONFIGURATION
+# ==========================================
+
+def configure_dspy(model: str, api_base: str, api_key: str) -> None:
+    """
+    Configure DSPy globally for a given LLM endpoint.
+
+    Parameters
+    ----------
+    model    : LiteLLM routing string, e.g.
+                 'deepseek/deepseek-v4-flash'       (DeepSeek API)
+                 'openai/Qwen/Qwen3-30B-A3B'        (local vLLM)
+    api_base : Base URL for the LLM API.
+    api_key  : Authentication key (use "EMPTY" for keyless local endpoints).
+
+    Notes
+    -----
+    - LLM cache is disabled to prevent stale answers across evaluation runs.
+    - Extended thinking tokens are suppressed for DeepSeek models to avoid
+      unexpected token spend (applied as a hard default, not a user parameter).
+    - No temperature, top_p, or other hyperparameters are exposed here.
+    """
+    kwargs: dict = dict(
+        model=model,
+        api_key=api_key,
+        api_base=api_base,
+        cache=False,
+    )
+    # Suppress DeepSeek extended thinking tokens (hard default, not configurable)
+    if model.startswith("deepseek/"):
+        kwargs["extra_body"] = {"thinking": {"type": "disabled"}}
+
+    lm = dspy.LM(**kwargs)
+    dspy.configure(lm=lm)
+
 
 # ==========================================
 # LOGGING CONFIGURATION
@@ -124,8 +161,78 @@ class QAEvaluator(dspy.Module):
         except ValueError:
             return 0.0
 
-def ask_llm_query(question: str, context: str) -> str:
-    responder = dspy.ChainOfThought(AnswerQuestion)
+class ShortAnswerQuestion(dspy.Signature):
+    """You are a precise question-answering system.
+
+    Answer the question using ONLY the information in the context.
+    Your answer must be as short as possible — a name, date, number, or brief noun phrase.
+    Do NOT write a full sentence. Do NOT explain your reasoning. Output only the answer span.
+
+    Examples of correct output style:
+      Question: Who directed Titanic?     Answer: James Cameron
+      Question: When was Python created?  Answer: 1991
+      Question: What is the capital of France? Answer: Paris
+    """
+
+    context: str = dspy.InputField(desc="Retrieved context. Treat as the sole source of truth.")
+    question: str = dspy.InputField(desc="The question to answer.")
+    answer: str = dspy.OutputField(
+        desc="A short answer span: a name, date, number, or brief phrase. "
+             "No full sentences. No explanations. Just the answer."
+    )
+
+
+def ask_llm_query_short(question: str, context: str) -> str:
+    """
+    Generate a short span-style answer suitable for EM/F1 evaluation.
+
+    Unlike ask_llm_query, this uses dspy.Predict (no chain-of-thought) with
+    ShortAnswerQuestion, which instructs the model to output only the answer
+    span — a name, date, number, or brief noun phrase — matching the gold
+    answer format used in HotpotQA and MuSiQue.
+
+    Parameters
+    ----------
+    question : The question to answer.
+    context  : Retrieved context to ground the answer in.
+
+    Returns
+    -------
+    str : A short answer span (no explanation, no full sentences).
+
+    Notes
+    -----
+    configure_dspy() must be called before using this function.
+    """
+    responder = dspy.Predict(ShortAnswerQuestion)
+    return responder(context=context, question=question).answer
+
+
+def ask_llm_query(question: str, context: str,
+                  use_chain_of_thought: bool = True) -> str:
+    """
+    Generate an answer to `question` grounded in `context`.
+
+    Parameters
+    ----------
+    question             : The question to answer.
+    context              : Retrieved context to ground the answer in.
+    use_chain_of_thought : If True (default), uses dspy.ChainOfThought —
+                           the model reasons step-by-step before producing the
+                           final answer field.
+                           If False, uses dspy.Predict — a single forward pass
+                           with no explicit reasoning trace (faster, fewer tokens).
+
+    Returns
+    -------
+    str : The generated answer string.
+
+    Notes
+    -----
+    configure_dspy() must be called before using this function.
+    """
+    module = dspy.ChainOfThought if use_chain_of_thought else dspy.Predict
+    responder = module(AnswerQuestion)
     return responder(context=context, question=question).answer
 
 def score_llm_answer(question: str, llm_answer: str, correct_answer: str) -> float:
@@ -148,171 +255,171 @@ def evaluate_fact(context: str, correct_answer: str) -> float:
 # ==========================================
 # WORKER FUNCTIONS
 # ==========================================
-def process_fact_batch(batch: List[str], retriever: Retriever) -> float:
-    """Processes a batch of facts and returns the sum of their scores."""
-    evaluator = ResponseEvaluator()
-    batch_score = 0
-    for fact in batch:
-        context = retriever.retrieve(query=fact, top_k_seeds=8, max_depth=3, beam_width=5, final_top_k=8)
-        print("Retrieved fact context")
-        score = evaluator(context=context, correct_answer=fact)
-        print(f"Scored fact: {score}")
-        batch_score += score
+# def process_fact_batch(batch: List[str], retriever: Retriever) -> float:
+#     """Processes a batch of facts and returns the sum of their scores."""
+#     evaluator = ResponseEvaluator()
+#     batch_score = 0
+#     for fact in batch:
+#         context = retriever.retrieve(query=fact, top_k_seeds=8, max_depth=3, beam_width=5, final_top_k=8)
+#         print("Retrieved fact context")
+#         score = evaluator(context=context, correct_answer=fact)
+#         print(f"Scored fact: {score}")
+#         batch_score += score
 
-    batch_size = len(batch)
-    print(f"Fact Recall Batch Complete: {batch_score}/{batch_size} correct")
-    return batch_score
-
-
-def process_qa_batch(batch: List[Dict[str, str]], retriever: Retriever) -> float:
-    """Processes a batch of QA pairs and returns the sum of their scores."""
-    evaluator = QAEvaluator()
-    batch_score = 0.0
-    for pair in batch:
-        q = pair["question"]
-        a = pair["answer"]
-        context = retriever.retrieve(query=q, top_k_seeds=8, max_depth=3, beam_width=5, final_top_k=8)
-        print("Retrieved qa context")
-        score = evaluator(question=q, context=context, correct_answer=a)
-        print(f"Scored qa: {score}")
-        batch_score += score
-    batch_size = len(batch)
-    print(f"QA Batch Complete: {batch_score}/{batch_size} correct")
-    return batch_score
+#     batch_size = len(batch)
+#     print(f"Fact Recall Batch Complete: {batch_score}/{batch_size} correct")
+#     return batch_score
 
 
-# ==========================================
-# MAIN EVALUATION RUNNERS
-# ==========================================
-def run_fact_recall_eval(retriever: Retriever, filepath: str, max_workers: int=100) -> Dict[str, Any]:
-    logger.info(f"Starting Fact Recall Evaluation using data from {filepath}")
-    with open(filepath, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    facts = data.get("facts", [])
-    if not facts:
-        logger.warning("No facts found in dataset.")
-        return {"recall_score": 0.0, "total_facts": 0}
-
-    batched_facts = batch_list(facts, max_batch_size=3)
-    total_score = 0
-
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(process_fact_batch, batch, retriever): batch for batch in batched_facts}
-        completed = 0
-
-        for future in as_completed(futures):
-            try:
-                score = future.result()
-                total_score += score
-                completed += 1
-                logger.info(
-                    f"[Fact Eval] Batch {completed}/{len(batched_facts)} completed. Running Score: {total_score}")
-            except Exception as e:
-                logger.error(f"Error processing fact batch: {e}")
-
-    avg_score = total_score / len(facts)
-    logger.info(f"Fact Recall Evaluation Complete. Average Score: {avg_score:.4f}")
-    return {"recall_score": avg_score, "total_facts": len(facts)}
+# def process_qa_batch(batch: List[Dict[str, str]], retriever: Retriever) -> float:
+#     """Processes a batch of QA pairs and returns the sum of their scores."""
+#     evaluator = QAEvaluator()
+#     batch_score = 0.0
+#     for pair in batch:
+#         q = pair["question"]
+#         a = pair["answer"]
+#         context = retriever.retrieve(query=q, top_k_seeds=8, max_depth=3, beam_width=5, final_top_k=8)
+#         print("Retrieved qa context")
+#         score = evaluator(question=q, context=context, correct_answer=a)
+#         print(f"Scored qa: {score}")
+#         batch_score += score
+#     batch_size = len(batch)
+#     print(f"QA Batch Complete: {batch_score}/{batch_size} correct")
+#     return batch_score
 
 
-def run_qa_eval(retriever: Retriever, filepath: str, max_workers: int = 100) -> Dict[str, Any]:
-    logger.info(f"Starting QA Evaluation using data from {filepath}")
-    with open(filepath, "r", encoding="utf-8") as f:
-        data = json.load(f)
+# # ==========================================
+# # MAIN EVALUATION RUNNERS
+# # ==========================================
+# def run_fact_recall_eval(retriever: Retriever, filepath: str, max_workers: int=100) -> Dict[str, Any]:
+#     logger.info(f"Starting Fact Recall Evaluation using data from {filepath}")
+#     with open(filepath, "r", encoding="utf-8") as f:
+#         data = json.load(f)
 
-    pairs = data.get("pairs", [])
-    if not pairs:
-        logger.warning("No QA pairs found in dataset.")
-        return {"qa_score": 0.0, "total_pairs": 0}
+#     facts = data.get("facts", [])
+#     if not facts:
+#         logger.warning("No facts found in dataset.")
+#         return {"recall_score": 0.0, "total_facts": 0}
 
-    batched_pairs = batch_list(pairs, max_batch_size=5)
-    total_score = 0.0
+#     batched_facts = batch_list(facts, max_batch_size=3)
+#     total_score = 0
 
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(process_qa_batch, batch, retriever): batch for batch in batched_pairs}
-        completed = 0
+#     with ThreadPoolExecutor(max_workers=max_workers) as executor:
+#         futures = {executor.submit(process_fact_batch, batch, retriever): batch for batch in batched_facts}
+#         completed = 0
 
-        for future in as_completed(futures):
-            try:
-                score = future.result()
-                total_score += score
-                completed += 1
-                logger.info(f"[QA Eval] Batch {completed}/{len(batched_pairs)} completed. Running Score: {total_score}")
-            except Exception as e:
-                logger.error(f"Error processing QA batch: {e}")
+#         for future in as_completed(futures):
+#             try:
+#                 score = future.result()
+#                 total_score += score
+#                 completed += 1
+#                 logger.info(
+#                     f"[Fact Eval] Batch {completed}/{len(batched_facts)} completed. Running Score: {total_score}")
+#             except Exception as e:
+#                 logger.error(f"Error processing fact batch: {e}")
 
-    avg_score = total_score / len(pairs)
-    logger.info(f"QA Evaluation Complete. Average Score: {avg_score:.4f}")
-    return {"qa_score": avg_score, "total_pairs": len(pairs)}
+#     avg_score = total_score / len(facts)
+#     logger.info(f"Fact Recall Evaluation Complete. Average Score: {avg_score:.4f}")
+#     return {"recall_score": avg_score, "total_facts": len(facts)}
 
 
-# ==========================================
-# ENTRY POINT & CLI PARSING
-# ==========================================
-def main():
-    parser = argparse.ArgumentParser(description="Evaluate Knowledge Graph Retrieval System")
+# def run_qa_eval(retriever: Retriever, filepath: str, max_workers: int = 100) -> Dict[str, Any]:
+#     logger.info(f"Starting QA Evaluation using data from {filepath}")
+#     with open(filepath, "r", encoding="utf-8") as f:
+#         data = json.load(f)
 
-    # Core Parameters
-    parser.add_argument("--exp-name", type=str, required=True,
-                        help="Name of the experiment (e.g., 'v1_chunking_600_50')")
-    parser.add_argument("--out-file", type=str, required=True, help="Path to save the JSON results")
-    parser.add_argument("--workers", type=int, default=10, help="Number of concurrent threads")
+#     pairs = data.get("pairs", [])
+#     if not pairs:
+#         logger.warning("No QA pairs found in dataset.")
+#         return {"qa_score": 0.0, "total_pairs": 0}
 
-    # Graph Source (Mutually Exclusive: Provide a pre-built GraphML OR an input directory to build it)
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("--graph-path", type=str, help="Path to an existing GraphML file to load")
-    group.add_argument("--input-dir", type=str, help="Directory of text files to build the graph from scratch")
+#     batched_pairs = batch_list(pairs, max_batch_size=5)
+#     total_score = 0.0
 
-    # Dataset Paths
-    parser.add_argument("--fact-data", type=str, default=None, help="Path to Fact Recall JSON dataset")
-    parser.add_argument("--qa-data", type=str, default=None, help="Path to QA JSON dataset")
+#     with ThreadPoolExecutor(max_workers=max_workers) as executor:
+#         futures = {executor.submit(process_qa_batch, batch, retriever): batch for batch in batched_pairs}
+#         completed = 0
 
-    args = parser.parse_args()
+#         for future in as_completed(futures):
+#             try:
+#                 score = future.result()
+#                 total_score += score
+#                 completed += 1
+#                 logger.info(f"[QA Eval] Batch {completed}/{len(batched_pairs)} completed. Running Score: {total_score}")
+#             except Exception as e:
+#                 logger.error(f"Error processing QA batch: {e}")
 
-    # 1. Initialize DSPy
-    configure_dspy(max_tokens=35000)
-    logger.info(f"Initializing Experiment: {args.exp_name}")
+#     avg_score = total_score / len(pairs)
+#     logger.info(f"QA Evaluation Complete. Average Score: {avg_score:.4f}")
+#     return {"qa_score": avg_score, "total_pairs": len(pairs)}
 
-    # 2. Setup Retrieval Models
-    logger.info("Loading embedding models...")
-    bi_encoder = SentenceTransformer("all-MiniLM-L6-v2")
-    cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
 
-    # 3. Initialize Retriever
-    if args.graph_path:
-        logger.info(f"Loading existing Knowledge Graph from {args.graph_path}")
-        retriever = Retriever(retrieval_model=bi_encoder, cross_encoder=cross_encoder, graph_path=args.graph_path)
-    else:
-        logger.info(f"Building Knowledge Graph from text files in {args.input_dir}")
-        # Note: adjust the chunk sizes or parameters via arguments if needed
-        built_graph = build_index_from_directory(directory=args.input_dir)
-        retriever = Retriever(retrieval_model=bi_encoder, cross_encoder=cross_encoder, graph=built_graph)
+# # ==========================================
+# # ENTRY POINT & CLI PARSING
+# # ==========================================
+# def main():
+#     parser = argparse.ArgumentParser(description="Evaluate Knowledge Graph Retrieval System")
 
-    # 4. Run Evaluations
-    results = {
-        "experiment_name": args.exp_name,
-        "graph_source": args.graph_path if args.graph_path else args.input_dir,
-        "fact_recall": None,
-        "qa_performance": None
-    }
+#     # Core Parameters
+#     parser.add_argument("--exp-name", type=str, required=True,
+#                         help="Name of the experiment (e.g., 'v1_chunking_600_50')")
+#     parser.add_argument("--out-file", type=str, required=True, help="Path to save the JSON results")
+#     parser.add_argument("--workers", type=int, default=10, help="Number of concurrent threads")
 
-    if args.fact_data:
-        results["fact_recall"] = run_fact_recall_eval(retriever, args.fact_data, args.workers)
+#     # Graph Source (Mutually Exclusive: Provide a pre-built GraphML OR an input directory to build it)
+#     group = parser.add_mutually_exclusive_group(required=True)
+#     group.add_argument("--graph-path", type=str, help="Path to an existing GraphML file to load")
+#     group.add_argument("--input-dir", type=str, help="Directory of text files to build the graph from scratch")
 
-    if args.qa_data:
-        results["qa_performance"] = run_qa_eval(retriever, args.qa_data, args.workers)
+#     # Dataset Paths
+#     parser.add_argument("--fact-data", type=str, default=None, help="Path to Fact Recall JSON dataset")
+#     parser.add_argument("--qa-data", type=str, default=None, help="Path to QA JSON dataset")
 
-    if not args.fact_data and not args.qa_data:
-        logger.error("No datasets provided for evaluation. Please use --fact-data or --qa-data.")
-        return
+#     args = parser.parse_args()
 
-    # 5. Save Results
-    os.makedirs(os.path.dirname(args.out_file) or ".", exist_ok=True)
-    with open(args.out_file, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=4)
+#     # 1. Initialize DSPy
+#     configure_dspy(max_tokens=35000)
+#     logger.info(f"Initializing Experiment: {args.exp_name}")
 
-    logger.info(f"Experiment results saved successfully to {args.out_file}")
+#     # 2. Setup Retrieval Models
+#     logger.info("Loading embedding models...")
+#     bi_encoder = SentenceTransformer("all-MiniLM-L6-v2")
+#     cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
 
-if __name__ == "__main__":
-    main()
+#     # 3. Initialize Retriever
+#     if args.graph_path:
+#         logger.info(f"Loading existing Knowledge Graph from {args.graph_path}")
+#         retriever = Retriever(retrieval_model=bi_encoder, cross_encoder=cross_encoder, graph_path=args.graph_path)
+#     else:
+#         logger.info(f"Building Knowledge Graph from text files in {args.input_dir}")
+#         # Note: adjust the chunk sizes or parameters via arguments if needed
+#         built_graph = build_index_from_directory(directory=args.input_dir)
+#         retriever = Retriever(retrieval_model=bi_encoder, cross_encoder=cross_encoder, graph=built_graph)
+
+#     # 4. Run Evaluations
+#     results = {
+#         "experiment_name": args.exp_name,
+#         "graph_source": args.graph_path if args.graph_path else args.input_dir,
+#         "fact_recall": None,
+#         "qa_performance": None
+#     }
+
+#     if args.fact_data:
+#         results["fact_recall"] = run_fact_recall_eval(retriever, args.fact_data, args.workers)
+
+#     if args.qa_data:
+#         results["qa_performance"] = run_qa_eval(retriever, args.qa_data, args.workers)
+
+#     if not args.fact_data and not args.qa_data:
+#         logger.error("No datasets provided for evaluation. Please use --fact-data or --qa-data.")
+#         return
+
+#     # 5. Save Results
+#     os.makedirs(os.path.dirname(args.out_file) or ".", exist_ok=True)
+#     with open(args.out_file, "w", encoding="utf-8") as f:
+#         json.dump(results, f, indent=4)
+
+#     logger.info(f"Experiment results saved successfully to {args.out_file}")
+
+# if __name__ == "__main__":
+#     main()

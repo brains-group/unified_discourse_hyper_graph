@@ -1,0 +1,23 @@
+{
+  "completed_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "cumulative_tokens": {
+    "prompt": 111698,
+    "completion": 109314,
+    "total": 221012,
+    "calls": 67
+  },
+  "cumulative_time_sec": 172.948
+}

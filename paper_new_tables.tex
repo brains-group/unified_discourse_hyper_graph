@@ -1,0 +1,54 @@
+% ---- New Table 3: HotpotQA, MuSiQue, G-Medical (replaces QuALITY), Contract QA (5 long-form contracts, 445 questions).
+% ---- UNH = LLM-free PPR retriever, base setting t2000_f40_dmp06, on every dataset. Ctx = cl100k_base tokens of the reader passages.
+% ---- \resizebox scales the 21-column table to \textwidth.
+\begin{table*}[t]
+\centering
+\caption{\normalfont \textbf{Answer accuracy and reader-context size}. Answer scores are percentages; Ctx is mean reader-context tokens per question. G-Medical reports LLM-Acc over all 2,062 questions (All) and per GraphRAG-Bench question type: fact retrieval (FR), complex reasoning (CR), contextual summarization (CS), and creative generation (CG). Contract QA reports the mean judge score over all 445 questions of five long-form contracts (All) and per category (CAT1 to CAT5). Blue ranks answer scores (higher is better); red ranks tokens (lower is better). Shades are evenly spaced by distinct rank across methods within each column; darker is better, and ties share a shade. Groups indicate reader-context configurations. $\dagger$: generated summary with additional online processing. $\ddagger$: \sys{} paths followed by the five source passages with the highest PPR scores.}
+\label{tab:all_results_new}  % rename to tab:all_results when this replaces Table 3
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l*{21}{c}@{}}
+\toprule
+& \multicolumn{4}{c}{HotpotQA} & \multicolumn{4}{c}{MuSiQue} & \multicolumn{6}{c}{G-Medical} & \multicolumn{7}{c}{Contract QA} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}\cmidrule(lr){10-15}\cmidrule(l){16-22}
+Method & EM & F1 & \shortstack{LLM-\\Acc} & Ctx & EM & F1 & \shortstack{LLM-\\Acc} & Ctx & All & FR & CR & CS & CG & Ctx & All & CAT1 & CAT2 & CAT3 & CAT4 & CAT5 & Ctx \\
+\midrule
+\multicolumn{22}{@{}l}{\textit{Compact reader contexts}} \\
+HippoRAG 2 & \cellcolor{UNHScoreBlue!39}61.3 & \cellcolor{UNHScoreBlue!35}73.5 & \cellcolor{UNHScoreBlue!28}82.8 & \cellcolor{UNHTokenRed!48}633 & \cellcolor{UNHScoreBlue!35}39.8 & \cellcolor{UNHScoreBlue!35}50.6 & \cellcolor{UNHScoreBlue!28}53.9 & \cellcolor{UNHTokenRed!48}686 & \cellcolor{UNHScoreBlue!28}69.6 & \cellcolor{UNHScoreBlue!35}72.6 & \cellcolor{UNHScoreBlue!15}66.4 & \cellcolor{UNHScoreBlue!24}70.2 & \cellcolor{UNHScoreBlue!21}58.4 & \cellcolor{UNHTokenRed!48}1,289 & \cellcolor{UNHScoreBlue!35}90.3 & \cellcolor{UNHScoreBlue!48}97.3 & \cellcolor{UNHScoreBlue!35}91.0 & \cellcolor{UNHScoreBlue!36}93.9 & \cellcolor{UNHScoreBlue!28}71.3 & \cellcolor{UNHScoreBlue!32}97.1 & \cellcolor{UNHTokenRed!21}5,796 \\
+MemGraphRAG & \cellcolor{UNHScoreBlue!8}51.2 & \cellcolor{UNHScoreBlue!8}62.6 & \cellcolor{UNHScoreBlue!8}70.6 & \cellcolor{UNHTokenRed!35}1,242 & \cellcolor{UNHScoreBlue!8}30.9 & \cellcolor{UNHScoreBlue!8}40.5 & \cellcolor{UNHScoreBlue!8}42.9 & \cellcolor{UNHTokenRed!35}1,241 & \cellcolor{UNHScoreBlue!8}59.8 & \cellcolor{UNHScoreBlue!8}60.0 & \cellcolor{UNHScoreBlue!8}61.5 & \cellcolor{UNHScoreBlue!8}56.1 & \cellcolor{UNHScoreBlue!28}60.2 & \cellcolor{UNHTokenRed!42}1,290 & \cellcolor{UNHScoreBlue!15}83.8 & \cellcolor{UNHScoreBlue!15}81.7 & \cellcolor{UNHScoreBlue!8}85.5 & \cellcolor{UNHScoreBlue!17}90.3 & \cellcolor{UNHScoreBlue!21}70.7 & \cellcolor{UNHScoreBlue!55}100.0 & \cellcolor{UNHTokenRed!48}1,250 \\
+HyGRAG & \cellcolor{UNHScoreBlue!16}54.1 & \cellcolor{UNHScoreBlue!15}67.4 & \cellcolor{UNHScoreBlue!15}78.6 & \cellcolor{UNHTokenRed!42}990 & \cellcolor{UNHScoreBlue!15}34.1 & \cellcolor{UNHScoreBlue!15}44.5 & \cellcolor{UNHScoreBlue!15}47.7 & \cellcolor{UNHTokenRed!42}1,045 & \cellcolor{UNHScoreBlue!55}79.6 & \cellcolor{UNHScoreBlue!55}78.3 & \cellcolor{UNHScoreBlue!55}80.9 & \cellcolor{UNHScoreBlue!55}86.5 & \cellcolor{UNHScoreBlue!48}71.7 & \cellcolor{UNHTokenRed!21}5,451 & \cellcolor{UNHScoreBlue!28}88.5 & \cellcolor{UNHScoreBlue!35}94.3 & \cellcolor{UNHScoreBlue!28}88.0 & \cellcolor{UNHScoreBlue!27}91.3 & \cellcolor{UNHScoreBlue!35}72.0 & \cellcolor{UNHScoreBlue!55}100.0 & \cellcolor{UNHTokenRed!28}4,914 \\
+\textbf{\sys{}} & \cellcolor{UNHScoreBlue!39}61.3 & \cellcolor{UNHScoreBlue!42}74.8 & \cellcolor{UNHScoreBlue!42}85.4 & \cellcolor{UNHTokenRed!28}1,354 & \cellcolor{UNHScoreBlue!42}42.8 & \cellcolor{UNHScoreBlue!42}54.3 & \cellcolor{UNHScoreBlue!48}60.3 & \cellcolor{UNHTokenRed!28}1,494 & \cellcolor{UNHScoreBlue!15}65.3 & \cellcolor{UNHScoreBlue!15}67.9 & \cellcolor{UNHScoreBlue!28}68.6 & \cellcolor{UNHScoreBlue!16}61.9 & \cellcolor{UNHScoreBlue!15}44.0 & \cellcolor{UNHTokenRed!35}1,781 & \cellcolor{UNHScoreBlue!21}85.4 & \cellcolor{UNHScoreBlue!21}89.3 & \cellcolor{UNHScoreBlue!15}86.0 & \cellcolor{UNHScoreBlue!46}94.4 & \cellcolor{UNHScoreBlue!8}61.6 & \cellcolor{UNHScoreBlue!55}100.0 & \cellcolor{UNHTokenRed!42}1,857 \\
+\textbf{\sys{}}+5p$\ddagger$ & \cellcolor{UNHScoreBlue!55}61.6 & \cellcolor{UNHScoreBlue!55}75.2 & \cellcolor{UNHScoreBlue!48}86.1 & \cellcolor{UNHTokenRed!21}1,976 & \cellcolor{UNHScoreBlue!55}45.2 & \cellcolor{UNHScoreBlue!48}54.6 & \cellcolor{UNHScoreBlue!42}59.0 & \cellcolor{UNHTokenRed!21}2,186 & \cellcolor{UNHScoreBlue!35}71.3 & \cellcolor{UNHScoreBlue!28}72.0 & \cellcolor{UNHScoreBlue!35}72.3 & \cellcolor{UNHScoreBlue!32}72.3 & \cellcolor{UNHScoreBlue!35}61.4 & \cellcolor{UNHTokenRed!28}4,779 & \cellcolor{UNHScoreBlue!55}92.4 & \cellcolor{UNHScoreBlue!42}95.0 & \cellcolor{UNHScoreBlue!48}94.0 & \cellcolor{UNHScoreBlue!55}95.9 & \cellcolor{UNHScoreBlue!48}79.9 & \cellcolor{UNHScoreBlue!32}97.1 & \cellcolor{UNHTokenRed!35}4,754 \\
+\midrule
+\multicolumn{22}{@{}l}{\textit{Larger reader contexts}} \\
+MS GraphRAG & \cellcolor{UNHScoreBlue!24}56.4 & \cellcolor{UNHScoreBlue!21}69.2 & \cellcolor{UNHScoreBlue!21}79.6 & \cellcolor{UNHTokenRed!15}9,072 & \cellcolor{UNHScoreBlue!28}38.2 & \cellcolor{UNHScoreBlue!28}49.1 & \cellcolor{UNHScoreBlue!35}54.2 & \cellcolor{UNHTokenRed!15}8,963 & \cellcolor{UNHScoreBlue!42}75.0 & \cellcolor{UNHScoreBlue!42}73.7 & \cellcolor{UNHScoreBlue!42}77.4 & \cellcolor{UNHScoreBlue!39}75.4 & \cellcolor{UNHScoreBlue!55}75.9 & \cellcolor{UNHTokenRed!15}9,779 & \cellcolor{UNHScoreBlue!8}75.4 & \cellcolor{UNHScoreBlue!8}69.8 & \cellcolor{UNHScoreBlue!21}86.5 & \cellcolor{UNHScoreBlue!8}73.5 & \cellcolor{UNHScoreBlue!15}64.0 & \cellcolor{UNHScoreBlue!32}97.1 & \cellcolor{UNHTokenRed!15}9,107 \\
+HyperGraphRAG & \cellcolor{UNHScoreBlue!47}61.4 & \cellcolor{UNHScoreBlue!48}74.9 & \cellcolor{UNHScoreBlue!55}86.4 & \cellcolor{UNHTokenRed!8}21,542 & \cellcolor{UNHScoreBlue!48}44.5 & \cellcolor{UNHScoreBlue!55}56.4 & \cellcolor{UNHScoreBlue!55}62.1 & \cellcolor{UNHTokenRed!8}21,634 & \cellcolor{UNHScoreBlue!48}77.6 & \cellcolor{UNHScoreBlue!48}78.0 & \cellcolor{UNHScoreBlue!48}80.6 & \cellcolor{UNHScoreBlue!47}77.9 & \cellcolor{UNHScoreBlue!42}66.3 & \cellcolor{UNHTokenRed!8}20,945 & \cellcolor{UNHScoreBlue!48}92.1 & \cellcolor{UNHScoreBlue!55}98.1 & \cellcolor{UNHScoreBlue!55}95.5 & \cellcolor{UNHScoreBlue!46}94.4 & \cellcolor{UNHScoreBlue!42}72.6 & \cellcolor{UNHScoreBlue!55}100.0 & \cellcolor{UNHTokenRed!8}18,383 \\
+\midrule
+\multicolumn{22}{@{}l}{\textit{Query-time evidence compression}} \\
+LogicRAG$\dagger$ & \cellcolor{UNHScoreBlue!32}58.2 & \cellcolor{UNHScoreBlue!28}72.8 & \cellcolor{UNHScoreBlue!35}82.9 & \cellcolor{UNHTokenRed!55}68 & \cellcolor{UNHScoreBlue!21}35.8 & \cellcolor{UNHScoreBlue!21}48.5 & \cellcolor{UNHScoreBlue!21}52.8 & \cellcolor{UNHTokenRed!55}113 & \cellcolor{UNHScoreBlue!21}67.8 & \cellcolor{UNHScoreBlue!21}71.2 & \cellcolor{UNHScoreBlue!21}68.4 & \cellcolor{UNHScoreBlue!24}70.2 & \cellcolor{UNHScoreBlue!8}39.2 & \cellcolor{UNHTokenRed!55}171 & \cellcolor{UNHScoreBlue!42}91.2 & \cellcolor{UNHScoreBlue!28}93.5 & \cellcolor{UNHScoreBlue!42}93.5 & \cellcolor{UNHScoreBlue!46}94.4 & \cellcolor{UNHScoreBlue!55}82.3 & \cellcolor{UNHScoreBlue!8}88.2 & \cellcolor{UNHTokenRed!55}122 \\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+% ---- New Table 4: edge-restricted ablations (same index per dataset, LLM-free PPR retriever, base setting t2000_f40_dmp06).
+\begin{table}[t]
+\centering
+\caption{\normalfont \textbf{Edge-restricted ablations}. Only traversal connectivity changes. F1 and LLM-Acc (LLM) are percentages; G-Medical reports LLM-Acc and Contract QA the mean judge score (Score) over all questions; Ctx is mean reader-context tokens per question. Blue ranks scores (higher is better); red ranks tokens (lower is better). Shades are evenly spaced by distinct rank within each column; darker is better, and ties share a shade.}
+\label{tab:edge_ablations_new}  % rename to tab:edge_ablations when this replaces Table 4
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}l*{10}{c}@{}}
+\toprule
+& \multicolumn{3}{c}{HotpotQA} & \multicolumn{3}{c}{MuSiQue} & \multicolumn{2}{c}{G-Medical} & \multicolumn{2}{c}{Contract QA} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-9}\cmidrule(l){10-11}
+View & F1 & LLM & Ctx & F1 & LLM & Ctx & LLM & Ctx & Score & Ctx \\
+\midrule
+UNH-H & \cellcolor{UNHScoreBlue!55}75.2 & \cellcolor{UNHScoreBlue!32}85.0 & \cellcolor{UNHTokenRed!55}1,289 & \cellcolor{UNHScoreBlue!55}55.0 & \cellcolor{UNHScoreBlue!32}58.6 & \cellcolor{UNHTokenRed!55}1,450 & \cellcolor{UNHScoreBlue!32}64.6 & \cellcolor{UNHTokenRed!55}1,717 & \cellcolor{UNHScoreBlue!8}83.0 & \cellcolor{UNHTokenRed!55}1,824 \\
+UNH-D & \cellcolor{UNHScoreBlue!8}72.3 & \cellcolor{UNHScoreBlue!8}82.8 & \cellcolor{UNHTokenRed!8}1,479 & \cellcolor{UNHScoreBlue!8}45.9 & \cellcolor{UNHScoreBlue!8}51.0 & \cellcolor{UNHTokenRed!32}1,476 & \cellcolor{UNHScoreBlue!8}64.3 & \cellcolor{UNHTokenRed!8}1,913 & \cellcolor{UNHScoreBlue!32}83.6 & \cellcolor{UNHTokenRed!8}1,874 \\
+\textbf{\sys{}} & \cellcolor{UNHScoreBlue!32}74.8 & \cellcolor{UNHScoreBlue!55}85.4 & \cellcolor{UNHTokenRed!32}1,354 & \cellcolor{UNHScoreBlue!32}54.3 & \cellcolor{UNHScoreBlue!55}60.3 & \cellcolor{UNHTokenRed!8}1,494 & \cellcolor{UNHScoreBlue!55}65.3 & \cellcolor{UNHTokenRed!32}1,781 & \cellcolor{UNHScoreBlue!55}85.4 & \cellcolor{UNHTokenRed!32}1,857 \\
+\bottomrule
+\end{tabular}}
+\end{table}

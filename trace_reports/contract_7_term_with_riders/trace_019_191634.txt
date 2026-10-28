@@ -1,0 +1,1385 @@
+====================================================================================================
+QUESTION: What children are covered under the Children's Term Insurance Rider?
+CATEGORY: CAT2_RELATIONAL_LOOKUP
+EXPECTED ANSWER: Christopher Bennett Jr. (Age 8) and Olivia Grace Bennett (Age 5)
+EVIDENCE: Covered Children: Christopher Bennett Jr. (Age 8) / Olivia Grace Bennett (Age 5)
+====================================================================================================
+
+--- GOAL PLAN ---
+rewritten_query: What are the eligibility criteria for children under the Children's Term Insurance Rider?
+reasoning: The query asks about the specific group of children covered by a particular insurance rider — the "Children's Term Insurance Rider." This is a policy-specific question that likely depends on the terms defined in the rider itself. Since the query does not mention a specific insurance company, policyholder, or individual child, it is asking for a general definition or scope of eligibility. The answer would typically be found in the rider’s official documentation or policy terms, which define who qualifies as a "covered child" (e.g., biological, adopted, stepchildren under a certain age, etc.). This is a single-fact lookup: identifying the eligibility criteria for coverage under this rider. No chaining of facts is needed because the information is contained in one source — the rider’s definition.
+  [0] Identify the eligibility criteria for children covered under the Children's Term Insurance Rider  (key_terms=["Children's Term Insurance Rider", 'eligibility criteria'], depends_on_previous=False)
+planner LLM calls: 1  (total_tokens=0)
+
+--- EVIDENCE CROSS-REFERENCE ---
+
+  candidate evidence fact (word-overlap=0.35): 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    seeding      : candidate, selected=True (rank 8), scores=[0.5897700190544128]
+    traversal    : depth=0 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=0 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=0 from='Eligible children include all legally adopted children of the insured.' chosen=True scores=[0.5573416352272034]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=1 from='Olivia Grace Bennett is a covered child under Rider 4 and is age 5.' chosen=True scores=[0.5811916589736938]
+    traversal    : depth=1 from='Olivia Grace Bennett is a covered child under Rider 4 and is age 5.' chosen=True scores=[0.5811916589736938]
+    traversal    : depth=1 from='Eligible children include all legally adopted children of the insured.' chosen=True scores=[0.5573416352272034]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=1 from='Eligible children include all legally adopted children of the insured.' chosen=True scores=[0.5573416352272034]
+    traversal    : depth=1 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=1 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=1 from='Eligible children include all legally adopted children of the insured.' chosen=True scores=[0.5573416352272034]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=2 from='Olivia Grace Bennett is a covered child under Rider 4 and is age 5.' chosen=True scores=[0.5811916589736938]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=2 from='Eligible children include all legally adopted children of the insured.' chosen=True scores=[0.5573416352272034]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=2 from='Eligible children include all legally adopted children of the insured.' chosen=True scores=[0.5573416352272034]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=2 from='Olivia Grace Bennett is a covered child under Rider 4 and is age 5.' chosen=True scores=[0.5811916589736938]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5572179555892944]
+    traversal    : depth=2 from='Olivia Grace Bennett is a covered child under Rider 4 and is age 5.' chosen=True scores=[0.5811916589736938]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=2 from='Eligible children include all legally adopted children of the insured.' chosen=True scores=[0.5573416352272034]
+    traversal    : depth=3 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    traversal    : depth=3 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5336693525314331]
+    final_ranking: selected=False, cross_encoder_score=5.037
+
+  candidate evidence fact (word-overlap=0.35): 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    seeding      : candidate, selected=False, scores=[0.5549341440200806]
+    traversal    : depth=0 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=0 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=0 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5670880079269409]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=1 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5670880079269409]
+    traversal    : depth=1 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5670880079269409]
+    traversal    : depth=1 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5670880079269409]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=1 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=1 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=1 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=1 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5670880079269409]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5670880079269409]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5670880079269409]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=2 from="Rider 4 is titled 'Children's Term Insurance Rider'." chosen=True scores=[0.5425055623054504]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5670880079269409]
+    traversal    : depth=3 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=3 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    traversal    : depth=3 from="children's term insurance rider (Rider for child coverage)" chosen=True scores=[0.5006909370422363]
+    final_ranking: selected=False, cross_encoder_score=7.684
+
+  candidate evidence fact (word-overlap=0.18): 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'
+    seeding      : candidate, selected=False, scores=[0.5110263824462891]
+    traversal    : depth=0 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390576124191284]
+    traversal    : depth=1 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390574932098389]
+    traversal    : depth=1 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390574932098389]
+    traversal    : depth=1 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390574932098389]
+    traversal    : depth=1 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416620373725891]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390574932098389]
+    traversal    : depth=2 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416618585586548]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390574932098389]
+    traversal    : depth=2 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416618585586548]
+    traversal    : depth=2 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416618585586548]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390574932098389]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390574932098389]
+    traversal    : depth=2 from='Christopher Bennett Jr. is entitled to 20% of the death benefit.' chosen=True scores=[0.5115609765052795]
+    traversal    : depth=2 from='Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.' chosen=True scores=[0.5390574932098389]
+    traversal    : depth=3 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416618585586548]
+    traversal    : depth=3 from='Christopher Bennett Jr. is entitled to 20% of the death benefit.' chosen=True scores=[0.5115609765052795]
+    traversal    : depth=3 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416618585586548]
+    traversal    : depth=3 from='The primary beneficiary Olivia Grace Bennett is the daughter of the insured.' chosen=True scores=[0.5446491241455078]
+    traversal    : depth=3 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416618585586548]
+    traversal    : depth=3 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416618585586548]
+    traversal    : depth=3 from='christopher bennett jr. (Primary beneficiary)' chosen=True scores=[0.5416620373725891]
+    final_ranking: selected=False, cross_encoder_score=5.043
+
+--- SEEDING (top candidates by score) ---
+  [SELECTED(rank 0)] scores=['0.729']  "children's term insurance rider (Rider for child coverage)"
+  [SELECTED(rank 1)] scores=['0.721']  "Rider 4 is titled 'Children's Term Insurance Rider'."
+  [SELECTED(rank 2)] scores=['0.719']  'Eligible children include all natural children of the insured.'
+  [SELECTED(rank 3)] scores=['0.675']  'Eligible children include all legally adopted children of the insured.'
+  [SELECTED(rank 4)] scores=['0.647']  'Rider 4 automatically includes future children of the insured.'
+  [SELECTED(rank 5)] scores=['0.613']  'Rider 4 provides $15,000 in coverage for each eligible child.'
+  [SELECTED(rank 6)] scores=['0.606']  'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+  [SELECTED(rank 7)] scores=['0.604']  'Children covered under Rider 4 may convert to an individual policy at age 25.'
+  [SELECTED(rank 8)] scores=['0.590']  'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+  [SELECTED(rank 9)] scores=['0.583']  'natural and legally adopted children (Eligible dependents)'
+  [               -] scores=['0.583']  'Each child may convert to an individual policy up to five times the rider amount.'
+  [               -] scores=['0.555']  'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+  [               -] scores=['0.543']  'premium (Payment for policy coverage)'
+  [               -] scores=['0.540']  'guaranteed insurability option (Rider for future coverage without underwriting)'
+  [               -] scores=['0.534']  'No medical exam is required for coverage under Rider 4.'
+  [               -] scores=['0.534']  'waiver of premium due to disability (Rider providing premium relief)'
+  [               -] scores=['0.533']  'accelerated death benefit - chronic illness (Rider for chronic illness access)'
+  [               -] scores=['0.528']  'protectplus family insurance co. (Insurance provider)'
+  [               -] scores=['0.516']  'accelerated death benefit - terminal illness (Rider allowing advance on death benefit)'
+  [               -] scores=['0.515']  'disability (Condition for premium waiver)'
+  [               -] scores=['0.512']  'insured (Policyholder covered by the policy)'
+  [               -] scores=['0.511']  'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'
+  [               -] scores=['0.509']  'no medical exam required (Underwriting condition)'
+  [               -] scores=['0.508']  'remaining death benefit (Benefit paid to beneficiaries)'
+  [               -] scores=['0.508']  'policy (Insured financial product)'
+
+--- TRAVERSAL (207 hop decisions, 14 dead ends) ---
+
+  depth=0 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [drop] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=0 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [drop] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [drop] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=0 goal_indices=[0] from: 'Eligible children include all natural children of the insured.'
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.695']
+    [KEEP] (fact_entity, 'has ') -> 'natural and legally adopted children (Eligible dependents)'  scores=['0.285']
+    [KEEP] (fact_fact, 'IS_FOR') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.623']
+
+  depth=0 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all natural children of the insured.'  scores=['0.701']
+    [KEEP] (fact_entity, 'has ') -> 'natural and legally adopted children (Eligible dependents)'  scores=['0.285']
+    [KEEP] (fact_fact, 'EXTENDS_TO') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.621']
+    [KEEP] (fact_fact, 'EXPANDS') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+
+  depth=0 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.687']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.660']
+    [KEEP] (fact_fact, 'ENSURES') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=0 goal_indices=[0] from: 'Rider 4 provides $15,000 in coverage for each eligible child.'
+    [KEEP] (fact_fact, 'IS_COVERED_BY') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.720']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_entity, 'has ') -> '$15,000 coverage (Per child coverage amount)'  scores=['0.240']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.585']
+
+  depth=0 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'IS_ACTIVE_DURING') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.649']
+    [KEEP] (fact_fact, 'LEADS_TO_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.616']
+    [KEEP] (fact_fact, 'SETS') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.584']
+
+  depth=0 goal_indices=[0] from: 'Children covered under Rider 4 may convert to an individual policy at age 25.'
+    [KEEP] (fact_fact, 'CAN_BE_CONVERTED_AT') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.597']
+    [KEEP] (fact_fact, 'REQUIRES_NO_EVIDENCE') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.454']
+    [KEEP] (fact_fact, 'HAS_LIMIT') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.594']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'convert to individual policy (Conversion option at age 25)'  scores=['0.143']
+    [KEEP] (fact_fact, 'COMPLEMENTS') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.533']
+
+  depth=0 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.567']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.637']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.642']
+
+  depth=0 goal_indices=[0] from: 'natural and legally adopted children (Eligible dependents)'
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_COVERAGE') -> 'Eligible children include all natural children of the insured.'  scores=['0.639']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_COVERAGE') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.616']
+
+  depth=1 goal_indices=[0] from: 'Rider 4 provides $15,000 in coverage for each eligible child.'
+    [KEEP] (fact_fact, 'IS_COVERED_BY') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.720']
+    [KEEP] (fact_entity, 'has ') -> '$15,000 coverage (Per child coverage amount)'  scores=['0.240']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.585']
+
+  depth=1 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [drop] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=1 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.687']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.660']
+    [KEEP] (fact_fact, 'ENSURES') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=1 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.567']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.637']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.642']
+
+  depth=1 goal_indices=[0] from: 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.581']
+    [KEEP] (fact_entity, 'has ') -> 'olivia grace bennett (Covered child)'  scores=['0.152']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.636']
+    [KEEP] (fact_fact, 'COVERS') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.501']
+
+  depth=1 goal_indices=[0] from: 'No medical exam is required for coverage under Rider 4.'
+    [KEEP] (fact_fact, 'IS_AVAILABLE_WITHOUT') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.689']
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.507']
+    [KEEP] (fact_fact, 'IS_PREMIUM_FOR') -> 'The annual premium for Rider 4 is $156.'  scores=['0.450']
+
+  depth=1 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.660']
+    [KEEP] (fact_fact, 'ENSURES') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=1 goal_indices=[0] from: 'Rider 4 provides $15,000 in coverage for each eligible child.'
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_entity, 'has ') -> '$15,000 coverage (Per child coverage amount)'  scores=['0.240']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.585']
+
+  depth=1 goal_indices=[0] from: 'No medical exam is required for coverage under Rider 4.'
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.507']
+    [KEEP] (fact_fact, 'IS_PREMIUM_FOR') -> 'The annual premium for Rider 4 is $156.'  scores=['0.450']
+
+  depth=1 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'LEADS_TO_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.616']
+    [KEEP] (fact_fact, 'SETS') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.584']
+
+  depth=1 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.567']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.642']
+
+  depth=1 goal_indices=[0] from: 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.581']
+    [KEEP] (fact_entity, 'has ') -> 'olivia grace bennett (Covered child)'  scores=['0.152']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'COVERS') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.501']
+
+  depth=1 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'natural and legally adopted children (Eligible dependents)'  scores=['0.285']
+    [KEEP] (fact_fact, 'EXTENDS_TO') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.621']
+    [KEEP] (fact_fact, 'EXPANDS') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+
+  depth=1 goal_indices=[0] from: 'Each child may convert to an individual policy up to five times the rider amount.'
+    [KEEP] (fact_fact, 'IS_LIMITED_BY') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> '2% of face amount per month (Monthly advance limit)'  scores=['0.125']
+    [KEEP] (fact_entity, 'has ') -> 'convert to individual policy (Conversion option at age 25)'  scores=['0.143']
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policy includes all riders in the base premium of $89.00.'  scores=['0.529']
+
+  depth=1 goal_indices=[0] from: 'natural and legally adopted children (Eligible dependents)'
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_COVERAGE') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.616']
+
+  depth=1 goal_indices=[0] from: 'Eligible children include all natural children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'natural and legally adopted children (Eligible dependents)'  scores=['0.285']
+    [KEEP] (fact_fact, 'IS_FOR') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.623']
+
+  depth=1 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.687']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'ENSURES') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=1 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.567']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.637']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+
+  depth=1 goal_indices=[0] from: 'natural and legally adopted children (Eligible dependents)'
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_COVERAGE') -> 'Eligible children include all natural children of the insured.'  scores=['0.639']
+
+  depth=1 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [drop] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=1 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all natural children of the insured.'  scores=['0.701']
+    [KEEP] (fact_entity, 'has ') -> 'natural and legally adopted children (Eligible dependents)'  scores=['0.285']
+    [KEEP] (fact_fact, 'EXPANDS') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+
+  depth=1 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'IS_ACTIVE_DURING') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.649']
+    [KEEP] (fact_fact, 'LEADS_TO_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'SETS') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.584']
+
+  depth=1 goal_indices=[0] from: 'The remaining death benefit is paid to beneficiaries upon the death of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'remaining death benefit (Benefit paid to beneficiaries)'  scores=['0.233']
+    [KEEP] (fact_entity, 'has ') -> 'accidental death benefit (Rider for accidental death payout)'  scores=['0.125']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Rider 5 pays an additional $750,000 if death results from accidental injury.'  scores=['0.399']
+    [KEEP] (fact_fact, 'IS CONDITIONED BY') -> 'The benefit is not paid if the insured was under the influence of drugs or alcoh'  scores=['0.450']
+
+  depth=1 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=1 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [drop] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=1 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'IS_ACTIVE_DURING') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.649']
+    [KEEP] (fact_fact, 'LEADS_TO_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.616']
+
+  depth=1 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=1 goal_indices=[0] from: '$15,000 coverage (Per child coverage amount)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The annual premium for Rider 4 is $156.'  scores=['0.331']
+
+  depth=1 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [drop] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=1 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.687']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.660']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=1 goal_indices=[0] from: 'Children covered under Rider 4 may convert to an individual policy at age 25.'
+    [KEEP] (fact_fact, 'REQUIRES_NO_EVIDENCE') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.454']
+    [KEEP] (fact_fact, 'HAS_LIMIT') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.594']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'convert to individual policy (Conversion option at age 25)'  scores=['0.143']
+    [KEEP] (fact_fact, 'COMPLEMENTS') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.533']
+
+  depth=1 goal_indices=[0] from: 'Rider 4 provides $15,000 in coverage for each eligible child.'
+    [KEEP] (fact_fact, 'IS_COVERED_BY') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.720']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_entity, 'has ') -> '$15,000 coverage (Per child coverage amount)'  scores=['0.240']
+
+  depth=1 goal_indices=[0] from: 'age 25 (Coverage end age)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.495']
+
+  depth=1 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=1 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'IS_ACTIVE_DURING') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.649']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.616']
+    [KEEP] (fact_fact, 'SETS') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.584']
+
+  depth=1 goal_indices=[0] from: 'Each child may convert to an individual policy up to five times the rider amount.'
+    [KEEP] (fact_entity, 'has ') -> '2% of face amount per month (Monthly advance limit)'  scores=['0.125']
+    [KEEP] (fact_entity, 'has ') -> 'convert to individual policy (Conversion option at age 25)'  scores=['0.143']
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policy includes all riders in the base premium of $89.00.'  scores=['0.529']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Eligible children include all natural children of the insured.'  scores=['0.670']
+
+  depth=1 goal_indices=[0] from: "Rider 6 is titled 'Guaranteed Insurability Option'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 6 is $89.'  scores=['0.468']
+    [KEEP] (fact_fact, 'ENABLES_NO_UNDERWRITING') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.521']
+    [KEEP] (fact_fact, 'HAS_SCHEDULE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.482']
+    [KEEP] (fact_fact, 'HAS_TERMINATION') -> 'All options under Rider 6 terminate when the insured reaches age 50.'  scores=['0.529']
+    [drop] (fact_entity, 'has ') -> 'guaranteed insurability option (Rider for future coverage without underwriting)'  scores=['0.165']
+    [KEEP] (fact_fact, 'HAS_DEADLINE') -> 'The insured must exercise the option within 90 days of the option date.'  scores=['0.459']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'The policy includes all riders in the base premium of $89.00.'  scores=['0.511']
+    [drop] (fact_fact, 'IS_SUBJECT_TO') -> 'The benefit is not paid if death results from self-inflicted injury.'  scores=['0.403']
+
+  depth=1 goal_indices=[0] from: 'Conversion to an individual policy at age 25 does not require evidence of insurability.'
+    [KEEP] (fact_entity, 'has ') -> 'convert to individual policy (Conversion option at age 25)'  scores=['0.143']
+    [KEEP] (fact_entity, 'has ') -> 'guaranteed insurability option (Rider for future coverage without underwriting)'  scores=['0.165']
+    [KEEP] (fact_fact, 'ENABLES') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.629']
+
+  depth=1 goal_indices=[0] from: 'age 25 (Coverage end age)'
+    [KEEP] (entity_fact, 'participates in: ENDS_COVERAGE') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.513']
+
+  depth=1 goal_indices=[0] from: 'convert to individual policy (Conversion option at age 25)'
+    [KEEP] (entity_fact, 'participates in: NO_UNDERWRITING_REQUIRED') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.322']
+    [KEEP] (entity_fact, 'participates in: HAS_CAP') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.492']
+
+  depth=1 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all natural children of the insured.'  scores=['0.701']
+    [KEEP] (fact_entity, 'has ') -> 'natural and legally adopted children (Eligible dependents)'  scores=['0.285']
+    [KEEP] (fact_fact, 'EXTENDS_TO') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.621']
+
+  depth=1 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [drop] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=1 goal_indices=[0] from: 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    [KEEP] (fact_entity, 'has ') -> 'olivia grace bennett (Covered child)'  scores=['0.152']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.636']
+    [KEEP] (fact_fact, 'COVERS') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.501']
+
+  depth=1 goal_indices=[0] from: 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'
+    [KEEP] (fact_fact, 'DETERMINES') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.369']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary is Rachel Marie Bennett, who is the wife of the insured.'  scores=['0.495']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.540']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+
+  depth=1 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=1 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=1 goal_indices=[0] from: 'Eligible children include all natural children of the insured.'
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.695']
+    [KEEP] (fact_fact, 'IS_FOR') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.623']
+
+  depth=1 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all natural children of the insured.'  scores=['0.701']
+    [KEEP] (fact_fact, 'EXTENDS_TO') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.621']
+    [KEEP] (fact_fact, 'EXPANDS') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+
+  depth=2 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'IS_ACTIVE_DURING') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.649']
+    [KEEP] (fact_fact, 'LEADS_TO_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.616']
+
+  depth=2 goal_indices=[0] from: '$15,000 coverage (Per child coverage amount)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The annual premium for Rider 4 is $156.'  scores=['0.331']
+
+  depth=2 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.660']
+    [KEEP] (fact_fact, 'ENSURES') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=2 goal_indices=[0] from: 'Rider 4 provides $15,000 in coverage for each eligible child.'
+    [KEEP] (fact_entity, 'has ') -> '$15,000 coverage (Per child coverage amount)'  scores=['0.240']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.585']
+
+  depth=2 goal_indices=[0] from: 'No medical exam is required for coverage under Rider 4.'
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.507']
+    [KEEP] (fact_fact, 'IS_PREMIUM_FOR') -> 'The annual premium for Rider 4 is $156.'  scores=['0.450']
+
+  depth=2 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'LEADS_TO_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.616']
+    [KEEP] (fact_fact, 'SETS') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.584']
+
+  depth=2 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.567']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.642']
+
+  depth=2 goal_indices=[0] from: 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.581']
+    [KEEP] (fact_entity, 'has ') -> 'olivia grace bennett (Covered child)'  scores=['0.152']
+    [KEEP] (fact_fact, 'COVERS') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all natural children of the insured.'  scores=['0.701']
+    [KEEP] (fact_entity, 'has ') -> 'natural and legally adopted children (Eligible dependents)'  scores=['0.285']
+    [KEEP] (fact_fact, 'EXPANDS') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+
+  depth=2 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'IS_ACTIVE_DURING') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.649']
+    [KEEP] (fact_fact, 'LEADS_TO_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'age 25 (Coverage end age)'  scores=['0.186']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'SETS') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.584']
+
+  depth=2 goal_indices=[0] from: 'The remaining death benefit is paid to beneficiaries upon the death of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'remaining death benefit (Benefit paid to beneficiaries)'  scores=['0.233']
+    [KEEP] (fact_entity, 'has ') -> 'accidental death benefit (Rider for accidental death payout)'  scores=['0.125']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Rider 5 pays an additional $750,000 if death results from accidental injury.'  scores=['0.399']
+    [KEEP] (fact_fact, 'IS CONDITIONED BY') -> 'The benefit is not paid if the insured was under the influence of drugs or alcoh'  scores=['0.450']
+
+  depth=2 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all natural children of the insured.'  scores=['0.701']
+    [KEEP] (fact_entity, 'has ') -> 'natural and legally adopted children (Eligible dependents)'  scores=['0.285']
+    [KEEP] (fact_fact, 'EXTENDS_TO') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.621']
+
+  depth=2 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    [KEEP] (fact_entity, 'has ') -> 'olivia grace bennett (Covered child)'  scores=['0.152']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.636']
+    [KEEP] (fact_fact, 'COVERS') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'
+    [KEEP] (fact_fact, 'DETERMINES') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.369']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary is Rachel Marie Bennett, who is the wife of the insured.'  scores=['0.495']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.540']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+
+  depth=2 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=2 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.637']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.642']
+
+  depth=2 goal_indices=[0] from: "Rider 5 is titled 'Accidental Death Benefit'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 5 is $94.'  scores=['0.455']
+    [drop] (fact_fact, 'PROVIDES_BENEFIT') -> 'Rider 5 pays an additional $750,000 if death results from accidental injury.'  scores=['0.385']
+    [drop] (fact_fact, 'EXCLUDES_SUICIDE') -> 'The benefit is not paid if death results from suicide.'  scores=['0.407']
+    [drop] (fact_fact, 'EXCLUDES_SELF_INFLECTED') -> 'The benefit is not paid if death results from self-inflicted injury.'  scores=['0.394']
+    [drop] (fact_fact, 'EXCLUDES_WAR') -> 'The benefit is not paid if death results from war.'  scores=['0.370']
+    [KEEP] (fact_fact, 'EXCLUDES_PILOT_CREW') -> 'The benefit is not paid if death results from aviation when the insured is a pil'  scores=['0.463']
+    [KEEP] (fact_fact, 'EXCLUDES_INFLUENCE') -> 'The benefit is not paid if the insured was under the influence of drugs or alcoh'  scores=['0.441']
+    [KEEP] (fact_fact, 'HAS_TERMINATION') -> 'Rider 5 terminates when the insured reaches age 70.'  scores=['0.507']
+    [drop] (fact_entity, 'has ') -> 'accidental death benefit (Rider for accidental death payout)'  scores=['0.125']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'All options under Rider 6 terminate when the insured reaches age 50.'  scores=['0.488']
+    [KEEP] (fact_fact, 'NEEDS_EVIDENCE') -> 'Evidence of insurability may be required when adding riders.'  scores=['0.497']
+
+  depth=2 goal_indices=[0] from: 'olivia grace bennett (Covered child)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.515']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.210']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=2 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Rider 6 allows the purchase of additional coverage without medical underwriting.'
+    [KEEP] (fact_fact, 'IS_AVAILABLE_WITHOUT') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.537']
+    [KEEP] (fact_fact, 'HAS_LIMIT') -> 'The maximum amount of additional coverage that may be purchased per option date '  scores=['0.453']
+    [KEEP] (fact_fact, 'HAS_PRICING_DEPENDENCY') -> "The premium for the additional coverage is based on the insured's age and insura"  scores=['0.523']
+    [KEEP] (fact_entity, 'has ') -> 'guaranteed insurability option (Rider for future coverage without underwriting)'  scores=['0.165']
+    [KEEP] (fact_fact, 'IS_CONDITIONED_BY') -> 'The annual premium for Rider 6 is $89.'  scores=['0.465']
+
+  depth=2 goal_indices=[0] from: 'The annual premium for Rider 4 is $156.'
+    [KEEP] (fact_fact, 'PAYS_FOR') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.658']
+    [KEEP] (fact_entity, 'has ') -> '$15,000 coverage (Per child coverage amount)'  scores=['0.240']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'The annual premium for the base policy plus all riders is $1,089.00.'  scores=['0.472']
+
+  depth=2 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: '$15,000 coverage (Per child coverage amount)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The annual premium for Rider 4 is $156.'  scores=['0.331']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+
+  depth=2 goal_indices=[0] from: 'age 25 (Coverage end age)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+
+  depth=2 goal_indices=[0] from: 'olivia grace bennett (Covered child)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.515']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.210']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=2 goal_indices=[0] from: 'convert to individual policy (Conversion option at age 25)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_AT_AGE') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: NO_UNDERWRITING_REQUIRED') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.322']
+
+  depth=2 goal_indices=[0] from: '2% of face amount per month (Monthly advance limit)'
+    [KEEP] (entity_fact, 'participates in: MAXIMUM_MONTHLY_ADVANCE') -> 'An insured person may access up to 2% of the face amount per month if they becom'  scores=['0.326']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+
+  depth=2 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_fact, 'EXTENDS_TO') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.621']
+    [KEEP] (fact_fact, 'EXPANDS') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=2 goal_indices=[0] from: 'Eligible children include all natural children of the insured.'
+    [KEEP] (fact_fact, 'IS_FOR') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.623']
+
+  depth=2 goal_indices=[0] from: 'natural and legally adopted children (Eligible dependents)'
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_COVERAGE') -> 'Eligible children include all natural children of the insured.'  scores=['0.639']
+
+  depth=2 goal_indices=[0] from: 'age 25 (Coverage end age)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=2 goal_indices=[0] from: 'remaining death benefit (Benefit paid to beneficiaries)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=2 goal_indices=[0] from: 'accidental death benefit (Rider for accidental death payout)'
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.353']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 5 is $94.'  scores=['0.334']
+    [drop] (entity_fact, 'participates in: PAYS_ADDITIONAL_BENEFIT') -> 'Rider 5 pays an additional $750,000 if death results from accidental injury.'  scores=['0.245']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_DIRECT_CAUSE') -> 'The accident must be the direct cause of death for the benefit to be paid.'  scores=['0.289']
+    [drop] (entity_fact, 'participates in: HAS_TIME_LIMIT') -> 'Death must occur within 90 days of the accident for the benefit to be paid.'  scores=['0.274']
+    [drop] (entity_fact, 'participates in: EXCLUDES_SUICIDE') -> 'The benefit is not paid if death results from suicide.'  scores=['0.278']
+    [drop] (entity_fact, 'participates in: EXCLUDES_SELF_INFLECTED_INJURY') -> 'The benefit is not paid if death results from self-inflicted injury.'  scores=['0.258']
+    [drop] (entity_fact, 'participates in: EXCLUDES_WAR') -> 'The benefit is not paid if death results from war.'  scores=['0.243']
+    [KEEP] (entity_fact, 'participates in: EXCLUDES_AVIATION_PILOT_CREW') -> 'The benefit is not paid if death results from aviation when the insured is a pil'  scores=['0.348']
+    [KEEP] (entity_fact, 'participates in: EXCLUDES_SUBSTANCE_INFLUENCE') -> 'The benefit is not paid if the insured was under the influence of drugs or alcoh'  scores=['0.301']
+    [KEEP] (entity_fact, 'participates in: TERMINATES_AT_AGE') -> 'Rider 5 terminates when the insured reaches age 70.'  scores=['0.420']
+
+  depth=2 goal_indices=[0] from: 'Rider 4 provides $15,000 in coverage for each eligible child.'
+    [KEEP] (fact_fact, 'IS_COVERED_BY') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.720']
+    [KEEP] (fact_entity, 'has ') -> '$15,000 coverage (Per child coverage amount)'  scores=['0.240']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.585']
+
+  depth=2 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.567']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.637']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.642']
+
+  depth=2 goal_indices=[0] from: 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.581']
+    [KEEP] (fact_entity, 'has ') -> 'olivia grace bennett (Covered child)'  scores=['0.152']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.636']
+    [KEEP] (fact_fact, 'COVERS') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: 'No medical exam is required for coverage under Rider 4.'
+    [KEEP] (fact_fact, 'IS_AVAILABLE_WITHOUT') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.689']
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.507']
+    [KEEP] (fact_fact, 'IS_PREMIUM_FOR') -> 'The annual premium for Rider 4 is $156.'  scores=['0.450']
+
+  depth=2 goal_indices=[0] from: 'No actuarial discount is applied to the advance under Rider 3.'
+    [KEEP] (fact_fact, 'IS_NOT_DISCOUNTED') -> "Rider 3 is titled 'Accelerated Death Benefit - Chronic Illness'."  scores=['0.474']
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+
+  depth=2 goal_indices=[0] from: 'age 25 (Coverage end age)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=2 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.687']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.660']
+    [KEEP] (fact_fact, 'ENSURES') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=2 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.567']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.637']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.642']
+
+  depth=2 goal_indices=[0] from: 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.581']
+    [KEEP] (fact_entity, 'has ') -> 'olivia grace bennett (Covered child)'  scores=['0.152']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.636']
+    [KEEP] (fact_fact, 'COVERS') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: 'No medical exam is required for coverage under Rider 4.'
+    [KEEP] (fact_fact, 'IS_AVAILABLE_WITHOUT') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.689']
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.507']
+    [KEEP] (fact_fact, 'IS_PREMIUM_FOR') -> 'The annual premium for Rider 4 is $156.'  scores=['0.450']
+
+  depth=2 goal_indices=[0] from: 'No actuarial discount is applied to the advance under Rider 3.'
+    [KEEP] (fact_fact, 'IS_NOT_DISCOUNTED') -> "Rider 3 is titled 'Accelerated Death Benefit - Chronic Illness'."  scores=['0.474']
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+
+  depth=2 goal_indices=[0] from: 'The annual premium for Rider 4 is $156.'
+    [KEEP] (fact_fact, 'PAYS_FOR') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.658']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'The annual premium for the base policy plus all riders is $1,089.00.'  scores=['0.472']
+    [KEEP] (fact_fact, 'HAS_PREMIUM') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.510']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: 'convert to individual policy (Conversion option at age 25)'
+    [KEEP] (entity_fact, 'participates in: NO_UNDERWRITING_REQUIRED') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.322']
+    [KEEP] (entity_fact, 'participates in: HAS_CAP') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.492']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: '$15,000 coverage (Per child coverage amount)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The annual premium for Rider 4 is $156.'  scores=['0.331']
+
+  depth=2 goal_indices=[0] from: 'Children covered under Rider 4 may convert to an individual policy at age 25.'
+    [KEEP] (fact_fact, 'REQUIRES_NO_EVIDENCE') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.454']
+    [KEEP] (fact_fact, 'HAS_LIMIT') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.594']
+    [KEEP] (fact_entity, 'has ') -> 'convert to individual policy (Conversion option at age 25)'  scores=['0.143']
+    [KEEP] (fact_fact, 'COMPLEMENTS') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.533']
+
+  depth=2 goal_indices=[0] from: 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoption of a chi'
+    [KEEP] (fact_entity, 'has ') -> 'ages 40, 43, 46, 49 (Option dates)'  scores=['0.163']
+    [KEEP] (fact_fact, 'IS_SCHEDULED_AT') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.517']
+    [KEEP] (fact_fact, 'HAS_TIMELINE') -> 'The insured must exercise the option within 90 days of the option date.'  scores=['0.454']
+    [KEEP] (fact_entity, 'has ') -> 'guaranteed insurability option (Rider for future coverage without underwriting)'  scores=['0.165']
+    [KEEP] (fact_fact, 'LIMITS') -> 'All options under Rider 6 terminate when the insured reaches age 50.'  scores=['0.520']
+
+  depth=2 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=2 goal_indices=[0] from: 'convert to individual policy (Conversion option at age 25)'
+    [KEEP] (entity_fact, 'participates in: NO_UNDERWRITING_REQUIRED') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.322']
+
+  depth=2 goal_indices=[0] from: '2% of face amount per month (Monthly advance limit)'
+    [KEEP] (entity_fact, 'participates in: MAXIMUM_MONTHLY_ADVANCE') -> 'An insured person may access up to 2% of the face amount per month if they becom'  scores=['0.326']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+
+  depth=2 goal_indices=[0] from: 'guaranteed insurability option (Rider for future coverage without underwriting)'
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 6 is $89.'  scores=['0.338']
+    [KEEP] (entity_fact, 'participates in: ALLOWS_ADDITIONAL_COVERAGE') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.416']
+    [drop] (entity_fact, 'participates in: HAS_COVERAGE_LIMIT') -> 'The maximum amount of additional coverage that may be purchased per option date '  scores=['0.330']
+    [KEEP] (entity_fact, 'participates in: HAS_OPTION_DATES') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.371']
+    [drop] (entity_fact, 'participates in: HAS_EXERCISE_WINDOW') -> 'The insured must exercise the option within 90 days of the option date.'  scores=['0.302']
+    [KEEP] (entity_fact, 'participates in: HAS_PREMIUM_BASED_ON') -> "The premium for the additional coverage is based on the insured's age and insura"  scores=['0.374']
+    [KEEP] (entity_fact, 'participates in: TERMINATES_AT_AGE') -> 'All options under Rider 6 terminate when the insured reaches age 50.'  scores=['0.452']
+
+  depth=2 goal_indices=[0] from: 'convert to individual policy (Conversion option at age 25)'
+    [KEEP] (entity_fact, 'participates in: HAS_CAP') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.492']
+
+  depth=2 goal_indices=[0] from: 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'
+    [KEEP] (fact_fact, 'IS_ACTIVE_DURING') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.649']
+    [KEEP] (fact_entity, 'has ') -> 'birth/adoption of child (Option date trigger)'  scores=['0.186']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.616']
+    [KEEP] (fact_fact, 'SETS') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.584']
+
+  depth=2 goal_indices=[0] from: 'Each child may convert to an individual policy up to five times the rider amount.'
+    [KEEP] (fact_entity, 'has ') -> '2% of face amount per month (Monthly advance limit)'  scores=['0.125']
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policy includes all riders in the base premium of $89.00.'  scores=['0.529']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Eligible children include all natural children of the insured.'  scores=['0.670']
+
+  depth=2 goal_indices=[0] from: 'Conversion to an individual policy at age 25 does not require evidence of insurability.'
+    [KEEP] (fact_entity, 'has ') -> 'guaranteed insurability option (Rider for future coverage without underwriting)'  scores=['0.165']
+    [KEEP] (fact_fact, 'ENABLES') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.629']
+
+  depth=2 goal_indices=[0] from: 'natural and legally adopted children (Eligible dependents)'
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_COVERAGE') -> 'Eligible children include all natural children of the insured.'  scores=['0.639']
+
+  depth=2 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+
+  depth=2 goal_indices=[0] from: 'olivia grace bennett (Covered child)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.515']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.210']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=2 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=2 goal_indices=[0] from: 'Rider 4 provides $15,000 in coverage for each eligible child.'
+    [KEEP] (fact_fact, 'IS_COVERED_BY') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.720']
+    [KEEP] (fact_entity, 'has ') -> '$15,000 coverage (Per child coverage amount)'  scores=['0.240']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.585']
+
+  depth=2 goal_indices=[0] from: "Rider 4 is titled 'Children's Term Insurance Rider'."
+    [KEEP] (fact_fact, 'HAS_COST') -> 'The annual premium for Rider 4 is $156.'  scores=['0.496']
+    [KEEP] (fact_fact, 'PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.643']
+    [KEEP] (fact_fact, 'HAS_DURATION') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.588']
+    [KEEP] (fact_fact, 'INCLUDES_FUTURE') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.654']
+    [KEEP] (fact_fact, 'HAS_NO_MEDICAL_REQUIREMENT') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.603']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.543']
+    [drop] (fact_fact, 'IS ENABLED BY') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.687']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> 'Eligible children include all legally adopted children of the insured.'  scores=['0.660']
+    [KEEP] (fact_fact, 'ENSURES') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=2 goal_indices=[0] from: 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'
+    [KEEP] (fact_entity, 'has ') -> 'olivia grace bennett (Covered child)'  scores=['0.152']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.636']
+    [KEEP] (fact_fact, 'COVERS') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.501']
+
+  depth=2 goal_indices=[0] from: 'No medical exam is required for coverage under Rider 4.'
+    [KEEP] (fact_fact, 'IS_AVAILABLE_WITHOUT') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.689']
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.507']
+    [KEEP] (fact_fact, 'IS_PREMIUM_FOR') -> 'The annual premium for Rider 4 is $156.'  scores=['0.450']
+
+  depth=2 goal_indices=[0] from: 'No actuarial discount is applied to the advance under Rider 3.'
+    [KEEP] (fact_fact, 'IS_NOT_DISCOUNTED') -> "Rider 3 is titled 'Accelerated Death Benefit - Chronic Illness'."  scores=['0.474']
+    [KEEP] (fact_entity, 'has ') -> 'no medical exam required (Underwriting condition)'  scores=['0.231']
+
+  depth=2 goal_indices=[0] from: 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'
+    [KEEP] (fact_fact, 'DETERMINES') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.369']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary is Rachel Marie Bennett, who is the wife of the insured.'  scores=['0.495']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.540']
+
+  depth=2 goal_indices=[0] from: 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'
+    [KEEP] (fact_fact, 'ENTITLED_TO') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.512']
+    [KEEP] (fact_fact, 'PART_OF') -> 'Rachel Marie Bennett is entitled to 60% of the death benefit.'  scores=['0.347']
+    [KEEP] (fact_fact, 'SHARED_ENTITLEMENT') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.368']
+
+  depth=2 goal_indices=[0] from: 'Eligible children include all legally adopted children of the insured.'
+    [KEEP] (fact_fact, 'EXTENDS_TO') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.621']
+    [KEEP] (fact_fact, 'EXPANDS') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.557']
+
+  depth=2 goal_indices=[0] from: 'Each child may convert to an individual policy up to five times the rider amount.'
+    [KEEP] (fact_fact, 'IS_LIMITED_BY') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> '2% of face amount per month (Monthly advance limit)'  scores=['0.125']
+    [KEEP] (fact_entity, 'has ') -> 'convert to individual policy (Conversion option at age 25)'  scores=['0.143']
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policy includes all riders in the base premium of $89.00.'  scores=['0.529']
+
+  depth=2 goal_indices=[0] from: 'Eligible children include all natural children of the insured.'
+    [KEEP] (fact_fact, 'IS_FOR') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.623']
+
+  depth=2 goal_indices=[0] from: 'Rider 4 automatically includes future children of the insured.'
+    [KEEP] (fact_entity, 'has ') -> 'future children (Automatically included dependents)'  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_INCLUDED_IN') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.687']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'ENSURES') -> 'Coverage under Rider 4 begins at birth or adoption and continues until age 25.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.479']
+
+  depth=2 goal_indices=[0] from: 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'
+    [KEEP] (fact_fact, 'ARE_COVERED_TOGETHER') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.567']
+    [KEEP] (fact_entity, 'has ') -> 'christopher bennett jr. (Primary beneficiary)'  scores=['0.160']
+    [KEEP] (fact_entity, 'has ') -> "children's term insurance rider (Rider for child coverage)"  scores=['0.242']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.637']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.539']
+
+  depth=3 goal_indices=[0] from: 'age 25 (Coverage end age)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.495']
+
+  depth=3 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=3 goal_indices=[0] from: 'The annual premium for Rider 4 is $156.'
+    [KEEP] (fact_fact, 'PAYS_FOR') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.658']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'The annual premium for the base policy plus all riders is $1,089.00.'  scores=['0.472']
+    [KEEP] (fact_fact, 'HAS_PREMIUM') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.510']
+
+  depth=3 goal_indices=[0] from: '$15,000 coverage (Per child coverage amount)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The annual premium for Rider 4 is $156.'  scores=['0.331']
+
+  depth=3 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+
+  depth=3 goal_indices=[0] from: 'age 25 (Coverage end age)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.495']
+
+  depth=3 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=3 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=3 goal_indices=[0] from: 'olivia grace bennett (Covered child)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.515']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.210']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=3 goal_indices=[0] from: 'natural and legally adopted children (Eligible dependents)'
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_COVERAGE') -> 'Eligible children include all natural children of the insured.'  scores=['0.639']
+
+  depth=3 goal_indices=[0] from: 'age 25 (Coverage end age)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONVERSION') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.495']
+
+  depth=3 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=3 goal_indices=[0] from: 'remaining death benefit (Benefit paid to beneficiaries)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=3 goal_indices=[0] from: 'accidental death benefit (Rider for accidental death payout)'
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 5 is titled 'Accidental Death Benefit'."  scores=['0.353']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 5 is $94.'  scores=['0.334']
+    [drop] (entity_fact, 'participates in: PAYS_ADDITIONAL_BENEFIT') -> 'Rider 5 pays an additional $750,000 if death results from accidental injury.'  scores=['0.245']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_DIRECT_CAUSE') -> 'The accident must be the direct cause of death for the benefit to be paid.'  scores=['0.289']
+    [drop] (entity_fact, 'participates in: HAS_TIME_LIMIT') -> 'Death must occur within 90 days of the accident for the benefit to be paid.'  scores=['0.274']
+    [drop] (entity_fact, 'participates in: EXCLUDES_SUICIDE') -> 'The benefit is not paid if death results from suicide.'  scores=['0.278']
+    [drop] (entity_fact, 'participates in: EXCLUDES_SELF_INFLECTED_INJURY') -> 'The benefit is not paid if death results from self-inflicted injury.'  scores=['0.258']
+    [drop] (entity_fact, 'participates in: EXCLUDES_WAR') -> 'The benefit is not paid if death results from war.'  scores=['0.243']
+    [KEEP] (entity_fact, 'participates in: EXCLUDES_AVIATION_PILOT_CREW') -> 'The benefit is not paid if death results from aviation when the insured is a pil'  scores=['0.348']
+    [KEEP] (entity_fact, 'participates in: EXCLUDES_SUBSTANCE_INFLUENCE') -> 'The benefit is not paid if the insured was under the influence of drugs or alcoh'  scores=['0.301']
+    [KEEP] (entity_fact, 'participates in: TERMINATES_AT_AGE') -> 'Rider 5 terminates when the insured reaches age 70.'  scores=['0.420']
+
+  depth=3 goal_indices=[0] from: 'natural and legally adopted children (Eligible dependents)'
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_COVERAGE') -> 'Eligible children include all natural children of the insured.'  scores=['0.639']
+
+  depth=3 goal_indices=[0] from: 'olivia grace bennett (Covered child)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.515']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.210']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=3 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=3 goal_indices=[0] from: 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'
+    [KEEP] (fact_fact, 'DETERMINES') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.369']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary is Rachel Marie Bennett, who is the wife of the insured.'  scores=['0.495']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.540']
+
+  depth=3 goal_indices=[0] from: 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'
+    [KEEP] (fact_fact, 'ENTITLED_TO') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.512']
+    [KEEP] (fact_fact, 'PART_OF') -> 'Rachel Marie Bennett is entitled to 60% of the death benefit.'  scores=['0.347']
+    [KEEP] (fact_fact, 'SHARED_ENTITLEMENT') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.368']
+
+  depth=3 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=3 goal_indices=[0] from: 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'
+    [KEEP] (fact_fact, 'DETERMINES') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.369']
+    [KEEP] (fact_fact, 'RELATED_TO') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.545']
+    [KEEP] (fact_fact, 'HAS_CLASS') -> "The insured's underwriting class is Preferred Non-Smoker."  scores=['0.487']
+
+  depth=3 goal_indices=[0] from: 'An insured person must be unable to perform two or more Activities of Daily Living to qual'
+    [KEEP] (fact_fact, 'IS_CONDITIONED_ON') -> 'An insured person may access up to 2% of the face amount per month if they becom'  scores=['0.484']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.402']
+    [KEEP] (fact_entity, 'has ') -> '2% of face amount per month (Monthly advance limit)'  scores=['0.125']
+    [KEEP] (fact_fact, 'MEETS_CRITERIA') -> 'If you become chronically ill and cannot perform at least 2 of 6 Activities of D'  scores=['0.467']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'If you are diagnosed with a terminal illness, the maximum advance amount is $500'  scores=['0.399']
+
+  depth=3 goal_indices=[0] from: 'The Activities of Daily Living include bathing, dressing, eating, toileting, transferring,'
+    [KEEP] (fact_fact, 'IS_DEFINED_BY') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.490']
+    [KEEP] (fact_entity, 'has ') -> 'remaining death benefit (Benefit paid to beneficiaries)'  scores=['0.233']
+    [KEEP] (fact_entity, 'has ') -> 'under influence of drugs/alcohol (Excluded condition)'  scores=['0.200']
+    [KEEP] (fact_fact, 'ENUMERATES') -> 'Chronic Illness means the inability to perform at least 2 of 6 Activities of Dai'  scores=['0.423']
+    [KEEP] (fact_fact, 'IS DEFINED BY') -> 'Disability means the complete inability to perform the material and substantial '  scores=['0.465']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'An insured person may access up to 2% of the face amount per month if they becom'  scores=['0.470']
+
+  depth=3 goal_indices=[0] from: 'Olivia Grace Bennett is entitled to 20% of the death benefit.'
+    [KEEP] (fact_fact, 'ENTITLED_TO') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.507']
+    [KEEP] (fact_fact, 'PART_OF') -> 'Rachel Marie Bennett is entitled to 60% of the death benefit.'  scores=['0.347']
+    [KEEP] (fact_fact, 'SHARED_ENTITLEMENT') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.369']
+
+  depth=3 goal_indices=[0] from: 'guaranteed insurability option (Rider for future coverage without underwriting)'
+    [drop] (entity_fact, 'participates in: ') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.301']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 6 is $89.'  scores=['0.338']
+    [KEEP] (entity_fact, 'participates in: HAS_COVERAGE_LIMIT') -> 'The maximum amount of additional coverage that may be purchased per option date '  scores=['0.330']
+    [KEEP] (entity_fact, 'participates in: HAS_OPTION_DATES') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.371']
+    [drop] (entity_fact, 'participates in: HAS_EXERCISE_WINDOW') -> 'The insured must exercise the option within 90 days of the option date.'  scores=['0.302']
+    [KEEP] (entity_fact, 'participates in: HAS_PREMIUM_BASED_ON') -> "The premium for the additional coverage is based on the insured's age and insura"  scores=['0.374']
+    [KEEP] (entity_fact, 'participates in: TERMINATES_AT_AGE') -> 'All options under Rider 6 terminate when the insured reaches age 50.'  scores=['0.452']
+
+  depth=3 goal_indices=[0] from: '$15,000 coverage (Per child coverage amount)'
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.536']
+
+  depth=3 goal_indices=[0] from: 'No actuarial discount is applied to the advance under Rider 3.'
+    [KEEP] (fact_fact, 'IS_NOT_DISCOUNTED') -> "Rider 3 is titled 'Accelerated Death Benefit - Chronic Illness'."  scores=['0.474']
+
+  depth=3 goal_indices=[0] from: '$15,000 coverage (Per child coverage amount)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The annual premium for Rider 4 is $156.'  scores=['0.331']
+
+  depth=3 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=3 goal_indices=[0] from: 'olivia grace bennett (Covered child)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.515']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.210']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=3 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+
+  depth=3 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: NO_MEDICAL_EXAM') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.425']
+
+  depth=3 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=3 goal_indices=[0] from: 'olivia grace bennett (Covered child)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.515']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.210']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=3 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+
+  depth=3 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: NO_MEDICAL_EXAM') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.425']
+
+  depth=3 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=3 goal_indices=[0] from: 'convert to individual policy (Conversion option at age 25)'
+    [KEEP] (entity_fact, 'participates in: NO_UNDERWRITING_REQUIRED') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.322']
+    [KEEP] (entity_fact, 'participates in: HAS_CAP') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.492']
+
+  depth=3 goal_indices=[0] from: 'guaranteed insurability option (Rider for future coverage without underwriting)'
+    [drop] (entity_fact, 'participates in: ') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.301']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 6 is $89.'  scores=['0.338']
+    [KEEP] (entity_fact, 'participates in: ALLOWS_ADDITIONAL_COVERAGE') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_COVERAGE_LIMIT') -> 'The maximum amount of additional coverage that may be purchased per option date '  scores=['0.330']
+    [drop] (entity_fact, 'participates in: HAS_EXERCISE_WINDOW') -> 'The insured must exercise the option within 90 days of the option date.'  scores=['0.302']
+    [KEEP] (entity_fact, 'participates in: HAS_PREMIUM_BASED_ON') -> "The premium for the additional coverage is based on the insured's age and insura"  scores=['0.374']
+    [KEEP] (entity_fact, 'participates in: TERMINATES_AT_AGE') -> 'All options under Rider 6 terminate when the insured reaches age 50.'  scores=['0.452']
+
+  depth=3 goal_indices=[0] from: 'birth/adoption of child (Option date trigger)'
+    [KEEP] (entity_fact, 'participates in: IS_OPTION_DATE') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.378']
+
+  depth=3 goal_indices=[0] from: '2% of face amount per month (Monthly advance limit)'
+    [KEEP] (entity_fact, 'participates in: MAXIMUM_MONTHLY_ADVANCE') -> 'An insured person may access up to 2% of the face amount per month if they becom'  scores=['0.326']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+
+  depth=3 goal_indices=[0] from: 'guaranteed insurability option (Rider for future coverage without underwriting)'
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 6 is titled 'Guaranteed Insurability Option'."  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 6 is $89.'  scores=['0.338']
+    [KEEP] (entity_fact, 'participates in: ALLOWS_ADDITIONAL_COVERAGE') -> 'Rider 6 allows the purchase of additional coverage without medical underwriting.'  scores=['0.416']
+    [drop] (entity_fact, 'participates in: HAS_COVERAGE_LIMIT') -> 'The maximum amount of additional coverage that may be purchased per option date '  scores=['0.330']
+    [KEEP] (entity_fact, 'participates in: HAS_OPTION_DATES') -> 'Option dates for Rider 6 are at ages 40, 43, 46, 49, and at the birth or adoptio'  scores=['0.371']
+    [drop] (entity_fact, 'participates in: HAS_EXERCISE_WINDOW') -> 'The insured must exercise the option within 90 days of the option date.'  scores=['0.302']
+    [KEEP] (entity_fact, 'participates in: HAS_PREMIUM_BASED_ON') -> "The premium for the additional coverage is based on the insured's age and insura"  scores=['0.374']
+    [KEEP] (entity_fact, 'participates in: TERMINATES_AT_AGE') -> 'All options under Rider 6 terminate when the insured reaches age 50.'  scores=['0.452']
+
+  depth=3 goal_indices=[0] from: '$15,000 coverage (Per child coverage amount)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The annual premium for Rider 4 is $156.'  scores=['0.331']
+
+  depth=3 goal_indices=[0] from: 'olivia grace bennett (Covered child)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Olivia Grace Bennett is the daughter of the insured.'  scores=['0.515']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Olivia Grace Bennett is entitled to 20% of the death benefit.'  scores=['0.210']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Activities of Daily Living include bathing, dressing, eating, toileting, tra'  scores=['0.222']
+
+  depth=3 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+
+  depth=3 goal_indices=[0] from: 'no medical exam required (Underwriting condition)'
+    [KEEP] (entity_fact, 'participates in: NO_MEDICAL_EXAM') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.425']
+
+  depth=3 goal_indices=[0] from: 'convert to individual policy (Conversion option at age 25)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_AT_AGE') -> 'Children covered under Rider 4 may convert to an individual policy at age 25.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: NO_UNDERWRITING_REQUIRED') -> 'Conversion to an individual policy at age 25 does not require evidence of insura'  scores=['0.322']
+
+  depth=3 goal_indices=[0] from: '2% of face amount per month (Monthly advance limit)'
+    [KEEP] (entity_fact, 'participates in: MAXIMUM_MONTHLY_ADVANCE') -> 'An insured person may access up to 2% of the face amount per month if they becom'  scores=['0.326']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An insured person must be unable to perform two or more Activities of Daily Livi'  scores=['0.339']
+
+  depth=3 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Christopher Bennett Jr. is a covered child under Rider 4 and is age 8.'  scores=['0.534']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=3 goal_indices=[0] from: "children's term insurance rider (Rider for child coverage)"
+    [KEEP] (entity_fact, 'participates in: ') -> 'No actuarial discount is applied to the advance under Rider 3.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: HAS_TITLE') -> "Rider 4 is titled 'Children's Term Insurance Rider'."  scores=['0.599']
+    [drop] (entity_fact, 'participates in: HAS_ANNUAL_PREMIUM') -> 'The annual premium for Rider 4 is $156.'  scores=['0.340']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_PER_CHILD_COVERAGE') -> 'Rider 4 provides $15,000 in coverage for each eligible child.'  scores=['0.600']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Rider 4 automatically includes future children of the insured.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'No medical exam is required for coverage under Rider 4.'  scores=['0.404']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'Olivia Grace Bennett is a covered child under Rider 4 and is age 5.'  scores=['0.501']
+
+  depth=3 goal_indices=[0] from: 'christopher bennett jr. (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: IS_CHILD_OF_INSURED') -> 'The primary beneficiary Christopher Bennett Jr. is the son of the insured.'  scores=['0.542']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'Christopher Bennett Jr. is entitled to 20% of the death benefit.'  scores=['0.227']
+
+  depth=4 goal_indices=[0] from: '2% of face amount per month (Monthly advance limit)'
+    [KEEP] (entity_fact, 'participates in: MAXIMUM_MONTHLY_ADVANCE') -> 'An insured person may access up to 2% of the face amount per month if they becom'  scores=['0.326']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Each child may convert to an individual policy up to five times the rider amount'  scores=['0.499']
+
+  depth=4 goal_indices=[0] from: 'remaining death benefit (Benefit paid to beneficiaries)'
+    [KEEP] (entity_fact, 'participates in: PAID_TO_BENEFICIARIES') -> 'The remaining death benefit is paid to beneficiaries upon the death of the insur'  scores=['0.289']
+
+  depth=4 goal_indices=[0] from: 'under influence of drugs/alcohol (Excluded condition)'
+    [KEEP] (entity_fact, 'participates in: IS_EXCLUSION') -> 'The benefit is not paid if the insured was under the influence of drugs or alcoh'  scores=['0.324']
+
+--- FINAL RANKING ---
+  [SELECTED(rank 0)] ce=8.796  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [SELECTED(rank 1)] ce=8.743  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: HAS_TITLE) -"
+  [SELECTED(rank 6)] ce=8.718  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [               -] ce=8.716  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [SELECTED(rank 3)] ce=8.714  '"Rider 4 is titled \'Children\'s Term Insurance Rider\'." -> Christopher Bennett Jr., a covered child u'
+  [SELECTED(rank 5)] ce=8.703  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [               -] ce=8.656  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [               -] ce=8.640  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [SELECTED(rank 4)] ce=8.636  '"Rider 4 is titled \'Children\'s Term Insurance Rider\'." -> Olivia Grace Bennett, a covered child unde'
+  [               -] ce=8.563  '"Rider 4 automatically includes future children of the insured." -> (has ) -> [children\'s term insur'
+  [               -] ce=8.551  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [               -] ce=8.550  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [               -] ce=8.537  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [SELECTED(rank 14)] ce=8.523  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [SELECTED(rank 9)] ce=8.503  '"Rider 4 automatically includes future children of the insured." -> The Children\'s Term Insurance Ri'
+  [               -] ce=8.499  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [               -] ce=8.485  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [               -] ce=8.469  '"Rider 4 automatically includes future children of the insured." -> (has ) -> [children\'s term insur'
+  [SELECTED(rank 2)] ce=8.420  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COV"
+  [SELECTED(rank 10)] ce=8.405  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: HAS_TITLE) -"
+  [               -] ce=8.393  '"Rider 4 provides $15,000 in coverage for each eligible child." -> (has ) -> [children\'s term insura'
+  [               -] ce=8.381  "[children's term insurance rider (Rider for child coverage)] -> (participates in event: HAS_TITLE) -"
+  [SELECTED(rank 18)] ce=8.360  '"Christopher Bennett Jr. is a covered child under Rider 4 and is age 8." -> Christopher Bennett Jr. '
+  [SELECTED(rank 11)] ce=8.357  '"Christopher Bennett Jr. is a covered child under Rider 4 and is age 8." -> (has ) -> [children\'s te'
+  [               -] ce=8.356  '"Rider 4 provides $15,000 in coverage for each eligible child." -> (has ) -> [children\'s term insura'
+
+--- RETRIEVED CONTEXT (what the generation LLM actually saw) ---
+[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COVERAGE) -> "Christopher Bennett Jr. is a covered child under Rider 4 and is age 8." -> ARE_COVERED_TOGETHER -> "Olivia Grace Bennett is a covered child under Rider 4 and is age 5." -> IS_PART_OF -> "Rider 4 is titled 'Children's Term Insurance Rider'."
+Logical Conclusions:
+Christopher Bennett Jr. and Olivia Grace Bennett are both covered children under Rider 4, indicating that multiple children can be covered simultaneously.
+Olivia Grace Bennett, a covered child under Rider 4, is age 5, further demonstrating the rider's application to specific children.
+
+[children's term insurance rider (Rider for child coverage)] -> (participates in event: HAS_TITLE) -> "Rider 4 is titled 'Children's Term Insurance Rider'."
+
+[children's term insurance rider (Rider for child coverage)] -> (participates in event: PROVIDES_COVERAGE) -> "Olivia Grace Bennett is a covered child under Rider 4 and is age 5."
+
+"Christopher Bennett Jr. is a covered child under Rider 4 and is age 8." -> IS_PART_OF -> "Rider 4 is titled 'Children's Term Insurance Rider'."
+Logical Conclusions:
+Christopher Bennett Jr., a covered child under Rider 4, is age 8, illustrating the application of the rider's coverage to a specific individual.
+
+"Christopher Bennett Jr. is a covered child under Rider 4 and is age 8." -> INCLUDES -> "Eligible children include all legally adopted children of the insured."
+Logical Conclusions:
+Eligible children include legally adopted children, which supports the inclusion of Christopher Bennett Jr. under the rider if he is adopted.
+
+"Rider 4 is titled 'Children's Term Insurance Rider'." -> INCLUDES_FUTURE -> "Rider 4 automatically includes future children of the insured."
+Logical Conclusions:
+The Children's Term Insurance Rider automatically extends coverage to future children of the insured.
+
+[children's term insurance rider (Rider for child coverage)] -> (participates in event: ) -> "Rider 4 automatically includes future children of the insured."
+
+"Eligible children include all legally adopted children of the insured." -> IS_INCLUDED_IN -> "Eligible children include all natural children of the insured."
+Logical Conclusions:
+Eligibility for the Children's Term Insurance Rider includes both natural and legally adopted children of the insured.
+
+"Eligible children include all legally adopted children of the insured." -> EXTENDS_TO -> "Rider 4 automatically includes future children of the insured."
+Logical Conclusions:
+Rider 4 automatically includes future children of the insured, which extends the eligibility beyond current children.
+
+--- GENERATION ---
+LLM answer: Christopher Bennett Jr. and Olivia Grace Bennett are covered children under the Children's Term Insurance Rider, and the rider also covers all legally adopted children and future children of the insured.
+Judge score: 0.5
+====================================================================================================

@@ -1,0 +1,3 @@
+Title: Libguestfs
+
+libguestfs is a C library and a set of tools for accessing and modifying virtual disk images used in platform virtualization. The tools can be used for viewing and editing virtual machines (VMs) managed by libvirt and files inside VMs, scripting changes to VMs, creating VMs, and much else besides.

@@ -1,0 +1,3 @@
+Title: V-ATPase
+
+Vacuolar-type H+ -ATPase (V-ATPase) is a highly conserved evolutionarily ancient enzyme with remarkably diverse functions in eukaryotic organisms. V-ATPases acidify a wide array of intracellular organelles and pump protons across the plasma membranes of numerous cell types. V-ATPases couple the energy of ATP hydrolysis to proton transport across intracellular and plasma membranes of eukaryotic cells. It is generally seen as the polar opposite of ATP synthase because ATP synthase is a proton channel that uses the energy from a proton gradient to produce ATP. V-ATPase however, is a proton pump that uses the energy from ATP hydrolysis to produce a proton gradient.

@@ -1,0 +1,230 @@
+{
+  "run_id": "nkg_construction_1c41a399",
+  "timestamp": "2026-10-11T20:41:58.922312",
+  "system": "NKG",
+  "dataset": "contracts",
+  "metadata": {
+    "corpus_file": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/contracts_long_qa/capital_health_plan/data/corpus.jsonl",
+    "corpus_paragraphs": 1,
+    "corpus_txt_path": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/contracts_long_qa/capital_health_plan/corpus.txt",
+    "run_dir": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/contracts_long_qa/capital_health_plan",
+    "kg_path": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/contracts_long_qa/capital_health_plan/kg.graphml",
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "api_base": "https://api.deepseek.com",
+    "construction_args": {
+      "input_mode": "concat_file",
+      "model_name": "deepseek-flash",
+      "chunk_tokenizer_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+      "max_workers": 90,
+      "chunk_size": 600,
+      "chunk_overlap": 50,
+      "edge_threshold": 0.5,
+      "top_k": 12,
+      "max_sub_workers": 170,
+      "fact_batch_size": 15,
+      "edge_mode": "clustered_fast",
+      "same_chunk_min_facts": 3,
+      "edge_descriptions": false,
+      "run_fact_dedup": true,
+      "fact_dedup_top_k": 20,
+      "fact_dedup_cluster_size": 30,
+      "fast_cluster_embed_loader": "remote_code",
+      "fast_cluster_leiden_levels": "final",
+      "fast_cluster_leiden_passes": 1,
+      "fast_cluster_min_size": 20,
+      "fact_prompt": "detailed",
+      "fact_edge_prompt": "event",
+      "global_fact_edge_prompt": "event",
+      "run_deduplication": true,
+      "dedup_model_name": "voyageai/voyage-4-nano",
+      "dedup_iterations": 1,
+      "dedup_max_cluster_size": 72,
+      "dedup_run_exact": true,
+      "dedup_run_semhash": true,
+      "dedup_semhash_threshold": 0.95,
+      "dedup_run_llm": true,
+      "dedup_similarity_threshold": 0.5,
+      "dedup_sim_weights": {
+        "name": 0.6,
+        "role": 0.3,
+        "type": 0.1
+      },
+      "generate_entity_relation_labels": false,
+      "use_cot": false,
+      "neutral_description": true,
+      "concise_summary": true,
+      "combined_entity_extraction": true,
+      "full_entity_profile": false,
+      "clustered_round1": false,
+      "clustered_round2": true,
+      "clustered_round3": false,
+      "clustered_max_facts_per_prompt": 45,
+      "middle_k_skip_percent": 0.33,
+      "global_edge_retrieval_model": "voyageai/voyage-4-nano",
+      "use_questions_weight": true,
+      "questions_mode": "follow_up_to_answered",
+      "construction_max_tokens": 100000,
+      "temperature": "none",
+      "num_retries": 1
+    },
+    "checkpointing": {
+      "checkpoint_dir": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/contracts_long_qa/capital_health_plan/checkpoint",
+      "config_path": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/contracts_long_qa/capital_health_plan/construction_config.json",
+      "override_history": []
+    }
+  },
+  "construction": {
+    "total_corpus_chars": 407607,
+    "n_nodes": 2316,
+    "n_edges": 11296,
+    "n_entities": 519,
+    "n_facts": 1706,
+    "execution_time_sec": 124.56,
+    "kg_size_bytes": 9280073,
+    "token_breakdown": {
+      "chunk_extraction": {
+        "prompt": 912447,
+        "completion": 513938,
+        "total": 1426385,
+        "calls": 462,
+        "cache_hit": 437248
+      },
+      "chunk_extraction_sub": {
+        "chunk_fact_extraction": {
+          "prompt": 124118,
+          "completion": 63011,
+          "total": 187129,
+          "calls": 91,
+          "cache_hit": 46592
+        },
+        "chunk_entity_extraction": {
+          "prompt": 90175,
+          "completion": 27728,
+          "total": 117903,
+          "calls": 91,
+          "cache_hit": 11648
+        },
+        "fact_metadata_batch": {
+          "prompt": 338233,
+          "completion": 317814,
+          "total": 656047,
+          "calls": 188,
+          "cache_hit": 157440
+        },
+        "same_chunk_fact_edges": {
+          "prompt": 358901,
+          "completion": 105175,
+          "total": 464076,
+          "calls": 91,
+          "cache_hit": 221312
+        },
+        "chunk_extraction_other": {
+          "prompt": 1020,
+          "completion": 210,
+          "total": 1230,
+          "calls": 1,
+          "cache_hit": 256
+        }
+      },
+      "entity_deduplication": {
+        "prompt": 82117,
+        "completion": 14814,
+        "total": 96931,
+        "calls": 15,
+        "cache_hit": 5760
+      },
+      "fact_deduplication": {
+        "prompt": 261748,
+        "completion": 34912,
+        "total": 296660,
+        "calls": 45,
+        "cache_hit": 40320
+      },
+      "global_edges_round1": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0,
+        "cache_hit": 0
+      },
+      "global_edges_round2": {
+        "prompt": 259350,
+        "completion": 80383,
+        "total": 339733,
+        "calls": 54,
+        "cache_hit": 118016
+      },
+      "global_edges_round3": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0,
+        "cache_hit": 0
+      },
+      "total": {
+        "prompt": 1515662,
+        "completion": 644047,
+        "total": 2159709,
+        "calls": 576,
+        "cache_hit": 601344
+      },
+      "hyperparams": {
+        "edge_mode": "clustered_fast",
+        "fast_cluster_options": {
+          "embed_loader": "remote_code",
+          "leiden_levels": "final",
+          "leiden_passes": 1,
+          "min_cluster_size": 20
+        },
+        "edge_descriptions": false,
+        "fact_prompt": "detailed",
+        "fact_edge_prompt": "event",
+        "global_fact_edge_prompt": "event",
+        "combined_entity_extraction": true,
+        "full_entity_profile": false,
+        "generate_entity_relation_labels": false,
+        "dedup_run_exact": true,
+        "dedup_run_semhash": true,
+        "dedup_semhash_threshold": 0.95,
+        "dedup_run_llm": true,
+        "dedup_similarity_threshold": 0.5,
+        "run_fact_dedup": true,
+        "fact_dedup_iterations": 1,
+        "fact_dedup_top_k": 20,
+        "fact_dedup_threshold": 0.8,
+        "fact_dedup_cluster_size": 30,
+        "fact_dedup_sim_weights": {
+          "sentence": 0.7,
+          "entity": 0.15,
+          "topic": 0.15
+        },
+        "questions_mode": "follow_up_to_answered",
+        "middle_k_skip_percent": 0.33,
+        "construction_r1_weights": {
+          "sent": 0.0,
+          "topic": 0.0,
+          "entity": 1.0,
+          "questions": 0.0
+        },
+        "construction_r2_weights": {
+          "sent": 1.0,
+          "topic": 1.0,
+          "entity": 1.0,
+          "questions": 1.0
+        },
+        "construction_r3_weights": {
+          "sent": 1.0,
+          "topic": 1.0,
+          "entity": 1.0,
+          "questions": 1.0
+        }
+      }
+    },
+    "llm_prompt_tokens": 1515662,
+    "llm_completion_tokens": 644047,
+    "llm_total_tokens": 2159709,
+    "llm_api_calls": 576,
+    "llm_prompt_cache_hit_tokens": 601344
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "passages": 1,
+  "unique_docs_indexed": 1,
+  "chunks": 6,
+  "graph_nodes": 641,
+  "graph_edges": 673,
+  "hyperedges": 130,
+  "seconds": 1088.8,
+  "llm_usage_this_run": {
+    "calls": 25,
+    "cache_hits": 0,
+    "prompt_tokens": 258239,
+    "completion_tokens": 87316,
+    "empty_responses": 0
+  },
+  "llm_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "thinking_disabled": false,
+  "embedding_model": "voyageai/voyage-4-nano"
+}

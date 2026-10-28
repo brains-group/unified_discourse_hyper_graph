@@ -1,0 +1,3 @@
+Title: Center for Electron Nanoscopy
+
+The Center for Electron Nanoscopy (CEN) is a state-of-the-art center for electron microscopy at the Technical University of Denmark (DTU). Inaugurated in December 2007, the institute was funded by a donation of DKK100 million from the A.P. Møller and Chastine Mc-Kinney Møller Foundation. DTU CEN houses seven new electron microscopes built by FEI Company ranging from a standard scanning electron microscope to two highly specialized Titan transmission electron microscopes. The microscopes are available for use by both in-house and external users.

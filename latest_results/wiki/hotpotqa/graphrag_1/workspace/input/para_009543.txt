@@ -1,0 +1,3 @@
+Title: Leap week calendar
+
+A leap week calendar is a calendar system with a whole number of weeks every year, and with every year starting on the same weekday. Most leap week calendars are proposed reforms to the civil calendar, in order to achieve a perennial calendar. Some, however, such as the ISO week date calendar, are simply conveniences for specific purposes.

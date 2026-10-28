@@ -1,0 +1,112 @@
+[
+ {
+  "id": "contract_1_term_life/qa/0000",
+  "kind": "qa",
+  "question": "What is the policy number for this term life insurance policy?",
+  "answer": "SL-2024-TRM-00123",
+  "answer_letter": "",
+  "category": "CAT1_ATOMIC_LOOKUP",
+  "evidence": "POLICY NUMBER: SL-2024-TRM-00123",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0001",
+  "kind": "qa",
+  "question": "What is the death benefit amount on this policy?",
+  "answer": "$500,000",
+  "answer_letter": "",
+  "category": "CAT1_ATOMIC_LOOKUP",
+  "evidence": "Death Benefit Amount: $500,000",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0002",
+  "kind": "qa",
+  "question": "Who is the primary beneficiary of this policy?",
+  "answer": "Sarah Elizabeth Anderson (Spouse), receiving 100%",
+  "answer_letter": "",
+  "category": "CAT2_RELATIONAL_LOOKUP",
+  "evidence": "Primary Beneficiary: Sarah Elizabeth Anderson (Spouse) - 100%",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0003",
+  "kind": "qa",
+  "question": "Who are the contingent beneficiaries and what are their shares?",
+  "answer": "Emma Grace Anderson (Daughter) at 50% and Lucas James Anderson (Son) at 50%",
+  "answer_letter": "",
+  "category": "CAT2_RELATIONAL_LOOKUP",
+  "evidence": "Contingent Beneficiary: Emma Grace Anderson (Daughter) - 50% / Lucas James Anderson (Son) - 50%",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0004",
+  "kind": "qa",
+  "question": "What happens to coverage if the premium is not paid by the end of the grace period?",
+  "answer": "The policy will lapse and coverage will terminate.",
+  "answer_letter": "",
+  "category": "CAT3_CONDITIONAL_REASONING",
+  "evidence": "6.3 If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0005",
+  "kind": "qa",
+  "question": "What is the insurer's liability if the insured commits suicide within two years of the issue date?",
+  "answer": "Liability is limited to a refund of premiums paid.",
+  "answer_letter": "",
+  "category": "CAT3_CONDITIONAL_REASONING",
+  "evidence": "7.1 SUICIDE CLAUSE: If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0006",
+  "kind": "qa",
+  "question": "Can the insurer require evidence of insurability when the insured converts this policy to a permanent policy?",
+  "answer": "No. The conversion privilege allows conversion without evidence of insurability.",
+  "answer_letter": "",
+  "category": "CAT4_MULTIHOP_REASONING",
+  "evidence": "8.1 You may convert this policy to a permanent life insurance policy without evidence of insurability.",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0007",
+  "kind": "qa",
+  "question": "If the insured dies during the grace period, will the death benefit be reduced?",
+  "answer": "Coverage continues during the grace period per Section 6.2, and the full death benefit is payable under Section 5.1 if the insured dies while the policy is in force; the policy remains in force during the grace period, so the full death benefit would be payable.",
+  "answer_letter": "",
+  "category": "CAT4_MULTIHOP_REASONING",
+  "evidence": "6.2 If a premium is not paid by the due date, a grace period of 31 days is allowed. Coverage continues during the grace period. / 5.1 We will pay the death benefit to the beneficiary if: (a) The insured dies while this policy is in force",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0008",
+  "kind": "qa",
+  "question": "What is the cash value accumulation schedule for this policy?",
+  "answer": "Not specified in this policy.",
+  "answer_letter": "",
+  "category": "CAT5_UNANSWERABLE",
+  "evidence": "N/A",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ },
+ {
+  "id": "contract_1_term_life/qa/0009",
+  "kind": "qa",
+  "question": "What is the reinstatement period if this policy lapses?",
+  "answer": "Not specified in this policy.",
+  "answer_letter": "",
+  "category": "CAT5_UNANSWERABLE",
+  "evidence": "N/A",
+  "fact_id": null,
+  "contract": "contract_1_term_life"
+ }
+]

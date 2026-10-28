@@ -1,0 +1,3 @@
+Title: Ravenel conjectures
+
+In mathematics, the Ravenel conjectures are a set of mathematical conjectures in the field of stable homotopy theory posed by Douglas Ravenel at the end of a paper published in 1984. It was earlier circulated in preprint. The problems involved have largely been resolved, with all but the "telescope conjecture" being proved in later papers by others. The telescope conjecture is now generally believed not to be true, though there are some conflicting claims concerning it in the published literature, and is taken to be an open problem. Ravenel's conjectures exerted influence on the field through the founding of the approach of chromatic homotopy theory.

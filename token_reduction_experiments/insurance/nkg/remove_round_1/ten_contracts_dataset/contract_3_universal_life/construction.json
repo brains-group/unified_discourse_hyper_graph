@@ -1,0 +1,33 @@
+{
+  "system": "NKG",
+  "timestamp": "20260617_112224",
+  "contract_file": "/home/taluka/discourse_hyper_graph/evaluation_data/ten_contracts_dataset/contracts/contract_3_universal_life.txt",
+  "construction_args": {
+    "model_name": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "max_workers": 100,
+    "chunk_size": 600,
+    "overlap": 50,
+    "edge_threshold": 0.5,
+    "top_k": 12,
+    "max_sub_workers": 100,
+    "fact_batch_size": 15,
+    "edge_mode": "clustered",
+    "run_deduplication": true,
+    "dedup_model_name": "voyageai/voyage-4-nano",
+    "dedup_iterations": 1,
+    "dedup_max_cluster_size": 64
+  },
+  "metrics": {
+    "total_document_chars": 6700,
+    "n_nodes": 157,
+    "n_edges": 787,
+    "n_entities": 63,
+    "n_facts": 89,
+    "execution_time_sec": 60.88,
+    "kg_size_bytes": 443246,
+    "llm_prompt_tokens": 64874,
+    "llm_completion_tokens": 35506,
+    "llm_total_tokens": 100380,
+    "llm_api_calls": 74
+  }
+}

@@ -1,0 +1,3 @@
+Title: Calendar year
+
+Generally speaking, a calendar year begins on the New Year's Day of the given calendar system and ends on the day before the following New Year's Day, and thus consists of a whole number of days. A year can be measured by also starting on any other named day of the calendar, and end on the day before this named day in the following year. This may be termed as a "years time" but not in practice or an accepted means to term a Calendar year. To reconcile the calendar year with the astronomical cycle (which has a fractional number of days) certain years contain extra days.

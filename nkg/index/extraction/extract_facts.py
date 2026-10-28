@@ -16,17 +16,15 @@ class FactMetaExtractor(dspy.Signature):
     Analyze the specific fact_sentence within the broader context of its parent source_text.
     Extract precise structural metadata using the following STRICT CONSTRAINTS:
 
-    1. name: Generate a concise, descriptive 3-5 word title summarizing the core claim, rule, or event of the fact.
-    2. chunk_topics: Extract a list of 2-4 highly specific thematic keywords or short phrases that connect this fact to the broader text.
-    3. answered_questions: Extract a list of 2-4 questions that this fact answer.
-    4. follow_up_questions: Extract a list of 2-4 follow up quesions that a user may have after reading this fact.
+    1. chunk_topics: Extract a list of 2-4 highly specific thematic keywords or short phrases that connect this fact to the broader text.
+    2. answered_questions: Extract a list of 2-4 questions that this fact answer.
+    3. follow_up_questions: Extract a list of 2-4 follow up quesions that a user may have after reading this fact.
 
     CRITICAL INSTRUCTION: You MUST output at least one valid string in the chunk_topics list. Do NOT return an empty list. Do NOT hallucinate concepts, external facts, or metadata not explicitly supported by the provided text.
     """
 
     source_text: str = dspy.InputField()
     fact_sentence: str = dspy.InputField()
-    name: str = dspy.OutputField()
     chunk_topics: List[str] = dspy.OutputField()
     answered_questions: List[str] = dspy.OutputField()
     follow_up_questions: List[str] = dspy.OutputField()
@@ -35,14 +33,13 @@ class FactMetaExtractor(dspy.Signature):
 class FactAssembler(dspy.Module):
     """Single-fact assembler kept for standalone / legacy use."""
 
-    def __init__(self):
-        self.fact_meta_extractor = dspy.ChainOfThought(FactMetaExtractor)
+    def __init__(self, use_cot: bool = True):
+        self.fact_meta_extractor = (dspy.ChainOfThought if use_cot else dspy.Predict)(FactMetaExtractor)
 
     def forward(self, source_text: str, fact_sentence: str, chunk_entities: list[EntityFingerprint]) -> Fact:
         fact_meta_info = self.fact_meta_extractor(source_text=source_text, fact_sentence=fact_sentence)
 
         fact_instance = Fact(
-            name=fact_meta_info.name,
             sentence=fact_sentence,
             macro_topics=[],
             chunk_topics=fact_meta_info.chunk_topics,
@@ -78,10 +75,6 @@ class FactBatchItem(BaseModel):
         ...,
         description="Sequential ID of the fact within the current batch (starts at 1)."
     )
-    name: str = Field(
-        ...,
-        description="Concise 3-5 word descriptive title for this fact."
-    )
     chunk_topics: List[str] = Field(
         ...,
         description="2-4 specific thematic keywords connecting this fact to the chunk. NEVER empty."
@@ -116,7 +109,6 @@ class BatchedFactMetaExtractor(dspy.Signature):
 
     For EACH numbered fact output one FactBatchItem with:
     - fact_id: The number assigned to that fact (1, 2, 3, ...).
-    - name: A concise 3-5 word title.
     - chunk_topics: 2-4 thematic keywords. NEVER empty.
     - answered_questions: 2-4 questions this fact answers.
     - follow_up_questions: 2-4 follow-up questions a reader might have.
@@ -139,6 +131,62 @@ class BatchedFactMetaExtractor(dspy.Signature):
     )
     fact_results: list[FactBatchItem] = dspy.OutputField(
         desc="One FactBatchItem per numbered fact, keyed by fact_id matching the input number."
+    )
+
+
+class FactBatchItemSimple(BaseModel):
+    """Holds metadata for one fact within a batch LLM call, without per-entity relation labels."""
+
+    fact_id: int = Field(
+        ...,
+        description="Sequential ID of the fact within the current batch (starts at 1)."
+    )
+    chunk_topics: List[str] = Field(
+        ...,
+        description="2-4 specific thematic keywords connecting this fact to the chunk. NEVER empty."
+    )
+    answered_questions: List[str] = Field(
+        ...,
+        description="2-4 questions that this fact directly answers."
+    )
+    follow_up_questions: List[str] = Field(
+        ...,
+        description="2-4 questions a reader might have after reading this fact."
+    )
+    entity_names: List[str] = Field(
+        ...,
+        description="Subset of the provided entity_names that appear in this specific fact. May be empty."
+    )
+
+
+class BatchedFactMetaExtractorSimple(dspy.Signature):
+    __doc__ = """
+    You are analyzing a batch of fact sentences extracted from a document chunk.
+
+    You are given:
+    - source_text: The original chunk for context.
+    - numbered_facts: Fact sentences with sequential IDs, e.g. "1. <sentence>\\n2. <sentence>\\n..."
+    - entity_names: ALL entity names found in this chunk.
+
+    For EACH numbered fact output one FactBatchItemSimple with:
+    - fact_id: The number assigned to that fact (1, 2, 3, ...).
+    - chunk_topics: 2-4 thematic keywords. NEVER empty.
+    - answered_questions: 2-4 questions this fact answers.
+    - follow_up_questions: 2-4 follow-up questions a reader might have.
+    - entity_names: Choose ONLY from the provided entity_names — pick the subset that appear in this specific fact.
+
+    You MUST return exactly one result per numbered fact. Do NOT skip any fact IDs.
+    """
+
+    source_text: str = dspy.InputField()
+    numbered_facts: str = dspy.InputField(
+        desc="Fact sentences numbered 1 to N, e.g. '1. <sentence>\\n2. <sentence>'"
+    )
+    entity_names: list[str] = dspy.InputField(
+        desc="All entity names from this chunk. Choose the relevant subset for each fact."
+    )
+    fact_results: list[FactBatchItemSimple] = dspy.OutputField(
+        desc="One FactBatchItemSimple per numbered fact, keyed by fact_id matching the input number."
     )
 
 
@@ -202,10 +250,22 @@ class BatchedFactAssembler(dspy.Module):
     the LLM chooses which entity names appear in each fact, and we link those
     names back to the actual EntityFingerprint objects via exact match or cosine
     similarity fallback.
+
+    generate_entity_relation_labels controls how the entity→fact edge label is derived:
+    - True: the LLM generates a strict 2-4 word UPPERCASE relation_label per entity
+      (via BatchedFactMetaExtractor's entity_relations field).
+    - False (default): no relation labels are generated by the LLM. Every entity linked
+      to a fact gets an empty string as its entity→fact edge label rather than any
+      placeholder text -- formatting code renders a bare "(participates in event)" for an
+      empty label instead of fabricating a fake relation description. (Previously this used
+      the fact's own sentence, truncated to 80 chars, as the label -- that just repeated the
+      adjacent fact content verbatim and was pure redundant noise in retrieved context.)
     """
 
-    def __init__(self):
-        self.fact_extractor = dspy.ChainOfThought(BatchedFactMetaExtractor)
+    def __init__(self, use_cot: bool = True, generate_entity_relation_labels: bool = False):
+        self.generate_entity_relation_labels = generate_entity_relation_labels
+        signature = BatchedFactMetaExtractor if generate_entity_relation_labels else BatchedFactMetaExtractorSimple
+        self.fact_extractor = (dspy.ChainOfThought if use_cot else dspy.Predict)(signature)
 
     def forward(
         self,
@@ -237,7 +297,6 @@ class BatchedFactAssembler(dspy.Module):
                 if item is None:
                     # LLM missed this ID — create a minimal fallback fact
                     fact = Fact(
-                        name=sentence[:50],
                         sentence=sentence,
                         macro_topics=[],
                         chunk_topics=["unknown"],
@@ -249,17 +308,23 @@ class BatchedFactAssembler(dspy.Module):
                 else:
                     linked_entities = _link_entity_names_to_fingerprints(item.entity_names, chunk_entities)
 
-                    # Build a name→label map from the LLM output and align it with linked entities.
-                    # We use the linked entity fingerprint name (not the raw LLM name) as the key
-                    # so the mapping survives the fuzzy name-matching done in _link_entity_names_to_fingerprints.
-                    relation_map = {rel.entity_name: rel.relation_label for rel in item.entity_relations}
-                    entity_relation_labels = tuple(
-                        (ef.name, relation_map.get(ef.name, ef.type))
-                        for ef in linked_entities
-                    )
+                    if self.generate_entity_relation_labels:
+                        # Build a name→label map from the LLM output and align it with linked entities.
+                        # We use the linked entity fingerprint name (not the raw LLM name) as the key
+                        # so the mapping survives the fuzzy name-matching done in _link_entity_names_to_fingerprints.
+                        relation_map = {rel.entity_name: rel.relation_label for rel in item.entity_relations}
+                        entity_relation_labels = tuple(
+                            (ef.name, relation_map.get(ef.name, ef.type))
+                            for ef in linked_entities
+                        )
+                    else:
+                        # No LLM-generated relation labels — leave the label empty rather than
+                        # filling it with a placeholder (e.g. the fact's own sentence), which
+                        # just duplicated the adjacent fact content verbatim in retrieved context.
+                        # Formatting code treats an empty label as "no relation label available".
+                        entity_relation_labels = tuple((ef.name, "") for ef in linked_entities)
 
                     fact = Fact(
-                        name=item.name,
                         sentence=sentence,
                         macro_topics=[],
                         chunk_topics=item.chunk_topics,

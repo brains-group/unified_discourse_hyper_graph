@@ -1,0 +1,807 @@
+% The ACM Web Conference 2027, Research Track, Semantics and Knowledge.
+% https://www2027.thewebconf.org/research-track-papers/
+% Submission format: \documentclass[sigconf, review, anonymous]{acmart};
+% at most 8 pages of content plus up to 4 pages of references and appendix.
+\documentclass[sigconf, review, anonymous]{acmart}
+% \documentclass[sigconf]{acmart} % camera-ready
+
+% acmart already loads amsmath, booktabs, graphicx, and newtxmath;
+% do not load amssymb, which clashes with newtxmath.
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{pifont}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % fixed-width centred column for results tables
+\setlength{\emergencystretch}{2em} % fewer overfull lines with long system names
+
+\usepackage{todonotes}
+% \usepackage[disable]{todonotes}
+\newcommand{\oshani}[1]{\todo[inline, color=blue!40, author=\textbf{Oshani}]{#1}}
+\newcommand{\maruf}[1]{\todo[inline, color=red!40, author=\textbf{Maruf}]{#1}}
+\newcommand{\abid}[1]{\todo[inline, color=green!40, author=\textbf{Abid}]{#1}}
+
+\settopmatter{printacmref=false}
+\setcopyright{none}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+% ---------------------------------------------------------------------------
+% Notation. \sys is the system name everywhere in the text; change it in one
+% place. \tbd marks a result cell that is filled after the UNH runs finish.
+% ---------------------------------------------------------------------------
+\newcommand{\sys}{UNH}
+\newcommand{\sysfull}{Unified Narrative Hypergraph}
+\newcommand{\tbd}{--}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\newcommand{\rel}[1]{\textsc{#1}}            % relation label, e.g. \rel{causes}
+\newcommand{\Ecf}{E_{CF}}
+\newcommand{\Efv}{E_{FV}}
+\newcommand{\Eff}{E_{FF}}
+\newcommand{\simcos}{\operatorname{cos}}
+% feature table marks
+\newcommand{\yes}{\ding{51}}
+\newcommand{\no}{\ding{55}}
+\newcommand{\half}{$\circ$}
+\newcommand{\na}{--}
+% figure that compiles before its file exists
+\newcommand{\figorbox}[3]{\IfFileExists{#1}{\includegraphics[width=#2]{#1}}{\fbox{\parbox[c][#3][c]{0.95#2}{\centering\small Placeholder: \texttt{\detokenize{#1}}}}}}
+
+\begin{document}
+
+\title{Facts as Hyperedges and Discourse Nodes: A Unified Narrative Hypergraph for Graph Retrieval-Augmented Generation}
+
+\author{Abid Talukder}
+\affiliation{%
+  \institution{Rensselaer Polytechnic Institute}
+  \city{Troy}
+  \state{New York}
+  \country{USA}}
+\email{taluka@rpi.edu}
+
+\author{Maruf Ahmed Mridul}
+\affiliation{%
+  \institution{Rensselaer Polytechnic Institute}
+  \city{Troy}
+  \state{New York}
+  \country{USA}}
+\email{mridum@rpi.edu}
+
+\author{Oshani Seneviratne}
+\affiliation{%
+  \institution{Rensselaer Polytechnic Institute}
+  \city{Troy}
+  \state{New York}
+  \country{USA}}
+\email{senevo@rpi.edu}
+
+\renewcommand{\shortauthors}{Talukder et al.}
+
+\begin{abstract}
+Graph-based retrieval-augmented generation (RAG) has a large language model (LLM) turn a corpus into a knowledge graph and retrieves along the graph's links to ground the LLM's answers. Most such indices connect two pieces of knowledge only through an entity they both mention, whether they store triples, $n$-ary facts, or propositions, or they fuse knowledge into summaries that the LLM writes. Many questions instead follow relations between \emph{statements}. Suppose an insured man understated his age when he applied for life insurance and died years later. Whether his beneficiary is paid depends on four clauses in three sections of the policy: the two-year limit on contesting the application, its exception for the date of birth, the misstatement-of-age clause, and the eligibility age limit. The last two decide the answer but share no entity, so no entity hop connects them. A community summary can relate only the clauses its cluster happens to contain, and it paraphrases the very conditions that decide the answer. Discourse and event graphs relate statements, and hypergraphs keep the entities of each statement together. The answer path above needs both at once. We present the \sysfull{} (\sys{}), an index that combines the two over the same facts. Every atomic fact extracted from the corpus is both a hyperedge over the entities that take part in it and a node in a discourse graph of typed relations between facts, such as \rel{exception\_to}, \rel{depends\_on}, and \rel{causes}. An LLM decides these relations, each is stored as a labelled edge rather than written into a summary, and every fact stays linked to the passage that states it. To find relations across documents without comparing every pair, \sys{} matches the follow-up questions each fact raises against the questions other facts answer. It clusters facts by this affinity and judges each cluster in one LLM call, so the number of calls grows linearly with the corpus. At query time, one LLM call predicts which relation types the answer should follow. A beam search prefers those relations to generic entity hops, and the reader receives short chains of source facts joined by their relation labels. We compare \sys{} with six graph-based RAG systems on HotpotQA, MuSiQue, and QuALITY under a protocol that fixes the LLM, embedding model, reader, and judge. We test whether both structures are needed by evaluating hypergraph-only and discourse-only views of the same index.
+\abid{Add the headline result sentence once the UNH runs are scored.}
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10002951.10003317.10003338</concept_id>
+       <concept_desc>Information systems~Retrieval models and ranking</concept_desc>
+       <concept_significance>500</concept_significance>
+   </concept>
+   <concept>
+       <concept_id>10010147.10010178.10010187</concept_id>
+       <concept_desc>Computing methodologies~Knowledge representation and reasoning</concept_desc>
+       <concept_significance>500</concept_significance>
+   </concept>
+   <concept>
+       <concept_id>10010147.10010178.10010179.10003352</concept_id>
+       <concept_desc>Computing methodologies~Information extraction</concept_desc>
+       <concept_significance>300</concept_significance>
+   </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Information systems~Retrieval models and ranking}
+\ccsdesc[500]{Computing methodologies~Knowledge representation and reasoning}
+\ccsdesc[300]{Computing methodologies~Information extraction}
+
+\keywords{Retrieval-augmented generation, knowledge graph construction, knowledge hypergraphs, discourse relations, multi-hop question answering}
+
+\maketitle
+
+% =============================================================================
+\section{Introduction}
+% =============================================================================
+
+Retrieval-augmented generation (RAG) grounds a large language model (LLM) in an external corpus~\cite{lewis2020retrieval}. Graph-based RAG goes one step further. An LLM first turns the corpus into a knowledge graph, and retrieval then follows the graph's links to collect evidence that is related to other evidence, not only to the question~\cite{peng2025graph,han2024retrieval,edge2024local,gutierrez2025rag}. These graphs are a new kind of knowledge graph on the Web: built automatically from text, specific to one corpus, and read by a machine. What such a graph can connect determines what the machine reading it can be told.
+
+\begin{figure*}[t]
+  \centering
+  \figorbox{figures/motivation.pdf}{\textwidth}{5.6cm}
+  \caption{\emph{Will the beneficiary be paid?} The insured stated an age of 58 when he applied but was 61, and he died six years later. The answer joins four clauses from three sections of a term-life policy. They are the two-year contestability rule ($f_1$), its exception for the date of birth ($f_2$), the misstatement-of-age branch for an insured who would not have been eligible ($f_4$), and the eligibility age limit ($f_5$). $f_3$ is the other branch, for an insured who would still have been eligible. (a)~Dense retrieval returns the clauses that share the question's words and ranks the age limit low, so the reader cannot tell which branch applies. (b)~A triple graph and (c)~a hypergraph reach both branches from $f_2$ through the entity \emph{date of birth}, but nothing connects them to $f_5$, which shares no entity with either. (d)~Community summaries: the misstatement clause and the eligibility rule fall in different clusters, so the dependence between them is written in neither summary. (e)~\sys{} alternates relations and entities. $f_1$ \rel{has\_exception} $f_2$; $f_2$ reaches $f_4$ through \emph{date of birth}; and $f_4$ \rel{depends\_on} $f_5$.}
+  \label{fig:motivation}
+\end{figure*}
+
+\paragraph{A motivating example.}
+Insurance policies are published on the Web, and the people they cover, or agents acting for them, ask questions about them. Consider a beneficiary's question about a term-life policy (Figure~\ref{fig:motivation}): ``\emph{My father applied for this policy saying he was 58, but he was actually 61. He died six years later, long after the two-year contestability period. Will I receive the death benefit?}'' The question is hard because the clause it names is not the clause that decides it. The answer, \emph{no; the insurer refunds the premiums instead}, needs four clauses from three sections of the policy.\footnote{Clauses abridged from a public sample of a 20-year term-life policy.}
+\begin{itemize}
+  \item The general provisions state that after two years the insurer treats the answers in the application as true ($f_1$). However, this rule does not apply to the insured's date of birth ($f_2$).
+  \item The misstatement-of-age clause has two branches. If the insured would still have been eligible at the correct age, the premium is corrected and the benefit is reduced by the underpaid amount ($f_3$). If not, the policy is treated as never having been in force, and the premiums are refunded ($f_4$).
+  \item Which branch applies is decided pages earlier, by the eligibility section: applications are accepted only up to six months past the 60th birthday ($f_5$).
+\end{itemize}
+At 61, the father was too old to qualify, so $f_4$ applies, not $f_3$. A reader who sees the misstatement clause without the age limit will pick the wrong branch and answer that the benefit is paid, minus the underpaid premiums.
+\abid{Add the source of the sample policy (TD 20-Year Term Life sample policy package) in the camera-ready version; keep it generic for review.}
+
+\paragraph{Why entity links are not enough.}
+The answer path alternates between two kinds of connection, as multi-hop questions about events do~\cite{li2024meqa}. Two of its steps follow relations between statements: $f_2$ is an exception to $f_1$, and $f_4$ depends on $f_5$ for what ``eligible'' means. One step follows an entity: $f_2$ and $f_4$ both concern the insured's \emph{date of birth}, which appears in only three of the policy's 251 sentences. Entity-based indices capture the entity step and miss the relations (Figure~\ref{fig:motivation}a--c). A triple graph~\cite{edge2024local,gutierrez2025rag} and a hypergraph of $n$-ary facts~\cite{luo2025hypergraphrag} connect $f_1$ and $f_2$ through the contestability period without saying that one is an exception to the other. They connect $f_2$ to both branches through \emph{date of birth}. They do not connect either branch to $f_5$: the misstatement clause speaks of a date of birth, a policy, and premiums, while the eligibility rule speaks of applications and an age limit. Nothing in either graph says that the eligibility rule decides which branch applies. Dense retrieval returns the contestability and misstatement clauses, which share the question's words. It ranks the eligibility rule, which shares little more than ``age'', far below them.
+
+\paragraph{Why not community summaries?}
+A natural remedy is to let the LLM write the connections down. Microsoft GraphRAG~\cite{edge2024local}, RAPTOR~\cite{sarthi2024raptor}, and HyGRAG~\cite{zhong2026hygrag} cluster the corpus or its graph and write a summary of each cluster. A summary can fuse what several passages say and state what none of them states alone. One could even prompt the summaries to spell out every causal, temporal, and conditional relation among their members. Three problems remain, and a better prompt solves none of them.
+\begin{itemize}
+  \item \emph{A summary can only relate what its cluster contains.} Clusters are formed from shared entities or from embedding similarity. The misstatement clause therefore falls with the other general provisions, and the eligibility rule with the application requirements. The dependence the question needs lies \emph{between} the two clusters and is written in neither summary.
+  \item \emph{A summary is fixed before any question is asked.} It must choose which of the many relations among its members to state, at one granularity, in a paragraph the reader receives whole. It cannot be cut down to the one chain a question needs, or chained with another cluster's summary.
+  \item \emph{A summary paraphrases.} In a contract, the scope of a clause is often the answer. A summary that compresses the misstatement clause to ``misstated ages lead to a premium correction'' drops the branch that decides this question.
+\end{itemize}
+Summaries remain the right tool for questions about a corpus as a whole~\cite{edge2024local}. For questions that follow a chain of specific statements, the connections must be stored where retrieval can select them one at a time, between facts that the reader can check against their source. The fusion then happens at query time, by the reader, over exactly the facts the question needs.
+
+\paragraph{The gap.}
+Entity-centric indices, the dominant design in graph RAG, therefore cannot represent the relation between two statements: it is absent, reduced to a hub entity, or dissolved into generated text. This has two consequences. First, \emph{dependent facts that share no informative entity cannot be found from each other}, although rules and their exceptions, conditions and the definitions they rely on, causes and effects, and claims and their rebuttals are routinely stated with different terms and in different places. Second, \emph{a step from one fact to the next says nothing about how they relate}, so retrieval cannot prefer the exception to a rule over the many other facts that share its entities. MEQA~\cite{li2024meqa} documents the same gap for question answering. Multi-hop benchmarks are built around bridges between entities, whereas questions about events, such as ``\emph{Who died before Al-Monitor reported it online?}'', must alternate between entity--event and event--event relations. Given the documents, GPT-3.5 with chain-of-thought reaches 0.29 F1 on such questions. Adding an entity graph raises it only to 0.33, while adding a graph with explicit relations between events raises it to 0.49. Neither ingredient of a remedy is new. The Semantic Web has long treated statements as objects in their own right. $N$-ary relation patterns~\cite{noy2006nary}, Wikidata's qualified statements~\cite{vrandecic2014wikidata}, RDF-star~\cite{hartig2017rdfstar}, and nanopublications~\cite{groth2010nanopub} all give a statement an identity to which further assertions can attach. Hypergraph and proposition indices make $n$-ary facts the unit of retrieval~\cite{luo2025hypergraphrag,wang2025proprag}. Discourse theory and event knowledge graphs relate statements by cause, condition, contrast, and time~\cite{mann1988rhetorical,prasad2017penn,zhang2020aser}, and event-centric RAG retrieves along such relations~\cite{yang2025eventrag,liu2026discorag}. What the example shows is that an answer path needs both at once, over the same facts. It alternates between relations, which connect statements that share no entity, and entities, which connect statements that no stated relation links. In existing RAG indices one of the two is weak. $N$-ary indices connect facts only through entities. Event and discourse approaches find relations within one chunk or among passages already retrieved, or traverse them with an agent over several LLM calls (Section~\ref{sec:related_claude}).
+\abid{Strengthen with one number: the share of gold reasoning chains in QuALITY and MuSiQue whose consecutive supporting facts share no entity, or share only an entity mentioned by more than 5\% of facts, e.g., measured on 100 annotated questions.}
+
+\paragraph{Our approach.}
+We introduce the \textbf{\sysfull{} (\sys{})}, an index that combines a hypergraph and a discourse graph over the same facts. Every atomic fact extracted from the corpus plays two roles. It is a \emph{hyperedge} over the entities that take part in it, as in a hypergraph. It is also a \emph{node} in a discourse graph, a directed graph of relations between facts, where each relation has a short type label such as \rel{exception\_to}, \rel{depends\_on}, \rel{causes}, or \rel{contradicts}. Every fact keeps a link to the passage that states it. In Figure~\ref{fig:motivation}e, the date-of-birth exception $f_2$ is linked to the contestability rule $f_1$ by \rel{exception\_to}. The ineligibility branch $f_4$ is linked to the age limit $f_5$ by \rel{depends\_on}, although the two share no entity. A retrieval path can therefore enter at the clause the question names ($f_1$) and follow a typed relation to its exception ($f_2$). It can then cross to the misstatement clause through the specific entity \emph{date of birth} ($f_4$) and follow a second typed relation to the age limit ($f_5$). This path alternates the two edge families, and it exists in neither the hypergraph nor the discourse graph alone. The reader receives the chain, with each clause traceable to its section, and concludes that the policy was never in force.
+
+Two problems stand between this representation and a practical index. The first is \emph{which facts to relate}. Asking an LLM about every pair of facts is quadratic in corpus size. Embedding similarity alone misses exactly the pairs we want, because the misstatement clause and the eligibility rule have little in common. \sys{} annotates each fact with the questions it answers and the follow-up questions it raises. It then scores a candidate pair by how well the questions one fact raises match those the other answers. Here, the ineligibility branch $f_4$ raises \emph{what are the age limits for this policy?}, and the eligibility rule $f_5$ answers \emph{what ages can apply for this policy?}. Facts are clustered by this affinity, and one LLM call decides the relations within each cluster, so the number of calls grows linearly with the corpus. Unlike a summary, the result of the call is a set of labelled edges. Edges found in different clusters can be chained by retrieval, and each edge can be selected on its own. The second problem is \emph{how retrieval should use the relations}. A single LLM call turns the question into a plan that names the relation types the answer path should follow (here \rel{has\_exception} and \rel{depends\_on}). A beam search prefers edges whose labels match the plan. The reader then receives short, deduplicated chains of facts joined by their relation labels and by the entities they share.
+
+We compare \sys{} with six graph-based RAG systems: HippoRAG~2~\cite{gutierrez2025rag}, LogicRAG~\cite{chen2026logicrag}, Mem\-Graph\-RAG~\cite{wu2026memgraphrag}, Hyper\-Graph\-RAG~\cite{luo2025hypergraphrag}, Microsoft Graph\-RAG~\cite{edge2024local}, and Hy\-GRAG~\cite{zhong2026hygrag}. The benchmarks are multi-hop questions over Wikipedia (HotpotQA~\cite{yang2018hotpotqa}, MuSiQue~\cite{trivedi2022musique}) and long narratives (QuALITY~\cite{pang2022quality}). Every system uses the same LLM, embedding model, reader prompt, and judge, so differences come from indexing and retrieval alone. Our contributions are:
+\begin{itemize}
+  \item \textbf{Representation.} \sys{}, a knowledge-graph model for RAG that combines an $n$-ary fact hypergraph and a discourse graph over the same atomic facts, with passage-level provenance. Neither structure is new. Each is an edge-restricted view of \sys{}, and the combination admits answer paths that neither view contains (Section~\ref{sec:index}).
+  \item \textbf{Construction.} A pipeline that finds typed relations between facts across documents with a number of LLM calls linear in corpus size, using question-based affinity and community-level judgment that outputs edges rather than summaries (Section~\ref{sec:construction}).
+  \item \textbf{Retrieval.} A procedure with one LLM call per question that seeds from facts and entities jointly, follows the relation types predicted from the question, and returns grounded fact chains (Section~\ref{sec:retrieval}).
+  \item \textbf{Evaluation.} A controlled comparison of seven systems that reports accuracy together with construction tokens and reader context. It includes an ablation over the hypergraph-only and discourse-only views of the same index, which tests whether both structures are needed (Section~\ref{sec:experiments}).
+\end{itemize}
+\abid{Add one sentence with the headline findings after the UNH runs.}
+
+% =============================================================================
+\section{Related Work}
+\label{sec:related_claude}
+% =============================================================================
+% Second version of the related-work section. The original section above is
+% kept unchanged; keep whichever version (or merge) before submission.
+
+We group prior work by what its index can connect, because that determines which questions retrieval can follow. For each group we state what it does and what it leaves out. Table~\ref{tab:positioning} summarizes the comparison as capabilities.
+
+\paragraph{Entity-centric graph RAG.}
+The dominant design has an LLM extract entity--relation triples from each passage and merge them into one knowledge graph~\cite{bian2025llm,zhang2024extract,mo2025kggen,lairgi2024itext2kg}. Microsoft GraphRAG~\cite{edge2024local} partitions the graph into communities and pre-generates a report for each. LightRAG~\cite{guo2024lightrag} retrieves entities and relations through keywords. HippoRAG~\cite{gutierrez2024hipporag} and HippoRAG~2~\cite{gutierrez2025rag} run Personalized PageRank from the question's entities, and HippoRAG~2 adds passage nodes and LLM filtering of retrieved triples. MemGraphRAG~\cite{wu2026memgraphrag} shares a global memory between extraction agents to keep the schema consistent and to resolve conflicting triples. Iterative reasoners~\cite{sun2023think,ma2024think,luo2023reasoning} and learned retrievers~\cite{mavromatis2024gnn} walk the same triples. Systematic comparisons find that the graph pays off mainly when a question requires connecting evidence~\cite{zhou2025indepth,xiang2025when}. These methods leave out two things. A fact with more than two participants is split into triples that no longer record which participants belong to the same event. Facts are connected only through entity nodes, so a hub entity offers all of its facts as equal neighbours.
+
+\paragraph{$N$-ary facts and propositions.}
+A second line keeps a fact's participants together. HyperGraphRAG~\cite{luo2025hypergraphrag} stores each $n$-ary fact as a hyperedge over its entities. HyperRAG~\cite{lien2026hyperrag} learns to reason over such facts, HOLMES~\cite{panda2024holmes} builds a hyper-relational graph per query, and Cog-RAG~\cite{hu2026cograg} pairs an entity hypergraph with a hypergraph of chunk themes. Other methods change the retrieval unit to the atomic proposition~\cite{chen2024dense,min2023factscore}. GraphReader~\cite{li2024graphreader} attaches atomic facts to key elements of a long document. PropRAG~\cite{wang2025proprag} treats propositions as hyperedges and beam-searches over proposition paths. SiReRAG~\cite{zhang2025sirerag} groups propositions that share entities and summarizes each group. AtomicRAG~\cite{hou2026atomicrag} and ToPG~\cite{delmas2026topg} link atomic facts to entities and passages. These methods recover \emph{who} takes part in a fact. The connection between two facts, however, is still co-membership of an entity, a theme, or a chunk. It is untyped, and it does not exist when two facts share none.
+
+\paragraph{Events, causality, and discourse.}
+The methods closest to ours relate statements directly. ASER~\cite{zhang2020aser}, presented at this conference, built an eventuality graph whose edges are discourse relations of the Penn Discourse Treebank~\cite{prasad2017penn}, mined from explicit connectives. It is a commonsense resource, not an index of a given corpus. EventRAG~\cite{yang2025eventrag} extracts events with typed relations such as \rel{cause} and \rel{precede}. Its relations come from the extraction call of one chunk, under-connected events are expanded with links from shared participants or from the LLM's own knowledge, and an agent retrieves in several LLM rounds. E$^2$RAG~\cite{zhang2026e2rag} and DyG-RAG~\cite{sun2025dygrag} link events by co-mention, shared entities, or temporal proximity, without relation types. CausalRAG~\cite{wang2025causalrag} builds causal edges between concepts and asks an LLM to find causal paths at query time. Disco-RAG~\cite{liu2026discorag} parses rhetorical relations within and between the passages retrieved for a question and uses them to plan the answer. \sys{} builds on this line: its relations between facts are discourse relations in the same sense, and we do not claim the discourse graph as new. What these methods do not provide together is what a retrieval index needs. The typed relations should be (i)~found across documents, (ii)~between grounded statements rather than concepts or event names, (iii)~built once over the whole corpus, and (iv)~used to decide \emph{what} to retrieve. They should also be kept alongside the entities of each statement. A query-time structure over already retrieved passages cannot recover evidence that similarity search missed.
+
+\paragraph{Generated summaries and query-time structure.}
+Some indices fuse knowledge across passages by writing new text. RAPTOR~\cite{sarthi2024raptor} recursively summarizes clusters of chunks, NodeRAG~\cite{xu2025noderag} adds summary nodes to a heterogeneous graph, and HyGRAG~\cite{zhong2026hygrag} clusters a hybrid chunk--entity graph and writes summaries that fuse context and relations. Agent memories~\cite{xu2025amem,qian2024memorag} link or rewrite stored notes with an LLM. Other methods build structure per question. IRCoT~\cite{trivedi2023interleaving} interleaves retrieval with reasoning, and Plan$^{*}$RAG~\cite{verma2025planrag} and LogicRAG~\cite{chen2026logicrag} decompose the question into a graph of sub-questions; LogicRAG also keeps a rolling LLM summary of the evidence. Summaries can state what no single passage states, which suits questions about a corpus as a whole~\cite{edge2024local}. For questions that follow a chain of statements, they have three limits regardless of prompt (Section~1). They relate only what their cluster contains, they fix at index time which relations to state, and they paraphrase conditions the reader cannot trace to a source. Query-time structure is discarded after each question, and its LLM cost recurs on every question (Section~\ref{sec:efficiency}).
+
+\paragraph{Statements as knowledge objects.}
+Knowledge representation on the Web has long given statements an identity. The W3C pattern for $n$-ary relations~\cite{noy2006nary} introduces a node for each relation instance, Wikidata attaches qualifiers and references to statements~\cite{vrandecic2014wikidata}, RDF-star lets a triple be the subject of another triple~\cite{hartig2017rdfstar}, and nanopublications bundle an assertion with its provenance~\cite{groth2010nanopub}. Discourse theory supplies the relations between statements: cause, contrast, elaboration, and temporal succession~\cite{mann1988rhetorical,prasad2017penn}. Both ideas are established. \sys{} combines them in one index that an LLM builds from text. A fact is a statement node with its participants (the $n$-ary pattern) and its source passage (its provenance), and typed relations hold between facts. We do not fix a relation inventory; labels are open-vocabulary, produced under constraints (Section~\ref{sec:construction}), and may join facts from different documents.
+
+\paragraph{The gaps \sys{} closes.}
+Table~\ref{tab:positioning} distills four gaps. \textbf{(G1)~Connectivity:} entity-centric and $n$-ary indices connect facts only through shared entities, and the methods with relations between statements find them within one chunk or among already retrieved passages. \sys{} finds typed relations across the whole corpus, including between facts that share no entity. \textbf{(G2)~Guidance:} no corpus-level index chooses its next hop by the kind of relation a question asks for. \sys{} predicts relation types from the question and follows edges with matching labels. \textbf{(G3)~Grounding:} methods that connect distant evidence do so through generated summaries or the LLM's own knowledge, which fix the connections before the question is known and paraphrase the facts they connect. \sys{} stores each connection as a labelled edge that retrieval selects per question, and gives the reader extracted facts, the entities that connect them, and the labels of their relations, with each fact traceable to its passage. \textbf{(G4)~Cost:} methods that build structure per question pay for it on every question. \sys{} builds its structure once with a number of LLM calls linear in the corpus and needs one LLM call per question.
+
+\begin{table*}[t]
+\centering
+\caption{Capabilities of graph-based RAG methods. \textbf{$N$-ary facts}: one element of the index holds all participants of a fact. \textbf{Typed fact relations}: the index stores relations between facts (or events or passages), labelled by the kind of dependence. \textbf{No-shared-entity links}: the index can connect two facts from different passages that share no entity. \textbf{Relation-guided hops}: retrieval chooses its next step by the type of relation the question asks for. \textbf{Grounded context}: the reader sees only text from the corpus, each piece traceable to its source; relation labels count as types, not text. \textbf{Single-pass query}: at most one LLM call before the reader, over an index built once. \yes{}: yes; \half{}: partly (see note); \no{}: no; \na{}: not applicable, because the method builds no corpus index.}
+\label{tab:positioning}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{l*{6}{C{1.9cm}}}
+\toprule
+ & \multicolumn{3}{c}{\textbf{What the index connects}} & \multicolumn{3}{c}{\textbf{What retrieval can do}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+\textbf{Method} & $N$-ary facts & Typed fact relations & No-shared-entity links & Relation-guided hops & Grounded context & Single-pass query \\
+\midrule
+MS GraphRAG~\cite{edge2024local}           & \no  & \no  & \no             & \no             & \half$^{a}$ & \yes \\
+HippoRAG~2~\cite{gutierrez2025rag}         & \no  & \no  & \no             & \no             & \yes        & \yes \\
+MemGraphRAG~\cite{wu2026memgraphrag}       & \no  & \no  & \no             & \no             & \yes        & \yes \\
+HyperGraphRAG~\cite{luo2025hypergraphrag}  & \yes & \no  & \no             & \no             & \half$^{a}$ & \yes \\
+PropRAG~\cite{wang2025proprag}             & \yes & \no  & \no             & \no             & \yes        & \yes \\
+HyGRAG~\cite{zhong2026hygrag}              & \no  & \no  & \half$^{b}$     & \no             & \half$^{a}$ & \yes \\
+EventRAG~\cite{yang2025eventrag}           & \yes & \yes & \half$^{c}$     & \half$^{d}$     & \half$^{e}$ & \no  \\
+Disco-RAG~\cite{liu2026discorag}           & \no  & \half$^{f}$ & \half$^{f}$ & \no          & \half$^{a}$ & \no  \\
+LogicRAG~\cite{chen2026logicrag}           & \na  & \na  & \na             & \na             & \no         & \no  \\
+\midrule
+\textbf{\sys{} (ours)}                     & \yes & \yes & \yes            & \yes            & \yes        & \yes \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{0.97\textwidth}
+\footnotesize
+$^{a}$Corpus text mixed with LLM-written entity descriptions, community reports, summaries, or plans. $^{b}$Only inside generated cluster summaries. $^{c}$Relations are extracted within one chunk; cross-document links come from shared participants or from the LLM's own knowledge. $^{d}$An LLM agent decides each step over several calls. $^{e}$The graph may contain knowledge the LLM adds from its own parameters. $^{f}$Typed relations between passages, built per question over the passages already retrieved.
+\end{minipage}
+\end{table*}
+\abid{Check the MemGraphRAG and PropRAG rows against their retrieval code (number of query-time LLM calls), and decide whether to add CausalRAG and LightRAG rows.}
+
+
+\section{Methodology}
+\label{sec:method}
+
+\sys{} retrieves evidence from a document corpus $\mathcal{D}$ by combining
+entity participation in facts with semantic relations between facts. The two
+structures support complementary retrieval steps: shared participants connect
+statements about the same entity, while semantic relations connect statements
+through dependencies, exceptions, causality, or other relationships. We first
+construct this unified index offline, then retrieve and rank evidence chains
+for each question $q$. A reader LLM answers the question from the selected
+chains, which retain the fact sentences and their connections.
+
+\subsection{Unified Knowledge Representation}
+\label{sec:index}
+
+
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.8\columnwidth]{figures/graph.pdf}
+    \caption{\normalfont  A \sys{} index example showing how shared entities and semantic relations connect facts across sections to determine the outcome of an age misstatement.}
+    \label{graph.pdf}
+\end{figure}
+
+
+The index has three node types and three edge types:
+$\mathcal{G}=(C,F,V,E_{CF},E_{FV},E_{FF}).$
+where $C$ contains source chunks, $F$ contains facts, and $V$ contains
+entities. Each chunk stores its text and a one-sentence summary. Each fact
+$f=(s_f,T_f,A_f,U_f)$ stores a self-contained proposition $s_f$, topics
+$T_f$, questions it answers $A_f$, and follow-up questions it raises $U_f$.
+An entity $v=(n_v,\rho_v)$ stores a canonical name $n_v$ and a
+\emph{micro-role} $\rho_v$, a short description of what it denotes or does
+in its passage. For example, the micro-role of \emph{date of birth} describes
+its use in determining the insured person's age for eligibility and premiums.
+
+Provenance edges $E_{CF}\subseteq C\times F$ associate facts with their
+source chunks. Participation edges $E_{FV}\subseteq F\times V$ connect
+each fact to its participants. Their set
+$V(f)=\{v:(f,v)\in E_{FV}\}$ forms a hyperedge indexed by $f$, retaining
+all participants of one proposition together rather than decomposing it into
+binary statements. Different facts remain distinct hyperedges even when their
+participant sets coincide. Semantic edges
+$(f_i,f_j,\ell,r)\in E_{FF}$ connect propositions with a directional label
+$\ell$ and an LLM-assigned strength $r\in[0,1]$. Each extracted relation
+has a corresponding inverse edge, such as \texttt{exception\_to} and
+\texttt{has\_exception}. The edge stores the label and strength; its content
+remains in the endpoint sentences.
+
+Facts therefore function both as hyperedges over entities and as nodes in a
+narrative or discourse graph. The participation structure retains the
+participants of a fact, while the semantic structure records how that fact
+relates to other propositions, including those without a shared participant.
+The two views correspond to hypergraph and discourse-based
+representations~\cite{luo2025hypergraphrag,prasad2017penn}.
+Their integration enables a retrieval path to alternate between the two
+structures, potentially connecting facts that are disconnected in either
+restricted view. Our ablations isolate this contribution by retaining the same
+extracted index and restricting traversal to participation or semantic edges.
+
+~\autoref{graph.pdf} illustrates why both structures
+are useful. Consider an insured who reported an age of 58 but was 61 at
+application and died six years later; the beneficiary asks whether the death
+benefit is payable. The graph shows five facts from three policy sections. Although six years have passed, $f_2$ exempts date-of-birth
+misstatements from the contestability rule $f_1$. The age limit
+$f_5$ establishes that the insured was ineligible at 61, so $f_4$
+applies rather than $f_3$: no death benefit is payable, and premiums
+are refunded. The combined connections retrieve the exception,
+eligibility condition, and consequence across policy sections.
+
+
+Retrieval traverses facts and entities; chunks are retained for provenance
+and are not traversed. The reader receives fact sentences, entity names and
+micro-roles, and the labels connecting them. The remaining fields support
+construction or retrieval: chunk summaries contextualize relation extraction,
+topics guide candidate discovery and seed selection, and question annotations
+identify complementary facts during construction. They are not added to the
+reader's context.
+
+\subsection{Index Construction}
+\label{sec:construction}
+
+As shown in ~\autoref{fig:construction}, Construction begins with independent extraction from each chunk and then
+integrates the resulting subgraphs into a corpus-wide index. Short passages, as in HotpotQA~\cite{yang2018hotpotqa} and
+MuSiQue~\cite{trivedi2022musique},
+are treated as individual chunks prefixed with their titles. Long documents,
+as in QuALITY~\cite{pang2022quality} and the policy corpus, are split into overlapping token windows.
+Every extraction call returns a typed record without
+chain-of-thought~\cite{khattab2024dspy}.
+
+\begin{figure*}[t]
+\centering
+\figorbox{figures/construction.pdf}{\textwidth}{7cm}
+\caption{Index construction. Steps 1--4 extract entities, facts, annotations,
+and local relations independently for each chunk. Steps 5--8 integrate the
+subgraphs, group candidate facts, and extract additional semantic relations.
+The rain and flood facts illustrate a relation between statements without
+shared participants.}
+\label{fig:construction}
+\end{figure*}
+
+For each chunk, an LLM first produces a one-sentence summary and an entity
+inventory with canonical names and micro-roles, resolving pronouns and aliases.
+A second call extracts atomic, self-contained propositions grounded in the
+chunk. Each proposition expresses one claim, event, rule, or state, with
+references resolved and conditions retained~\cite{chen2024dense,min2023factscore}.
+Separating the two branches of the age-misstatement clause into $f_3$ and
+$f_4$, for instance, allows each to receive its own dependency on the
+eligibility rule and to be retrieved without unrelated surrounding clauses.
+
+The extracted facts are annotated in batches. Each call receives the chunk,
+a batch of facts, and the inventory names, and returns the topics, answered
+questions, follow-up questions, and participants of each fact. Participants
+are selected from the inventory so that facts refer to shared entity objects.
+A returned name is matched exactly to the inventory or, if no exact match
+exists, to the closest inventory name under character $n$-gram TF--IDF~\cite{salton1988term}.
+Each match creates a participation edge. Answered and follow-up questions describe what a fact settles
+and what it leaves open, respectively. This distinction helps
+identify relations across sections and documents: $f_4$ explains
+the consequence of ineligibility but leaves open how old is too
+old, whereas $f_5$ supplies the age limit. These annotations
+therefore identify complementary facts whose sentences or
+participants may differ. 
+
+For each chunk with at least three facts, one call receives
+the chunk summary and numbered fact sentences and returns
+every related pair with a forward label, its inverse, and a
+strength in $[0,1]$. Labels must describe relations between
+propositions, such as \texttt{causes}, \texttt{precedes},
+\texttt{exception\_to}, or \texttt{contradicts}, rather than
+attributes such as \texttt{has\_amount}. The backward label
+must express the inverse relation, as in
+\texttt{exception\_to}/\texttt{has\_exception}; zero-strength
+pairs are discarded. In the policy example, this step extracts
+$f_1$ \texttt{has\_exception} $f_2$ and
+$f_3$ \texttt{contrasts\_with} $f_4$.
+Each edge stores only its label and strength: the endpoint
+facts already contain the substantive information, while the
+label guides traversal and explains their connection.
+
+The chunk subgraphs are then merged and duplicate entities resolved through
+passes of increasing cost. The first uses exact matching after Unicode NFKC
+normalization, lower-casing, and singularization; the second uses semantic
+hashing at high similarity with SemHash.\footnote{\url{https://github.com/MinishLab/semhash}.}
+Remaining candidates form a nearest-neighbour graph that weights name
+similarity more strongly than micro-role similarity. Leiden
+clustering~\cite{traag2019leiden} partitions the graph, and small clusters
+are packed for LLM processing. Each call identifies equivalent entities and
+assigns canonical names and micro-roles, after which participation edges are
+redirected to the canonical nodes. Micro-roles help distinguish namesakes during this final pass:
+``Jordan'' the river and ``Jordan'' the basketball player
+share a name but denote different entities. In the policy
+example, resolving references to \emph{date of birth} across
+sections creates the shared entity through which retrieval
+moves from the exception $f_2$ to the misstatement clause $f_4$. When fact consolidation is enabled, an analogous fact-similarity
+graph groups candidate repeated propositions for LLM resolution, following
+the conflict taxonomy of MemGraphRAG~\cite{wu2026memgraphrag}. Equivalent
+facts are merged while retaining the union of their source provenance.
+\maruf{CHECK: retain the fact-consolidation description only if enabled in the evaluated configuration;}
+
+Shared entities cannot connect every pair of related facts.
+Comparing all fact pairs with an LLM would require quadratically
+many comparisons, so we first identify promising candidates
+using four embedding similarities:
+\begin{flalign*}
+&\operatorname{aff}(f_i,f_j)=
+\underbrace{\operatorname{cos}(s_i,s_j)}_{\text{sentence}}
++\underbrace{\operatorname{cos}(T_i,T_j)}_{\text{topics}}
++\underbrace{\operatorname{cos}(R_i,R_j)}_{\text{roles}}
++\underbrace{\operatorname{cos}(U_i,A_j)}_
+{\text{raises}\,\rightarrow\,\text{answers}}. &&
+\end{flalign*}
+Here, $R_i$ contains the micro-roles of $f_i$'s participants,
+and $\operatorname{cos}$ denotes cosine similarity between
+text embeddings; set-valued fields are concatenated before
+embedding. The first three terms identify facts about similar
+content, topics, or participant roles. The fourth is asymmetric:
+it identifies facts that answer questions another fact leaves
+open, even without shared entities or similar wording.
+
+For $f_4$ and $f_5$ in~\autoref{graph.pdf}, the sentence and
+role signals provide limited overlap. However, $f_4$ raises
+``What are the age limits for this policy?'', while $f_5$
+answers ``What ages can apply for this policy?'' Their close
+question match identifies the missing eligibility condition,
+reinforced by the shared topic \emph{eligibility}.
+
+Each fact retains its $k$ highest-affinity candidates to which it is not
+already related, producing at most $k|F|$ candidate links. Hierarchical
+Leiden clustering groups them into communities of at most $M$ facts, which
+may span chunks and documents. One LLM call per community receives the
+numbered facts with their source-chunk summaries and extracts semantic
+relations under the same constraints as local extraction. The summaries
+contextualize statements from different sources, and joint comparison allows
+the LLM to relate facts grouped transitively as well as direct candidate
+neighbours. For the policy example, it adds \texttt{depends\_on} edges from
+$f_3$ and $f_4$ to $f_5$.
+
+Communities are used to discover relations, not to replace their facts with
+summaries~\cite{edge2024local,zhong2026hygrag}. Their output is a set of
+individually retrievable edges between the fact sentences. These edges can be
+combined with participation edges across community boundaries, retaining the
+conditions of each proposition in the eventual evidence chain. Grouping also
+limits LLM comparison to candidate communities rather than all fact pairs.
+With fixed batch and community-size limits, local extraction and community
+relation extraction require numbers of calls proportional to the numbers of
+chunks and facts. Total construction cost additionally includes affinity
+computation, candidate search, clustering, and duplicate resolution; time and
+token usage are evaluated in Section~\ref{sec:efficiency}.
+
+\subsection{Evidence Retrieval}
+\label{sec:retrieval}
+
+At query time, \sys{} uses the unified structure to retrieve chains relevant
+to both the subject of the question and the connections it asks about
+(see ~\autoref{fig:retrieval}). A single LLM call produces a plan containing
+topics $P_T$, named entities $P_N$, entity roles or types $P_R$, desired
+relation labels $P_L$, and short phrases describing the sought connection
+$P_S$. Each field has one to three items or is left empty rather than filled
+with invented content; named entities are restricted to proper nouns and
+identifiers. The original question is retained. For the policy question, the
+plan includes age misstatement, contestability, and eligibility; the roles
+\emph{insured person} and \emph{date of birth}; and the labels
+\texttt{has\_exception} and \texttt{depends\_on}. Its connection phrase asks
+what determines whether a misstated age voids the policy, while its named-entity
+field is empty. Subsequent retrieval uses embeddings and a cross-encoder;
+answer generation is a separate reader call.
+
+\begin{figure*}[t]
+\centering
+\figorbox{figures/retrieval.pdf}{\textwidth}{6cm}
+\caption{Evidence retrieval for ``Why did residents leave the old town?''
+A query plan guides seed selection and expansion through participation and
+semantic edges. From the residents entity, a path reaches the departure,
+flood, and rain facts through \texttt{preceded\_by} and
+\texttt{caused\_by}, including statements without shared participants.
+Paths are reranked and deduplicated to form the reader context.}
+\label{fig:retrieval}
+\end{figure*}
+
+
+Facts and entities compete in one candidate pool, allowing
+retrieval to begin with either a proposition or an entity.
+Here, $\simcos$ denotes cosine similarity between text
+embeddings, and $\simcos_{\max}(P,x)$ takes the highest
+similarity between $x$ and an item of $P$, returning zero
+when $P$ is empty. The seed scores are
+\begin{align*}
+&\mathrm{score}(f)=
+w_s\,\simcos(q,s_f)
++w_T\,\tfrac{1}{|P_T|}
+\textstyle\sum_{p\in P_T}\simcos_{\max}(T_f,p), &&\\
+&\mathrm{score}(v)=
+w_n\,\simcos_{\max}(P_N,n_v)
++w_\rho\,\simcos_{\max}(P_R,\rho_v). &&
+\end{align*}
+The weights $w_s$ and $w_T$ control sentence relevance and
+topic alignment in fact scoring; $w_n$ and $w_\rho$ control
+name and micro-role alignment in entity scoring.
+A fact scores highly when its sentence resembles the original
+question $q$ and its topics match the planned topics. The topic
+term averages the similarity of each planned topic to the fact's
+closest topic. If the plan or fact has no topics, this term is
+omitted and $w_T$ is reassigned to sentence similarity.
+An entity scores highly when its canonical name matches a
+planned name or its micro-role matches a planned role.
+Retrieval can therefore start from an entity even when the
+question describes its role without naming it. In the policy
+example, the contestability fact $f_1$ matches the question,
+while \emph{date of birth} matches a planned role.
+
+
+To avoid selecting paraphrases of the same evidence, we use
+Maximal Marginal Relevance (MMR)~\cite{carbonell1998use}.
+At each selection, MMR chooses the remaining candidate $u$
+maximizing
+\begin{align*}
+&\mathrm{MMR}(u\mid\mathcal{S})=\lambda a(u)-(1-\lambda)\max_{u'\in\mathcal{S}}
+\simcos(x_u,x_{u'}).
+\end{align*}
+Here, $a(u)$ is relevance, $x_u$ is the text embedded for
+redundancy comparison, and $\mathcal{S}$ is the selected set.
+The redundancy term is zero for the first selection.
+We select $N_s$ seeds with $a(u)=\mathrm{score}(u)$, using
+fact sentences and entity micro-roles for redundancy comparison.
+The same rule selects extensions and final paths, with
+coefficients $\lambda_s$, $\lambda_b$, and $\lambda_p$
+for seed, extension, and path selection, respectively.
+
+From each seed, paths traverse participation edges in either
+direction and outgoing semantic edges without revisiting nodes.
+Let $\simcos_{\mathrm{avg}}(P,x)$ denote the mean cosine
+similarity between $x$ and the items of $P$, returning zero
+when $P$ is empty. Move scores depend on the edge type:
+\begin{align*}
+&g(f_i\!\rightarrow\!f_j)=
+\alpha_L\simcos_{\mathrm{avg}}(P_L,\ell)+\alpha_S\simcos_{\mathrm{avg}}(P_S,\ell)
++\alpha_r r, &&\\
+&g(f\!\rightarrow\!v)=
+\simcos_{\mathrm{avg}}(P_R,\rho_v), &&\\
+&g(v\!\rightarrow\!f)=0. &&
+\end{align*}
+For a semantic edge, $\ell$ is its label and $r$ its extraction
+strength. The weights $\alpha_L$ and $\alpha_S$ control label
+alignment with planned relations and connection phrases,
+while $\alpha_r$ weights extraction strength. Fact-to-entity
+moves favour micro-roles matching the planned roles $P_R$.
+Entity-to-fact moves are assigned zero relevance in the
+evaluated configuration.
+
+At each partial path, MMR retains up to $B$ extensions using
+move scores for relevance. This limit applies separately to
+each partial path, not globally to all active paths.
+Entity-to-fact selection can therefore exclude relevant facts
+before reranking when more than $B$ successors are available.
+Move scores guide expansion but are not accumulated along a
+path. Expansion stops when a path contains $D$ facts, reaches
+$2D$ nodes, or has no unvisited successor. In the policy example, the plan favours exception and dependency
+relations and the role \emph{date of birth}. Traversal can then
+produce chains through the ineligible branch $f_4$ and the
+eligible branch $f_3$.
+
+
+Each completed path is serialized as alternating nodes and
+edges. Facts appear as quoted sentences, entities as
+\texttt{[name (micro-role)]}, and semantic edges as their
+directional labels. Participation steps use
+\texttt{(has $\rho$)} from fact to entity and
+\texttt{(participates in event)} from entity to fact, where
+$\rho$ is the entity's micro-role. These are serialization
+markers, not additional extracted relations. A cross-encoder~\cite{nogueira2019passage} scores each
+serialized path against the question. It evaluates the
+whole chain rather than only its final fact. A final MMR
+pass selects $N_p$ paths using cross-encoder scores for
+relevance and path embeddings for redundancy. Selection
+balances relevance and diversity without explicitly
+optimizing coverage of the query plan. Selected paths often share prefixes. The best path is
+emitted in full; each remaining path contributes its
+previously unseen steps if it overlaps an emitted chain,
+or starts a new group otherwise. The resulting context
+contains fact sentences connected by semantic labels
+and entities with their micro-roles. Each fact appears
+once and remains traceable to its source chunks.
+
+In the policy example, the chain through $f_4$ supplies
+the contestability rule, its exception, the ineligible
+branch, and the age limit; the chain through $f_3$ adds
+the alternative branch. Since the true application age
+of 61 exceeds the limit, $f_4$ applies: the policy was
+never in force, no death benefit is payable, and premiums
+are refunded. Atomic extraction separates the branches,
+entity resolution links them to the exception, question
+annotations and community relation extraction identify
+their dependence on the age limit, and planned traversal
+retrieves the resulting chains.
+
+Retrieval uses one LLM call per question to generate the
+plan. The remaining retrieval operations comprise embedding
+lookups, graph traversal, and cross-encoder scoring of
+candidate paths; answer generation requires a separate
+reader LLM call.
+
+
+
+
+% ─────────────────────────────────────────────
+\subsection{Experimental Setup}
+\label{sec:setup}
+
+\paragraph{Datasets.}
+For multi-hop reasoning we use the HotpotQA~\cite{yang2018hotpotqa} and MuSiQue~\cite{trivedi2022musique} releases of HippoRAG~2~\cite{gutierrez2025rag}, also used by MemGraphRAG~\cite{wu2026memgraphrag}, LogicRAG~\cite{chen2026logicrag}, and LinearRAG~\cite{zhuang2025linearrag}: 1{,}000 questions each over pooled corpora of 9{,}811 and 11{,}656 Wikipedia passages. All systems are compared on a fixed, seeded 250-question subset of each, stratified by question type (HotpotQA: 203 bridge, 47 comparison) or hop count (MuSiQue: 129 two-, 79 three-, 42 four-hop); full-set baseline results are in Appendix~\ref{app:full}. For reading comprehension we use QuALITY~\cite{pang2022quality}: multiple-choice questions about stories and articles of about 5k tokens, whose HARD subset cannot be answered by skimming. Its answers hinge on causal, temporal, and motivational links between events rather than on distinct names. Following HyGRAG~\cite{zhong2026hygrag}, each system indexes the 115 articles of the official development split (0.66M tokens) in one pooled index and answers all 2{,}086 questions (1{,}065 HARD).
+\abid{Optional: add the insurance-contract benchmark (5 issued policies, 445 questions in five categories) as a further column group of Table~\ref{tab:main} once it is run.}
+
+\paragraph{Corpora.}
+The baselines index the full corpora. \sys{} currently indexes only the passages of the 250 evaluated questions (2{,}488 HotpotQA and 4{,}025 MuSiQue passages, the standard distractor setting), so its rows are not yet strictly comparable to the baseline rows.
+\abid{Before submission, either build UNH over the full corpora (\texttt{UNH\_CORPUS=full}) or rebuild the baselines on the subset corpora, and then delete this paragraph's caveat.}
+
+\paragraph{Baselines.}
+We compare with \textbf{HippoRAG~2}~\cite{gutierrez2025rag} (triples and passages, Personalized PageRank), \textbf{LogicRAG}~\cite{chen2026logicrag} (no pre-built graph; query-time sub-question DAG with a rolling summary), \textbf{MemGraphRAG}~\cite{wu2026memgraphrag} (memory-guided multi-agent triple extraction), \textbf{HyperGraphRAG}~\cite{luo2025hypergraphrag} ($n$-ary hyperedges), \textbf{Microsoft GraphRAG}~\cite{edge2024local} (version 3.2.0, local search), and \textbf{HyGRAG}~\cite{zhong2026hygrag} (hybrid chunk--entity hierarchy with fused summaries). Each system runs from its official code with its default settings, ingestion, and retrieval; we change only model endpoints. The reader receives the context each system's own answer step would use: the top-5 passages (HippoRAG~2), the top-5 256-token windows (MemGraphRAG), the final rolling summary after at most three rounds of top-5 retrieval (LogicRAG), the hybrid entity/hyperedge/source context (HyperGraphRAG), the local-search context with a 12k-token budget (GraphRAG), and one community summary with four chunks, five entities, and five relations (HyGRAG). On QuALITY, the two systems without a chunker of their own (HippoRAG~2 and LogicRAG) receive the 1{,}200/100-token chunks produced by HyGRAG's chunker; the others chunk the articles themselves.
+
+\paragraph{Controlled protocol and metrics.}
+Every system uses the same LLM for all internal calls (DeepSeek~V4.1 Flash, reasoning mode off, provider-default temperature), the same embedding model (voyage-4-nano), and the same reader: a shared answer step that applies HippoRAG~2's one-shot QA prompt to the system's context (for QuALITY, a prompt that returns the option letter). Only the context differs across systems. We report exact match (EM) and token-level F1 over the gold answer and its aliases, and LLM-judged accuracy (LLM-Acc) with the judging prompt of LinearRAG~\cite{zhuang2025linearrag}, where the judge sees only the predicted and gold answers; for QuALITY we report the accuracy of the chosen option overall and on HARD questions. \sys{} is compared with each baseline on the same questions by a paired bootstrap (10{,}000 resamples, 95\% intervals); at $n = 250$ one question is 0.4 points and a 95\% interval on F1 spans roughly $\pm 4$--$5$ points. \sys{} uses \texttt{ms-marco-MiniLM-L6-v2} as its cross-encoder and the hyperparameters of Table~\ref{tab:hyperparams}; like the baselines, its context is not truncated.
+\abid{Confirm UNH chunking for QuALITY (600/50-token windows by default; the baselines received 1200/100-token chunks).}
+
+% ─────────────────────────────────────────────
+\subsection{Main Results (RQ1)}
+\label{sec:main}
+
+\begin{table*}[t]
+\centering
+\caption{Overall QA results. All systems share the LLM, embedding model, reader prompt, and judge. HotpotQA and MuSiQue: 250-question subsets; QuALITY: development set (HARD: hard subset). LLM: LLM-judged accuracy. \sys{}-H (hypergraph view) and \sys{}-D (discourse view) restrict traversal to participation edges and to relation edges between facts, respectively, on the same index as \sys{}. Bold: best; underline: second best (over the rows filled so far). QuALITY: LogicRAG and MS GraphRAG still running.}
+\label{tab:main}
+\small
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{lC{1.3cm}C{1.3cm}*{6}{C{1.1cm}}}
+\toprule
+\multirow{3}{*}{\textbf{Method}} & \multicolumn{2}{c}{\textbf{Reading Comp.}} & \multicolumn{6}{c}{\textbf{Multi-Hop Reasoning}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-9}
+ & \multicolumn{2}{c}{QuALITY} & \multicolumn{3}{c}{HotpotQA} & \multicolumn{3}{c}{MuSiQue} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+ & Acc & HARD & EM & F1 & LLM & EM & F1 & LLM \\
+\midrule
+HippoRAG 2      & \textbf{82.7} & \textbf{76.6} & \textbf{59.6} & \underline{71.9} & 80.4 & 36.0 & 47.1 & 52.0 \\
+LogicRAG        & \tbd & \tbd & \underline{56.4} & 71.3 & \underline{81.6} & 33.6 & 44.5 & 48.8 \\
+MemGraphRAG     & 74.8 & 67.0 & 50.4 & 61.4 & 68.4 & 30.4 & 38.8 & 41.6 \\
+HyperGraphRAG   & 79.4 & 71.7 & \textbf{59.6} & \textbf{74.8} & \textbf{85.6} & \textbf{46.4} & \textbf{57.2} & \textbf{62.0} \\
+MS GraphRAG     & \tbd & \tbd & 51.6 & 65.4 & 75.6 & \underline{38.8} & \underline{49.7} & \underline{55.2} \\
+HyGRAG          & \underline{81.7} & \underline{75.8} & \underline{56.4} & 69.3 & 79.2 & 32.0 & 40.4 & 44.0 \\
+\midrule
+\sys{}-H (hypergraph) & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd \\
+\sys{}-D (discourse) & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd \\
+\midrule
+\textbf{\sys{} (ours)} & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:main} reports the results. Under the controlled protocol, HyperGraphRAG is the strongest baseline on both multi-hop datasets (tied with HippoRAG~2 on HotpotQA EM), and its margin is largest on MuSiQue (57.2 F1, 7.5 points above the next system), consistent with the argument that preserving $n$-ary facts helps when evidence must be combined. It also passes by far the longest context of any system to the reader (about 21.7k tokens; Section~\ref{sec:efficiency}). HippoRAG~2 and LogicRAG follow on HotpotQA, and Microsoft GraphRAG on MuSiQue. MemGraphRAG ranks lower than in its own paper, which used a different LLM, embedding model, and metric, illustrating why a shared protocol is needed before published numbers are compared. Baseline rankings on the subsets match those on all 1{,}000 questions up to one adjacent swap per dataset (Appendix~\ref{app:full}).
+\abid{Fill the UNH rows and paired-bootstrap intervals. Discuss: margin over HyperGraphRAG at a fraction of its context; whether the gain grows with hop count on MuSiQue; failures where seeds were correct but traversal was not.}
+
+% ─────────────────────────────────────────────
+\subsection{Hypergraph View versus Discourse View (RQ2)}
+\label{sec:ablation}
+
+Our central claim is that a retrieval index needs both structures: relations between facts, stored as edges, and the entities of each fact. To test it, we evaluate the two views of the \emph{same} index (Proposition~\ref{prop:views}) with the same seeds, ranking, and reader. \textbf{\sys{}-H} traverses only participation edges $\Efv$, so facts reach each other only through shared entities, as in hypergraph RAG. \textbf{\sys{}-D} traverses only discourse edges $\Eff$; entities can still serve as seeds but cannot be traversed through, as in a discourse or event graph. Because extraction and entity resolution are shared, the differences among \sys{}-H, \sys{}-D, and \sys{} (Table~\ref{tab:main}) come from the edges available at traversal time. \sys{}-D versus \sys{}-H compares the two established structures on equal footing. \sys{} versus both measures whether their combination retrieves evidence that neither view reaches alone.
+\abid{Fill and discuss; report the share of retrieved paths that mix both edge families, and the share of relation steps between facts that share no entity.}
+
+
+\paragraph{Case study.}
+\abid{Trace one QuALITY HARD question end to end, in the style of Figure~\ref{fig:motivation}: the plan, the seeds, the path \sys{} follows (with its relation labels and source chunks), and the context of the strongest baseline for the same question. Pick a question whose path crosses a relation between facts that share no entity.}
+
+% ─────────────────────────────────────────────
+\subsection{Effectiveness across Domains (RQ3)}
+\label{sec:domains}
+
+Wikipedia multi-hop questions reward connecting short encyclopedic passages through named entities, which is the setting entity-centric indices are designed for. QuALITY tests the opposite regime: long narratives in which relevant facts are linked by causation, temporal order, and motivation more often than by distinct names. We expect the discourse edges to matter most on QuALITY's HARD questions, which require integrating evidence from several parts of a story. Among the baselines, HippoRAG~2 (82.7) and HyGRAG (81.7) lead, within about one standard error of each other ($\approx$0.9 points at $n = 2{,}086$), followed by HyperGraphRAG (79.4) despite a context four times longer, and MemGraphRAG (74.8), whose 256-token windows give the shortest context. HARD questions keep this order and cost every system 6--8 points.
+\abid{Fill LogicRAG, MS GraphRAG, and \sys{} on QuALITY and discuss; add further domains as column groups.}
+
+% ─────────────────────────────────────────────
+\subsection{Reader Context and Construction Cost (RQ4)}
+\label{sec:efficiency}
+
+Table~\ref{tab:cost} reports the LLM tokens consumed by index construction and the mean length of the context passed to the reader on the evaluated questions. Construction is paid once per corpus; context is paid on every query.
+
+\begin{table*}[t]
+\centering
+\caption{Construction cost and reader context. In/Out: construction LLM input and output tokens (millions); Ctx: mean reader-context tokens per question (\texttt{cl100k\_base}; context only). Baselines index the full HotpotQA and MuSiQue corpora and the 115 QuALITY development articles; \sys{} currently indexes the subset corpora (Section~\ref{sec:setup}). $^{\dagger}$LogicRAG builds no index; its context is a summary written by the LLM at query time.}
+\label{tab:cost}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{l*{9}{C{1.1cm}}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{3}{c}{\textbf{HotpotQA}} & \multicolumn{3}{c}{\textbf{MuSiQue}} & \multicolumn{3}{c}{\textbf{QuALITY}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+ & In & Out & Ctx & In & Out & Ctx & In & Out & Ctx \\
+\midrule
+HippoRAG 2           & 9.25   & 3.59  & 634      & 10.50  & 3.75  & 664      & 1.86 & 0.39 & 5{,}328 \\
+LogicRAG$^{\dagger}$ & 0      & 0     & 66       & 0      & 0     & 115      & 0    & 0    & \tbd \\
+MemGraphRAG          & 158.70 & 16.51 & 1{,}241  & 153.45 & 16.05 & 1{,}240  & 45.50 & 4.22 & 1{,}292 \\
+HyperGraphRAG        & 161.93 & 17.57 & 21{,}783 & 189.95 & 19.59 & 21{,}540 & 19.72 & 5.75 & 20{,}492 \\
+MS GraphRAG          & 47.37  & 21.40 & 9{,}087  & 49.33  & 22.43 & 8{,}898  & \tbd & \tbd & \tbd \\
+HyGRAG               & 13.77  & 4.33  & 1{,}000  & 15.26  & 4.52  & 1{,}018  & 2.93 & 0.48 & 5{,}014 \\
+\midrule
+\textbf{\sys{} (ours)} & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd & \tbd \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\paragraph{Construction.}
+Construction cost varies by more than an order of magnitude. HippoRAG~2 and HyGRAG, which issue one entity and one triple-extraction call per passage (plus community summaries for HyGRAG), use 12.8--19.8M tokens. Microsoft GraphRAG spends about two thirds of its 69--72M tokens on community reports. MemGraphRAG and HyperGraphRAG use 170--210M tokens; for MemGraphRAG, two thirds of the input goes to schema induction and most of the rest to conflict detection. On QuALITY the ordering is the same, but long articles make construction cheaper per corpus token for systems that call the LLM once per chunk: HyperGraphRAG spends 30 input tokens per corpus token (125 on HotpotQA) and HippoRAG~2 2.8 (7.1), while MemGraphRAG, whose 256-token windows do not grow, spends 69 (122).
+\abid{Fill UNH from \texttt{construction\_results.json} (per-stage split). The NOTES smoke test measured about 7.9k input / 4.8k output tokens per HotpotQA passage; since UNH indexes fewer passages, also report tokens per passage for all systems.}
+
+\paragraph{Reader context.}
+Under their defaults, context lengths range from 634 tokens (HippoRAG~2's five passages) through about 1{,}000--1{,}250 (HyGRAG, MemGraphRAG) to 9k (GraphRAG) and 21.7k (HyperGraphRAG). The strongest baseline in Table~\ref{tab:main} is also the one with the longest context, so accuracy and context length are hard to separate across systems. QuALITY preserves this ordering (MemGraphRAG 1.3k, HyGRAG 5.0k, HippoRAG~2 5.3k with its longer chunks, HyperGraphRAG 20.5k tokens). \sys{} returns at most $P = 20$ deduplicated chains of at most $D$ facts each.
+\abid{Fill the UNH context length and state the comparison with HyperGraphRAG.}
+
+\paragraph{The case of LogicRAG.}
+LogicRAG's final context is the shortest (66 and 115 tokens), but it measures something different. LogicRAG builds no index and does at query time the work other systems do offline: it retrieves five passages, decomposes the question when they do not suffice, retrieves five more passages per sub-problem, and after each round has the LLM rewrite a rolling summary; only the last summary reaches the reader. On the MuSiQue subset it performs 1.3 additional rounds on average and reads about 11.5 passages (about 1{,}270 tokens of raw evidence, counting repeats) to produce its 115-token summary (HotpotQA: 0.4 rounds, 6.9 passages, about 810 tokens), and its query-time pipeline consumes about 2.9k LLM input and 0.6k output tokens per question (HotpotQA: 1.8k and 0.3k, averaged over all 1{,}000 questions, including its own answer and judge calls). Its short context is thus the output of query-time compression rather than of more selective retrieval, and its cost recurs on every question; it should be compared on the evidence it inspects, not on the length of its summary.
+
+\paragraph{Caveat.}
+Every system, including \sys{}, runs at its default context size; we did not search for the budget at which each performs best. A system with a long default context might keep most of its accuracy at a smaller budget, so our comparison characterizes the systems as released rather than their best accuracy--context trade-off.
+
+% =============================================================================
+\section{Discussion and Limitations}
+\label{sec:limitations}
+% =============================================================================
+
+\paragraph{Construction cost.}
+\sys{} trades construction cost for structure: every relation is adjudicated by an LLM and several calls are issued per chunk. The number of calls is linear in corpus size, but the constant is larger than for extraction-only systems; label-only relation prompts and smaller annotation schemas reduce it.
+
+\paragraph{Inferred relations.}
+Facts are extracted from the corpus, but relations between facts of different documents are the LLM's judgment: the policy does not state that the eligibility rule decides which branch of the misstatement clause applies. \sys{} keeps the two apart. A relation stores only a label and a strength, both of its facts remain traceable to their passages, and the reader sees the label as a connector between quoted facts rather than as a claim of the corpus. Wrong relations can still mislead traversal; recording which community call produced each relation would make them auditable.
+\abid{Optional: measure relation precision on a sample of 100 cross-chunk edges judged by hand.}
+
+\paragraph{Fact-level consistency.}
+Duplicate facts are merged (Step~5), but contradictory facts are linked by a \rel{contradicts} edge rather than reconciled, and the reader must weigh them.
+\abid{Reconcile with the fact-consolidation setting the runs used (Step~5 note).}
+
+\paragraph{Open-vocabulary relations.}
+Relation labels are produced by the LLM under constraints rather than drawn from a fixed inventory such as the Penn Discourse Treebank's~\cite{prasad2017penn}. Synonymous labels (\rel{causes}, \rel{leads\_to}) are matched only through their embeddings, and participation edges are unlabelled, so expansion out of an entity is not query-guided. Normalizing labels into a shared vocabulary, as ontology induction over \sys{} graphs does~\cite{mridul2026groil}, would also make the index usable as a Semantic Web resource.
+
+\paragraph{Scope.}
+\sys{} targets questions whose answer follows a chain of specific statements. It does not target questions about a corpus as a whole (``What are the main themes of these policies?''), for which community summaries are designed~\cite{edge2024local}. The two are complementary: summaries could be written over \sys{} communities and kept alongside the edges. All systems share one LLM and one embedding model, and the multi-hop comparison uses 250 questions per dataset; small differences should be read against the bootstrap intervals.
+
+% =============================================================================
+\section{Conclusion}
+% =============================================================================
+
+Graph-based RAG indices connect knowledge only where facts mention the same entity, while many questions follow relations between statements: a cause and its effect, a rule and its exception, a claim and its rebuttal. We presented the \sysfull{}, an index that combines an $n$-ary fact hypergraph and a discourse graph over the same facts. Every atomic fact is both a hyperedge over its participants and a node in a graph of typed relations between facts, and each fact is traceable to its passage. Neither structure is new; their combination is what lets retrieval move between dependent facts that share no entity, choose its next step by the kind of relation a question asks for, and give the reader compact chains of grounded facts instead of passages or generated summaries. Construction stays linear in corpus size by judging relations within communities of a question-based fact-affinity graph rather than between all pairs. We compared \sys{} with six graph-based RAG systems under a protocol that fixes the language model, embedding model, reader, and judge, tested whether both structures are needed by comparing the hypergraph and discourse views of the same index, and reported every system's construction cost and reader context.
+\abid{Add one sentence with the main empirical findings (RQ1--RQ4).}
+
+% ---- Bibliography ----
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+
+\appendix
+\section{Full-Set Baseline Results}
+\label{app:full}
+
+Table~\ref{tab:full} reports the baselines on all 1{,}000 questions of each dataset, with the same reader and judge as Table~\ref{tab:main}. Contain-Acc is the fraction of answers that contain the normalized gold answer (the Str-Acc of MemGraphRAG~\cite{wu2026memgraphrag} and LinearRAG~\cite{zhuang2025linearrag}). Subset F1 lies within 4.2 points of full-set F1 for every system, inside the subset's sampling uncertainty, and the rankings agree except for one adjacent swap per dataset (GraphRAG and HyGRAG on HotpotQA; HippoRAG~2 and GraphRAG on MuSiQue).
+
+\begin{table*}[t]
+\centering
+\caption{Baselines on the full 1{,}000-question sets (shared reader and judge).}
+\label{tab:full}
+\small
+{%
+\begin{tabular}{lcccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{4}{c}{\textbf{HotpotQA}} & \multicolumn{4}{c}{\textbf{MuSiQue}} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+ & EM & F1 & Contain-Acc & LLM-Acc & EM & F1 & Contain-Acc & LLM-Acc \\
+\midrule
+HippoRAG 2      & 61.3 & 73.5 & 70.6 & 82.8 & 39.8 & 50.6 & 43.9 & 53.9 \\
+LogicRAG        & 58.2 & 72.8 & 70.2 & 82.9 & 35.8 & 48.5 & 42.3 & 52.8 \\
+MemGraphRAG     & 51.2 & 62.6 & 60.9 & 70.6 & 30.9 & 40.5 & 34.4 & 42.9 \\
+HyperGraphRAG   & 61.4 & 74.9 & 74.5 & 86.4 & 44.5 & 56.4 & 51.7 & 62.1 \\
+MS GraphRAG     & 56.4 & 69.2 & 67.1 & 79.6 & 38.2 & 49.1 & 42.9 & 54.2 \\
+HyGRAG          & 54.1 & 67.5 & 64.8 & 78.6 & 34.1 & 44.5 & 37.1 & 47.7 \\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+
+\section{Hyperparameters}
+\label{app:hyper}
+
+Table~\ref{tab:hyperparams} lists the values used in all experiments. Symbols follow Section~\ref{sec:method}.
+
+\begin{table}[h]
+\centering
+\caption{\sys{} hyperparameters used in all experiments.}
+\label{tab:hyperparams}
+\small
+\begin{tabular}{p{1.5cm}p{4.3cm}c}
+\toprule
+\textbf{Stage} & \textbf{Parameter} & \textbf{Value} \\
+\midrule
+Construction & facts annotated per call & 15 \\
+             & minimum facts for an intra-chunk relation call & 3 \\
+             & entity resolution: neighbours / threshold / max.\ cluster & 15 / 0.5 / 72 \\
+             & affinity: four views, equal weights & 1, 1, 1, 1 \\
+             & candidate neighbours per fact $k$ & 12 \\
+             & maximum community size $M$ & 50 \\
+\midrule
+Seeding      & fact weights $(w_s, w_T)$ & 0.8, 0.2 \\
+             & entity weights $(w_n, w_\rho)$ & 0.6, 0.4 \\
+             & seeds $K$, MMR $\lambda$ & 12, 0.6 \\
+\midrule
+Traversal    & edge weights $(\alpha_L, \alpha_S, \alpha_r)$ & 0.3, 0.5, 0.2 \\
+             & beam width $B$, MMR $\lambda$ & 6, 0.75 \\
+             & maximum facts per path $D$ (steps $2D$) & 4 (8) \\
+\midrule
+Ranking      & paths kept $P$, MMR $\lambda$ & 20, 0.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\abid{Values updated to the current run defaults (\texttt{evaluation\_scripts/unh/main.py}): $M$ 40$\to$50, $K$ 9$\to$12, $D$ 3$\to$4, beam MMR 0.6$\to$0.75. Confirm against the final runs, including the seed MMR $\lambda$ and the 15 entity-resolution neighbours, which were not re-checked.}
+
+
+\end{document}

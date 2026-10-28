@@ -1,0 +1,3 @@
+Title: Ericksen number
+
+In the study of liquid crystals, the Ericksen number ("Er") is a dimensionless number used to describe the deformation of the director field under flow. It is defined as the ratio of the viscous to elastic forces. In the limit of low Ericksen number the elastic forces will exceed the viscous forces and so the director field will not be strongly affected by the flow field. The Ericksen number is named after American mathematics professor Jerald Ericksen of the University of Minnesota. The number is defined:

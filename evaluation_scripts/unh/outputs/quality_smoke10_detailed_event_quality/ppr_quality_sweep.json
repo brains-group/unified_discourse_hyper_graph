@@ -1,0 +1,291 @@
+[
+  {
+    "variant": "base",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 69.61,
+    "Acc-HARD": 64.22,
+    "Acc-EASY": 77.78,
+    "ctx_tokens_mean": 1450,
+    "ctx_tokens_max": 1999,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.6,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "f60",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 73.48,
+    "Acc-HARD": 66.97,
+    "Acc-EASY": 83.33,
+    "ctx_tokens_mean": 1832,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 60,
+      "damping": 0.6,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "f80",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 72.38,
+    "Acc-HARD": 65.14,
+    "Acc-EASY": 83.33,
+    "ctx_tokens_mean": 1972,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 120,
+      "context_tokens": 2000,
+      "force_top_facts": 80,
+      "damping": 0.6,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "s50",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 69.61,
+    "Acc-HARD": 62.39,
+    "Acc-EASY": 80.56,
+    "ctx_tokens_mean": 1778,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 50,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.6,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "s50_f60",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 68.51,
+    "Acc-HARD": 58.72,
+    "Acc-EASY": 83.33,
+    "ctx_tokens_mean": 1896,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 50,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 60,
+      "damping": 0.6,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "seed10",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 69.06,
+    "Acc-HARD": 63.3,
+    "Acc-EASY": 77.78,
+    "ctx_tokens_mean": 1458,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.6,
+      "ppr_passages": 0,
+      "seed_facts": 10
+    }
+  },
+  {
+    "variant": "seed20",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 66.85,
+    "Acc-HARD": 56.88,
+    "Acc-EASY": 81.94,
+    "ctx_tokens_mean": 1472,
+    "ctx_tokens_max": 1998,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.6,
+      "ppr_passages": 0,
+      "seed_facts": 20,
+      "fact_candidates": 100
+    }
+  },
+  {
+    "variant": "rel300_f60",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 71.82,
+    "Acc-HARD": 63.3,
+    "Acc-EASY": 84.72,
+    "ctx_tokens_mean": 1834,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 60,
+      "damping": 0.6,
+      "ppr_passages": 0,
+      "relevant_facts": 300,
+      "ce_fact_pool": 200
+    }
+  },
+  {
+    "variant": "dmp05",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 69.06,
+    "Acc-HARD": 61.47,
+    "Acc-EASY": 80.56,
+    "ctx_tokens_mean": 1447,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.5,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "dmp07",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 69.06,
+    "Acc-HARD": 62.39,
+    "Acc-EASY": 79.17,
+    "ctx_tokens_mean": 1454,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.7,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "r2",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 72.93,
+    "Acc-HARD": 66.06,
+    "Acc-EASY": 83.33,
+    "ctx_tokens_mean": 1445,
+    "ctx_tokens_max": 2000,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.6,
+      "ppr_passages": 0,
+      "ppr_rounds": 2
+    }
+  },
+  {
+    "variant": "d3",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 71.82,
+    "Acc-HARD": 66.97,
+    "Acc-EASY": 79.17,
+    "ctx_tokens_mean": 1449,
+    "ctx_tokens_max": 1998,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 3,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.6,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "d5_b8",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 70.72,
+    "Acc-HARD": 63.3,
+    "Acc-EASY": 81.94,
+    "ctx_tokens_mean": 1489,
+    "ctx_tokens_max": 1998,
+    "ppr_args": {
+      "top_k_seeds": 30,
+      "max_depth": 5,
+      "beam_width": 8,
+      "final_top_k": 80,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.6,
+      "ppr_passages": 0
+    }
+  },
+  {
+    "variant": "wide_t3000",
+    "view": "full",
+    "n": 181,
+    "Accuracy": 70.72,
+    "Acc-HARD": 61.47,
+    "Acc-EASY": 84.72,
+    "ctx_tokens_mean": 2570,
+    "ctx_tokens_max": 3000,
+    "ppr_args": {
+      "top_k_seeds": 50,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 150,
+      "context_tokens": 3000,
+      "force_top_facts": 80,
+      "damping": 0.6,
+      "ppr_passages": 0,
+      "seed_facts": 10,
+      "relevant_facts": 300,
+      "ce_fact_pool": 200
+    }
+  }
+]

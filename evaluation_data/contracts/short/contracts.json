@@ -1,0 +1,183 @@
+{
+ "set": "short",
+ "contracts": [
+  "contract_1_term_life",
+  "contract_2_whole_life",
+  "contract_3_universal_life",
+  "contract_4_variable_universal",
+  "contract_5_final_expense",
+  "contract_6_group_term",
+  "contract_7_term_with_riders",
+  "contract_8_joint_survivorship",
+  "contract_9_return_of_premium",
+  "contract_10_indexed_universal"
+ ],
+ "totals": {
+  "tokens_cl100k": 20857,
+  "qa": 361,
+  "facts": 731,
+  "chunks_1200": 24
+ },
+ "per_contract": [
+  {
+   "contract": "contract_1_term_life",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 1299,
+   "chars": 5466,
+   "chunks_1200": 2,
+   "qa": 33,
+   "facts": 60,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 12,
+    "CAT2_RELATIONAL_LOOKUP": 5,
+    "CAT3_CONDITIONAL_REASONING": 7,
+    "CAT4_MULTIHOP_REASONING": 3,
+    "CAT5_UNANSWERABLE": 6
+   }
+  },
+  {
+   "contract": "contract_2_whole_life",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 1544,
+   "chars": 6702,
+   "chunks_1200": 2,
+   "qa": 36,
+   "facts": 72,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 15,
+    "CAT2_RELATIONAL_LOOKUP": 5,
+    "CAT3_CONDITIONAL_REASONING": 8,
+    "CAT4_MULTIHOP_REASONING": 3,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "contract_3_universal_life",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 2242,
+   "chars": 6700,
+   "chunks_1200": 3,
+   "qa": 36,
+   "facts": 70,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 15,
+    "CAT2_RELATIONAL_LOOKUP": 5,
+    "CAT3_CONDITIONAL_REASONING": 8,
+    "CAT4_MULTIHOP_REASONING": 3,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "contract_4_variable_universal",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 1806,
+   "chars": 7919,
+   "chunks_1200": 2,
+   "qa": 36,
+   "facts": 80,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 16,
+    "CAT2_RELATIONAL_LOOKUP": 6,
+    "CAT3_CONDITIONAL_REASONING": 6,
+    "CAT4_MULTIHOP_REASONING": 3,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "contract_5_final_expense",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 1972,
+   "chars": 5846,
+   "chunks_1200": 2,
+   "qa": 31,
+   "facts": 65,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 12,
+    "CAT2_RELATIONAL_LOOKUP": 5,
+    "CAT3_CONDITIONAL_REASONING": 6,
+    "CAT4_MULTIHOP_REASONING": 3,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "contract_6_group_term",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 2008,
+   "chars": 8000,
+   "chunks_1200": 2,
+   "qa": 34,
+   "facts": 72,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 13,
+    "CAT2_RELATIONAL_LOOKUP": 7,
+    "CAT3_CONDITIONAL_REASONING": 6,
+    "CAT4_MULTIHOP_REASONING": 3,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "contract_7_term_with_riders",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 2302,
+   "chars": 7360,
+   "chunks_1200": 3,
+   "qa": 40,
+   "facts": 85,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 17,
+    "CAT2_RELATIONAL_LOOKUP": 6,
+    "CAT3_CONDITIONAL_REASONING": 8,
+    "CAT4_MULTIHOP_REASONING": 4,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "contract_8_joint_survivorship",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 1968,
+   "chars": 8619,
+   "chunks_1200": 2,
+   "qa": 37,
+   "facts": 72,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 13,
+    "CAT2_RELATIONAL_LOOKUP": 6,
+    "CAT3_CONDITIONAL_REASONING": 9,
+    "CAT4_MULTIHOP_REASONING": 4,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "contract_9_return_of_premium",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 2567,
+   "chars": 7944,
+   "chunks_1200": 3,
+   "qa": 37,
+   "facts": 70,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 15,
+    "CAT2_RELATIONAL_LOOKUP": 5,
+    "CAT3_CONDITIONAL_REASONING": 8,
+    "CAT4_MULTIHOP_REASONING": 4,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "contract_10_indexed_universal",
+   "source": "ten_contracts_dataset",
+   "tokens_cl100k": 3149,
+   "chars": 9727,
+   "chunks_1200": 3,
+   "qa": 41,
+   "facts": 85,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 17,
+    "CAT2_RELATIONAL_LOOKUP": 6,
+    "CAT3_CONDITIONAL_REASONING": 8,
+    "CAT4_MULTIHOP_REASONING": 5,
+    "CAT5_UNANSWERABLE": 5
+   }
+  }
+ ]
+}

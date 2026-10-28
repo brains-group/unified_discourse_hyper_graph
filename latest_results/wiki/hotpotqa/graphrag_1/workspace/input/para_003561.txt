@@ -1,0 +1,3 @@
+Title: Active shutter 3D system
+
+An active shutter 3D system (a.k.a. alternate frame sequencing, alternate image, AI, alternating field, field sequential or eclipse method) is a technique of displaying stereoscopic 3D images. It works by only presenting the image intended for the left eye while blocking the right eye's view, then presenting the right-eye image while blocking the left eye, and repeating this so rapidly that the interruptions do not interfere with the perceived fusion of the two images into a single 3D image.

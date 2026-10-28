@@ -1,0 +1,25 @@
+{
+ "contract": "contract_5_final_expense",
+ "source": "ten_contracts_dataset",
+ "tokens_cl100k": 1972,
+ "chars": 5846,
+ "chunks_1200": 2,
+ "qa": 31,
+ "facts": 65,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 12,
+  "CAT2_RELATIONAL_LOOKUP": 5,
+  "CAT3_CONDITIONAL_REASONING": 6,
+  "CAT4_MULTIHOP_REASONING": 3,
+  "CAT5_UNANSWERABLE": 5
+ },
+ "sha256": {
+  "questions.json": "65e56c9c899192ee4a4b280ff01046a6cae875cf197a9d14426a17d110f0c865",
+  "documents.json": "3be7a698c52f8d5e61fd71ac84e9981d779d5d7d0b44902d78cd8a7a11a76e6c",
+  "chunks.json": "4b80e9ef63e7a56b0af4134fa9f2b36b3876aa8fab50e96469b33fe17d7d32dd",
+  "chunks_logicrag.json": "4b80e9ef63e7a56b0af4134fa9f2b36b3876aa8fab50e96469b33fe17d7d32dd",
+  "memgraphrag_corpus.txt": "4bded343de6ea063d89fa64b00e7b2591e181d5981bcf2fc99a36a548690938a",
+  "contract.txt": "4bded343de6ea063d89fa64b00e7b2591e181d5981bcf2fc99a36a548690938a",
+  "ms_graphrag_input/contract_5_final_expense.txt": "4bded343de6ea063d89fa64b00e7b2591e181d5981bcf2fc99a36a548690938a"
+ }
+}

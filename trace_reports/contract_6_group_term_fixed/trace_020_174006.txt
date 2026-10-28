@@ -1,0 +1,1140 @@
+====================================================================================================
+QUESTION: What happens to coverage if the employee ceases active full-time employment?
+CATEGORY: CAT3_CONDITIONAL_REASONING
+EXPECTED ANSWER: Coverage terminates on the date the employee ceases active full-time employment.
+EVIDENCE: 4.1 Your coverage terminates on the earliest of: (c) The date you cease active full-time employment
+====================================================================================================
+
+--- GOAL PLAN ---
+rewritten_query: What typically happens to employee benefits coverage when an employee ceases active full-time employment?
+reasoning: The query asks about the consequences for coverage (likely health insurance or benefits coverage) when an employee stops active full-time employment. This is a policy-related question that depends on the specific rules of the employer’s benefits plan. However, the query does not mention any specific company, plan, or policy name, so it cannot be answered with a single lookup. Instead, the answer hinges on understanding general rules about employee benefits coverage termination upon cessation of full-time employment. The key concept here is the relationship between employment status and coverage eligibility. Since the query is general and not tied to a specific entity, the only way to answer it is by retrieving standard policy information about coverage continuation or termination under such circumstances. This is a single factual lookup: what typically happens to benefits coverage when full-time employment ends.
+  [0] the typical policy rule regarding employee benefits coverage upon cessation of active full-time employment  (key_terms=[], depends_on_previous=False)
+planner LLM calls: 1  (total_tokens=0)
+
+--- EVIDENCE CROSS-REFERENCE ---
+
+  candidate evidence fact (word-overlap=0.55): 'Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment.'
+    seeding      : candidate, selected=True (rank 0), scores=[0.7783079147338867]
+    traversal    : depth=0 from='Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee.' chosen=True scores=[0.6928099989891052]
+    traversal    : depth=0 from='Coverage terminates on the earliest of the following: the date the individual requests termination of voluntary coverage.' chosen=True scores=[0.7032535672187805]
+    traversal    : depth=0 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.7071287631988525]
+    traversal    : depth=1 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.7071287631988525]
+    traversal    : depth=1 from='The individual must apply for conversion within 31 days of termination of group coverage.' chosen=True scores=[0.7166085243225098]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee.' chosen=True scores=[0.6928099989891052]
+    traversal    : depth=1 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.7071287631988525]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the date the individual requests termination of voluntary coverage.' chosen=True scores=[0.7032535672187805]
+    traversal    : depth=1 from='The individual must apply for conversion within 31 days of termination of group coverage.' chosen=True scores=[0.7166085243225098]
+    traversal    : depth=1 from='non-payment of premium (Exclusion from conversion rights)' chosen=True scores=[0.6676211357116699]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee.' chosen=True scores=[0.6928099989891052]
+    traversal    : depth=1 from='non-payment of premium (Exclusion from conversion rights)' chosen=True scores=[0.6676211953163147]
+    traversal    : depth=2 from='non-payment of premium (Exclusion from conversion rights)' chosen=True scores=[0.6676211357116699]
+    traversal    : depth=2 from='non-payment of premium (Exclusion from conversion rights)' chosen=True scores=[0.6676211357116699]
+    traversal    : depth=2 from='non-payment of premium (Exclusion from conversion rights)' chosen=True scores=[0.6676211357116699]
+    traversal    : depth=2 from='non-payment of premium (Exclusion from conversion rights)' chosen=True scores=[0.6676211357116699]
+    traversal    : depth=2 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.7071287631988525]
+    traversal    : depth=2 from='Basic coverage became effective automatically without requiring evidence of insurability.' chosen=True scores=[0.730124831199646]
+    final_ranking: selected=False, cross_encoder_score=6.606
+
+  candidate evidence fact (word-overlap=0.35): 'Coverage terminates on the earliest of the following: the date the Master Policy terminates.'
+    seeding      : candidate, selected=True (rank 4), scores=[0.653846025466919]
+    traversal    : depth=0 from='Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee.' chosen=True scores=[0.6458924412727356]
+    traversal    : depth=0 from='Coverage terminates on the earliest of the following: the last day for which required premiums have been paid.' chosen=True scores=[0.6514610648155212]
+    traversal    : depth=0 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.6378626823425293]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee.' chosen=True scores=[0.6458924412727356]
+    traversal    : depth=1 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.6378626823425293]
+    traversal    : depth=1 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.6378626823425293]
+    traversal    : depth=1 from='The master policy number is AGB-2024-TC-GROUP.' chosen=True scores=[0.652160108089447]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the last day for which required premiums have been paid.' chosen=True scores=[0.6514610648155212]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee.' chosen=True scores=[0.6458924412727356]
+    traversal    : depth=2 from='Coverage terminates on the earliest of the following: the last day for which required premiums have been paid.' chosen=True scores=[0.6514610648155212]
+    traversal    : depth=2 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.6378626823425293]
+    traversal    : depth=2 from='If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege.' chosen=True scores=[0.6378626823425293]
+    traversal    : depth=2 from='master group policy (Primary governing policy)' chosen=True scores=[0.6135907769203186]
+    traversal    : depth=2 from='Coverage terminates on the earliest of the following: the last day for which required premiums have been paid.' chosen=True scores=[0.6514610648155212]
+    final_ranking: selected=False, cross_encoder_score=-2.095
+
+  candidate evidence fact (word-overlap=0.32): 'Coverage terminates on the earliest of the following: the date the individual requests termination of voluntary coverage.'
+    seeding      : candidate, selected=True (rank 3), scores=[0.6792979836463928]
+    traversal    : depth=0 from='Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment.' chosen=True scores=[0.6418849229812622]
+    traversal    : depth=0 from='Coverage terminates on the earliest of the following: the last day for which required premiums have been paid.' chosen=True scores=[0.6157880425453186]
+    traversal    : depth=1 from='The individual must apply for conversion within 31 days of termination of group coverage.' chosen=True scores=[0.6059718132019043]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment.' chosen=True scores=[0.6418849229812622]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the last day for which required premiums have been paid.' chosen=True scores=[0.6157880425453186]
+    traversal    : depth=1 from='The individual must apply for conversion within 31 days of termination of group coverage.' chosen=True scores=[0.6059718132019043]
+    traversal    : depth=1 from='Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment.' chosen=True scores=[0.6418849229812622]
+    traversal    : depth=2 from='Coverage terminates on the earliest of the following: the last day for which required premiums have been paid.' chosen=True scores=[0.6157880425453186]
+    traversal    : depth=2 from='Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment.' chosen=True scores=[0.6418849229812622]
+    traversal    : depth=2 from='Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment.' chosen=True scores=[0.6418849229812622]
+    traversal    : depth=2 from='Coverage terminates on the earliest of the following: the last day for which required premiums have been paid.' chosen=True scores=[0.6157880425453186]
+    traversal    : depth=3 from='voluntary supplemental (Additional coverage option)' chosen=True scores=[0.5776898264884949]
+    final_ranking: selected=False, cross_encoder_score=-6.035
+
+--- SEEDING (top candidates by score) ---
+  [SELECTED(rank 0)] scores=['0.778']  'Coverage terminates on the earliest of the following: the date the individual ceases activ'
+  [SELECTED(rank 1)] scores=['0.716']  'Coverage terminates on the earliest of the following: the last day of the month in which t'
+  [SELECTED(rank 2)] scores=['0.686']  'If an individual leaves employment, they may port their coverage by continuing it as an in'
+  [SELECTED(rank 3)] scores=['0.679']  'Coverage terminates on the earliest of the following: the date the individual requests ter'
+  [SELECTED(rank 4)] scores=['0.654']  'Coverage terminates on the earliest of the following: the date the Master Policy terminate'
+  [SELECTED(rank 5)] scores=['0.646']  'Coverage terminates on the earliest of the following: the last day for which required prem'
+  [SELECTED(rank 6)] scores=['0.613']  'Coverage continues without premium payment during the period of disability.'
+  [SELECTED(rank 7)] scores=['0.603']  'The basic benefit is recalculated annually on the policy anniversary based on the individu'
+  [SELECTED(rank 8)] scores=['0.601']  'The waiver of premiums ends when the insured returns to work.'
+  [SELECTED(rank 9)] scores=['0.600']  'If group coverage terminates for any reason except non-payment of premium, the individual '
+  [               -] scores=['0.581']  'This certificate is evidence of coverage under the Master Group Policy issued to the emplo'
+  [               -] scores=['0.571']  'Voluntary coverage requires enrollment within 31 days of hire.'
+  [               -] scores=['0.566']  'If group coverage terminates for any reason except non-payment of premium, the individual '
+  [               -] scores=['0.563']  'Beneficiaries should notify Alliance Group Benefits immediately upon the death of the insu'
+  [               -] scores=['0.562']  'The individual became eligible for coverage on their date of hire.'
+  [               -] scores=['0.559']  'The waiver of premiums ends when the insured recovers from disability.'
+  [               -] scores=['0.559']  'individual whole life policy (Converted insurance policy)'
+  [               -] scores=['0.557']  'Ported coverage continues at the same amount the individual had under the group policy.'
+  [               -] scores=['0.552']  'The individual must apply for conversion within 31 days of termination of group coverage.'
+  [               -] scores=['0.548']  'The individual must apply for portability within 31 days of termination of employment.'
+  [               -] scores=['0.547']  'The employer pays the premium for the basic life insurance coverage.'
+  [               -] scores=['0.546']  'insurance company (Insurer providing coverage)'
+  [               -] scores=['0.545']  'Group coverage has no pre-existing condition exclusions.'
+  [               -] scores=['0.543']  'insured employee (Policyholder covered by insurance)'
+  [               -] scores=['0.543']  "The maximum voluntary supplemental coverage is 5 times the individual's salary."
+
+--- TRAVERSAL (143 hop decisions, 8 dead ends) ---
+
+  depth=0 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual ceases activ'
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_fact, 'LEADS_TO') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.642']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.619']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.584']
+    [KEEP] (fact_fact, 'ENDS_WITH') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.611']
+
+  depth=0 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day of the month in which t'
+    [KEEP] (fact_entity, 'has ') -> 'taylor family revocable trust (Contingent beneficiary)'  scores=['0.209']
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.646']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.693']
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.581']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The master policy number is AGB-2024-TC-GROUP.'  scores=['0.570']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.534']
+
+  depth=0 goal_indices=[0] from: 'If an individual leaves employment, they may port their coverage by continuing it as an in'
+    [KEEP] (fact_fact, 'MAINTAINS') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.582']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The individual must apply for portability within 31 days of termination of emplo'  scores=['0.555']
+    [KEEP] (fact_fact, 'SETS_RATE') -> 'Premium rates for ported coverage will be age-banded group rates.'  scores=['0.497']
+    [drop] (fact_fact, 'REQUIRES_PAYMENT_TO') -> 'Premiums for ported coverage are payable directly to the insurance company.'  scores=['0.477']
+    [drop] (fact_fact, 'EXEMPTS_FROM') -> 'Evidence of insurability is not required for portability.'  scores=['0.449']
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'Group coverage has no pre-existing condition exclusions.'  scores=['0.537']
+    [drop] (fact_entity, 'has ') -> 'individual whole life policy (Converted insurance policy)'  scores=['0.163']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Insured individual)'  scores=['0.145']
+    [drop] (fact_entity, 'has ') -> 'employer (Employer entity)'  scores=['0.235']
+    [KEEP] (fact_fact, 'LEADS_TO') -> "The conversion policy will be issued at the individual's attained age at convers"  scores=['0.562']
+    [KEEP] (fact_fact, 'IS_SUBJECT_TO') -> 'The maximum amount for the conversion policy is the lesser of the group coverage'  scores=['0.525']
+
+  depth=0 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual requests ter'
+    [KEEP] (fact_fact, 'IS_LEAD_BY') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.703']
+    [KEEP] (fact_fact, 'IS_CAUSED_BY') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.618']
+    [KEEP] (fact_entity, 'has ') -> 'voluntary supplemental (Additional coverage option)'  scores=['0.172']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.534']
+
+  depth=0 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the Master Policy terminate'
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.678']
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.599']
+    [KEEP] (fact_entity, 'has ') -> 'master group policy (Primary governing policy)'  scores=['0.166']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The master policy number is AGB-2024-TC-GROUP.'  scores=['0.547']
+    [KEEP] (fact_fact, 'CONDITIONAL_ON') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.656']
+
+  depth=0 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day for which required prem'
+    [KEEP] (fact_fact, 'CAUSES') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.616']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.516']
+    [KEEP] (fact_fact, 'CONDITIONAL_ON') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.651']
+
+  depth=0 goal_indices=[0] from: 'Coverage continues without premium payment during the period of disability.'
+    [KEEP] (fact_fact, 'MAINTAINED_BY') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.565']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Proof of continuing disability must be provided annually.'  scores=['0.524']
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.533']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The waiver of premiums ends when the insured returns to work.'  scores=['0.588']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.568']
+
+  depth=0 goal_indices=[0] from: 'The basic benefit is recalculated annually on the policy anniversary based on the individu'
+    [KEEP] (fact_entity, 'has ') -> 'policy anniversary (Annual review date for benefit adjustment)'  scores=['0.273']
+    [KEEP] (fact_fact, 'DETERMINES') -> "The basic life benefit equals 2 times the individual's annual base salary."  scores=['0.532']
+    [KEEP] (fact_entity, 'has ') -> 'basic life (Core coverage amount)'  scores=['0.158']
+    [KEEP] (fact_entity, 'has ') -> 'annual base salary (Salary input for benefit calculation)'  scores=['0.197']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.483']
+
+  depth=0 goal_indices=[0] from: 'The waiver of premiums ends when the insured returns to work.'
+    [KEEP] (fact_fact, 'TERMINATED_BY') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.575']
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+    [KEEP] (fact_fact, 'ENDS_WHEN') -> 'Coverage continues without premium payment during the period of disability.'  scores=['0.608']
+
+  depth=0 goal_indices=[0] from: 'If group coverage terminates for any reason except non-payment of premium, the individual '
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.638']
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.707']
+    [drop] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'IS_CORROBORATED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.603']
+    [KEEP] (fact_fact, 'IS_SUPERSEDED_BY') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.474']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day of the month in which t'
+    [KEEP] (fact_entity, 'has ') -> 'taylor family revocable trust (Contingent beneficiary)'  scores=['0.209']
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.646']
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.581']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The master policy number is AGB-2024-TC-GROUP.'  scores=['0.570']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.534']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual requests ter'
+    [KEEP] (fact_fact, 'IS_CAUSED_BY') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.618']
+    [KEEP] (fact_entity, 'has ') -> 'voluntary supplemental (Additional coverage option)'  scores=['0.172']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.534']
+
+  depth=1 goal_indices=[0] from: 'If group coverage terminates for any reason except non-payment of premium, the individual '
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.638']
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'IS_CORROBORATED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.603']
+    [KEEP] (fact_fact, 'IS_SUPERSEDED_BY') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.474']
+
+  depth=1 goal_indices=[0] from: 'Basic coverage became effective automatically without requiring evidence of insurability.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The individual became eligible for coverage on their date of hire.'  scores=['0.571']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Voluntary coverage requires enrollment within 31 days of hire.'  scores=['0.557']
+    [KEEP] (fact_entity, 'has ') -> 'basic life (Core coverage amount)'  scores=['0.158']
+    [KEEP] (fact_fact, 'HAS_SUPPLEMENT') -> 'Voluntary supplemental coverage may be elected in increments of $10,000.'  scores=['0.482']
+
+  depth=1 goal_indices=[0] from: 'The individual must apply for conversion within 31 days of termination of group coverage.'
+    [KEEP] (fact_fact, 'REQUIRED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.563']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Insured individual)'  scores=['0.145']
+    [drop] (fact_entity, 'has ') -> '31 days (Deadline for conversion or portability application)'  scores=['0.172']
+    [KEEP] (fact_fact, 'CONDITIONS_ON') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.568']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.606']
+    [KEEP] (fact_fact, 'IS_EXCLUDED_BY') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+    [KEEP] (fact_fact, 'HAS_SAME_TIME_LIMIT') -> 'The individual must apply for portability within 31 days of termination of emplo'  scores=['0.572']
+    [KEEP] (fact_fact, 'ENABLES') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.517']
+
+  depth=1 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+    [KEEP] (entity_fact, 'participates in: EXCEPTION_TO_CONVERSION_RIGHT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.525']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual ceases activ'
+    [KEEP] (fact_fact, 'LEADS_TO') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.642']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.619']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.584']
+    [KEEP] (fact_fact, 'ENDS_WITH') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.611']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the Master Policy terminate'
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.599']
+    [KEEP] (fact_entity, 'has ') -> 'master group policy (Primary governing policy)'  scores=['0.166']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The master policy number is AGB-2024-TC-GROUP.'  scores=['0.547']
+    [KEEP] (fact_fact, 'CONDITIONAL_ON') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.656']
+
+  depth=1 goal_indices=[0] from: 'If group coverage terminates for any reason except non-payment of premium, the individual '
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.638']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.707']
+    [KEEP] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'IS_CORROBORATED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.603']
+    [KEEP] (fact_fact, 'IS_SUPERSEDED_BY') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.474']
+
+  depth=1 goal_indices=[0] from: 'The master policy number is AGB-2024-TC-GROUP.'
+    [KEEP] (fact_fact, 'HAS_CERTIFICATE') -> 'The certificate number is AGB-GT-2024-TechCorp-00842.'  scores=['0.425']
+    [KEEP] (fact_entity, 'has ') -> 'alliance group benefits (Insurer and claims processor)'  scores=['0.115']
+    [KEEP] (fact_fact, 'CONTROLS_TERMINATION') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.652']
+    [KEEP] (fact_fact, 'PART_OF') -> 'The voluntary additional coverage amount is $100,000, elected by the employee.'  scores=['0.546']
+
+  depth=1 goal_indices=[0] from: 'Total coverage cannot exceed $1,000,000.'
+    [KEEP] (fact_fact, 'LIMITS') -> "The basic life benefit equals 2 times the individual's annual base salary."  scores=['0.529']
+    [KEEP] (fact_fact, 'IS_CONSTRAINED_BY') -> "The maximum voluntary supplemental coverage is 5 times the individual's salary."  scores=['0.540']
+    [drop] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+    [drop] (fact_fact, 'CONSTRAINED_BY') -> 'The maximum amount that may be accelerated is $250,000.'  scores=['0.412']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'The conversion policy will be issued at standard premium rates for the individua'  scores=['0.499']
+    [KEEP] (fact_fact, 'DETERMINES') -> 'The basic benefit is recalculated annually on the policy anniversary based on th'  scores=['0.571']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'The employee pays $12 per month for the voluntary additional coverage.'  scores=['0.538']
+    [KEEP] (fact_fact, 'IS_SUBJECT_TO') -> 'If death occurs by suicide within 12 months of the coverage effective date, no d'  scores=['0.505']
+
+  depth=1 goal_indices=[0] from: 'Ported coverage continues at the same amount the individual had under the group policy.'
+    [KEEP] (fact_entity, 'has ') -> 'group coverage (Insurance policy type)'  scores=['0.195']
+    [KEEP] (fact_entity, 'has ') -> 'individual whole life policy (Converted insurance policy)'  scores=['0.163']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Insured individual)'  scores=['0.145']
+    [KEEP] (fact_fact, 'ENABLES') -> 'The individual must apply for portability within 31 days of termination of emplo'  scores=['0.562']
+    [KEEP] (fact_fact, 'IS_SUBJECT_TO') -> 'Premium rates for ported coverage will be age-banded group rates.'  scores=['0.496']
+
+  depth=1 goal_indices=[0] from: "The conversion policy will be issued at the individual's attained age at conversion."
+    [KEEP] (fact_entity, 'has ') -> 'attained age (Age at time of conversion)'  scores=['0.205']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.565']
+    [KEEP] (fact_entity, 'has ') -> 'individual whole life policy (Converted insurance policy)'  scores=['0.163']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Insured individual)'  scores=['0.145']
+    [KEEP] (fact_fact, 'DETERMINES') -> 'The conversion policy will be issued at standard premium rates for the individua'  scores=['0.521']
+    [KEEP] (fact_fact, 'IS_UNRESTRICTED_BY') -> 'Group coverage has no pre-existing condition exclusions.'  scores=['0.550']
+
+  depth=1 goal_indices=[0] from: 'The individual must apply for portability within 31 days of termination of employment.'
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Insured individual)'  scores=['0.145']
+    [KEEP] (fact_entity, 'has ') -> '31 days (Deadline for conversion or portability application)'  scores=['0.172']
+    [KEEP] (fact_fact, 'CONDITIONS_ON') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.585']
+    [KEEP] (fact_fact, 'HAS_SAME_TIME_LIMIT') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.584']
+
+  depth=1 goal_indices=[0] from: 'Group coverage has no pre-existing condition exclusions.'
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.536']
+    [KEEP] (fact_entity, 'has ') -> 'group coverage (Insurance policy type)'  scores=['0.195']
+    [KEEP] (fact_entity, 'has ') -> 'premium (Payment for insurance coverage)'  scores=['0.240']
+    [KEEP] (fact_fact, 'ENABLES') -> "The conversion policy will be issued at the individual's attained age at convers"  scores=['0.548']
+
+  depth=1 goal_indices=[0] from: 'The maximum amount for the conversion policy is the lesser of the group coverage amount or'
+    [KEEP] (fact_entity, 'has ') -> '$200,000 (Maximum conversion amount)'  scores=['0.167']
+    [KEEP] (fact_fact, 'IS_LIMITED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.574']
+    [KEEP] (fact_entity, 'has ') -> 'group coverage (Insurance policy type)'  scores=['0.195']
+    [KEEP] (fact_entity, 'has ') -> 'individual whole life policy (Converted insurance policy)'  scores=['0.163']
+    [KEEP] (fact_fact, 'CONFLICTS_WITH') -> 'The maximum amount that may be accelerated is $250,000.'  scores=['0.370']
+
+  depth=1 goal_indices=[0] from: 'Premium rates for ported coverage will be age-banded group rates.'
+    [KEEP] (fact_entity, 'has ') -> 'age-banded group rates (Rate structure based on age group)'  scores=['0.209']
+    [KEEP] (fact_entity, 'has ') -> 'individual whole life policy (Converted insurance policy)'  scores=['0.163']
+    [KEEP] (fact_fact, 'DETERMINES') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.552']
+    [KEEP] (fact_fact, 'IS_PAID_BY') -> 'Premiums for ported coverage are payable directly to the insurance company.'  scores=['0.481']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual ceases activ'
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.619']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.584']
+    [KEEP] (fact_fact, 'ENDS_WITH') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.611']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day for which required prem'
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.516']
+    [KEEP] (fact_fact, 'CONDITIONAL_ON') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.651']
+
+  depth=1 goal_indices=[0] from: 'The individual must apply for conversion within 31 days of termination of group coverage.'
+    [KEEP] (fact_fact, 'REQUIRED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.563']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Insured individual)'  scores=['0.145']
+    [drop] (fact_entity, 'has ') -> '31 days (Deadline for conversion or portability application)'  scores=['0.172']
+    [KEEP] (fact_fact, 'CONDITIONS_ON') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.568']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.717']
+    [KEEP] (fact_fact, 'IS_EXCLUDED_BY') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+    [KEEP] (fact_fact, 'HAS_SAME_TIME_LIMIT') -> 'The individual must apply for portability within 31 days of termination of emplo'  scores=['0.572']
+    [KEEP] (fact_fact, 'ENABLES') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.517']
+
+  depth=1 goal_indices=[0] from: 'voluntary supplemental (Additional coverage option)'
+    [KEEP] (entity_fact, 'participates in: REQUIRES_ENROLLMENT_WITHIN_DEADLINE') -> 'Voluntary coverage requires enrollment within 31 days of hire.'  scores=['0.519']
+    [KEEP] (entity_fact, 'participates in: SUBJECT_TO_LATE_ENROLLMENT_RULES') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.357']
+    [KEEP] (entity_fact, 'participates in: ELECTED_IN_10K_INCREMENT') -> 'Voluntary supplemental coverage may be elected in increments of $10,000.'  scores=['0.376']
+    [KEEP] (entity_fact, 'participates in: MAXED_AT_5X_SALARY') -> "The maximum voluntary supplemental coverage is 5 times the individual's salary."  scores=['0.468']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day of the month in which t'
+    [KEEP] (fact_entity, 'has ') -> 'taylor family revocable trust (Contingent beneficiary)'  scores=['0.209']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.693']
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.581']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The master policy number is AGB-2024-TC-GROUP.'  scores=['0.570']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.534']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day for which required prem'
+    [KEEP] (fact_fact, 'CAUSES') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.616']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.516']
+
+  depth=1 goal_indices=[0] from: 'If group coverage terminates for any reason except non-payment of premium, the individual '
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.707']
+    [KEEP] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'IS_CORROBORATED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.603']
+    [KEEP] (fact_fact, 'IS_SUPERSEDED_BY') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.474']
+
+  depth=1 goal_indices=[0] from: 'The master policy number is AGB-2024-TC-GROUP.'
+    [KEEP] (fact_fact, 'HAS_CERTIFICATE') -> 'The certificate number is AGB-GT-2024-TechCorp-00842.'  scores=['0.425']
+    [KEEP] (fact_entity, 'has ') -> 'alliance group benefits (Insurer and claims processor)'  scores=['0.115']
+    [KEEP] (fact_fact, 'CONTROLS_TERMINATION') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.705']
+    [KEEP] (fact_fact, 'PART_OF') -> 'The voluntary additional coverage amount is $100,000, elected by the employee.'  scores=['0.546']
+
+  depth=1 goal_indices=[0] from: 'master group policy (Primary governing policy)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_TO_EMPLOYER') -> 'This certificate is evidence of coverage under the Master Group Policy issued to'  scores=['0.558']
+    [KEEP] (entity_fact, 'participates in: CONTROLS_IN_CONFLICT') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: GOVERNS_COVERAGE_TERMS') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.509']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the Master Policy terminate'
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.678']
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.599']
+    [KEEP] (fact_entity, 'has ') -> 'master group policy (Primary governing policy)'  scores=['0.166']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The master policy number is AGB-2024-TC-GROUP.'  scores=['0.547']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual requests ter'
+    [KEEP] (fact_fact, 'IS_LEAD_BY') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.703']
+    [KEEP] (fact_entity, 'has ') -> 'voluntary supplemental (Additional coverage option)'  scores=['0.172']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.534']
+
+  depth=1 goal_indices=[0] from: 'The individual must apply for conversion within 31 days of termination of group coverage.'
+    [KEEP] (fact_fact, 'REQUIRED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.563']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Insured individual)'  scores=['0.145']
+    [drop] (fact_entity, 'has ') -> '31 days (Deadline for conversion or portability application)'  scores=['0.172']
+    [KEEP] (fact_fact, 'CONDITIONS_ON') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.568']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.717']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.606']
+    [KEEP] (fact_fact, 'HAS_SAME_TIME_LIMIT') -> 'The individual must apply for portability within 31 days of termination of emplo'  scores=['0.572']
+    [KEEP] (fact_fact, 'ENABLES') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.517']
+
+  depth=1 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.668']
+    [KEEP] (entity_fact, 'participates in: EXCEPTION_TO_CONVERSION_RIGHT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.525']
+
+  depth=1 goal_indices=[0] from: 'The waiver of premiums ends when the insured returns to work.'
+    [KEEP] (fact_fact, 'TERMINATED_BY') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.575']
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+
+  depth=1 goal_indices=[0] from: 'The waiver of premiums ends when the insured recovers from disability.'
+    [KEEP] (fact_fact, 'TERMINATED_BY') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.564']
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+
+  depth=1 goal_indices=[0] from: 'The insured must remain disabled for 6 consecutive months to qualify for premium waiver.'
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.539']
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Benefits will be paid within 10 business days of receipt of complete claim docum'  scores=['0.470']
+
+  depth=1 goal_indices=[0] from: 'If the insured becomes totally disabled before age 60, voluntary life insurance premiums m'
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.551']
+    [KEEP] (fact_fact, 'ENDS_WHEN') -> 'The waiver of premiums ends when the insured returns to work.'  scores=['0.610']
+    [KEEP] (fact_fact, 'ENDS_WHEN') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.579']
+    [KEEP] (fact_fact, 'ENDS_WHEN') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.565']
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'The employee pays $12 per month for the voluntary additional coverage.'  scores=['0.531']
+
+  depth=1 goal_indices=[0] from: 'Proof of continuing disability must be provided annually.'
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+    [KEEP] (fact_entity, 'has ') -> 'proof of beneficiary identity (Required claim document)'  scores=['0.190']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'A certified death certificate is required to file a claim.'  scores=['0.385']
+    [KEEP] (fact_fact, 'IS_CONDITIONAL_ON') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.539']
+
+  depth=1 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [drop] (entity_fact, 'participates in: BECOMES_DISABLED_BEFORE_60') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.462']
+    [KEEP] (entity_fact, 'participates in: REMAINS_DISABLED_6_MONTHS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.489']
+    [drop] (entity_fact, 'participates in: PROVIDES_ANNUAL_PROOF') -> 'Proof of continuing disability must be provided annually.'  scores=['0.406']
+    [KEEP] (entity_fact, 'participates in: RETURN_TO_WORK') -> 'The waiver of premiums ends when the insured returns to work.'  scores=['0.533']
+    [KEEP] (entity_fact, 'participates in: RECOVERS_FROM_DISABILITY') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=1 goal_indices=[0] from: "The basic life benefit equals 2 times the individual's annual base salary."
+    [KEEP] (fact_fact, 'CALCULATES') -> 'The basic life benefit is rounded to the next higher $1,000.'  scores=['0.489']
+    [KEEP] (fact_fact, 'IS_LIMITED_BY') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.495']
+    [drop] (fact_entity, 'has ') -> 'basic life (Core coverage amount)'  scores=['0.158']
+    [drop] (fact_entity, 'has ') -> 'annual base salary (Salary input for benefit calculation)'  scores=['0.197']
+    [KEEP] (fact_fact, 'GENERALIZES') -> 'The basic life insurance coverage amount is 2x annual salary, equaling $180,000.'  scores=['0.512']
+    [KEEP] (fact_fact, 'DERIVED_FROM') -> 'The voluntary additional coverage amount is $100,000, elected by the employee.'  scores=['0.544']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.533']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> "The certificate holder's date of hire is March 1, 2022."  scores=['0.428']
+
+  depth=1 goal_indices=[0] from: 'Total coverage cannot exceed $1,000,000.'
+    [KEEP] (fact_fact, 'LIMITS') -> "The basic life benefit equals 2 times the individual's annual base salary."  scores=['0.529']
+    [KEEP] (fact_fact, 'IS_CONSTRAINED_BY') -> "The maximum voluntary supplemental coverage is 5 times the individual's salary."  scores=['0.540']
+    [drop] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+    [drop] (fact_fact, 'CONSTRAINED_BY') -> 'The maximum amount that may be accelerated is $250,000.'  scores=['0.412']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'The conversion policy will be issued at standard premium rates for the individua'  scores=['0.499']
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.695']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'The employee pays $12 per month for the voluntary additional coverage.'  scores=['0.538']
+    [KEEP] (fact_fact, 'IS_SUBJECT_TO') -> 'If death occurs by suicide within 12 months of the coverage effective date, no d'  scores=['0.505']
+
+  depth=1 goal_indices=[0] from: 'annual base salary (Salary input for benefit calculation)'
+    [KEEP] (entity_fact, 'participates in: USED_IN_BENEFIT_CALCULATION') -> "The basic life benefit equals 2 times the individual's annual base salary."  scores=['0.475']
+    [KEEP] (entity_fact, 'participates in: USED_IN_MAX_COVERAGE_CALCULATION') -> "The maximum voluntary supplemental coverage is 5 times the individual's salary."  scores=['0.510']
+
+  depth=1 goal_indices=[0] from: 'basic life (Core coverage amount)'
+    [KEEP] (entity_fact, 'participates in: EFFECTIVE_AUTOMATICALLY') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.479']
+    [KEEP] (entity_fact, 'participates in: CALCULATED_AS_2X_SALARY') -> "The basic life benefit equals 2 times the individual's annual base salary."  scores=['0.456']
+    [KEEP] (entity_fact, 'participates in: ROUNDED_UP_TO_NEXT_1000') -> 'The basic life benefit is rounded to the next higher $1,000.'  scores=['0.385']
+
+  depth=1 goal_indices=[0] from: 'Coverage continues without premium payment during the period of disability.'
+    [KEEP] (fact_fact, 'MAINTAINED_BY') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.565']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Proof of continuing disability must be provided annually.'  scores=['0.524']
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.533']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.568']
+
+  depth=1 goal_indices=[0] from: 'If the insured becomes totally disabled before age 60, voluntary life insurance premiums m'
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.551']
+    [KEEP] (fact_fact, 'ENDS_WHEN') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.579']
+    [KEEP] (fact_fact, 'ENDS_WHEN') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.565']
+    [KEEP] (fact_entity, 'has ') -> 'insured employee (Policyholder covered by insurance)'  scores=['0.164']
+    [KEEP] (fact_fact, 'IS_SUPPORTED_BY') -> 'Coverage continues without premium payment during the period of disability.'  scores=['0.593']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'The employee pays $12 per month for the voluntary additional coverage.'  scores=['0.531']
+
+  depth=1 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [drop] (entity_fact, 'participates in: BECOMES_DISABLED_BEFORE_60') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.462']
+    [KEEP] (entity_fact, 'participates in: REMAINS_DISABLED_6_MONTHS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.489']
+    [KEEP] (entity_fact, 'participates in: HAS_DISABILITY') -> 'Coverage continues without premium payment during the period of disability.'  scores=['0.549']
+    [drop] (entity_fact, 'participates in: PROVIDES_ANNUAL_PROOF') -> 'Proof of continuing disability must be provided annually.'  scores=['0.406']
+    [KEEP] (entity_fact, 'participates in: RECOVERS_FROM_DISABILITY') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual ceases activ'
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_fact, 'LEADS_TO') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.642']
+    [KEEP] (fact_entity, 'has ') -> 'non-payment of premium (Exclusion from conversion rights)'  scores=['0.190']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.584']
+    [KEEP] (fact_fact, 'ENDS_WITH') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.611']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day of the month in which t'
+    [KEEP] (fact_entity, 'has ') -> 'taylor family revocable trust (Contingent beneficiary)'  scores=['0.209']
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.646']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.693']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The master policy number is AGB-2024-TC-GROUP.'  scores=['0.570']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.534']
+
+  depth=1 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the Master Policy terminate'
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.678']
+    [KEEP] (fact_entity, 'has ') -> 'master group policy (Primary governing policy)'  scores=['0.166']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The master policy number is AGB-2024-TC-GROUP.'  scores=['0.547']
+    [KEEP] (fact_fact, 'CONDITIONAL_ON') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.656']
+
+  depth=1 goal_indices=[0] from: 'If group coverage terminates for any reason except non-payment of premium, the individual '
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.530']
+    [KEEP] (fact_fact, 'DETERMINES') -> "The conversion policy will be issued at the individual's attained age at convers"  scores=['0.524']
+    [KEEP] (fact_fact, 'RESULTS_IN') -> 'The conversion policy will be issued at standard premium rates for the individua'  scores=['0.536']
+    [drop] (fact_fact, 'LIMITS') -> 'The maximum amount for the conversion policy is the lesser of the group coverage'  scores=['0.517']
+    [drop] (fact_fact, 'EXEMPTS_FROM') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.516']
+    [KEEP] (fact_fact, 'EXEMPTS_FROM') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.547']
+    [drop] (fact_fact, 'IS_EXCLUDED_BY') -> 'If death occurs by suicide within 12 months of the coverage effective date, no d'  scores=['0.518']
+    [KEEP] (fact_fact, 'IS_SUPPORTED_BY') -> 'Group coverage has no pre-existing condition exclusions.'  scores=['0.529']
+    [drop] (fact_entity, 'has ') -> 'group coverage (Insurance policy type)'  scores=['0.195']
+    [drop] (fact_entity, 'has ') -> 'individual whole life policy (Converted insurance policy)'  scores=['0.163']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Insured individual)'  scores=['0.145']
+    [drop] (fact_fact, 'ENABLES') -> 'Evidence of insurability is not required for portability.'  scores=['0.439']
+    [drop] (fact_fact, 'PRECEDES') -> 'If an individual is diagnosed with a terminal illness with a life expectancy of '  scores=['0.478']
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'Premiums for ported coverage are payable directly to the insurance company.'  scores=['0.519']
+
+  depth=1 goal_indices=[0] from: 'The Master Policy controls in case of any conflict with this certificate.'
+    [KEEP] (fact_fact, 'SUPERSEDES') -> 'This certificate is evidence of coverage under the Master Group Policy issued to'  scores=['0.596']
+    [KEEP] (fact_fact, 'GOVERNS') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.525']
+    [KEEP] (fact_entity, 'has ') -> 'master group policy (Primary governing policy)'  scores=['0.166']
+    [KEEP] (fact_entity, 'has ') -> 'date of hire (Eligibility start date)'  scores=['0.115']
+
+  depth=1 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.668']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+
+  depth=2 goal_indices=[0] from: 'voluntary supplemental (Additional coverage option)'
+    [KEEP] (entity_fact, 'participates in: REQUIRES_ENROLLMENT_WITHIN_DEADLINE') -> 'Voluntary coverage requires enrollment within 31 days of hire.'  scores=['0.519']
+    [KEEP] (entity_fact, 'participates in: SUBJECT_TO_LATE_ENROLLMENT_RULES') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.357']
+    [KEEP] (entity_fact, 'participates in: ELECTED_IN_10K_INCREMENT') -> 'Voluntary supplemental coverage may be elected in increments of $10,000.'  scores=['0.376']
+    [KEEP] (entity_fact, 'participates in: MAXED_AT_5X_SALARY') -> "The maximum voluntary supplemental coverage is 5 times the individual's salary."  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+
+  depth=2 goal_indices=[0] from: 'conversion privilege (Right to convert group coverage)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.333']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.400']
+
+  depth=2 goal_indices=[0] from: 'basic life (Core coverage amount)'
+    [KEEP] (entity_fact, 'participates in: CALCULATED_AS_2X_SALARY') -> "The basic life benefit equals 2 times the individual's annual base salary."  scores=['0.456']
+    [KEEP] (entity_fact, 'participates in: ROUNDED_UP_TO_NEXT_1000') -> 'The basic life benefit is rounded to the next higher $1,000.'  scores=['0.385']
+    [KEEP] (entity_fact, 'participates in: RECALCULATED_ANNUALLY') -> 'The basic benefit is recalculated annually on the policy anniversary based on th'  scores=['0.532']
+
+  depth=2 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day for which required prem'
+    [KEEP] (fact_fact, 'CAUSES') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.616']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.516']
+    [KEEP] (fact_fact, 'CONDITIONAL_ON') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.651']
+
+  depth=2 goal_indices=[0] from: 'If group coverage terminates for any reason except non-payment of premium, the individual '
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.638']
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+    [KEEP] (fact_fact, 'IS_CORROBORATED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.603']
+    [KEEP] (fact_fact, 'IS_SUPERSEDED_BY') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.474']
+
+  depth=2 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+    [KEEP] (entity_fact, 'participates in: EXCEPTION_TO_CONVERSION_RIGHT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.525']
+
+  depth=2 goal_indices=[0] from: 'master group policy (Primary governing policy)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_TO_EMPLOYER') -> 'This certificate is evidence of coverage under the Master Group Policy issued to'  scores=['0.558']
+    [KEEP] (entity_fact, 'participates in: CONTROLS_IN_CONFLICT') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: GOVERNS_COVERAGE_TERMS') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.509']
+
+  depth=2 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.668']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+
+  depth=2 goal_indices=[0] from: 'conversion privilege (Right to convert group coverage)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.333']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.400']
+
+  depth=2 goal_indices=[0] from: 'alliance group benefits (Insurer and claims processor)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_CERTIFICATE') -> 'The certificate number is AGB-GT-2024-TechCorp-00842.'  scores=['0.300']
+    [drop] (entity_fact, 'participates in: ISSUED_ON_DATE') -> 'The issue date of the certificate is June 1, 2024.'  scores=['0.282']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_NOTIFICATION') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.524']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.432']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [drop] (entity_fact, 'participates in: OPERATES_HOTLINE') -> 'The claims hotline number is 1-888-555-CLAIM.'  scores=['0.294']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Benefits will be paid within 10 business days of receipt of complete claim docum'  scores=['0.405']
+    [KEEP] (entity_fact, 'participates in: LOCATED_IN') -> 'Alliance Group Benefits is located in Dallas, Texas.'  scores=['0.337']
+    [KEEP] (entity_fact, 'participates in: ISSUING_ORGANIZATION') -> 'The certificate was issued by the Vice President, Group Operations of Alliance G'  scores=['0.385']
+
+  depth=2 goal_indices=[0] from: 'group coverage (Insurance policy type)'
+    [KEEP] (entity_fact, 'participates in: TERMINATES_FOR_REASON') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.519']
+    [KEEP] (entity_fact, 'participates in: SETS_UPPER_BOUND_FOR_CONVERSION') -> 'The maximum amount for the conversion policy is the lesser of the group coverage'  scores=['0.424']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PRE_EXISTING_EXCLUSIONS') -> 'Group coverage has no pre-existing condition exclusions.'  scores=['0.477']
+
+  depth=2 goal_indices=[0] from: 'individual whole life policy (Converted insurance policy)'
+    [KEEP] (entity_fact, 'participates in: IS_AVAILABLE_FOR_CONVERSION') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.514']
+    [KEEP] (entity_fact, 'participates in: ISSUED_AT_ATTAINED_AGE') -> "The conversion policy will be issued at the individual's attained age at convers"  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: ISSUED_AT_STANDARD_RATES') -> 'The conversion policy will be issued at standard premium rates for the individua'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: HAS_MAXIMUM_COVERAGE_LIMIT') -> 'The maximum amount for the conversion policy is the lesser of the group coverage'  scores=['0.464']
+    [KEEP] (entity_fact, 'participates in: NO_MEDICAL_EXAM_REQUIRED') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: NO_HEALTH_QUESTIONS_REQUIRED') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.532']
+    [drop] (entity_fact, 'participates in: ISSUED_AT_AGE_BANDED_RATES') -> 'Premium rates for ported coverage will be age-banded group rates.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: PAYMENTS_DIRECT_TO_INSURANCE') -> 'Premiums for ported coverage are payable directly to the insurance company.'  scores=['0.423']
+    [drop] (entity_fact, 'participates in: NO_EVIDENCE_OF_INSURABILITY_REQUIRED') -> 'Evidence of insurability is not required for portability.'  scores=['0.390']
+
+  depth=2 goal_indices=[0] from: 'policyholder (Insured individual)'
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CONVERT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.495']
+    [KEEP] (entity_fact, 'participates in: MUST_APPLY_WITHIN_DEADLINE') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.478']
+    [KEEP] (entity_fact, 'participates in: HAS_ATTAINED_AGE_AT_CONVERSION') -> "The conversion policy will be issued at the individual's attained age at convers"  scores=['0.490']
+    [drop] (entity_fact, 'participates in: EXEMPT_FROM_MEDICAL_EXAM') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.459']
+    [KEEP] (entity_fact, 'participates in: EXEMPT_FROM_HEALTH_QUESTIONS') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.505']
+    [KEEP] (entity_fact, 'participates in: MUST_APPLY_WITHIN_DEADLINE') -> 'The individual must apply for portability within 31 days of termination of emplo'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: EXEMPT_FROM_INSURABILITY_REQUIREMENT') -> 'Evidence of insurability is not required for portability.'  scores=['0.375']
+    [drop] (entity_fact, 'participates in: QUALIFIES_FOR_ACCELERATION') -> 'If an individual is diagnosed with a terminal illness with a life expectancy of '  scores=['0.370']
+    [drop] (entity_fact, 'participates in: SUBMITS_CHANGE_FORM') -> 'An individual may change their beneficiary at any time by submitting a change fo'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: DECEASED_WITHOUT_SURVIVING_BENEFICIARY') -> 'If no beneficiary survives the individual, benefits will be paid to the individu'  scores=['0.486']
+    [drop] (entity_fact, 'participates in: NAMES_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.411']
+
+  depth=2 goal_indices=[0] from: 'individual whole life policy (Converted insurance policy)'
+    [KEEP] (entity_fact, 'participates in: IS_AVAILABLE_FOR_CONVERSION') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.514']
+    [KEEP] (entity_fact, 'participates in: ISSUED_AT_STANDARD_RATES') -> 'The conversion policy will be issued at standard premium rates for the individua'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: HAS_MAXIMUM_COVERAGE_LIMIT') -> 'The maximum amount for the conversion policy is the lesser of the group coverage'  scores=['0.464']
+    [KEEP] (entity_fact, 'participates in: NO_MEDICAL_EXAM_REQUIRED') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: NO_HEALTH_QUESTIONS_REQUIRED') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.532']
+    [KEEP] (entity_fact, 'participates in: CONTINUES_AT_SAME_AMOUNT') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.498']
+    [drop] (entity_fact, 'participates in: ISSUED_AT_AGE_BANDED_RATES') -> 'Premium rates for ported coverage will be age-banded group rates.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: PAYMENTS_DIRECT_TO_INSURANCE') -> 'Premiums for ported coverage are payable directly to the insurance company.'  scores=['0.423']
+    [drop] (entity_fact, 'participates in: NO_EVIDENCE_OF_INSURABILITY_REQUIRED') -> 'Evidence of insurability is not required for portability.'  scores=['0.390']
+
+  depth=2 goal_indices=[0] from: 'policyholder (Insured individual)'
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CONVERT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.495']
+    [KEEP] (entity_fact, 'participates in: MUST_APPLY_WITHIN_DEADLINE') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.478']
+    [drop] (entity_fact, 'participates in: EXEMPT_FROM_MEDICAL_EXAM') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.459']
+    [KEEP] (entity_fact, 'participates in: EXEMPT_FROM_HEALTH_QUESTIONS') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.505']
+    [KEEP] (entity_fact, 'participates in: RETAINS_PREVIOUS_COVERAGE_LEVEL') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.528']
+    [KEEP] (entity_fact, 'participates in: MUST_APPLY_WITHIN_DEADLINE') -> 'The individual must apply for portability within 31 days of termination of emplo'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: EXEMPT_FROM_INSURABILITY_REQUIREMENT') -> 'Evidence of insurability is not required for portability.'  scores=['0.375']
+    [drop] (entity_fact, 'participates in: QUALIFIES_FOR_ACCELERATION') -> 'If an individual is diagnosed with a terminal illness with a life expectancy of '  scores=['0.370']
+    [drop] (entity_fact, 'participates in: SUBMITS_CHANGE_FORM') -> 'An individual may change their beneficiary at any time by submitting a change fo'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: DECEASED_WITHOUT_SURVIVING_BENEFICIARY') -> 'If no beneficiary survives the individual, benefits will be paid to the individu'  scores=['0.486']
+    [drop] (entity_fact, 'participates in: NAMES_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.411']
+
+  depth=2 goal_indices=[0] from: '31 days (Deadline for conversion or portability application)'
+    [KEEP] (entity_fact, 'participates in: IS_TIME_LIMIT_FOR_CONVERSION') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.494']
+
+  depth=2 goal_indices=[0] from: 'policyholder (Insured individual)'
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CONVERT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.495']
+    [KEEP] (entity_fact, 'participates in: MUST_APPLY_WITHIN_DEADLINE') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.478']
+    [KEEP] (entity_fact, 'participates in: HAS_ATTAINED_AGE_AT_CONVERSION') -> "The conversion policy will be issued at the individual's attained age at convers"  scores=['0.490']
+    [drop] (entity_fact, 'participates in: EXEMPT_FROM_MEDICAL_EXAM') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.459']
+    [KEEP] (entity_fact, 'participates in: EXEMPT_FROM_HEALTH_QUESTIONS') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.505']
+    [KEEP] (entity_fact, 'participates in: RETAINS_PREVIOUS_COVERAGE_LEVEL') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.528']
+    [drop] (entity_fact, 'participates in: EXEMPT_FROM_INSURABILITY_REQUIREMENT') -> 'Evidence of insurability is not required for portability.'  scores=['0.375']
+    [drop] (entity_fact, 'participates in: QUALIFIES_FOR_ACCELERATION') -> 'If an individual is diagnosed with a terminal illness with a life expectancy of '  scores=['0.370']
+    [drop] (entity_fact, 'participates in: SUBMITS_CHANGE_FORM') -> 'An individual may change their beneficiary at any time by submitting a change fo'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: DECEASED_WITHOUT_SURVIVING_BENEFICIARY') -> 'If no beneficiary survives the individual, benefits will be paid to the individu'  scores=['0.486']
+    [drop] (entity_fact, 'participates in: NAMES_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.411']
+
+  depth=2 goal_indices=[0] from: 'premium (Payment for insurance coverage)'
+    [KEEP] (entity_fact, 'participates in: PAYABLE_DIRECTLY_TO_INSURANCE') -> 'Premiums for ported coverage are payable directly to the insurance company.'  scores=['0.415']
+
+  depth=2 goal_indices=[0] from: 'group coverage (Insurance policy type)'
+    [KEEP] (entity_fact, 'participates in: TERMINATES_FOR_REASON') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.519']
+    [KEEP] (entity_fact, 'participates in: SETS_UPPER_BOUND_FOR_CONVERSION') -> 'The maximum amount for the conversion policy is the lesser of the group coverage'  scores=['0.424']
+    [KEEP] (entity_fact, 'participates in: SETS_PORTED_COVERAGE_AMOUNT') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.521']
+
+  depth=2 goal_indices=[0] from: 'group coverage (Insurance policy type)'
+    [KEEP] (entity_fact, 'participates in: TERMINATES_FOR_REASON') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.519']
+    [KEEP] (entity_fact, 'participates in: SETS_PORTED_COVERAGE_AMOUNT') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.521']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PRE_EXISTING_EXCLUSIONS') -> 'Group coverage has no pre-existing condition exclusions.'  scores=['0.477']
+
+  depth=2 goal_indices=[0] from: 'individual whole life policy (Converted insurance policy)'
+    [KEEP] (entity_fact, 'participates in: IS_AVAILABLE_FOR_CONVERSION') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.514']
+    [KEEP] (entity_fact, 'participates in: ISSUED_AT_ATTAINED_AGE') -> "The conversion policy will be issued at the individual's attained age at convers"  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: ISSUED_AT_STANDARD_RATES') -> 'The conversion policy will be issued at standard premium rates for the individua'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: NO_MEDICAL_EXAM_REQUIRED') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: NO_HEALTH_QUESTIONS_REQUIRED') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.532']
+    [KEEP] (entity_fact, 'participates in: CONTINUES_AT_SAME_AMOUNT') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.498']
+    [drop] (entity_fact, 'participates in: ISSUED_AT_AGE_BANDED_RATES') -> 'Premium rates for ported coverage will be age-banded group rates.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: PAYMENTS_DIRECT_TO_INSURANCE') -> 'Premiums for ported coverage are payable directly to the insurance company.'  scores=['0.423']
+    [drop] (entity_fact, 'participates in: NO_EVIDENCE_OF_INSURABILITY_REQUIRED') -> 'Evidence of insurability is not required for portability.'  scores=['0.390']
+
+  depth=2 goal_indices=[0] from: 'individual whole life policy (Converted insurance policy)'
+    [KEEP] (entity_fact, 'participates in: IS_AVAILABLE_FOR_CONVERSION') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.514']
+    [KEEP] (entity_fact, 'participates in: ISSUED_AT_ATTAINED_AGE') -> "The conversion policy will be issued at the individual's attained age at convers"  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: ISSUED_AT_STANDARD_RATES') -> 'The conversion policy will be issued at standard premium rates for the individua'  scores=['0.471']
+    [drop] (entity_fact, 'participates in: HAS_MAXIMUM_COVERAGE_LIMIT') -> 'The maximum amount for the conversion policy is the lesser of the group coverage'  scores=['0.464']
+    [KEEP] (entity_fact, 'participates in: NO_MEDICAL_EXAM_REQUIRED') -> 'No medical exam is required for conversion to an individual whole life policy.'  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: NO_HEALTH_QUESTIONS_REQUIRED') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.532']
+    [KEEP] (entity_fact, 'participates in: CONTINUES_AT_SAME_AMOUNT') -> 'Ported coverage continues at the same amount the individual had under the group '  scores=['0.498']
+    [drop] (entity_fact, 'participates in: PAYMENTS_DIRECT_TO_INSURANCE') -> 'Premiums for ported coverage are payable directly to the insurance company.'  scores=['0.423']
+    [drop] (entity_fact, 'participates in: NO_EVIDENCE_OF_INSURABILITY_REQUIRED') -> 'Evidence of insurability is not required for portability.'  scores=['0.390']
+
+  depth=2 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+    [KEEP] (entity_fact, 'participates in: EXCEPTION_TO_CONVERSION_RIGHT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.525']
+
+  depth=2 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.668']
+    [KEEP] (entity_fact, 'participates in: EXCEPTION_TO_CONVERSION_RIGHT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.525']
+
+  depth=2 goal_indices=[0] from: 'Voluntary coverage requires enrollment within 31 days of hire.'
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.538']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.413']
+    [KEEP] (fact_entity, 'has ') -> '31 days of hire (Enrollment deadline for voluntary coverage)'  scores=['0.215']
+
+  depth=2 goal_indices=[0] from: "The maximum voluntary supplemental coverage is 5 times the individual's salary."
+    [KEEP] (fact_fact, 'LIMITS') -> 'Voluntary supplemental coverage may be elected in increments of $10,000.'  scores=['0.486']
+    [KEEP] (fact_fact, 'CONSTRAINS') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.493']
+    [KEEP] (fact_entity, 'has ') -> 'annual base salary (Salary input for benefit calculation)'  scores=['0.197']
+    [KEEP] (fact_fact, 'STAYS_WITHIN') -> 'The total coverage amount is $280,000.'  scores=['0.460']
+
+  depth=2 goal_indices=[0] from: 'Voluntary supplemental coverage may be elected in increments of $10,000.'
+    [KEEP] (fact_fact, 'IS_LIMITED_BY') -> "The maximum voluntary supplemental coverage is 5 times the individual's salary."  scores=['0.544']
+    [KEEP] (fact_fact, 'EXPLAINS') -> 'The employee pays $12 per month for the voluntary additional coverage.'  scores=['0.514']
+    [KEEP] (fact_fact, 'EXTENDS') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.510']
+
+  depth=2 goal_indices=[0] from: 'Late Entrant provisions apply if enrollment occurs after 31 days.'
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'Voluntary coverage requires enrollment within 31 days of hire.'  scores=['0.528']
+    [KEEP] (fact_entity, 'has ') -> '31 days of hire (Enrollment deadline for voluntary coverage)'  scores=['0.215']
+    [KEEP] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+
+  depth=2 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.668']
+    [KEEP] (entity_fact, 'participates in: EXCEPTION_TO_CONVERSION_RIGHT') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.525']
+
+  depth=2 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.668']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+
+  depth=2 goal_indices=[0] from: 'conversion privilege (Right to convert group coverage)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.333']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.400']
+
+  depth=2 goal_indices=[0] from: 'alliance group benefits (Insurer and claims processor)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_CERTIFICATE') -> 'The certificate number is AGB-GT-2024-TechCorp-00842.'  scores=['0.300']
+    [drop] (entity_fact, 'participates in: ISSUED_ON_DATE') -> 'The issue date of the certificate is June 1, 2024.'  scores=['0.282']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_NOTIFICATION') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.524']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.432']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [drop] (entity_fact, 'participates in: OPERATES_HOTLINE') -> 'The claims hotline number is 1-888-555-CLAIM.'  scores=['0.294']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Benefits will be paid within 10 business days of receipt of complete claim docum'  scores=['0.405']
+    [KEEP] (entity_fact, 'participates in: LOCATED_IN') -> 'Alliance Group Benefits is located in Dallas, Texas.'  scores=['0.337']
+    [KEEP] (entity_fact, 'participates in: ISSUING_ORGANIZATION') -> 'The certificate was issued by the Vice President, Group Operations of Alliance G'  scores=['0.385']
+
+  depth=2 goal_indices=[0] from: 'This certificate is evidence of coverage under the Master Group Policy issued to the emplo'
+    [KEEP] (fact_fact, 'SUBORDINATE_TO') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.465']
+    [KEEP] (fact_fact, 'IS_EVIDENCED_BY') -> 'The certificate was issued by the Vice President, Group Operations of Alliance G'  scores=['0.513']
+    [KEEP] (fact_fact, 'IS_SUBJECT_TO') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.543']
+
+  depth=2 goal_indices=[0] from: 'Coverage is subject to the terms, conditions, and exclusions in the Master Policy and this'
+    [KEEP] (fact_fact, 'IS_GOVERNED_BY') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.461']
+    [KEEP] (fact_entity, 'has ') -> 'date of hire (Eligibility start date)'  scores=['0.115']
+    [KEEP] (fact_fact, 'CONTROLS') -> 'This certificate is evidence of coverage under the Master Group Policy issued to'  scores=['0.571']
+
+  depth=2 goal_indices=[0] from: 'The Master Policy controls in case of any conflict with this certificate.'
+    [KEEP] (fact_fact, 'SUPERSEDES') -> 'This certificate is evidence of coverage under the Master Group Policy issued to'  scores=['0.596']
+    [KEEP] (fact_fact, 'GOVERNS') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.525']
+    [KEEP] (fact_entity, 'has ') -> 'date of hire (Eligibility start date)'  scores=['0.115']
+    [KEEP] (fact_fact, 'SUPERSEDES') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.581']
+
+  depth=2 goal_indices=[0] from: 'master group policy (Primary governing policy)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_TO_EMPLOYER') -> 'This certificate is evidence of coverage under the Master Group Policy issued to'  scores=['0.558']
+    [KEEP] (entity_fact, 'participates in: CONTROLS_IN_CONFLICT') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: GOVERNS_COVERAGE_TERMS') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.509']
+
+  depth=2 goal_indices=[0] from: 'voluntary supplemental (Additional coverage option)'
+    [KEEP] (entity_fact, 'participates in: REQUIRES_ENROLLMENT_WITHIN_DEADLINE') -> 'Voluntary coverage requires enrollment within 31 days of hire.'  scores=['0.519']
+    [KEEP] (entity_fact, 'participates in: SUBJECT_TO_LATE_ENROLLMENT_RULES') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.357']
+    [KEEP] (entity_fact, 'participates in: ELECTED_IN_10K_INCREMENT') -> 'Voluntary supplemental coverage may be elected in increments of $10,000.'  scores=['0.376']
+    [KEEP] (entity_fact, 'participates in: MAXED_AT_5X_SALARY') -> "The maximum voluntary supplemental coverage is 5 times the individual's salary."  scores=['0.468']
+
+  depth=2 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual ceases activ'
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_fact, 'LEADS_TO') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.642']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.619']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.584']
+    [KEEP] (fact_fact, 'ENDS_WITH') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.611']
+
+  depth=2 goal_indices=[0] from: 'If group coverage terminates for any reason except non-payment of premium, the individual '
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.638']
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.707']
+    [KEEP] (fact_entity, 'has ') -> 'conversion privilege (Right to convert group coverage)'  scores=['0.161']
+    [KEEP] (fact_fact, 'IS_CORROBORATED_BY') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.603']
+    [KEEP] (fact_fact, 'IS_SUPERSEDED_BY') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.474']
+
+  depth=2 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [KEEP] (entity_fact, 'participates in: BECOMES_DISABLED_BEFORE_60') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.462']
+    [KEEP] (entity_fact, 'participates in: REMAINS_DISABLED_6_MONTHS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.489']
+    [drop] (entity_fact, 'participates in: PROVIDES_ANNUAL_PROOF') -> 'Proof of continuing disability must be provided annually.'  scores=['0.406']
+    [KEEP] (entity_fact, 'participates in: RECOVERS_FROM_DISABILITY') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=2 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [KEEP] (entity_fact, 'participates in: BECOMES_DISABLED_BEFORE_60') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.462']
+    [KEEP] (entity_fact, 'participates in: REMAINS_DISABLED_6_MONTHS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.489']
+    [drop] (entity_fact, 'participates in: PROVIDES_ANNUAL_PROOF') -> 'Proof of continuing disability must be provided annually.'  scores=['0.406']
+    [KEEP] (entity_fact, 'participates in: RETURN_TO_WORK') -> 'The waiver of premiums ends when the insured returns to work.'  scores=['0.533']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=2 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [KEEP] (entity_fact, 'participates in: BECOMES_DISABLED_BEFORE_60') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.462']
+    [drop] (entity_fact, 'participates in: PROVIDES_ANNUAL_PROOF') -> 'Proof of continuing disability must be provided annually.'  scores=['0.406']
+    [KEEP] (entity_fact, 'participates in: RETURN_TO_WORK') -> 'The waiver of premiums ends when the insured returns to work.'  scores=['0.533']
+    [KEEP] (entity_fact, 'participates in: RECOVERS_FROM_DISABILITY') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=2 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [KEEP] (entity_fact, 'participates in: REMAINS_DISABLED_6_MONTHS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.489']
+    [drop] (entity_fact, 'participates in: PROVIDES_ANNUAL_PROOF') -> 'Proof of continuing disability must be provided annually.'  scores=['0.406']
+    [KEEP] (entity_fact, 'participates in: RETURN_TO_WORK') -> 'The waiver of premiums ends when the insured returns to work.'  scores=['0.533']
+    [KEEP] (entity_fact, 'participates in: RECOVERS_FROM_DISABILITY') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=2 goal_indices=[0] from: 'proof of beneficiary identity (Required claim document)'
+    [KEEP] (entity_fact, 'participates in: REQUIRED_FOR_CLAIM') -> 'Proof of beneficiary identity is required to file a claim.'  scores=['0.387']
+
+  depth=2 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [drop] (entity_fact, 'participates in: BECOMES_DISABLED_BEFORE_60') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.462']
+    [KEEP] (entity_fact, 'participates in: REMAINS_DISABLED_6_MONTHS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.489']
+    [KEEP] (entity_fact, 'participates in: RETURN_TO_WORK') -> 'The waiver of premiums ends when the insured returns to work.'  scores=['0.533']
+    [KEEP] (entity_fact, 'participates in: RECOVERS_FROM_DISABILITY') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=2 goal_indices=[0] from: 'Beneficiaries should notify Alliance Group Benefits immediately upon the death of the insu'
+    [KEEP] (fact_fact, 'PRECEDES') -> 'A completed claim form is required to file a claim.'  scores=['0.456']
+    [drop] (fact_entity, 'has ') -> 'alliance group benefits (Insurer and claims processor)'  scores=['0.115']
+    [KEEP] (fact_entity, 'has ') -> 'beneficiary (Recipient of death benefit)'  scores=['0.146']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'A certified death certificate is required to file a claim.'  scores=['0.426']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.500']
+    [KEEP] (fact_fact, 'DIRECTS_TO') -> 'The claims hotline number is 1-888-555-CLAIM.'  scores=['0.380']
+    [KEEP] (fact_fact, 'HAS_OFFICE_IN') -> 'Alliance Group Benefits is located in Dallas, Texas.'  scores=['0.428']
+
+  depth=2 goal_indices=[0] from: 'The waiver of premiums ends when the insured returns to work.'
+    [KEEP] (fact_fact, 'TERMINATED_BY') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.575']
+
+  depth=2 goal_indices=[0] from: 'The waiver of premiums ends when the insured recovers from disability.'
+    [KEEP] (fact_fact, 'TERMINATED_BY') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.564']
+
+  depth=2 goal_indices=[0] from: "If no beneficiary survives the insured, benefits will be paid to the insured's estate."
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.511']
+    [KEEP] (fact_entity, 'has ') -> 'estate (Recipient if no beneficiary survives)'  scores=['0.228']
+    [KEEP] (fact_fact, 'REPLACED_BY') -> 'The primary beneficiary is Jordan.'  scores=['0.441']
+    [KEEP] (fact_fact, 'EQUIVALENT_TO') -> 'If no beneficiary survives the individual, benefits will be paid to the individu'  scores=['0.540']
+
+  depth=2 goal_indices=[0] from: 'The insured must remain disabled for 6 consecutive months to qualify for premium waiver.'
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.539']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Benefits will be paid within 10 business days of receipt of complete claim docum'  scores=['0.470']
+
+  depth=2 goal_indices=[0] from: 'The waiver of premiums ends when the insured reaches age 65.'
+    [KEEP] (fact_fact, 'TERMINATED_BY') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.561']
+    [KEEP] (fact_fact, 'HAS_CONDITION') -> 'Proof of continuing disability must be provided annually.'  scores=['0.505']
+
+  depth=2 goal_indices=[0] from: "The maximum voluntary supplemental coverage is 5 times the individual's salary."
+    [KEEP] (fact_fact, 'LIMITS') -> 'Voluntary supplemental coverage may be elected in increments of $10,000.'  scores=['0.486']
+    [KEEP] (fact_fact, 'CONSTRAINS') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.493']
+    [KEEP] (fact_entity, 'has ') -> 'voluntary supplemental (Additional coverage option)'  scores=['0.172']
+    [KEEP] (fact_fact, 'STAYS_WITHIN') -> 'The total coverage amount is $280,000.'  scores=['0.460']
+
+  depth=2 goal_indices=[0] from: "The basic life benefit equals 2 times the individual's annual base salary."
+    [KEEP] (fact_fact, 'CALCULATES') -> 'The basic life benefit is rounded to the next higher $1,000.'  scores=['0.489']
+    [KEEP] (fact_fact, 'IS_LIMITED_BY') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.495']
+    [drop] (fact_entity, 'has ') -> 'basic life (Core coverage amount)'  scores=['0.158']
+    [KEEP] (fact_fact, 'GENERALIZES') -> 'The basic life insurance coverage amount is 2x annual salary, equaling $180,000.'  scores=['0.512']
+    [KEEP] (fact_fact, 'DERIVED_FROM') -> 'The voluntary additional coverage amount is $100,000, elected by the employee.'  scores=['0.544']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.533']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> "The certificate holder's date of hire is March 1, 2022."  scores=['0.428']
+
+  depth=2 goal_indices=[0] from: 'Basic coverage became effective automatically without requiring evidence of insurability.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The individual became eligible for coverage on their date of hire.'  scores=['0.571']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Voluntary coverage requires enrollment within 31 days of hire.'  scores=['0.557']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'Coverage terminates on the earliest of the following: the date the individual ce'  scores=['0.730']
+    [KEEP] (fact_fact, 'HAS_SUPPLEMENT') -> 'Voluntary supplemental coverage may be elected in increments of $10,000.'  scores=['0.482']
+
+  depth=2 goal_indices=[0] from: "The basic life benefit equals 2 times the individual's annual base salary."
+    [KEEP] (fact_fact, 'CALCULATES') -> 'The basic life benefit is rounded to the next higher $1,000.'  scores=['0.489']
+    [KEEP] (fact_fact, 'IS_LIMITED_BY') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.495']
+    [drop] (fact_entity, 'has ') -> 'annual base salary (Salary input for benefit calculation)'  scores=['0.197']
+    [KEEP] (fact_fact, 'GENERALIZES') -> 'The basic life insurance coverage amount is 2x annual salary, equaling $180,000.'  scores=['0.512']
+    [KEEP] (fact_fact, 'DERIVED_FROM') -> 'The voluntary additional coverage amount is $100,000, elected by the employee.'  scores=['0.544']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'No health questions are required for conversion to an individual whole life poli'  scores=['0.533']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> "The certificate holder's date of hire is March 1, 2022."  scores=['0.428']
+
+  depth=2 goal_indices=[0] from: 'The basic life benefit is rounded to the next higher $1,000.'
+    [KEEP] (fact_fact, 'IS_CALCULATED_FROM') -> "The basic life benefit equals 2 times the individual's annual base salary."  scores=['0.542']
+    [KEEP] (fact_fact, 'ROUNDING_RULE_FOR') -> 'The basic life insurance coverage amount is 2x annual salary, equaling $180,000.'  scores=['0.505']
+
+  depth=2 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [KEEP] (entity_fact, 'participates in: BECOMES_DISABLED_BEFORE_60') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.462']
+    [KEEP] (entity_fact, 'participates in: REMAINS_DISABLED_6_MONTHS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.489']
+    [drop] (entity_fact, 'participates in: PROVIDES_ANNUAL_PROOF') -> 'Proof of continuing disability must be provided annually.'  scores=['0.406']
+    [KEEP] (entity_fact, 'participates in: RECOVERS_FROM_DISABILITY') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=2 goal_indices=[0] from: 'insured employee (Policyholder covered by insurance)'
+    [KEEP] (entity_fact, 'participates in: HAS_NO_SURVIVING_BENEFICIARY') -> "If no beneficiary survives the insured, benefits will be paid to the insured's e"  scores=['0.500']
+    [drop] (entity_fact, 'participates in: NAMED_MULTIPLE_BENEFICIARIES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.412']
+    [KEEP] (entity_fact, 'participates in: HAS_DECEASED') -> 'Beneficiaries should notify Alliance Group Benefits immediately upon the death o'  scores=['0.533']
+    [drop] (entity_fact, 'participates in: DECEASED') -> 'A completed claim form is required to file a claim.'  scores=['0.391']
+    [drop] (entity_fact, 'participates in: ') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'A certified death certificate is required to file a claim.'  scores=['0.341']
+    [drop] (entity_fact, 'participates in: HAS_DECEASED') -> 'Claims must be submitted to Alliance Group Benefits - Claims Department.'  scores=['0.444']
+    [drop] (entity_fact, 'participates in: ') -> 'The address for submitting claims is 1200 Insurance Plaza, Dallas, TX 75201.'  scores=['0.283']
+    [KEEP] (entity_fact, 'participates in: REMAINS_DISABLED_6_MONTHS') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.489']
+    [KEEP] (entity_fact, 'participates in: HAS_DISABILITY') -> 'Coverage continues without premium payment during the period of disability.'  scores=['0.549']
+    [drop] (entity_fact, 'participates in: PROVIDES_ANNUAL_PROOF') -> 'Proof of continuing disability must be provided annually.'  scores=['0.406']
+    [KEEP] (entity_fact, 'participates in: RECOVERS_FROM_DISABILITY') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: REACHES_AGE_65') -> 'The waiver of premiums ends when the insured reaches age 65.'  scores=['0.471']
+
+  depth=2 goal_indices=[0] from: 'Coverage continues without premium payment during the period of disability.'
+    [KEEP] (fact_fact, 'MAINTAINED_BY') -> 'The insured must remain disabled for 6 consecutive months to qualify for premium'  scores=['0.565']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Proof of continuing disability must be provided annually.'  scores=['0.524']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.533']
+    [KEEP] (fact_fact, 'TERMINATES_ON') -> 'The waiver of premiums ends when the insured recovers from disability.'  scores=['0.568']
+
+  depth=2 goal_indices=[0] from: 'Beneficiaries should notify Alliance Group Benefits immediately upon the death of the insu'
+    [KEEP] (fact_fact, 'PRECEDES') -> 'A completed claim form is required to file a claim.'  scores=['0.456']
+    [drop] (fact_entity, 'has ') -> 'alliance group benefits (Insurer and claims processor)'  scores=['0.115']
+    [KEEP] (fact_entity, 'has ') -> 'beneficiary (Recipient of death benefit)'  scores=['0.146']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'A certified death certificate is required to file a claim.'  scores=['0.426']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The completed claim form is available from the employer or the insurer.'  scores=['0.500']
+    [KEEP] (fact_fact, 'DIRECTS_TO') -> 'The claims hotline number is 1-888-555-CLAIM.'  scores=['0.380']
+    [KEEP] (fact_fact, 'HAS_OFFICE_IN') -> 'Alliance Group Benefits is located in Dallas, Texas.'  scores=['0.428']
+
+  depth=2 goal_indices=[0] from: 'The waiver of premiums ends when the insured recovers from disability.'
+    [KEEP] (fact_fact, 'TERMINATED_BY') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.564']
+    [KEEP] (fact_fact, 'ENDS_WHEN') -> 'Coverage continues without premium payment during the period of disability.'  scores=['0.608']
+
+  depth=2 goal_indices=[0] from: "If no beneficiary survives the insured, benefits will be paid to the insured's estate."
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.511']
+    [KEEP] (fact_entity, 'has ') -> 'estate (Recipient if no beneficiary survives)'  scores=['0.228']
+    [KEEP] (fact_fact, 'REPLACED_BY') -> 'The primary beneficiary is Jordan.'  scores=['0.441']
+    [KEEP] (fact_fact, 'EQUIVALENT_TO') -> 'If no beneficiary survives the individual, benefits will be paid to the individu'  scores=['0.540']
+
+  depth=2 goal_indices=[0] from: 'The insured must remain disabled for 6 consecutive months to qualify for premium waiver.'
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.539']
+    [KEEP] (fact_fact, 'ENABLES') -> 'Coverage continues without premium payment during the period of disability.'  scores=['0.605']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Benefits will be paid within 10 business days of receipt of complete claim docum'  scores=['0.470']
+
+  depth=2 goal_indices=[0] from: 'The waiver of premiums ends when the insured reaches age 65.'
+    [KEEP] (fact_fact, 'TERMINATED_BY') -> 'If the insured becomes totally disabled before age 60, voluntary life insurance '  scores=['0.561']
+    [KEEP] (fact_fact, 'HAS_CONDITION') -> 'Proof of continuing disability must be provided annually.'  scores=['0.505']
+
+  depth=2 goal_indices=[0] from: 'non-payment of premium (Exclusion from conversion rights)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the last day for which req'  scores=['0.570']
+
+  depth=2 goal_indices=[0] from: 'master group policy (Primary governing policy)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_TO_EMPLOYER') -> 'This certificate is evidence of coverage under the Master Group Policy issued to'  scores=['0.558']
+    [KEEP] (entity_fact, 'participates in: CONTROLS_IN_CONFLICT') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.354']
+    [KEEP] (entity_fact, 'participates in: GOVERNS_COVERAGE_TERMS') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.509']
+
+  depth=2 goal_indices=[0] from: 'master group policy (Primary governing policy)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_TO_EMPLOYER') -> 'This certificate is evidence of coverage under the Master Group Policy issued to'  scores=['0.558']
+    [KEEP] (entity_fact, 'participates in: GOVERNS_COVERAGE_TERMS') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: TERMINATES_COVERAGE') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.614']
+
+  depth=2 goal_indices=[0] from: 'date of hire (Eligibility start date)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.477']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_ELIGIBILITY') -> 'The individual became eligible for coverage on their date of hire.'  scores=['0.490']
+
+  depth=2 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the date the individual ceases activ'
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Coverage terminates on the earliest of the following: the last day of the month '  scores=['0.650']
+    [KEEP] (fact_fact, 'LEADS_TO') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.642']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.584']
+    [KEEP] (fact_fact, 'ENDS_WITH') -> 'Basic coverage became effective automatically without requiring evidence of insu'  scores=['0.611']
+
+  depth=2 goal_indices=[0] from: 'Coverage terminates on the earliest of the following: the last day for which required prem'
+    [KEEP] (fact_fact, 'CAUSES') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.616']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'The individual must apply for conversion within 31 days of termination of group '  scores=['0.516']
+    [KEEP] (fact_fact, 'CONDITIONAL_ON') -> 'Coverage terminates on the earliest of the following: the date the Master Policy'  scores=['0.651']
+
+  depth=3 goal_indices=[0] from: 'conversion privilege (Right to convert group coverage)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.333']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.400']
+
+  depth=3 goal_indices=[0] from: '31 days of hire (Enrollment deadline for voluntary coverage)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_LATE_ENROLLMENT') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.343']
+
+  depth=3 goal_indices=[0] from: 'annual base salary (Salary input for benefit calculation)'
+    [KEEP] (entity_fact, 'participates in: USED_IN_BENEFIT_CALCULATION') -> "The basic life benefit equals 2 times the individual's annual base salary."  scores=['0.475']
+    [KEEP] (entity_fact, 'participates in: USED_IN_ANNUAL_RECALCULATION') -> 'The basic benefit is recalculated annually on the policy anniversary based on th'  scores=['0.540']
+
+  depth=3 goal_indices=[0] from: '31 days of hire (Enrollment deadline for voluntary coverage)'
+    [KEEP] (entity_fact, 'participates in: ENROLLMENT_DEADLINE') -> 'Voluntary coverage requires enrollment within 31 days of hire.'  scores=['0.520']
+
+  depth=3 goal_indices=[0] from: 'conversion privilege (Right to convert group coverage)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.400']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_AFTER_TERMINATION') -> 'If group coverage terminates for any reason except non-payment of premium, the i'  scores=['0.580']
+
+  depth=3 goal_indices=[0] from: 'date of hire (Eligibility start date)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Master Policy controls in case of any conflict with this certificate.'  scores=['0.364']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_ELIGIBILITY') -> 'The individual became eligible for coverage on their date of hire.'  scores=['0.490']
+
+  depth=3 goal_indices=[0] from: 'date of hire (Eligibility start date)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage is subject to the terms, conditions, and exclusions in the Master Polic'  scores=['0.477']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_ELIGIBILITY') -> 'The individual became eligible for coverage on their date of hire.'  scores=['0.490']
+
+  depth=3 goal_indices=[0] from: 'conversion privilege (Right to convert group coverage)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.333']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Total coverage cannot exceed $1,000,000.'  scores=['0.400']
+
+  depth=3 goal_indices=[0] from: 'beneficiary (Recipient of death benefit)'
+    [KEEP] (entity_fact, 'participates in: RECEIVE_EQUAL_SHARES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_IDENTITY') -> 'Proof of beneficiary identity is required to file a claim.'  scores=['0.350']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_REDUCEABLE_BENEFIT') -> 'Any amount accelerated reduces the death benefit payable to beneficiaries.'  scores=['0.385']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs by suicide within 12 months of the coverage effective date, no d'  scores=['0.465']
+    [KEEP] (entity_fact, 'participates in: TARGET_OF_CHANGE') -> 'An individual may change their beneficiary at any time by submitting a change fo'  scores=['0.461']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.400']
+
+  depth=3 goal_indices=[0] from: 'estate (Recipient if no beneficiary survives)'
+    [KEEP] (entity_fact, 'participates in: RECEIVES_BENEFIT') -> 'If no beneficiary survives the individual, benefits will be paid to the individu'  scores=['0.455']
+
+  depth=3 goal_indices=[0] from: 'voluntary supplemental (Additional coverage option)'
+    [KEEP] (entity_fact, 'participates in: REQUIRES_ENROLLMENT_WITHIN_DEADLINE') -> 'Voluntary coverage requires enrollment within 31 days of hire.'  scores=['0.519']
+    [KEEP] (entity_fact, 'participates in: SUBJECT_TO_LATE_ENROLLMENT_RULES') -> 'Late Entrant provisions apply if enrollment occurs after 31 days.'  scores=['0.357']
+    [KEEP] (entity_fact, 'participates in: ELECTED_IN_10K_INCREMENT') -> 'Voluntary supplemental coverage may be elected in increments of $10,000.'  scores=['0.376']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Coverage terminates on the earliest of the following: the date the individual re'  scores=['0.578']
+
+  depth=3 goal_indices=[0] from: 'beneficiary (Recipient of death benefit)'
+    [KEEP] (entity_fact, 'participates in: RECEIVE_EQUAL_SHARES') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_IDENTITY') -> 'Proof of beneficiary identity is required to file a claim.'  scores=['0.350']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_REDUCEABLE_BENEFIT') -> 'Any amount accelerated reduces the death benefit payable to beneficiaries.'  scores=['0.385']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs by suicide within 12 months of the coverage effective date, no d'  scores=['0.465']
+    [KEEP] (entity_fact, 'participates in: TARGET_OF_CHANGE') -> 'An individual may change their beneficiary at any time by submitting a change fo'  scores=['0.461']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_SHARE') -> 'If multiple beneficiaries are named, benefits are divided equally unless specifi'  scores=['0.400']
+
+  depth=3 goal_indices=[0] from: 'estate (Recipient if no beneficiary survives)'
+    [KEEP] (entity_fact, 'participates in: RECEIVES_BENEFIT') -> 'If no beneficiary survives the individual, benefits will be paid to the individu'  scores=['0.455']
+
+--- FINAL RANKING ---
+  [SELECTED(rank 10)] ce=7.764  '"Coverage terminates on the earliest of the following: the date the individual requests termination '
+  [SELECTED(rank 0)] ce=7.695  '"Coverage terminates on the earliest of the following: the date the individual requests termination '
+  [SELECTED(rank 7)] ce=7.680  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [               -] ce=7.538  '"Coverage terminates on the earliest of the following: the date the individual requests termination '
+  [               -] ce=7.536  '"Coverage terminates on the earliest of the following: the date the individual requests termination '
+  [SELECTED(rank 13)] ce=7.536  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [SELECTED(rank 9)] ce=7.514  '"Coverage terminates on the earliest of the following: the date the individual requests termination '
+  [SELECTED(rank 3)] ce=7.503  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [               -] ce=7.486  '"Coverage terminates on the earliest of the following: the date the individual requests termination '
+  [SELECTED(rank 16)] ce=7.476  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [               -] ce=7.474  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [SELECTED(rank 14)] ce=7.394  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [               -] ce=7.380  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [SELECTED(rank 2)] ce=7.376  '"Coverage terminates on the earliest of the following: the last day of the month in which the indivi'
+  [SELECTED(rank 4)] ce=7.375  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [SELECTED(rank 19)] ce=7.302  '"If group coverage terminates for any reason except non-payment of premium, the individual may exerc'
+  [SELECTED(rank 6)] ce=7.282  '"Coverage terminates on the earliest of the following: the last day of the month in which the indivi'
+  [SELECTED(rank 11)] ce=7.214  '"Coverage terminates on the earliest of the following: the last day of the month in which the indivi'
+  [SELECTED(rank 15)] ce=7.212  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [SELECTED(rank 12)] ce=7.184  '"If group coverage terminates for any reason except non-payment of premium, the individual may exerc'
+  [               -] ce=7.181  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [               -] ce=7.149  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [               -] ce=7.107  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [               -] ce=7.016  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+  [SELECTED(rank 1)] ce=7.014  '"Coverage terminates on the earliest of the following: the date the individual ceases active full-ti'
+
+--- RETRIEVED CONTEXT (what the generation LLM actually saw) ---
+"Coverage terminates on the earliest of the following: the date the individual requests termination of voluntary coverage." -> IS_LEAD_BY -> "Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment." -> FOLLOWS -> "Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee."
+Logical Conclusions:
+Ceasing active full-time employment may lead to voluntary coverage termination, which the individual can request.
+Termination of employment status ends eligibility, which may occur before the policy terminates.
+
+"Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee." -> TERMINATES_ON -> "The master policy number is AGB-2024-TC-GROUP."
+Logical Conclusions:
+The master policy governs coverage termination when the employee ceases to be eligible.
+
+"Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment." -> IS_TRIGGERED_BY -> "If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege." -> ENABLES -> "Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee."
+Logical Conclusions:
+Termination due to cessation of full-time employment triggers the right to convert coverage.
+Termination due to loss of employment eligibility allows conversion, even if the policy is still active.
+
+"Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee." -> (has ) -> [taylor family revocable trust (Contingent beneficiary)]
+
+"Coverage terminates on the earliest of the following: the date the individual requests termination of voluntary coverage." -> IS_CAUSED_BY -> "Coverage terminates on the earliest of the following: the last day for which required premiums have been paid."
+Logical Conclusions:
+Termination of coverage occurs when premiums are no longer paid, which may coincide with voluntary coverage termination.
+
+"Coverage terminates on the earliest of the following: the last day of the month in which the individual ceases to be an eligible employee." -> FOLLOWS -> "Coverage terminates on the earliest of the following: the date the Master Policy terminates."
+Logical Conclusions:
+Coverage terminates upon the Master Policy's termination, which may occur before the individual ceases employment.
+
+"Coverage terminates on the earliest of the following: the date the individual ceases active full-time employment." -> (has ) -> [non-payment of premium (Exclusion from conversion rights)] -> (participates in event: ) -> "Coverage terminates on the earliest of the following: the last day for which required premiums have been paid."
+
+"Coverage terminates on the earliest of the following: the date the individual requests termination of voluntary coverage." -> (has ) -> [voluntary supplemental (Additional coverage option)] -> (participates in event: MAXED_AT_5X_SALARY) -> "The maximum voluntary supplemental coverage is 5 times the individual's salary."
+
+[voluntary supplemental (Additional coverage option)] -> (participates in event: REQUIRES_ENROLLMENT_WITHIN_DEADLINE) -> "Voluntary coverage requires enrollment within 31 days of hire."
+
+[non-payment of premium (Exclusion from conversion rights)] -> (participates in event: EXCEPTION_TO_CONVERSION_RIGHT) -> "If group coverage terminates for any reason except non-payment of premium, the individual may exercise a conversion privilege."
+
+[voluntary supplemental (Additional coverage option)] -> (participates in event: SUBJECT_TO_LATE_ENROLLMENT_RULES) -> "Late Entrant provisions apply if enrollment occurs after 31 days."
+
+--- GENERATION ---
+LLM answer: Coverage terminates on the date the individual ceases active full-time employment, but the individual may exercise a conversion privilege unless the termination is due to non-payment of premium.
+Judge score: 1.0
+====================================================================================================

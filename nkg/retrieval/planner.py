@@ -4,6 +4,8 @@ class QueryPlan(dspy.Signature):
     """
     You are an expert search strategist for a highly structured Knowledge Graph.
     Deconstruct the user_query into optimized target arrays for semantic vector matching.
+    The user_query is already a clean, well-formed query — use it as-is for whole-query
+    semantic matching. Do NOT rewrite or rephrase it.
 
     CRITICAL CONSTRAINTS:
     1. Precision over Volume: Limit all lists to exactly 1-3 highly precise terms. Outputting long lists dilutes semantic similarity scores.
@@ -14,7 +16,6 @@ class QueryPlan(dspy.Signature):
     user_query: str = dspy.InputField()
 
     # Node Guidance
-    rewritten_query: str = dspy.OutputField(desc="A clean, standalone version of the query for semantic search.")
     target_topics: list[str] = dspy.OutputField(desc="Broad thematic categories the query touches upon.")
     target_entities: list[str] = dspy.OutputField(desc="Specific named instances (e.g., 'John Doe', 'Policy 123').")
     broad_anchors: list[str] = dspy.OutputField(

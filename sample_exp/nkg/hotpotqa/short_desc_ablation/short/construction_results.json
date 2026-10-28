@@ -1,0 +1,205 @@
+{
+  "run_id": "nkg_construction_1d423019",
+  "timestamp": "2026-07-16T01:47:46.249550",
+  "system": "NKG",
+  "dataset": "hotpotqa",
+  "metadata": {
+    "corpus_file": "/home/taluka/discourse_hyper_graph/evaluation_data/wiki_data/hotpot_corpus_100.jsonl",
+    "corpus_paragraphs": 988,
+    "corpus_txt_path": "/home/taluka/discourse_hyper_graph/sample_exp/nkg/hotpotqa/run_v1/corpus.txt",
+    "run_dir": "/home/taluka/discourse_hyper_graph/sample_exp/nkg/hotpotqa/run_v1",
+    "kg_path": "/home/taluka/discourse_hyper_graph/sample_exp/nkg/hotpotqa/run_v1/kg.graphml",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "api_base": "https://api.deepseek.com",
+    "construction_args": {
+      "input_mode": "concat_file",
+      "model_name": "deepseek-v4-flash",
+      "chunk_tokenizer_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+      "max_workers": 700,
+      "chunk_size": 600,
+      "chunk_overlap": 50,
+      "edge_threshold": 0.5,
+      "top_k": 12,
+      "max_sub_workers": 700,
+      "fact_batch_size": 40,
+      "edge_mode": "clustered",
+      "same_chunk_min_facts": 5,
+      "run_deduplication": true,
+      "dedup_model_name": "voyageai/voyage-4-nano",
+      "dedup_iterations": 1,
+      "dedup_max_cluster_size": 72,
+      "dedup_run_exact": true,
+      "dedup_run_semhash": true,
+      "dedup_semhash_threshold": 0.95,
+      "dedup_run_llm": true,
+      "dedup_similarity_threshold": 0.35,
+      "dedup_sim_weights": {
+        "name": 0.6,
+        "role": 0.3,
+        "type": 0.1
+      },
+      "generate_entity_relation_labels": false,
+      "use_cot": false,
+      "neutral_description": true,
+      "concise_summary": true,
+      "combined_entity_extraction": true,
+      "full_entity_profile": false,
+      "clustered_round1": false,
+      "clustered_round2": true,
+      "clustered_round3": false,
+      "clustered_max_facts_per_prompt": 40,
+      "middle_k_skip_percent": 0.33,
+      "global_edge_retrieval_model": "voyageai/voyage-4-nano",
+      "use_questions_weight": true,
+      "questions_mode": "follow_up_to_answered",
+      "construction_max_tokens": 100000,
+      "num_retries": 1
+    },
+    "checkpointing": {
+      "checkpoint_dir": "/home/taluka/discourse_hyper_graph/sample_exp/nkg/hotpotqa/run_v1/checkpoint",
+      "config_path": "/home/taluka/discourse_hyper_graph/sample_exp/nkg/hotpotqa/run_v1/construction_config.json",
+      "override_history": []
+    },
+    "parent_run_dir": "/home/taluka/unh_v1/sample_exp/nkg/hotpotqa/run_v1",
+    "kg_pre_fact_dedup_path": "/home/taluka/unh_v1/sample_exp/nkg/hotpotqa/run_v2/kg_pre_fact_dedup.graphml"
+  },
+  "construction": {
+    "total_corpus_chars": 597606,
+    "n_nodes": 12733,
+    "n_edges": 74925,
+    "n_entities": 3551,
+    "n_facts": 8919,
+    "execution_time_sec": 1954.56,
+    "kg_size_bytes": 58199413,
+    "token_breakdown": {
+      "chunk_extraction": {
+        "prompt": 7950,
+        "completion": 13220,
+        "total": 21170,
+        "calls": 5
+      },
+      "chunk_extraction_sub": {},
+      "entity_deduplication": {
+        "prompt": 1063643,
+        "completion": 263128,
+        "total": 1326771,
+        "calls": 108
+      },
+      "global_edges_round1": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0
+      },
+      "global_edges_round2": {
+        "prompt": 341593,
+        "completion": 1127261,
+        "total": 1468854,
+        "calls": 14
+      },
+      "global_edges_round3": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0
+      },
+      "total": {
+        "prompt": 1413186,
+        "completion": 1403609,
+        "total": 2816795,
+        "calls": 127
+      },
+      "hyperparams": {
+        "combined_entity_extraction": true,
+        "full_entity_profile": false,
+        "generate_entity_relation_labels": false,
+        "dedup_run_exact": true,
+        "dedup_run_semhash": true,
+        "dedup_semhash_threshold": 0.95,
+        "dedup_run_llm": true,
+        "dedup_similarity_threshold": 0.35,
+        "questions_mode": "follow_up_to_answered",
+        "middle_k_skip_percent": 0.33,
+        "construction_r1_weights": {
+          "sent": 0.0,
+          "topic": 0.0,
+          "entity": 1.0,
+          "questions": 0.0
+        },
+        "construction_r2_weights": {
+          "sent": 1.0,
+          "topic": 1.0,
+          "entity": 1.0,
+          "questions": 1.0
+        },
+        "construction_r3_weights": {
+          "sent": 1.0,
+          "topic": 1.0,
+          "entity": 1.0,
+          "questions": 1.0
+        }
+      }
+    },
+    "llm_prompt_tokens": 8183607,
+    "llm_completion_tokens": 1731497,
+    "llm_total_tokens": 9915104,
+    "llm_api_calls": 2989,
+    "n_nodes_construction_only": 15151,
+    "n_edges_construction_only": 101825,
+    "n_entities_construction_only": 3551,
+    "n_facts_construction_only": 11337,
+    "llm_prompt_tokens_construction_only": 1413186,
+    "llm_completion_tokens_construction_only": 1403609,
+    "llm_total_tokens_construction_only": 2816795,
+    "llm_api_calls_construction_only": 127,
+    "fact_deduplication": {
+      "params": {
+        "iterations": 3,
+        "top_k": 12,
+        "threshold": 0.8,
+        "cluster_size": 8,
+        "sim_weights": {
+          "sentence": 0.7,
+          "entity": 0.15,
+          "topic": 0.15
+        },
+        "dedup_model_name": "voyageai/voyage-4-nano",
+        "provider": "deepseek",
+        "model": "deepseek-v4-flash",
+        "api_base": "https://api.deepseek.com"
+      },
+      "before": {
+        "n_nodes": 15151,
+        "n_edges": 101825,
+        "n_entities": 3551,
+        "n_facts": 11337,
+        "n_chunks": 263
+      },
+      "after": {
+        "n_nodes": 12733,
+        "n_edges": 74925,
+        "n_entities": 3551,
+        "n_facts": 8919,
+        "n_chunks": 263
+      },
+      "totals": {
+        "iterations_run": 3,
+        "iterations_requested": 3,
+        "clusters_evaluated": 2862,
+        "facts_considered": 21462,
+        "removed": 17,
+        "modified": 66,
+        "merged": 1754
+      },
+      "token_usage": {
+        "prompt": 6770421,
+        "completion": 327888,
+        "total": 7098309,
+        "calls": 2862
+      },
+      "execution_time_sec": 496.66,
+      "report_path": "/home/taluka/unh_v1/sample_exp/nkg/hotpotqa/run_v2/fact_dedup_results.json"
+    }
+  }
+}

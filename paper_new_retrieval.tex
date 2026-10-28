@@ -1,0 +1,197 @@
+% =============================================================================
+% Replacement for \subsection{Evidence Retrieval} (paper.tex, the old planner + beam-search section).
+% Describes the LLM-free PPR retriever exactly as evaluated (nkg/retrieval/ppr_engine.py, setting t2000_f40_dmp06):
+% no path completion, reserves, hub penalty, or second PPR round.
+% New citations needed in references.bib: haveliwala2002topic, cormack2009reciprocal (entries at the end of this file).
+% =============================================================================
+
+\subsection{Evidence Retrieval}
+\label{sec:retrieval}
+
+At query time, \sys{} identifies the facts most relevant to a question $q$ by
+propagating relevance over the index and then returns connected evidence
+chains through those facts. Retrieval makes no LLM call. Following
+HippoRAG~2~\cite{gutierrez2025rag}, it seeds Personalized PageRank
+(PPR)~\cite{haveliwala2002topic} with nodes that match the question and lets
+the graph spread their relevance to nodes that are connected to them but not
+similar to the question. Unlike HippoRAG~2, whose propagation ranks
+passages, \sys{} propagates over facts, entities, and chunks jointly and ranks
+facts, which are then linked into paths over participation and semantic
+edges. The reader receives these paths rather than isolated passages.
+
+\paragraph{Seed selection.}
+Let $\simcos$ denote cosine similarity between text embeddings, and let
+$\bar{x}$ denote min--max normalization of a score over all nodes of one type.
+\sys{} first retrieves the $K_c$ facts whose sentences are most similar to
+$q$ and re-ranks them with a cross-encoder~\cite{nogueira2019passage}
+$\mathrm{CE}(q,s_f)$, which scores the question and fact sentence jointly.
+The top $N_s$ facts form the seed set $S$. The cross-encoder replaces the LLM
+filtering of HippoRAG~2's recognition step: it removes facts that are similar to the
+question without addressing it. Seeds then assign PPR reset mass to three node
+types:
+\begin{flalign*}
+&u_f=\bar{c}_f\ \ (f\in S),\qquad
+u_v=\frac{1}{|S_v|}\sum_{f\in S_v}\frac{\bar{c}_f}{|C_v|},\qquad
+u_c=\beta\,\overline{\simcos}(q,t_c). &&
+\end{flalign*}
+Here, $c_f=\simcos(q,s_f)$ is a fact's sentence similarity,
+$S_v=\{f\in S:(f,v)\in E_{FV}\}$ contains the seed facts in which entity $v$
+participates, $C_v$ is the set of chunks containing facts about $v$, and
+$t_c$ is the text of chunk $c$. All other facts and entities receive zero
+reset mass, and the reset vector $u$ is normalized to sum to one. Seed facts contribute their
+own relevance. Their participants inherit it, divided by the number of chunks in which
+they occur, so specific entities seed strongly while generic entities, such
+as a policy or an insured person mentioned throughout a contract, seed
+almost nothing; HippoRAG~2 applies the same specificity weighting to
+phrase nodes. Every chunk receives a small prior proportional to
+its similarity to $q$, scaled by $\beta$ as in HippoRAG~2, so that
+propagation can favour facts from relevant passages without letting chunks
+dominate. In the policy example, the contestability rule $f_1$ and the
+misstatement clause $f_4$ match the question, and \emph{date of birth},
+which occurs in few chunks, inherits most of their entity mass.
+
+\paragraph{Propagation.}
+PPR runs on an undirected weighted graph over facts, entities, and chunks.
+Participation edges $E_{FV}$ and provenance edges $E_{CF}$ have unit weight;
+each semantic edge in $E_{FF}$ has weight equal to its extraction strength
+$r$, taking the larger strength when both directions are present. With
+$W$ the weighted adjacency matrix and $P$ its row-normalized transition
+matrix, the stationary scores satisfy
+\begin{flalign*}
+&\pi=(1-d)\,u+d\,P^{\top}\pi, &&
+\end{flalign*}
+where $d$ is the probability of following an edge rather than restarting
+at the seeds. Mass reaching a node without edges restarts from $u$, and $\pi$ is
+obtained by power iteration. Chunks take part in propagation but never
+appear in paths. Because entities and facts alternate, relevance reaches facts that share a
+specific participant with a seed. Semantic edges also carry relevance to
+facts that share no participant with a seed and are dissimilar to the
+question, such as an exception or a condition stated in another
+section. In the example, $f_2$ is reached through \texttt{has\_exception}
+from $f_1$, and the age limit $f_5$ through the \texttt{depends\_on} edge
+from $f_4$, although neither resembles the question.
+
+\paragraph{Fact relevance.}
+PPR ranks facts well in depth but can place facts that are merely central
+near the top, whereas the cross-encoder is precise at the top but sees
+only facts that resemble $q$. We combine the two by reciprocal-rank
+fusion~\cite{cormack2009reciprocal}:
+\begin{flalign*}
+&\rho(f)=\frac{1}{k+\mathrm{rank}_{\pi}(f)}+\frac{1}{k+\mathrm{rank}_{\mathrm{CE}}(f)}. &&
+\end{flalign*}
+The cross-encoder scores a pool containing the $K_p$ facts with the highest
+$\pi$ and the $K_p$ facts with the highest $c_f$. Facts outside the pool
+receive only the PPR term. Rank fusion requires no calibration between
+stationary probabilities and cross-encoder logits.
+
+\paragraph{Path construction.}
+The $K_f$ facts with the highest $\rho$ form the candidate set $F_q$.
+Paths connect candidates through the index: a path extends from its last
+fact to an unvisited fact in $F_q$ either directly over a semantic edge or
+through a shared entity, $f_i\rightarrow v\rightarrow f_j$. When several
+entities connect the same pair, the most specific one, with the fewest
+facts, is used. A semantic edge takes precedence over an entity hop because
+its label describes the connection. Restricting extensions to $F_q$ keeps
+high-degree entities from multiplying the paths. A path scores
+$\sigma(p)=\sum_{f\in p}\rho(f)$. A beam search starts from the top $N_0$
+candidates, gives each partial path its $B$ highest-relevance extensions,
+retains the $G$ best paths at each depth, and stops a path at $D$ facts or
+when no unvisited candidate is reachable. Paths that reach $D$ facts, end
+early, or fall outside the beam all remain candidates for selection.
+
+\paragraph{Path selection.}
+Many candidate paths repeat the same strong facts, so selection maximizes
+the relevance of the evidence covered rather than the score of individual
+paths. Given the set $\mathcal{C}$ of facts already covered, each step
+selects the path with the largest gain
+\begin{flalign*}
+&\Delta(p\mid\mathcal{C})=\sum_{f\in p,\,f\notin\mathcal{C}}\rho(f), &&
+\end{flalign*}
+preferring shorter paths among ties, until $N_p$ paths are selected or no path
+adds relevance. A short completion pass then ensures that each of the
+$M$ most relevant facts appears: an uncovered fact contributes its
+highest-gain candidate path, or the fact alone if it lies on no candidate
+path. Coverage selection thus keeps chains that connect relevant facts
+while still including relevant facts that the index leaves isolated.
+
+\paragraph{Serialization.}
+Selected paths are serialized in selection order. Facts are numbered and
+quoted at their first mention and referred to by number thereafter; entities
+appear as \texttt{[name (micro-role)]} at first mention and by name thereafter;
+semantic hops carry their directional labels, and participation hops are
+plain arrows. Steps already emitted by an earlier path are omitted, so each
+path contributes only its new segments. The lowest-priority paths, with
+completion paths last, are removed until the context fits a budget of $T$
+tokens. Each fact appears once and remains traceable to its source chunks.
+Optionally, the $P$ chunks with the highest PPR scores are appended
+after the paths as source passages; this variant is marked separately in the
+results. In the example, the highest-gain path
+$f_1\xrightarrow{\texttt{has\_exception}}f_2\rightarrow\emph{date of birth}
+\rightarrow f_4\xrightarrow{\texttt{depends\_on}}f_5$
+covers the rule, its exception, the ineligible branch, and the age limit,
+while a later path contributes only the alternative branch $f_3$.
+
+\paragraph{Restricted views.}
+The edge-restricted ablations apply the same restriction to propagation and
+to paths. UNH-H removes semantic edges from $W$ and allows only entity hops;
+UNH-D removes participation edges and allows only semantic hops. Provenance
+edges and the chunk prior are retained in both views. In UNH-D, entities are
+isolated, so mass placed on them restarts from the reset distribution.
+
+Retrieval uses one embedding of the question, cross-encoder scoring of at
+most $K_c+2K_p$ question--fact pairs, sparse power iteration, and a beam
+search over at most $K_f$ facts. No retrieval step calls an LLM; answer generation
+is a separate reader call.
+
+
+% =============================================================================
+% Replacement for the retrieval part of Table~\ref{tab:hyperparams} (keep the Construction block as is).
+% =============================================================================
+\midrule
+\multicolumn{2}{@{}l}{\textit{Seed selection}} \\
+Fact candidates re-ranked $K_c$ & 50 \\
+Seed facts $N_s$ & 5 \\
+Chunk prior weight $\beta$ & 0.05 \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Propagation and relevance}} \\
+Edge-following probability $d$ & 0.6 \\
+Participation, provenance, semantic edge weights & 1, 1, $r$ \\
+Cross-encoder pool per ranking $K_p$ & 100 \\
+Rank-fusion constant $k$ & 20 \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Path construction and selection}} \\
+Candidate facts $K_f$ & 150 \\
+Start facts $N_0$ & 30 \\
+Extensions per partial path $B$ & 6 \\
+Paths kept per depth $G$ & 60 \\
+Maximum facts per path $D$ & 4 \\
+Paths selected $N_p$ & 80 \\
+Most relevant facts completed $M$ & 40 \\
+Context budget $T$ (tokens) & 2,000 \\
+Appended passages $P$ ($\ddagger$ rows only) & 5 \\
+
+% Suggested replacement for the paragraph after Table~\ref{tab:hyperparams}:
+% Table~\ref{tab:hyperparams} lists the \sys{} construction and retrieval settings, using the notation of
+% Section~\ref{sec:method}. The same retrieval setting is used on every dataset. Sentence and chunk embeddings use
+% voyage-4-nano, the cross-encoder is ms-marco-MiniLM-L6-v2, the budget $T$ is counted with the Qwen3 tokenizer, and
+% power iteration runs for at most 60 iterations or until the $\ell_1$ change falls below $10^{-8}$. The reader is
+% invoked separately after retrieval.
+
+% =============================================================================
+% New references.bib entries
+% =============================================================================
+% @inproceedings{haveliwala2002topic,
+%   title={Topic-sensitive PageRank},
+%   author={Haveliwala, Taher H.},
+%   booktitle={Proceedings of the 11th International Conference on World Wide Web},
+%   pages={517--526},
+%   year={2002}
+% }
+%
+% @inproceedings{cormack2009reciprocal,
+%   title={Reciprocal rank fusion outperforms condorcet and individual rank learning methods},
+%   author={Cormack, Gordon V. and Clarke, Charles L. A. and Buettcher, Stefan},
+%   booktitle={Proceedings of the 32nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+%   pages={758--759},
+%   year={2009}
+% }

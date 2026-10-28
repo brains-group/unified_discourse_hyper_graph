@@ -1,0 +1,3 @@
+Title: Ebert test
+
+The Ebert test gauges whether a computer-based synthesized voice can tell a joke with sufficient skill to cause people to laugh. It was proposed by film critic Roger Ebert at the 2011 TED conference as a challenge to software developers to have a computerized voice master the inflections, delivery, timing, and intonations of a speaking human. The test is similar to the Turing test proposed by Alan Turing in 1950 as a way to gauge a computer's ability to exhibit intelligent behavior by generating performance indistinguishable from a human being.

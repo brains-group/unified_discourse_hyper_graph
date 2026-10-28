@@ -1,0 +1,21 @@
+{
+ "system": "hipporag2",
+ "set": "smoke_qa",
+ "contract": "2025_pdp_contract",
+ "retrieval_file": "/home/taluka/unh_v1/evaluation_scripts/hipporag2/outputs/contracts_smoke_qa/2025_pdp_contract_quality/predictions.json",
+ "summary": {
+  "n": 0,
+  "recall": null,
+  "recalled": 0,
+  "mean_context_tokens": 0.0,
+  "empty_contexts": 0,
+  "judge_unparsed": 0,
+  "judge_usage": {
+   "calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "prompt_cache_hit_tokens": 0
+  }
+ },
+ "per_fact": []
+}

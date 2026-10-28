@@ -423,7 +423,7 @@ async def _build_graph_async(
         llm_model_max_token_size=llm_max_token_size,
         llm_model_max_async=llm_max_async,
         embedding_func=embed_fn,
-        embedding_batch_num=16,
+        embedding_batch_num=32,
         embedding_func_max_async=embedding_max_async,
         chunk_token_size=chunk_size,
         chunk_overlap_token_size=chunk_overlap,
@@ -1031,27 +1031,25 @@ def main():
     parser.add_argument("--model",          type=str,
                         default="Qwen/Qwen3-30B-A3B-Instruct-2507-FP8")
     parser.add_argument("--embed-model",    type=str,
-                        default="Qwen/Qwen3-Embedding-4B")
+                        default="voyageai/voyage-4-nano")
     parser.add_argument("--api-base",       type=str,
                         default="http://localhost:8000/v1")
     parser.add_argument("--embed-api-base", type=str,
                         default="http://localhost:8001/v1")
     parser.add_argument("--api-key",        type=str, default="EMPTY")
-    parser.add_argument("--embed-dim",      type=int, default=2560)
+    parser.add_argument("--embed-dim",      type=int, default=1024)
 
     # ---- Construction hyperparams ----
-    parser.add_argument("--chunk-size",    type=int, default=800)
-    parser.add_argument("--chunk-overlap", type=int, default=50)
-    parser.add_argument("--max-gleanings", type=int, default=1)
-    parser.add_argument("--llm-max-async", type=int, default=4,
+    parser.add_argument("--chunk-size",    type=int, default=1200)
+    parser.add_argument("--chunk-overlap", type=int, default=100)
+    parser.add_argument("--max-gleanings", type=int, default=2)
+    parser.add_argument("--llm-max-async", type=int, default=16,
                         help="Max concurrent internal LLM calls per HGRAG operation. "
                              "Effective concurrency against vLLM is "
                              "max-workers × llm-max-async — keep the product reasonable.")
-    parser.add_argument("--embedding-max-async", type=int, default=8,
-                        help="Max concurrent embedding calls. HGRAG's default is 16 but "
-                             "embedding bursts are a common cause of vLLM Connection errors "
-                             "during retrieval — lower this if you see embedding-side retries.")
-    parser.add_argument("--llm-max-token-size", type=int, default=20000)
+    parser.add_argument("--embedding-max-async", type=int, default=16,
+                        help="Max concurrent embedding calls.")
+    parser.add_argument("--llm-max-token-size", type=int, default=32768)
     parser.add_argument("--llm-max-retries", type=int, default=5,
                         help="Times to retry a failed completion or embedding call before "
                              "giving up. Uses exponential backoff with jitter (1s, 2s, 4s, "
@@ -1069,8 +1067,8 @@ def main():
     # ---- Retrieval hyperparams ----
     parser.add_argument("--retrieval-mode",  type=str, default="hybrid",
                         choices=["hybrid"])
-    parser.add_argument("--retrieval-top-k",    type=int, default=10)
-    parser.add_argument("--max-context-tokens", type=int, default=2000)
+    parser.add_argument("--retrieval-top-k",    type=int, default=60)
+    parser.add_argument("--max-context-tokens", type=int, default=12000)
 
     # ---- Judge LLM ----
     parser.add_argument("--judge-max-tokens", type=int, default=8000)

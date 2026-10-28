@@ -1,0 +1,35 @@
+{
+  "dataset": "hotpotqa",
+  "view": "hypergraph",
+  "subset": "/home/taluka/unh_v1/evaluation_data/hotpotqa/subsets/hotpotqa_250_seed0.json",
+  "corpus": "subset",
+  "questions": 250,
+  "kg": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/hotpotqa_250_seed0/kg.graphml",
+  "engine": "old",
+  "retrieval_args": {
+    "top_k_seeds": 9,
+    "max_depth": 3,
+    "beam_width": 6,
+    "final_top_k": 20,
+    "mode": "hypergraph",
+    "beam_mmr_lambda": 0.6,
+    "final_mmr_lambda": 0.6,
+    "search_mode": "beam_search",
+    "deduplicate_paths": true,
+    "neutral_layout": false
+  },
+  "context_cap": null,
+  "errors": 0,
+  "empty_contexts": 0,
+  "mean_context_chars": 3401,
+  "query_llm_usage_this_run": {
+    "prompt_tokens": 223238,
+    "completion_tokens": 72749,
+    "total_tokens": 295987,
+    "api_calls": 252,
+    "prompt_cache_hit_tokens": 163309
+  },
+  "seconds_this_run": 835.6,
+  "llm_model": "deepseek-flash",
+  "temperature": "none"
+}

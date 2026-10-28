@@ -1,0 +1,144 @@
+{
+  "system": "NKG",
+  "timestamp": "20260703_120920",
+  "contract_file": "/home/taluka/discourse_hyper_graph/evaluation_data/ten_contracts_dataset/contracts/contract_4_variable_universal.txt",
+  "construction_args": {
+    "model_name": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "max_workers": 100,
+    "chunk_size": 600,
+    "overlap": 50,
+    "edge_threshold": 0.5,
+    "top_k": 12,
+    "max_sub_workers": 100,
+    "fact_batch_size": 20,
+    "edge_mode": "clustered",
+    "run_deduplication": true,
+    "dedup_model_name": "voyageai/voyage-4-nano",
+    "dedup_iterations": 1,
+    "dedup_max_cluster_size": 72,
+    "dedup_run_exact": true,
+    "dedup_run_semhash": true,
+    "dedup_semhash_threshold": 0.95,
+    "dedup_run_llm": true,
+    "dedup_similarity_threshold": 0.35,
+    "use_cot": false,
+    "neutral_description": true,
+    "concise_summary": true,
+    "combined_entity_extraction": true,
+    "full_entity_profile": false,
+    "clustered_round1": false,
+    "clustered_round2": true,
+    "clustered_round3": true,
+    "clustered_max_facts_per_prompt": 40,
+    "middle_k_skip_percent": 0.0,
+    "retrieval_model_name": "voyageai/voyage-4-nano",
+    "use_questions_weight": true,
+    "questions_mode": "follow_up_to_answered"
+  },
+  "metrics": {
+    "total_document_chars": 7919,
+    "n_nodes": 156,
+    "n_edges": 835,
+    "n_entities": 41,
+    "n_facts": 111,
+    "execution_time_sec": 145.12,
+    "kg_size_bytes": 556049,
+    "token_breakdown": {
+      "chunk_extraction": {
+        "prompt": 28381,
+        "completion": 34498,
+        "total": 62879,
+        "calls": 20
+      },
+      "chunk_extraction_sub": {
+        "chunk_fact_extraction": {
+          "prompt": 3560,
+          "completion": 1889,
+          "total": 5449,
+          "calls": 4
+        },
+        "chunk_entity_extraction": {
+          "prompt": 3572,
+          "completion": 1199,
+          "total": 4771,
+          "calls": 4
+        },
+        "fact_metadata_batch": {
+          "prompt": 15904,
+          "completion": 23683,
+          "total": 39587,
+          "calls": 8
+        },
+        "same_chunk_fact_edges": {
+          "prompt": 5345,
+          "completion": 7727,
+          "total": 13072,
+          "calls": 4
+        }
+      },
+      "entity_deduplication": {
+        "prompt": 3403,
+        "completion": 13,
+        "total": 3416,
+        "calls": 1
+      },
+      "global_edges_round1": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0
+      },
+      "global_edges_round2": {
+        "prompt": 10673,
+        "completion": 7251,
+        "total": 17924,
+        "calls": 6
+      },
+      "global_edges_round3": {
+        "prompt": 9862,
+        "completion": 6811,
+        "total": 16673,
+        "calls": 5
+      },
+      "total": {
+        "prompt": 52319,
+        "completion": 48573,
+        "total": 100892,
+        "calls": 32
+      },
+      "hyperparams": {
+        "combined_entity_extraction": true,
+        "full_entity_profile": false,
+        "dedup_run_exact": true,
+        "dedup_run_semhash": true,
+        "dedup_semhash_threshold": 0.95,
+        "dedup_run_llm": true,
+        "dedup_similarity_threshold": 0.35,
+        "questions_mode": "follow_up_to_answered",
+        "middle_k_skip_percent": 0.0,
+        "construction_r1_weights": {
+          "sent": 0.0,
+          "topic": 0.0,
+          "entity": 1.0,
+          "questions": 0.0
+        },
+        "construction_r2_weights": {
+          "sent": 1.0,
+          "topic": 1.0,
+          "entity": 1.0,
+          "questions": 1.0
+        },
+        "construction_r3_weights": {
+          "sent": 1.0,
+          "topic": 1.0,
+          "entity": 1.0,
+          "questions": 1.0
+        }
+      }
+    },
+    "llm_prompt_tokens": 52319,
+    "llm_completion_tokens": 48573,
+    "llm_total_tokens": 100892,
+    "llm_api_calls": 32
+  }
+}

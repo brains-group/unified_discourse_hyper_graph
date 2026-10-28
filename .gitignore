@@ -1,9 +1,10 @@
+# private dirs
+kg_outputs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
-
-.DS_Store
 
 # C extensions
 *.so
@@ -207,3 +208,47 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# [unh_v1] local junk, cloned reference repos, and large index / cache / embedding files (results are kept)
+.idea/
+.claude/
+mlruns/
+mlflow.db
+*.tgz
+HyGRAG/
+MemGraphRAG/
+MEQA/
+# graph / vector indexes, embeddings, caches
+*.graphml
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.pt
+*.index
+*.lance
+*.parquet
+*.idx
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+embeddings_*
+hgrag_index/
+checkpoint-*/
+final-checkpoint/
+llm_cache/
+vdb_*.json
+kv_store_*.json
+openie_results_*.json
+openie_state.json
+memory_graph.json
+initial_memory_with_schema.json
+# GraphRAG workspace settings can hold a hardcoded api_key; workspace caches are LLM caches
+latest_results/**/settings.yaml
+**/workspace/cache/
+**/graphrag_workspace/cache/
+# result files over GitHub's 100 MB limit are committed gzipped (<name>.json.gz) instead
+evaluation_scripts/hypergraphrag/outputs/gmedical/answers_hypergraphrag_gmedical.json
+evaluation_scripts/hypergraphrag/outputs/gmedical/knowledge.json
+evaluation_scripts/hypergraphrag/outputs/quality/answers_hypergraphrag_quality.json
+evaluation_scripts/hypergraphrag/outputs/quality/knowledge.json

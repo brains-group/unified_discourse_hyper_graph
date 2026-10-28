@@ -161,3 +161,69 @@ def sample_results(
 
     else:
         raise ValueError(f"Invalid strategy: {strategy}")
+
+def weighted_cosine_topk(embeddings: list, weights: list, k: int, pair_with: list = None, chunk_rows: int = 4096):
+    """Top-k neighbours of every row under a weighted sum of cosine similarities, without building the N x N matrix.
+
+    score(i, j) = sum_m weights[m] * cos(embeddings[m][i], pair_with[m][j])   (pair_with defaults to embeddings)
+    Self pairs (i == j) are excluded. Rows are scored in chunks (on the GPU when torch + CUDA are available), so
+    memory is O(chunk_rows * N) instead of O(N^2). Zero vectors stay zero (cosine 0), as in sklearn.
+
+    Returns (top_idx [N, k'] int64, top_scores [N, k'] float32, off_diag_min, off_diag_max), k' = min(k, N - 1),
+    each row sorted by descending score; off_diag_min / off_diag_max are over all i != j pairs (for min-max
+    normalisation, which preserves the per-row ranking).
+    """
+    pair_with = pair_with if pair_with is not None else embeddings
+    n = len(embeddings[0])
+    kk = max(0, min(k, n - 1))
+    if n == 0 or kk == 0:
+        return np.zeros((n, 0), dtype=np.int64), np.zeros((n, 0), dtype=np.float32), 0.0, 0.0
+
+    def unit(m):
+        m = np.asarray(m, dtype=np.float32)
+        norms = np.linalg.norm(m, axis=1, keepdims=True)
+        norms[norms == 0] = 1.0
+        return m / norms
+
+    try:
+        import torch
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+    except ImportError:
+        torch, device = None, "numpy"
+
+    top_idx = np.zeros((n, kk), dtype=np.int64)
+    top_scores = np.zeros((n, kk), dtype=np.float32)
+    lo, hi = float("inf"), float("-inf")
+    if torch is not None:
+        A = [torch.from_numpy(unit(m)).to(device) for m in embeddings]
+        B = A if pair_with is embeddings else [torch.from_numpy(unit(m)).to(device) for m in pair_with]
+        for s in range(0, n, chunk_rows):
+            e = min(n, s + chunk_rows)
+            block = sum(w * (a[s:e] @ b.T) for w, a, b in zip(weights, A, B))
+            rows = torch.arange(e - s, device=block.device)
+            block[rows, rows + s] = float("-inf")  # exclude self from top-k and from max
+            hi = max(hi, float(block.max()))
+            block[rows, rows + s] = float("inf")   # exclude self from min
+            lo = min(lo, float(block.min()))
+            block[rows, rows + s] = float("-inf")
+            vals, idx = torch.topk(block, kk, dim=1)
+            top_idx[s:e] = idx.cpu().numpy()
+            top_scores[s:e] = vals.float().cpu().numpy()
+            del block
+        return top_idx, top_scores, lo, hi
+    A = [unit(m) for m in embeddings]
+    B = A if pair_with is embeddings else [unit(m) for m in pair_with]
+    for s in range(0, n, chunk_rows):
+        e = min(n, s + chunk_rows)
+        block = sum(w * (a[s:e] @ b.T) for w, a, b in zip(weights, A, B))
+        rows = np.arange(e - s)
+        block[rows, rows + s] = -np.inf
+        hi = max(hi, float(block.max()))
+        block[rows, rows + s] = np.inf
+        lo = min(lo, float(block.min()))
+        block[rows, rows + s] = -np.inf
+        part = np.argpartition(-block, kk - 1, axis=1)[:, :kk]
+        order = np.argsort(-np.take_along_axis(block, part, axis=1), axis=1)
+        top_idx[s:e] = np.take_along_axis(part, order, axis=1)
+        top_scores[s:e] = np.take_along_axis(block, top_idx[s:e], axis=1)
+    return top_idx, top_scores, lo, hi

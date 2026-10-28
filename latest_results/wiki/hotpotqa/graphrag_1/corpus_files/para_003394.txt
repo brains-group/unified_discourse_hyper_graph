@@ -1,0 +1,3 @@
+Title: NGC 659
+
+Coordinates: 01+44/60+24/3600&de=60.67333333333333&zoom=ln1/ln10+1 round 0&show_grid=1&show_constellation_lines=1&show_constellation_boundaries=1&show_const_names=1&show_galaxies=1&img_source=IMG_all 01 44 24, +60° 40′ 24″

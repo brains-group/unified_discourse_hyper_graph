@@ -1,0 +1,3 @@
+Title: Fluorescence recovery after photobleaching
+
+Fluorescence recovery after photobleaching (FRAP) is a method for determining the kinetics of diffusion through tissue or cells. It is capable of quantifying the two dimensional lateral diffusion of a molecularly thin film containing fluorescently labeled probes, or to examine single cells. This technique is very useful in biological studies of cell membrane diffusion and protein binding. In addition, surface deposition of a fluorescing phospholipid bilayer (or monolayer) allows the characterization of hydrophilic (or hydrophobic) surfaces in terms of surface structure and free energy.

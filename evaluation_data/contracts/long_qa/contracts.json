@@ -1,0 +1,98 @@
+{
+ "set": "long_qa",
+ "contracts": [
+  "2025_pdp_contract",
+  "all_state_auto_insurance",
+  "capital_health_plan",
+  "progressive_maine_auto_policy",
+  "td_contract"
+ ],
+ "totals": {
+  "tokens_cl100k": 94720,
+  "qa": 445,
+  "facts": 0,
+  "chunks_1200": 89
+ },
+ "per_contract": [
+  {
+   "contract": "2025_pdp_contract",
+   "source": "long_qa (QA only) from long",
+   "tokens_cl100k": 6000,
+   "chars": 27003,
+   "chunks_1200": 6,
+   "qa": 64,
+   "facts": 0,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 15,
+    "CAT2_RELATIONAL_LOOKUP": 15,
+    "CAT3_CONDITIONAL_REASONING": 15,
+    "CAT4_MULTIHOP_REASONING": 15,
+    "CAT5_UNANSWERABLE": 4
+   }
+  },
+  {
+   "contract": "all_state_auto_insurance",
+   "source": "long_qa (QA only) from long",
+   "tokens_cl100k": 13687,
+   "chars": 71229,
+   "chunks_1200": 13,
+   "qa": 85,
+   "facts": 0,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 20,
+    "CAT2_RELATIONAL_LOOKUP": 20,
+    "CAT3_CONDITIONAL_REASONING": 20,
+    "CAT4_MULTIHOP_REASONING": 20,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "capital_health_plan",
+   "source": "long_qa (QA only) from long",
+   "tokens_cl100k": 48640,
+   "chars": 407598,
+   "chunks_1200": 45,
+   "qa": 111,
+   "facts": 0,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 40,
+    "CAT2_RELATIONAL_LOOKUP": 27,
+    "CAT3_CONDITIONAL_REASONING": 19,
+    "CAT4_MULTIHOP_REASONING": 15,
+    "CAT5_UNANSWERABLE": 10
+   }
+  },
+  {
+   "contract": "progressive_maine_auto_policy",
+   "source": "long_qa (QA only) from long",
+   "tokens_cl100k": 15815,
+   "chars": 86597,
+   "chunks_1200": 15,
+   "qa": 85,
+   "facts": 0,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 20,
+    "CAT2_RELATIONAL_LOOKUP": 20,
+    "CAT3_CONDITIONAL_REASONING": 20,
+    "CAT4_MULTIHOP_REASONING": 20,
+    "CAT5_UNANSWERABLE": 5
+   }
+  },
+  {
+   "contract": "td_contract",
+   "source": "long_qa (QA only) from long",
+   "tokens_cl100k": 10578,
+   "chars": 53779,
+   "chunks_1200": 10,
+   "qa": 100,
+   "facts": 0,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 36,
+    "CAT2_RELATIONAL_LOOKUP": 18,
+    "CAT3_CONDITIONAL_REASONING": 24,
+    "CAT4_MULTIHOP_REASONING": 12,
+    "CAT5_UNANSWERABLE": 10
+   }
+  }
+ ]
+}

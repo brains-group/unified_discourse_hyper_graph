@@ -1,0 +1,120 @@
+{
+  "dataset": "hotpotqa",
+  "subset": null,
+  "ppr_tag": "t2000_f40_dmp06_p5_q1000",
+  "ppr_path_stats": {
+    "full": {
+      "pct_edges_discourse": 41.3,
+      "pct_edges_entity": 58.7,
+      "pct_hops_discourse": 57.0,
+      "pct_hops_entity": 43.0,
+      "mean_edges_per_question": 42.0,
+      "mean_distinct_facts": 50.2,
+      "answer_in_context_pct": 90.9,
+      "mean_tokens": 2086,
+      "mean_seconds": 36.437
+    }
+  },
+  "rows": [
+    {
+      "system": "UNH PPR (full view)",
+      "n": 1000,
+      "EM": 61.6,
+      "F1": 75.2,
+      "Contain-Acc": 73.5,
+      "LLM-Acc": 86.1,
+      "context_tokens_mean": 2086,
+      "context_tokens_max": 3520
+    },
+    {
+      "system": "HyperGraphRAG",
+      "n": 1000,
+      "EM": 61.4,
+      "F1": 74.9,
+      "Contain-Acc": 74.5,
+      "LLM-Acc": 86.4,
+      "context_tokens_mean": 22443,
+      "context_tokens_max": 31665
+    },
+    {
+      "system": "HippoRAG 2",
+      "n": 1000,
+      "EM": 61.3,
+      "F1": 73.5,
+      "Contain-Acc": 70.6,
+      "LLM-Acc": 82.8,
+      "context_tokens_mean": 661,
+      "context_tokens_max": 2316
+    },
+    {
+      "system": "LogicRAG",
+      "n": 1000,
+      "EM": 58.2,
+      "F1": 72.8,
+      "Contain-Acc": 70.2,
+      "LLM-Acc": 82.9,
+      "context_tokens_mean": 72,
+      "context_tokens_max": 279
+    },
+    {
+      "system": "MS GraphRAG",
+      "n": 1000,
+      "EM": 56.4,
+      "F1": 69.2,
+      "Contain-Acc": 67.1,
+      "LLM-Acc": 79.6,
+      "context_tokens_mean": 9718,
+      "context_tokens_max": 11700
+    },
+    {
+      "system": "UNH old retriever (full view)",
+      "n": 1000,
+      "EM": 54.5,
+      "F1": 67.5,
+      "Contain-Acc": 66.2,
+      "LLM-Acc": 77.8,
+      "context_tokens_mean": 950,
+      "context_tokens_max": 1866
+    },
+    {
+      "system": "HyGRAG",
+      "n": 1000,
+      "EM": 54.1,
+      "F1": 67.4,
+      "Contain-Acc": 64.8,
+      "LLM-Acc": 78.6,
+      "context_tokens_mean": 1044,
+      "context_tokens_max": 2136
+    },
+    {
+      "system": "MemGraphRAG",
+      "n": 1000,
+      "EM": 51.2,
+      "F1": 62.6,
+      "Contain-Acc": 60.9,
+      "LLM-Acc": 70.6,
+      "context_tokens_mean": 1306,
+      "context_tokens_max": 1309
+    },
+    {
+      "system": "UNH old retriever (hypergraph view)",
+      "n": 1000,
+      "EM": 49.1,
+      "F1": 60.5,
+      "Contain-Acc": 59.6,
+      "LLM-Acc": 70.2,
+      "context_tokens_mean": 1068,
+      "context_tokens_max": 1963
+    },
+    {
+      "system": "UNH old retriever (discourse view)",
+      "n": 1000,
+      "EM": 47.9,
+      "F1": 59.6,
+      "Contain-Acc": 57.1,
+      "LLM-Acc": 67.4,
+      "context_tokens_mean": 717,
+      "context_tokens_max": 1713
+    }
+  ]
+}

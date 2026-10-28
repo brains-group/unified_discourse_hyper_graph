@@ -1,0 +1,3 @@
+Title: Roland R-8
+
+The R-8 Human Rhythm Composer is an electronic drum machine introduced in 1989 by Roland Corporation, using PCM voices. The R-8 features velocity- and pressure-sensitive trigger pads, and the ability to create loops of beats. The device has eight individual outputs, 32-voice polyphony, and four-part multitimbral MIDI.

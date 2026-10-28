@@ -1,0 +1,25 @@
+{
+ "contract": "contract_7_term_with_riders",
+ "source": "ten_contracts_dataset",
+ "tokens_cl100k": 2302,
+ "chars": 7360,
+ "chunks_1200": 3,
+ "qa": 40,
+ "facts": 85,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 17,
+  "CAT2_RELATIONAL_LOOKUP": 6,
+  "CAT3_CONDITIONAL_REASONING": 8,
+  "CAT4_MULTIHOP_REASONING": 4,
+  "CAT5_UNANSWERABLE": 5
+ },
+ "sha256": {
+  "questions.json": "f3f85b3bbcdb734928a926804c740ca5e2a7eb42e8aed6dc858a7da2a94644b6",
+  "documents.json": "2d00acfd02a85c7a3f95a02120b929d007a34e28b99d8824266b6cdbca492025",
+  "chunks.json": "d8d15ed970f54ad5eb7140f8195884c6b3dabd7b1798bfd8fd19107cb233f0ec",
+  "chunks_logicrag.json": "d8d15ed970f54ad5eb7140f8195884c6b3dabd7b1798bfd8fd19107cb233f0ec",
+  "memgraphrag_corpus.txt": "53e7c58da37f292bc978b24203d88c08c3d528b72c6742ddd0e807c9b921843b",
+  "contract.txt": "53e7c58da37f292bc978b24203d88c08c3d528b72c6742ddd0e807c9b921843b",
+  "ms_graphrag_input/contract_7_term_with_riders.txt": "53e7c58da37f292bc978b24203d88c08c3d528b72c6742ddd0e807c9b921843b"
+ }
+}

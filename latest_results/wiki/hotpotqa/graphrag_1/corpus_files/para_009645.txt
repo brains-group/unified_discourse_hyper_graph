@@ -1,0 +1,3 @@
+Title: Piercing point
+
+In geology, a piercing point is defined as a feature (usually a geologic feature, preferably a linear feature) that is cut by a fault, then moved apart. Reconfiguring the piercing point back in its original position is the primary way geologists can find out the minimum slip, or displacement, along a fault. This can be done on a large scale (over many kilometers), a small scale (inside a single outcrop or fault trench) or even a single hand sample/rock (see image).

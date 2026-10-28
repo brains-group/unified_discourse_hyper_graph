@@ -34,45 +34,12 @@ class EvaluateResponse(dspy.Signature):
     correct_answer: str = dspy.InputField(desc="The correct fact to check for")
     evaluation: int = dspy.OutputField(desc="1 if context contains the correct answer, 0 otherwise")
 
-# class EvaluateResponse(dspy.Signature):
-#     """You are a strict fact-verification evaluator.
-
-#     Your task is to determine whether the **correct_answer** is explicitly or inferably supported by the **context**.
-
-#     Rules:
-#     - Output 1 if the correct_answer is clearly stated, paraphrased, or can be directly inferred from the context.
-#     - Output 0 if the correct_answer is absent, contradicted, or cannot be inferred from the context.
-#     - Do NOT use outside knowledge. Base your judgment solely on the provided context.
-#     - Partial matches or vague relevance are NOT sufficient — the fact must be substantively supported.
-#     """
-
-#     context: str = dspy.InputField(desc="The context retrieved from the Knowledge Graph. This is the only source of truth.")
-#     correct_answer: str = dspy.InputField(desc="The specific fact or claim to verify against the context.")
-#     evaluation: int = dspy.OutputField(desc="Binary judgment: 1 if the context substantively supports the correct_answer, 0 if it does not.")
-
 
 class AnswerQuestion(dspy.Signature):
     """Use the provided context to answer the question in 1-2 sentences."""
     context: str = dspy.InputField(desc="The context retrieved from the Knowledge Graph")
     question: str = dspy.InputField(desc="The question to answer")
     answer: str = dspy.OutputField(desc="The answer to the question based ONLY on the context")
-
-# class AnswerQuestion(dspy.Signature):
-#     """You are a precise question-answering system grounded strictly in retrieved knowledge.
-
-#     Your task is to answer the question using ONLY the information provided in the context.
-
-#     Rules:
-#     - Answer in 1-2 concise sentences. Do not over-explain.
-#     - Base your answer solely on the context. Do NOT use outside knowledge or make assumptions.
-#     - If the context does not contain enough information to answer, respond with: "The context does not contain enough information to answer this question."
-#     - Do not fabricate facts, infer beyond what is stated, or hedge unnecessarily.
-#     - Prefer direct, factual language over vague or speculative phrasing.
-#     """
-
-#     context: str = dspy.InputField(desc="The context retrieved from the Knowledge Graph. Treat this as the sole source of truth.")
-#     question: str = dspy.InputField(desc="The question to answer. Answer this and only this — do not address tangential points.")
-#     answer: str = dspy.OutputField(desc="A 1-2 sentence factual answer derived strictly from the context. Do not guess anything.")
 
 
 class EvaluateQA(dspy.Signature):
@@ -84,42 +51,6 @@ class EvaluateQA(dspy.Signature):
     correct_answer: str = dspy.InputField(desc="The ground truth correct answer")
     llm_answer: str = dspy.InputField(desc="The LLM generated answer to judge")
     score: float = dspy.OutputField(desc="Your float score (1.0, 0.5, or 0.0)")
-
-
-# class EvaluateQA(dspy.Signature):
-#     """You are a rigorous but fair answer-quality judge.
-
-#     Your task is to score an LLM-generated answer by comparing it against the ground truth correct_answer
-#     for a given question.
-
-#     Scoring rubric:
-#     - 1.0 — Fully correct: the answer captures all key facts from the correct_answer without contradiction.
-#              Paraphrasing and different word order are acceptable as long as meaning is preserved.
-#     - 0.5 — Partially correct: the answer contains the core idea but is missing a meaningful detail,
-#              is overly vague, or includes one minor inaccuracy alongside correct information.
-#     - 0.0 — Wrong or irrelevant: the answer contradicts the correct_answer, is entirely off-topic,
-#              or contains no substantively correct information.
-
-#     Rules:
-#     - Judge based on semantic meaning, not surface wording. Synonyms and paraphrases count as correct.
-#     - Do NOT penalize for stylistic differences, verbosity, or hedging language unless it obscures correctness.
-#     - Do NOT award partial credit for answers that happen to mention correct keywords without a coherent answer.
-#     - If the correct_answer has multiple distinct facts, partial omission of one warrants 0.5, omission of most warrants 0.0.
-#     - Base your judgment solely on the question and correct_answer provided — do not use outside knowledge.
-#     """
-
-#     question: str = dspy.InputField(
-#         desc="The original question that was asked."
-#     )
-#     correct_answer: str = dspy.InputField(
-#         desc="The ground truth answer. This is the reference for correctness — treat it as authoritative."
-#     )
-#     llm_answer: str = dspy.InputField(
-#         desc="The LLM-generated answer to evaluate. Compare this semantically against the correct_answer."
-#     )
-#     score: float = dspy.OutputField(
-#         desc="Your score: 1.0 (fully correct), 0.5 (partially correct), or 0.0 (wrong). No other values are valid."
-#     )
 
 
 class ResponseEvaluator(dspy.Module):
@@ -252,6 +183,136 @@ def run_qa_eval(retriever: Retriever, filepath: str, max_workers: int = 100) -> 
     return {"qa_score": avg_score, "total_pairs": len(pairs)}
 
 
+from nkg.utils.eval_utils import generate_all_plans_threaded, batch_embed_plans, batch_cross_encode_and_embed
+from nkg.retrieval.traversal import rank_paths_global_precomputed
+from nkg.retrieval.planner import generate_query_plan
+
+
+def run_batched_evaluation(
+        eval_type: str,  # "fact" or "qa"
+        dataset_filepath: str,
+        retriever: Retriever,
+        max_workers: int = 100
+):
+    logger.info(f"--- Starting Batched Evaluation for {eval_type} ---")
+
+    # 1. Load Data into a Query Dictionary format: { q_id : query_string }
+    with open(dataset_filepath, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    queries_dict = {}
+    ground_truths = {}
+
+    if eval_type == "fact":
+        items = data.get("facts", [])
+        for i, fact in enumerate(items):
+            q_id = f"fact_{i}"
+            queries_dict[q_id] = fact
+            ground_truths[q_id] = fact
+    else:
+        items = data.get("pairs", [])
+        for i, pair in enumerate(items):
+            q_id = f"qa_{i}"
+            queries_dict[q_id] = pair["question"]
+            ground_truths[q_id] = pair["answer"]
+
+    # PHASE 1: Batched LLM Planning
+    all_plans = generate_all_plans_threaded(queries_dict, generate_query_plan, max_workers=50)
+
+    # PHASE 2: Batched GPU Embedding
+    plan_embeddings_dict = batch_embed_plans(all_plans, retriever.retrieval_model)
+
+    # PHASE 3: Parallel RAM Graph Traversal
+    logger.info("Traversing graph in RAM for all queries concurrently...")
+    all_raw_paths_objects = {}
+    all_raw_paths_strings = {}
+
+    def _traverse_worker(q_id, plan_embs):
+        try:
+            paths, strings = retriever.get_raw_paths_precomputed(
+                plan_embs=plan_embs, top_k_seeds=8, max_depth=3, beam_width=5
+            )
+            return q_id, paths, strings
+        except Exception as e:
+            logger.error(f"Traversal error for {q_id}: {e}")
+            return q_id, [], []
+
+    # Use max_workers=os.cpu_count() or a fixed high number since NumPy handles concurrent read-only math efficiently
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        futures = {
+            executor.submit(_traverse_worker, q_id, plan_embs): q_id
+            for q_id, plan_embs in plan_embeddings_dict.items()
+        }
+
+        tmp = 0
+        for future in as_completed(futures):
+            q_id, paths, strings = future.result()
+            all_raw_paths_objects[q_id] = paths
+            all_raw_paths_strings[q_id] = strings
+            tmp += 1
+            print(f"Received paths for {tmp} queries")
+
+    # PHASE 4: Batched GPU Cross-Encoding and Bi-Encoding
+    ce_scores_dict, path_embs_dict = batch_cross_encode_and_embed(
+        queries_dict, all_raw_paths_strings, retriever.retrieval_model, retriever.cross_encoder
+    )
+
+    # PHASE 5: RAM Global MMR & Context Assembly
+    logger.info("Applying Global MMR and finalizing contexts...")
+    final_contexts = {}
+    tmp = 0
+    for q_id in queries_dict.keys():
+        if q_id not in ce_scores_dict or not ce_scores_dict[q_id]:
+            final_contexts[q_id] = ""
+            continue
+
+        final_strings, _ = rank_paths_global_precomputed(
+            completed_paths=all_raw_paths_objects[q_id],
+            assembled_strings=all_raw_paths_strings[q_id],
+            ce_scores=ce_scores_dict[q_id],
+            path_embeddings=path_embs_dict[q_id],
+            final_top_k=8
+        )
+        final_contexts[q_id] = "\n\n".join(final_strings)
+        tmp += 1
+
+        if tmp % 100 == 0:
+            print(f"Retrieved {tmp} contexts")
+
+    # PHASE 6: Batched LLM Judging
+    logger.info("Executing LLM Evaluators on final contexts...")
+    total_score = 0
+
+    if eval_type == "fact":
+        evaluator = ResponseEvaluator()
+
+        def _eval_worker(q_id):
+            return evaluator(context=final_contexts[q_id], correct_answer=ground_truths[q_id])
+    else:
+        evaluator = QAEvaluator()
+
+        def _eval_worker(q_id):
+            return evaluator(question=queries_dict[q_id], context=final_contexts[q_id],
+                             correct_answer=ground_truths[q_id])
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(_eval_worker, q_id): q_id for q_id in queries_dict.keys()}
+        completed = 0
+        for future in as_completed(futures):
+            try:
+                total_score += future.result()
+                completed += 1
+                if completed % 10 == 0:
+                    logger.info(f"Evaluation Progress: {completed}/{len(queries_dict)}")
+            except Exception as e:
+                logger.error(f"Evaluation Worker Failed: {e}")
+
+    avg_score = total_score / len(queries_dict)
+    logger.info(f"Evaluation Complete! Average Score: {avg_score:.4f}")
+
+    return {"score": avg_score, "total_items": len(queries_dict)}
+
+
 # ==========================================
 # ENTRY POINT & CLI PARSING
 # ==========================================
@@ -303,10 +364,12 @@ def main():
     }
 
     if args.fact_data:
-        results["fact_recall"] = run_fact_recall_eval(retriever, args.fact_data, args.workers)
+        #results["fact_recall"] = run_fact_recall_eval(retriever, args.fact_data, args.workers)
+        results["fact_recall"] = run_batched_evaluation("fact", args.fact_data, retriever, args.workers)
 
     if args.qa_data:
-        results["qa_performance"] = run_qa_eval(retriever, args.qa_data, args.workers)
+        #results["qa_performance"] = run_qa_eval(retriever, args.qa_data, args.workers)
+        results["qa_performance"] = run_batched_evaluation("qa", args.qa_data, retriever, args.workers)
 
     if not args.fact_data and not args.qa_data:
         logger.error("No datasets provided for evaluation. Please use --fact-data or --qa-data.")

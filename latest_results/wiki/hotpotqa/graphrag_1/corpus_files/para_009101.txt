@@ -1,0 +1,3 @@
+Title: Extremely high frequency
+
+Extremely high frequency (EHF) is the International Telecommunication Union (ITU) designation for the band of radio frequencies in the electromagnetic spectrum from 30 to 300 gigahertz (GHz). It lies between the super high frequency band, and the far infrared band which is also referred to as the terahertz gap. Radio waves in this band have wavelengths from ten to one millimetre, giving it the name millimetre band or millimetre wave, sometimes abbreviated MMW or mmW. Millimetre-length electromagnetic waves were first investigated in the 1890s by Bengali-Indian scientist Jagadish Chandra Bose.

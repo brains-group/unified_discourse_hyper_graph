@@ -1,0 +1,3 @@
+Title: Almeida–Pineda recurrent backpropagation
+
+Almeida–Pineda recurrent backpropagation is an extension to the backpropagation algorithm that is applicable to recurrent neural networks. It is a type of supervised learning. It was described somewhat cryptically in Richard Feynman's senior thesis, and rediscovered independently in the context of artificial neural networks by both Fernando Pineda and Luis B. Almeida.

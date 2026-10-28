@@ -1,0 +1,314 @@
+{
+ "system": "logicrag",
+ "set": "smoke",
+ "contract": "2025_pdp_contract",
+ "retrieval_file": "/home/taluka/unh_v1/evaluation_scripts/logicrag/result/contracts_smoke/2025_pdp_contract/logicrag.json",
+ "summary": {
+  "n": 10,
+  "score_all": 95.0,
+  "score_excl_cat5": 93.75,
+  "by_category": {
+   "CAT1_ATOMIC_LOOKUP": {
+    "score": 100.0,
+    "n": 2
+   },
+   "CAT2_RELATIONAL_LOOKUP": {
+    "score": 75.0,
+    "n": 2
+   },
+   "CAT3_CONDITIONAL_REASONING": {
+    "score": 100.0,
+    "n": 2
+   },
+   "CAT4_MULTIHOP_REASONING": {
+    "score": 100.0,
+    "n": 2
+   },
+   "CAT5_UNANSWERABLE": {
+    "score": 100.0,
+    "n": 2
+   }
+  },
+  "abstained_on_answerable": 0,
+  "mean_context_tokens": 155.4,
+  "empty_contexts": 0,
+  "reader_empty": 0,
+  "reader_hit_max_tokens": 0,
+  "reader_no_answer_tag": 0,
+  "judge_unparsed": 0,
+  "reader_usage": {
+   "calls": 10,
+   "prompt_tokens": 3054,
+   "completion_tokens": 1219,
+   "prompt_cache_hit_tokens": 0
+  },
+  "judge_usage": {
+   "calls": 10,
+   "prompt_tokens": 4524,
+   "completion_tokens": 1088,
+   "prompt_cache_hit_tokens": 0
+  }
+ },
+ "per_question": [
+  {
+   "id": "2025_pdp_contract/qa/0000",
+   "category": "CAT1_ATOMIC_LOOKUP",
+   "question": "What is the official name of the entity referred to as 'CMS' in the contract?",
+   "gold": "Centers for Medicare & Medicaid Services",
+   "evidence": "Centers for Medicare & Medicaid Services (hereinafter referred to as CMS)",
+   "context": "The official name of the entity referred to as 'CMS' in the contract is the **Centers for Medicare & Medicaid Services**. This is explicitly stated in the contract preamble: \"Between Centers for Medicare & Medicaid Services (hereinafter referred to as 'CMS') And...\"",
+   "context_tokens": 56,
+   "raw_response": "The context explicitly states that the entity referred to as 'CMS' in the contract is the Centers for Medicare & Medicaid Services. This is directly mentioned in the contract preamble: \"Between Centers for Medicare & Medicaid Services (hereinafter referred to as 'CMS') And...\".\n\nAnswer: The official name of the entity referred to as 'CMS' in the contract is the Centers for Medicare & Medicaid Services.",
+   "answer": "The official name of the entity referred to as 'CMS' in the contract is the Centers for Medicare & Medicaid Services.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly identifies the official name of the entity referred to as 'CMS' as the Centers for Medicare & Medicaid Services, which matches the correct_answer exactly in meaning and content. The phrasing is slightly reworded but semantically identical, with no omissions, inaccuracies, or contradictions. Therefore, it fully satisfies the criteria for a correct answer.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 194,
+    "completion_tokens": 82,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 441,
+    "completion_tokens": 81,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0001",
+   "category": "CAT1_ATOMIC_LOOKUP",
+   "question": "What is the final day of the effective period for this contract?",
+   "gold": "December 31, 2025",
+   "evidence": "This contract is effective from the date of CMS's authorized representative's signature through December 31, 2025.",
+   "context": "The final day of the effective period for this contract is **December 31, 2025**. This is explicitly stated in Article VI.A of the contract, which specifies that the contract is effective from the date of CMS's authorized representative's signature through December 31, 2025. The contract is renewable for successive one-year periods thereafter, but the current term ends on December 31, 2025.",
+   "context_tokens": 84,
+   "raw_response": "The context explicitly states that the contract is effective through December 31, 2025, as specified in Article VI.A. This date is described as the final day of the effective period for the contract. There is no indication in the context that this date is subject to change or that another date supersedes it.\n\nAnswer: The final day of the effective period for this contract is December 31, 2025.",
+   "answer": "The final day of the effective period for this contract is December 31, 2025.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer directly states the same date as the correct answer: December 31, 2025. It accurately identifies the final day of the effective period for the contract without any contradictions, omissions, or inaccuracies. The wording is slightly rephrased but preserves the exact same meaning. Therefore, it fully matches the correct answer.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 226,
+    "completion_tokens": 92,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 438,
+    "completion_tokens": 80,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0002",
+   "category": "CAT2_RELATIONAL_LOOKUP",
+   "question": "Which official has the authority to determine if an entity is eligible to operate a PDP under 42 CFR § 423.503?",
+   "gold": "The Administrator of CMS",
+   "evidence": "an entity that has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503",
+   "context": "The Administrator of the Centers for Medicare & Medicaid Services (CMS) has the authority to determine if an entity is eligible to operate a Prescription Drug Plan (PDP) under 42 CFR § 423.503. This is explicitly stated in the contract language: \"PDP Sponsor, an entity that has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503...\" This confirms that the Administrator of CMS is the official responsible for making the eligibility determination.",
+   "context_tokens": 105,
+   "raw_response": "Thought: The context explicitly states that the Administrator of the Centers for Medicare & Medicaid Services (CMS) has the authority to determine if an entity is eligible to operate a Prescription Drug Plan (PDP) under 42 CFR § 423.503. This is confirmed by the contract language quoted, which identifies the Administrator of CMS as the official responsible for making the eligibility determination.\n\nAnswer: The Administrator of the Centers for Medicare & Medicaid Services (CMS) has the authority to determine if an entity is eligible to operate a PDP under 42 CFR § 423.503.",
+   "answer": "The Administrator of the Centers for Medicare & Medicaid Services (CMS) has the authority to determine if an entity is eligible to operate a PDP under 42 CFR § 423.503.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly identifies the Administrator of CMS as the official with authority to determine eligibility for operating a PDP under 42 CFR § 423.503. This matches the correct answer exactly in meaning and specificity. The addition of the full name \"Centers for Medicare & Medicaid Services\" is a valid expansion and does not alter the meaning. There are no inaccuracies or omissions. The answer fully captures the key fact from the correct answer.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 267,
+    "completion_tokens": 126,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 472,
+    "completion_tokens": 103,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0003",
+   "category": "CAT2_RELATIONAL_LOOKUP",
+   "question": "To whom does the PDP Sponsor grant a license to use its plan formulary for Part D administration?",
+   "gold": "The Government",
+   "evidence": "hereby grants to the Government, and any person or entity who might receive the formulary from the Government, a non-exclusive license to use all or any portion of the formulary",
+   "context": "The PDP Sponsor grants a non-exclusive license to the U.S. Government, and any person or entity that receives the formulary from the Government, to use all or any portion of the plan formulary for any purpose related to the administration of the Medicare Part D program. This includes, but is not limited to, publicly distributing, displaying, publishing, or reconfiguring the formulary information through any medium (e.g., www.medicare.gov) via electronic, print, or other distribution methods. This license is granted pursuant to Article III, Section C of the contract, which requires the PDP Sponsor to submit formulary information, including changes, to CMS.",
+   "context_tokens": 135,
+   "raw_response": "Thought: The context states that the PDP Sponsor grants a non-exclusive license to the U.S. Government and any person or entity that receives the formulary from the Government. This license allows them to use all or any portion of the plan formulary for purposes related to the administration of the Medicare Part D program. The license is granted pursuant to a contractual requirement to submit formulary information to CMS.\n\nAnswer: The PDP Sponsor grants a license to the U.S. Government and any person or entity that receives the formulary from the Government to use the plan formulary for Part D administration.",
+   "answer": "The PDP Sponsor grants a license to the U.S. Government and any person or entity that receives the formulary from the Government to use the plan formulary for Part D administration.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 0.5,
+   "judge_unparsed": false,
+   "judge_response": "The correct answer states that the PDP Sponsor grants a license to \"The Government.\" The LLM answer expands this by stating the license is granted to \"the U.S. Government and any person or entity that receives the formulary from the Government.\" While the core fact—that the government is the primary recipient—is correct, the addition of \"any person or entity that receives the formulary from the Government\" introduces an unsupported claim not present in the correct answer. The correct answer does not specify any secondary recipients, and the LLM answer implies a broader licensing arrangement that goes beyond the scope of the ground truth. Since the correct answer is specific and concise, and the LLM answer adds a detail not present or implied in the correct answer, this constitutes a meaningful inaccuracy that contradicts the precision of the ground truth.\n\nScore: 0.5",
+   "reader_usage": {
+    "prompt_tokens": 276,
+    "completion_tokens": 120,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 453,
+    "completion_tokens": 171,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0004",
+   "category": "CAT3_CONDITIONAL_REASONING",
+   "question": "What is the status of the contract document if the PDP Sponsor had a contract for Year 2024?",
+   "gold": "It is considered a renewal of the existing contract",
+   "evidence": "If PDP Sponsor had a contract with CMS for Contract Year 2024... this document is considered a renewal of the existing contract.",
+   "context": "**Refined Summary:**\n\nIf the PDP Sponsor had a contract for Year 2024, this document constitutes a renewal of that existing contract, effective from the date of CMS’s authorized representative’s signature through December 31, 2025. The terms of this document supersede the 2024 contract, but do not extinguish or interrupt any pending obligations, actions, or data transfer requirements arising under the 2024 or prior-year contracts.\n\nUnder 42 CFR § 423.507(a)(2), if the PDP Sponsor does not intend to renew its contract, it must:\n- Notify CMS in writing by the first Monday of June in the year the contract ends (June 3, 2024, for a 2024 contract ending December 31, 2024); and\n- Provide written notice to each Medicare enrollee at least 90 days before nonrenewal becomes effective, including information on alternative qualified prescription drug coverage options (e.g., Medicare Advantage Prescription Drug plans, Medicare cost plans offering Part D, and other PDPs). Notices or scripts must receive CMS approval prior to use.",
+   "context_tokens": 228,
+   "raw_response": "The context states that if the PDP Sponsor had a contract for Year 2024, this document constitutes a renewal of that existing contract. It is effective from the date of CMS’s authorized representative’s signature through December 31, 2025. The terms of this document supersede the 2024 contract, but do not extinguish or interrupt any pending obligations, actions, or data transfer requirements from the 2024 or prior-year contracts. Therefore, the status of the contract document is that it is a renewal of the 2024 contract.\n\nAnswer: This document is a renewal of the PDP Sponsor’s 2024 contract, effective from the date of CMS’s authorized representative’s signature through December 31, 2025.",
+   "answer": "This document is a renewal of the PDP Sponsor’s 2024 contract, effective from the date of CMS’s authorized representative’s signature through December 31, 2025.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly identifies that the contract document is a renewal of the existing contract, which matches the key fact in the correct answer. The LLM adds additional details about the effective date and end date (through December 31, 2025), which are not contradicted by the correct answer and do not detract from the core fact. The mention of \"CMS’s authorized representative’s signature\" is plausible contextually and does not conflict with the correct answer. The answer fully captures the essential meaning: the document is a renewal. No critical information is omitted, and no inaccuracies are present.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 166,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 467,
+    "completion_tokens": 131,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0005",
+   "category": "CAT3_CONDITIONAL_REASONING",
+   "question": "What may happen if a licensure waiver expires and the sponsor fails to obtain a state license?",
+   "gold": "CMS may delete affected PDP Regions from the service area",
+   "evidence": "PDP Sponsor agrees that expiration of the licensure waiver (and the failure to obtain a license from the relevant State) may be the basis for CMS deleting from PDP Sponsor's service area those PDP Regions affected",
+   "context": "**Refined Summary:**\n\nIf a licensure waiver expires and the sponsor fails to obtain a state license, CMS may take the following enforcement actions:\n\n- **Delete affected PDP Regions from the sponsor’s service area**: CMS may remove from the sponsor’s service area any PDP Regions impacted by the expiration of the licensure waiver, as the sponsor is no longer qualified to operate in those areas. This is explicitly agreed to by the PDP Sponsor in the contract.\n\n- **Terminate or non-renew the contract**: If the waiver expiration results in the sponsor no longer being qualified to offer a PDP plan in any PDP Region, CMS may terminate the contract or decline to renew it.\n\n**Waiver Duration and Validity:**\n- For sponsors operating in a state using a waiver under **42 CFR § 423.410**, the waiver is valid for **three consecutive program years**.\n- For sponsors operating in a state using a waiver under **42 CFR § 423.415**, the waiver is valid for a period determined by the Secretary of HHS to allow timely processing of the license application—**up to one year only**, beginning **January 1 of the contract year**",
+   "context_tokens": 240,
+   "raw_response": "Thought: The context states that if a licensure waiver expires and the sponsor fails to obtain a state license, CMS may take two enforcement actions: (1) delete affected PDP Regions from the sponsor’s service area, as the sponsor is no longer qualified to operate in those areas, and (2) terminate or non-renew the contract if the sponsor is no longer qualified to offer a PDP plan in any PDP Region. These actions are explicitly agreed to by the PDP Sponsor in the contract.\n\nAnswer: If a licensure waiver expires and the sponsor fails to obtain a state license, CMS may delete affected PDP Regions from the sponsor’s service area and may terminate or decline to renew the contract.",
+   "answer": "If a licensure waiver expires and the sponsor fails to obtain a state license, CMS may delete affected PDP Regions from the sponsor’s service area and may terminate or decline to renew the contract.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly captures the core consequence mentioned in the correct answer: CMS may delete affected PDP Regions from the service area. The additional information about termination or decline to renew the contract is not contradicted by the correct answer and does not introduce an inaccuracy. Since the correct answer only specifies one consequence (deletion of PDP Regions), and the LLM answer includes that and adds a plausible but not explicitly stated consequence, the answer remains consistent with the correct answer and does not deviate in meaning. The extra detail does not undermine correctness and is within the bounds of reasonable interpretation.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 144,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 462,
+    "completion_tokens": 126,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0006",
+   "category": "CAT4_MULTIHOP_REASONING",
+   "question": "What happens to pending obligations from the 2024 contract year when the 2025 contract is signed?",
+   "gold": "They are not extinguished or interrupted",
+   "evidence": "the parties' execution of this contract does not extinguish or interrupt any pending obligations or actions that may have arisen under the 2024 or prior year contracts.",
+   "context": "When the 2025 contract is signed, pending obligations from the 2024 contract year are not extinguished or interrupted. According to Article I, Section D of the contract, while the 2025 contract supersedes the terms of the 2024 contract, the execution of the new contract does not affect any pending obligations or actions that arose under the 2024 or prior-year contracts. This means that any unresolved commitments, liabilities, or requirements from the 2024 contract remain in effect and must be fulfilled as required by law and prior contract terms.",
+   "context_tokens": 113,
+   "raw_response": "Thought: The context explicitly states that when the 2025 contract is signed, pending obligations from the 2024 contract year are not extinguished or interrupted. It further clarifies that these obligations remain in effect and must be fulfilled according to law and prior contract terms, as per Article I, Section D. Therefore, the pending obligations from the 2024 contract year continue to be valid and enforceable after the 2025 contract is signed.\n\nAnswer: Pending obligations from the 2024 contract year remain in effect and must be fulfilled as required by law and prior contract terms when the 2025 contract is signed.",
+   "answer": "Pending obligations from the 2024 contract year remain in effect and must be fulfilled as required by law and prior contract terms when the 2025 contract is signed.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly conveys that pending obligations from the 2024 contract year continue to be valid and must still be fulfilled after the 2025 contract is signed. This aligns with the correct answer's key point that these obligations are not extinguished or interrupted. The LLM's phrasing—“remain in effect and must be fulfilled as required by law and prior contract terms”—accurately reflects the meaning of “not extinguished or interrupted,” even though it adds elaboration about legal and contractual requirements. This additional detail does not contradict the correct answer and enhances clarity without introducing inaccuracies.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 270,
+    "completion_tokens": 138,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 462,
+    "completion_tokens": 132,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0007",
+   "category": "CAT4_MULTIHOP_REASONING",
+   "question": "How do the claim submission timelines for long-term care pharmacies compare to the payment timelines for retail pharmacies?",
+   "gold": "LTC pharmacies have 30 to 90 days to submit claims, while retail pharmacies must be paid by the sponsor within 14 to 30 days of receipt depending on submission method",
+   "evidence": "transmit payment with respect to all claims submitted by pharmacies... within 14 days of receipt of an electronically submitted claim or within 30 days of receipt of a claim submitted otherwise... long-term care facility will have not less than 30 days (but not more than 90 days) to submit claims",
+   "context": "Long-term care pharmacies have a longer claim submission timeline compared to retail pharmacies. According to 42 CFR § 423.520, pharmacies located in, or contracting with, a long-term care facility must be given not less than 30 days (and not more than 90 days) to submit claims for reimbursement. In contrast, payment timelines for retail pharmacies are shorter: PDP Sponsors must issue payment within 14 days of receiving an electronically submitted claim or within 30 days of receiving a paper claim. This distinction reflects the different operational needs and billing cycles of long-term care facilities versus retail pharmacies.",
+   "context_tokens": 121,
+   "raw_response": "Long-term care pharmacies have a claim submission timeline of not less than 30 days and not more than 90 days to submit claims for reimbursement. In contrast, retail pharmacies have a shorter payment timeline: PDP Sponsors must issue payment within 14 days of receiving an electronically submitted claim or within 30 days of receiving a paper claim. Therefore, the claim submission timeline for long-term care pharmacies is longer than the payment timelines for retail pharmacies.\n\nAnswer: Long-term care pharmacies have a longer claim submission timeline (30 to 90 days) compared to the payment timelines for retail pharmacies (14 days for electronic claims, 30 days for paper claims).",
+   "answer": "Long-term care pharmacies have a longer claim submission timeline (30 to 90 days) compared to the payment timelines for retail pharmacies (14 days for electronic claims, 30 days for paper claims).",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly captures the key comparison: LTC pharmacies have a 30 to 90-day window to submit claims, while retail pharmacies are paid within 14 to 30 days depending on submission method. The answer accurately reflects the longer claim submission timeline for LTC pharmacies and the shorter, method-dependent payment timelines for retail pharmacies. It correctly specifies 14 days for electronic claims and 30 days for paper claims, which aligns with the correct answer's mention of \"14 to 30 days of receipt depending on submission method.\" The paraphrasing is accurate and semantically equivalent.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 270,
+    "completion_tokens": 139,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 495,
+    "completion_tokens": 131,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0008",
+   "category": "CAT5_UNANSWERABLE",
+   "question": "What is the monthly premium amount for this PDP plan?",
+   "gold": "Not specified in this policy.",
+   "evidence": "N/A",
+   "context": "The monthly premium amount for this PDP plan cannot be determined from the provided contract materials. While the contract explicitly requires the PDP Sponsor to submit bids—including detailed premium, benefit, and cost-sharing information—by the applicable deadline under Subpart F of 42 CFR Part 423 (as stipulated in Article II, Section G), and confirms that premiums must be calculated and collected in accordance with 42 CFR §§ 423.286 and 423.293, no specific dollar amount is disclosed in the document.\n\nThe contract references the 2025 program year and acknowledges that Part D benefits, including premium details, are defined by the CMS-approved bid(s) submitted annually by the PDP Sponsor. These bids are to be updated each year upon contract renewal, with the 2025 bid information to be included in the renewed contracting materials. However, the current document does not contain the finalized, CMS-approved bid data for 2025, including the actual premium amount.\n\nAccording to CMS data release requirements under 42 CFR Part 423 Subpart K, summary reconciled payment data and plan-specific bid information—including premiums—are publicly available after the reconciliation",
+   "context_tokens": 229,
+   "raw_response": "The context states that the monthly premium amount for the PDP plan cannot be determined from the provided contract materials. It explains that while the contract requires the PDP Sponsor to submit bids with detailed premium information, the current document does not include the finalized, CMS-approved bid data for 2025, which would contain the actual premium amount. The context also notes that such information is publicly available after reconciliation but is not included in the current document.\n\nAnswer: Not specified in this policy.",
+   "answer": "Not specified in this policy.",
+   "finish_reason": "stop",
+   "abstained": true,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The correct answer states that the monthly premium amount is not specified in the policy. The LLM answer accurately reflects this by stating \"Not specified in this policy,\" which matches the correct answer in both meaning and wording. There is no contradiction, omission, or inaccuracy. The answer correctly conveys that the information is unavailable in the provided policy.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 99,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 76,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/qa/0009",
+   "category": "CAT5_UNANSWERABLE",
+   "question": "What is the exact list of drugs included in the plan formulary?",
+   "gold": "Not specified in this policy.",
+   "evidence": "N/A",
+   "context": "**Refined Summary:**\n\nThe exact list of drugs included in the plan formulary is not disclosed within the contract documentation itself. However, under **Article III, Section C (CMS License for Use of Plan Formulary)**, the PDP Sponsor is contractually obligated to submit its full formulary—including all drugs covered and any annual changes—to CMS as part of its bid submission under **Subpart F of 42 CFR Part 423**. These formulary submissions are required annually and must be approved by CMS each year, with the approved formulary reflected in the **Medicare Advantage Attestation of Benefit Plan**, which is updated annually upon contract renewal to reflect the current year’s approved benefits.\n\nCMS holds a **non-exclusive license** to use the formulary for any purpose related to the administration of the Medicare Part D program, including public dissemination via **www.medicare.gov**, ensuring that the complete and current formulary is made available to beneficiaries and the public. This public availability is further reinforced by CMS’s requirement to release formulary data as part of its transparency obligations under **42 CFR Part 423 Subpart K**.\n\nThe formulary must comply with all applicable requirements under **42 CFR Part",
+   "context_tokens": 243,
+   "raw_response": "The context states that the exact list of drugs included in the plan formulary is not disclosed within the contract documentation itself. While the PDP Sponsor is required to submit the full formulary to CMS annually under Subpart F of 42 CFR Part 423, and CMS holds a non-exclusive license to use and publicly disseminate the formulary via www.medicare.gov, the specific list of drugs is not provided in the given text. Therefore, the exact list cannot be determined from the information presented.\n\nAnswer: Not specified in this policy.",
+   "answer": "Not specified in this policy.",
+   "finish_reason": "stop",
+   "abstained": true,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly states that the information is not specified in the policy, which directly matches the correct answer. There is no contradiction, and all key information from the correct answer is preserved. The phrasing is slightly different but semantically identical.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 113,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 57,
+    "prompt_cache_hit_tokens": 0
+   }
+  }
+ ]
+}

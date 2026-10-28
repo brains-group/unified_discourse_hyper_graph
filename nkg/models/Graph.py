@@ -80,7 +80,7 @@ class Graph:
         entity_ids = self.add_entities(fact.entities)
         for entity_id in entity_ids:
             entity = self.entities[entity_id]
-            self.network.add_edge(id, entity_id, edge_type="fact_entity", label=entity.type)
+            self.network.add_edge(id, entity_id, edge_type="fact_entity", label=entity.role)
             # Create the reverse entity→fact edge using the LLM-generated relation label.
             # Falls back to entity type if no label was produced for this entity.
             relation_label = name_to_relation.get(entity.name, entity.type)
@@ -297,16 +297,24 @@ class Graph:
         self.fact_entities_embeddings = self.model.encode(fact_entities)
         self.fact_answered_questions_embeddings = self.model.encode(fact_answered_questions)
         self.fact_follow_up_questions_embeddings = self.model.encode(fact_follow_up_questions)
+        self.fact_id_to_idx = {fact_id: i for i, fact_id in enumerate(self.fact_ids)}
 
     def get_relevant_seeds(self, fact, top_k: int = 8, get_all: bool = False,
                            sent_weight: float = 1.0, topic_weight: float = 1.0,
-                           entity_weight: float = 1.0, questions_weight: float = 1.0) -> tuple[list[str], list[float]]:
+                           entity_weight: float = 1.0, questions_weight: float = 1.0,
+                           questions_mode: str = "follow_up_to_answered") -> tuple[list[str], list[float]]:
         """
         Use weighted rank fusion across multiple embedding dimensions to retrieve top-k fact IDs.
 
         Weight parameters control the contribution of each similarity dimension.
         Set a weight to 0.0 to ignore that dimension entirely.
         All weights default to 1.0 to preserve the original equal-weighting behavior.
+
+        questions_mode controls the asymmetric matching used for the "questions" dimension:
+          "follow_up_to_answered"      — this fact's follow-up questions vs. other facts' answered
+                                          questions (original behavior).
+          "follow_up_to_fact_sentence" — this fact's follow-up questions vs. other facts' sentences.
+          "fact_sentence_to_follow_up" — this fact's sentence vs. other facts' follow-up questions.
         """
 
         # 1. Format query dimensions identically to init_fact_embeddings
@@ -325,8 +333,16 @@ class Graph:
         sent_scores = cosine_similarity(query_sent_embedding, self.fact_sent_embeddings).flatten()
         topic_scores = cosine_similarity(query_topic_embedding, self.fact_topic_embeddings).flatten()
         entity_scores = cosine_similarity(query_entity_embedding, self.fact_entities_embeddings).flatten()
-        questions_scores = cosine_similarity(query_follow_up_embeddings,
-                                             self.fact_answered_questions_embeddings).flatten()
+
+        if questions_mode == "follow_up_to_fact_sentence":
+            questions_scores = cosine_similarity(query_follow_up_embeddings,
+                                                 self.fact_sent_embeddings).flatten()
+        elif questions_mode == "fact_sentence_to_follow_up":
+            questions_scores = cosine_similarity(query_sent_embedding,
+                                                 self.fact_follow_up_questions_embeddings).flatten()
+        else:
+            questions_scores = cosine_similarity(query_follow_up_embeddings,
+                                                 self.fact_answered_questions_embeddings).flatten()
 
         # 4. Weighted combination — each dimension scaled by its weight
         combined_scores = (
@@ -337,6 +353,71 @@ class Graph:
         )
 
         # 5. Sort and Retrieve Top-K
+        top_indices = np.argsort(combined_scores)[::-1]
+
+        if not get_all and top_k > 0:
+            top_indices = top_indices[:top_k]
+
+        top_ids = [self.fact_ids[i] for i in top_indices]
+        top_scores = [combined_scores[i] for i in top_indices]
+
+        return top_ids, top_scores
+
+    def _unit_fact_embeddings(self, attr: str) -> np.ndarray:
+        """Row-normalised copy of the fact embedding matrix `attr` (zero rows stay zero, as in sklearn's
+        cosine_similarity), cached until init_fact_embeddings replaces that matrix."""
+        matrix = getattr(self, attr)
+        cache = self.__dict__.setdefault("_unit_embedding_cache", {})
+        hit = cache.get(attr)
+        if hit is not None and hit[0] is matrix:
+            return hit[1]
+        m = np.asarray(matrix)
+        norms = np.linalg.norm(m, axis=1, keepdims=True)
+        norms[norms == 0] = 1.0
+        unit = m / norms
+        cache[attr] = (matrix, unit)
+        return unit
+
+    def get_relevant_seeds_by_id(self, fact_id, top_k: int = 8, get_all: bool = False,
+                                  sent_weight: float = 1.0, topic_weight: float = 1.0,
+                                  entity_weight: float = 1.0, questions_weight: float = 1.0,
+                                  questions_mode: str = "follow_up_to_answered") -> tuple[list[str], list[float]]:
+        """
+        Same ranking as get_relevant_seeds, but for a fact that's already embedded in
+        init_fact_embeddings — looks up its query embeddings by index instead of calling
+        self.model.encode() again. Calling get_relevant_seeds() once per fact to build an
+        all-pairs similarity graph re-encodes every fact's sentence/topics/entities/
+        follow-up-questions from scratch (4 single-item SentenceTransformer calls per
+        fact), which dominates runtime at scale since embeddings are already available.
+        """
+        idx = self.fact_id_to_idx[fact_id]
+        # Cosine similarity as a dot product of row-normalised matrices, normalised once and cached:
+        # sklearn's cosine_similarity re-normalises the whole (n_facts x dim) matrix on every call, which
+        # made building an all-facts similarity graph O(n_facts^2 * dim) in normalisation alone (~0.4 s
+        # per fact at 28k facts). Same scores (up to float rounding).
+        sent = self._unit_fact_embeddings("fact_sent_embeddings")
+        topic = self._unit_fact_embeddings("fact_topic_embeddings")
+        entities = self._unit_fact_embeddings("fact_entities_embeddings")
+        follow_up = self._unit_fact_embeddings("fact_follow_up_questions_embeddings")
+
+        sent_scores = sent @ sent[idx]
+        topic_scores = topic @ topic[idx]
+        entity_scores = entities @ entities[idx]
+
+        if questions_mode == "follow_up_to_fact_sentence":
+            questions_scores = sent @ follow_up[idx]
+        elif questions_mode == "fact_sentence_to_follow_up":
+            questions_scores = follow_up @ sent[idx]
+        else:
+            questions_scores = self._unit_fact_embeddings("fact_answered_questions_embeddings") @ follow_up[idx]
+
+        combined_scores = (
+            sent_weight      * sent_scores +
+            topic_weight     * topic_scores +
+            entity_weight    * entity_scores +
+            questions_weight * questions_scores
+        )
+
         top_indices = np.argsort(combined_scores)[::-1]
 
         if not get_all and top_k > 0:

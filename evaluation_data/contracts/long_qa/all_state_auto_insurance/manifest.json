@@ -1,0 +1,25 @@
+{
+ "contract": "all_state_auto_insurance",
+ "source": "long_qa (QA only) from long",
+ "tokens_cl100k": 13687,
+ "chars": 71229,
+ "chunks_1200": 13,
+ "qa": 85,
+ "facts": 0,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 20,
+  "CAT2_RELATIONAL_LOOKUP": 20,
+  "CAT3_CONDITIONAL_REASONING": 20,
+  "CAT4_MULTIHOP_REASONING": 20,
+  "CAT5_UNANSWERABLE": 5
+ },
+ "sha256": {
+  "questions.json": "41094a4bb427f776cfd33ab5239d1857dc9d8883bab9c91fd46e1f1a6b8dce2d",
+  "documents.json": "49781da1179c980496d806831a304b37ccd84e98cb1ff48d83518c7ab089d528",
+  "chunks.json": "d225104dbf9b43571c278ed1dd667e2a80d0ef4411a24c15ebfb3c27d989c86f",
+  "chunks_logicrag.json": "d225104dbf9b43571c278ed1dd667e2a80d0ef4411a24c15ebfb3c27d989c86f",
+  "memgraphrag_corpus.txt": "684e36ba471f8d92d1e5bc4c224974e8b060a2c35c9df982f93f320af13085a2",
+  "contract.txt": "684e36ba471f8d92d1e5bc4c224974e8b060a2c35c9df982f93f320af13085a2",
+  "ms_graphrag_input/all_state_auto_insurance.txt": "684e36ba471f8d92d1e5bc4c224974e8b060a2c35c9df982f93f320af13085a2"
+ }
+}

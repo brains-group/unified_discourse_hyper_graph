@@ -1,0 +1,3 @@
+Title: De Sitter–Schwarzschild metric
+
+In general relativity, the de Sitter–Schwarzschild solution describes a black hole in a causal patch of de Sitter space. Unlike a flat-space black hole, there is a largest possible de Sitter black hole, which is the Nariai spacetime. The Nariai limit has no singularities, the cosmological and black hole horizons have the same area, and they can be mapped to each other by a discrete reflection symmetry in any causal patch.

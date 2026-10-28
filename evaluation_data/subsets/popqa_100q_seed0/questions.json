@@ -1,0 +1,1633 @@
+[
+ {
+  "id": "popqa_0011",
+  "question": "What is Derek Wheatley's occupation?",
+  "answer": "novelist",
+  "answer_aliases": [
+   "novelist",
+   "barrister",
+   "barrister-at-law",
+   "Bar-at-law"
+  ],
+  "relation": "occupation",
+  "subject": "Derek Wheatley",
+  "block_start": 275,
+  "block_end": 305,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0018",
+  "question": "What is Jim Brown's occupation?",
+  "answer": "radio personality",
+  "answer_aliases": [
+   "radio personality",
+   "radio presenter",
+   "radio hostess",
+   "host",
+   "hostess",
+   "radio host",
+   "radio jockey",
+   "radio program boss",
+   "RJ"
+  ],
+  "relation": "occupation",
+  "subject": "Jim Brown",
+  "block_start": 451,
+  "block_end": 475,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0024",
+  "question": "What is Kazuyoshi Sekine's occupation?",
+  "answer": "playwright",
+  "answer_aliases": [
+   "playwright",
+   "dramatist",
+   "playwrite",
+   "scriptwriter"
+  ],
+  "relation": "occupation",
+  "subject": "Kazuyoshi Sekine",
+  "block_start": 600,
+  "block_end": 625,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0028",
+  "question": "What is Peter Murnoy's occupation?",
+  "answer": "politician",
+  "answer_aliases": [
+   "politician",
+   "political leader",
+   "political figure",
+   "polit.",
+   "pol"
+  ],
+  "relation": "occupation",
+  "subject": "Peter Murnoy",
+  "block_start": 700,
+  "block_end": 724,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0032",
+  "question": "What is Masayoshi Nataniya's occupation?",
+  "answer": "politician",
+  "answer_aliases": [
+   "politician",
+   "political leader",
+   "political figure",
+   "polit.",
+   "pol"
+  ],
+  "relation": "occupation",
+  "subject": "Masayoshi Nataniya",
+  "block_start": 799,
+  "block_end": 824,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0067",
+  "question": "What is Ivan Kulichenko's occupation?",
+  "answer": "politician",
+  "answer_aliases": [
+   "politician",
+   "political leader",
+   "political figure",
+   "polit.",
+   "pol"
+  ],
+  "relation": "occupation",
+  "subject": "Ivan Kulichenko",
+  "block_start": 1671,
+  "block_end": 1696,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0081",
+  "question": "What is Pierre Abraham's occupation?",
+  "answer": "journalist",
+  "answer_aliases": [
+   "journalist",
+   "journo",
+   "journalists"
+  ],
+  "relation": "occupation",
+  "subject": "Pierre Abraham",
+  "block_start": 2022,
+  "block_end": 2044,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0084",
+  "question": "What is Fidel Antuña Batista's occupation?",
+  "answer": "politician",
+  "answer_aliases": [
+   "politician",
+   "political leader",
+   "political figure",
+   "polit.",
+   "pol"
+  ],
+  "relation": "occupation",
+  "subject": "Fidel Antuña Batista",
+  "block_start": 2094,
+  "block_end": 2117,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0114",
+  "question": "What is Jorge Traverso's occupation?",
+  "answer": "journalist",
+  "answer_aliases": [
+   "journalist",
+   "journo",
+   "journalists"
+  ],
+  "relation": "occupation",
+  "subject": "Jorge Traverso",
+  "block_start": 2832,
+  "block_end": 2857,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0143",
+  "question": "In what city was Eric Defoort born?",
+  "answer": "Ypres",
+  "answer_aliases": [
+   "Ypres",
+   "leper"
+  ],
+  "relation": "place of birth",
+  "subject": "Eric Defoort",
+  "block_start": 3552,
+  "block_end": 3577,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0150",
+  "question": "In what city was Bob Warlick born?",
+  "answer": "Hickory",
+  "answer_aliases": [
+   "Hickory",
+   "Hickory, North Carolina"
+  ],
+  "relation": "place of birth",
+  "subject": "Bob Warlick",
+  "block_start": 3727,
+  "block_end": 3755,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0154",
+  "question": "In what city was Amoene van Haersolte born?",
+  "answer": "Utrecht",
+  "answer_aliases": [
+   "Utrecht",
+   "Utreg",
+   "Utrecht (city)"
+  ],
+  "relation": "place of birth",
+  "subject": "Amoene van Haersolte",
+  "block_start": 3824,
+  "block_end": 3848,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0177",
+  "question": "In what city was Bruno Nöckler born?",
+  "answer": "Prettau",
+  "answer_aliases": [
+   "Prettau",
+   "Predoi"
+  ],
+  "relation": "place of birth",
+  "subject": "Bruno Nöckler",
+  "block_start": 4392,
+  "block_end": 4417,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0203",
+  "question": "In what city was Terry Hunte born?",
+  "answer": "Saint Philip",
+  "answer_aliases": [
+   "Saint Philip"
+  ],
+  "relation": "place of birth",
+  "subject": "Terry Hunte",
+  "block_start": 5036,
+  "block_end": 5063,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0206",
+  "question": "In what city was Grant Bramwell born?",
+  "answer": "Gisborne",
+  "answer_aliases": [
+   "Gisborne",
+   "Gisborne, New Zealand"
+  ],
+  "relation": "place of birth",
+  "subject": "Grant Bramwell",
+  "block_start": 5106,
+  "block_end": 5131,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0210",
+  "question": "In what city was Hansi Niese born?",
+  "answer": "Vienna",
+  "answer_aliases": [
+   "Vienna",
+   "Wien",
+   "Vienna, Austria",
+   "W"
+  ],
+  "relation": "place of birth",
+  "subject": "Hansi Niese",
+  "block_start": 5205,
+  "block_end": 5227,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0214",
+  "question": "In what city was Charles Plumer born?",
+  "answer": "Canons Park",
+  "answer_aliases": [
+   "Canons Park"
+  ],
+  "relation": "place of birth",
+  "subject": "Charles Plumer",
+  "block_start": 5299,
+  "block_end": 5330,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0254",
+  "question": "In what city was Gyula Czimra born?",
+  "answer": "Budapest",
+  "answer_aliases": [
+   "Budapest",
+   "Buda Pest",
+   "Buda-Pest",
+   "Budapešť",
+   "Budapesta",
+   "Budapeszt",
+   "Buda",
+   "Ofen",
+   "Budín",
+   "Budim",
+   "Budon",
+   "Pest",
+   "Pešť",
+   "Pešta",
+   "Óbuda",
+   "Alt-Ofen",
+   "Kőbánya"
+  ],
+  "relation": "place of birth",
+  "subject": "Gyula Czimra",
+  "block_start": 6279,
+  "block_end": 6303,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0263",
+  "question": "In what city was Mimoun Ouled Radi born?",
+  "answer": "Amsterdam",
+  "answer_aliases": [
+   "Amsterdam",
+   "Mokum",
+   "Amsterdam, NL",
+   "Amsterdam, Netherlands",
+   "A'dam"
+  ],
+  "relation": "place of birth",
+  "subject": "Mimoun Ouled Radi",
+  "block_start": 6502,
+  "block_end": 6528,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0273",
+  "question": "In what city was Gösta Eriksson born?",
+  "answer": "Vaxholm",
+  "answer_aliases": [
+   "Vaxholm"
+  ],
+  "relation": "place of birth",
+  "subject": "Gösta Eriksson",
+  "block_start": 6753,
+  "block_end": 6773,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0275",
+  "question": "In what city was Pierre-Yves Barré born?",
+  "answer": "Paris",
+  "answer_aliases": [
+   "Paris",
+   "City of Light",
+   "Paris, France"
+  ],
+  "relation": "place of birth",
+  "subject": "Pierre-Yves Barré",
+  "block_start": 6803,
+  "block_end": 6827,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0276",
+  "question": "In what city was Todd Sieben born?",
+  "answer": "Geneseo",
+  "answer_aliases": [
+   "Geneseo",
+   "Geneseo, Illinois"
+  ],
+  "relation": "place of birth",
+  "subject": "Todd Sieben",
+  "block_start": 6827,
+  "block_end": 6852,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0302",
+  "question": "What genre is The Gap?",
+  "answer": "comedy-drama",
+  "answer_aliases": [
+   "comedy-drama",
+   "dramedy",
+   "comedic drama",
+   "tragicomedy",
+   "seriocomedy",
+   "comedy drama",
+   "dramatic comedy",
+   "Comedy-drama, dramedy"
+  ],
+  "relation": "genre",
+  "subject": "The Gap",
+  "block_start": 7459,
+  "block_end": 7484,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0325",
+  "question": "What genre is Cut?",
+  "answer": "mandopop",
+  "answer_aliases": [
+   "mandopop",
+   "Mandarin popular music",
+   "mandapop"
+  ],
+  "relation": "genre",
+  "subject": "Cut",
+  "block_start": 8012,
+  "block_end": 8040,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0335",
+  "question": "What genre is Progression?",
+  "answer": "trance",
+  "answer_aliases": [
+   "trance",
+   "trance music",
+   "Trance"
+  ],
+  "relation": "genre",
+  "subject": "Progression",
+  "block_start": 8259,
+  "block_end": 8284,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0336",
+  "question": "What genre is The Take?",
+  "answer": "punk rock",
+  "answer_aliases": [
+   "punk rock",
+   "punk",
+   "punk music"
+  ],
+  "relation": "genre",
+  "subject": "The Take",
+  "block_start": 8284,
+  "block_end": 8309,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0357",
+  "question": "What genre is Our Time?",
+  "answer": "J-pop",
+  "answer_aliases": [
+   "J-pop",
+   "Japanese pop",
+   "jpop"
+  ],
+  "relation": "genre",
+  "subject": "Our Time",
+  "block_start": 8806,
+  "block_end": 8831,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0372",
+  "question": "What genre is A Winter of Cyclists?",
+  "answer": "documentary film",
+  "answer_aliases": [
+   "documentary film",
+   "documentary movie",
+   "doc",
+   "film documentary",
+   "motion picture documentary",
+   "documentary",
+   "factual film"
+  ],
+  "relation": "genre",
+  "subject": "A Winter of Cyclists",
+  "block_start": 9180,
+  "block_end": 9208,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0386",
+  "question": "What genre is The Moment?",
+  "answer": "mandopop",
+  "answer_aliases": [
+   "mandopop",
+   "Mandarin popular music",
+   "mandapop"
+  ],
+  "relation": "genre",
+  "subject": "The Moment",
+  "block_start": 9530,
+  "block_end": 9554,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0389",
+  "question": "What genre is Theatre?",
+  "answer": "mathcore",
+  "answer_aliases": [
+   "mathcore",
+   "math metal",
+   "noisecore"
+  ],
+  "relation": "genre",
+  "subject": "Theatre",
+  "block_start": 9601,
+  "block_end": 9626,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0405",
+  "question": "What genre is Heaven?",
+  "answer": "trance",
+  "answer_aliases": [
+   "trance",
+   "trance music",
+   "Trance",
+   "techno",
+   "techno music"
+  ],
+  "relation": "genre",
+  "subject": "Heaven",
+  "block_start": 9967,
+  "block_end": 9992,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0407",
+  "question": "Who is the father of Carl Valentin Falsen?",
+  "answer": "Enevold De Falsen",
+  "answer_aliases": [
+   "Enevold De Falsen"
+  ],
+  "relation": "father",
+  "subject": "Carl Valentin Falsen",
+  "block_start": 10017,
+  "block_end": 10042,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0452",
+  "question": "In what country is Ciepień?",
+  "answer": "Poland",
+  "answer_aliases": [
+   "Poland",
+   "POL",
+   "Republic of Poland",
+   "PL",
+   "Polska"
+  ],
+  "relation": "country",
+  "subject": "Ciepień",
+  "block_start": 11115,
+  "block_end": 11135,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0459",
+  "question": "In what country is Kozići?",
+  "answer": "Bosnia and Herzegovina",
+  "answer_aliases": [
+   "Bosnia and Herzegovina",
+   "Bosnia-Herzegovina",
+   "Bosnia",
+   "BiH",
+   "Bosnia & Herzegovina",
+   "B&H",
+   "🇧🇦",
+   "ba",
+   "BIH"
+  ],
+  "relation": "country",
+  "subject": "Kozići",
+  "block_start": 11285,
+  "block_end": 11310,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0490",
+  "question": "In what country is Mavjinjava?",
+  "answer": "India",
+  "answer_aliases": [
+   "India",
+   "Bharat",
+   "Hindustan",
+   "Bharatvarsh",
+   "in",
+   "IN",
+   "Republic of India",
+   "🇮🇳",
+   "IND",
+   "Aryavratt"
+  ],
+  "relation": "country",
+  "subject": "Mavjinjava",
+  "block_start": 12058,
+  "block_end": 12083,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0523",
+  "question": "In what country is SWEAT?",
+  "answer": "Canada",
+  "answer_aliases": [
+   "Canada",
+   "Dominion of Canada",
+   "British North America",
+   "CAN",
+   "CA",
+   "ca",
+   "can",
+   "Can."
+  ],
+  "relation": "country",
+  "subject": "SWEAT",
+  "block_start": 12881,
+  "block_end": 12906,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0524",
+  "question": "In what country is Dəhnəxəlil?",
+  "answer": "Azerbaijan",
+  "answer_aliases": [
+   "Azerbaijan",
+   "Republic of Azerbaijan",
+   "az",
+   "🇦🇿",
+   "AZE"
+  ],
+  "relation": "country",
+  "subject": "Dəhnəxəlil",
+  "block_start": 12906,
+  "block_end": 12931,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0528",
+  "question": "In what country is Cổ Linh?",
+  "answer": "Vietnam",
+  "answer_aliases": [
+   "Vietnam",
+   "Socialist Republic of Vietnam",
+   "VN",
+   "VIE",
+   "🇻🇳",
+   "Việt Nam",
+   "Viet Nam",
+   "SRV",
+   "VNM"
+  ],
+  "relation": "country",
+  "subject": "Cổ Linh",
+  "block_start": 13011,
+  "block_end": 13031,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0534",
+  "question": "In what country is pero?",
+  "answer": "Czech Republic",
+  "answer_aliases": [
+   "Czech Republic",
+   "CZR",
+   "cz",
+   "Česko",
+   "Česká republika",
+   "ČR",
+   "cze",
+   "CZE",
+   "Czechia"
+  ],
+  "relation": "country",
+  "subject": "pero",
+  "block_start": 13155,
+  "block_end": 13179,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0557",
+  "question": "In what country is Rogers?",
+  "answer": "United States of America",
+  "answer_aliases": [
+   "United States of America",
+   "the United States of America",
+   "America",
+   "U.S.A.",
+   "USA",
+   "U.S.",
+   "US",
+   "the US",
+   "the USA",
+   "US of A",
+   "the United States",
+   "U. S. A.",
+   "U. S.",
+   "the States",
+   "the U.S.",
+   "'Merica",
+   "U.S",
+   "United States",
+   "'Murica"
+  ],
+  "relation": "country",
+  "subject": "Rogers",
+  "block_start": 13724,
+  "block_end": 13749,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0559",
+  "question": "In what country is Seishi Ursula Gakuen Junior College?",
+  "answer": "Japan",
+  "answer_aliases": [
+   "Japan",
+   "State of Japan",
+   "Land of the Rising Sun",
+   "Nihon",
+   "Nippon",
+   "JP",
+   "Nippon-koku",
+   "Nihon-koku",
+   "JA",
+   "JPN",
+   "jp",
+   "JAP",
+   "Ja",
+   "Jap"
+  ],
+  "relation": "country",
+  "subject": "Seishi Ursula Gakuen Junior College",
+  "block_start": 13774,
+  "block_end": 13799,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0568",
+  "question": "In what country is Gaffarlı?",
+  "answer": "Turkey",
+  "answer_aliases": [
+   "Turkey",
+   "Republic of Turkey",
+   "🇹🇷",
+   "TUR",
+   "TR"
+  ],
+  "relation": "country",
+  "subject": "Gaffarlı",
+  "block_start": 14000,
+  "block_end": 14022,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0570",
+  "question": "In what country is Łodygowo, Pisz County?",
+  "answer": "Poland",
+  "answer_aliases": [
+   "Poland",
+   "POL",
+   "Republic of Poland",
+   "PL",
+   "Polska"
+  ],
+  "relation": "country",
+  "subject": "Łodygowo, Pisz County",
+  "block_start": 14047,
+  "block_end": 14076,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0591",
+  "question": "In what country is Jodłówka gas field?",
+  "answer": "Poland",
+  "answer_aliases": [
+   "Poland",
+   "POL",
+   "Republic of Poland",
+   "PL",
+   "Polska"
+  ],
+  "relation": "country",
+  "subject": "Jodłówka gas field",
+  "block_start": 14564,
+  "block_end": 14588,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0595",
+  "question": "In what country is Astrodomi Observatory?",
+  "answer": "Argentina",
+  "answer_aliases": [
+   "Argentina",
+   "AR",
+   "ar",
+   "🇦🇷",
+   "Argentine Republic",
+   "ARG",
+   "Republic of Argentina"
+  ],
+  "relation": "country",
+  "subject": "Astrodomi Observatory",
+  "block_start": 14659,
+  "block_end": 14689,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0610",
+  "question": "In what country is Grant?",
+  "answer": "Slovenia",
+  "answer_aliases": [
+   "Slovenia",
+   "Slovenija",
+   "Republika Slovenija",
+   "si",
+   "🇸🇮",
+   "svn",
+   "slo",
+   "Republic of Slovenia",
+   "SLO"
+  ],
+  "relation": "country",
+  "subject": "Grant",
+  "block_start": 15029,
+  "block_end": 15054,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0617",
+  "question": "In what country is El Carmen Rivero Tórrez?",
+  "answer": "Bolivia",
+  "answer_aliases": [
+   "Bolivia",
+   "Plurinational State of Bolivia",
+   "bo",
+   "bol",
+   "🇧🇴",
+   "Republic of Bolivia",
+   "BOL",
+   "Bolivia (Plurinational State of)"
+  ],
+  "relation": "country",
+  "subject": "El Carmen Rivero Tórrez",
+  "block_start": 15207,
+  "block_end": 15227,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0629",
+  "question": "In what country is Kodki?",
+  "answer": "India",
+  "answer_aliases": [
+   "India",
+   "Bharat",
+   "Hindustan",
+   "Bharatvarsh",
+   "in",
+   "IN",
+   "Republic of India",
+   "🇮🇳",
+   "IND",
+   "Aryavratt"
+  ],
+  "relation": "country",
+  "subject": "Kodki",
+  "block_start": 15497,
+  "block_end": 15522,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0642",
+  "question": "In what country is Bārta?",
+  "answer": "Latvia",
+  "answer_aliases": [
+   "Latvia",
+   "Republic of Latvia",
+   "Latvian Republic",
+   "lv",
+   "Latvija",
+   "🇱🇻",
+   "LAT",
+   "LVA"
+  ],
+  "relation": "country",
+  "subject": "Bārta",
+  "block_start": 15816,
+  "block_end": 15840,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0676",
+  "question": "In what country is Lätäseno?",
+  "answer": "Finland",
+  "answer_aliases": [
+   "Finland",
+   "Republic of Finland",
+   "Finnia",
+   "Land of Thousand Lakes",
+   "fi",
+   "Suomi",
+   "Suomen tasavalta",
+   "Republiken Finland",
+   "🇫🇮",
+   "FIN"
+  ],
+  "relation": "country",
+  "subject": "Lätäseno",
+  "block_start": 16658,
+  "block_end": 16682,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0680",
+  "question": "In what country is Peterson?",
+  "answer": "United States of America",
+  "answer_aliases": [
+   "United States of America",
+   "the United States of America",
+   "America",
+   "U.S.A.",
+   "USA",
+   "U.S.",
+   "US",
+   "the US",
+   "the USA",
+   "US of A",
+   "the United States",
+   "U. S. A.",
+   "U. S.",
+   "the States",
+   "the U.S.",
+   "'Merica",
+   "U.S",
+   "United States",
+   "'Murica"
+  ],
+  "relation": "country",
+  "subject": "Peterson",
+  "block_start": 16757,
+  "block_end": 16782,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0691",
+  "question": "In what country is Ban On?",
+  "answer": "Thailand",
+  "answer_aliases": [
+   "Thailand",
+   "Kingdom of Thailand",
+   "th",
+   "Siam",
+   "🇹🇭",
+   "Land of Smiles",
+   "THA"
+  ],
+  "relation": "country",
+  "subject": "Ban On",
+  "block_start": 17004,
+  "block_end": 17029,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0694",
+  "question": "In what country is Konjsko Brdo?",
+  "answer": "Croatia",
+  "answer_aliases": [
+   "Croatia",
+   "Republic of Croatia",
+   "HR",
+   "HRV",
+   "hr",
+   "🇭🇷",
+   "CRO"
+  ],
+  "relation": "country",
+  "subject": "Konjsko Brdo",
+  "block_start": 17078,
+  "block_end": 17108,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0713",
+  "question": "Who was the producer of Today?",
+  "answer": "Carlos Santana",
+  "answer_aliases": [
+   "Carlos Santana",
+   "Carlos Augusto Alves Santana"
+  ],
+  "relation": "producer",
+  "subject": "Today",
+  "block_start": 17547,
+  "block_end": 17572,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0726",
+  "question": "Who was the producer of One of Those?",
+  "answer": "Aldo Fabrizi",
+  "answer_aliases": [
+   "Aldo Fabrizi",
+   "Aldo Fabbrizi"
+  ],
+  "relation": "producer",
+  "subject": "One of Those",
+  "block_start": 17870,
+  "block_end": 17895,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0736",
+  "question": "Who was the producer of The Test?",
+  "answer": "Harry S. Webb",
+  "answer_aliases": [
+   "Harry S. Webb"
+  ],
+  "relation": "producer",
+  "subject": "The Test",
+  "block_start": 18114,
+  "block_end": 18138,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0746",
+  "question": "Who was the director of The Sisters?",
+  "answer": "Christy Cabanne",
+  "answer_aliases": [
+   "Christy Cabanne",
+   "William Christy Cabanne"
+  ],
+  "relation": "director",
+  "subject": "The Sisters",
+  "block_start": 18325,
+  "block_end": 18350,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0752",
+  "question": "Who was the director of Senior Year?",
+  "answer": "Jerrold Tarog",
+  "answer_aliases": [
+   "Jerrold Tarog",
+   "Jerrold Viacrucis Tarog"
+  ],
+  "relation": "director",
+  "subject": "Senior Year",
+  "block_start": 18477,
+  "block_end": 18498,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0756",
+  "question": "Who was the director of La renzoni?",
+  "answer": "Maurits Binger",
+  "answer_aliases": [
+   "Maurits Binger",
+   "Maurits H. Binger"
+  ],
+  "relation": "director",
+  "subject": "La renzoni",
+  "block_start": 18569,
+  "block_end": 18592,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0778",
+  "question": "Who was the director of Out?",
+  "answer": "Lionel Rogosin",
+  "answer_aliases": [
+   "Lionel Rogosin"
+  ],
+  "relation": "director",
+  "subject": "Out",
+  "block_start": 19104,
+  "block_end": 19148,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0806",
+  "question": "Who was the director of The Pigskin Palooka?",
+  "answer": "Gordon Douglas",
+  "answer_aliases": [
+   "Gordon Douglas",
+   "Gordon Douglas Brickner"
+  ],
+  "relation": "director",
+  "subject": "The Pigskin Palooka",
+  "block_start": 19714,
+  "block_end": 19739,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0827",
+  "question": "Who was the director of The Key?",
+  "answer": "Antun Vrdoljak",
+  "answer_aliases": [
+   "Antun Vrdoljak"
+  ],
+  "relation": "director",
+  "subject": "The Key",
+  "block_start": 20191,
+  "block_end": 20208,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0831",
+  "question": "Who was the director of Per amare Ofelia?",
+  "answer": "Flavio Mogherini",
+  "answer_aliases": [
+   "Flavio Mogherini"
+  ],
+  "relation": "director",
+  "subject": "Per amare Ofelia",
+  "block_start": 20280,
+  "block_end": 20298,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0856",
+  "question": "Who was the screenwriter for Exit the Vamp?",
+  "answer": "Clara Beranger",
+  "answer_aliases": [
+   "Clara Beranger",
+   "Clara Strouse",
+   "Clara S. Beranger"
+  ],
+  "relation": "screenwriter",
+  "subject": "Exit the Vamp",
+  "block_start": 20799,
+  "block_end": 20824,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0858",
+  "question": "Who was the screenwriter for Democracy?",
+  "answer": "Sidney Morgan",
+  "answer_aliases": [
+   "Sidney Morgan"
+  ],
+  "relation": "screenwriter",
+  "subject": "Democracy",
+  "block_start": 20844,
+  "block_end": 20871,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0898",
+  "question": "Who was the composer of Prelude in F major, Op. 49, No. 2?",
+  "answer": "Alexander Scriabin",
+  "answer_aliases": [
+   "Alexander Scriabin"
+  ],
+  "relation": "composer",
+  "subject": "Prelude in F major, Op. 49, No. 2",
+  "block_start": 21685,
+  "block_end": 21710,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0905",
+  "question": "Who was the composer of To the Sky?",
+  "answer": "Darko Dimitrov",
+  "answer_aliases": [
+   "Darko Dimitrov"
+  ],
+  "relation": "composer",
+  "subject": "To the Sky",
+  "block_start": 21858,
+  "block_end": 21880,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0929",
+  "question": "Who was the composer of Big Foot?",
+  "answer": "Charlie Parker",
+  "answer_aliases": [
+   "Charlie Parker",
+   "Yardbird",
+   "Bird",
+   "Charles Parker Jr.",
+   "Charlie Parker Jr.",
+   "Charles Christopher Parker, Jr."
+  ],
+  "relation": "composer",
+  "subject": "Big Foot",
+  "block_start": 22408,
+  "block_end": 22439,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0961",
+  "question": "What is the religion of James MacManaway?",
+  "answer": "Anglicanism",
+  "answer_aliases": [
+   "Anglicanism",
+   "Anglicanism, Anglican Church"
+  ],
+  "relation": "religion",
+  "subject": "James MacManaway",
+  "block_start": 23161,
+  "block_end": 23184,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0971",
+  "question": "What is the religion of Arnaldo Ribeiro?",
+  "answer": "Catholic Church",
+  "answer_aliases": [
+   "Catholic Church",
+   "Roman Catholic Church",
+   "Church",
+   "Roman Apostolic Catholic Church"
+  ],
+  "relation": "religion",
+  "subject": "Arnaldo Ribeiro",
+  "block_start": 23402,
+  "block_end": 23428,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0987",
+  "question": "What sport does Luciano Vella play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Luciano Vella",
+  "block_start": 23796,
+  "block_end": 23821,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_0990",
+  "question": "What sport does Alain Laurier play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Alain Laurier",
+  "block_start": 23871,
+  "block_end": 23896,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1003",
+  "question": "What sport does Dumitru Hubert play?",
+  "answer": "bobsleigh",
+  "answer_aliases": [
+   "bobsleigh",
+   "bobsledding",
+   "bobsled",
+   "bobsleighing",
+   "Bobsled"
+  ],
+  "relation": "sport",
+  "subject": "Dumitru Hubert",
+  "block_start": 24188,
+  "block_end": 24213,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1014",
+  "question": "What sport does Alex Crombie play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Alex Crombie",
+  "block_start": 24458,
+  "block_end": 24483,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1031",
+  "question": "What sport does Jin Zhiyang play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Jin Zhiyang",
+  "block_start": 24872,
+  "block_end": 24895,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1038",
+  "question": "What sport does Indonesia Education League play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Indonesia Education League",
+  "block_start": 25039,
+  "block_end": 25063,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1049",
+  "question": "What sport does Elias MacDonald play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Elias MacDonald",
+  "block_start": 25308,
+  "block_end": 25331,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1050",
+  "question": "What sport does Mikhail Petrusyov play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Mikhail Petrusyov",
+  "block_start": 25331,
+  "block_end": 25353,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1073",
+  "question": "What sport does Maximiliano Cuberas play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Maximiliano Cuberas",
+  "block_start": 25882,
+  "block_end": 25910,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1078",
+  "question": "What sport does Tony Wagstaff play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Tony Wagstaff",
+  "block_start": 26004,
+  "block_end": 26029,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1089",
+  "question": "What sport does Francis play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Francis",
+  "block_start": 26272,
+  "block_end": 26295,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1148",
+  "question": "What sport does Université Nationale du Bénin FC play?",
+  "answer": "association football",
+  "answer_aliases": [
+   "association football",
+   "football",
+   "soccer"
+  ],
+  "relation": "sport",
+  "subject": "Université Nationale du Bénin FC",
+  "block_start": 27667,
+  "block_end": 27692,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1183",
+  "question": "Who is the author of Buried Thunder?",
+  "answer": "Tim Bowler",
+  "answer_aliases": [
+   "Tim Bowler"
+  ],
+  "relation": "author",
+  "subject": "Buried Thunder",
+  "block_start": 28513,
+  "block_end": 28539,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1212",
+  "question": "Who is the author of The Amazon?",
+  "answer": "Nikolai Leskov",
+  "answer_aliases": [
+   "Nikolai Leskov",
+   "M. Stebnitsky",
+   "Nikolai Semyonovich Leskov"
+  ],
+  "relation": "author",
+  "subject": "The Amazon",
+  "block_start": 29214,
+  "block_end": 29239,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1235",
+  "question": "Who is the author of Millennial Rites?",
+  "answer": "Craig Hinton",
+  "answer_aliases": [
+   "Craig Hinton",
+   "Craig Paul Alexander Hinton"
+  ],
+  "relation": "author",
+  "subject": "Millennial Rites",
+  "block_start": 29779,
+  "block_end": 29799,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1248",
+  "question": "Who is the author of Zones?",
+  "answer": "Damien Broderick",
+  "answer_aliases": [
+   "Damien Broderick",
+   "Damien Francis Broderick",
+   "D. Broderick",
+   "D Broderick",
+   "Roger Delaney",
+   "Edgar Grieve",
+   "Jack Harding",
+   "Alan Harlison",
+   "Philip Jenkins",
+   "Horace West",
+   "Iago Yarrick",
+   "O'Flaherty Gribbles",
+   "Rory Barnes"
+  ],
+  "relation": "author",
+  "subject": "Zones",
+  "block_start": 30070,
+  "block_end": 30090,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1254",
+  "question": "Who is the author of Max?",
+  "answer": "Barbro Lindgren",
+  "answer_aliases": [
+   "Barbro Lindgren"
+  ],
+  "relation": "author",
+  "subject": "Max",
+  "block_start": 30209,
+  "block_end": 30234,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1259",
+  "question": "Who is the author of Time After Time?",
+  "answer": "Allen Appel",
+  "answer_aliases": [
+   "Allen Appel"
+  ],
+  "relation": "author",
+  "subject": "Time After Time",
+  "block_start": 30329,
+  "block_end": 30365,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1279",
+  "question": "Who is the author of Pen?",
+  "answer": "David Marshall Grant",
+  "answer_aliases": [
+   "David Marshall Grant"
+  ],
+  "relation": "author",
+  "subject": "Pen",
+  "block_start": 30781,
+  "block_end": 30805,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1286",
+  "question": "Who is the author of The Culture of Collaboration?",
+  "answer": "Evan Rosen",
+  "answer_aliases": [
+   "Evan Rosen"
+  ],
+  "relation": "author",
+  "subject": "The Culture of Collaboration",
+  "block_start": 30933,
+  "block_end": 30957,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1291",
+  "question": "Who is the author of Eclipse?",
+  "answer": "James Swallow",
+  "answer_aliases": [
+   "James Swallow"
+  ],
+  "relation": "author",
+  "subject": "Eclipse",
+  "block_start": 31052,
+  "block_end": 31077,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1295",
+  "question": "Who is the author of Moving Day?",
+  "answer": "Ralph Fletcher",
+  "answer_aliases": [
+   "Ralph Fletcher"
+  ],
+  "relation": "author",
+  "subject": "Moving Day",
+  "block_start": 31150,
+  "block_end": 31175,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1310",
+  "question": "Who is the author of Template?",
+  "answer": "Matt Hughes",
+  "answer_aliases": [
+   "Matt Hughes",
+   "Matthew Hughes"
+  ],
+  "relation": "author",
+  "subject": "Template",
+  "block_start": 31483,
+  "block_end": 31503,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1312",
+  "question": "Who is the author of Patience?",
+  "answer": "Jason Sherman",
+  "answer_aliases": [
+   "Jason Sherman",
+   "Jason Sherman"
+  ],
+  "relation": "author",
+  "subject": "Patience",
+  "block_start": 31521,
+  "block_end": 31546,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1319",
+  "question": "Who is the author of New York?",
+  "answer": "Anthony Burgess",
+  "answer_aliases": [
+   "Anthony Burgess",
+   "John Anthony Burgess Wilson",
+   "John Burgess Wilson",
+   "Joseph Kell"
+  ],
+  "relation": "author",
+  "subject": "New York",
+  "block_start": 31690,
+  "block_end": 31715,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1320",
+  "question": "Who is the author of Challenge?",
+  "answer": "H. C. McNeile",
+  "answer_aliases": [
+   "H. C. McNeile",
+   "Herman Cyril McNeile",
+   "Cyril McNeile",
+   "Sapper"
+  ],
+  "relation": "author",
+  "subject": "Challenge",
+  "block_start": 31715,
+  "block_end": 31738,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1343",
+  "question": "Who is the author of Therapy?",
+  "answer": "Jonathan Kellerman",
+  "answer_aliases": [
+   "Jonathan Kellerman",
+   "Jonathan Seth Kellerman"
+  ],
+  "relation": "author",
+  "subject": "Therapy",
+  "block_start": 32238,
+  "block_end": 32263,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1373",
+  "question": "What is the capital of canton of Saint-Doulchard?",
+  "answer": "Saint-Doulchard",
+  "answer_aliases": [
+   "Saint-Doulchard",
+   "Unité-sur-Yèvre"
+  ],
+  "relation": "capital",
+  "subject": "canton of Saint-Doulchard",
+  "block_start": 32965,
+  "block_end": 32985,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1374",
+  "question": "What is the capital of arrondissement of Castellane?",
+  "answer": "Castellane",
+  "answer_aliases": [
+   "Castellane",
+   "Castelana"
+  ],
+  "relation": "capital",
+  "subject": "arrondissement of Castellane",
+  "block_start": 32985,
+  "block_end": 33010,
+  "block_reliable": true
+ },
+ {
+  "id": "popqa_1394",
+  "question": "What is the capital of arrondissement of Florac?",
+  "answer": "Florac",
+  "answer_aliases": [
+   "Florac"
+  ],
+  "relation": "capital",
+  "subject": "arrondissement of Florac",
+  "block_start": 33474,
+  "block_end": 33495,
+  "block_reliable": true
+ }
+]

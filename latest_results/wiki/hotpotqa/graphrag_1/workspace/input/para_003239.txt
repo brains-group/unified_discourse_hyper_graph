@@ -1,0 +1,3 @@
+Title: Membrane paradigm
+
+In black hole theory, the black hole membrane paradigm is a simplified model, useful for visualising and calculating the effects predicted by quantum mechanics for the exterior physics of black holes, without using quantum-mechanical principles or calculations. It models a black hole as a thin, classically radiating surface (or membrane) at or vanishingly close to the black hole's event horizon. This approach to the theory of black holes was created by Kip S. Thorne, R. H. Price and D. A. Macdonald.

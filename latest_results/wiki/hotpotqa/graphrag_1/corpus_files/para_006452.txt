@@ -1,0 +1,3 @@
+Title: EdGCM
+
+EdGCM was developed at the Goddard Institute for Space Studies as a joint project of Columbia University and NASA scientists and programmers. The Global Climate Model at the core of EdGCM is GISS Model II. During the 1980s and early 1990s this GCM was one of NASA's primary climate research tools. Results from the model have appeared in hundreds of scientific publications.

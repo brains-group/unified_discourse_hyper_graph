@@ -1,0 +1,172 @@
+{
+ "system": "logicrag",
+ "set": "smoke",
+ "contract": "contract_1_term_life",
+ "retrieval_file": "/home/taluka/unh_v1/evaluation_scripts/logicrag/result/contracts_smoke/contract_1_term_life/logicrag.json",
+ "summary": {
+  "n": 10,
+  "recall": 100.0,
+  "recalled": 10,
+  "mean_context_tokens": 223.7,
+  "empty_contexts": 0,
+  "judge_unparsed": 0,
+  "judge_usage": {
+   "calls": 10,
+   "prompt_tokens": 4207,
+   "completion_tokens": 587,
+   "prompt_cache_hit_tokens": 0
+  }
+ },
+ "per_fact": [
+  {
+   "id": "contract_1_term_life/fact/1",
+   "fact_id": 1,
+   "fact": "The insurer is SecureLife Insurance Company.",
+   "context": "**Refined Summary:**\n\nSecureLife Insurance Company issued a 20-Year Level Term Life Insurance policy (Policy Number: SL-2024-TRM-00123) to John Michael Anderson, who was 38 years old at issue on January 15, 2024. The insured’s date of birth is March 22, 1985. The policy provides a $500,000 death benefit for 20 years, expiring January 15, 2044, with monthly premiums of $45.00 due on the 15th of each month. A 31-day grace period applies, during which coverage remains in force if the premium is not paid by the due date.\n\nThe primary beneficiary is Sarah Elizabeth Anderson (spouse), designated for 100% of the death benefit. Contingent beneficiaries are Emma Grace Anderson (daughter) and Lucas James Anderson (son), each receiving 50% of the benefit if the primary beneficiary predeceases the insured.\n\nThe policy is incontestable after two years from the issue date (Section 10.1). If the insured",
+   "context_tokens": 221,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states \"SecureLife Insurance Company issued a 20-Year Level Term Life Insurance policy...\" This directly identifies the insurer as SecureLife Insurance Company. The fact is clearly and unambiguously stated in the text.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 51,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/2",
+   "fact_id": 2,
+   "fact": "The policy number is SL-2024-TRM-00123.",
+   "context": "**Refined Summary:**\n\n- **Policy Number:** SL-2024-TRM-00123  \n- **Issue Date:** January 15, 2024  \n- **Policy Type:** 20-Year Level Term Life Insurance  \n- **Insured & Policy Owner:** John Michael Anderson (DOB: March 22, 1985; Age at Issue: 38)  \n- **Death Benefit:** $500,000, payable in a lump sum unless an alternate settlement option is elected  \n- **Policy Term:** January 15, 2024 – January 15, 2044  \n- **Premium:** $45.00 per month, due on the 15th of each month; paid via monthly automatic deduction  \n- **Grace Period:** 31 days after the due date; coverage continues during this period  \n- **Incontestability Clause:** Policy cannot be contested after two years from issue date (January 15, 2026)  \n- **Suicide Clause:** If suicide occurs within two years of issue date, death benefit is limited to refund of premiums paid",
+   "context_tokens": 220,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The fact states that the policy number is SL-2024-TRM-00123. This information is explicitly mentioned in the context under the \"Policy Number\" heading. There is no ambiguity or need for inference—the fact is directly stated.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 59,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/3",
+   "fact_id": 3,
+   "fact": "The issue date is January 15, 2024.",
+   "context": "**Refined Summary:**\n\nThe 20-Year Level Term Life Insurance policy (Policy Number: SL-2024-TRM-00123) was issued on January 15, 2024, with a death benefit of $500,000. The insured, John Michael Anderson (Date of Birth: March 22, 1985), was 38 years old at issue. Coverage expires on January 15, 2044. Monthly premiums of $45.00 are due on the 15th of each month, with a 31-day grace period during which coverage remains in force.  \n\nThe primary beneficiary is Sarah Elizabeth Anderson (spouse), designated for 100% of the death benefit. Contingent beneficiaries are Emma Grace Anderson (daughter) and Lucas James Anderson (son), each receiving 50%.  \n\nThe policy includes a suicide clause: if the insured dies by suicide within two years of the issue date, the company’s liability is limited to a refund of premiums paid. The policy becomes incontestable after two years from the issue date, meaning SecureLife Insurance Company cannot contest the",
+   "context_tokens": 223,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states that the policy was issued on January 15, 2024. This directly supports the fact that the issue date is January 15, 2024. There is no ambiguity or need for inference—this information is clearly and directly provided.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 64,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/4",
+   "fact_id": 4,
+   "fact": "The policy type is 20-Year Level Term Life Insurance.",
+   "context": "**Refined Summary:**\n\nThe policy type is **20-Year Level Term Life Insurance**, issued by SecureLife Insurance Company.  \n- **Policy Number:** SL-2024-TRM-00123  \n- **Issue Date:** January 15, 2024  \n- **Policy Term:** 20 years (expires January 15, 2044)  \n- **Insured:** John Michael Anderson (Age 38 at issue, DOB: March 22, 1985)  \n- **Policy Owner:** John Michael Anderson  \n- **Death Benefit:** $500,000, payable upon the insured’s death during the policy term, provided proof of death is submitted and the death occurs before policy expiry  \n- **Premium:** $45.00 per month, due on the 15th of each month; payment via monthly automatic deduction  \n- **Grace Period:** 31 days after the due date; coverage continues during this period  \n- **Conversion Privilege:** Available before the earlier of policy expiry or the insured’s 65th birthday, without evidence of insurability; new premiums based on",
+   "context_tokens": 224,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states: \"The policy type is 20-Year Level Term Life Insurance, issued by SecureLife Insurance Company.\" This directly and unambiguously confirms the fact in question.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 421,
+    "completion_tokens": 44,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/5",
+   "fact_id": 5,
+   "fact": "The policy owner is John Michael Anderson.",
+   "context": "**Refined Summary:**\n\n**Policy Owner:** John Michael Anderson  \n**Insured Person:** John Michael Anderson  \n**Date of Birth:** March 22, 1985  \n**Age at Issue:** 38 years  \n**Policy Number:** SL-2024-TRM-00123  \n**Issue Date:** January 15, 2024  \n**Policy Type:** 20-Year Level Term Life Insurance  \n**Policy Term:** Expires January 15, 2044  \n**Death Benefit:** $500,000 (subject to adjustment under Section 10.2 for misstated age or sex)  \n**Premium:** $45.00 per month, due on the 15th of each month  \n**Payment Mode:** Monthly automatic deduction  \n**Grace Period:** 31 days after the due date; coverage continues during this period  \n**Primary Beneficiary:** Sarah Elizabeth Anderson (Spouse) – 100%  \n**Contingent Beneficiaries:** Emma Grace Anderson (Daughter) – 50%, Lucas James Anderson (Son) – 50%  \n**Conversion Privilege",
+   "context_tokens": 221,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states \"Policy Owner: John Michael Anderson\" at the beginning of the document. This directly confirms the fact that the policy owner is John Michael Anderson. There is no ambiguity or need for inference—this information is clearly and unambiguously stated.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 58,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/6",
+   "fact_id": 6,
+   "fact": "The insured person is John Michael Anderson.",
+   "context": "**Refined Summary:**\n\nThe insured person is John Michael Anderson, born March 22, 1985, who is also the policy owner. He holds a 20-Year Level Term Life Insurance policy (Policy Number: SL-2024-TRM-00123), issued on January 15, 2024, with a death benefit of $500,000. The policy term expires January 15, 2044. Monthly premiums of $45.00 are due on the 15th of each month, with a 31-day grace period during which coverage remains in force.\n\nThe primary beneficiary is his spouse, Sarah Elizabeth Anderson (100%). Contingent beneficiaries are his children, Emma Grace Anderson and Lucas James Anderson (50% each). The policy includes a suicide clause: if John Michael Anderson dies by suicide within two years of the issue date, the death benefit is limited to a refund of premiums paid. After two years from the issue date, the policy becomes incontestable.\n\nThe policy allows for conversion to permanent insurance without evidence of insurability, provided the conversion occurs before the earlier",
+   "context_tokens": 224,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states \"The insured person is John Michael Anderson, born March 22, 1985, who is also the policy owner.\" This directly confirms the fact that the insured person is John Michael Anderson.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 51,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/7",
+   "fact_id": 7,
+   "fact": "John Michael Anderson's date of birth is March 22, 1985.",
+   "context": "**Refined Summary:**\n\nJohn Michael Anderson, born on March 22, 1985, is the policy owner and insured on a 20-Year Level Term Life Insurance policy (Policy Number: SL-2024-TRM-00123) issued by SecureLife Insurance Company on January 15, 2024. At the time of issue, he was 38 years old. The policy has a death benefit of $500,000 and expires on January 15, 2044. Monthly premiums of $45.00 are due on the 15th of each month, with a 31-day grace period during which coverage remains in force. Premiums are paid via automatic deduction.\n\nThe primary beneficiary is his spouse, Sarah Elizabeth Anderson (100%). Contingent beneficiaries are his children: Emma Grace Anderson (50%) and Lucas James Anderson (50%).\n\nKey policy provisions include:\n- **Incontestability Clause (Section 10.1):** The insurer cannot contest the policy after it has been in force for two years from the issue date.\n- **Misstatement of Age or",
+   "context_tokens": 221,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states: \"John Michael Anderson, born on March 22, 1985...\" This directly confirms the fact in question without requiring inference. The information is clearly and unambiguously provided.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 427,
+    "completion_tokens": 50,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/8",
+   "fact_id": 8,
+   "fact": "John Michael Anderson's age at issue is 38 years.",
+   "context": "**Refined Summary:**\n\nJohn Michael Anderson, the policy owner and insured, was 38 years old at issue on January 15, 2024, with a date of birth of March 22, 1985. The policy is a 20-Year Level Term Life Insurance (Policy Number: SL-2024-TRM-00123), with a death benefit of $500,000, payable to primary beneficiary Sarah Elizabeth Anderson (spouse) in full, and contingent beneficiaries Emma Grace Anderson (daughter) and Lucas James Anderson (son), each receiving 50% if the primary beneficiary predeceases the insured. Premiums of $45.00 are due monthly on the 15th, with a 31-day grace period; coverage expires January 15, 2044.\n\nIf the insured’s age or sex was misstated, the death benefit will be adjusted to reflect the amount that the premiums paid would have purchased at the correct age and sex, as per Section 10.2. The policy may be assigned, but such assignments are not binding on SecureLife Insurance Company until",
+   "context_tokens": 224,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states: \"John Michael Anderson, the policy owner and insured, was 38 years old at issue on January 15, 2024.\" This directly confirms the fact that John Michael Anderson's age at issue is 38 years. There is no ambiguity or need for inference—the information is clearly and directly stated.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 421,
+    "completion_tokens": 76,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/9",
+   "fact_id": 9,
+   "fact": "The death benefit amount is $500,000.",
+   "context": "The death benefit for this 20-Year Level Term Life Insurance policy is $500,000, payable to the beneficiary upon the death of the insured, John Michael Anderson, while the policy is in force and before the expiry date of January 15, 2044. The policy was issued on January 15, 2024, with a monthly premium of $45.00 due on the 15th of each month, with a 31-day grace period during which coverage remains in force. \n\nThe primary beneficiary is Sarah Elizabeth Anderson (spouse), designated for 100% of the death benefit. Contingent beneficiaries are Emma Grace Anderson (daughter) and Lucas James Anderson (son), each receiving 50% of the benefit if the primary beneficiary predeceases the insured. The death benefit will be paid in a lump sum unless an alternate settlement option is elected by the beneficiary.\n\nIf the insured’s age or sex was misstated at issuance, the death benefit will be adjusted to reflect the amount that the premiums paid would have purchased at the correct age and sex. The policy includes a suicide clause: if suicide occurs within two years of",
+   "context_tokens": 232,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states: \"The death benefit for this 20-Year Level Term Life Insurance policy is $500,000...\" This directly confirms the fact that the death benefit amount is $500,000.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 422,
+    "completion_tokens": 55,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/fact/10",
+   "fact_id": 10,
+   "fact": "The policy term is 20 years.",
+   "context": "**Refined Summary:**\n\nThis is a 20-Year Level Term Life Insurance policy issued by SecureLife Insurance Company on January 15, 2024, with a term ending January 15, 2044. The policy is owned and insures John Michael Anderson (DOB: March 22, 1985; age 38 at issue), with a death benefit of $500,000 payable to the designated beneficiaries upon the insured’s death during the policy term.\n\nPremiums are $45.00 per month, due on the 15th of each month, with a 31-day grace period during which coverage remains in force. If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.\n\nThe policy includes a conversion privilege allowing the insured to convert to a permanent life insurance policy without evidence of insurability, provided conversion occurs before the earlier of: (a) the policy expiry date (January 15, 2044), or (b) the insured’s 65th birthday.\n\nBeneficiaries are designated as follows:  \n- **Primary:** Sarah Elizabeth",
+   "context_tokens": 227,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states that the policy is a \"20-Year Level Term Life Insurance policy\" and specifies the term ends on January 15, 2044, which is exactly 20 years after the issue date of January 15, 2024. This directly supports the fact that the policy term is 20 years.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 417,
+    "completion_tokens": 79,
+    "prompt_cache_hit_tokens": 0
+   }
+  }
+ ]
+}

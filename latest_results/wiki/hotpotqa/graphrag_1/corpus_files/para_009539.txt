@@ -1,0 +1,3 @@
+Title: Calendar date
+
+A calendar date is a reference to a particular day represented within a calendar system. The calendar date allows the specific day to be identified. The number of days between two dates may be calculated. For example, "24 2017" is ten days after "14 2017" in the Gregorian calendar. The date of a particular event depends on the observed time zone. For example, the air attack on Pearl Harbor that began at 7:48 a.m. Hawaiian time on December 7, 1941, took place at 3:18 a.m. December 8 in Japan (Japan Standard Time).

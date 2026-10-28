@@ -1,0 +1,172 @@
+{
+ "system": "logicrag",
+ "set": "smoke",
+ "contract": "2025_pdp_contract",
+ "retrieval_file": "/home/taluka/unh_v1/evaluation_scripts/logicrag/result/contracts_smoke/2025_pdp_contract/logicrag.json",
+ "summary": {
+  "n": 10,
+  "recall": 100.0,
+  "recalled": 10,
+  "mean_context_tokens": 223.2,
+  "empty_contexts": 0,
+  "judge_unparsed": 0,
+  "judge_usage": {
+   "calls": 10,
+   "prompt_tokens": 4377,
+   "completion_tokens": 917,
+   "prompt_cache_hit_tokens": 0
+  }
+ },
+ "per_fact": [
+  {
+   "id": "2025_pdp_contract/fact/1",
+   "fact_id": 1,
+   "fact": "The contract title is 'Contract with Approved Entity Pursuant to Sections 1860D-1 through 1860D-43 of the Social Security Act for the Operation of a Voluntary Medicare Prescription Drug Plan'.",
+   "context": "**Refined Summary:**\n\nThe contract titled *\"Contract with Approved Entity Pursuant to Sections 1860D-1 through 1860D-43 of the Social Security Act for the Operation of a Voluntary Medicare Prescription Drug Plan\"* is a legally binding agreement between the Centers for Medicare & Medicaid Services (CMS) and a Prescription Drug Plan (PDP) Sponsor. This contract authorizes the PDP Sponsor to operate one or more Medicare Voluntary Prescription Drug Plans (PDPs) in compliance with Sections 1860D-1 through 1860D-43 of the Social Security Act (excluding §§ 1860D-22(a) and 1860D-31), 42 CFR Part 423 (excluding Subparts Q, R, and S), and the 2025 Solicitation for Applications for Medicare Prescription Drug Plan Contracts released on January 9, 2024.\n\nThe contract is effective from the date of CMS’s authorized representative’s signature through December 31, 2025, and is renewable for successive one-year periods, contingent upon annual qualification under 42 CFR §",
+   "context_tokens": 223,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The fact states the exact title of the contract. The context begins with the sentence: \"The contract titled *'Contract with Approved Entity Pursuant to Sections 1860D-1 through 1860D-43 of the Social Security Act for the Operation of a Voluntary Medicare Prescription Drug Plan'*...\" This directly matches the fact provided. The title is explicitly stated in the context without any ambiguity or need for inference.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 456,
+    "completion_tokens": 95,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/2",
+   "fact_id": 2,
+   "fact": "The contract is between the Centers for Medicare & Medicaid Services (hereinafter referred to as 'CMS') and the PDP Sponsor.",
+   "context": "**Refined Summary:**\n\nThe contract is between the Centers for Medicare & Medicaid Services (CMS) and a Prescription Drug Plan (PDP) Sponsor, established under Sections 1860D-1 through 1860D-43 of the Social Security Act (excluding §§ 1860D-22(a) and 1860D-31). The PDP Sponsor, an entity approved by CMS under 42 CFR § 423.503, agrees to operate one or more Voluntary Medicare Prescription Drug Plans (PDPs) in compliance with federal statutes, regulations (including 42 CFR Part 423, excluding Subparts Q, R, and S), and guidance such as the Medicare Prescription Drug Benefit Manual, CMS Participant Guides, Final CY 2025 Part D Redesign Program Instructions, Medicare Part D Manufacturer Discount Program Final Guidance, and Medicare Prescription Payment Plan Final Guidance.\n\nKey contractual obligations include:\n\n- **Benefit Delivery:** Providing the basic Part D benefit and supplemental benefits as defined in 42 CFR § 423.100, and delivering benefits as described in the PDP Sponsor’s annually approved bid",
+   "context_tokens": 224,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states: \"The contract is between the Centers for Medicare & Medicaid Services (CMS) and a Prescription Drug Plan (PDP) Sponsor...\" This directly supports the fact that the contract is between CMS and the PDP Sponsor. The use of \"hereinafter referred to as 'CMS'\" in the fact aligns with the context's consistent use of \"CMS\" as the entity name. There is no contradiction or ambiguity.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 93,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/3",
+   "fact_id": 3,
+   "fact": "CMS is identified as 'Centers for Medicare & Medicaid Services'.",
+   "context": "**Refined Summary:**\n\nCMS, the Centers for Medicare & Medicaid Services, administers the Medicare Part D Prescription Drug Benefit through contracts with Prescription Drug Plan (PDP) Sponsors under Sections 1860D-1 through 1860D-43 of the Social Security Act. The current contract is effective from the date of CMS’s authorized representative’s signature through December 31, 2025, and is renewable annually, subject to CMS approval and successful bid negotiations under 42 CFR Part 423.\n\nPDP Sponsors must provide basic and supplemental Part D benefits as defined in their CMS-approved annual bids, which are updated each year and included in the Medicare Advantage Attestation of Benefit Plan. Key obligations include:\n\n- **Premium Collection & Reimbursement:** Calculate and collect beneficiary premiums in accordance with 42 CFR §§ 423.286 and 423.293, and make reasonable efforts to identify and repay incorrectly collected amounts (42 CFR § 423.294).\n- **Fiscal Soundness:** Maintain a positive net worth (total assets exceed total liabilities) as required by 42 CFR §",
+   "context_tokens": 223,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states \"CMS, the Centers for Medicare & Medicaid Services,\" which directly identifies CMS as the Centers for Medicare & Medicaid Services. This is a clear and direct definition provided within the text.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 420,
+    "completion_tokens": 45,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/4",
+   "fact_id": 4,
+   "fact": "The counterparty to CMS is a Prescription Drug Plan Sponsor (hereinafter referred to as 'PDP Sponsor').",
+   "context": "**Refined Summary:**\n\nThe counterparty to CMS in the contract is a Prescription Drug Plan Sponsor (PDP Sponsor), an entity approved by CMS under 42 CFR § 423.503 to operate a Voluntary Medicare Prescription Drug Plan. The contract is effective from the date of CMS’s authorized representative’s signature through December 31, 2025, and is renewable annually under 42 CFR § 423.506, contingent upon timely bid submission, CMS approval, and qualification to renew (i.e., no notice of nonrenewal submitted by the PDP Sponsor by the first Monday of June preceding the contract end date).\n\nThe PDP Sponsor agrees to operate one or more Medicare Part D plans in compliance with §§ 1860D-1 through 1860D-43 of the Social Security Act (excluding §§ 1860D-22(a) and 1860D-31), 42 CFR Part 423 (excluding Subparts Q, R, and S), and all applicable guidance, including the Medicare Prescription Drug Benefit Manual, Final CY 2025 Part D Red",
+   "context_tokens": 221,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states that \"The counterparty to CMS in the contract is a Prescription Drug Plan Sponsor (PDP Sponsor), an entity approved by CMS under 42 CFR § 423.503 to operate a Voluntary Medicare Prescription Drug Plan.\" This directly supports the fact that the counterparty to CMS is a PDP Sponsor. The term \"PDP Sponsor\" is also explicitly defined and used consistently in the context.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 432,
+    "completion_tokens": 94,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/5",
+   "fact_id": 5,
+   "fact": "The PDP Sponsor has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503.",
+   "context": "The PDP Sponsor has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503. This eligibility authorizes the PDP Sponsor to enter into a contract with CMS for the operation of one or more Medicare Part D plans, effective from the date of CMS’s authorized representative’s signature through December 31, 2025, with potential renewal for successive one-year periods under 42 CFR § 423.506.\n\nThe contract governs the PDP Sponsor’s operations in compliance with §§ 1860D-1 through 1860D-43 of the Social Security Act (excluding §§ 1860D-22(a) and 1860D-31), 42 CFR Part 423 (excluding Subparts Q, R, and S), the 2025 Solicitation for Applications for Medicare Prescription Drug Plan Contracts (released January 9, 2024), and all applicable Federal statutes, regulations, and guidance—including the Medicare Prescription Drug Benefit Manual, Medicare Communications and Marketing Guidelines, Final CY 202",
+   "context_tokens": 217,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The fact states that the PDP Sponsor has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503. This exact statement is directly present in the first sentence of the context: \"The PDP Sponsor has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503.\" Therefore, the fact is explicitly supported by the context.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 445,
+    "completion_tokens": 109,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/6",
+   "fact_id": 6,
+   "fact": "The contract is entered into for the purposes of §§ 1860D-1 through 1860D-43 of the Social Security Act, with the exception of §§ 1860D-22(a) and 1860D-31.",
+   "context": "**Refined Summary:**\n\nThe contract is entered into for the purposes of §§ 1860D-1 through 1860D-43 of the Social Security Act (with the exception of §§ 1860D-22(a) and 1860D-31), between the Centers for Medicare & Medicaid Services (CMS) and a Prescription Drug Plan (PDP) Sponsor, approved under 42 CFR § 423.503, for the operation of a Voluntary Medicare Prescription Drug Plan. The contract is effective from the date of CMS’s authorized representative’s signature through December 31, 2025, and is renewable annually, contingent upon compliance with renewal requirements.\n\nThe PDP Sponsor agrees to provide Part D benefits as described in its annually approved bid(s) by CMS, as referenced in the Medicare Advantage Attestation of Benefit Plan (to be updated annually upon renewal). The contract incorporates the 2025 Solicitation for Applications, regulations at 42 CFR Part 423 (excluding Subparts Q, R, and S), and applicable Federal statutes, regulations, and guidance—including the Medicare Prescription Drug Benefit Manual,",
+   "context_tokens": 226,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states that the contract is entered into for the purposes of §§ 1860D-1 through 1860D-43 of the Social Security Act, with the exception of §§ 1860D-22(a) and 1860D-31. This exact wording matches the fact being evaluated, confirming that the fact is directly and clearly stated in the context.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 93,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/7",
+   "fact_id": 7,
+   "fact": "The Social Security Act is hereinafter referred to as 'the Act'.",
+   "context": "**Refined Summary:**\n\nThe Social Security Act (hereinafter referred to as \"the Act\") governs the Voluntary Medicare Prescription Drug Plan (PDP) contract between the Centers for Medicare & Medicaid Services (CMS) and a PDP Sponsor. This contract is effective from the date of CMS’s authorized representative’s signature through December 31, 2025, and is renewable annually under 42 CFR § 423.506, provided the PDP Sponsor does not provide notice of nonrenewal by the first Monday of June in the year preceding the contract end date (42 CFR § 423.507(a)(2)).\n\nThe contract is governed by §§ 1860D-1 through 1860D-43 of the Act (excluding §§ 1860D-22(a) and 1860D-31), 42 CFR Part 423 (excluding Subparts Q, R, and S), and the 2025 Solicitation for Applications for Medicare Prescription Drug Plan Contracts (released January 9, 2024). It incorporates all applicable Federal statutes",
+   "context_tokens": 219,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context explicitly states: \"The Social Security Act (hereinafter referred to as 'the Act') governs the Voluntary Medicare Prescription Drug Plan (PDP) contract...\" This directly indicates that the term \"the Act\" is used as a defined reference to the Social Security Act within the document. Therefore, the fact is explicitly supported.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 74,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/8",
+   "fact_id": 8,
+   "fact": "PDP Sponsor agrees to operate one or more Medicare Voluntary Prescription Drug Plans (hereinafter referred to as a 'PDP').",
+   "context": "**Refined Summary:**\n\nPDP Sponsor agrees to operate one or more Medicare Voluntary Prescription Drug Plans (PDPs) in accordance with the contract, which incorporates by reference the 2025 Solicitation for Applications for Medicare Prescription Drug Plan Contracts (released January 9, 2024), §§ 1860D-1 through 1860D-43 of the Social Security Act (excluding §§ 1860D-22(a) and 1860D-31), 42 CFR Part 423 (excluding Subparts Q, R, and S), and all applicable Federal statutes, regulations, and guidance—including the Medicare Prescription Drug Benefit Manual, Medicare Communications and Marketing Guidelines, Final CY 2025 Part D Redesign Program Instructions, Medicare Part D Manufacturer Discount Program Final Guidance, Medicare Prescription Payment Plan Final Guidance (including Final Part One and Part Two Guidance on Section 1860D-2), CMS Participant Guides, Health Plan Management System memos, Rate Announcement, and trainings.\n\nThe contract is effective from the date of CMS’s authorized representative’s signature through December 31, 2025,",
+   "context_tokens": 225,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The fact states that the PDP Sponsor agrees to operate one or more Medicare Voluntary Prescription Drug Plans (PDPs). The context explicitly states: \"PDP Sponsor agrees to operate one or more Medicare Voluntary Prescription Drug Plans (PDPs) in accordance with the contract...\" This is a direct and unambiguous statement of the fact.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 74,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/9",
+   "fact_id": 9,
+   "fact": "PDP Sponsor agrees to operate the PDP as described in its application and related materials submitted to CMS for Medicare approval.",
+   "context": "**Refined Summary:**\n\nThe PDP Sponsor agrees to operate the Medicare Voluntary Prescription Drug Plan (PDP) in accordance with the benefits, premiums, cost-sharing, and other terms described in its CMS-approved annual bid(s), as referenced in the Medicare Advantage Attestation of Benefit Plan—updated annually upon contract renewal to reflect the Sponsor’s approved bids for the upcoming contract year. This obligation is enforceable under Article I, Section A of the contract, which requires compliance with §§ 1860D-1 through 1860D-43 of the Social Security Act (excluding §§ 1860D-22(a) and 1860D-31), 42 CFR Part 423 (excluding Subparts Q, R, and S), and all applicable guidance, including the Medicare Prescription Drug Benefit Manual, CMS Participant Guides, Final CY 2025 Part D Redesign Program Instructions, Medicare Part D Manufacturer Discount Program Final Guidance, and Medicare Prescription Payment Plan Final Guidance (Parts One and Two).\n\nThe Sponsor must:\n- Calculate and collect beneficiary premiums in accordance with 42 CFR §§ 423.286 and 423",
+   "context_tokens": 227,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The context states that the PDP Sponsor agrees to operate the Medicare Voluntary Prescription Drug Plan in accordance with the benefits, premiums, cost-sharing, and other terms described in its CMS-approved annual bid(s). These bids are part of the application process submitted to CMS for approval. The reference to \"CMS-approved annual bid(s)\" implies that the terms of operation are derived from materials submitted to CMS, which aligns with the fact that the Sponsor agrees to operate the PDP as described in its application and related materials submitted to CMS for Medicare approval.\n\nThis is not just a vague connection—it is explicitly supported by the language that the Sponsor operates the PDP according to the terms in its CMS-approved bids, which are the approved versions of the application materials.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 432,
+    "completion_tokens": 155,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "2025_pdp_contract/fact/10",
+   "fact_id": 10,
+   "fact": "PDP Sponsor agrees to operate the PDP in compliance with all attestations contained in its application submitted to CMS.",
+   "context": "**Refined Summary:**\n\nThe PDP Sponsor agrees to operate the Medicare Prescription Drug Plan (PDP) in full compliance with all attestations contained in its application submitted to CMS, including all contractual, regulatory, and statutory requirements under the Social Security Act (§§ 1860D-1 through 1860D-43, excluding §§ 1860D-22(a) and 1860D-31), 42 CFR Parts 423 and 45 CFR Parts 80, 84, 91, and 92. This includes adherence to nondiscrimination laws (Title VI, § 504 of the Rehabilitation Act, Age Discrimination Act), HIPAA, anti-fraud provisions, program integrity obligations, and all applicable guidance, including the Medicare Part D Manufacturer Discount Program Final Guidance and the Medicare Prescription Payment Plan: Final Part One and Part Two Guidance (2025 implementation).\n\nThe Sponsor must provide Part D benefits as described in its CMS-approved annual bid, which is updated each year via the Medicare Advantage Attestation of Benefit Plan included in contracting materials and replaced annually upon contract renewal. Premiums must be calculated",
+   "context_tokens": 227,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The fact states that the PDP Sponsor agrees to operate the PDP in compliance with all attestations contained in its application submitted to CMS. The context explicitly states: \"The PDP Sponsor agrees to operate the Medicare Prescription Drug Plan (PDP) in full compliance with all attestations contained in its application submitted to CMS...\" This is a direct match to the fact, both in wording and meaning.\n\nScore: 1",
+   "judge_usage": {
+    "prompt_tokens": 431,
+    "completion_tokens": 85,
+    "prompt_cache_hit_tokens": 0
+   }
+  }
+ ]
+}

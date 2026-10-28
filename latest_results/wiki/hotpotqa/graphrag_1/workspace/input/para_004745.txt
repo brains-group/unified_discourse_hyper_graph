@@ -1,0 +1,3 @@
+Title: A¹ homotopy theory
+
+In algebraic geometry and algebraic topology, a branch of mathematics, A homotopy theory is a way to apply the techniques of algebraic topology, specifically homotopy, to algebraic varieties and, more generally, to schemes. The theory is due to Fabien Morel and Vladimir Voevodsky. The underlying idea is that it should be possible to develop a purely algebraic approach to homotopy theory by replacing the unit interval [0, 1] , which is not an algebraic variety, with the affine line A , which is. The theory requires a substantial amount of technique to set up, but has spectacular applications such as Voevodsky's construction of the derived category of mixed motives and the proof of the Milnor and Bloch-Kato conjectures.

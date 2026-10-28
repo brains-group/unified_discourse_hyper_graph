@@ -1,0 +1,325 @@
+[
+ {
+  "id": "type1_876",
+  "question": "What is the most common type of kidney cancer?",
+  "answer": "Renal cell carcinoma (RCC) is the most common type.",
+  "question_type": "type1",
+  "level": "Fact Retrieval",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": "Renal cell carcinoma (RCC) is the most common type of kidney cancer"
+ },
+ {
+  "id": "type1_877",
+  "question": "Which subtype is most common within renal cell carcinoma?",
+  "answer": "Clear cell RCC is the most common subtype of RCC.",
+  "question_type": "type1",
+  "level": "Fact Retrieval",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": "Clear cell RCC is the most common subtype of RCC"
+ },
+ {
+  "id": "type1_878",
+  "question": "What are the main non-clear cell subtypes of RCC?",
+  "answer": "Papillary RCC, chromophobe RCC, collecting duct RCC, and renal medullary carcinoma are the main non-clear cell RCC subtypes.",
+  "question_type": "type1",
+  "level": "Fact Retrieval",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": "Non-clear cell RCC includes papillary RCC, chromophobe RCC, collecting duct RCC, and renal medullary carcinoma"
+ },
+ {
+  "id": "type1_1035",
+  "question": "What is the most common type of adrenal gland tumor?",
+  "answer": "Adenoma is the most common type of adrenal gland tumor.",
+  "question_type": "type1",
+  "level": "Fact Retrieval",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": "Adenoma is the most common type of adrenal gland tumor and can be functioning or nonfunctioning"
+ },
+ {
+  "id": "type1_1036",
+  "question": "Which adrenal tumor arises from the adrenal cortex and is malignant?",
+  "answer": "Adrenocortical carcinoma (ACC) is a rare malignant tumor of the adrenal cortex.",
+  "question_type": "type1",
+  "level": "Fact Retrieval",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": "Adrenocortical carcinoma (ACC) is a rare malignant tumor of the adrenal cortex"
+ },
+ {
+  "id": "type1_1037",
+  "question": "What hormone is produced in excess by aldosteronoma?",
+  "answer": "Aldosteronoma produces excess aldosterone.",
+  "question_type": "type1",
+  "level": "Fact Retrieval",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": "Aldosteronoma produces excess aldosterone"
+ },
+ {
+  "id": "type2_404",
+  "question": "What distinguishes Wilms tumor from other kidney cancer subtypes in terms of patient population and classification?",
+  "answer": "Wilms tumor is a distinct kidney cancer type that usually occurs in young children, unlike other subtypes.",
+  "question_type": "type2",
+  "level": "Complex Reasoning",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "Wilms tumor usually occurs in young children and is a distinct kidney cancer type",
+   "Wilms tumor (nephroblastoma) is listed as a separate subtype under Cancer Type: Kidney cancer in the ontology"
+  ]
+ },
+ {
+  "id": "type2_405",
+  "question": "If a kidney tumor is found to have sarcomatoid features, what does this indicate regarding its subtype and disease aggressiveness?",
+  "answer": "Sarcomatoid features can occur in any RCC subtype and are associated with more aggressive disease.",
+  "question_type": "type2",
+  "level": "Complex Reasoning",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "Sarcomatoid features can occur in any RCC subtype and are associated with more aggressive disease",
+   "Sarcomatoid RCC (sRCC) is included under Histology for RCC in the ontology"
+  ]
+ },
+ {
+  "id": "type2_406",
+  "question": "How does the origin of RCC differ from that of urothelial carcinoma within the kidney?",
+  "answer": "RCC starts in the cells lining the renal tubules, while urothelial carcinoma starts in the cells lining the renal pelvis and ureter.",
+  "question_type": "type2",
+  "level": "Complex Reasoning",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "RCC starts in the cells that line the renal tubules",
+   "Urothelial carcinoma starts in the cells lining the renal pelvis and ureter"
+  ]
+ },
+ {
+  "id": "type2_479",
+  "question": "If a child under 5 presents with an adrenal mass and bone metastases, what is the most likely diagnosis and which diagnostic methods should be prioritized?",
+  "answer": "Neuroblastoma is most likely, and imaging tests plus biochemical tests should be prioritized.",
+  "question_type": "type2",
+  "level": "Complex Reasoning",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Neuroblastoma is a rare malignant adrenal tumor affecting mainly children under 5",
+   "Neuroblastoma may metastasize to bones",
+   "Neuroblastoma diagnostic methods include imaging tests and biochemical test"
+  ]
+ },
+ {
+  "id": "type2_480",
+  "question": "How would you distinguish between a functional adenoma and a pheochromocytoma in a patient with an adrenal mass and high blood pressure?",
+  "answer": "A pheochromocytoma arises from the adrenal medulla and causes high blood pressure, while functional adenoma does not typically present with high blood pressure.",
+  "question_type": "type2",
+  "level": "Complex Reasoning",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Pheochromocytoma arises from the adrenal medulla and is often associated with high blood pressure",
+   "Adenoma is the most common type of adrenal gland tumor and can be functioning or nonfunctioning",
+   "Functional adenoma subtypes are aldosteronoma and cortisol-producing adenoma"
+  ]
+ },
+ {
+  "id": "type2_481",
+  "question": "What combination of symptoms and test results would suggest an aldosteronoma rather than a cortisol-producing adenoma?",
+  "answer": "Excess aldosterone on biochemical testing without Cushing syndrome symptoms suggests aldosteronoma.",
+  "question_type": "type2",
+  "level": "Complex Reasoning",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Aldosteronoma produces excess aldosterone",
+   "Adenoma producing excess cortisol causes Cushing syndrome",
+   "Cortisol-producing adenoma is associated with Cushing syndrome"
+  ]
+ },
+ {
+  "id": "type3_228",
+  "question": "What are the major subtypes of kidney cancer and how are they histologically classified?",
+  "answer": "Kidney cancer includes subtypes such as renal cell carcinoma (RCC), urothelial carcinoma, Wilms tumor, and renal sarcoma, with RCC further classified by histology into clear cell RCC, non-clear cell RCC (including papillary RCC, chromophobe RCC, collecting duct RCC, renal medullary carcinoma, clear cell papillary renal cell tumor, fumarate hydratase-deficient RCC, and ELOC-mutated RCC), and sarcomatoid RCC.",
+  "question_type": "type3",
+  "level": "Contextual Summarize",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "Renal cell carcinoma (RCC) is the most common type of kidney cancer",
+   "Clear cell RCC is the most common subtype of RCC",
+   "Non-clear cell RCC includes papillary RCC, chromophobe RCC, collecting duct RCC, and renal medullary carcinoma",
+   "Wilms tumor usually occurs in young children and is a distinct kidney cancer type",
+   "Renal sarcoma starts in the blood vessels or connective tissue of the kidney",
+   "RCC starts in the cells that line the renal tubules",
+   "Sarcomatoid features can occur in any RCC subtype and are associated with more aggressive disease"
+  ]
+ },
+ {
+  "id": "type3_229",
+  "question": "Which anatomical structures are involved in the origin and local spread of kidney cancer?",
+  "answer": "Kidney cancer originates in structures such as the renal tubules and renal pelvis and can locally spread to surrounding fat, blood vessels, lymph nodes, adrenal glands, and Gerota’s fascia.",
+  "question_type": "type3",
+  "level": "Contextual Summarize",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "RCC starts in the cells that line the renal tubules",
+   "Urothelial carcinoma starts in the cells lining the renal pelvis and ureter",
+   "Kidney cancer can spread locally to surrounding fat, blood vessels, lymph nodes, adrenal glands, and Gerota’s fascia",
+   "Anatomical Structure includes: Renal tubules, Renal pelvis, Renal vein, Renal artery, Gerota’s fascia, Adrenal gland",
+   "Stage: Local spread includes: Surrounding fat, Blood vessels, Lymph nodes, Adrenal glands, Gerota’s fascia"
+  ]
+ },
+ {
+  "id": "type3_230",
+  "question": "What diagnostic methods are used to identify kidney cancer and its subtypes?",
+  "answer": "Diagnosis of kidney cancer and its subtypes involves imaging tests, blood tests, urine tests, biopsy, biomarker testing, and genetic risk testing.",
+  "question_type": "type3",
+  "level": "Contextual Summarize",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "Diagnosis of kidney cancer involves imaging tests, blood tests, urine tests, biopsy, biomarker testing, and genetic risk testing",
+   "Diagnostic Method includes: Imaging tests, Blood tests, Urine tests, Biopsy, Biomarker testing, Genetic risk testing",
+   "Clear cell RCC is the most common subtype of RCC",
+   "Non-clear cell RCC includes papillary RCC, chromophobe RCC, collecting duct RCC, and renal medullary carcinoma",
+   "Renal cell carcinoma (RCC) is the most common type of kidney cancer"
+  ]
+ },
+ {
+  "id": "type3_271",
+  "question": "What are the main types of adrenal tumors and how do they differ in terms of malignancy and function?",
+  "answer": "Adrenal tumors can be benign or malignant, with benign tumors like adenomas often being non-metastasizing and either functional or nonfunctioning, while malignant tumors include adrenocortical carcinoma, pheochromocytoma, and neuroblastoma, which may produce hormones and have potential for metastasis.",
+  "question_type": "type3",
+  "level": "Contextual Summarize",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Adrenal tumors can be benign or malignant",
+   "Benign adrenal tumors do not metastasize",
+   "Adenoma is the most common type of adrenal gland tumor and can be functioning or nonfunctioning",
+   "Adrenocortical carcinoma (ACC) is a rare malignant tumor of the adrenal cortex",
+   "Neuroblastoma is a rare malignant adrenal tumor affecting mainly children under 5",
+   "Functional adrenal tumors may produce excess hormones",
+   "Malignant adrenal tumors include Adrenocortical Carcinoma (ACC), Pheochromocytoma, and Neuroblastoma"
+  ]
+ },
+ {
+  "id": "type3_272",
+  "question": "What are the key symptoms and hormone-related syndromes associated with adrenocortical carcinoma and functional adrenal tumors?",
+  "answer": "Adrenocortical carcinoma may cause symptoms such as weight gain, muscle weakness, stretch marks, hormonal changes, and loss of appetite, while functional adrenal tumors can lead to hormone excess syndromes like Cushing syndrome from cortisol-producing adenomas and excess aldosterone from aldosteronoma.",
+  "question_type": "type3",
+  "level": "Contextual Summarize",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Symptoms of adrenal cancer include weight gain, muscle weakness, stretch marks, hormonal changes, nausea, vomiting, abdominal bloating, back pain, fever, loss of appetite, and unintentional weight loss",
+   "Half of adrenal cancer patients have symptoms due to hormone excess",
+   "Adenoma producing excess cortisol causes Cushing syndrome",
+   "Aldosteronoma produces excess aldosterone",
+   "Adrenocortical carcinoma (ACC) is a rare malignant tumor of the adrenal cortex",
+   "Adrenocortical Carcinoma (ACC) symptoms include weight gain, muscle weakness, pink or purple stretch marks, and hormonal changes"
+  ]
+ },
+ {
+  "id": "type3_273",
+  "question": "Which diagnostic methods are commonly used to evaluate adrenal tumors and what is their purpose?",
+  "answer": "Adrenal tumors are commonly evaluated using imaging tests such as CT scan, MRI scan, PET scan, FDG-PET/CT, and SSTR-PET/CT, as well as blood and biochemical tests to detect hormone secretion, with genetic testing and biopsy also used for diagnosis.",
+  "question_type": "type3",
+  "level": "Contextual Summarize",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Adrenal tumors are often found incidentally on imaging tests such as CT or MRI",
+   "Imaging tests for adrenal tumors include CT scan, MRI scan, PET scan, FDG-PET/CT, and SSTR-PET/CT",
+   "Blood and biochemical tests are used to detect hormone secretion by adrenal tumors",
+   "Genetic testing may be performed to identify hereditary risk factors",
+   "Biopsy may be used for diagnosis",
+   "Diagnostic methods for Adrenocortical Carcinoma (ACC) include CT scan, MRI scan, PET scan, FDG-PET/CT, SSTR-PET/CT, blood test, biochemical test, genetic test, and biopsy"
+  ]
+ },
+ {
+  "id": "type4_131",
+  "question": "Imagine you are a urologist writing a referral letter to a multidisciplinary tumor board for a 62-year-old patient recently diagnosed with renal cell carcinoma (RCC) displaying sarcomatoid features and suspected lung metastases. Summarize the case, including diagnostic findings, histology, staging, and key considerations for management.",
+  "answer": "Dear Multidisciplinary Tumor Board,\n\nI am referring a 62-year-old male patient recently diagnosed with renal cell carcinoma (RCC). Imaging tests revealed a large renal mass originating in the renal tubules, with histopathologic analysis confirming clear cell RCC (ccRCC) exhibiting sarcomatoid features. Additional imaging identified pulmonary nodules consistent with metastatic disease. Laboratory evaluation included blood and urine tests, and a biopsy confirmed the diagnosis. Biomarker and genetic risk testing are underway. Given the presence of sarcomatoid features, which are associated with more aggressive disease, and evidence of metastasis to the lungs, this case requires input regarding optimal systemic therapy and consideration of clinical trial enrollment. Treatment planning should account for tumor histology, size, location, and metastatic status.",
+  "question_type": "type4",
+  "level": "Creative Generation",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "Renal cell carcinoma (RCC) is the most common type of kidney cancer.",
+   "Clear cell RCC is the most common subtype of RCC.",
+   "Sarcomatoid features can occur in any RCC subtype and are associated with more aggressive disease.",
+   "Kidney cancer can metastasize to distant sites such as lungs, lymph nodes, bones, liver, and brain.",
+   "Diagnosis of kidney cancer involves imaging tests, blood tests, urine tests, biopsy, biomarker testing, and genetic risk testing.",
+   "Treatment for RCC is based on histology, tumor size, tumor location, and presence of metastasis."
+  ]
+ },
+ {
+  "id": "type4_132",
+  "question": "You are an oncologist tasked with drafting an initial treatment plan for a patient newly diagnosed with non-clear cell RCC (papillary subtype) confined to the kidney, with no evidence of metastasis. Outline your diagnostic confirmation, staging, and treatment strategy.",
+  "answer": "For this patient with a new diagnosis of papillary renal cell carcinoma (PRCC) confined to the kidney, I would first confirm the diagnosis using imaging tests (such as CT or MRI), blood and urine tests, and a percutaneous biopsy for histologic subtyping. Biomarker and genetic risk testing would be performed to identify any actionable alterations. Staging would ensure there is no local spread to surrounding fat, blood vessels, lymph nodes, or distant metastasis. Given the localized nature and non-clear cell histology, surgical resection (partial or radical nephrectomy depending on tumor size and location) is the mainstay of treatment. Further management would be determined by final pathology and risk assessment.",
+  "question_type": "type4",
+  "level": "Creative Generation",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "Non-clear cell RCC includes papillary RCC, chromophobe RCC, collecting duct RCC, and renal medullary carcinoma.",
+   "Diagnosis of kidney cancer involves imaging tests, blood tests, urine tests, biopsy, biomarker testing, and genetic risk testing.",
+   "Treatment for RCC is based on histology, tumor size, tumor location, and presence of metastasis.",
+   "Kidney cancer can spread locally to surrounding fat, blood vessels, lymph nodes, adrenal glands, and Gerota’s fascia.",
+   "Multiple tumors in one or both kidneys are treated as separate primary tumors, not metastasis."
+  ]
+ },
+ {
+  "id": "type4_133",
+  "question": "Rewrite the clinical facts regarding kidney cancer subtypes, spread, and diagnosis into a structured discharge summary for a patient with newly diagnosed clear cell RCC with local extension but no distant metastasis.",
+  "answer": "Discharge Summary:\n\nDiagnosis: Clear cell renal cell carcinoma (ccRCC) with local extension\n\nHospital Course: The patient presented with a renal mass confirmed by imaging tests. Biopsy of the lesion established a diagnosis of clear cell RCC, the most common RCC subtype, originating from renal tubule cells. Staging studies indicated local spread to perirenal fat and regional lymph nodes, but no evidence of distant metastasis to lungs, bones, liver, or brain. Laboratory workup included blood and urine tests, and biomarker as well as genetic risk assessments were initiated. The patient underwent partial nephrectomy, with pathology confirming ccRCC with no sarcomatoid features.\n\nPlan: Outpatient follow-up for ongoing surveillance and consideration of adjuvant therapy based on risk stratification.",
+  "question_type": "type4",
+  "level": "Creative Generation",
+  "source": "17_Kidney Cancer_processed",
+  "evidence": [
+   "Clear cell RCC is the most common subtype of RCC.",
+   "RCC starts in the cells that line the renal tubules.",
+   "Kidney cancer can spread locally to surrounding fat, blood vessels, lymph nodes, adrenal glands, and Gerota’s fascia.",
+   "Kidney cancer can metastasize to distant sites such as lungs, lymph nodes, bones, liver, and brain.",
+   "Diagnosis of kidney cancer involves imaging tests, blood tests, urine tests, biopsy, biomarker testing, and genetic risk testing.",
+   "Treatment for RCC is based on histology, tumor size, tumor location, and presence of metastasis."
+  ]
+ },
+ {
+  "id": "type4_156",
+  "question": "Imagine you are an endocrinologist receiving a referral for a 45-year-old patient with an incidentally discovered adrenal mass on CT scan. Draft a detailed diagnostic workup plan, integrating risk assessment for malignancy and hormone excess, as recommended by the guidelines.",
+  "answer": "As an endocrinologist, my diagnostic workup for this 45-year-old patient with an adrenal incidentaloma would begin with a thorough clinical assessment for symptoms of hormone excess, such as weight gain, muscle weakness, high blood pressure, or changes in hair distribution. I would order biochemical tests to evaluate for cortisol, aldosterone, and catecholamine excess, including a blood test and 24-hour urine collection. Imaging with MRI or PET/CT would be performed to further characterize the mass and assess for features suggestive of malignancy. Given the patient's age and risk, I would also review family history and consider genetic testing for hereditary syndromes associated with adrenal tumors. If imaging or laboratory findings are suspicious for malignancy or functional tumor, a biopsy may be indicated for definitive diagnosis.",
+  "question_type": "type4",
+  "level": "Creative Generation",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Adrenal tumors are often found incidentally on imaging tests such as CT or MRI.",
+   "Functional adrenal tumors may produce excess hormones.",
+   "Blood and biochemical tests are used to detect hormone secretion by adrenal tumors.",
+   "Imaging tests for adrenal tumors include CT scan, MRI scan, PET scan, FDG-PET/CT, and SSTR-PET/CT.",
+   "Certain hereditary syndromes increase the risk of adrenal tumors.",
+   "Genetic testing may be performed to identify hereditary risk factors.",
+   "Biopsy may be used for diagnosis."
+  ]
+ },
+ {
+  "id": "type4_157",
+  "question": "You are a medical intern asked to write a referral note to oncology for a pediatric patient (age 4) presenting with abdominal bloating and weight loss. The note should summarize the differential diagnosis, relevant risk factors, and initial investigations, adhering to evidence from the guidelines.",
+  "answer": "Referral Note:\n\nPatient: 4-year-old child\nReason for Referral: Evaluation of adrenal mass\n\nSummary: The patient presents with abdominal bloating and unintentional weight loss. Imaging (CT scan) reveals an adrenal mass. Differential diagnosis includes neuroblastoma, adrenocortical carcinoma, and other malignant adrenal tumors. Notably, neuroblastoma is a rare malignant adrenal tumor primarily affecting children under 5. Family history and assessment for hereditary syndromes (e.g., Beckwith-Wiedemann syndrome, Li-Fraumeni syndrome) are being conducted. Initial investigations include CT scan and blood and biochemical tests to assess for hormone excess. Further genetic testing is planned to evaluate for hereditary risk factors.",
+  "question_type": "type4",
+  "level": "Creative Generation",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Neuroblastoma is a rare malignant adrenal tumor affecting mainly children under 5.",
+   "Adrenocortical carcinoma can occur at any age but is most likely in children under 5 and adults in their 40s and 50s.",
+   "Symptoms of adrenal cancer include abdominal bloating and loss of weight without trying.",
+   "Imaging tests for adrenal tumors include CT scan, MRI scan, PET scan, FDG-PET/CT, and SSTR-PET/CT.",
+   "Certain hereditary syndromes increase the risk of adrenal tumors.",
+   "Genetic testing may be performed to identify hereditary risk factors.",
+   "Blood and biochemical tests are used to detect hormone secretion by adrenal tumors."
+  ]
+ },
+ {
+  "id": "type4_158",
+  "question": "Transform the guideline evidence into a structured discharge summary for a patient recently treated for adrenocortical carcinoma (ACC), including presentation, diagnostic process, risk assessment, and follow-up recommendations.",
+  "answer": "Discharge Summary:\n\nDiagnosis: Adrenocortical carcinoma (ACC)\n\nPresentation: The patient presented with muscle weakness, pink stretch marks, and recent weight gain. Physical examination and laboratory findings were suggestive of hormone excess.\n\nDiagnostic Process: Initial CT and MRI scans identified a suspicious adrenal mass. Biochemical and blood tests confirmed hypercortisolism. Genetic testing was performed due to a family history of hereditary syndromes. A biopsy of the adrenal mass confirmed ACC.\n\nRisk Assessment: The patient's risk was elevated due to age and family history consistent with hereditary syndromes such as Li-Fraumeni syndrome.\n\nFollow-Up: The patient will undergo regular imaging (MRI/PET-CT) and biochemical monitoring. Genetic counseling is recommended for the patient and family members.",
+  "question_type": "type4",
+  "level": "Creative Generation",
+  "source": "65_Adrenal Tumors_processed",
+  "evidence": [
+   "Adrenocortical carcinoma (ACC) is a rare malignant tumor of the adrenal cortex.",
+   "Adenoma producing excess cortisol causes Cushing syndrome.",
+   "Symptoms of adrenal cancer include weight gain, muscle weakness, pink or purple stretch marks.",
+   "Imaging tests for adrenal tumors include CT scan, MRI scan, PET scan, FDG-PET/CT, and SSTR-PET/CT.",
+   "Biopsy may be used for diagnosis.",
+   "Certain hereditary syndromes increase the risk of adrenal tumors.",
+   "Genetic testing may be performed to identify hereditary risk factors."
+  ]
+ }
+]

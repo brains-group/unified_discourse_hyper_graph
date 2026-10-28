@@ -1,0 +1,12 @@
+{
+  "questions": 250,
+  "questions_with_usage": 250,
+  "api_calls_total": 250,
+  "api_calls_this_run": 250,
+  "prompt_tokens": 541507,
+  "completion_tokens": 38829,
+  "prompt_cache_hit_tokens": 128640,
+  "mean_prompt_tokens_per_question": 2166.0,
+  "mean_completion_tokens_per_question": 155.3,
+  "note": "prompt tokens = the shared answer prompt + this system's context; questions_with_usage < questions means some answers came from a reader cache written before usage logging"
+}

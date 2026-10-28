@@ -1,0 +1,418 @@
+{
+ "system": "unh_hypergraph",
+ "set": "long_qa",
+ "contracts": [
+  "2025_pdp_contract",
+  "all_state_auto_insurance",
+  "capital_health_plan",
+  "progressive_maine_auto_policy",
+  "td_contract"
+ ],
+ "complete_set": true,
+ "llm_model": "deepseek-flash",
+ "llm_base_url": "https://api.deepseek.com",
+ "temperature": "none",
+ "max_tokens": 4096,
+ "api_calls_this_run": {
+  "reader": 445,
+  "judge": 445
+ },
+ "seconds_this_run": 39.2,
+ "qa": {
+  "pooled": {
+   "n": 445,
+   "score_all": 83.03,
+   "score_excl_cat5": 81.87,
+   "by_category": {
+    "CAT1_ATOMIC_LOOKUP": {
+     "score": 86.26,
+     "n": 131
+    },
+    "CAT2_RELATIONAL_LOOKUP": {
+     "score": 87.0,
+     "n": 100
+    },
+    "CAT3_CONDITIONAL_REASONING": {
+     "score": 86.73,
+     "n": 98
+    },
+    "CAT4_MULTIHOP_REASONING": {
+     "score": 62.8,
+     "n": 82
+    },
+    "CAT5_UNANSWERABLE": {
+     "score": 97.06,
+     "n": 34
+    }
+   },
+   "abstained_on_answerable": 53,
+   "mean_context_tokens": 1823.9,
+   "empty_contexts": 0,
+   "reader_empty": 0,
+   "reader_hit_max_tokens": 0,
+   "reader_no_answer_tag": 0,
+   "judge_unparsed": 0,
+   "reader_usage": {
+    "calls": 445,
+    "prompt_tokens": 870548,
+    "completion_tokens": 42404,
+    "prompt_cache_hit_tokens": 12800
+   },
+   "judge_usage": {
+    "calls": 445,
+    "prompt_tokens": 193371,
+    "completion_tokens": 31207,
+    "prompt_cache_hit_tokens": 101376
+   }
+  },
+  "macro": {
+   "score_all": 82.77,
+   "score_excl_cat5": 81.72,
+   "by_category": {
+    "CAT1_ATOMIC_LOOKUP": 85.22,
+    "CAT2_RELATIONAL_LOOKUP": 86.22,
+    "CAT3_CONDITIONAL_REASONING": 86.96,
+    "CAT4_MULTIHOP_REASONING": 64.67,
+    "CAT5_UNANSWERABLE": 96.0
+   },
+   "mean_context_tokens": 1822.9
+  }
+ },
+ "facts": {
+  "pooled": {
+   "n": 0,
+   "recall": null,
+   "recalled": 0,
+   "mean_context_tokens": 0.0,
+   "empty_contexts": 0,
+   "judge_unparsed": 0,
+   "judge_usage": {
+    "calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  "macro": {
+   "recall": null,
+   "mean_context_tokens": 0.0
+  }
+ },
+ "per_contract": {
+  "2025_pdp_contract": {
+   "qa": {
+    "n": 64,
+    "score_all": 85.16,
+    "score_excl_cat5": 84.17,
+    "by_category": {
+     "CAT1_ATOMIC_LOOKUP": {
+      "score": 80.0,
+      "n": 15
+     },
+     "CAT2_RELATIONAL_LOOKUP": {
+      "score": 80.0,
+      "n": 15
+     },
+     "CAT3_CONDITIONAL_REASONING": {
+      "score": 96.67,
+      "n": 15
+     },
+     "CAT4_MULTIHOP_REASONING": {
+      "score": 80.0,
+      "n": 15
+     },
+     "CAT5_UNANSWERABLE": {
+      "score": 100.0,
+      "n": 4
+     }
+    },
+    "abstained_on_answerable": 7,
+    "mean_context_tokens": 1830.0,
+    "empty_contexts": 0,
+    "reader_empty": 0,
+    "reader_hit_max_tokens": 0,
+    "reader_no_answer_tag": 0,
+    "judge_unparsed": 0,
+    "reader_usage": {
+     "calls": 64,
+     "prompt_tokens": 124098,
+     "completion_tokens": 5932,
+     "prompt_cache_hit_tokens": 3200
+    },
+    "judge_usage": {
+     "calls": 64,
+     "prompt_tokens": 27890,
+     "completion_tokens": 4522,
+     "prompt_cache_hit_tokens": 14336
+    }
+   },
+   "facts": {
+    "n": 0,
+    "recall": null,
+    "recalled": 0,
+    "mean_context_tokens": 0.0,
+    "empty_contexts": 0,
+    "judge_unparsed": 0,
+    "judge_usage": {
+     "calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "prompt_cache_hit_tokens": 0
+    }
+   },
+   "index_and_retrieval_seconds": null
+  },
+  "all_state_auto_insurance": {
+   "qa": {
+    "n": 85,
+    "score_all": 74.12,
+    "score_excl_cat5": 73.75,
+    "by_category": {
+     "CAT1_ATOMIC_LOOKUP": {
+      "score": 80.0,
+      "n": 20
+     },
+     "CAT2_RELATIONAL_LOOKUP": {
+      "score": 80.0,
+      "n": 20
+     },
+     "CAT3_CONDITIONAL_REASONING": {
+      "score": 90.0,
+      "n": 20
+     },
+     "CAT4_MULTIHOP_REASONING": {
+      "score": 45.0,
+      "n": 20
+     },
+     "CAT5_UNANSWERABLE": {
+      "score": 80.0,
+      "n": 5
+     }
+    },
+    "abstained_on_answerable": 17,
+    "mean_context_tokens": 1692.3,
+    "empty_contexts": 0,
+    "reader_empty": 0,
+    "reader_hit_max_tokens": 0,
+    "reader_no_answer_tag": 0,
+    "judge_unparsed": 0,
+    "reader_usage": {
+     "calls": 85,
+     "prompt_tokens": 156439,
+     "completion_tokens": 8260,
+     "prompt_cache_hit_tokens": 1536
+    },
+    "judge_usage": {
+     "calls": 85,
+     "prompt_tokens": 36546,
+     "completion_tokens": 5855,
+     "prompt_cache_hit_tokens": 18560
+    }
+   },
+   "facts": {
+    "n": 0,
+    "recall": null,
+    "recalled": 0,
+    "mean_context_tokens": 0.0,
+    "empty_contexts": 0,
+    "judge_unparsed": 0,
+    "judge_usage": {
+     "calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "prompt_cache_hit_tokens": 0
+    }
+   },
+   "index_and_retrieval_seconds": null
+  },
+  "capital_health_plan": {
+   "qa": {
+    "n": 111,
+    "score_all": 85.59,
+    "score_excl_cat5": 84.16,
+    "by_category": {
+     "CAT1_ATOMIC_LOOKUP": {
+      "score": 90.0,
+      "n": 40
+     },
+     "CAT2_RELATIONAL_LOOKUP": {
+      "score": 94.44,
+      "n": 27
+     },
+     "CAT3_CONDITIONAL_REASONING": {
+      "score": 78.95,
+      "n": 19
+     },
+     "CAT4_MULTIHOP_REASONING": {
+      "score": 56.67,
+      "n": 15
+     },
+     "CAT5_UNANSWERABLE": {
+      "score": 100.0,
+      "n": 10
+     }
+    },
+    "abstained_on_answerable": 9,
+    "mean_context_tokens": 1836.5,
+    "empty_contexts": 0,
+    "reader_empty": 0,
+    "reader_hit_max_tokens": 0,
+    "reader_no_answer_tag": 0,
+    "judge_unparsed": 0,
+    "reader_usage": {
+     "calls": 111,
+     "prompt_tokens": 218257,
+     "completion_tokens": 10758,
+     "prompt_cache_hit_tokens": 2688
+    },
+    "judge_usage": {
+     "calls": 111,
+     "prompt_tokens": 48780,
+     "completion_tokens": 7740,
+     "prompt_cache_hit_tokens": 26496
+    }
+   },
+   "facts": {
+    "n": 0,
+    "recall": null,
+    "recalled": 0,
+    "mean_context_tokens": 0.0,
+    "empty_contexts": 0,
+    "judge_unparsed": 0,
+    "judge_usage": {
+     "calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "prompt_cache_hit_tokens": 0
+    }
+   },
+   "index_and_retrieval_seconds": null
+  },
+  "progressive_maine_auto_policy": {
+   "qa": {
+    "n": 85,
+    "score_all": 80.0,
+    "score_excl_cat5": 78.75,
+    "by_category": {
+     "CAT1_ATOMIC_LOOKUP": {
+      "score": 90.0,
+      "n": 20
+     },
+     "CAT2_RELATIONAL_LOOKUP": {
+      "score": 85.0,
+      "n": 20
+     },
+     "CAT3_CONDITIONAL_REASONING": {
+      "score": 77.5,
+      "n": 20
+     },
+     "CAT4_MULTIHOP_REASONING": {
+      "score": 62.5,
+      "n": 20
+     },
+     "CAT5_UNANSWERABLE": {
+      "score": 100.0,
+      "n": 5
+     }
+    },
+    "abstained_on_answerable": 12,
+    "mean_context_tokens": 1917.5,
+    "empty_contexts": 0,
+    "reader_empty": 0,
+    "reader_hit_max_tokens": 0,
+    "reader_no_answer_tag": 0,
+    "judge_unparsed": 0,
+    "reader_usage": {
+     "calls": 85,
+     "prompt_tokens": 174916,
+     "completion_tokens": 8660,
+     "prompt_cache_hit_tokens": 2816
+    },
+    "judge_usage": {
+     "calls": 85,
+     "prompt_tokens": 36928,
+     "completion_tokens": 6458,
+     "prompt_cache_hit_tokens": 18688
+    }
+   },
+   "facts": {
+    "n": 0,
+    "recall": null,
+    "recalled": 0,
+    "mean_context_tokens": 0.0,
+    "empty_contexts": 0,
+    "judge_unparsed": 0,
+    "judge_usage": {
+     "calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "prompt_cache_hit_tokens": 0
+    }
+   },
+   "index_and_retrieval_seconds": null
+  },
+  "td_contract": {
+   "qa": {
+    "n": 100,
+    "score_all": 89.0,
+    "score_excl_cat5": 87.78,
+    "by_category": {
+     "CAT1_ATOMIC_LOOKUP": {
+      "score": 86.11,
+      "n": 36
+     },
+     "CAT2_RELATIONAL_LOOKUP": {
+      "score": 91.67,
+      "n": 18
+     },
+     "CAT3_CONDITIONAL_REASONING": {
+      "score": 91.67,
+      "n": 24
+     },
+     "CAT4_MULTIHOP_REASONING": {
+      "score": 79.17,
+      "n": 12
+     },
+     "CAT5_UNANSWERABLE": {
+      "score": 100.0,
+      "n": 10
+     }
+    },
+    "abstained_on_answerable": 8,
+    "mean_context_tokens": 1838.2,
+    "empty_contexts": 0,
+    "reader_empty": 0,
+    "reader_hit_max_tokens": 0,
+    "reader_no_answer_tag": 0,
+    "judge_unparsed": 0,
+    "reader_usage": {
+     "calls": 100,
+     "prompt_tokens": 196838,
+     "completion_tokens": 8794,
+     "prompt_cache_hit_tokens": 2560
+    },
+    "judge_usage": {
+     "calls": 100,
+     "prompt_tokens": 43227,
+     "completion_tokens": 6632,
+     "prompt_cache_hit_tokens": 23296
+    }
+   },
+   "facts": {
+    "n": 0,
+    "recall": null,
+    "recalled": 0,
+    "mean_context_tokens": 0.0,
+    "empty_contexts": 0,
+    "judge_unparsed": 0,
+    "judge_usage": {
+     "calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "prompt_cache_hit_tokens": 0
+    }
+   },
+   "index_and_retrieval_seconds": null
+  }
+ }
+}

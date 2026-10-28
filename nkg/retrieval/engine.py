@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer
 
 from nkg.models.Graph import Graph
 from nkg.retrieval.planner import QueryPlan  # Assuming you wrapped the signature in a module here
-from nkg.retrieval.scoring import score_fact, score_entity, FACT_WEIGHTS, ENTITY_WEIGHTS
+from nkg.retrieval.scoring import score_entity, FACT_WEIGHTS, ENTITY_WEIGHTS
 from nkg.utils.math_utils import compute_mmr, normalize_rows
 from .traversal import *
 
@@ -16,13 +16,18 @@ class Retriever:
             retrieval_model: SentenceTransformer,
             cross_encoder: CrossEncoder,  # Added Cross-Encoder
             graph: Graph = None,
-            graph_path: str = None
+            graph_path: str = None,
+            entity_weights: dict = None,  # keys: "name", "role", "anchors" — default: {0.4, 0.3, 0.3}
+            fact_weights: dict = None,    # keys: "sentence", "questions", "chunk" — default: {0.5, 0.3, 0.2}
+            drop_empty_entities: bool = False,
     ):
         """
         Initializes the retriever with embedding models and the knowledge graph.
         """
         self.retrieval_model = retrieval_model
         self.cross_encoder = cross_encoder
+        self.entity_weights = entity_weights or ENTITY_WEIGHTS.copy()
+        self.fact_weights   = fact_weights   or {"sentence": 0.5, "questions": 0.3, "chunk": 0.2}
 
         if graph:
             self.graph = graph
@@ -32,6 +37,19 @@ class Retriever:
             self.graph.label_edges()
         else:
             raise ValueError("Must provide either a graph object or a graph_path.")
+
+        # Entities extracted with an empty name AND empty role carry no text to match on, yet still link every
+        # fact they were attached to; at query time they act as junk hubs between unrelated facts. Optionally
+        # remove them (and their edges) before anything is embedded or traversed. The graph file is untouched.
+        self.dropped_empty_entities = 0
+        if drop_empty_entities:
+            empty = [eid for eid, ent in self.graph.entities.items()
+                     if not (ent.name or "").strip() and not (ent.role or "").strip()]
+            for eid in empty:
+                self.graph.entities.pop(eid, None)
+                if self.graph.network.has_node(eid):
+                    self.graph.network.remove_node(eid)
+            self.dropped_empty_entities = len(empty)
 
         # Initialize DSPy Query Planner
         self.planner = dspy.ChainOfThought(QueryPlan)
@@ -48,6 +66,7 @@ class Retriever:
 
         self._initialize_embeddings()
         self._initialize_edge_embeddings()
+        self._build_adj_dict()
 
     def _initialize_embeddings(self, verbose=False):
         """
@@ -89,14 +108,15 @@ class Retriever:
             tracking[(fact_id, "sentence")] = (current_idx, current_idx + 1)
             current_idx += 1
 
-            # Macro Topics (List)
-            if fact.macro_topics:
-                num_mac = len(fact.macro_topics)
-                flat_strings.extend(fact.macro_topics)
-                tracking[(fact_id, "macro")] = (current_idx, current_idx + num_mac)
-                current_idx += num_mac
+            # Answered Questions — concatenated into one string so the query can be
+            # compared directly against the set of questions this fact answers.
+            if fact.answered_questions:
+                questions_str = " | ".join(fact.answered_questions)
+                flat_strings.append(questions_str)
+                tracking[(fact_id, "questions")] = (current_idx, current_idx + 1)
+                current_idx += 1
             else:
-                tracking[(fact_id, "macro")] = None
+                tracking[(fact_id, "questions")] = None
 
             # Chunk Topics (List)
             if fact.chunk_topics:
@@ -112,7 +132,16 @@ class Retriever:
             print(f"Encoding {len(flat_strings)} total text segments...")
         # Normalize immediately so all stored embeddings are unit-norm.
         # This lets every downstream similarity computation use dot products instead of sklearn.
-        all_embs = normalize_rows(self.retrieval_model.encode(flat_strings, show_progress_bar=True))
+        # Empty strings (e.g. an entity extracted with an empty name/role) get a zero vector instead of being
+        # encoded: a batch of zero-token inputs crashes some models (voyage-4-nano: IndexError in the attention
+        # mask), and an empty text carries no signal, so it never matches a query (cosine 0).
+        nonempty = [i for i, s in enumerate(flat_strings) if s and s.strip()]
+        encoded = self.retrieval_model.encode([flat_strings[i] for i in nonempty], show_progress_bar=True)
+        all_embs = np.zeros((len(flat_strings), encoded.shape[1]), dtype=np.float32)
+        all_embs[nonempty] = encoded
+        if verbose and len(nonempty) < len(flat_strings):
+            print(f"{len(flat_strings) - len(nonempty)} empty text segments -> zero vectors")
+        all_embs = normalize_rows(all_embs)
         self.emb_dim = all_embs.shape[1]   # stored for use in expand_paths_batched fallback zeros
 
         # --- Unflatten into Dictionaries ---
@@ -131,13 +160,13 @@ class Retriever:
 
         for fact_id in self.graph.facts.keys():
             s_slice = tracking[(fact_id, "sentence")]
-            m_slice = tracking[(fact_id, "macro")]
+            q_slice = tracking[(fact_id, "questions")]
             c_slice = tracking[(fact_id, "chunk")]
 
             self.fact_embs[fact_id] = {
-                "sentence": all_embs[s_slice[0]:s_slice[1]],
-                "macro": all_embs[m_slice[0]:m_slice[1]] if m_slice else None,
-                "chunk": all_embs[c_slice[0]:c_slice[1]] if c_slice else None
+                "sentence":  all_embs[s_slice[0]:s_slice[1]],
+                "questions": all_embs[q_slice[0]:q_slice[1]] if q_slice else None,
+                "chunk":     all_embs[c_slice[0]:c_slice[1]] if c_slice else None
             }
 
         # Build contiguous stacked matrices for vectorized seed scoring.
@@ -181,18 +210,18 @@ class Retriever:
             # Fact -> Fact Edges
             if u in self.graph.facts and v in self.graph.facts:
                 ff_edges.append((u, v))
-                ff_descs.append(data.get("description", ""))
-                ff_labels.append(data.get("label", ""))
+                ff_descs.append(data.get("description", "") or "unlabeled")
+                ff_labels.append(data.get("label", "") or "unlabeled")
 
             # Entity -> Fact Edges
             elif data.get("edge_type") == "entity_fact":
                 ef_edges.append((u, v))
-                ef_labels.append(data.get("label", ""))
+                ef_labels.append(data.get("label", "") or "unlabeled")
 
             # Fact -> Entity Edges
             elif data.get("edge_type") == "fact_entity":
                 fe_edges.append((u, v))
-                fe_labels.append(data.get("label", ""))
+                fe_labels.append(data.get("label", "") or "unlabeled")
 
         # 2. Separate Encoding Passes
         # Using separate passes is perfectly fine here and keeps the mapping logic incredibly simple.
@@ -231,20 +260,44 @@ class Retriever:
         for i, edge in enumerate(fe_edges):
             self.fe_label_embs[edge] = fe_label_matrix[i:i + 1]
 
-    def get_seeds(self, query: str, top_k: int = 10, lambda_mmr: float = 0.6, verbose=False, mode="all") -> tuple[list[str], object]:
+    def _build_adj_dict(self):
+        """
+        Compiles NetworkX adjacency into a plain Python dict at init time.
+        Eliminates repeated NetworkX out_edges() calls during path expansion —
+        each traversal step becomes a dict lookup returning a reference rather than
+        a new list allocation.
+
+        Format: {node_id: [(neighbor_id, edge_type, edge_data_dict), ...]}
+        """
+        adj: dict[str, list] = {}
+        for u, v, data in self.graph.network.edges(data=True):
+            if u not in adj:
+                adj[u] = []
+            adj[u].append((v, data.get("edge_type"), data))
+        self.adj = adj
+
+    def get_seeds(self, query: str, top_k: int = 10, lambda_mmr: float = 0.6, verbose=False, mode="all", precomputed_plan: object = None) -> tuple[list[str], object]:
         """
         Executes the query plan, scores all facts and entities independently,
         and returns the top-k diverse seeds using MMR.
+
+        precomputed_plan: if provided, skips the internal QueryPlan LLM call and uses this
+            object's target_entities/broad_anchors/target_topics fields directly (e.g. produced
+            by an external planner such as nkg.dag_retrieval). Must expose the same attributes
+            as a QueryPlan prediction.
         """
         # 1. Run Query Planner
-        if verbose:
-            print(f"Planning query strategy for: '{query}'")
-        plan = self.planner(user_query=query)
+        if precomputed_plan is not None:
+            plan = precomputed_plan
+        else:
+            if verbose:
+                print(f"Planning query strategy for: '{query}'")
+            plan = self.planner(user_query=query)
 
         # 2. Embed the Query Plan components and immediately normalize.
         # Pre-normalized query vectors allow all downstream comparisons to use
         # cheap dot products instead of sklearn cosine_similarity.
-        plan_rewrite_emb = normalize_rows(self.retrieval_model.encode([plan.rewritten_query], show_progress_bar=False))
+        plan_rewrite_emb = normalize_rows(self.retrieval_model.encode([query], show_progress_bar=False))
         plan_targets_embs = normalize_rows(self.retrieval_model.encode(plan.target_entities, show_progress_bar=False)) if plan.target_entities else np.zeros((0, self.emb_dim), dtype=np.float32)
         plan_broad_embs = normalize_rows(self.retrieval_model.encode(plan.broad_anchors, show_progress_bar=False)) if plan.broad_anchors else np.zeros((0, self.emb_dim), dtype=np.float32)
         plan_topics_embs = normalize_rows(self.retrieval_model.encode(plan.target_topics, show_progress_bar=False)) if plan.target_topics else np.zeros((0, self.emb_dim), dtype=np.float32)
@@ -267,7 +320,7 @@ class Retriever:
                 role_scores_v = (plan_broad_embs @ self.entity_role_mat.T).max(axis=0).astype(np.float32) \
                     if len(plan_broad_embs) > 0 else np.zeros(N_ent, dtype=np.float32)
 
-                w = ENTITY_WEIGHTS
+                w = self.entity_weights
                 for j, ent_id in enumerate(self.all_entity_ids):
                     anchor_embs = self.entity_embs[ent_id]["anchors"]
                     name_s = float(name_scores_v[j])
@@ -285,8 +338,8 @@ class Retriever:
                     candidate_diversity_embs.append(self.entity_role_mat[j])
 
         # 4. Score all Facts
-        # Sentence score (weight 0.6) is vectorized via matrix multiply.
-        # Macro/chunk topic scores are kept per-fact because topics lists are ragged.
+        # Sentence score is vectorized via matrix multiply.
+        # Answered-questions and chunk-topic scores are per-fact (ragged lists / optional fields).
         if mode:
             N_fact = len(self.all_fact_ids)
             if N_fact > 0:
@@ -295,18 +348,19 @@ class Retriever:
                 # (1, D) @ (D, N_fact) → (1, N_fact) → flatten → (N_fact,)
                 sent_scores_v = (plan_rewrite_emb @ self.fact_sent_mat.T).flatten().astype(np.float32)
 
-                fw = FACT_WEIGHTS
                 for j, fact_id in enumerate(self.all_fact_ids):
                     embs = self.fact_embs[fact_id]
                     sent_s = float(sent_scores_v[j])
-                    weights = fw.copy()
+                    weights = self.fact_weights.copy()
 
-                    macro_s = 0.0
-                    if embs["macro"] is not None and len(embs["macro"]) > 0 and len(plan_topics_embs) > 0:
-                        macro_s = float((plan_topics_embs @ embs["macro"].T).max(axis=1).mean())
+                    # Compare the query directly against answered_questions —
+                    # high score means this fact likely answers the user's question.
+                    questions_s = 0.0
+                    if embs["questions"] is not None:
+                        questions_s = float((plan_rewrite_emb @ embs["questions"].T).flatten()[0])
                     else:
-                        weights["sentence"] += weights["macro"]
-                        weights["macro"] = 0.0
+                        weights["sentence"] += weights["questions"]
+                        weights["questions"] = 0.0
 
                     chunk_s = 0.0
                     if embs["chunk"] is not None and len(embs["chunk"]) > 0 and len(plan_topics_embs) > 0:
@@ -315,7 +369,9 @@ class Retriever:
                         weights["sentence"] += weights["chunk"]
                         weights["chunk"] = 0.0
 
-                    score = weights["sentence"] * sent_s + weights["macro"] * macro_s + weights["chunk"] * chunk_s
+                    score = (weights["sentence"] * sent_s
+                             + weights["questions"] * questions_s
+                             + weights["chunk"] * chunk_s)
                     candidate_scores.append(score)
                     candidate_diversity_embs.append(self.fact_sent_mat[j])
 
@@ -346,27 +402,47 @@ class Retriever:
             return_raw_paths: bool = False,
             verbose=False,
             mode="all",
-            search_mode: str = "beam_search"
+            search_mode: str = "beam_search",
+            deduplicate_paths: bool = True,
+            neutral_layout: bool = False,
+            precomputed_plan: object = None,
+            source_passages: int = 0,
     ) -> str:
         """
         The main public API for the Retriever.
         Takes a natural language query and returns a single formatted context string
         containing the most logically sound traversal paths.
 
-        search_mode:      Controls the graph expansion strategy.
-                          "beam_search"     → Bounded beam search with local MMR at every
-                                             propagation layer (original behaviour).
-                          "blind_expansion" → Follows ALL valid edges from each seed up to
-                                             max_depth with no pruning during traversal.
-                                             The full candidate set is then ranked globally
-                                             by the cross-encoder + MMR.
-        beam_mmr_lambda:  (beam_search only) Relevance/diversity trade-off during expansion.
-                          Higher → more relevant edges chosen; lower → more diverse branches.
-                          Range [0.0, 1.0].
-        final_mmr_lambda: Controls the relevance/diversity trade-off in the final global
-                          re-ranking pass (cross-encoder scores vs path-embedding diversity).
-                          Higher → top-ranked paths by relevance; lower → maximally diverse
-                          context paragraphs. Range [0.0, 1.0].
+        search_mode:        Controls the graph expansion strategy.
+                            "beam_search"     → Bounded beam search with local MMR at every
+                                               propagation layer (original behaviour).
+                            "blind_expansion" → Follows ALL valid edges from each seed up to
+                                               max_depth with no pruning during traversal.
+                                               The full candidate set is then ranked globally
+                                               by the cross-encoder + MMR.
+        beam_mmr_lambda:    (beam_search only) Relevance/diversity trade-off during expansion.
+                            Higher → more relevant edges chosen; lower → more diverse branches.
+                            Range [0.0, 1.0].
+        final_mmr_lambda:   Controls the relevance/diversity trade-off in the final global
+                            re-ranking pass (cross-encoder scores vs path-embedding diversity).
+                            Higher → top-ranked paths by relevance; lower → maximally diverse
+                            context paragraphs. Range [0.0, 1.0].
+        deduplicate_paths:  If True (default), paths are clustered by node overlap and only
+                            novel edge bursts from lower-priority paths are included in the
+                            output. Reduces repetition and context length significantly.
+        neutral_layout:     If True, fact→fact edges are rendered with a short label inline
+                            and their long descriptions collected in a 'Logical Conclusions'
+                            block below each path/burst. Gives the LLM both the high-level
+                            traversal structure and the detailed reasoning without mixing them.
+                            Entity edges are unaffected. Can be combined with deduplicate_paths.
+        precomputed_plan:   If provided, skips the internal QueryPlan LLM call for this query and
+                            uses this object's target_entities/broad_anchors/target_topics/
+                            target_edge_labels/target_edge_semantics fields directly (e.g. produced
+                            by an external planner such as nkg.dag_retrieval).
+        source_passages:    If > 0, append the original text of up to this many source chunks of the facts in
+                            the final paths (in path rank order, each chunk once) under a "Source passages:"
+                            heading. Facts are paraphrased extractions and can drop the exact answer span; the
+                            source text restores it. 0 (default) = paths only.
         """
         if search_mode not in ("beam_search", "blind_expansion"):
             raise ValueError(f"Unknown search_mode '{search_mode}'. Choose 'beam_search' or 'blind_expansion'.")
@@ -375,7 +451,7 @@ class Retriever:
             print(f"\n--- Starting Retrieval Pipeline for: '{query}' (search_mode={search_mode}) ---")
 
         # Step 1: Query Planning & Seed Selection
-        seeds, plan = self.get_seeds(query, top_k=top_k_seeds, mode=mode)
+        seeds, plan = self.get_seeds(query, top_k=top_k_seeds, mode=mode, precomputed_plan=precomputed_plan)
 
         if not seeds:
             print("No relevant seeds found.")
@@ -417,8 +493,17 @@ class Retriever:
         )
 
         # Step 4: Final Context Formatting
-        # Join the top-K narrative strings with double newlines
-        context_string = "\n\n".join(final_strings)
+        if deduplicate_paths:
+            context_string = format_paths_deduplicated(self.graph, final_paths, neutral_layout)
+        elif neutral_layout:
+            context_string = "\n\n".join(format_path(self.graph, p, neutral_layout=True) for p in final_paths)
+        else:
+            context_string = "\n\n".join(final_strings)
+
+        if source_passages > 0:
+            passages = self.source_passages_for(final_paths, source_passages)
+            if passages:
+                context_string = context_string + "\n\nSource passages:\n\n" + "\n\n".join(passages)
 
         if verbose:
             print("--- Retrieval Complete ---")
@@ -428,6 +513,24 @@ class Retriever:
             return context_string, final_paths
 
         return context_string
+
+    def source_passages_for(self, ranked_paths, limit: int) -> list:
+        """Texts of the source chunks of the facts in ranked_paths: walk the paths in rank order and each path's
+        nodes in traversal order; for every fact, its chunk(s) via chunk->fact edges; each chunk once; at most
+        `limit` chunks."""
+        chunk_ids, seen = [], set()
+        for path in ranked_paths:
+            nodes = [path.history[0][0]] + [step[3] for step in path.history] if path.history else [path.current_node]
+            for node in nodes:
+                if node not in self.graph.facts:
+                    continue
+                for pred in self.graph.network.predecessors(node):
+                    if pred in self.graph.chunks and pred not in seen:
+                        seen.add(pred)
+                        chunk_ids.append(pred)
+                        if len(chunk_ids) >= limit:
+                            return [self.graph.chunks[c].text for c in chunk_ids]
+        return [self.graph.chunks[c].text for c in chunk_ids]
 
     def get_seeds_precomputed(self, plan_embs_dict: dict, top_k: int = 10, lambda_mmr: float = 0.6, mode="all") -> list[str]:
         """Bypasses Query Planner and Encoding. Caller must supply pre-normalized embeddings."""
@@ -448,7 +551,7 @@ class Retriever:
                     if len(plan_targets_embs) > 0 else np.zeros(N_ent, dtype=np.float32)
                 role_scores_v = (plan_broad_embs @ self.entity_role_mat.T).max(axis=0).astype(np.float32) \
                     if len(plan_broad_embs) > 0 else np.zeros(N_ent, dtype=np.float32)
-                w = ENTITY_WEIGHTS
+                w = self.entity_weights
                 for j, ent_id in enumerate(self.all_entity_ids):
                     anchor_embs = self.entity_embs[ent_id]["anchors"]
                     name_s = float(name_scores_v[j])
@@ -467,24 +570,25 @@ class Retriever:
             if N_fact > 0:
                 candidate_ids.extend(self.all_fact_ids)
                 sent_scores_v = (plan_rewrite_emb @ self.fact_sent_mat.T).flatten().astype(np.float32)
-                fw = FACT_WEIGHTS
                 for j, fact_id in enumerate(self.all_fact_ids):
                     embs = self.fact_embs[fact_id]
                     sent_s = float(sent_scores_v[j])
-                    weights = fw.copy()
-                    macro_s = 0.0
-                    if embs["macro"] is not None and len(embs["macro"]) > 0 and len(plan_topics_embs) > 0:
-                        macro_s = float((plan_topics_embs @ embs["macro"].T).max(axis=1).mean())
+                    weights = self.fact_weights.copy()
+                    questions_s = 0.0
+                    if embs["questions"] is not None:
+                        questions_s = float((plan_rewrite_emb @ embs["questions"].T).flatten()[0])
                     else:
-                        weights["sentence"] += weights["macro"]
-                        weights["macro"] = 0.0
+                        weights["sentence"] += weights["questions"]
+                        weights["questions"] = 0.0
                     chunk_s = 0.0
                     if embs["chunk"] is not None and len(embs["chunk"]) > 0 and len(plan_topics_embs) > 0:
                         chunk_s = float((plan_topics_embs @ embs["chunk"].T).max(axis=1).mean())
                     else:
                         weights["sentence"] += weights["chunk"]
                         weights["chunk"] = 0.0
-                    score = weights["sentence"] * sent_s + weights["macro"] * macro_s + weights["chunk"] * chunk_s
+                    score = (weights["sentence"] * sent_s
+                             + weights["questions"] * questions_s
+                             + weights["chunk"] * chunk_s)
                     candidate_scores.append(score)
                     candidate_diversity_embs.append(self.fact_sent_mat[j])
 

@@ -1,0 +1,23 @@
+{
+ "source": "quality (official QuALITY v1.0.1 dev)",
+ "articles": 115,
+ "questions": 2086,
+ "hard_questions": 1065,
+ "chunks": 652,
+ "chunks_logicrag": 651,
+ "chunker": "HyGRAG Tokensize.chunking_by_token_size: tiktoken gpt-3.5-turbo, 1200 tokens, stride 1100, per article",
+ "answer_letters": {
+  "A": 491,
+  "B": 528,
+  "C": 539,
+  "D": 528
+ },
+ "sha256": {
+  "questions.json": "6ea6652368656ea8c8594fe5d6287d63fd349fd1c2ededb215d8b2d1eeb702e4",
+  "documents.json": "f08376629c493ec710ad7ef8efad8520b1b36a383e499859330f80000023ddac",
+  "chunks.json": "d8e845cfbd6490c31f0b2ef53e8b0c33f2e9ef451b7d6b6d322103f20d97bd3d",
+  "chunks_logicrag.json": "39e48335473b00dc15bca4e1e28bde87f12180faff4210aed8e701520daa1d95",
+  "memgraphrag_corpus.txt": "7927ed0b9d3e4270f73bf88ed7ba88a02b98ffdb96d1a5a1bd80c24b799025e6"
+ },
+ "ms_graphrag_input_files": 115
+}

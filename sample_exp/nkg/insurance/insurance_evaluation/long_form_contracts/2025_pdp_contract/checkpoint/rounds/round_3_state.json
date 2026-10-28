@@ -1,0 +1,24 @@
+{
+  "status": "done",
+  "completed_cluster_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "cumulative_tokens": {
+    "prompt": 40169,
+    "completion": 17182,
+    "total": 57351,
+    "calls": 12
+  },
+  "cumulative_time_sec": 28.542
+}

@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-02T00:12:55.916094",
+  "source_run": "/home/taluka/unh_v1/sample_exp/nkg/musique/run_v1",
+  "variant": "short_strict",
+  "change": "every fact_fact edge: description := label (short label only); every entity_fact label emptied",
+  "entity_fact_labels_emptied": 20137,
+  "edge_types": {
+    "chunk_fact": 14697,
+    "fact_fact": 72794,
+    "fact_entity": 20137,
+    "entity_fact": 20137
+  },
+  "edges_with_description_before": {
+    "fact_fact": 72794
+  },
+  "fact_fact_edges_changed": 72794,
+  "fact_fact_edges_without_label": 0,
+  "examples": [
+    {
+      "label": "CONTAINS",
+      "long_description_removed": "Toongabbie Creek is in New South Wales and located in Greater Western Sydney."
+    },
+    {
+      "label": "RESULTS_FROM",
+      "long_description_removed": "The revocation prohibited emigration and proved disastrous to the Huguenots."
+    },
+    {
+      "label": "SUPPORTS",
+      "long_description_removed": "Vermont Lady Voltage plays their home games at the Collins-Perley Sports Complex and their team colors are black, white, gold, and blue."
+    },
+    {
+      "label": "WAS_RELAXED_BY",
+      "long_description_removed": "Australia relaxed legislation on homebrewing in 1972, changing the legislative context for brewing."
+    },
+    {
+      "label": "PART_OF",
+      "long_description_removed": "Finsbury Park station is an interchange that consists of two bus stations."
+    }
+  ],
+  "evaluate_with": {
+    "long/": "original graph, original (neutral) layout, as in every previous run",
+    "short/": "this graph with --no-neutral-layout, so only the label appears anywhere"
+  }
+}

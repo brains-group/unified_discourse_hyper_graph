@@ -1,0 +1,3 @@
+Title: Black Widow (paint mix)
+
+Black Widow (paint mix) (also Black Widow US and Black Widow EU) is a non-commercial open source project, led by mechman (US), wbassett (US) and custard10 (EU), to create paint mix for DIY (do it yourself) projection screens from easily accessible materials all over US and EU, which could outperform some commercial projection screens.

@@ -39,11 +39,14 @@ def evaluate_qa_item(pair: dict, retriever: Retriever, evaluator: QAEvaluator,
         # Custom Retrieval Parameters
         raw_context = retriever.retrieve(
             query=q,
-            top_k_seeds=10,
+            top_k_seeds=9,
             max_depth=3,
             beam_width=6,
-            final_top_k=25,
-            mode="hypergraph"
+            final_top_k=20,
+            mode="all",
+            beam_mmr_lambda=1,
+            final_mmr_lambda=0.6
+            #search_mode="blind_expansion"
         )
 
         truncated_context, tokens_used = truncate_context(raw_context, tokenizer, max_tokens)
@@ -97,13 +100,13 @@ def main():
     parser.add_argument("--type", type=str, choices=["QA", "FACT"], required=True)
 
     # Fair Comparison Constraints
-    parser.add_argument("--max-context-tokens", type=int, default=2000)
+    parser.add_argument("--max-context-tokens", type=int, default=12000)
     parser.add_argument("--tokenizer-model", type=str, default="Qwen/Qwen3-30B-A3B-Instruct-2507-FP8")
     parser.add_argument("--workers", type=int, default=10)
     args = parser.parse_args()
 
     # 1. Initialize DSPy
-    configure_dspy(max_tokens=40000)
+    configure_dspy(max_tokens=60000)
 
     # 2. Setup Tokenizer & Local Retrieval Models
     print(f"Loading Tokenizer: {args.tokenizer_model}...")
@@ -111,8 +114,8 @@ def main():
 
     print("Loading Local Embedding Models...")
     #bi_encoder = SentenceTransformer("all-MiniLM-L6-v2")
-    bi_encoder = SentenceTransformer("google/embeddinggemma-300m")
-    cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
+    bi_encoder = SentenceTransformer("voyageai/voyage-4-nano", trust_remote_code=True)
+    cross_encoder = CrossEncoder("cross-encoder/ettin-reranker-17m-v1")
 
     # 3. Initialize Custom Retriever
     print(f"Loading existing Knowledge Graph from {args.graph_path}...")

@@ -1,0 +1,3 @@
+Title: Weissenberg number
+
+The Weissenberg number (Wi) is a dimensionless number used in the study of viscoelastic flows. It is named after Karl Weissenberg. The dimensionless number compares the viscous forces to the elastic forces. It can be variously defined, but it is usually given by the relation of stress relaxation time of the fluid and a specific process time. For instance, in simple steady shear, the Weissenberg number, often abbreviated as Wi or We, is defined as the shear rate formula_1 times the relaxation time formula_2. Using the Maxwell Model and the Oldroyd Model, the elastic forces can be written as the first Normal force (N).

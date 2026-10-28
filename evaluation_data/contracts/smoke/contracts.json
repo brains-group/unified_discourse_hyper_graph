@@ -1,0 +1,47 @@
+{
+ "set": "smoke",
+ "contracts": [
+  "contract_1_term_life",
+  "2025_pdp_contract"
+ ],
+ "totals": {
+  "tokens_cl100k": 7299,
+  "qa": 20,
+  "facts": 20,
+  "chunks_1200": 8
+ },
+ "per_contract": [
+  {
+   "contract": "contract_1_term_life",
+   "source": "smoke from short",
+   "tokens_cl100k": 1299,
+   "chars": 5466,
+   "chunks_1200": 2,
+   "qa": 10,
+   "facts": 10,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 2,
+    "CAT2_RELATIONAL_LOOKUP": 2,
+    "CAT3_CONDITIONAL_REASONING": 2,
+    "CAT4_MULTIHOP_REASONING": 2,
+    "CAT5_UNANSWERABLE": 2
+   }
+  },
+  {
+   "contract": "2025_pdp_contract",
+   "source": "smoke from long",
+   "tokens_cl100k": 6000,
+   "chars": 27003,
+   "chunks_1200": 6,
+   "qa": 10,
+   "facts": 10,
+   "qa_by_category": {
+    "CAT1_ATOMIC_LOOKUP": 2,
+    "CAT2_RELATIONAL_LOOKUP": 2,
+    "CAT3_CONDITIONAL_REASONING": 2,
+    "CAT4_MULTIHOP_REASONING": 2,
+    "CAT5_UNANSWERABLE": 2
+   }
+  }
+ ]
+}

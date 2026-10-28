@@ -1,0 +1,111 @@
+{
+  "system": "NKG",
+  "timestamp": "20260628_153543",
+  "contract_file": "/home/taluka/discourse_hyper_graph/evaluation_data/ten_contracts_dataset/contracts/contract_1_term_life.txt",
+  "construction_args": {
+    "model_name": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "max_workers": 100,
+    "chunk_size": 600,
+    "overlap": 50,
+    "edge_threshold": 0.5,
+    "top_k": 12,
+    "max_sub_workers": 100,
+    "fact_batch_size": 20,
+    "edge_mode": "clustered",
+    "run_deduplication": true,
+    "dedup_model_name": "voyageai/voyage-4-nano",
+    "dedup_iterations": 1,
+    "dedup_max_cluster_size": 64,
+    "use_cot": false,
+    "neutral_description": true,
+    "concise_summary": true,
+    "clustered_round1": false,
+    "clustered_round2": true,
+    "clustered_round3": false,
+    "clustered_max_facts_per_prompt": 40,
+    "retrieval_model_name": "voyageai/voyage-4-nano"
+  },
+  "metrics": {
+    "total_document_chars": 5467,
+    "n_nodes": 113,
+    "n_edges": 483,
+    "n_entities": 37,
+    "n_facts": 73,
+    "execution_time_sec": 123.32,
+    "kg_size_bytes": 285545,
+    "token_breakdown": {
+      "chunk_extraction": {
+        "prompt": 22533,
+        "completion": 27142,
+        "total": 49675,
+        "calls": 17
+      },
+      "chunk_extraction_sub": {
+        "chunk_description": {
+          "prompt": 2336,
+          "completion": 220,
+          "total": 2556,
+          "calls": 3
+        },
+        "chunk_fact_extraction": {
+          "prompt": 2654,
+          "completion": 1362,
+          "total": 4016,
+          "calls": 3
+        },
+        "chunk_entity_extraction": {
+          "prompt": 3245,
+          "completion": 2276,
+          "total": 5521,
+          "calls": 3
+        },
+        "fact_metadata_batch": {
+          "prompt": 10358,
+          "completion": 19079,
+          "total": 29437,
+          "calls": 5
+        },
+        "same_chunk_fact_edges": {
+          "prompt": 3940,
+          "completion": 4205,
+          "total": 8145,
+          "calls": 3
+        }
+      },
+      "entity_deduplication": {
+        "prompt": 13314,
+        "completion": 2300,
+        "total": 15614,
+        "calls": 16
+      },
+      "global_edges_round1": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0
+      },
+      "global_edges_round2": {
+        "prompt": 7800,
+        "completion": 5225,
+        "total": 13025,
+        "calls": 5
+      },
+      "global_edges_round3": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0
+      },
+      "total": {
+        "prompt": 43647,
+        "completion": 34667,
+        "total": 78314,
+        "calls": 38
+      }
+    },
+    "llm_prompt_tokens": 43647,
+    "llm_completion_tokens": 34667,
+    "llm_total_tokens": 78314,
+    "llm_api_calls": 38
+  }
+}

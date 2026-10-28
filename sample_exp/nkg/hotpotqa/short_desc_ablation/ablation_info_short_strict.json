@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-02T00:12:46.495171",
+  "source_run": "/home/taluka/unh_v1/sample_exp/nkg/hotpotqa/run_v2",
+  "variant": "short_strict",
+  "change": "every fact_fact edge: description := label (short label only); every entity_fact label emptied",
+  "entity_fact_labels_emptied": 12597,
+  "edge_types": {
+    "chunk_fact": 9583,
+    "fact_entity": 12597,
+    "fact_fact": 40148,
+    "entity_fact": 12597
+  },
+  "edges_with_description_before": {
+    "fact_fact": 40148
+  },
+  "fact_fact_edges_changed": 40148,
+  "fact_fact_edges_without_label": 0,
+  "examples": [
+    {
+      "label": "FEATURED",
+      "long_description_removed": "The limited edition vinyl featured a collaboration with Dubblestandart and Lee Perry."
+    },
+    {
+      "label": "CO-OCCURS_WITH",
+      "long_description_removed": "An aerial swing ride and a midway were both features of Luna/Rexford Park."
+    },
+    {
+      "label": "IDENTIFIES",
+      "long_description_removed": "Fact 11 identifies Umesh Varshney as a lab head, while fact 6 describes an election he likely received."
+    },
+    {
+      "label": "IDENTIFIES",
+      "long_description_removed": "Myron Bell also made the city of Toledo, Ohio Hall of Fame and played for the Pittsburgh Steelers."
+    },
+    {
+      "label": "CONTRASTS_WITH",
+      "long_description_removed": "Both performances of 'The Spectre Knight' as a companion piece to different operas show its versatility."
+    }
+  ],
+  "evaluate_with": {
+    "long/": "original graph, original (neutral) layout, as in every previous run",
+    "short/": "this graph with --no-neutral-layout, so only the label appears anywhere"
+  }
+}

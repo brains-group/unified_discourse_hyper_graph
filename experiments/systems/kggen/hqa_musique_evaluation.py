@@ -2,79 +2,61 @@
 """
 kggen_multihop_eval.py
 ======================
+KGGen evaluation harness for HotpotQA and MuSiQue.
 
-Single-script KGGen evaluation harness for HotpotQA and MuSiQue benchmarks.
-Two modes — selected by --mode:
+PROVIDERS  (--provider)
+-----------------------
+  local_vllm (default)
+      model    : Qwen/Qwen3-30B-A3B-Instruct-2507-FP8
+      api-base : http://localhost:8000/v1
+      api-key  : EMPTY
+  deepseek
+      model    : deepseek-v4-flash  (current prod model, May 2026)
+      api-base : https://api.deepseek.com
+      api-key  : DEEPSEEK_API_KEY env var  (or --api-key)
+      Note: deepseek-v4-flash uses OpenAI-compatible /chat/completions.
+            The legacy alias deepseek-chat still works but retires 2026-07-24.
+  Override any provider field: --model / --api-base / --api-key
 
-  construction  : builds a global knowledge graph over the corpus.jsonl
-                  produced by prepare_{hotpotqa,musique}_corpus.py.
-                  Auto-resumes from the latest checkpoint inside --run-dir,
-                  or starts fresh if the directory is empty.
+RATE LIMITING  (--construction-rpm / --eval-rpm)
+------------------------------------------------
+KGGen has NO native rate limiting. It routes calls via DSPy then LiteLLM
+with zero throttling built in; without a limiter you will get 429s from
+any external API almost immediately.
 
-  evaluation    : loads the run_dir/final-checkpoint state and answers every
-                  question in questions.jsonl, scoring with the *official*
-                  HotpotQA / MuSiQue EM and F1 functions.
+This script wraps every LLM call in a thread-safe token-bucket limiter.
+  --construction-rpm N   0 = disabled (default; fine for local vLLM)
+  --eval-rpm N           0 = disabled (default)
 
+KGGen makes ~2 LLM calls per paragraph (entity pass + relation pass):
+  50 RPM => ~25 paragraphs/minute => 1000-para corpus ~40 min
+Recommended for DeepSeek free/tier-1: --construction-rpm 50 --eval-rpm 50
 
--------------------------------------------------------------------------------
 EXAMPLES
--------------------------------------------------------------------------------
-# Construction (resumable). First call starts fresh; subsequent calls resume
-# from the latest checkpoint inside the run directory automatically.
-python kggen_multihop_eval.py \\
-    --mode construction \\
-    --dataset hotpotqa \\
-    --corpus-file ./data/hotpot_corpus_1k.jsonl \\
-    --run-dir ./results/hotpotqa/kggen/run1 \\
-    --checkpoint-interval 100 \\
-    --batch-size 5 \\
-    --max-workers 10
+--------
+  # Local vLLM, no rate limit
+  python kggen_multihop_eval.py \\
+      --mode construction --provider local_vllm \\
+      --dataset hotpotqa --corpus-file ./data/hotpot_corpus_1k.jsonl \\
+      --run-dir ./results/hotpotqa/kggen/run1 \\
+      --checkpoint-interval 100 --max-workers 10
 
-# Same idea for MuSiQue:
-python kggen_multihop_eval.py \\
-    --mode construction \\
-    --dataset musique \\
-    --corpus-file ./data/musique_corpus_1k.jsonl \\
-    --run-dir ./results/musique/kggen/run1 \\
-    --checkpoint-interval 100
+  # DeepSeek v4 flash, 50 RPM
+  python kggen_multihop_eval.py \\
+      --mode construction --provider deepseek \\
+      --dataset hotpotqa --corpus-file ./data/hotpot_corpus_1k.jsonl \\
+      --run-dir ./results/hotpotqa/kggen/run1_ds \\
+      --checkpoint-interval 50 --max-workers 5 --construction-rpm 50
 
-# Evaluation (only works after final-checkpoint has been produced):
-python kggen_multihop_eval.py \\
-    --mode evaluation \\
-    --dataset hotpotqa \\
-    --questions-file ./data/hotpot_questions_1k.jsonl \\
-    --run-dir ./results/hotpotqa/kggen/run1 \\
-    --retrieval-k 10 \\
-    --retrieval-depth 2 \\
-    --max-context-tokens 2000
-
-
--------------------------------------------------------------------------------
-DIRECTORY LAYOUT
--------------------------------------------------------------------------------
-results/hotpotqa/kggen/run1/
-    checkpoint-1/
-        metadata.json
-        absorbed_paragraph_ids.json
-        graph.json              <- cumulative aggregated KG after first N paragraphs
-    checkpoint-2/
-        metadata.json
-        absorbed_paragraph_ids.json
-        graph.json              <- cumulative aggregated KG after 2N paragraphs
-    final-checkpoint/
-        metadata.json
-        absorbed_paragraph_ids.json
-        graph.json              <- final aggregated KG (all paragraphs)
-    evaluation_results.json     <- created in --mode evaluation (outside checkpoint dirs)
+  # Evaluation (either provider)
+  python kggen_multihop_eval.py \\
+      --mode evaluation --provider deepseek \\
+      --dataset hotpotqa --questions-file ./data/hotpot_questions_1k.jsonl \\
+      --run-dir ./results/hotpotqa/kggen/run1_ds --eval-rpm 50
 """
 
-import os
-import sys
-import json
-import time
-import uuid
-import argparse
-import traceback
+import os, sys, json, time, uuid, threading, argparse, traceback, shutil
+from dataclasses import dataclass
 from datetime import datetime
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -82,10 +64,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import litellm
 from transformers import AutoTokenizer
 
-# ---- Project imports (adjust path to your project layout if needed) ----
-# The CustomKGGen wrapper from wrappers_1.py needs to be importable.
-# Either drop wrappers_1.py next to this script, or adjust the import below.
-from .wrappers import CustomKGGen        # fallback for package-style imports
+from .wrappers import CustomKGGen
 
 from experiments.utils.multihop_utils import (
     HOTPOTQA, MUSIQUE, SUPPORTED_DATASETS,
@@ -95,601 +74,602 @@ from experiments.utils.multihop_utils import (
     FINAL_CHECKPOINT_NAME,
     GlobalTokenAccumulator, attach_token_tracker, detach_token_tracker,
     add_token_counters,
-    call_llm_for_answer, score_em, score_f1, truncate_tokens, safe_div,
+    score_em, score_f1, truncate_tokens, safe_div,
+    next_eval_results_path,
 )
+from experiments.evaluate_mine import ask_llm_query, ask_llm_query_short, configure_dspy
 
 
 # =============================================================================
+# PROVIDER CONFIGS
+# =============================================================================
+
+@dataclass
+class ProviderConfig:
+    """Fully-resolved connection parameters for one LLM provider."""
+    provider: str
+    model:    str
+    api_base: str
+    api_key:  str
+
+
+PROVIDER_DEFAULTS = {
+    "local_vllm": ProviderConfig(
+        provider="local_vllm",
+        model="Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+        api_base="http://localhost:8000/v1",
+        api_key="EMPTY",
+    ),
+    "deepseek": ProviderConfig(
+        # deepseek-chat = DeepSeek-V3: non-reasoning model, no thinking tokens.
+        # Use deepseek-v4-flash only if reasoning output is acceptable (cannot be disabled via API).
+        provider="deepseek",
+        model="deepseek-v4-flash",
+        api_base="https://api.deepseek.com",
+        api_key="",
+    ),
+}
+
+
+def resolve_provider(args) -> ProviderConfig:
+    """Merge provider defaults with any explicit CLI overrides."""
+    base     = PROVIDER_DEFAULTS[args.provider]
+    model    = args.model    or base.model
+    api_base = args.api_base or base.api_base
+    api_key  = args.api_key  or base.api_key
+    if args.provider == "deepseek" and not api_key:
+        api_key = os.environ.get("DEEPSEEK_API_KEY", "")
+        if not api_key:
+            print("[WARN] provider=deepseek: no api-key found. "
+                  "Set DEEPSEEK_API_KEY env var or pass --api-key.")
+    return ProviderConfig(provider=args.provider, model=model,
+                          api_base=api_base, api_key=api_key)
+
+
+def kg_model_string(cfg: ProviderConfig) -> str:
+    """
+    LiteLLM routing string for KGGen's model= argument.
+    local_vllm: needs 'openai/<model>' prefix for non-OpenAI compat endpoints.
+    deepseek:   needs 'deepseek/<model>' prefix so LiteLLM identifies the provider.
+    """
+    if cfg.provider == "local_vllm":
+        return f"openai/{cfg.model}"
+    if cfg.provider == "deepseek":
+        return f"deepseek/{cfg.model}"
+    return cfg.model
+
+
+
+# =============================================================================
+# THREAD-SAFE TOKEN-BUCKET RATE LIMITER
+# =============================================================================
+
+class RateLimiter:
+    """
+    Thread-safe token-bucket rate limiter.  rpm=0 disables entirely.
+
+    Tokens refill at rpm/60 per second, capped at rpm.
+    Each acquire() blocks until a token is available, then consumes one.
+    Multiple threads run in parallel up to the RPM ceiling.
+
+    Usage:  with limiter: api_call()
+    """
+    def __init__(self, rpm: int = 0):
+        self.rpm      = rpm
+        self.disabled = rpm <= 0
+        if not self.disabled:
+            self._cap  = float(rpm)
+            self._tok  = float(rpm)
+            self._rate = rpm / 60.0
+            self._last = time.monotonic()
+            self._lock = threading.Lock()
+
+    def acquire(self):
+        if self.disabled:
+            return
+        while True:
+            with self._lock:
+                now = time.monotonic()
+                self._tok  = min(self._cap, self._tok + (now - self._last) * self._rate)
+                self._last = now
+                if self._tok >= 1.0:
+                    self._tok -= 1.0
+                    return
+            time.sleep(1.0 / self._rate)
+
+    def __enter__(self):  self.acquire(); return self
+    def __exit__(self, *_): pass
+    def __repr__(self):
+        return "RateLimiter(disabled)" if self.disabled else f"RateLimiter(rpm={self.rpm})"
+
+
+# ====================================================================
 # CONSTRUCTION
-# =============================================================================
-def run_construction(args):
-    """
-    Builds a global KGGen graph over corpus.jsonl, checkpointing every
-    args.checkpoint_interval paragraphs.
+#===================================================================
 
-    Each checkpoint-N/ contains:
-        metadata.json               — cumulative construction stats
-        absorbed_paragraph_ids.json — all paragraph IDs processed so far
-        graph.json                  — CUMULATIVE aggregated graph at this point
-
-    Resume logic: the latest checkpoint's graph.json is loaded and reconstructed
-    as a KGGen Graph object, then used as the "base" in the next aggregate() call
-    alongside the new block's subgraphs. This means aggregate() runs once per
-    block (not just once at the end), but each checkpoint is a fully usable graph.
-
-    Token / time tracking is cumulative across blocks; each new checkpoint's
-    metadata.json carries the running totals — previous checkpoint JSONs are
-    never modified.
-    """
+def run_construction(args, cfg):
     os.makedirs(args.run_dir, exist_ok=True)
-
-    # ---- 0. Refuse if already done ----
     if find_final_checkpoint(args.run_dir):
-        print(f"[!] final-checkpoint already exists at {args.run_dir}")
-        print(f"[!] Construction is complete. Delete final-checkpoint/ to rebuild.")
+        print("[!] final-checkpoint already exists. Delete it to rebuild.")
         return
 
-    # ---- 1. Load corpus ----
     print(f"[Construction] Loading corpus: {args.corpus_file}")
     corpus = load_corpus_jsonl(args.corpus_file)
-    print(f"[Construction]   {len(corpus):,} paragraphs in corpus")
+    print(f"[Construction]   {len(corpus):,} paragraphs")
 
-    # ---- 2. Determine resume state ----
     latest = find_latest_checkpoint(args.run_dir)
     if latest:
         print(f"[Construction] Resuming from: {latest}")
-        prev_metadata, absorbed_ids, base_graph = load_checkpoint(latest)
-        cumulative_tokens = prev_metadata.get(
-            "cumulative_construction_tokens",
-            {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0, "api_calls": 0},
-        )
-        cumulative_time  = float(prev_metadata.get("cumulative_construction_time_sec", 0.0))
-        print(f"[Construction]   {len(absorbed_ids):,} paragraphs already absorbed, "
-              f"base graph has {len(base_graph.entities):,} entities")
+        prev_meta, absorbed_ids, base_graph = load_checkpoint(latest)
+        cum_tokens = prev_meta.get("cumulative_construction_tokens",
+            {"prompt_tokens":0,"completion_tokens":0,"total_tokens":0,"api_calls":0})
+        cum_time   = float(prev_meta.get("cumulative_construction_time_sec", 0.0))
+        print(f"[Construction]   {len(absorbed_ids):,} absorbed, "
+              f"{len(base_graph.entities):,} entities in base graph")
     else:
-        print(f"[Construction] No checkpoint found — starting fresh.")
-        absorbed_ids     = []
-        base_graph       = None
-        cumulative_tokens = {"prompt_tokens": 0, "completion_tokens": 0,
-                             "total_tokens": 0, "api_calls": 0}
-        cumulative_time  = 0.0
+        print("[Construction] Starting fresh.")
+        absorbed_ids = []
+        base_graph   = None
+        cum_tokens   = {"prompt_tokens":0,"completion_tokens":0,"total_tokens":0,"api_calls":0}
+        cum_time     = 0.0
 
     absorbed_set = set(absorbed_ids)
+    remaining    = [p for pid, p in sorted(corpus.items()) if pid not in absorbed_set]
+    print(f"[Construction] {len(remaining):,} remaining "
+          f"({len(absorbed_set):,}/{len(corpus):,} already absorbed)")
 
-    # ---- 3. Filter remaining paragraphs (sorted by ID for determinism) ----
-    remaining = [p for pid, p in sorted(corpus.items()) if pid not in absorbed_set]
-    if not remaining:
-        print("[Construction] All paragraphs already absorbed.")
-    else:
-        print(f"[Construction] {len(remaining):,} paragraphs remaining "
-              f"({len(absorbed_set):,} already absorbed of {len(corpus):,} total)")
+    os.environ["OPENAI_API_BASE"] = cfg.api_base
+    os.environ["OPENAI_API_KEY"]  = cfg.api_key
+    kg = CustomKGGen(model=kg_model_string(cfg), api_key=cfg.api_key,
+                     api_base=cfg.api_base, retrieval_model=args.embed_model)
 
-    # ---- 4. Initialize KGGen ----
-    os.environ["OPENAI_API_BASE"] = args.api_base
-    os.environ["OPENAI_API_KEY"]  = args.api_key
-    kg = CustomKGGen(
-        model=f"openai/{args.model}",
-        api_key=args.api_key,
-        api_base=args.api_base,
-        retrieval_model=args.embed_model,
-    )
+    limiter   = RateLimiter(rpm=args.construction_rpm)
+    para_rate = (f"~{args.construction_rpm // 2} paras/min"
+                 if args.construction_rpm > 0 else "unlimited")
+    print(f"[Construction] {limiter}  ({para_rate})")
 
-    # ---- 5. Process in checkpoint-sized blocks ----
-    def _generate_one(para: dict):
+    def _gen(para):
         pid, title, text = para["id"], para["title"], para["full_context"]
         try:
-            g = kg.generate(
-                input_data=text,
-                context=f"This is a Wikipedia paragraph about: {title}",
-            )
+            with limiter:
+                g = kg.generate(input_data=text,
+                                context=f"Wikipedia paragraph about: {title}")
             return pid, g
         except Exception as e:
-            print(f"[Construction WARN] {pid} ({title[:40]}) → {e}")
+            print(f"[Construction WARN] {pid}: {e}")
             return pid, None
 
-    checkpoint_num = next_checkpoint_num(args.run_dir)
+    ckpt_num = next_checkpoint_num(args.run_dir)
 
     while remaining:
         block     = remaining[:args.checkpoint_interval]
         remaining = remaining[args.checkpoint_interval:]
+        print(f"\n[Construction] --- checkpoint-{ckpt_num}: {len(block)} paras ---")
+        t0 = time.time()
 
-        print(f"\n[Construction] --- checkpoint-{checkpoint_num} block "
-              f"({len(block):,} paragraphs) ---")
-        block_t0 = time.time()
-
-        block_tracker = GlobalTokenAccumulator()
-        attach_token_tracker(block_tracker)
-
-        new_subgraphs  = []
-        new_absorbed   = []
+        blk_tracker = GlobalTokenAccumulator()
+        attach_token_tracker(blk_tracker)
+        new_subs, new_abs = [], []
         try:
-            with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
-                future_map = {executor.submit(_generate_one, p): p["id"] for p in block}
+            with ThreadPoolExecutor(max_workers=args.max_workers) as ex:
+                fmap = {ex.submit(_gen, p): p["id"] for p in block}
                 done = 0
-                for future in as_completed(future_map):
-                    pid, g = future.result()
-                    done += 1
-                    if g is not None:
-                        new_subgraphs.append(g)
-                        new_absorbed.append(pid)
-                    if done % max(1, len(block) // 5) == 0 or done == len(block):
-                        print(f"[Construction]   {done}/{len(block)} done")
+                for future in as_completed(fmap):
+                    pid, g = future.result(); done += 1
+                    if g is not None: new_subs.append(g); new_abs.append(pid)
+                    if done % max(1, len(block)//5) == 0 or done == len(block):
+                        print(f"[Construction]   {done}/{len(block)}")
         finally:
             detach_token_tracker()
 
-        # ---- Aggregate: base_graph (previous checkpoint) + new subgraphs ----
-        graphs_to_merge = (([base_graph] if base_graph is not None else [])
-                           + new_subgraphs)
-        if not graphs_to_merge:
-            print(f"[Construction WARN] No graphs to aggregate for block — skipping.")
-            checkpoint_num += 1
-            continue
+        to_merge = ([base_graph] if base_graph else []) + new_subs
+        if not to_merge:
+            print("[Construction WARN] Nothing to aggregate."); ckpt_num += 1; continue
 
-        print(f"[Construction] Aggregating {len(graphs_to_merge)} graphs "
-              f"({1 if base_graph else 0} base + {len(new_subgraphs)} new)...")
-        agg_t0      = time.time()
+        print(f"[Construction] Aggregating {len(to_merge)} graphs...")
+        agg_t0 = time.time()
         agg_tracker = GlobalTokenAccumulator()
         attach_token_tracker(agg_tracker)
         try:
-            aggregated = kg.aggregate(graphs_to_merge)
+            aggregated = kg.aggregate(to_merge)
         finally:
             detach_token_tracker()
-        agg_time   = round(time.time() - agg_t0, 2)
         agg_tokens = agg_tracker.snapshot()
 
-        block_time   = round(time.time() - block_t0, 2)
-        block_tokens = add_token_counters(block_tracker.snapshot(), agg_tokens)
+        blk_time   = round(time.time() - t0, 2)
+        blk_tokens = add_token_counters(blk_tracker.snapshot(), agg_tokens)
+        absorbed_ids.extend(new_abs)
+        cum_tokens = add_token_counters(cum_tokens, blk_tokens)
+        cum_time   = round(cum_time + blk_time, 2)
 
-        absorbed_ids.extend(new_absorbed)
-        cumulative_tokens = add_token_counters(cumulative_tokens, block_tokens)
-        cumulative_time   = round(cumulative_time + block_time, 2)
-
-        post_entities = len(aggregated.entities)
-        post_edges    = len(getattr(aggregated, "edges",
-                            getattr(aggregated, "relations",
-                            getattr(aggregated, "triples", []))))
-
-        metadata = {
-            "checkpoint_id":                       f"checkpoint-{checkpoint_num}",
-            "checkpoint_num":                      checkpoint_num,
-            "timestamp":                           datetime.now().isoformat(),
-            "dataset":                             args.dataset,
-            "model":                               args.model,
-            "embedding_model":                     args.embed_model,
-            "api_base":                            args.api_base,
-            "corpus_file":                         os.path.abspath(args.corpus_file),
-            "total_paragraphs_in_corpus":          len(corpus),
-            "paragraphs_absorbed_so_far":          len(absorbed_ids),
-            "paragraphs_in_this_block":            len(new_absorbed),
-            "paragraphs_failed_in_block":          len(block) - len(new_absorbed),
-            "cumulative_graph_entities":           post_entities,
-            "cumulative_graph_edges":              post_edges,
-            "cumulative_construction_tokens":      cumulative_tokens,
-            "this_block_tokens":                   block_tokens,
-            "cumulative_construction_time_sec":    cumulative_time,
-            "this_block_time_sec":                 block_time,
+        ents  = len(aggregated.entities)
+        edges = len(getattr(aggregated, "edges", getattr(aggregated, "relations",
+                    getattr(aggregated, "triples", []))))
+        meta = {
+            "checkpoint_id": f"checkpoint-{ckpt_num}", "checkpoint_num": ckpt_num,
+            "timestamp": datetime.now().isoformat(), "dataset": args.dataset,
+            "provider": cfg.provider, "model": cfg.model,
+            "embedding_model": args.embed_model, "api_base": cfg.api_base,
+            "corpus_file": os.path.abspath(args.corpus_file),
+            "total_paragraphs_in_corpus": len(corpus),
+            "paragraphs_absorbed_so_far": len(absorbed_ids),
+            "paragraphs_in_this_block": len(new_abs),
+            "paragraphs_failed_in_block": len(block) - len(new_abs),
+            "cumulative_graph_entities": ents, "cumulative_graph_edges": edges,
+            "cumulative_construction_tokens":   cum_tokens,
+            "this_block_tokens":                blk_tokens,
+            "cumulative_construction_time_sec": cum_time,
+            "this_block_time_sec":              blk_time,
             "construction_params": {
                 "checkpoint_interval": args.checkpoint_interval,
-                "max_workers":         args.max_workers,
+                "max_workers": args.max_workers,
+                "construction_rpm": args.construction_rpm,
+                "delete_old_checkpoints": args.delete_old_checkpoints,
             },
         }
-        cp_path = save_checkpoint(
-            run_dir=args.run_dir,
-            checkpoint_num=checkpoint_num,
-            metadata=metadata,
-            absorbed_paragraph_ids=absorbed_ids,
-            aggregated_graph=aggregated,
-            kg_instance=kg,
-            final=False,
-        )
-        print(f"[Construction] checkpoint-{checkpoint_num} saved → {cp_path}")
-        print(f"[Construction]   {len(absorbed_ids):,}/{len(corpus):,} paras absorbed | "
-              f"{post_entities:,} entities | "
-              f"{cumulative_tokens['total_tokens']:,} cumulative tokens | "
-              f"{cumulative_time}s cumulative time")
+        cp = save_checkpoint(run_dir=args.run_dir, checkpoint_num=ckpt_num,
+                             metadata=meta, absorbed_paragraph_ids=absorbed_ids,
+                             aggregated_graph=aggregated, kg_instance=kg, final=False)
+        print(f"[Construction] Saved {cp}")
+        print(f"[Construction]   absorbed={len(absorbed_ids):,}/{len(corpus):,}  "
+              f"entities={ents:,}  tokens={cum_tokens['total_tokens']:,}  time={cum_time}s")
 
-        base_graph     = aggregated   # carry forward for next block
-        checkpoint_num += 1
+        # ---- Optionally delete previous checkpoint-N folders ----
+        # We never touch final-checkpoint (it doesn't exist yet at this point,
+        # but guard defensively). The newly-saved checkpoint is ckpt_num, so
+        # we delete every checkpoint with num < ckpt_num.
+        if args.delete_old_checkpoints:
+            for old_num, old_path in find_all_checkpoints(args.run_dir):
+                if old_num < ckpt_num:
+                    shutil.rmtree(old_path, ignore_errors=True)
+                    print(f"[Construction] Deleted old checkpoint: {old_path}")
 
-    # ---- 6. Write final-checkpoint (no additional aggregation needed) ----
-    # The last checkpoint-N already has the fully aggregated graph. We copy its
-    # state into final-checkpoint and flag it as complete.
+        base_graph = aggregated; ckpt_num += 1
+
     if base_graph is None:
-        print("[Construction FATAL] No graph was produced; cannot write final-checkpoint.")
-        return
+        print("[Construction FATAL] No graph produced."); return
 
-    # Read back the last checkpoint's metadata to carry into final-checkpoint
     latest = find_latest_checkpoint(args.run_dir)
-    last_meta, last_absorbed, _ = load_checkpoint(latest)
-
-    final_metadata = {
-        **last_meta,
-        "checkpoint_id":  FINAL_CHECKPOINT_NAME,
-        "checkpoint_num": None,
-        "timestamp":      datetime.now().isoformat(),
-        "is_final":       True,
-        "note": (
-            "Node embeddings are NOT persisted here. They are recomputed at "
-            "evaluation time from graph.json using kg.generate_embeddings(). "
-            "This avoids large binary files and keeps the checkpoint directory "
-            "fully human-readable."
-        ),
-    }
-    final_cp = save_checkpoint(
-        run_dir=args.run_dir,
-        checkpoint_num=0,
-        metadata=final_metadata,
-        absorbed_paragraph_ids=last_absorbed,
-        aggregated_graph=base_graph,
-        kg_instance=kg,
-        final=True,
-    )
-    print(f"\n[Construction] FINAL CHECKPOINT → {final_cp}")
-    print(f"[Construction]   graph.json contains {len(base_graph.entities):,} entities")
-    print(f"[Construction]   total tokens: {cumulative_tokens['total_tokens']:,}")
-    print(f"[Construction]   total wall time: {cumulative_time}s")
+    last_meta, last_abs, _ = load_checkpoint(latest)
+    final_meta = {**last_meta,
+        "checkpoint_id": FINAL_CHECKPOINT_NAME, "checkpoint_num": None,
+        "timestamp": datetime.now().isoformat(), "is_final": True,
+        "note": "Embeddings recomputed from graph.json at eval time (no LLM cost)."}
+    final_cp = save_checkpoint(run_dir=args.run_dir, checkpoint_num=0,
+                               metadata=final_meta, absorbed_paragraph_ids=last_abs,
+                               aggregated_graph=base_graph, kg_instance=kg, final=True)
+    print(f"\n[Construction] FINAL -> {final_cp}")
+    print(f"[Construction]   entities={len(base_graph.entities):,}  "
+          f"tokens={cum_tokens['total_tokens']:,}  time={cum_time}s")
 
 
 # =============================================================================
 # EVALUATION
-# =============================================================================
-def _eval_one_question(
-    q: dict,
-    kg,
-    nx_graph,
-    node_embeddings,
-    tokenizer,
-    args,
-) -> dict:
-    """
-    Retrieves context for one question and asks the LLM to answer it.
-    Returns a per-question result dict including EM/F1 against the gold answer.
-    """
-    question     = q["question"]
-    gold         = q["answer"]
-    aliases      = q.get("answer_aliases", [])      # MuSiQue only
-    qtype        = q.get("type", "unknown")          # bridge/comparison or 2hop/3hop/4hop
-    qlevel       = q.get("level", None)             # easy/medium/hard for HotpotQA
-    qid          = q.get("question_id", "")
+#=============================================================================
 
-    llm_answer   = ""
-    em           = 0.0
-    f1           = 0.0
-    precision    = 0.0
-    recall       = 0.0
-    raw_context  = ""
-    trunc_ctx    = ""
-    ctx_tokens   = 0
-    status       = "SUCCESS"
-    error_msg    = ""
-
+def _eval_one(q, kg, nx_g, embs, tok, args, limiter):
+    qid     = q.get("question_id", "")
+    question= q["question"]; gold = q["answer"]
+    aliases = q.get("answer_aliases", [])
+    qtype   = q.get("type", "unknown"); qlevel = q.get("level", None)
+    llm_ans = raw_ctx = trunc_ctx = ""
+    em = f1 = prec = rec = 0.0; ctx_tok = 0
+    status = "SUCCESS"; err = ""
     try:
-        # 1. Retrieve KG-based context
-        _, _, raw_context = kg.retrieve(
-            query=question,
-            node_embeddings=node_embeddings,
-            graph=nx_graph,
-            k=args.retrieval_k,
-            depth=args.retrieval_depth,
+        _, _, raw_ctx = kg.retrieve(
+            query=question, node_embeddings=embs, graph=nx_g,
+            k=args.retrieval_k, depth=args.retrieval_depth,
+            verbose=args.retrieval_verbose,
         )
-
-        # 2. Truncate to max_context_tokens
-        trunc_ctx, ctx_tokens = truncate_tokens(
-            raw_context, tokenizer, args.max_context_tokens
-        )
-
-        # 3. Generate answer
-        llm_answer = call_llm_for_answer(
-            model=args.model,
-            api_base=args.api_base,
-            api_key=args.api_key,
-            question=question,
-            context=trunc_ctx,
-            max_tokens=args.answer_max_tokens,
-            temperature=0.0,
-        )
-
-        # 4. Score
-        em = score_em(llm_answer, gold, aliases=aliases, dataset=args.dataset)
-        f1, precision, recall = score_f1(llm_answer, gold, aliases=aliases, dataset=args.dataset)
-
+        trunc_ctx, ctx_tok = truncate_tokens(raw_ctx, tok, args.max_context_tokens)
+        with limiter:
+            if args.short_answer:
+                llm_ans = ask_llm_query_short(question=question, context=trunc_ctx)
+            else:
+                llm_ans = ask_llm_query(
+                    question=question, context=trunc_ctx,
+                    use_chain_of_thought=args.chain_of_thought,
+                )
+        em = score_em(llm_ans, gold, aliases=aliases, dataset=args.dataset)
+        f1, prec, rec = score_f1(llm_ans, gold, aliases=aliases, dataset=args.dataset)
     except Exception as e:
-        status    = "ERROR"
-        error_msg = str(e)
-        print(f"[Eval ERROR] {qid}: {e}")
-
+        status = "ERROR"; err = str(e); print(f"[Eval ERROR] {qid}: {e}")
     return {
-        "question_id":              qid,
-        "question":                 question,
-        "expected_answer":          gold,
-        "expected_answer_aliases":  aliases,
-        "type":                     qtype,
-        "level":                    qlevel,
-        "llm_answer":               llm_answer,
-        "em":                       float(em),
-        "f1":                       float(f1),
-        "precision":                float(precision),
-        "recall":                   float(recall),
-        "retrieved_context":        trunc_ctx,
-        "raw_context_length_chars": len(raw_context),
-        "context_tokens":           ctx_tokens,
-        "max_context_tokens":       args.max_context_tokens,
-        "status":                   status,
-        **({"error": error_msg} if error_msg else {}),
+        "question_id": qid, "question": question,
+        "expected_answer": gold, "expected_answer_aliases": aliases,
+        "type": qtype, "level": qlevel, "llm_answer": llm_ans,
+        "em": float(em), "f1": float(f1), "precision": float(prec), "recall": float(rec),
+        "retrieved_context": trunc_ctx,
+        "raw_context_length_chars": len(raw_ctx), "context_tokens": ctx_tok,
+        "max_context_tokens": args.max_context_tokens, "status": status,
+        **({"error": err} if err else {}),
     }
 
 
-def _aggregate_by_key(results: list, key: str) -> dict:
-    """Group results by `key` and compute mean EM/F1 + count per group."""
-    groups = defaultdict(list)
+def _agg(results, key):
+    g = defaultdict(list)
     for r in results:
-        if r["status"] != "SUCCESS":
-            continue
-        k = r.get(key)
-        if k is None:
-            continue
-        groups[k].append(r)
-    out = {}
-    for k, rs in groups.items():
-        n = len(rs)
-        out[str(k)] = {
-            "count":     n,
-            "em":        safe_div(sum(r["em"] for r in rs), n),
-            "f1":        safe_div(sum(r["f1"] for r in rs), n),
-            "precision": safe_div(sum(r["precision"] for r in rs), n),
-            "recall":    safe_div(sum(r["recall"] for r in rs), n),
-        }
-    return out
+        if r["status"] == "SUCCESS" and r.get(key) is not None:
+            g[r[key]].append(r)
+    return {str(k): {
+        "count": len(rs),
+        "em":        safe_div(sum(r["em"]        for r in rs), len(rs)),
+        "f1":        safe_div(sum(r["f1"]        for r in rs), len(rs)),
+        "precision": safe_div(sum(r["precision"] for r in rs), len(rs)),
+        "recall":    safe_div(sum(r["recall"]    for r in rs), len(rs)),
+    } for k, rs in g.items()}
 
 
-def run_evaluation(args):
-    """
-    Loads the final-checkpoint from args.run_dir, runs answer generation for
-    every question in args.questions_file, scores EM/F1 with the official
-    dataset metrics, and writes evaluation_results.json at the run_dir root.
-
-    Node embeddings are recomputed from the graph.json in final-checkpoint
-    rather than loaded from disk. This keeps the checkpoint directory fully
-    human-readable JSON with no binary blobs, and the recomputation is fast
-    (sentence-transformer forward pass only — no LLM calls).
-    """
+def run_evaluation(args, cfg):
     final_cp = find_final_checkpoint(args.run_dir)
-    if not final_cp:
-        print(f"[Evaluation FATAL] No final-checkpoint at {args.run_dir}. "
-              f"Run --mode construction first.")
-        sys.exit(1)
+    latest_cp = find_latest_checkpoint(args.run_dir)
 
-    print(f"[Evaluation] Loading final checkpoint: {final_cp}")
-    final_metadata, absorbed_ids, combined_graph = load_checkpoint(final_cp)
-    print(f"[Evaluation]   graph.json loaded: "
-          f"{len(combined_graph.entities):,} entities, "
-          f"{len(absorbed_ids):,} paragraphs were absorbed")
+    if final_cp:
+        cp_to_load = final_cp
+    elif latest_cp:
+        print(f"[Evaluation WARN] No final-checkpoint found. "
+              f"Using latest intermediate checkpoint: {latest_cp}")
+        cp_to_load = latest_cp
+    else:
+        print("[Evaluation FATAL] No checkpoint found in run-dir."); sys.exit(1)
 
-    # ---- Rehydrate KGGen for retrieve() and embedding generation ----
-    os.environ["OPENAI_API_BASE"] = args.api_base
-    os.environ["OPENAI_API_KEY"]  = args.api_key
-    kg = CustomKGGen(
-        model=f"openai/{args.model}",
-        api_key=args.api_key,
-        api_base=args.api_base,
-        retrieval_model=args.embed_model,
-    )
-    nx_graph = kg.to_nx(combined_graph)
+    print(f"[Evaluation] Loading: {cp_to_load}")
+    final_meta, abs_ids, combined = load_checkpoint(cp_to_load)
+    print(f"[Evaluation]   {len(combined.entities):,} entities, {len(abs_ids):,} paras")
 
-    print(f"[Evaluation] Computing node embeddings from graph.json "
-          f"(sentence-transformer only, no LLM calls)...")
-    emb_t0 = time.time()
-    node_embeddings, _ = kg.generate_embeddings(combined_graph)
-    emb_time = round(time.time() - emb_t0, 2)
-    print(f"[Evaluation]   {len(node_embeddings):,} node embeddings in {emb_time}s")
+    os.environ["OPENAI_API_BASE"] = cfg.api_base
+    os.environ["OPENAI_API_KEY"]  = cfg.api_key
+    kg   = CustomKGGen(model=kg_model_string(cfg), api_key=cfg.api_key,
+                       api_base=cfg.api_base, retrieval_model=args.embed_model)
+    nx_g = kg.to_nx(combined)
 
-    # ---- Load questions ----
-    print(f"[Evaluation] Loading questions: {args.questions_file}")
+    print("[Evaluation] Recomputing embeddings (no LLM calls)...")
+    t0 = time.time()
+    embs, _ = kg.generate_embeddings(combined)
+    emb_t   = round(time.time() - t0, 2)
+    print(f"[Evaluation]   {len(embs):,} nodes in {emb_t}s")
+
     questions = load_questions_jsonl(args.questions_file)
-    print(f"[Evaluation]   {len(questions):,} questions to evaluate")
+    print(f"[Evaluation] {len(questions):,} questions")
 
-    # ---- Tokenizer for context truncation ----
-    print(f"[Evaluation] Loading tokenizer: {args.model}")
-    tokenizer = AutoTokenizer.from_pretrained(args.model)
-
-    # ---- Run in parallel — token tracker sees only answer-gen calls ----
-    eval_tracker = GlobalTokenAccumulator()
-    attach_token_tracker(eval_tracker)
-
-    eval_t0 = time.time()
-    results  = []
     try:
-        with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
-            future_map = {
-                executor.submit(_eval_one_question, q, kg, nx_graph,
-                                node_embeddings, tokenizer, args): i
-                for i, q in enumerate(questions)
-            }
+        tokenizer = AutoTokenizer.from_pretrained(cfg.model)
+        print(f"[Evaluation] Tokenizer loaded from HuggingFace: {cfg.model}")
+    except Exception:
+        import tiktoken
+
+        class _TiktokenWrapper:
+            def __init__(self, enc):
+                self._enc = enc
+            def encode(self, text, **kwargs):
+                return self._enc.encode(text)
+            def decode(self, ids, **kwargs):
+                return self._enc.decode(ids)
+
+        tokenizer = _TiktokenWrapper(tiktoken.get_encoding("cl100k_base"))
+        print("[Evaluation] HuggingFace tokenizer unavailable for this model; "
+              "falling back to tiktoken cl100k_base for context truncation.")
+
+    # Configure DSPy globally so ask_llm_query() knows which LLM to call.
+    configure_dspy(
+        model=kg_model_string(cfg),
+        api_base=cfg.api_base,
+        api_key=cfg.api_key,
+    )
+    if args.short_answer:
+        ans_label = "Predict[ShortAnswer]"
+    else:
+        ans_label = "ChainOfThought" if args.chain_of_thought else "Predict"
+    print(f"[Evaluation] DSPy configured  model={kg_model_string(cfg)}  "
+          f"answer_module={ans_label}")
+
+    limiter   = RateLimiter(rpm=args.eval_rpm)
+    print(f"[Evaluation] {limiter}")
+
+    tracker = GlobalTokenAccumulator()
+    attach_token_tracker(tracker)
+    t0 = time.time(); results = []
+    try:
+        with ThreadPoolExecutor(max_workers=args.max_workers) as ex:
+            fmap = {ex.submit(_eval_one, q, kg, nx_g, embs,
+                              tokenizer, args, limiter): i
+                    for i, q in enumerate(questions)}
             done = 0
-            for future in as_completed(future_map):
-                r = future.result()
-                results.append(r)
-                done += 1
-                if done % max(1, len(questions) // 20) == 0 or done == len(questions):
-                    n_ok = sum(1 for x in results if x["status"] == "SUCCESS")
-                    running_em = safe_div(sum(x["em"] for x in results if x["status"] == "SUCCESS"), n_ok)
-                    running_f1 = safe_div(sum(x["f1"] for x in results if x["status"] == "SUCCESS"), n_ok)
+            for future in as_completed(fmap):
+                r = future.result(); results.append(r); done += 1
+                if done % max(1, len(questions)//20) == 0 or done == len(questions):
+                    ok = [x for x in results if x["status"] == "SUCCESS"]; n = len(ok)
                     print(f"[Evaluation] {done}/{len(questions)}  "
-                          f"running EM={running_em:.4f} F1={running_f1:.4f}")
+                          f"EM={safe_div(sum(x['em'] for x in ok),n):.4f}  "
+                          f"F1={safe_div(sum(x['f1'] for x in ok),n):.4f}")
     finally:
         detach_token_tracker()
 
-    eval_time   = round(time.time() - eval_t0, 2)
-    eval_tokens = eval_tracker.snapshot()
-
-    # ---- Aggregate metrics ----
-    successes = [r for r in results if r["status"] == "SUCCESS"]
-    errors    = [r for r in results if r["status"] != "SUCCESS"]
-    n = len(successes)
-
+    eval_t  = round(time.time() - t0, 2)
+    eval_tk = tracker.snapshot()
+    ok  = [r for r in results if r["status"] == "SUCCESS"]
+    bad = [r for r in results if r["status"] != "SUCCESS"]
+    n   = len(ok)
     overall = {
-        "em":        safe_div(sum(r["em"]        for r in successes), n),
-        "f1":        safe_div(sum(r["f1"]        for r in successes), n),
-        "precision": safe_div(sum(r["precision"] for r in successes), n),
-        "recall":    safe_div(sum(r["recall"]    for r in successes), n),
+        "em":                    safe_div(sum(r["em"]                    for r in ok), n),
+        "f1":                    safe_div(sum(r["f1"]                    for r in ok), n),
+        "precision":             safe_div(sum(r["precision"]             for r in ok), n),
+        "recall":                safe_div(sum(r["recall"]                for r in ok), n),
+        "avg_context_tokens":    safe_div(sum(r["context_tokens"]        for r in ok), n),
+        "avg_raw_context_chars": safe_div(sum(r["raw_context_length_chars"] for r in ok), n),
     }
-    by_type  = _aggregate_by_key(successes, "type")
-    by_level = _aggregate_by_key(successes, "level") if args.dataset == HOTPOTQA else None
+    by_type  = _agg(ok, "type")
+    by_level = _agg(ok, "level") if args.dataset == HOTPOTQA else None
 
-    # ---- Build final output JSON ----
-    eval_output = {
+    output = {
         "run_id":    f"kggen_eval_{uuid.uuid4().hex[:8]}",
         "timestamp": datetime.now().isoformat(),
-        "system":    "KGGEN",
-        "dataset":   args.dataset,
-
+        "system": "KGGEN", "dataset": args.dataset,
         "metadata": {
-            "corpus_file":           final_metadata.get("corpus_file"),
-            "questions_file":        os.path.abspath(args.questions_file),
-            "run_dir":               os.path.abspath(args.run_dir),
-            "final_checkpoint_path": os.path.abspath(final_cp),
-            "model":                 args.model,
-            "embedding_model":       args.embed_model,
-            "api_base":              args.api_base,
-            "retrieval_params":      {"k": args.retrieval_k, "depth": args.retrieval_depth},
-            "max_context_tokens":    args.max_context_tokens,
-            "answer_max_tokens":     args.answer_max_tokens,
-            "max_workers":           args.max_workers,
-            "embedding_recompute_time_sec": emb_time,
+            "corpus_file":             final_meta.get("corpus_file"),
+            "questions_file":          os.path.abspath(args.questions_file),
+            "run_dir":                 os.path.abspath(args.run_dir),
+            "checkpoint_path":         os.path.abspath(cp_to_load),
+            "is_final_checkpoint":     final_cp is not None,
+            "provider":                cfg.provider, "model": cfg.model,
+            "embedding_model":         args.embed_model, "api_base": cfg.api_base,
+            "retrieval_params":        {
+                "k":       args.retrieval_k,
+                "depth":   args.retrieval_depth,
+                "verbose": args.retrieval_verbose,
+            },
+            "answer_module":           ans_label,
+            "max_context_tokens":      args.max_context_tokens,
+            "max_workers":             args.max_workers,
+            "eval_rpm":                args.eval_rpm,
+            "embedding_recompute_time_sec": emb_t,
         },
-
-        "construction": final_metadata,
-
+        "construction": final_meta,
         "evaluation": {
-            "total_questions":     len(questions),
-            "successful":          len(successes),
-            "errored":             len(errors),
-            "evaluation_time_sec": eval_time,
-            "evaluation_tokens":   eval_tokens,
-            "overall":             overall,
-            "by_type":             by_type,
-            **({"by_level": by_level} if by_level is not None else {}),
-            "results":             results,
+            "total_questions": len(questions), "successful": n, "errored": len(bad),
+            "evaluation_time_sec": eval_t, "evaluation_tokens": eval_tk,
+            "overall": overall, "by_type": by_type,
+            **({"by_level": by_level} if by_level else {}),
+            "results": results,
         },
-
         "totals": {
             "all_tokens": add_token_counters(
-                final_metadata.get("cumulative_construction_tokens", {}),
-                eval_tokens,
-            ),
+                final_meta.get("cumulative_construction_tokens", {}), eval_tk),
             "all_time_sec": round(
-                float(final_metadata.get("cumulative_construction_time_sec", 0.0))
-                + eval_time, 2
-            ),
+                float(final_meta.get("cumulative_construction_time_sec", 0.0)) + eval_t, 2),
         },
     }
+    path = next_eval_results_path(args.run_dir)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, default=str)
 
-    out_path = os.path.join(args.run_dir, "evaluation_results.json")
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(eval_output, f, indent=2, default=str)
-
-    # ---- Terminal summary ----
-    print(f"\n[Evaluation] DONE in {eval_time}s")
-    print(f"[Evaluation]   wrote → {out_path}")
-    print(f"[Evaluation]   overall EM={overall['em']}  F1={overall['f1']}  "
-          f"(n={n}, errors={len(errors)})")
-    print(f"[Evaluation]   by type:")
+    print(f"\n[Evaluation] DONE {eval_t}s  ->  {path}")
+    print(f"[Evaluation]   EM={overall['em']}  F1={overall['f1']}  n={n}  err={len(bad)}")
     for k, v in sorted(by_type.items()):
-        print(f"     {k:>12}: EM={v['em']:.4f}  F1={v['f1']:.4f}  (n={v['count']})")
+        print(f"     type {k:>12}: EM={v['em']:.4f}  F1={v['f1']:.4f}  (n={v['count']})")
     if by_level:
-        print(f"[Evaluation]   by level:")
         for k, v in sorted(by_level.items()):
-            print(f"     {k:>12}: EM={v['em']:.4f}  F1={v['f1']:.4f}  (n={v['count']})")
-    print(f"[Evaluation]   eval tokens: {eval_tokens['total_tokens']:,}  "
-          f"({eval_tokens['api_calls']:,} calls)")
+            print(f"    level {k:>12}: EM={v['em']:.4f}  F1={v['f1']:.4f}  (n={v['count']})")
+    print(f"[Evaluation]   tokens={eval_tk['total_tokens']:,}  calls={eval_tk['api_calls']:,}")
 
 
 # =============================================================================
 # MAIN
 # =============================================================================
+
 def main():
-    parser = argparse.ArgumentParser(
-        description="KGGen evaluation on HotpotQA / MuSiQue — single script"
+    p = argparse.ArgumentParser(
+        description="KGGen evaluation on HotpotQA / MuSiQue",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
+    p.add_argument("--mode",    required=True, choices=["construction","evaluation"])
+    p.add_argument("--dataset", required=True, choices=list(SUPPORTED_DATASETS))
+    p.add_argument("--provider", default="local_vllm", choices=list(PROVIDER_DEFAULTS),
+                   help=("LLM provider. local_vllm (default) or deepseek. "
+                         "Override defaults with --model/--api-base/--api-key."))
+    p.add_argument("--corpus-file",    type=str)
+    p.add_argument("--questions-file", type=str)
+    p.add_argument("--run-dir",        type=str, required=True)
+    p.add_argument("--model",     type=str, default="",
+                   help="Override provider default model name.")
+    p.add_argument("--embed-model", type=str,
+                   default="sentence-transformers/all-MiniLM-L6-v2",
+                   help="Sentence-transformer for node embeddings (always local).")
+    p.add_argument("--api-base",  type=str, default="",
+                   help="Override provider default API base URL.")
+    p.add_argument("--api-key",   type=str, default="",
+                   help="Override provider default API key.")
+    p.add_argument("--construction-rpm", type=int, default=0, metavar="N",
+                   help=("Max RPM during KG construction. 0=unlimited (default). "
+                         "KGGen makes ~2 calls/para => N RPM ~ N/2 paras/min. "
+                         "Recommended for DeepSeek free tier: 50."))
+    p.add_argument("--eval-rpm", type=int, default=0, metavar="N",
+                   help="Max RPM during evaluation answer-gen. 0=unlimited.")
+    p.add_argument("--checkpoint-interval", type=int, default=100,
+                   help=("Save a checkpoint every N paragraphs processed. "
+                         "E.g. --checkpoint-interval 50 saves after every 50 paragraphs. "
+                         "Smaller values = more frequent saves = safer against crashes, "
+                         "but more disk I/O. Default: 100."))
+    p.add_argument("--delete-old-checkpoints", action="store_true",
+                   help=("After saving checkpoint-N, delete all previous checkpoint-M "
+                         "folders (M < N). Keeps only the latest checkpoint on disk, "
+                         "saving storage. The final-checkpoint is never deleted. "
+                         "Safe to use: resume still works because only the latest "
+                         "checkpoint is needed. Default: off (keep all checkpoints)."))
+    p.add_argument("--max-workers",         type=int, default=10,
+                   help="Thread pool size (construction + evaluation).")
 
-    # ---- Mode & dataset ----
-    parser.add_argument("--mode", required=True, choices=["construction", "evaluation"],
-                        help="construction: build the KG (resumable). "
-                             "evaluation: run QA on a built KG.")
-    parser.add_argument("--dataset", required=True, choices=list(SUPPORTED_DATASETS),
-                        help="Which benchmark we're evaluating on. Controls "
-                             "scoring functions (HotpotQA yes/no rule vs MuSiQue aliases) "
-                             "and the stratification categories.")
+    # ---- Retrieval parameters (evaluation) ----
+    p.add_argument("--retrieval-k",       type=int, default=10,
+                   help="Number of seed nodes retrieved from the entity embedding index "
+                        "before graph traversal. Higher k = broader initial coverage, "
+                        "more context, slower retrieval. Default: 10.")
+    p.add_argument("--retrieval-depth",   type=int, default=2,
+                   help="Graph traversal depth from each seed node. depth=1 returns only "
+                        "direct neighbours; depth=2 returns neighbours-of-neighbours, etc. "
+                        "Higher depth = more context but also more noise. Default: 2.")
+    p.add_argument("--retrieval-verbose", action="store_true",
+                   help="Print per-node context during retrieval (debug; very noisy).")
 
-    # ---- File inputs ----
-    parser.add_argument("--corpus-file",    type=str,
-                        help="Path to corpus.jsonl (construction mode).")
-    parser.add_argument("--questions-file", type=str,
-                        help="Path to questions.jsonl (evaluation mode).")
-    parser.add_argument("--run-dir",        type=str, required=True,
-                        help="Directory holding checkpoints. "
-                             "Construction resumes from latest checkpoint inside this dir, "
-                             "or starts fresh if empty. Evaluation reads final-checkpoint here.")
+    # ---- Answer generation ----
+    p.add_argument("--short-answer", action=argparse.BooleanOptionalAction,
+                   default=True,
+                   help="Use ShortAnswerQuestion (span-style, no explanation) for answer "
+                        "generation (default: on). Designed for EM/F1 benchmarks where the "
+                        "gold answer is a short phrase like 'Paris' or '1984'. "
+                        "Pass --no-short-answer to fall back to the sentence-style AnswerQuestion "
+                        "prompt (controlled by --chain-of-thought).")
+    p.add_argument("--chain-of-thought", action=argparse.BooleanOptionalAction,
+                   default=True,
+                   help="Use dspy.ChainOfThought for answer generation (default: on). "
+                        "Only applies when --no-short-answer is set. "
+                        "Pass --no-chain-of-thought to use dspy.Predict instead "
+                        "(single forward pass, faster, no reasoning trace).")
+    p.add_argument("--max-context-tokens",  type=int, default=2000,
+                   help="Token budget for context passed to the answer-generation LLM.")
 
-    # ---- Models & API ----
-    parser.add_argument("--model",       type=str,
-                        default="Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
-                        help="LLM model name (used for both KG extraction and answer generation).")
-    parser.add_argument("--embed-model", type=str,
-                        default="google/embeddinggemma-300m",
-                        help="Sentence-transformer model for node embeddings.")
-    parser.add_argument("--api-base",    type=str, default="http://localhost:8000/v1")
-    parser.add_argument("--api-key",     type=str, default="EMPTY")
+    args = p.parse_args()
 
-    # ---- Construction-only ----
-    parser.add_argument("--checkpoint-interval", type=int, default=100,
-                        help="Paragraphs absorbed between consecutive checkpoints.")
-    parser.add_argument("--batch-size",   type=int, default=5,
-                        help="(legacy; max_workers controls parallelism in this script)")
-
-    # ---- Evaluation-only ----
-    parser.add_argument("--retrieval-k",        type=int, default=10,
-                        help="Top-K seed nodes for KGGen retrieval.")
-    parser.add_argument("--retrieval-depth",    type=int, default=2,
-                        help="BFS depth for KGGen context expansion.")
-    parser.add_argument("--max-context-tokens", type=int, default=2000,
-                        help="Max tokens of retrieved context fed to the LLM per question.")
-    parser.add_argument("--answer-max-tokens",  type=int, default=128,
-                        help="max_tokens for the answer-generation LLM call. "
-                             "HotpotQA/MuSiQue answers are short — 128 is plenty.")
-
-    # ---- Shared ----
-    parser.add_argument("--max-workers", type=int, default=10,
-                        help="Thread-pool size for parallel paragraph extraction "
-                             "(construction) or parallel question answering (evaluation).")
-
-    args = parser.parse_args()
-
-    # ---- Validate ----
     if args.mode == "construction" and not args.corpus_file:
-        parser.error("--mode construction requires --corpus-file")
+        p.error("--mode construction requires --corpus-file")
     if args.mode == "evaluation" and not args.questions_file:
-        parser.error("--mode evaluation requires --questions-file")
+        p.error("--mode evaluation requires --questions-file")
 
-    # ---- Dispatch ----
-    print(f"\n{'=' * 65}")
-    print(f"  KGGEN {args.mode.upper()} — {args.dataset.upper()}")
-    print(f"  run-dir: {args.run_dir}")
-    print(f"  model:   {args.model}")
-    print(f"{'=' * 65}\n")
+    cfg     = resolve_provider(args)
+    rpm_val = args.construction_rpm if args.mode == "construction" else args.eval_rpm
+    rpm_str = str(rpm_val) if rpm_val > 0 else "unlimited"
+
+    print(f"\n{'='*65}")
+    print(f"  KGGEN {args.mode.upper()} -- {args.dataset.upper()}")
+    print(f"  provider : {cfg.provider}")
+    print(f"  model    : {cfg.model}")
+    print(f"  api-base : {cfg.api_base}")
+    print(f"  run-dir  : {args.run_dir}")
+    print(f"  RPM      : {rpm_str} ({args.mode})")
+    if args.mode == "construction":
+        print(f"  ckpt every : {args.checkpoint_interval} paragraphs")
+        print(f"  delete old : {'yes' if args.delete_old_checkpoints else 'no'}")
+    else:
+        if args.short_answer:
+            ans_mode = "ShortAnswer (span-style, EM/F1 optimised)"
+        elif args.chain_of_thought:
+            ans_mode = "ChainOfThought (sentence-style)"
+        else:
+            ans_mode = "Predict (sentence-style)"
+        print(f"  retrieval  : k={args.retrieval_k}  depth={args.retrieval_depth}"
+              f"  verbose={'yes' if args.retrieval_verbose else 'no'}")
+        print(f"  answer gen : {ans_mode}")
+    print(f"{'='*65}\n")
 
     if args.mode == "construction":
         try:
-            run_construction(args)
+            run_construction(args, cfg)
         except KeyboardInterrupt:
-            print("\n[Construction] Interrupted by user. "
-                  "Latest checkpoint is preserved — rerun the same command to resume.")
+            print("\n[Construction] Interrupted. Checkpoint preserved -- rerun to resume.")
         except Exception as e:
-            print(f"\n[Construction FATAL] {e}")
-            traceback.print_exc()
-            sys.exit(1)
-    else:  # evaluation
-        run_evaluation(args)
+            print(f"\n[Construction FATAL] {e}"); traceback.print_exc(); sys.exit(1)
+    else:
+        run_evaluation(args, cfg)
 
 
 if __name__ == "__main__":

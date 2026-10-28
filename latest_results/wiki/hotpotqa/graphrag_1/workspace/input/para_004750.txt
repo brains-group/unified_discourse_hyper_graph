@@ -1,0 +1,3 @@
+Title: H topology
+
+In algebraic geometry, the "h" topology is a Grothendieck topology introduced by Vladimir Voevodsky to study the homology of schemes. It has several variants, such as the "qfh" and "cdh" topologies.

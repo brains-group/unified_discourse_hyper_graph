@@ -1,0 +1,15 @@
+{
+ "dataset": "quality",
+ "seed": 0,
+ "questions": 113,
+ "corpus_docs": 6,
+ "articles": [
+  "60745",
+  "99905",
+  "23563",
+  "63523",
+  "50818",
+  "51362"
+ ],
+ "hard_questions": 55
+}

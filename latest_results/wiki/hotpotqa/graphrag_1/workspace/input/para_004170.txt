@@ -1,0 +1,3 @@
+Title: John von Neumann
+
+John von Neumann ( ; Hungarian: "Neumann János Lajos" , ] ; December 28, 1903 – February 8, 1957) was a Hungarian-American mathematician, physicist, and computer scientist. He made major contributions to a number of fields, including mathematics (foundations of mathematics, functional analysis, ergodic theory, representation theory, operator algebras, geometry, topology, and numerical analysis), physics (quantum mechanics, hydrodynamics, and quantum statistical mechanics), economics (game theory), computing (Von Neumann architecture, linear programming, self-replicating machines, stochastic computing), and statistics.

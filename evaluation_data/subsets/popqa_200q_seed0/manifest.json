@@ -1,0 +1,23 @@
+{
+ "dataset": "popqa",
+ "seed": 0,
+ "questions": 200,
+ "corpus_docs": 4931,
+ "relations": {
+  "author": 29,
+  "capital": 5,
+  "capital of": 1,
+  "composer": 6,
+  "country": 42,
+  "director": 13,
+  "father": 3,
+  "genre": 18,
+  "mother": 0,
+  "occupation": 18,
+  "place of birth": 27,
+  "producer": 6,
+  "religion": 5,
+  "screenwriter": 4,
+  "sport": 23
+ }
+}

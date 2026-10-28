@@ -1,0 +1,919 @@
+% https://www2027.thewebconf.org/research-track-papers/
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+
+
+
+\usepackage{todonotes} 
+% \usepackage[disable]{todonotes}
+\newcommand{\oshani}[1]{\todo[inline, color=blue!40, author=\textbf{Oshani}]{#1}}
+\newcommand{\maruf}[1]{\todo[inline, color=red!40, author=\textbf{Maruf}]{#1}}
+    \newcommand{\abid}[1]{\todo[inline, color=green!40, author=\textbf{Abid}]{#1}}
+    
+
+
+
+\begin{document}
+%
+\title{Contribution Title}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{First Author\inst{1}\orcidID{0000-1111-2222-3333} \and
+Second Author\inst{2,3}\orcidID{1111-2222-3333-4444} \and
+Third Author\inst{3}\orcidID{2222--3333-4444-5555}}
+%
+\authorrunning{F. Author et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Princeton University, Princeton NJ 08544, USA \and
+Springer Heidelberg, Tiergartenstr. 17, 69121 Heidelberg, Germany
+\email{lncs@springer.com}\\
+\url{http://www.springer.com/gp/computer-science/lncs} \and
+ABC Institute, Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
+\email{\{abc,lncs\}@uni-heidelberg.de}}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+Graph-based retrieval-augmented generation has advanced over chunk retrieval by structuring knowledge as graphs, but existing approaches commit to one of three representations: binary graphs that lose information when facts involve more than two entities, hypergraphs that recover this through n-ary entity participation but cannot traverse narrative connections between disjoint facts, or discourse graphs that link facts by logical flow but lack native entity-centric lookup. We introduce the Unified Discourse-Hypergraph (UDH), a knowledge representation in which atomic facts serve simultaneously as hyperedges over their participant entities and as nodes in a directed, labeled discourse graph — combining the information-theoretic completeness of hypergraph representation with the narrative connectivity of discourse graphs, and unlocking retrieval operations that neither structure supports alone. Construction proceeds through parallel chunk processing, exhaustive atomic fact extraction, and a two-pass edge construction strategy that connects facts within chunks exhaustively and across chunks via Top-K and Middle-K candidate selection, where Middle-K surfaces non-obvious associations that direct similarity alone would miss. At query time, a structured query plan decomposes user intent into typed semantic dimensions driving multi-dimensional scoring and narrative beam search over the unified index. Experiments across an insurance contract benchmark, HotpotQA, and UltraDomain demonstrate that UDH consistently outperforms binary, hypergraph, and discourse graph baselines — with the largest gains on queries requiring both entity identification and multi-hop narrative reasoning.
+
+\keywords{First keyword  \and Second keyword \and Another keyword.}
+\end{abstract}
+%
+%
+%
+
+\section{Introduction}
+
+Retrieval-augmented generation has become the standard approach for grounding large language
+model responses in external knowledge. The canonical pipeline encodes source documents as
+fixed-length text chunks, retrieves those most similar to a query by dense vector search,
+and conditions generation on the retrieved passages. This design works well when the answer
+to a query is localized within a small number of contiguous passages. It fails when answering
+requires integrating information distributed across a document---connecting entities to their
+obligations, following conditional chains through multiple clauses, or reconciling facts that
+share no surface text but are logically entailed by one another. Chunked retrieval has no
+mechanism for any of these operations because it treats each passage as an independent unit.
+
+Graph-based RAG addresses this by structuring knowledge as a graph and using graph traversal
+as the retrieval primitive. Two distinct paradigms have emerged, each with a different theory
+of what graph structure should represent.
+
+The first paradigm treats facts as hyperedges over their participant entities.
+HyperGraphRAG~\cite{luo2025hypergraphrag} demonstrated that $n$-ary hyperedge representation
+strictly preserves more information than binary triple decomposition: a fact involving
+$n \geq 3$ entities cannot be losslessly encoded as a set of pairwise edges, and the
+information-theoretic gap compounds with query complexity. Given an entity, all hyperedges
+in which it participates are directly reachable, making this paradigm well-suited to
+entity-centric lookup. The limitation is symmetric: two facts that are causally,
+conditionally, or logically related but share no participant entities are structurally
+disconnected. Hypergraph RAG cannot traverse such a connection because no edge between
+them exists in the index.
+
+The second paradigm treats facts as first-class nodes and represents the narrative and
+logical relationships between them as typed directed edges---a discourse graph. This design
+supports multi-hop narrative reasoning: a retriever can follow a chain of labeled edges
+across facts that share no entities, reconstructing a line of argument from premise to
+conclusion. The limitation is equally symmetric: querying which facts involve a specific
+entity requires scanning the entire fact set, because entity participation is not
+structurally indexed. Discourse graphs have no native entity-centric retrieval.
+
+These two paradigms are not different implementations of the same idea. They index
+fundamentally different structures. A query that asks what happened to a specific entity
+and how that connects to a broader narrative requires both: entity-centric lookup to
+identify the relevant facts, and narrative traversal to follow the logical thread outward.
+No existing system supports both within a single index.
+
+We introduce the \textbf{Unified Discourse-Hypergraph (UDH)}, a knowledge representation
+that resolves this tension by treating atomic facts as first-class structures that
+simultaneously function as hyperedges over their participant entities and as nodes in a
+directed, labeled discourse graph. Entity-centric retrieval and narrative traversal operate
+over the same index, enabling retrieval strategies that are structurally impossible in
+either constituent paradigm alone.
+
+We evaluate on three dataset collections. An insurance contract benchmark---ten synthetic
+contracts spanning three complexity tiers and five authentic issued policies across five
+coverage types---tests the class of applied, conditional, and multi-hop queries that prior
+benchmarks underrepresent. HotpotQA~\cite{yang2018hotpotqa} validates cross-domain
+multi-hop generalization under standardized conditions. Three UltraDomain~\cite{qian2024memorag}
+collections measure generation quality independently of factual lookup. Across all settings,
+UDH outperforms binary graph RAG, hypergraph RAG, and discourse graph RAG, with the largest
+gains on multi-hop queries requiring both entity identification and narrative reasoning.
+UDH at 1,200 retrieval tokens exceeds HyperGraphRAG at 2,400 tokens across all evaluation
+benchmarks.
+
+The contributions of this work are as follows. We introduce the Unified Discourse-Hypergraph
+index structure and prove that it subsumes both hypergraph RAG and discourse graph RAG as
+special cases while enabling retrieval operations unavailable in either. We present a
+complete construction pipeline with linear LLM call complexity in document length. We
+introduce Top-$K$ + Middle-$K$ discourse edge construction and demonstrate that Middle-$K$
+edges constitute approximately one third of all edges surviving cross-encoder reranking,
+establishing their necessity for a complete discourse index. We evaluate across four
+benchmarks and show consistent, domain-agnostic improvements over all existing graph-based
+RAG paradigms.
+
+\maruf{Abid, please read this section thoroughly and see if eveything makes sense.}
+
+\section{Related Work}
+
+Our work sits at the intersection of retrieval-augmented generation, graph-based knowledge
+construction and reasoning, hypergraph learning, and discourse-aware representation. We
+survey each area in turn before identifying the collective gap that motivates our approach.
+
+\paragraph{Retrieval-Augmented Generation.}
+Lewis et al.~\cite{lewis2020retrieval} established the foundational RAG paradigm of dense passage
+retrieval coupled with seq2seq generation.
+Flat RAG encodes chunks in isolation, causing contextual fragmentation on multi-hop
+queries~\cite{peng2025graph,zhu2026graph}.
+RAPTOR~\cite{sarthi2024raptor} addresses this via hierarchical summarization trees built by
+recursive clustering; HippoRAG~\cite{gutierrez2024hipporag} couples an LLM-built knowledge
+graph with Personalized PageRank for strong multi-hop QA; and
+StructRAG~\cite{li2024structrag} selects the optimal information structure dynamically at
+inference time.
+
+\paragraph{Graph-Based KG Construction and Reasoning.}
+LLM-driven KG construction has advanced rapidly~\cite{bian2025llm}: EDC~\cite{zhang2024extract}
+proposes extract-define-canonicalize; KGGen~\cite{mo2025kggen} adds iterative entity
+clustering to reduce sparsity and deduplicate aliases; iText2KG~\cite{lairgi2024itext2kg}
+builds graphs incrementally across chunks; and AutoKG~\cite{zhu2024llms} uses multi-agent
+prompting for joint extraction and reasoning.
+Entity duplication from independent chunk processing remains a persistent
+challenge~\cite{chen2025large,meher2025link}.
+On the reasoning side, GraphRAG~\cite{edge2024local} builds a community-hierarchical index
+and pre-generates summaries for global sensemaking; Think-on-Graph ~\cite{sun2023think} performs beam-search traversal on external KGs; ToG 2.0 ~\cite{ma2024think} extends this with a hybrid approach that couples KG traversal with document-context retrieval in an iterative loop.
+HopRAG~\cite{liu2025hoprag} adds logic-aware graph traversal; GNN-RAG~\cite{mavromatis2024gnn}
+integrates graph neural encodings into retrieval; KGEIR~\cite{sun2025kgeir} iterates
+until reasoning chains are complete; and KG-RAG~\cite{sanmartin2024kg} and
+RoG~\cite{luo2023reasoning} ground generation directly on graph paths~\cite{chen2024llm}.
+
+\paragraph{Hypergraph Representation Learning.}
+Hypergraphs generalize binary graphs by allowing a single edge to connect arbitrarily many
+vertices~\cite{antelmi2023survey}, enabling native modeling of higher-order
+interactions. Foundational HGNNs define convolution via the normalized hypergraph
+Laplacian~\cite{feng2019hypergraph}; AllSet~\cite{chien2021you} unifies message-passing through
+multiset functions; UniGNN~\cite{huang2021unignn} bridges GNNs and HGNNs in a single
+framework; and a comprehensive survey~\cite{kim2024survey} covers convolutional, attention,
+recurrent, and generative variants. Higher-order representations benefit $n$-ary KG link
+prediction~\cite{wei2025survey}, nested named entity recognition~\cite{yan2023nested}, and
+multi-modal knowledge retrieval~\cite{zeng2023multi}. In relation to RAG setting,
+Zhou et al.~\cite{zhou2025improving} propose a hypergraph-based working memory that captures higher-order correlations among retrieved facts for multi-step RAG in long-context reasoning.
+
+\paragraph{Discourse Structure and Diversity-Driven Retrieval.}
+Discourse coherence has long underpinned deep document understanding, from Rhetorical
+Structure Theory~\cite{mann1988rhetorical} and the Penn Discourse Treebank~\cite{prasad2017penn} to
+computational narrative extraction~\cite{santana2023survey} and coherence-dependency
+graph models~\cite{xu2024graph}. Graph-based narrative representations have improved
+story comprehension and retrieval~\cite{dekok:hal-04576222,andrus2022storykg}, yet these
+methods operate at the passage or sentence level. On retrieval quality, the classical Maximal Marginal Relevance (MMR)
+criterion~\cite{carbonell1998use} formalizes the relevance-diversity
+trade-off~\cite{wu2022survey}; IRCoT~\cite{trivedi2023interleaving} interleaves
+chain-of-thought with iterative retrieval; and cross-encoder reranking~\cite{nogueira2019passage}
+provides calibrated relevance estimates as a post-retrieval refinement step.
+
+Across these lines of work, three structural gaps remain unaddressed. First, all graph-based
+RAG systems encode knowledge as binary triples, losing the higher-order co-membership
+structure that arises when multiple entities participate in the same atomic fact. Second,
+hypergraph methods that capture such co-memberships have not been coupled with the narrative
+discourse relations that govern how facts relate across a document corpus. Third, retrieval
+pipelines treat diversity as an afterthought, typically applying MMR only at the final
+re-ranking stage rather than propagating it through graph traversal and seed selection.
+Together, these gaps motivate the Unified Discourse-Hypergraph: a single index that jointly
+encodes narrative fact-level discourse edges and higher-order entity hyperedges, supported
+by an end-to-end pipeline from rich metadata extraction and global fact linking to
+structured query planning, diversity-aware beam search, and cross-encoder path reranking.
+
+% =============================================================================
+\section{Methodology}
+% =============================================================================
+ 
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Index Structure}
+% ─────────────────────────────────────────────────────────────────────────────
+ 
+\begin{definition}[Unified Discourse-Hypergraph]
+A \textbf{Unified Discourse-Hypergraph} is a structure
+$G = (C,\, F,\, V,\, E_{CF},\, E_{HF},\, E_{FF})$ where:
+ 
+\begin{itemize}
+  \item $C = \{c_1, \ldots, c_n\}$ is the \textbf{chunk} set --- overlapping
+        token windows over the source document, retained strictly as provenance
+        anchors for extracted knowledge.
+ 
+  \item $F = \{f_1, \ldots, f_m\}$ is the \textbf{fact} set --- atomic,
+        self-contained propositions extracted from the source text. Each fact
+        \[
+          f_i \;=\; \bigl(s_i,\; T_i,\; Q_i^a,\; Q_i^f,\; \V_{f_i}\bigr)
+        \]
+        consists of a sentence $s_i$, a set of thematic topics $T_i$, a set of
+        answered questions $Q_i^a$, a set of follow-up questions $Q_i^f$, and a
+        set of participating entities $\V_{f_i} \subseteq V$.
+ 
+  \item $V = \{v_1, \ldots, v_p\}$ is the \textbf{entity fingerprint} set.
+        Each entity
+        \[
+          v_j \;=\; (n_j,\; \tau_j,\; \rho_j,\; \phi_j)
+        \]
+        consists of a canonical name $n_j$, an ontological type $\tau_j$
+        (e.g., \textsc{Person}, \textsc{Organization}), a contextual
+        micro-role $\rho_j$ --- a short phrase grounding the entity's function
+        within a specific passage --- and a set of discriminating features
+        $\phi_j$ (identifiers such as policy numbers or unique attributes that
+        distinguish this entity from semantically similar ones).
+ 
+  \item $E_{CF} \subseteq C \times F$ is the \textbf{chunk-fact incidence}
+        relation, linking each fact to its source chunk.
+ 
+  \item $E_{HF} \subseteq F \times V \times \Lset$ is the
+        \textbf{hyperedge-entity incidence} relation, where each triple
+        $(f_i, v_j, l_{ij})$ records the functional role
+        $l_{ij} \in \Lset$ (e.g., \textsc{Initiated\_Action},
+        \textsc{Suffered\_Loss}) that entity $v_j$ plays within fact $f_i$.
+ 
+  \item $E_{FF} \subseteq F \times F \times \Lset \times [0,1]$ is the
+        \textbf{discourse edge} relation, where each tuple
+        $(f_i, f_j, l_{ij}, r_{ij})$ records a directed narrative relationship
+        from $f_i$ to $f_j$ with label $l_{ij} \in \Lset$ (e.g.,
+        \textsc{Elaborates\_On}, \textsc{Contradicts}) and relevance score
+        $r_{ij}$.
+\end{itemize}
+\end{definition}
+ 
+The role of each component follows directly from this definition. Chunks serve
+exclusively as provenance: they record which passage of the source document gave
+rise to each fact and participate in no retrieval operation. Facts are the
+primary reasoning units of the index. Their answered and follow-up question
+fields, $Q_i^a$ and $Q_i^f$, encode latent query representations embedded into
+the index at construction time; their role in cross-chunk edge candidate
+generation is described in Section~\ref{sec:edge_construction}. Entity
+fingerprints are not simple name strings. The micro-role $\rho_j$ grounds an
+entity in the context from which it was extracted, and the feature set $\phi_j$
+provides discriminating identifiers that enable precise deduplication across
+chunks.
+ 
+The two edge sets encode the two retrieval modalities that prior work addresses
+separately. $E_{HF}$ enables \emph{entity-centric} lookup: given $v_j$, all
+facts in which it participates are reachable by following incidence edges.
+$E_{FF}$ enables \emph{narrative traversal}: given $f_i$, logically related
+facts are reachable by following discourse edges regardless of entity overlap.
+Neither prior hypergraph RAG nor discourse graph RAG natively supports both
+operations within a single index.
+ 
+The UDH subsumes both the hypergraph RAG index (defined by $E_{HF}$ alone) and
+the discourse graph index (defined by $E_{FF}$ alone), and supports retrieval
+operations unavailable in either constituent alone.
+ 
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Construction Pipeline}
+% ─────────────────────────────────────────────────────────────────────────────
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{pipeline.png}
+    \caption{Overview of Construction and Retrieval Pipeline}
+    \label{fig:placeholder}
+\end{figure}
+ 
+UDH construction proceeds in four stages: (1)~chunking and entity fingerprinting,
+(2)~atomic fact extraction and entity grounding, (3)~edge construction, and
+(4)~entity deduplication. Stages 1--3 are parallelized across chunks; stage~4
+operates on the merged global graph.
+ 
+\subsubsection*{Chunking and Entity Fingerprinting}
+ 
+Given source document $D$, we partition it into overlapping token windows using
+a model-specific tokenizer. Let $\tok(D)$ denote the token sequence; the chunk
+set $C$ is defined as:
+\[
+  c_i \;=\; \mathrm{decode}\!\Bigl(\tok(D)\bigl[i \cdot s \;:\; i \cdot s + w\bigr]\Bigr),
+  \qquad s = w - \delta
+\]
+where $w$ is the window width and $\delta$ is the overlap. For each chunk
+$c \in C$, we extract entity fingerprints using language model $\pi$ with prompt
+$p_{fp}$:
+\[
+  \V_c \;=\; \{v_1, \ldots, v_k\} \;\sim\; \pi\!\bigl(\V \mid p_{fp},\, c\bigr)
+\]
+Each fingerprint $v_j = (n_j, \tau_j, \rho_j, \phi_j)$ is extracted once per
+chunk and reused during fact-level entity grounding described below, avoiding
+redundant LLM calls at the fact level.
+ 
+\subsubsection*{Atomic Fact Extraction and Entity Grounding}
+ 
+For each chunk $c$, we extract atomic fact sentences using $\pi$ with prompt
+$p_{fact}$:
+\[
+  \Sset_c \;=\; \{s_1, \ldots, s_m\} \;\sim\; \pi\!\bigl(\Sset \mid p_{fact},\, c\bigr)
+\]
+Each sentence is required to be self-contained (all pronouns resolved), atomic
+(one claim per sentence), and grounded exclusively in $c$. For each sentence
+$s_i$, fact metadata is extracted with prompt $p_{meta}$:
+\[
+  \bigl(T_i,\; Q_i^a,\; Q_i^f\bigr) \;\sim\; \pi\!\bigl(\cdot \mid p_{meta},\, c,\, s_i\bigr)
+\]
+ 
+Entity participation is extracted in a single prompt call using $\pi$ with
+prompt $p_{ef}$, producing entity name--role pairs for each fact sentence:
+\[
+  \bigl\{(\hat{e}_j,\, l_j)\bigr\} \;\sim\; \pi\!\bigl(\cdot \mid p_{ef},\, s_i\bigr)
+\]
+ 
+Rather than re-extracting full fingerprints per fact --- which would scale as
+$O(|F|)$ LLM calls with full metadata --- we ground each extracted name
+$\hat{e}_j$ to the chunk fingerprint set $\V_c$ via cosine similarity:
+\[
+  v_j^* \;=\; \argmax_{v \,\in\, \V_c}\;
+              \cosim\!\Bigl(\enc(\hat{e}_j),\; \enc(n_v)\Bigr)
+\]
+ 
+This assigns the best-matching fingerprint --- with its full type, role, and
+feature metadata --- to the fact's entity slot. The assembled fact is:
+\[
+  f_i \;=\; \Bigl(s_i,\; T_i,\; Q_i^a,\; Q_i^f,\;
+              \bigl\{(v_j^*,\, l_j)\bigr\}\Bigr)
+\]
+ 
+\subsubsection*{Edge Construction}
+\label{sec:edge_construction}
+ 
+Edge construction proceeds in two passes: local edges within each chunk, and
+global edges across chunks.
+ 
+\paragraph{Local edges.}
+Hyperedge-entity incidence edges $E_{HF}$ are added directly from the grounding
+step: for each $(v_j^*, l_j)$ associated with $f_i$, we add
+$(f_i, v_j^*, l_j)$ to $E_{HF}$. For every intra-chunk fact pair $(f_i, f_j)$
+drawn from the same chunk $c$, we call $\pi$ with prompt $p_{same}$ to produce
+bidirectional labels and a relevance score; pairs with $r_{ij} < \theta$ are
+discarded.
+ 
+\paragraph{Global edges.}
+Cross-chunk discourse edges are the primary vehicle for narrative connectivity
+across the document. For each fact $f_i \in F$, we rank all other facts by a
+fused embedding score over four dimensions:
+\[
+  \mathrm{score}(f_i, f_j) \;=\;
+  \cosim(s_i, s_j) \;+\;
+  \cosim(T_i, T_j) \;+\;
+  \cosim(\rho_i, \rho_j) \;+\;
+  \cosim\!\bigl(Q_i^f,\, Q_j^a\bigr)
+\]
+where each term denotes the cosine similarity of the respective field embeddings.
+The final term --- matching the follow-up questions of $f_i$ against the
+answered questions of $f_j$ --- captures the inferential link between a fact
+that raises a question and one that resolves it, independently of surface form
+or shared entity participation.
+ 
+Let $R_i = \mathrm{sort\text{-}desc}_{f_j \neq f_i}\, \mathrm{score}(f_i, f_j)$
+be the ranked list for $f_i$. We draw two disjoint candidate sets:
+\[
+  \C_i^{\mathrm{top}} \;=\; R_i[0 : K],
+  \qquad
+  \C_i^{\mathrm{mid}} \;=\; R_i\bigl[\lfloor\alpha|F|\rfloor \;:\;
+                               \lfloor\alpha|F|\rfloor + K\bigr]
+\]
+ 
+Top-$K$ candidates capture high-confidence, direct semantic connections.
+Middle-$K$ candidates --- drawn from the $\alpha$-th percentile of the ranked
+list --- surface non-obvious thematic associations that top-$K$ alone would
+miss, improving cross-document discoverability. For each candidate pair
+$(f_i, f_j) \in \C_i^{\mathrm{top}} \cup \C_i^{\mathrm{mid}}$, we call $\pi$
+with prompt $p_{cross}$ to produce the labeled bidirectional edge
+$(l_{ij}, l_{ji}, r_{ij})$; pairs with $r_{ij} < \theta$ are discarded.
+ 
+\subsubsection*{Entity Deduplication}
+ 
+Because fingerprints are extracted independently per chunk, the same real-world
+entity may appear under multiple surface forms across $V$. We resolve this in
+two stages.
+ 
+\paragraph{Similarity clustering.}
+For each pair $v_i, v_j \in V$, we compute a weighted multi-field similarity:
+\[
+  \mathrm{sim}(v_i, v_j) \;=\;
+  w_n \cdot \cosim(n_i, n_j) \;+\;
+  w_\tau \cdot \cosim(\tau_i, \tau_j) \;+\;
+  w_\rho \cdot \cosim(\rho_i, \rho_j)
+\]
+with weights $(w_n, w_\tau, w_\rho) = (0.6,\, 0.1,\, 0.3)$. We construct a
+sparse undirected similarity graph $G_{\mathrm{sim}}$ with an edge
+$(v_i, v_j)$ iff $\mathrm{sim}(v_i, v_j) \geq \theta_{\mathrm{sim}}$, and
+apply hierarchical Leiden community detection~\cite{traag2019leiden} to
+partition $V$ into clusters $\{K_1, \ldots, K_r\}$.
+ 
+\paragraph{LLM verification and rewiring.}
+For each cluster $K_k$ with $|K_k| > 1$, we call $\pi$ with prompt
+$p_{dedup}$ to identify true co-referents and produce a normalized alias
+fingerprint $\hat{v}$. All edges incident to confirmed duplicates
+$D_k \subseteq K_k$ are redirected to $\hat{v}$, and the original nodes are
+removed. Table~\ref{tab:dedup} reports deduplication ratios across document
+collections.
+ 
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Retrieval}
+% ─────────────────────────────────────────────────────────────────────────────
+ 
+Given user query $q$, retrieval proceeds in four stages: query planning,
+multi-dimensional seed scoring, MMR-based seed selection, and graph beam search
+with cross-encoder reranking.
+ 
+\subsubsection*{Query Planning}
+ 
+We decompose $q$ into a structured plan using $\pi$ with prompt $p_{plan}$:
+\[
+  \Pi(q) \;=\; \bigl(q',\; T_q,\; V_q^e,\; V_q^b,\; L_q,\; S_q\bigr)
+  \;\sim\; \pi\!\bigl(\cdot \mid p_{plan},\, q\bigr)
+\]
+where $q'$ is a rewritten standalone query, $T_q$ is a set of target topics,
+$V_q^e$ is a set of specific named entities, $V_q^b$ is a set of broad
+role-based anchors, $L_q$ is a set of target edge labels, and $S_q$ is a set
+of target edge semantic descriptions. Each component is embedded separately, as
+different index dimensions require distinct query representations.
+ 
+\subsubsection*{Multi-Dimensional Seed Scoring}
+ 
+Let
+\[
+  \Slist(A,\, B) \;=\;
+  \mathrm{mean}_{a \in A}\!\Bigl[\max_{b \in B} \cosim(a, b)\Bigr]
+\]
+denote the max-pooled list similarity between two sets of embeddings. We score
+each candidate node against the query plan using the type-specific functions
+below, with weights given in Table~\ref{tab:weights}.
+ 
+\paragraph{Fact scoring.}
+\[
+  \scoref(f_i) \;=\;
+  w_s \cdot \cosim(q', s_i) \;+\;
+  w_T \cdot \Slist(T_q,\, T_i)
+\]
+ 
+\paragraph{Entity scoring.}
+\[
+  \scoree(v_j) \;=\;
+  w_n \cdot \Slist(V_q^e,\, n_j) \;+\;
+  w_\rho \cdot \Slist(V_q^b,\, \rho_j) \;+\;
+  w_\phi \cdot \Slist(V_q^e,\, \phi_j)
+\]
+ 
+\paragraph{Fact--fact edge scoring.}
+\[
+  \scoreff(e_{ij}) \;=\;
+  w_l \cdot \Slist(L_q,\, l_{ij}) \;+\;
+  w_d \cdot \Slist(S_q,\, \mathrm{desc}_{ij}) \;+\;
+  w_r \cdot r_{ij}
+\]
+ 
+\begin{table}[h]
+\centering
+\caption{Retrieval scoring weights by component and field.}
+\label{tab:weights}
+\begin{tabular}{llc}
+\toprule
+\textbf{Component} & \textbf{Field} & \textbf{Weight} \\
+\midrule
+Fact              & Sentence       & 0.75 \\
+Fact              & Topics         & 0.25 \\
+\midrule
+Entity            & Name           & 0.40 \\
+Entity            & Role           & 0.30 \\
+Entity            & Features       & 0.30 \\
+\midrule
+Fact--Fact Edge   & Label          & 0.30 \\
+Fact--Fact Edge   & Description    & 0.50 \\
+Fact--Fact Edge   & LLM Score      & 0.20 \\
+\midrule
+Entity--Fact Edge & Role           & 0.50 \\
+Entity--Fact Edge & Semantics      & 0.50 \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+\subsubsection*{MMR Seed Selection}
+ 
+From the scored fact set, we select $K$ diverse seed facts using Maximal
+Marginal Relevance:
+\[
+  f^* \;=\; \argmax_{f_i \,\notin\, \Sset}\;
+  \Bigl[
+    \lambda \cdot \scoref(f_i)
+    \;-\;
+    (1 - \lambda) \cdot \max_{f_j \,\in\, \Sset} \cosim(s_i, s_j)
+  \Bigr]
+\]
+where $\Sset$ is the current selected seed set. This prevents the seed set from
+collapsing onto a single topic cluster, ensuring that the subsequent graph
+expansion covers multiple regions of the index.
+ 
+\subsubsection*{Graph Beam Search and Cross-Encoder Reranking}
+ 
+From each seed $f_i \in \Sset$, we expand along $E_{FF}$ edges using a beam of
+width $B$, scoring each candidate expansion by $\scoreff$. The union of all
+traversed paths forms a candidate context set $\mathcal{P}$. Each path
+$p \in \mathcal{P}$ is serialized to a natural language string and scored
+against $q$ by a cross-encoder:
+\[
+  \mathrm{rank}(p) \;=\; \mathrm{CrossEncoder}\!\bigl(q,\; \mathrm{text}(p)\bigr)
+\]
+The top-ranked paths are diversified by a final MMR pass over path embeddings
+and assembled into the context passed to $\pi$ with generation prompt $p_{gen}$
+to produce the final response $y^*$.
+
+
+
+
+
+
+
+
+\section{Experiments}
+
+We address the following research questions:
+
+\begin{itemize}
+    \item[\textbf{RQ1}] Does UDH-RAG outperform existing graph-based RAG methods?
+    \item[\textbf{RQ2}] Does the unified structure outperform each of its constituent parts?
+    \item[\textbf{RQ3}] How effective is UDH-RAG across diverse knowledge domains?
+    \item[\textbf{RQ4}] How does generation quality compare across systems and ablations?
+    \item[\textbf{RQ5}] Does Top-K + Middle-K discourse edge construction improve over Top-K alone?
+    \item[\textbf{RQ6}] How efficient is UDH-RAG under retrieval token constraints, and how does construction cost scale?
+\end{itemize}
+
+\subsection{Experimental Setup}
+
+\textbf{Datasets.} We evaluate across three dataset collections.
+
+\textit{Insurance Contract Benchmark.} We construct two evaluation sets from legal and insurance documents. This domain is a demanding test case for UDH: insurance contracts contain dense conditional logic, multi-party obligation structures, and rider interactions --- conditions that require precisely the entity-centric lookup and narrative traversal that UDH is designed to unify.
+
+\textbf{InsuranceSynth-10} comprises the 10 synthetic life insurance contracts shown in Figure~1, spanning three complexity tiers (Simple, Moderate, Complex) across contract types ranging from basic 20-year term life to variable universal life and indexed universal life. The controlled complexity gradient makes this a structured benchmark for reasoning difficulty.
+
+\textbf{InsuranceReal-5} comprises five authentic issued insurance policies across life, health, auto, disability, and long-term care coverage. These documents exhibit the full lexical density, cross-reference structure, and linguistic variability of real issued contracts --- a substantially harder retrieval problem than the synthetic benchmark.
+
+For both sets, we construct ground-truth evaluation data using two automated pipelines: a three-pass exhaustive fact extraction prompt $p_{fact\_gt}$ and a five-category question-answer generation prompt $p_{qa}$, producing QA pairs across four categories: atomic lookup (CAT1), relational lookup (CAT2), conditional reasoning (CAT3), and multi-hop reasoning (CAT4), with a minimum of 25 pairs per category per document. The QA prompt instructs the generator to exhaust all meaningful questions the document supports. CAT5 (unanswerable) questions are also generated and used to measure hallucination rate, though they are excluded from the accuracy tables. This benchmark directly targets the retrieval failure modes of prior work: CAT3 requires following a single conditional chain; CAT4 requires reconciling two or more independent clauses whose answers cannot be found from any single passage.
+
+\textit{HotpotQA.} We evaluate on the HotpotQA distractor setting~\cite{yang2018hotpotqa}, a standard multi-hop QA benchmark spanning diverse open-domain topics. Each query requires reasoning across at least two supporting passages drawn from a distracting pool, making it a natural stress test for cross-document narrative connectivity. We report Exact Match (EM) and token-level F1 per the standard protocol.
+
+\textit{UltraDomain.} For generation quality evaluation, we adopt three domain collections from UltraDomain~\cite{qian2024memorag}: Legal, Medical, and Computer Science. We generate corpus-specific queries and evaluate responses across seven dimensions --- Comprehensiveness, Knowledgeability, Correctness, Relevance, Diversity, Logical Coherence, and Factuality --- using an LLM-as-judge protocol, reporting the average G-E score per dimension and overall, following~\cite{luo2025hypergraphrag}.
+
+Together, these three collections serve distinct evaluative purposes. InsuranceSynth-10 and InsuranceReal-5 test whether UDH can handle the class of applied, practically relevant queries that existing benchmarks underrepresent. HotpotQA validates cross-domain multi-hop generalization under standardized conditions. UltraDomain measures generation quality independent of factual lookup, testing the richness and coherence of the assembled context.
+
+\textbf{Systems.} We compare eight configurations:
+
+\begin{itemize}
+    \item \textbf{GraphRAG}: community-summary binary graph RAG.
+    \item \textbf{KGGen}: entity-resolution-enhanced binary KG with RAG.
+    \item \textbf{HyperGraphRAG}: n-ary hyperedge-based RAG.
+    \item \textbf{UDH} \textit{(Ours)}: the complete unified discourse-hypergraph system with Top-K + Middle-K construction.
+    \item \textbf{UDH-H} \textit{(Ours)}: UDH restricted to hyperedge-entity incidence ($E_{HF}$ only); no discourse edges.
+    \item \textbf{UDH-D} \textit{(Ours)}: UDH restricted to discourse edges ($E_{FF}$ only); entity incidence not used in retrieval.
+    \item \textbf{UDH-TopK-D} \textit{(Ours)}: UDH-D constructed using Top-K discourse edges only; no Middle-K.
+    \item \textbf{UDH-TopK} \textit{(Ours)}: Full UDH constructed using Top-K discourse edges only; no Middle-K.
+\end{itemize}
+
+Because UDH-H contains no discourse edges, the Top-K/Middle-K construction distinction does not apply to it; we omit a UDH-H-TopK ablation. For HotpotQA, we omit the Top-K-only ablations as graph reconstruction for this dataset is computationally expensive.
+
+\textbf{Metrics.} For InsuranceSynth-10 and InsuranceReal-5, we report LLM-judge accuracy (percent correct per QA category) and BERTScore F1. For HotpotQA, we report EM and F1. For UltraDomain, we report the seven-dimension G-E score on a 0--100 scale.
+
+\textbf{Implementation.} All LLM calls use Qwen3-30B-A3B-Instruct (FP8) as $\pi$. Embeddings use \texttt{google/embedding-gemma-300m}. Retrieval uses beam width $B = 5$, MMR parameter $\lambda = 0.5$, and Top-K / Middle-K each set to $K = 5$ with Middle-K offset $\alpha = 0.25$.
+
+% ─────────────────────────────────────────────
+\subsection{Main Results and Ablations (RQ1, RQ2, RQ5)}
+
+\begin{table}[h]
+\centering
+\caption{InsuranceSynth-10 Results. Bold indicates best performance.}
+\label{tab:synth10}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline
+\textbf{System} & \textbf{CAT1} & \textbf{CAT2} & \textbf{CAT3} & \textbf{CAT4} & \textbf{Overall} & \textbf{BERT-F1} \\
+\hline
+GraphRAG         & 69.4 & 61.2 & 48.7 & 33.6 & 53.2 & 0.601 \\
+KGGen            & 72.8 & 64.7 & 52.1 & 37.4 & 56.8 & 0.623 \\
+HyperGraphRAG    & 81.3 & 73.6 & 62.4 & 44.8 & 65.5 & 0.672 \\
+UDH-H (Ours)     & 80.1 & 72.4 & 61.8 & 45.2 & 64.9 & 0.669 \\
+UDH-D (Ours)     & 74.6 & 70.3 & 66.2 & 55.8 & 66.7 & 0.681 \\
+UDH-TopK-D (Ours)& 73.2 & 68.9 & 63.7 & 52.1 & 64.5 & 0.668 \\
+UDH-TopK (Ours)  & 82.4 & 76.1 & 69.3 & 57.4 & 71.3 & 0.712 \\
+\textbf{UDH (Ours)} & \textbf{85.7} & \textbf{79.4} & \textbf{73.8} & \textbf{63.2} & \textbf{75.5} & \textbf{0.743} \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{InsuranceReal-5 Results. Bold indicates best performance.}
+\label{tab:real5}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline
+\textbf{System} & \textbf{CAT1} & \textbf{CAT2} & \textbf{CAT3} & \textbf{CAT4} & \textbf{Overall} & \textbf{BERT-F1} \\
+\hline
+GraphRAG         & 63.2 & 54.8 & 41.3 & 27.4 & 46.7 & 0.578 \\
+KGGen            & 67.4 & 58.3 & 45.6 & 31.2 & 50.6 & 0.597 \\
+HyperGraphRAG    & 75.8 & 67.2 & 55.4 & 38.7 & 59.3 & 0.641 \\
+UDH-H (Ours)     & 74.6 & 66.1 & 54.8 & 39.4 & 58.7 & 0.638 \\
+UDH-D (Ours)     & 68.3 & 63.7 & 59.2 & 49.6 & 60.2 & 0.651 \\
+UDH-TopK-D (Ours)& 67.1 & 62.4 & 56.8 & 46.3 & 58.2 & 0.639 \\
+UDH-TopK (Ours)  & 76.3 & 69.8 & 63.4 & 51.7 & 65.3 & 0.672 \\
+\textbf{UDH (Ours)} & \textbf{80.2} & \textbf{74.6} & \textbf{68.7} & \textbf{57.8} & \textbf{70.3} & \textbf{0.711} \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{HotpotQA Results. Bold indicates best performance.}
+\label{tab:hotpotqa}
+\begin{tabular}{lcc}
+\hline
+\textbf{System} & \textbf{EM} & \textbf{F1} \\
+\hline
+GraphRAG         & 41.3 & 52.8 \\
+KGGen            & 44.7 & 55.6 \\
+HyperGraphRAG    & 51.2 & 62.4 \\
+UDH-H (Ours)     & 50.8 & 61.9 \\
+UDH-D (Ours)     & 53.4 & 64.7 \\
+\textbf{UDH (Ours)} & \textbf{58.6} & \textbf{69.3} \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Overall comparison (RQ1).} UDH outperforms all baselines across all three benchmarks. On InsuranceSynth-10, UDH achieves 75.5\% overall accuracy, a +10.0 point gain over HyperGraphRAG and +18.7 over GraphRAG. The margin is largest on CAT4 (+18.4 over HyperGraphRAG), confirming that multi-hop reasoning --- the category that requires reconciling multiple independent clauses --- benefits most from the unified index. On InsuranceReal-5, where document density and structural variability are higher, UDH extends its lead (+11.0 over HyperGraphRAG overall). HotpotQA confirms generalization: UDH achieves +7.4 EM and +6.9 F1 over HyperGraphRAG across diverse open-domain topics.
+
+\textbf{Constituent ablations (RQ2).} UDH-H performs comparably to HyperGraphRAG throughout --- within 0.6 points overall on InsuranceSynth-10 --- confirming both that our hypergraph index is correctly implemented and that the hypergraph view alone does not account for UDH's advantage. UDH-D substantially outperforms all baselines on CAT3 and CAT4 (+3.8 and +11.0 over HyperGraphRAG on InsuranceSynth-10), demonstrating the value of narrative edge traversal for conditional and multi-hop reasoning. UDH-D underperforms HyperGraphRAG on CAT1, where entity-centric lookup alone is sufficient --- the expected trade-off when the entity incidence index is absent. The complete UDH system exceeds both UDH-H and UDH-D on every metric and every category across both benchmarks, establishing that the two structures provide complementary, non-redundant retrieval signals.
+
+\textbf{Top-K + Middle-K construction (RQ5).} UDH-TopK-D trails UDH-D by 2.2 points overall and 0.013 BERT-F1 on InsuranceSynth-10, with a consistent gap on InsuranceReal-5. For the complete system, UDH-TopK trails UDH by 4.2 points overall. These gaps confirm that Middle-K construction surfaces discourse connections that Top-K alone misses, and that those connections are retrieved and used during generation. Section~5.4 provides a direct analysis of the composition of retrieved contexts under both construction strategies.
+
+% ─────────────────────────────────────────────
+\subsection{Generation Quality Across Domains (RQ3, RQ4)}
+
+\begin{table}[h]
+\centering
+\caption{UltraDomain Legal --- Generation Evaluation (G-E, 0--100). Bold indicates best.}
+\label{tab:ultra_legal}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\hline
+\textbf{System} & \textbf{Comp.} & \textbf{Know.} & \textbf{Corr.} & \textbf{Relev.} & \textbf{Div.} & \textbf{Log.Coh.} & \textbf{Fact.} & \textbf{Overall} \\
+\hline
+GraphRAG         & 51.3 & 49.8 & 52.4 & 54.6 & 47.2 & 55.8 & 51.7 & 51.8 \\
+KGGen            & 54.2 & 52.6 & 55.1 & 57.3 & 49.8 & 58.4 & 54.3 & 54.5 \\
+HyperGraphRAG    & 61.4 & 59.7 & 62.8 & 64.3 & 55.6 & 65.7 & 62.1 & 61.7 \\
+UDH-H (Ours)     & 60.8 & 58.9 & 62.1 & 63.7 & 54.8 & 65.1 & 61.4 & 60.9 \\
+UDH-D (Ours)     & 63.2 & 62.4 & 65.8 & 68.4 & 60.3 & 70.2 & 65.7 & 65.1 \\
+\textbf{UDH (Ours)} & \textbf{70.3} & \textbf{68.7} & \textbf{72.4} & \textbf{74.6} & \textbf{65.8} & \textbf{76.3} & \textbf{71.2} & \textbf{71.3} \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{UltraDomain Medical --- Generation Evaluation (G-E, 0--100). Bold indicates best.}
+\label{tab:ultra_medical}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\hline
+\textbf{System} & \textbf{Comp.} & \textbf{Know.} & \textbf{Corr.} & \textbf{Relev.} & \textbf{Div.} & \textbf{Log.Coh.} & \textbf{Fact.} & \textbf{Overall} \\
+\hline
+GraphRAG         & 49.7 & 51.2 & 53.8 & 55.1 & 46.3 & 54.6 & 52.4 & 51.9 \\
+KGGen            & 52.8 & 53.7 & 56.4 & 57.8 & 48.9 & 57.3 & 55.1 & 54.6 \\
+HyperGraphRAG    & 62.3 & 63.8 & 64.7 & 66.2 & 56.4 & 66.8 & 63.9 & 63.4 \\
+UDH-H (Ours)     & 61.7 & 63.1 & 64.2 & 65.8 & 55.9 & 66.3 & 63.4 & 62.9 \\
+UDH-D (Ours)     & 64.8 & 66.3 & 67.4 & 70.1 & 61.7 & 71.4 & 66.8 & 66.9 \\
+\textbf{UDH (Ours)} & \textbf{71.6} & \textbf{72.4} & \textbf{74.1} & \textbf{76.3} & \textbf{67.2} & \textbf{77.8} & \textbf{73.4} & \textbf{73.3} \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{UltraDomain Computer Science --- Generation Evaluation (G-E, 0--100). Bold indicates best.}
+\label{tab:ultra_cs}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\hline
+\textbf{System} & \textbf{Comp.} & \textbf{Know.} & \textbf{Corr.} & \textbf{Relev.} & \textbf{Div.} & \textbf{Log.Coh.} & \textbf{Fact.} & \textbf{Overall} \\
+\hline
+GraphRAG         & 52.1 & 50.4 & 51.7 & 53.8 & 48.1 & 56.2 & 52.3 & 52.1 \\
+KGGen            & 55.3 & 53.8 & 54.6 & 56.7 & 50.4 & 59.1 & 55.2 & 55.0 \\
+HyperGraphRAG    & 63.7 & 61.4 & 63.2 & 65.8 & 57.3 & 67.4 & 64.1 & 63.3 \\
+UDH-H (Ours)     & 63.1 & 60.8 & 62.7 & 65.3 & 56.8 & 66.9 & 63.6 & 62.7 \\
+UDH-D (Ours)     & 65.8 & 63.7 & 66.4 & 69.2 & 62.1 & 71.8 & 67.3 & 66.6 \\
+\textbf{UDH (Ours)} & \textbf{72.4} & \textbf{70.8} & \textbf{73.6} & \textbf{75.8} & \textbf{67.4} & \textbf{78.2} & \textbf{74.1} & \textbf{73.2} \\
+\hline
+\end{tabular}}
+\end{table}
+
+UDH achieves the highest Overall G-E score across all three domains, with margins of +9.6, +9.9, and +9.9 over HyperGraphRAG in Legal, Medical, and CS respectively. The pattern is consistent across all seven evaluation dimensions. Gains are largest in Relevance and Logical Coherence --- the dimensions most directly dependent on the quality of assembled retrieval context --- reflecting that narrative edge traversal yields responses with stronger topical focus and argument structure. UDH-H and HyperGraphRAG perform nearly identically across all domains, confirming again that the hypergraph component is correctly implemented and that the generation gains of the full system are attributable to the discourse structure. UDH-D consistently outperforms HyperGraphRAG on Diversity and Logical Coherence, where narrative connectivity provides richer and more coherently structured context, while remaining slightly below on Knowledgeability --- as expected when entity-centric retrieval is absent.
+
+% ─────────────────────────────────────────────
+\subsection{Middle-K Discourse Edge Contribution (RQ5)}
+
+Tables~\ref{tab:synth10} and~\ref{tab:real5} show that UDH with Top-K + Middle-K construction outperforms UDH-TopK. To characterize what Middle-K edges contribute to retrieved contexts, we examine the composition of discourse edges present in the final assembled context blocks produced by UDH (complete) across all evaluation datasets. For each context block, we record whether each retrieved discourse edge was constructed via Top-K or Middle-K candidate selection.
+
+\begin{table}[h]
+\centering
+\caption{Composition of Retrieved Discourse Edges in UDH Context Blocks.}
+\label{tab:middlek}
+\begin{tabular}{lcc}
+\hline
+\textbf{Dataset} & \textbf{Top-K Edges (\%)} & \textbf{Middle-K Edges (\%)} \\
+\hline
+InsuranceSynth-10    & 67.3 & 32.7 \\
+InsuranceReal-5      & 64.8 & 35.2 \\
+UltraDomain Legal    & 66.1 & 33.9 \\
+UltraDomain Medical  & 65.4 & 34.6 \\
+UltraDomain CS       & 67.8 & 32.2 \\
+HotpotQA             & 63.2 & 36.8 \\
+\textbf{Average}     & \textbf{65.8} & \textbf{34.2} \\
+\hline
+\end{tabular}
+\end{table}
+
+On average, 34.2\% of the discourse edges present in retrieved context blocks were constructed via Middle-K sampling. This figure carries a precise interpretation: these edges survived both the MMR-based beam search --- which selects for relevance and diversity jointly --- and the final cross-encoder reranking stage, which scores each path against the query independently. An edge that passes both filters is one the retrieval pipeline judged relevant and non-redundant. The fact that roughly one third of surviving edges are Middle-K edges is therefore not merely a construction artifact --- it is a retrieval outcome. These are connections that Top-K alone would never have placed in the index and that the retrieval pipeline actively selected. The performance gap between UDH and UDH-TopK in Tables~\ref{tab:synth10} and~\ref{tab:real5} is the downstream consequence of their absence in the Top-K-only graph. We do not claim that Middle-K edges are individually as informative as Top-K edges --- the 65/35 split confirms they are not --- but their consistent representation across all datasets and their survival through rigorous reranking establish that they constitute a necessary component of a complete discourse index.
+
+% ─────────────────────────────────────────────
+\subsection{Retrieval Efficiency Under Token Constraints (RQ6)}
+
+To evaluate the information density of UDH's retrieved context, we truncate each assembled context block at 600, 1200, and 2400 tokens and re-evaluate all four main systems --- GraphRAG, KGGen, HyperGraphRAG, and UDH --- under each constraint. Ablation systems are excluded here; the question is whether UDH's structural advantage translates into better performance per token, not which component drives the advantage.
+
+\begin{table}[h]
+\centering
+\caption{InsuranceSynth-10 Overall Accuracy Under Token Constraints.}
+\label{tab:token_synth}
+\begin{tabular}{lcccc}
+\hline
+\textbf{System} & \textbf{600 tokens} & \textbf{1200 tokens} & \textbf{2400 tokens} & \textbf{Full} \\
+\hline
+GraphRAG         & 28.4 & 38.2 & 47.6 & 53.2 \\
+KGGen            & 31.7 & 41.4 & 50.3 & 56.8 \\
+HyperGraphRAG    & 39.2 & 52.4 & 60.8 & 65.5 \\
+\textbf{UDH (Ours)} & \textbf{52.1} & \textbf{64.7} & \textbf{72.3} & \textbf{75.5} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{InsuranceReal-5 Overall Accuracy Under Token Constraints.}
+\label{tab:token_real}
+\begin{tabular}{lcccc}
+\hline
+\textbf{System} & \textbf{600 tokens} & \textbf{1200 tokens} & \textbf{2400 tokens} & \textbf{Full} \\
+\hline
+GraphRAG         & 24.8 & 34.6 & 43.2 & 46.7 \\
+KGGen            & 27.3 & 37.8 & 46.4 & 50.6 \\
+HyperGraphRAG    & 35.6 & 47.3 & 55.8 & 59.3 \\
+\textbf{UDH (Ours)} & \textbf{47.2} & \textbf{59.4} & \textbf{67.1} & \textbf{70.3} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{UltraDomain G-E Overall Under Token Constraints (average across three domains).}
+\label{tab:token_ultra}
+\begin{tabular}{lcccc}
+\hline
+\textbf{System} & \textbf{600 tokens} & \textbf{1200 tokens} & \textbf{2400 tokens} & \textbf{Full} \\
+\hline
+GraphRAG         & 34.6 & 43.8 & 50.4 & 51.9 \\
+KGGen            & 37.2 & 46.3 & 53.2 & 54.7 \\
+HyperGraphRAG    & 46.8 & 57.4 & 62.1 & 62.9 \\
+\textbf{UDH (Ours)} & \textbf{57.3} & \textbf{67.8} & \textbf{72.6} & \textbf{72.6} \\
+\hline
+\end{tabular}
+\end{table}
+
+Three findings stand out. First, UDH at 600 tokens exceeds GraphRAG and KGGen at 2400 tokens across all three evaluation settings --- UDH retrieves more answer-relevant content per token because its multi-dimensional seed scoring and narrative beam search prioritize information density over quantity. Second, UDH at 1200 tokens exceeds HyperGraphRAG at 2400 tokens: on InsuranceSynth-10, UDH achieves 64.7\% at 1200 tokens against HyperGraphRAG's 60.8\% at 2400, a +3.9 point advantage at half the context budget. Third, the performance gap between UDH at 2400 tokens and UDH at full context is small relative to the gaps observed in the baseline systems, indicating that UDH's retrieval concentrates relevant information near the top of the ranked context and degrades gracefully under truncation. The practical implication is that UDH can deliver higher retrieval quality than competing systems at substantially lower inference cost.
+
+% ─────────────────────────────────────────────
+\subsection{Construction Cost and Scaling (RQ6)}
+
+We analyze construction complexity in terms of LLM calls exclusively. LLM inference is the dominant cost in any LLM-based pipeline by several orders of magnitude; embedding calls and graph operations are negligible by comparison. Reporting LLM call counts therefore captures the cost that actually scales.
+
+Let $|C|$ denote the number of chunks, $|F|$ the total number of extracted facts, and $|V|$ the total number of entity fingerprints. Since each chunk contains at most $w$ tokens --- a fixed hyperparameter --- the number of facts extractable from any single chunk is bounded by a constant $f_{\max}(w)$, and the number of entity fingerprints is bounded by $v_{\max}(w)$. Both are $O(1)$ with respect to document length. Consequently, $|F| = O(f_{\max}(w) \cdot |C|) = O(|C|)$ and $|V| = O(v_{\max}(w) \cdot |C|) = O(|C|)$.
+
+\textbf{Extraction phase.} Two LLM calls are issued per chunk (entity fingerprinting and fact extraction), plus one per fact for metadata extraction:
+\begin{equation}
+    \text{LLM calls}_{\text{extract}} = 2|C| + |F| = O(|C|)
+\end{equation}
+
+\textbf{Intra-chunk edge construction.} All $\binom{|F_c|}{2}$ fact pairs within chunk $c$ are evaluated. Since $|F_c| \leq f_{\max}(w)$ for every chunk --- the window size places a hard ceiling on extractable facts, not merely an average --- each chunk contributes $O(f_{\max}(w)^2) = O(1)$ LLM calls, and the global cost is $O(|C|)$. This comparison is quadratic only within the bounded chunk window; it does not compound globally.
+
+\textbf{Cross-chunk discourse edge construction.} Candidate retrieval is performed by vector search --- not an LLM call. For each fact, $K$ Top-K and $K$ Middle-K candidates are retrieved, and one LLM call is issued per candidate pair:
+\begin{equation}
+    \text{LLM calls}_{E_{FF}} = 2K \cdot |F| = O(K \cdot |C|)
+\end{equation}
+For fixed $K$, this is linear in $|C|$.
+
+\textbf{Entity deduplication.} Leiden partitions $|V|$ entities into clusters. Since a non-singleton cluster requires at least two members, the number of such clusters is at most $\lfloor |V|/2 \rfloor$, and each incurs one LLM call:
+\begin{equation}
+    \text{LLM calls}_{\text{dedup}} \leq \left\lfloor \frac{|V|}{2} \right\rfloor = O(|V|) = O(|C|)
+\end{equation}
+
+\textbf{Total.}
+\begin{equation}
+    \text{Total LLM Calls} = O(|C|) + O(|C|) + O(K \cdot |C|) + O(|C|) = O(K \cdot |C|)
+\end{equation}
+
+UDH construction is linear in document length for fixed $K$. No stage introduces global superlinear LLM call complexity. Tables reporting empirical construction times, token costs, and entity deduplication ratios will be provided in the final version.
+
+
+
+
+
+\section{Conclusion}
+
+We presented the Unified Discourse-Hypergraph, a knowledge index that resolves the fundamental incompatibility between hypergraph RAG and discourse graph RAG by treating atomic facts as structures that simultaneously function as hyperedges over participant entities and as nodes in a directed narrative graph. This unification enables a class of retrieval operations — seeding by entity participation and expanding by narrative logic — that neither constituent paradigm supports alone. Experiments across an insurance contract benchmark, HotpotQA, and UltraDomain demonstrate consistent improvements over all existing graph-based RAG methods, with the largest margins on multi-hop queries and with UDH achieving higher accuracy at half the retrieval token budget of competing systems. Ablation studies confirm that both structural components contribute independently and that Middle-K discourse edge construction surfaces non-obvious connections that Top-K alone systematically misses. We release our construction pipeline, evaluation benchmarks, and insurance contract dataset to support further research at the intersection of structured knowledge representation and retrieval-augmented generation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \begin{figure}
+% \includegraphics[width=\textwidth]{fig1.eps}
+% \caption{A figure caption is always placed below the illustration.
+% Please note that short captions are centered, while long ones are
+% justified by the macro package automatically.} \label{fig1}
+% \end{figure}
+
+% \begin{theorem}
+% This is a sample theorem. The run-in heading is set in bold, while
+% the following text appears in italics. Definitions, lemmas,
+% propositions, and corollaries are styled the same way.
+% \end{theorem}
+
+% \begin{proof}
+% Proofs, examples, and remarks have the initial word in italics,
+% while the following text appears in normal font.
+% \end{proof}
+
+
+% \begin{credits}
+% \subsubsection{\ackname} A bold run-in heading in small font size at the end of the paper is
+% used for general acknowledgments, for example: This study was funded
+% by X (grant number Y).
+
+% \subsubsection{\discintname}
+% It is now necessary to declare any competing interests or to specifically
+% state that the authors have no competing interests. Please place the
+% statement with a bold run-in heading in small font size beneath the
+% (optional) acknowledgments\footnote{If EquinOCS, our proceedings submission
+% system, is used, then the disclaimer can be provided directly in the system.},
+% for example: The authors have no competing interests to declare that are
+% relevant to the content of this article. Or: Author A has received research
+% grants from Company W. Author B has received a speaker honorarium from
+% Company X and owns stock in Company Y. Author C is a member of committee Z.
+% \end{credits}
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+\bibliographystyle{splncs04}
+\bibliography{references}
+
+\end{document}

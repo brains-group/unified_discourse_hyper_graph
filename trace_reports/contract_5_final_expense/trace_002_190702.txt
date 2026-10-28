@@ -1,0 +1,1408 @@
+====================================================================================================
+QUESTION: What is the monthly premium?
+CATEGORY: CAT1_ATOMIC_LOOKUP
+EXPECTED ANSWER: $87.50, guaranteed level for life
+EVIDENCE: Monthly Premium: $87.50 (guaranteed level for life)
+====================================================================================================
+
+--- GOAL PLAN ---
+rewritten_query: The monthly premium for [specific insurance policy or product]?
+reasoning: The query "What is the monthly premium?" is a simple, single-fact question asking for a specific numerical value (the monthly premium). However, it lacks context—there is no mention of an insurance policy, a product, a company, or any specific coverage. Without additional context, the term "monthly premium" is ambiguous and cannot be answered definitively. Since the query does not reference any specific entity or policy, it cannot be resolved with a single lookup or a chain of lookups. Therefore, the query is incomplete and cannot be meaningfully processed as-is.
+
+However, since the task is to plan a search strategy, we must assume the user intends to ask about a specific insurance product or policy, even if not explicitly stated. But because no proper nouns or context are provided, we cannot construct a valid sub-goal with key terms. Thus, the query cannot be rewritten into a standalone, answerable form without further clarification.
+
+Given the constraints, the only possible response is to recognize that the query is incomplete and cannot be resolved as-is.
+  [0] Identify the specific insurance policy or product for which the monthly premium is being requested  (key_terms=[], depends_on_previous=False)
+planner LLM calls: 1  (total_tokens=0)
+
+--- EVIDENCE CROSS-REFERENCE ---
+
+  candidate evidence fact (word-overlap=0.50): 'The monthly premium is guaranteed to remain level for life.'
+    seeding      : candidate, selected=True (rank 3), scores=[0.6435035467147827]
+    traversal    : depth=0 from='The monthly premium for the policy is $87.50.' chosen=True scores=[0.6408382058143616]
+    traversal    : depth=0 from='The monthly premium will never increase.' chosen=True scores=[0.6407711505889893]
+    traversal    : depth=1 from='The monthly premium for the policy is $87.50.' chosen=True scores=[0.6408382058143616]
+    traversal    : depth=1 from='The monthly premium will never increase.' chosen=True scores=[0.6407711505889893]
+    traversal    : depth=1 from='The premium for this policy will never increase as long as it is paid.' chosen=True scores=[0.6297552585601807]
+    traversal    : depth=2 from='The premium for this policy will never increase as long as it is paid.' chosen=True scores=[0.6297552585601807]
+    traversal    : depth=2 from='The monthly premium will never increase.' chosen=True scores=[0.6407711505889893]
+    traversal    : depth=2 from='The premium for this policy will never increase as long as it is paid.' chosen=True scores=[0.6297552585601807]
+    traversal    : depth=2 from='The premium for this policy will never increase as long as it is paid.' chosen=True scores=[0.6297552585601807]
+    final_ranking: selected=False, cross_encoder_score=1.760
+
+  candidate evidence fact (word-overlap=0.45): 'The monthly premium for the policy is $87.50.'
+    seeding      : candidate, selected=True (rank 0), scores=[0.7202310562133789]
+    traversal    : depth=0 from='The monthly premium is $87.50.' chosen=True scores=[0.6771094799041748]
+    traversal    : depth=0 from='The monthly premium is guaranteed to remain level for life.' chosen=True scores=[0.6653334498405457]
+    traversal    : depth=1 from='The monthly premium is $87.50.' chosen=True scores=[0.6771094799041748]
+    traversal    : depth=1 from='The monthly premium is guaranteed to remain level for life.' chosen=True scores=[0.6653334498405457]
+    traversal    : depth=1 from='The monthly premium is $87.50.' chosen=True scores=[0.6771094799041748]
+    traversal    : depth=2 from='$87.50 (Monthly premium)' chosen=True scores=[0.7006872892379761]
+    traversal    : depth=2 from='$87.50 (Monthly premium)' chosen=True scores=[0.7006872892379761]
+    traversal    : depth=2 from='The monthly premium is $87.50.' chosen=True scores=[0.6771094799041748]
+    traversal    : depth=2 from='The monthly premium is $87.50.' chosen=True scores=[0.6771094799041748]
+    traversal    : depth=3 from='$87.50 (Monthly premium)' chosen=True scores=[0.7006872892379761]
+    traversal    : depth=3 from='$87.50 (Monthly premium)' chosen=True scores=[0.7006872892379761]
+    final_ranking: selected=False, cross_encoder_score=0.312
+
+  candidate evidence fact (word-overlap=0.40): 'The monthly premium is $87.50.'
+    seeding      : candidate, selected=True (rank 1), scores=[0.6655364632606506]
+    traversal    : depth=0 from='The monthly premium for the policy is $87.50.' chosen=True scores=[0.6408883333206177]
+    traversal    : depth=0 from='The monthly premium will never increase.' chosen=True scores=[0.6409381628036499]
+    traversal    : depth=0 from="Premiums are automatically deducted from the policyholder's bank account on the 1st of each month." chosen=True scores=[0.6189864873886108]
+    traversal    : depth=1 from='The monthly premium for the policy is $87.50.' chosen=True scores=[0.6408883333206177]
+    traversal    : depth=1 from='The monthly premium will never increase.' chosen=True scores=[0.6409381628036499]
+    traversal    : depth=1 from="Premiums are automatically deducted from the policyholder's bank account on the 1st of each month." chosen=True scores=[0.6189864873886108]
+    traversal    : depth=1 from='The policyholder can change to annual payments if they prefer.' chosen=True scores=[0.6299433708190918]
+    traversal    : depth=1 from='monthly premium (Fixed $87.50 payment frequency)' chosen=True scores=[0.5555049180984497]
+    traversal    : depth=1 from='premiums (Monthly payments for policy coverage)' chosen=True scores=[0.5760272741317749]
+    traversal    : depth=1 from='The policyholder can change to annual payments if they prefer.' chosen=True scores=[0.6299433708190918]
+    traversal    : depth=2 from='monthly premium (Fixed $87.50 payment frequency)' chosen=True scores=[0.5555049180984497]
+    traversal    : depth=2 from='premiums (Monthly payments for policy coverage)' chosen=True scores=[0.5760272741317749]
+    traversal    : depth=2 from='premiums (Monthly payments for policy coverage)' chosen=True scores=[0.5760272741317749]
+    traversal    : depth=2 from="Premiums are automatically deducted from the policyholder's bank account on the 1st of each month." chosen=True scores=[0.6189864873886108]
+    traversal    : depth=2 from="Premiums are automatically deducted from the policyholder's bank account on the 1st of each month." chosen=True scores=[0.6189864873886108]
+    traversal    : depth=2 from='The policyholder can change to annual payments if they prefer.' chosen=True scores=[0.6299433708190918]
+    traversal    : depth=2 from='The policyholder can change to quarterly payments if they prefer.' chosen=True scores=[0.5928096175193787]
+    traversal    : depth=2 from='premiums (Monthly payments for policy coverage)' chosen=True scores=[0.5760272741317749]
+    traversal    : depth=2 from='premiums (Monthly payments for policy coverage)' chosen=True scores=[0.5760272741317749]
+    traversal    : depth=2 from='premiums (Monthly payments for policy coverage)' chosen=True scores=[0.5760272741317749]
+    traversal    : depth=3 from='premiums (Monthly payments for policy coverage)' chosen=True scores=[0.5760272741317749]
+    traversal    : depth=3 from='premiums (Monthly payments for policy coverage)' chosen=True scores=[0.5760272741317749]
+    final_ranking: selected=False, cross_encoder_score=1.252
+
+--- SEEDING (top candidates by score) ---
+  [SELECTED(rank 0)] scores=['0.720']  'The monthly premium for the policy is $87.50.'
+  [SELECTED(rank 1)] scores=['0.666']  'The monthly premium is $87.50.'
+  [SELECTED(rank 2)] scores=['0.651']  'The policy is titled Final Expense Life Insurance.'
+  [SELECTED(rank 3)] scores=['0.644']  'The monthly premium is guaranteed to remain level for life.'
+  [SELECTED(rank 4)] scores=['0.631']  'The premium is paid on the 1st of each month.'
+  [SELECTED(rank 5)] scores=['0.631']  'The monthly premium will never increase.'
+  [SELECTED(rank 6)] scores=['0.626']  'The policy type is Guaranteed Issue Whole Life.'
+  [SELECTED(rank 7)] scores=['0.619']  'The policy is offered under the brand ComfortCare Senior Insurance.'
+  [SELECTED(rank 8)] scores=['0.615']  "Premiums are automatically deducted from the policyholder's bank account on the 1st of eac"
+  [SELECTED(rank 9)] scores=['0.613']  'This policy is a simplified issue whole life insurance policy.'
+  [               -] scores=['0.611']  'premiums (Monthly payments for policy coverage)'
+  [               -] scores=['0.606']  'The premium for this policy will never increase as long as it is paid.'
+  [               -] scores=['0.574']  'The premium payer is Dorothy Mae Johnson.'
+  [               -] scores=['0.571']  'comfortcare senior insurance (Insurance provider)'
+  [               -] scores=['0.566']  'The policy number is CC-FE-2024-9903.'
+  [               -] scores=['0.561']  'The payment method for the premium is bank draft.'
+  [               -] scores=['0.550']  'monthly premium (Fixed $87.50 payment frequency)'
+  [               -] scores=['0.545']  'The policyholder can change to annual payments if they prefer.'
+  [               -] scores=['0.541']  'No further premiums are needed if the policy continues automatically after 2 years of stop'
+  [               -] scores=['0.535']  'If a premium payment fails, the insurer will attempt to collect the payment again on the 1'
+  [               -] scores=['0.530']  '$87.50 (Monthly premium)'
+  [               -] scores=['0.530']  'The policy is designed to help cover funeral and final expenses.'
+  [               -] scores=['0.527']  'The coverage amount of this policy will never decrease.'
+  [               -] scores=['0.526']  'The beneficiary should send this policy to file a claim if it is available.'
+  [               -] scores=['0.526']  'The policyholder can change to quarterly payments if they prefer.'
+
+--- TRAVERSAL (153 hop decisions, 9 dead ends) ---
+
+  depth=0 goal_indices=[0] from: 'The monthly premium for the policy is $87.50.'
+    [KEEP] (fact_fact, 'GUARANTEED_TO_STAY') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.641']
+    [KEEP] (fact_entity, 'has ') -> '$87.50 (Monthly premium)'  scores=['0.263']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium is $87.50.'  scores=['0.641']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'The insured person is female.'  scores=['0.578']
+
+  depth=0 goal_indices=[0] from: 'The monthly premium is $87.50.'
+    [KEEP] (fact_fact, 'IS_FIXED') -> 'The monthly premium will never increase.'  scores=['0.635']
+    [KEEP] (fact_fact, 'TRIGGERS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.603']
+    [drop] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.581']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium for the policy is $87.50.'  scores=['0.677']
+    [KEEP] (fact_fact, 'ALLOWS') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.536']
+
+  depth=0 goal_indices=[0] from: 'The policy is titled Final Expense Life Insurance.'
+    [KEEP] (fact_fact, 'CLASSIFIED_AS') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.639']
+    [KEEP] (fact_fact, 'BEGINS_ON') -> 'The policy became effective on May 1, 2024.'  scores=['0.445']
+    [KEEP] (fact_fact, 'HAS_NUMBER') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.572']
+    [KEEP] (fact_fact, 'IS_OFFERED_BY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_fact, 'DEFINES') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.554']
+
+  depth=0 goal_indices=[0] from: 'The monthly premium is guaranteed to remain level for life.'
+    [KEEP] (fact_fact, 'REMAINS_CONSTANT') -> 'The monthly premium for the policy is $87.50.'  scores=['0.665']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.621']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The monthly premium will never increase.'  scores=['0.614']
+
+  depth=0 goal_indices=[0] from: 'The premium is paid on the 1st of each month.'
+    [KEEP] (fact_fact, 'IS_PAID_ON') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.589']
+    [KEEP] (fact_fact, 'IS_PAID_BY') -> 'The payment method for the premium is bank draft.'  scores=['0.563']
+    [KEEP] (fact_entity, 'has ') -> 'may 1, 2024 (Effective date)'  scores=['0.125']
+    [KEEP] (fact_fact, 'SUPPORTS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.593']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'The insured person is 72 years old.'  scores=['0.513']
+    [KEEP] (fact_fact, 'MAINTAINS') -> 'The benefit amount of the policy is $10,000.'  scores=['0.558']
+
+  depth=0 goal_indices=[0] from: 'The monthly premium will never increase.'
+    [KEEP] (fact_fact, 'IS_FIXED_BY') -> 'The monthly premium is $87.50.'  scores=['0.641']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.585']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.582']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.641']
+
+  depth=0 goal_indices=[0] from: 'The policy type is Guaranteed Issue Whole Life.'
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.634']
+    [KEEP] (fact_fact, 'IS_SYNONYMOUS_WITH') -> 'This policy is a simplified issue whole life insurance policy.'  scores=['0.577']
+    [KEEP] (fact_fact, 'HAS_FEATURE') -> 'This policy builds a small cash value over time.'  scores=['0.522']
+    [KEEP] (fact_fact, 'IS_BRANDED_BY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.584']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.556']
+
+  depth=0 goal_indices=[0] from: 'The policy is offered under the brand ComfortCare Senior Insurance.'
+    [KEEP] (fact_fact, 'OFFERED_BY') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.633']
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_fact, 'IS_OFFERED_BY') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.609']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy is designed to help cover funeral and final expenses.'  scores=['0.538']
+    [KEEP] (fact_fact, 'IS_IDENTIFIED_BY') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.565']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.536']
+
+  depth=0 goal_indices=[0] from: "Premiums are automatically deducted from the policyholder's bank account on the 1st of eac"
+    [drop] (fact_entity, 'has ') -> 'bank account (Payment source for premium deductions)'  scores=['0.280']
+    [KEEP] (fact_fact, 'IS_TRIGGERS_BY') -> 'The monthly premium is $87.50.'  scores=['0.619']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.535']
+    [drop] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [drop] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.545']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium is paid on the 1st of each month.'  scores=['0.595']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.534']
+    [KEEP] (fact_fact, 'IS_COMPLEMENTED_BY') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.529']
+
+  depth=0 goal_indices=[0] from: 'This policy is a simplified issue whole life insurance policy.'
+    [KEEP] (fact_fact, 'IS_SYNONYMOUS_WITH') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.594']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium is $87.50.'
+    [KEEP] (fact_fact, 'IS_FIXED') -> 'The monthly premium will never increase.'  scores=['0.635']
+    [KEEP] (fact_fact, 'TRIGGERS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.603']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.581']
+    [KEEP] (fact_fact, 'ALLOWS') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.536']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium is guaranteed to remain level for life.'
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.621']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The monthly premium will never increase.'  scores=['0.614']
+
+  depth=1 goal_indices=[0] from: 'The insured person is female.'
+    [KEEP] (fact_fact, 'IS_GENDER_OF') -> 'The insured person is 72 years old.'  scores=['0.460']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'The graded benefit schedule applies to this policy because it was issued without'  scores=['0.522']
+    [KEEP] (fact_fact, 'ENSURES') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.610']
+    [KEEP] (fact_fact, 'RELATES_TO') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.303']
+
+  depth=1 goal_indices=[0] from: '$87.50 (Monthly premium)'
+    [KEEP] (entity_fact, 'participates in: IS_GUARANTEED_PREMIUM_AMOUNT') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.578']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium for the policy is $87.50.'
+    [KEEP] (fact_fact, 'GUARANTEED_TO_STAY') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.641']
+    [KEEP] (fact_entity, 'has ') -> '$87.50 (Monthly premium)'  scores=['0.263']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'The insured person is female.'  scores=['0.578']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium will never increase.'
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.585']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.582']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.641']
+
+  depth=1 goal_indices=[0] from: "Premiums are automatically deducted from the policyholder's bank account on the 1st of eac"
+    [KEEP] (fact_entity, 'has ') -> 'bank account (Payment source for premium deductions)'  scores=['0.280']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.535']
+    [drop] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [drop] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.545']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium is paid on the 1st of each month.'  scores=['0.595']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.534']
+    [KEEP] (fact_fact, 'IS_COMPLEMENTED_BY') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.529']
+
+  depth=1 goal_indices=[0] from: 'The policyholder can change to annual payments if they prefer.'
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.544']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'payment frequency options (Alternative payment frequency option)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium will never increase.'  scores=['0.626']
+    [KEEP] (fact_fact, 'SUPPORTS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.583']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.559']
+
+  depth=1 goal_indices=[0] from: 'The policyholder can change to quarterly payments if they prefer.'
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.551']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'payment frequency options (Alternative payment frequency option)'  scores=['0.219']
+
+  depth=1 goal_indices=[0] from: 'monthly premium (Fixed $87.50 payment frequency)'
+    [KEEP] (entity_fact, 'participates in: IS_FIXED') -> 'The monthly premium will never increase.'  scores=['0.555']
+    [KEEP] (entity_fact, 'participates in: PAID_ON_1ST') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.540']
+
+  depth=1 goal_indices=[0] from: 'The policy type is Guaranteed Issue Whole Life.'
+    [KEEP] (fact_fact, 'IS_SYNONYMOUS_WITH') -> 'This policy is a simplified issue whole life insurance policy.'  scores=['0.577']
+    [KEEP] (fact_fact, 'HAS_FEATURE') -> 'This policy builds a small cash value over time.'  scores=['0.522']
+    [KEEP] (fact_fact, 'IS_BRANDED_BY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.584']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.556']
+
+  depth=1 goal_indices=[0] from: 'The policy is offered under the brand ComfortCare Senior Insurance.'
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_fact, 'IS_OFFERED_BY') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.609']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy is designed to help cover funeral and final expenses.'  scores=['0.538']
+    [KEEP] (fact_fact, 'IS_IDENTIFIED_BY') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.565']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.536']
+
+  depth=1 goal_indices=[0] from: 'The policy number is CC-FE-2024-9903.'
+    [KEEP] (fact_entity, 'has ') -> 'may 1, 2024 (Effective date)'  scores=['0.125']
+    [KEEP] (fact_fact, 'HAS_ASSOCIATED') -> 'The primary beneficiary is Linda Sue Johnson.'  scores=['0.424']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.592']
+
+  depth=1 goal_indices=[0] from: 'The premium payer is Dorothy Mae Johnson.'
+    [KEEP] (fact_fact, 'PAYS_ON') -> 'The premium is paid on the 1st of each month.'  scores=['0.618']
+    [drop] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.527']
+    [KEEP] (fact_fact, 'HAS_RELATIVE') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.290']
+    [KEEP] (fact_fact, 'DEFINES') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.598']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'No medical exams are required for this policy.'  scores=['0.501']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'No health questions are required for this policy.'  scores=['0.500']
+
+  depth=1 goal_indices=[0] from: 'The policy became effective on May 1, 2024.'
+    [KEEP] (fact_entity, 'has ') -> 'may 1, 2024 (Effective date)'  scores=['0.125']
+    [KEEP] (fact_fact, 'HAS_EFFECTIVE_DATE') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.503']
+    [KEEP] (fact_fact, 'HAS_START_DATE') -> 'The policy was signed on May 1, 2024.'  scores=['0.491']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> "The insured person's birth date is June 12, 1951."  scores=['0.452']
+
+  depth=1 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: BRANDS_POLICY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.553']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_PREMIUM_STABILITY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.567']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium for the policy is $87.50.'
+    [KEEP] (fact_entity, 'has ') -> '$87.50 (Monthly premium)'  scores=['0.263']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium is $87.50.'  scores=['0.641']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> 'The insured person is female.'  scores=['0.578']
+
+  depth=1 goal_indices=[0] from: 'The premium for this policy will never increase as long as it is paid.'
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_entity, 'has ') -> '$87.50 (Monthly premium)'  scores=['0.263']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium will never increase.'  scores=['0.592']
+    [KEEP] (fact_fact, 'IS_ENSURED_BY') -> 'The insured person is female.'  scores=['0.575']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium will never increase.'
+    [KEEP] (fact_fact, 'IS_FIXED_BY') -> 'The monthly premium is $87.50.'  scores=['0.641']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.585']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.582']
+
+  depth=1 goal_indices=[0] from: "Premiums are automatically deducted from the policyholder's bank account on the 1st of eac"
+    [KEEP] (fact_entity, 'has ') -> 'bank account (Payment source for premium deductions)'  scores=['0.280']
+    [KEEP] (fact_fact, 'IS_TRIGGERS_BY') -> 'The monthly premium is $87.50.'  scores=['0.619']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.535']
+    [drop] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [drop] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.545']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.534']
+    [KEEP] (fact_fact, 'IS_COMPLEMENTED_BY') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.529']
+
+  depth=1 goal_indices=[0] from: 'The premium payer is Dorothy Mae Johnson.'
+    [drop] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.527']
+    [KEEP] (fact_fact, 'HAS_RELATIVE') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.290']
+    [KEEP] (fact_fact, 'DEFINES') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.598']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.626']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'No medical exams are required for this policy.'  scores=['0.501']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'No health questions are required for this policy.'  scores=['0.500']
+
+  depth=1 goal_indices=[0] from: 'The payment method for the premium is bank draft.'
+    [KEEP] (fact_entity, 'has ') -> 'bank draft (Payment method)'  scores=['0.216']
+    [KEEP] (fact_fact, 'SUPPORTS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.579']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.577']
+
+  depth=1 goal_indices=[0] from: 'The benefit amount of the policy is $10,000.'
+    [KEEP] (fact_fact, 'DESIGNED_TO_FUND') -> 'The policy is designed to help cover funeral and final expenses.'  scores=['0.518']
+    [KEEP] (fact_fact, 'IS_PRESERVED_BY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.527']
+    [KEEP] (fact_entity, 'has ') -> '$10,000 (Benefit amount)'  scores=['0.173']
+    [KEEP] (fact_fact, 'IS_COVERED_BY') -> 'The insured person is 72 years old.'  scores=['0.487']
+    [KEEP] (fact_fact, 'HAS_BENEFICIARY') -> 'The primary beneficiary is Linda Sue Johnson.'  scores=['0.425']
+
+  depth=1 goal_indices=[0] from: 'The insured person is 72 years old.'
+    [KEEP] (fact_fact, 'IS_AGE_OF') -> "The insured person's birth date is June 12, 1951."  scores=['0.458']
+    [KEEP] (fact_fact, 'HAS_GENDER') -> 'The insured person is female.'  scores=['0.526']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'HAS_COVERAGE') -> 'The benefit amount of the policy is $10,000.'  scores=['0.526']
+
+  depth=1 goal_indices=[0] from: 'may 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: SIGNING_DATE') -> 'The policy was signed on May 1, 2024.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.476']
+    [KEEP] (entity_fact, 'participates in: EFFECTIVE_DATE') -> 'The policy became effective on May 1, 2024.'  scores=['0.343']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium is $87.50.'
+    [KEEP] (fact_fact, 'TRIGGERS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.603']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.581']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium for the policy is $87.50.'  scores=['0.677']
+    [KEEP] (fact_fact, 'ALLOWS') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.536']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium is guaranteed to remain level for life.'
+    [KEEP] (fact_fact, 'REMAINS_CONSTANT') -> 'The monthly premium for the policy is $87.50.'  scores=['0.665']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.621']
+
+  depth=1 goal_indices=[0] from: 'The policyholder can change to annual payments if they prefer.'
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.544']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'payment frequency options (Alternative payment frequency option)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium is $87.50.'  scores=['0.630']
+    [KEEP] (fact_fact, 'SUPPORTS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.583']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.559']
+
+  depth=1 goal_indices=[0] from: 'The premium for this policy will never increase as long as it is paid.'
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.630']
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_entity, 'has ') -> '$87.50 (Monthly premium)'  scores=['0.263']
+    [KEEP] (fact_fact, 'IS_ENSURED_BY') -> 'The insured person is female.'  scores=['0.575']
+
+  depth=1 goal_indices=[0] from: 'monthly premium (Fixed $87.50 payment frequency)'
+    [KEEP] (entity_fact, 'participates in: HAS_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.556']
+    [KEEP] (entity_fact, 'participates in: PAID_ON_1ST') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.540']
+
+  depth=1 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_FIXED_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.576']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=1 goal_indices=[0] from: 'The policy is titled Final Expense Life Insurance.'
+    [KEEP] (fact_fact, 'BEGINS_ON') -> 'The policy became effective on May 1, 2024.'  scores=['0.445']
+    [KEEP] (fact_fact, 'HAS_NUMBER') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.572']
+    [KEEP] (fact_fact, 'IS_OFFERED_BY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.604']
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_fact, 'DEFINES') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.554']
+
+  depth=1 goal_indices=[0] from: 'The policy is offered under the brand ComfortCare Senior Insurance.'
+    [KEEP] (fact_fact, 'OFFERED_BY') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.633']
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy is designed to help cover funeral and final expenses.'  scores=['0.538']
+    [KEEP] (fact_fact, 'IS_IDENTIFIED_BY') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.565']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.536']
+
+  depth=1 goal_indices=[0] from: 'The premium payer is Dorothy Mae Johnson.'
+    [KEEP] (fact_fact, 'PAYS_ON') -> 'The premium is paid on the 1st of each month.'  scores=['0.618']
+    [drop] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.527']
+    [KEEP] (fact_fact, 'HAS_RELATIVE') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.290']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.626']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'No medical exams are required for this policy.'  scores=['0.501']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'No health questions are required for this policy.'  scores=['0.500']
+
+  depth=1 goal_indices=[0] from: 'This policy builds a small cash value over time.'
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy builds a small cash value over time.'  scores=['0.493']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy builds cash value slowly.'  scores=['0.439']
+
+  depth=1 goal_indices=[0] from: 'The policy is titled Final Expense Life Insurance.'
+    [KEEP] (fact_fact, 'CLASSIFIED_AS') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.639']
+    [KEEP] (fact_fact, 'BEGINS_ON') -> 'The policy became effective on May 1, 2024.'  scores=['0.445']
+    [KEEP] (fact_fact, 'HAS_NUMBER') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.572']
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_fact, 'DEFINES') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.554']
+
+  depth=1 goal_indices=[0] from: 'The policy type is Guaranteed Issue Whole Life.'
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.634']
+    [KEEP] (fact_fact, 'IS_SYNONYMOUS_WITH') -> 'This policy is a simplified issue whole life insurance policy.'  scores=['0.577']
+    [KEEP] (fact_fact, 'HAS_FEATURE') -> 'This policy builds a small cash value over time.'  scores=['0.522']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.556']
+
+  depth=1 goal_indices=[0] from: 'The policy number is CC-FE-2024-9903.'
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.627']
+    [KEEP] (fact_entity, 'has ') -> 'may 1, 2024 (Effective date)'  scores=['0.125']
+    [KEEP] (fact_fact, 'HAS_ASSOCIATED') -> 'The primary beneficiary is Linda Sue Johnson.'  scores=['0.424']
+
+  depth=1 goal_indices=[0] from: 'The policy is designed to help cover funeral and final expenses.'
+    [KEEP] (fact_fact, 'FUNDING_PURPOSE') -> 'The benefit amount of the policy is $10,000.'  scores=['0.495']
+    [KEEP] (fact_fact, 'EXPLAINS') -> 'The coverage amount of this policy will never decrease.'  scores=['0.551']
+
+  depth=1 goal_indices=[0] from: 'The payment method for the premium is bank draft.'
+    [KEEP] (fact_entity, 'has ') -> 'bank draft (Payment method)'  scores=['0.216']
+    [KEEP] (fact_fact, 'USED_FOR') -> 'The premium is paid on the 1st of each month.'  scores=['0.608']
+    [KEEP] (fact_fact, 'SUPPORTS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.579']
+
+  depth=1 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.611']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_PREMIUM_STABILITY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.567']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=1 goal_indices=[0] from: 'The monthly premium is $87.50.'
+    [KEEP] (fact_fact, 'IS_FIXED') -> 'The monthly premium will never increase.'  scores=['0.635']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.581']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium for the policy is $87.50.'  scores=['0.677']
+    [KEEP] (fact_fact, 'ALLOWS') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.536']
+
+  depth=1 goal_indices=[0] from: 'The premium is paid on the 1st of each month.'
+    [KEEP] (fact_fact, 'IS_PAID_ON') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.589']
+    [KEEP] (fact_fact, 'IS_PAID_BY') -> 'The payment method for the premium is bank draft.'  scores=['0.563']
+    [KEEP] (fact_entity, 'has ') -> 'may 1, 2024 (Effective date)'  scores=['0.125']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'The insured person is 72 years old.'  scores=['0.513']
+    [KEEP] (fact_fact, 'MAINTAINS') -> 'The benefit amount of the policy is $10,000.'  scores=['0.558']
+
+  depth=1 goal_indices=[0] from: 'The policyholder can change to annual payments if they prefer.'
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.544']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'payment frequency options (Alternative payment frequency option)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium is $87.50.'  scores=['0.630']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium will never increase.'  scores=['0.626']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.559']
+
+  depth=1 goal_indices=[0] from: 'If a premium payment fails, the insurer will attempt to collect the payment again on the 1'
+    [KEEP] (fact_entity, 'has ') -> '15th (Retry date for failed premium payment)'  scores=['0.238']
+    [KEEP] (fact_fact, 'EXTENDS') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.492']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'payment failure (Event triggering retry attempt)'  scores=['0.099']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.558']
+    [KEEP] (fact_fact, 'DOES_NOT_PREVENT') -> 'The policyholder can change the beneficiary at any time.'  scores=['0.442']
+
+  depth=1 goal_indices=[0] from: 'The payment method for the premium is bank draft.'
+    [KEEP] (fact_entity, 'has ') -> 'bank draft (Payment method)'  scores=['0.216']
+    [KEEP] (fact_fact, 'USED_FOR') -> 'The premium is paid on the 1st of each month.'  scores=['0.608']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.577']
+
+  depth=1 goal_indices=[0] from: 'The policyholder has a 30-day grace period to make a payment before the policy cancels.'
+    [KEEP] (fact_fact, 'IS_EXTENDS_BY') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.532']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'grace period (30-day window to pay overdue premium)'  scores=['0.181']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder has a 30-day free look period to cancel the policy.'  scores=['0.496']
+
+  depth=1 goal_indices=[0] from: 'The policy type is Guaranteed Issue Whole Life.'
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.634']
+    [KEEP] (fact_fact, 'HAS_FEATURE') -> 'This policy builds a small cash value over time.'  scores=['0.522']
+    [KEEP] (fact_fact, 'IS_BRANDED_BY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.584']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.556']
+
+  depth=2 goal_indices=[0] from: 'monthly premium (Fixed $87.50 payment frequency)'
+    [KEEP] (entity_fact, 'participates in: IS_FIXED') -> 'The monthly premium will never increase.'  scores=['0.555']
+    [KEEP] (entity_fact, 'participates in: PAID_ON_1ST') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.540']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=2 goal_indices=[0] from: 'The premium for this policy will never increase as long as it is paid.'
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.630']
+    [KEEP] (fact_entity, 'has ') -> 'comfortcare senior insurance (Insurance provider)'  scores=['0.171']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium will never increase.'  scores=['0.592']
+    [KEEP] (fact_fact, 'IS_ENSURED_BY') -> 'The insured person is female.'  scores=['0.575']
+
+  depth=2 goal_indices=[0] from: '$87.50 (Monthly premium)'
+    [KEEP] (entity_fact, 'participates in: IS_GUARANTEED_PREMIUM_AMOUNT') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.578']
+
+  depth=2 goal_indices=[0] from: 'monthly premium (Fixed $87.50 payment frequency)'
+    [KEEP] (entity_fact, 'participates in: PAID_ON_1ST') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.540']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'payment frequency options (Alternative payment frequency option)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_OPTION') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.479']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'payment frequency options (Alternative payment frequency option)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_OPTION') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.493']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+
+  depth=2 goal_indices=[0] from: 'The monthly premium will never increase.'
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.585']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.582']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.641']
+
+  depth=2 goal_indices=[0] from: "Premiums are automatically deducted from the policyholder's bank account on the 1st of eac"
+    [KEEP] (fact_entity, 'has ') -> 'bank account (Payment source for premium deductions)'  scores=['0.280']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.535']
+    [drop] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.545']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium is paid on the 1st of each month.'  scores=['0.595']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.534']
+    [KEEP] (fact_fact, 'IS_COMPLEMENTED_BY') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.529']
+
+  depth=2 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_PREMIUM_STABILITY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.567']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [KEEP] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=2 goal_indices=[0] from: 'may 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: SIGNING_DATE') -> 'The policy was signed on May 1, 2024.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: EFFECTIVE_DATE') -> 'The policy became effective on May 1, 2024.'  scores=['0.343']
+    [KEEP] (entity_fact, 'participates in: PAYMENT_DUE_DATE') -> 'The premium is paid on the 1st of each month.'  scores=['0.569']
+
+  depth=2 goal_indices=[0] from: 'may 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: SIGNING_DATE') -> 'The policy was signed on May 1, 2024.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.476']
+    [KEEP] (entity_fact, 'participates in: PAYMENT_DUE_DATE') -> 'The premium is paid on the 1st of each month.'  scores=['0.569']
+
+  depth=2 goal_indices=[0] from: 'The premium for this policy will never increase as long as it is paid.'
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.630']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_entity, 'has ') -> '$87.50 (Monthly premium)'  scores=['0.263']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium will never increase.'  scores=['0.592']
+    [KEEP] (fact_fact, 'IS_ENSURED_BY') -> 'The insured person is female.'  scores=['0.575']
+
+  depth=2 goal_indices=[0] from: 'The policy is offered under the brand ComfortCare Senior Insurance.'
+    [KEEP] (fact_fact, 'IS_OFFERED_BY') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.609']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy is designed to help cover funeral and final expenses.'  scores=['0.538']
+    [KEEP] (fact_fact, 'IS_IDENTIFIED_BY') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.565']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.536']
+
+  depth=2 goal_indices=[0] from: 'The coverage amount of this policy will never decrease.'
+    [KEEP] (fact_fact, 'PRESERVES') -> 'The benefit amount of the policy is $10,000.'  scores=['0.503']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_entity, 'has ') -> '$10,000 (Benefit amount)'  scores=['0.173']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy is designed to help cover funeral and final expenses.'  scores=['0.544']
+    [KEEP] (fact_fact, 'IS_SUPPORTED_BY') -> 'This policy has no travel restrictions.'  scores=['0.434']
+
+  depth=2 goal_indices=[0] from: 'No health questions are required for this policy.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'No medical exams are required for this policy.'  scores=['0.501']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'IS_CHARACTERIZED_BY') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.546']
+
+  depth=2 goal_indices=[0] from: 'No medical exams are required for this policy.'
+    [KEEP] (fact_fact, 'IMPLIES') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'IS_CHARACTERIZED_BY') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.547']
+
+  depth=2 goal_indices=[0] from: 'After the policy has been in force for 2 years, the insurer cannot deny claims except for '
+    [KEEP] (fact_fact, 'IS_ENFORCED_BY') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.493']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'incontestability period (2-year protection against cancellation)'  scores=['0.156']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.478']
+
+  depth=2 goal_indices=[0] from: '$87.50 (Monthly premium)'
+    [KEEP] (entity_fact, 'participates in: IS_GUARANTEED_PREMIUM_AMOUNT') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.578']
+
+  depth=2 goal_indices=[0] from: '$87.50 (Monthly premium)'
+    [KEEP] (entity_fact, 'participates in: HAS_MONTHLY_PREMIUM') -> 'The monthly premium for the policy is $87.50.'  scores=['0.701']
+
+  depth=2 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.611']
+    [KEEP] (entity_fact, 'participates in: BRANDS_POLICY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.553']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=2 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=2 goal_indices=[0] from: 'monthly premium (Fixed $87.50 payment frequency)'
+    [KEEP] (entity_fact, 'participates in: HAS_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.556']
+    [KEEP] (entity_fact, 'participates in: PAID_ON_1ST') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.540']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_FIXED_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.576']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: '$10,000 (Benefit amount)'
+    [KEEP] (entity_fact, 'participates in: IS_FIXED_BENEFIT_AMOUNT') -> 'The coverage amount of this policy will never decrease.'  scores=['0.484']
+
+  depth=2 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [drop] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=2 goal_indices=[0] from: 'The policy number is CC-FE-2024-9903.'
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.627']
+    [KEEP] (fact_fact, 'HAS_ASSOCIATED') -> 'The primary beneficiary is Linda Sue Johnson.'  scores=['0.424']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.592']
+
+  depth=2 goal_indices=[0] from: 'The policy was signed on May 1, 2024.'
+    [KEEP] (fact_fact, 'IS_AUTHORIZED_BY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.441']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and payer)'  scores=['0.110']
+    [KEEP] (fact_fact, 'BEGINS_ON') -> 'The policy became effective on May 1, 2024.'  scores=['0.433']
+    [KEEP] (fact_fact, 'IS_STARTED_ON_BY') -> 'The graded benefit schedule applies to this policy because it was issued without'  scores=['0.511']
+
+  depth=2 goal_indices=[0] from: 'The policy became effective on May 1, 2024.'
+    [KEEP] (fact_fact, 'STARTS_ON') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.603']
+    [KEEP] (fact_fact, 'HAS_EFFECTIVE_DATE') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.503']
+    [KEEP] (fact_fact, 'HAS_START_DATE') -> 'The policy was signed on May 1, 2024.'  scores=['0.491']
+    [KEEP] (fact_fact, 'IS_SET_BY') -> "The insured person's birth date is June 12, 1951."  scores=['0.452']
+
+  depth=2 goal_indices=[0] from: 'monthly premium (Fixed $87.50 payment frequency)'
+    [KEEP] (entity_fact, 'participates in: PAID_ON_1ST') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.540']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'payment frequency options (Alternative payment frequency option)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_OPTION') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.479']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_FIXED_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.576']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: '$87.50 (Monthly premium)'
+    [KEEP] (entity_fact, 'participates in: HAS_MONTHLY_PREMIUM') -> 'The monthly premium for the policy is $87.50.'  scores=['0.701']
+
+  depth=2 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.611']
+    [KEEP] (entity_fact, 'participates in: BRANDS_POLICY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.553']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=2 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=2 goal_indices=[0] from: 'The monthly premium is $87.50.'
+    [KEEP] (fact_fact, 'TRIGGERS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.603']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.581']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium for the policy is $87.50.'  scores=['0.677']
+    [KEEP] (fact_fact, 'ALLOWS') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.536']
+
+  depth=2 goal_indices=[0] from: "Premiums are automatically deducted from the policyholder's bank account on the 1st of eac"
+    [drop] (fact_entity, 'has ') -> 'bank account (Payment source for premium deductions)'  scores=['0.280']
+    [KEEP] (fact_fact, 'IS_TRIGGERS_BY') -> 'The monthly premium is $87.50.'  scores=['0.619']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.535']
+    [drop] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.545']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium is paid on the 1st of each month.'  scores=['0.595']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.534']
+    [KEEP] (fact_fact, 'IS_COMPLEMENTED_BY') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.529']
+
+  depth=2 goal_indices=[0] from: 'The monthly premium is $87.50.'
+    [KEEP] (fact_fact, 'TRIGGERS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.603']
+    [KEEP] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.581']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium for the policy is $87.50.'  scores=['0.677']
+    [KEEP] (fact_fact, 'ALLOWS') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.536']
+
+  depth=2 goal_indices=[0] from: "Premiums are automatically deducted from the policyholder's bank account on the 1st of eac"
+    [drop] (fact_entity, 'has ') -> 'bank account (Payment source for premium deductions)'  scores=['0.280']
+    [KEEP] (fact_fact, 'IS_TRIGGERS_BY') -> 'The monthly premium is $87.50.'  scores=['0.619']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.535']
+    [drop] (fact_entity, 'has ') -> 'monthly premium (Fixed $87.50 payment frequency)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.545']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The premium is paid on the 1st of each month.'  scores=['0.595']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The payment method for the premium is bank draft.'  scores=['0.534']
+    [KEEP] (fact_fact, 'IS_COMPLEMENTED_BY') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.529']
+
+  depth=2 goal_indices=[0] from: 'The policyholder can change to annual payments if they prefer.'
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.544']
+    [KEEP] (fact_entity, 'has ') -> 'payment frequency options (Alternative payment frequency option)'  scores=['0.219']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium is $87.50.'  scores=['0.630']
+    [KEEP] (fact_fact, 'SUPPORTS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.583']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.559']
+
+  depth=2 goal_indices=[0] from: 'No further premiums are needed if the policy continues automatically after 2 years of stop'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.531']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and payer)'  scores=['0.110']
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'After 2 years, if the policyholder stops paying premiums, the policy will automa'  scores=['0.500']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'After 2 years, if the policyholder stops paying premiums, the policy will contin'  scores=['0.489']
+
+  depth=2 goal_indices=[0] from: 'The policyholder can change to quarterly payments if they prefer.'
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.551']
+    [KEEP] (fact_entity, 'has ') -> 'payment frequency options (Alternative payment frequency option)'  scores=['0.219']
+    [KEEP] (fact_fact, 'IS_ALLOWS') -> 'The monthly premium is $87.50.'  scores=['0.593']
+
+  depth=2 goal_indices=[0] from: 'If a premium payment fails, the insurer will attempt to collect the payment again on the 1'
+    [KEEP] (fact_entity, 'has ') -> '15th (Retry date for failed premium payment)'  scores=['0.238']
+    [KEEP] (fact_fact, 'EXTENDS') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.492']
+    [KEEP] (fact_fact, 'FOLLOWS') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.561']
+    [KEEP] (fact_entity, 'has ') -> 'payment failure (Event triggering retry attempt)'  scores=['0.099']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.558']
+    [KEEP] (fact_fact, 'DOES_NOT_PREVENT') -> 'The policyholder can change the beneficiary at any time.'  scores=['0.442']
+
+  depth=2 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: BRANDS_POLICY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.553']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_PREMIUM_STABILITY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.567']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=2 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.611']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_PREMIUM_STABILITY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.567']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=2 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.611']
+    [KEEP] (entity_fact, 'participates in: BRANDS_POLICY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.553']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_PREMIUM_STABILITY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.567']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+
+  depth=2 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [drop] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+
+  depth=2 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_PREMIUM_STABILITY') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.567']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [KEEP] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=2 goal_indices=[0] from: 'may 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: SIGNING_DATE') -> 'The policy was signed on May 1, 2024.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: EFFECTIVE_DATE') -> 'The policy became effective on May 1, 2024.'  scores=['0.343']
+    [KEEP] (entity_fact, 'participates in: PAYMENT_DUE_DATE') -> 'The premium is paid on the 1st of each month.'  scores=['0.569']
+
+  depth=2 goal_indices=[0] from: 'The policy is titled Final Expense Life Insurance.'
+    [KEEP] (fact_fact, 'CLASSIFIED_AS') -> 'The policy type is Guaranteed Issue Whole Life.'  scores=['0.639']
+    [KEEP] (fact_fact, 'BEGINS_ON') -> 'The policy became effective on May 1, 2024.'  scores=['0.445']
+    [KEEP] (fact_fact, 'HAS_NUMBER') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.572']
+    [KEEP] (fact_fact, 'DEFINES') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.554']
+
+  depth=2 goal_indices=[0] from: 'The premium for this policy will never increase as long as it is paid.'
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The monthly premium is guaranteed to remain level for life.'  scores=['0.630']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_entity, 'has ') -> '$87.50 (Monthly premium)'  scores=['0.263']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The monthly premium will never increase.'  scores=['0.592']
+    [KEEP] (fact_fact, 'IS_ENSURED_BY') -> 'The insured person is female.'  scores=['0.575']
+
+  depth=2 goal_indices=[0] from: 'The coverage amount of this policy will never decrease.'
+    [KEEP] (fact_fact, 'PRESERVES') -> 'The benefit amount of the policy is $10,000.'  scores=['0.503']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_entity, 'has ') -> '$10,000 (Benefit amount)'  scores=['0.173']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy is designed to help cover funeral and final expenses.'  scores=['0.544']
+    [KEEP] (fact_fact, 'IS_SUPPORTED_BY') -> 'This policy has no travel restrictions.'  scores=['0.434']
+
+  depth=2 goal_indices=[0] from: 'No health questions are required for this policy.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'No medical exams are required for this policy.'  scores=['0.501']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'IS_CHARACTERIZED_BY') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.546']
+
+  depth=2 goal_indices=[0] from: 'No medical exams are required for this policy.'
+    [KEEP] (fact_fact, 'IMPLIES') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (fact_entity, 'has ') -> 'dorothy mae johnson (Insured person)'  scores=['0.104']
+    [KEEP] (fact_fact, 'IS_CHARACTERIZED_BY') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.547']
+
+  depth=2 goal_indices=[0] from: 'After the policy has been in force for 2 years, the insurer cannot deny claims except for '
+    [KEEP] (fact_fact, 'IS_ENFORCED_BY') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.493']
+    [KEEP] (fact_entity, 'has ') -> 'premiums (Monthly payments for policy coverage)'  scores=['0.174']
+    [KEEP] (fact_entity, 'has ') -> 'incontestability period (2-year protection against cancellation)'  scores=['0.156']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.478']
+
+  depth=2 goal_indices=[0] from: 'monthly premium (Fixed $87.50 payment frequency)'
+    [KEEP] (entity_fact, 'participates in: IS_FIXED') -> 'The monthly premium will never increase.'  scores=['0.555']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'may 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: SIGNING_DATE') -> 'The policy was signed on May 1, 2024.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policy number is CC-FE-2024-9903.'  scores=['0.476']
+    [KEEP] (entity_fact, 'participates in: EFFECTIVE_DATE') -> 'The policy became effective on May 1, 2024.'  scores=['0.343']
+
+  depth=2 goal_indices=[0] from: 'payment frequency options (Alternative payment frequency option)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_OPTION') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.479']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_FIXED_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.576']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_FIXED_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.576']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=2 goal_indices=[0] from: 'payment failure (Event triggering retry attempt)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays $3,000.'  scores=['0.397']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays $'  scores=['0.390']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs after Year 2 (on or after May 1, 2026), the insurer pays $10,000'  scores=['0.365']
+    [drop] (entity_fact, 'participates in: ') -> 'If death results from an accident at any time, the insurer pays the full benefit'  scores=['0.356']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: ') -> 'An accident is defined as a sudden, unexpected event causing injury.'  scores=['0.234']
+
+  depth=2 goal_indices=[0] from: 'grace period (30-day window to pay overdue premium)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'There is a waiting period for full death benefits.'  scores=['0.290']
+
+  depth=2 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_FIXED_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.576']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=3 goal_indices=[0] from: 'comfortcare senior insurance (Insurance provider)'
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.399']
+    [KEEP] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: ISSUING_ENTITY') -> 'The Chief Operating Officer signed the policy.'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY') -> 'The policy is titled Final Expense Life Insurance.'  scores=['0.611']
+    [KEEP] (entity_fact, 'participates in: BRANDS_POLICY') -> 'The policy is offered under the brand ComfortCare Senior Insurance.'  scores=['0.553']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_EXAMS') -> 'No medical exams are required for this policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: OFFERS_POLICY_WITHOUT_HEALTH_QUESTIONS') -> 'No health questions are required for this policy.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: GUARANTEES_COVERAGE_STABILITY') -> 'The coverage amount of this policy will never decrease.'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: BUILDING_CASH_VALUE_OVER_TIME') -> 'This policy builds a small cash value over time.'  scores=['0.446']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=3 goal_indices=[0] from: '$87.50 (Monthly premium)'
+    [KEEP] (entity_fact, 'participates in: HAS_MONTHLY_PREMIUM') -> 'The monthly premium for the policy is $87.50.'  scores=['0.701']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: '$10,000 (Benefit amount)'
+    [KEEP] (entity_fact, 'participates in: HAS_DEATH_BENEFIT') -> 'The benefit amount of the policy is $10,000.'  scores=['0.426']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_FIXED_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.576']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [drop] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=3 goal_indices=[0] from: 'incontestability period (2-year protection against cancellation)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The graded benefit schedule applies to this policy because it was issued without'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: APPLIES_AFTER_2_YEARS') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.400']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and payer)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: AVOIDED_PAYMENT_OBLIGATION') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.494']
+    [drop] (entity_fact, 'participates in: WITHDREW_CASH_VALUE') -> 'The policyholder may take the cash value and cancel the policy at any time.'  scores=['0.396']
+    [KEEP] (entity_fact, 'participates in: REINSTATED_POLICY') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.459']
+    [drop] (entity_fact, 'participates in: ISSUED_WITHOUT_MEDICAL') -> 'This policy was issued without medical questions or exams.'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ELIGIBLE_AT_AGE_50') -> 'Coverage is available for individuals aged 50.'  scores=['0.437']
+    [drop] (entity_fact, 'participates in: ELIGIBLE_AT_AGE_85') -> 'Coverage is available for individuals aged 85.'  scores=['0.401']
+    [drop] (entity_fact, 'participates in: NOT_ELIGIBLE_UNDER_50') -> 'Coverage is not available for individuals under age 50.'  scores=['0.425']
+    [drop] (entity_fact, 'participates in: NOT_ELIGIBLE_OVER_85') -> 'Coverage is not available for individuals over age 85.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: COVERED_BY_ISSUANCE') -> 'This policy is issued in Tampa, Florida.'  scores=['0.471']
+    [drop] (entity_fact, 'participates in: CAN_CONTACT_SUPPORT') -> 'The customer service phone number for questions is 1-800-COMFORT.'  scores=['0.291']
+    [drop] (entity_fact, 'participates in: CAN_CONTACT_SUPPORT') -> 'The customer service phone number for questions is 1-800-266-3678.'  scores=['0.277']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_BORROW') -> 'The policyholder can borrow against the cash value of the policy at any time.'  scores=['0.408']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The policyholder can surrender the policy for the cash value at any time.'  scores=['0.369']
+    [drop] (entity_fact, 'participates in: ') -> 'This policy has no war exclusion.'  scores=['0.275']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The beneficiary should send this policy to file a claim if it is available.'  scores=['0.470']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder has a 30-day free look period to cancel the policy.'  scores=['0.429']
+    [drop] (entity_fact, 'participates in: RECEIVES_FULL_REFUND') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.402']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The policyholder can change the beneficiary at any time.'  scores=['0.330']
+    [drop] (entity_fact, 'participates in: CAN_CHANGE_BY_CALLING') -> 'The policyholder can change the beneficiary by calling the insurer.'  scores=['0.355']
+    [drop] (entity_fact, 'participates in: CAN_CHANGE_BY_WRITTEN_REQUEST') -> 'The policyholder can change the beneficiary by sending a written request.'  scores=['0.363']
+    [KEEP] (entity_fact, 'participates in: OWNS_POLICY') -> 'The policyholder owns the policy.'  scores=['0.483']
+    [drop] (entity_fact, 'participates in: RETAINS_POLICY') -> 'The policy stays with the policyholder even if they move to another state.'  scores=['0.432']
+    [KEEP] (entity_fact, 'participates in: STOP_PAYING_PREMIUMS') -> 'After 2 years, if the policyholder stops paying premiums, the policy will automa'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: STOP_PAYING_PREMIUMS') -> 'After 2 years, if the policyholder stops paying premiums, the policy will contin'  scores=['0.448']
+
+  depth=3 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ') -> 'After the policy has been in force for 2 years, the insurer cannot deny claims e'  scores=['0.446']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [KEEP] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=3 goal_indices=[0] from: 'monthly premium (Fixed $87.50 payment frequency)'
+    [KEEP] (entity_fact, 'participates in: PAID_ON_1ST') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.540']
+
+  depth=3 goal_indices=[0] from: 'payment frequency options (Alternative payment frequency option)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_OPTION') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.479']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and payer)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [drop] (entity_fact, 'participates in: WITHDREW_CASH_VALUE') -> 'The policyholder may take the cash value and cancel the policy at any time.'  scores=['0.396']
+    [KEEP] (entity_fact, 'participates in: REINSTATED_POLICY') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.459']
+    [KEEP] (entity_fact, 'participates in: ISSUED_WITHOUT_MEDICAL') -> 'This policy was issued without medical questions or exams.'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: ELIGIBLE_AT_AGE_50') -> 'Coverage is available for individuals aged 50.'  scores=['0.437']
+    [drop] (entity_fact, 'participates in: ELIGIBLE_AT_AGE_85') -> 'Coverage is available for individuals aged 85.'  scores=['0.401']
+    [drop] (entity_fact, 'participates in: NOT_ELIGIBLE_UNDER_50') -> 'Coverage is not available for individuals under age 50.'  scores=['0.425']
+    [drop] (entity_fact, 'participates in: NOT_ELIGIBLE_OVER_85') -> 'Coverage is not available for individuals over age 85.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: COVERED_BY_ISSUANCE') -> 'This policy is issued in Tampa, Florida.'  scores=['0.471']
+    [drop] (entity_fact, 'participates in: CAN_CONTACT_SUPPORT') -> 'The customer service phone number for questions is 1-800-COMFORT.'  scores=['0.291']
+    [drop] (entity_fact, 'participates in: CAN_CONTACT_SUPPORT') -> 'The customer service phone number for questions is 1-800-266-3678.'  scores=['0.277']
+    [drop] (entity_fact, 'participates in: COVERED_FROM_DATE') -> 'The policy was signed on May 1, 2024.'  scores=['0.433']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_BORROW') -> 'The policyholder can borrow against the cash value of the policy at any time.'  scores=['0.408']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The policyholder can surrender the policy for the cash value at any time.'  scores=['0.369']
+    [drop] (entity_fact, 'participates in: ') -> 'This policy has no war exclusion.'  scores=['0.275']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The beneficiary should send this policy to file a claim if it is available.'  scores=['0.470']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder has a 30-day free look period to cancel the policy.'  scores=['0.429']
+    [drop] (entity_fact, 'participates in: RECEIVES_FULL_REFUND') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.402']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The policyholder can change the beneficiary at any time.'  scores=['0.330']
+    [drop] (entity_fact, 'participates in: CAN_CHANGE_BY_CALLING') -> 'The policyholder can change the beneficiary by calling the insurer.'  scores=['0.355']
+    [drop] (entity_fact, 'participates in: CAN_CHANGE_BY_WRITTEN_REQUEST') -> 'The policyholder can change the beneficiary by sending a written request.'  scores=['0.363']
+    [KEEP] (entity_fact, 'participates in: OWNS_POLICY') -> 'The policyholder owns the policy.'  scores=['0.483']
+    [drop] (entity_fact, 'participates in: RETAINS_POLICY') -> 'The policy stays with the policyholder even if they move to another state.'  scores=['0.432']
+    [KEEP] (entity_fact, 'participates in: STOP_PAYING_PREMIUMS') -> 'After 2 years, if the policyholder stops paying premiums, the policy will automa'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: STOP_PAYING_PREMIUMS') -> 'After 2 years, if the policyholder stops paying premiums, the policy will contin'  scores=['0.448']
+
+  depth=3 goal_indices=[0] from: 'payment frequency options (Alternative payment frequency option)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_OPTION') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.493']
+
+  depth=3 goal_indices=[0] from: 'payment failure (Event triggering retry attempt)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays $3,000.'  scores=['0.397']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays $'  scores=['0.390']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death occurs after Year 2 (on or after May 1, 2026), the insurer pays $10,000'  scores=['0.365']
+    [drop] (entity_fact, 'participates in: ') -> 'If death results from an accident at any time, the insurer pays the full benefit'  scores=['0.356']
+    [KEEP] (entity_fact, 'participates in: ') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.407']
+    [drop] (entity_fact, 'participates in: ') -> 'An accident is defined as a sudden, unexpected event causing injury.'  scores=['0.234']
+
+  depth=3 goal_indices=[0] from: '$87.50 (Monthly premium)'
+    [KEEP] (entity_fact, 'participates in: HAS_MONTHLY_PREMIUM') -> 'The monthly premium for the policy is $87.50.'  scores=['0.701']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: '$10,000 (Benefit amount)'
+    [KEEP] (entity_fact, 'participates in: HAS_DEATH_BENEFIT') -> 'The benefit amount of the policy is $10,000.'  scores=['0.426']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No medical exams are required for this policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: 'dorothy mae johnson (Insured person)'
+    [KEEP] (entity_fact, 'participates in: IS_INSURED_PERSON') -> "The insured person's name is Dorothy Mae Johnson."  scores=['0.495']
+    [drop] (entity_fact, 'participates in: HAS_BIRTH_DATE') -> "The insured person's birth date is June 12, 1951."  scores=['0.378']
+    [drop] (entity_fact, 'participates in: HAS_AGE') -> 'The insured person is 72 years old.'  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: HAS_GENDER') -> 'The insured person is female.'  scores=['0.468']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'The premium payer is Dorothy Mae Johnson.'  scores=['0.525']
+    [drop] (entity_fact, 'participates in: HAS_CHILD') -> 'Linda Sue Johnson is the daughter of Dorothy Mae Johnson.'  scores=['0.140']
+    [KEEP] (entity_fact, 'participates in: APPLIES_FOR_POLICY') -> 'No health questions are required for this policy.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: PAYS_GUARANTEED_PREMIUM') -> 'The premium for this policy will never increase as long as it is paid.'  scores=['0.585']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_GUARANTEED_COVERAGE') -> 'The coverage amount of this policy will never decrease.'  scores=['0.481']
+    [drop] (entity_fact, 'participates in: ACQUIRES_CASH_VALUE') -> 'This policy builds a small cash value over time.'  scores=['0.435']
+
+  depth=3 goal_indices=[0] from: 'premiums (Monthly payments for policy coverage)'
+    [drop] (entity_fact, 'participates in: STOPPED_PAYMENTS') -> 'The policy will automatically continue with a reduced benefit amount after 2 yea'  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: NO_FURTHER_PAYMENTS') -> 'No further premiums are needed if the policy continues automatically after 2 yea'  scores=['0.502']
+    [drop] (entity_fact, 'participates in: PAID_WITH_INTEREST') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.453']
+    [drop] (entity_fact, 'participates in: RECEIVE_RETURN_ONLY') -> 'If death occurs by suicide within 2 years of the issue date, the insurer will on'  scores=['0.388']
+    [drop] (entity_fact, 'participates in: ARE_REFUNDED') -> 'The policyholder can cancel the policy within 30 days of receiving it for a full'  scores=['0.414']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 1 (before May 1, 2025), the insurer pays all premium'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death occurs during Year 2 (May 1, 2025 - April 30, 2026), the insurer pays a'  scores=['0.461']
+    [drop] (entity_fact, 'participates in: INCLUDED_IN_PAYOUT') -> 'If death results from an accident at any time, the insurer pays all premiums pai'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: HAS_FIXED_AMOUNT') -> 'The monthly premium is $87.50.'  scores=['0.576']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_INCREASE') -> 'The monthly premium will never increase.'  scores=['0.543']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_AUTOMATICALLY') -> "Premiums are automatically deducted from the policyholder's bank account on the "  scores=['0.550']
+    [drop] (entity_fact, 'participates in: RETRY_ON_15TH') -> 'If a premium payment fails, the insurer will attempt to collect the payment agai'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: ALLOWED_WITHIN_GRACE') -> 'The policyholder has a 30-day grace period to make a payment before the policy c'  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_ANNUALLY') -> 'The policyholder can change to annual payments if they prefer.'  scores=['0.517']
+    [KEEP] (entity_fact, 'participates in: CAN_BE_PAID_QUARTERLY') -> 'The policyholder can change to quarterly payments if they prefer.'  scores=['0.495']
+
+  depth=3 goal_indices=[0] from: 'incontestability period (2-year protection against cancellation)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policyholder may restart the policy within 2 years of cancellation by paying'  scores=['0.430']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The graded benefit schedule applies to this policy because it was issued without'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: APPLIES_AFTER_2_YEARS') -> 'After the policy has been in force for 2 years, the insurer cannot cancel the po'  scores=['0.400']
+
+--- FINAL RANKING ---
+  [               -] ce=7.688  '"The monthly premium is $87.50." -> (has ) -> [monthly premium (Fixed $87.50 payment frequency)] -> '
+  [               -] ce=7.574  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is guaranteed not to increase over'
+  [SELECTED(rank 3)] ce=7.533  '"The monthly premium is guaranteed to remain level for life." -> The monthly premium is guaranteed t'
+  [SELECTED(rank 0)] ce=7.521  '"The monthly premium is $87.50." -> The monthly premium is $87.50, which matches the amount stated i'
+  [               -] ce=7.396  '"The monthly premium is $87.50." -> The option to change to quarterly payments, as stated in fact 25'
+  [               -] ce=7.308  '"The monthly premium is $87.50." -> (has ) -> [monthly premium (Fixed $87.50 payment frequency)] -> '
+  [               -] ce=7.303  '"The monthly premium is guaranteed to remain level for life." -> The monthly premium is guaranteed t'
+  [               -] ce=7.271  '"The monthly premium is $87.50." -> (has ) -> [monthly premium (Fixed $87.50 payment frequency)] -> '
+  [               -] ce=7.234  '"The monthly premium is $87.50." -> (has ) -> [monthly premium (Fixed $87.50 payment frequency)] -> '
+  [SELECTED(rank 1)] ce=7.232  '"The monthly premium is $87.50." -> The monthly premium is $87.50, which matches the amount stated i'
+  [               -] ce=7.214  '"The monthly premium is guaranteed to remain level for life." -> The monthly premium is guaranteed t'
+  [               -] ce=7.207  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is automatically deducted from the'
+  [               -] ce=7.197  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is automatically deducted from the'
+  [               -] ce=7.191  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is guaranteed not to increase over'
+  [SELECTED(rank 4)] ce=7.191  '"The monthly premium is $87.50." -> The policy has fixed premiums and a monthly payment of $87.50, w'
+  [SELECTED(rank 13)] ce=7.189  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is guaranteed not to increase over'
+  [SELECTED(rank 9)] ce=7.161  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is guaranteed not to increase over'
+  [               -] ce=7.148  '"The monthly premium is $87.50." -> The policy has fixed premiums and a monthly payment of $87.50, w'
+  [               -] ce=7.136  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is automatically deducted from the'
+  [               -] ce=7.114  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is guaranteed not to increase over'
+  [SELECTED(rank 7)] ce=7.102  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is guaranteed not to increase over'
+  [               -] ce=7.088  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is guaranteed not to increase over'
+  [SELECTED(rank 18)] ce=7.084  '"The monthly premium for the policy is $87.50." -> The monthly premium is $87.50, which matches the '
+  [               -] ce=7.070  '"The monthly premium is $87.50." -> The monthly premium of $87.50 is guaranteed not to increase over'
+  [               -] ce=7.062  '"The monthly premium is $87.50." -> The option to change to quarterly payments, as stated in fact 25'
+
+--- RETRIEVED CONTEXT (what the generation LLM actually saw) ---
+"The monthly premium is $87.50." -> SUPPORTS -> "The monthly premium for the policy is $87.50." -> GUARANTEED_TO_STAY -> "The monthly premium is guaranteed to remain level for life."
+Logical Conclusions:
+The monthly premium is $87.50, which matches the amount stated in the guaranteed issue policy.
+The monthly premium of $87.50 is guaranteed to remain level for life, ensuring long-term predictability.
+
+"The monthly premium for the policy is $87.50." -> IS_SET_BY -> "The insured person is female."
+Logical Conclusions:
+The monthly premium amount of $87.50 is consistent with the level premium structure of the guaranteed issue policy.
+
+"The monthly premium will never increase." -> (has ) -> [premiums (Monthly payments for policy coverage)] -> (participates in event: HAS_FIXED_AMOUNT) -> "The monthly premium is $87.50."
+
+"The monthly premium is guaranteed to remain level for life." -> CONFIRMS -> "The monthly premium will never increase."
+Logical Conclusions:
+The monthly premium is guaranteed to remain level for life, which ensures that the fixed premium structure will not increase over time.
+
+"The monthly premium is $87.50." -> SUPPORTS -> "The policyholder can change to annual payments if they prefer."
+Logical Conclusions:
+The policy has fixed premiums and a monthly payment of $87.50, which is consistent with the stated premium amount.
+
+[premiums (Monthly payments for policy coverage)] -> (participates in event: CAN_BE_PAID_ANNUALLY) -> "The policyholder can change to annual payments if they prefer."
+
+"The monthly premium is $87.50." -> (has ) -> [monthly premium (Fixed $87.50 payment frequency)] -> (participates in event: IS_FIXED) -> "The monthly premium will never increase."
+
+[premiums (Monthly payments for policy coverage)] -> (participates in event: DEDUCTED_AUTOMATICALLY) -> "Premiums are automatically deducted from the policyholder's bank account on the 1st of each month."
+
+[premiums (Monthly payments for policy coverage)] -> (participates in event: CAN_BE_PAID_QUARTERLY) -> "The policyholder can change to quarterly payments if they prefer."
+
+"The monthly premium is $87.50." -> IS_FIXED -> "The monthly premium will never increase."
+Logical Conclusions:
+The monthly premium of $87.50 is guaranteed not to increase over time.
+
+--- GENERATION ---
+LLM answer: The monthly premium is $87.50.
+Judge score: 0.5
+====================================================================================================

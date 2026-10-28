@@ -1,0 +1,71 @@
+{
+  "token_breakdown": {
+    "chunk_extraction": {
+      "prompt": 7950,
+      "completion": 13220,
+      "total": 21170,
+      "calls": 5
+    },
+    "chunk_extraction_sub": {},
+    "entity_deduplication": {
+      "prompt": 1063643,
+      "completion": 263128,
+      "total": 1326771,
+      "calls": 108
+    },
+    "global_edges_round1": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0
+    },
+    "global_edges_round2": {
+      "prompt": 341593,
+      "completion": 1127261,
+      "total": 1468854,
+      "calls": 14
+    },
+    "global_edges_round3": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0
+    },
+    "total": {
+      "prompt": 1413186,
+      "completion": 1403609,
+      "total": 2816795,
+      "calls": 127
+    },
+    "hyperparams": {
+      "combined_entity_extraction": true,
+      "full_entity_profile": false,
+      "generate_entity_relation_labels": false,
+      "dedup_run_exact": true,
+      "dedup_run_semhash": true,
+      "dedup_semhash_threshold": 0.95,
+      "dedup_run_llm": true,
+      "dedup_similarity_threshold": 0.35,
+      "questions_mode": "follow_up_to_answered",
+      "middle_k_skip_percent": 0.33,
+      "construction_r1_weights": {
+        "sent": 0.0,
+        "topic": 0.0,
+        "entity": 1.0,
+        "questions": 0.0
+      },
+      "construction_r2_weights": {
+        "sent": 1.0,
+        "topic": 1.0,
+        "entity": 1.0,
+        "questions": 1.0
+      },
+      "construction_r3_weights": {
+        "sent": 1.0,
+        "topic": 1.0,
+        "entity": 1.0,
+        "questions": 1.0
+      }
+    }
+  }
+}

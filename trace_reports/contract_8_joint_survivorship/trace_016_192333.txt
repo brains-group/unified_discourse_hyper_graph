@@ -1,0 +1,1559 @@
+====================================================================================================
+QUESTION: Who pays the premiums on this policy?
+CATEGORY: CAT2_RELATIONAL_LOOKUP
+EXPECTED ANSWER: Hartford Family Irrevocable Trust
+EVIDENCE: Premium Payor: Hartford Family Irrevocable Trust
+====================================================================================================
+
+--- GOAL PLAN ---
+rewritten_query: Who pays the premiums for a specific insurance policy?
+reasoning: The query "Who pays the premiums on this policy?" is asking about the party responsible for paying the insurance premiums. However, the query references "this policy" without specifying which policy is being discussed. Since no policy name, number, or context is provided, it's impossible to determine the payer without additional information. The question is inherently ambiguous without a specific policy to reference. Therefore, the query cannot be answered as written and requires clarification or additional context.
+  [0] Identify the specific insurance policy being referred to  (key_terms=[], depends_on_previous=False)
+  [1] Determine who is responsible for paying the premiums on that policy  (key_terms=[], depends_on_previous=True)
+planner LLM calls: 1  (total_tokens=0)
+
+--- EVIDENCE CROSS-REFERENCE ---
+
+  candidate evidence fact (word-overlap=0.60): 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'
+    seeding      : candidate, selected=True (rank 2), scores=[0.5780345797538757, 0.7050248384475708]
+    traversal    : depth=0 from='The policy owner is The Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.6027976274490356]
+    traversal    : depth=1 from='Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.' chosen=True scores=[0.6232566833496094]
+    traversal    : depth=1 from='Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.' chosen=True scores=[0.6232566833496094]
+    traversal    : depth=1 from='The policy owner is The Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.7135989665985107]
+    traversal    : depth=1 from='The policy owner is The Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.7135989665985107]
+    traversal    : depth=2 from='Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.' chosen=True scores=[0.6232566833496094]
+    traversal    : depth=2 from='Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.' chosen=True scores=[0.6232566833496094]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.6797782182693481]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.6797782182693481]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.6797783374786377]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.6797782182693481]
+    final_ranking: selected=False, cross_encoder_score=1.662
+
+  candidate evidence fact (word-overlap=0.33): 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'
+    seeding      : candidate, selected=True (rank 3), scores=[0.6274269223213196, 0.6472925543785095]
+    traversal    : depth=0 from='The premium payor for the policy is the Hartford Family Irrevocable Trust.' chosen=True scores=[0.6554766893386841]
+    traversal    : depth=0 from='The policy owner is the Trust.' chosen=True scores=[0.6494994163513184]
+    traversal    : depth=0 from="This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxable estates." chosen=True scores=[0.6273737549781799]
+    traversal    : depth=1 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5981993675231934]
+    traversal    : depth=1 from='The policy owner is the Trust.' chosen=True scores=[0.6328058838844299]
+    traversal    : depth=1 from='The Trust has the right to surrender the policy.' chosen=True scores=[0.5569066405296326]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5981994271278381]
+    traversal    : depth=2 from='The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.6205428838729858]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5981993675231934]
+    traversal    : depth=2 from='The policy owner is the Trust.' chosen=True scores=[0.6328058838844299]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5981993675231934]
+    final_ranking: selected=False, cross_encoder_score=-6.390
+
+  candidate evidence fact (word-overlap=0.31): 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance Trust.'
+    seeding      : candidate, selected=False, scores=[0.5837311148643494, 0.5835908651351929]
+    traversal    : depth=0 from='The policy owner is The Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.603348433971405]
+    traversal    : depth=1 from='The policy owner is The Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.5849111676216125]
+    traversal    : depth=1 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5027866363525391]
+    traversal    : depth=1 from='The policy owner is The Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.5849111676216125]
+    traversal    : depth=1 from='The policy owner is The Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.5849111676216125]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5027866363525391]
+    traversal    : depth=2 from='The policy owner is The Hartford Family Irrevocable Life Insurance Trust.' chosen=True scores=[0.5849111676216125]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5027868151664734]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5027866363525391]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=True scores=[0.5027868151664734]
+    traversal    : depth=2 from='hartford family irrevocable life insurance trust (Beneficiary)' chosen=False scores=[0.5027866363525391]
+    final_ranking: selected=False, cross_encoder_score=-7.616
+
+--- SEEDING (top candidates by score) ---
+  [SELECTED(rank 0)] scores=['0.710', '0.652']  'The policy was issued by Estate Planning Life Assurance Ltd.'
+  [SELECTED(rank 2)] scores=['0.578', '0.705']  'The premium payor for the policy is the Hartford Family Irrevocable Trust.'
+  [SELECTED(rank 1)] scores=['0.690', '0.652']  'The policy is issued by Estate Planning Life Assurance Ltd.'
+  [SELECTED(rank 7)] scores=['0.688', '0.520']  'The policy number is EPL-JSL-2024-1156.'
+  [SELECTED(rank 9)] scores=['0.488', '0.659']  "After the first insured's death, the premium payment obligation continues."
+  [SELECTED(rank 3)] scores=['0.627', '0.647']  'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'
+  [SELECTED(rank 4)] scores=['0.647', '0.607']  'The policy is a joint survivorship life insurance policy.'
+  [SELECTED(rank 5)] scores=['0.595', '0.628']  'The policy owner is the Trust.'
+  [               -] scores=['0.625', '0.553']  'The policy form is Second-to-Die Whole Life.'
+  [               -] scores=['0.472', '0.625']  'Premiums continue to be paid after the first death at the same rate.'
+  [SELECTED(rank 8)] scores=['0.618', '0.595']  "This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxabl"
+  [SELECTED(rank 6)] scores=['0.602', '0.617']  'The policy may not be assigned without trustee authorization.'
+  [               -] scores=['0.609', '0.521']  'policy (Insurance contract)'
+  [               -] scores=['0.449', '0.609']  'Premiums are payable annually on August 20th.'
+  [               -] scores=['0.601', '0.574']  'The policy operates on a survivorship basis.'
+  [               -] scores=['0.599', '0.518']  'This policy insures two lives.'
+  [               -] scores=['0.534', '0.598']  'Premium waiver is not available on joint survivorship policies.'
+  [               -] scores=['0.592', '0.543']  'estate planning life assurance ltd. (Insurance company)'
+  [               -] scores=['0.590', '0.491']  'The issue date of the policy is August 20, 2024.'
+  [               -] scores=['0.546', '0.584']  'The annual premium for the policy is $32,400.'
+  [               -] scores=['0.584', '0.543']  'The purpose of this policy is estate planning.'
+  [               -] scores=['0.584', '0.584']  'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance Trust.'
+  [               -] scores=['0.568', '0.572']  'The Trust has the right to assign the policy.'
+  [               -] scores=['0.571', '0.551']  "After the first insured's death, the policy continues in force."
+  [               -] scores=['0.569', '0.535']  'The second insured is Elizabeth Anne Hartford.'
+
+--- TRAVERSAL (158 hop decisions, 9 dead ends) ---
+
+  depth=0 goal_indices=[0] from: 'The policy was issued by Estate Planning Life Assurance Ltd.'
+    [KEEP] (fact_fact, 'IS_BASED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.492']
+    [KEEP] (fact_fact, 'IS_REPRESENTED_BY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.488']
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.234']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.668']
+
+  depth=0 goal_indices=[0] from: 'The policy is issued by Estate Planning Life Assurance Ltd.'
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.234']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.652']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.602']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.537']
+    [KEEP] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.537']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.677']
+
+  depth=0 goal_indices=[0] from: 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'
+    [KEEP] (fact_fact, 'PAYS') -> 'The annual premium for the policy is $32,400.'  scores=['0.543']
+    [KEEP] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.138']
+    [KEEP] (fact_fact, 'FINANCES_POLICY') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.655']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy is designed for estate planning purposes.'  scores=['0.584']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.519']
+
+  depth=0 goal_indices=[0] from: 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'
+    [KEEP] (fact_fact, 'OWNS') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.603']
+    [KEEP] (fact_fact, 'IS_ESTABLISHED_BEFORE') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.518']
+    [drop] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.138']
+    [KEEP] (fact_fact, 'IS_OWNER_OF') -> 'The policy owner is the Trust.'  scores=['0.624']
+    [KEEP] (fact_fact, 'SUPPORTS_TAX_PLANNING') -> 'This policy is owned by an irrevocable trust to exclude proceeds from the insure'  scores=['0.623']
+    [drop] (fact_fact, 'HAS_TRUSTEE') -> 'The trustee of The Hartford Family Irrevocable Life Insurance Trust is First Nat'  scores=['0.509']
+    [KEEP] (fact_fact, 'PAYS_PREMIUMS') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.603']
+    [KEEP] (fact_fact, 'AUTHORIZED_BY') -> 'The Trust has the right to surrender the policy.'  scores=['0.536']
+
+  depth=0 goal_indices=[0] from: 'The policy is a joint survivorship life insurance policy.'
+    [KEEP] (fact_fact, 'OPERATES_AS') -> 'The policy operates on a survivorship basis.'  scores=['0.599']
+    [KEEP] (fact_fact, 'INVOLVES') -> 'This policy insures two lives.'  scores=['0.580']
+    [drop] (fact_fact, 'RESULTS_IN') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.529']
+    [drop] (fact_fact, 'REQUIRES') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.512']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.617']
+    [drop] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.234']
+    [drop] (fact_entity, 'has ') -> 'william alexander hartford (First insured)'  scores=['0.120']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.121']
+    [drop] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.138']
+    [drop] (fact_entity, 'has ') -> 'first national bank of connecticut (Trustee)'  scores=['0.151']
+    [KEEP] (fact_fact, 'IS_A') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.640']
+    [KEEP] (fact_fact, 'IS_CLASSIFIED_AS') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.605']
+    [drop] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.522']
+    [drop] (fact_fact, 'IS_SUPPORTED_BY') -> 'There are no war exclusions applicable to this policy.'  scores=['0.508']
+    [drop] (fact_fact, 'IS_PART_OF') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.487']
+    [drop] (fact_fact, 'HAS_TERM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.503']
+    [drop] (fact_fact, 'ENABLES') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.573']
+    [drop] (fact_fact, 'DEPENDS_ON') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.509']
+    [drop] (fact_fact, 'HAS_CONDITION') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.499']
+    [drop] (fact_fact, 'ALLOWS') -> 'Policy loans are available before or after the first death.'  scores=['0.542']
+    [drop] (fact_fact, 'HAS_PROJECTION') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.364']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate on policy loans is variable.'  scores=['0.555']
+    [KEEP] (fact_fact, 'IS_DESIGNED_FOR') -> 'This policy is designed for estate tax liquidity purposes.'  scores=['0.579']
+    [drop] (fact_fact, 'HAS_TERM') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.507']
+    [drop] (fact_fact, 'HAS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.550']
+    ... +11 more candidates not shown
+
+  depth=0 goal_indices=[0] from: 'The policy owner is the Trust.'
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.474']
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to change beneficiaries.'  scores=['0.435']
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.567']
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to take policy loans.'  scores=['0.536']
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to surrender the policy.'  scores=['0.530']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.560']
+    [drop] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.151']
+    [drop] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'IDENTIFIES_OWNER') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.649']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.552']
+    [KEEP] (fact_fact, 'RESTRICTS') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.596']
+
+  depth=0 goal_indices=[0] from: 'The policy may not be assigned without trustee authorization.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The Trust has the right to assign the policy.'  scores=['0.571']
+    [KEEP] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.151']
+    [drop] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'RESTRICTED_BY') -> 'The policy owner may cancel the policy within 30 days of policy receipt.'  scores=['0.510']
+    [KEEP] (fact_fact, 'RESTRICTED_BY') -> 'The Trust has the right to take policy loans.'  scores=['0.554']
+    [KEEP] (fact_fact, 'RESTRICTED_BY') -> 'The Trust has the right to surrender the policy.'  scores=['0.543']
+    [KEEP] (fact_fact, 'CONDITIONED_ON') -> 'The policy owner is the Trust.'  scores=['0.602']
+
+  depth=0 goal_indices=[0] from: 'The policy number is EPL-JSL-2024-1156.'
+    [drop] (fact_fact, 'CONTINUES_AFTER') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.563']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.680']
+    [KEEP] (fact_fact, 'CLASSIFIED_AS') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.656']
+    [KEEP] (fact_fact, 'FORM_TYPE') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.609']
+    [KEEP] (fact_fact, 'INSURES_TWO') -> 'This policy insures two lives.'  scores=['0.610']
+    [KEEP] (fact_fact, 'FIRST_INSURED') -> 'The first insured is William Alexander Hartford.'  scores=['0.601']
+    [KEEP] (fact_fact, 'SECOND_INSURED') -> 'The second insured is Elizabeth Anne Hartford.'  scores=['0.615']
+    [drop] (fact_fact, 'HAS_AGE') -> 'William Alexander Hartford is 67 years old.'  scores=['0.370']
+    [drop] (fact_fact, 'HAS_BIRTHDATE') -> 'William Alexander Hartford was born on December 5, 1956.'  scores=['0.299']
+    [drop] (fact_fact, 'HAS_BIRTHDATE') -> 'Elizabeth Anne Hartford was born on March 18, 1958.'  scores=['0.295']
+    [drop] (fact_fact, 'HAS_AGE') -> 'Elizabeth Anne Hartford is 66 years old.'  scores=['0.390']
+    [drop] (fact_fact, 'HAS_GENDER') -> 'Elizabeth Anne Hartford is female.'  scores=['0.384']
+    [drop] (fact_fact, 'HAS_RISK_CLASS') -> 'Elizabeth Anne Hartford is in the Preferred risk class.'  scores=['0.510']
+    [drop] (fact_fact, 'HAS_GENDER') -> 'William Alexander Hartford is male.'  scores=['0.369']
+    [drop] (fact_fact, 'HAS_RISK_CLASS') -> 'William Alexander Hartford is in the Standard risk class.'  scores=['0.493']
+
+  depth=0 goal_indices=[0] from: "This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxabl"
+    [KEEP] (fact_fact, 'ENABLES') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.510']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.531']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.411']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.405']
+    [drop] (fact_entity, 'has ') -> 'policy loans (Financial feature for policyholders)'  scores=['0.145']
+    [drop] (fact_entity, 'has ') -> 'irrevocable trust (Ownership structure for estate tax planning)'  scores=['0.138']
+    [drop] (fact_entity, 'has ') -> 'estate tax planning (Provision to exclude proceeds from taxable estates)'  scores=['0.125']
+    [KEEP] (fact_fact, 'ENABLES_EXCLUSION') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.627']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.529']
+
+  depth=0 goal_indices=[0] from: "After the first insured's death, the premium payment obligation continues."
+    [KEEP] (fact_fact, 'REQUIRES') -> "After the first insured's death, the policy continues in force."  scores=['0.579']
+    [KEEP] (fact_fact, 'IS_EXCLUDED_FROM') -> 'Premium waiver is not available on joint survivorship policies.'  scores=['0.541']
+    [drop] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.151']
+    [drop] (fact_entity, 'has ') -> 'policy (Insurance contract)'  scores=['0.156']
+    [drop] (fact_entity, 'has ') -> 'surviving insured (Remaining insured after first death)'  scores=['0.156']
+    [drop] (fact_entity, 'has ') -> 'annual premium (Fixed payment obligation)'  scores=['0.125']
+    [KEEP] (fact_fact, 'CONTINUES') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.497']
+    [KEEP] (fact_fact, 'IS_REGULATED_BY') -> 'Premiums are payable annually on August 20th.'  scores=['0.467']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Upon the first death, the policy owner may elect to split this policy into two s'  scores=['0.531']
+    [KEEP] (fact_fact, 'SUSTAINED_BY') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.516']
+
+  depth=1 goal_indices=[1] from: 'The policy is issued by Estate Planning Life Assurance Ltd.'
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.564']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.584']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.507']
+    [KEEP] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.465']
+
+  depth=1 goal_indices=[1] from: 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'
+    [KEEP] (fact_entity, 'has ') -> 'hartford, connecticut (Company location)'  scores=['0.159']
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.629']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.623']
+
+  depth=1 goal_indices=[1] from: 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. signed the d'
+    [KEEP] (fact_fact, 'SIGNING_DATE') -> 'The document was signed on August 20, 2024.'  scores=['0.426']
+    [KEEP] (fact_entity, 'has ') -> 'chairman & chief executive officer (Company executive)'  scores=['0.195']
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+
+  depth=1 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: LOCATED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.372']
+    [KEEP] (entity_fact, 'participates in: AUTHORIZED_BY_SIGNATORY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.435']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.586']
+
+  depth=1 goal_indices=[1] from: 'The policy was issued by Estate Planning Life Assurance Ltd.'
+    [KEEP] (fact_fact, 'IS_BASED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.449']
+    [KEEP] (fact_fact, 'IS_REPRESENTED_BY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.491']
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+
+  depth=1 goal_indices=[1] from: 'The policy number is EPL-JSL-2024-1156.'
+    [KEEP] (fact_fact, 'CONTINUES_AFTER') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.559']
+    [KEEP] (fact_fact, 'CLASSIFIED_AS') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.615']
+    [KEEP] (fact_fact, 'FORM_TYPE') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.556']
+    [KEEP] (fact_fact, 'INSURES_TWO') -> 'This policy insures two lives.'  scores=['0.543']
+    [KEEP] (fact_fact, 'FIRST_INSURED') -> 'The first insured is William Alexander Hartford.'  scores=['0.571']
+    [KEEP] (fact_fact, 'SECOND_INSURED') -> 'The second insured is Elizabeth Anne Hartford.'  scores=['0.577']
+    [drop] (fact_fact, 'HAS_AGE') -> 'William Alexander Hartford is 67 years old.'  scores=['0.398']
+    [drop] (fact_fact, 'HAS_BIRTHDATE') -> 'William Alexander Hartford was born on December 5, 1956.'  scores=['0.312']
+    [drop] (fact_fact, 'HAS_BIRTHDATE') -> 'Elizabeth Anne Hartford was born on March 18, 1958.'  scores=['0.310']
+    [drop] (fact_fact, 'HAS_AGE') -> 'Elizabeth Anne Hartford is 66 years old.'  scores=['0.395']
+    [drop] (fact_fact, 'HAS_GENDER') -> 'Elizabeth Anne Hartford is female.'  scores=['0.402']
+    [drop] (fact_fact, 'HAS_RISK_CLASS') -> 'Elizabeth Anne Hartford is in the Preferred risk class.'  scores=['0.497']
+    [drop] (fact_fact, 'HAS_GENDER') -> 'William Alexander Hartford is male.'  scores=['0.398']
+    [drop] (fact_fact, 'HAS_RISK_CLASS') -> 'William Alexander Hartford is in the Standard risk class.'  scores=['0.474']
+
+  depth=1 goal_indices=[1] from: 'The policy continues in force covering the surviving insured after the first insured dies.'
+    [KEEP] (fact_fact, 'IS_SUPPORTED_BY') -> 'The policy operates on a survivorship basis.'  scores=['0.579']
+    [KEEP] (fact_fact, 'IS_FOLLOWED_BY') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.546']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.535']
+    [KEEP] (fact_fact, 'RETAINS_CLASSIFICATION') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.603']
+    [KEEP] (fact_fact, 'RETAINS_FORM') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.545']
+    [KEEP] (fact_fact, 'RETAINS_COVERED_LIVES') -> 'This policy insures two lives.'  scores=['0.550']
+
+  depth=1 goal_indices=[1] from: 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'
+    [KEEP] (fact_entity, 'has ') -> 'hartford, connecticut (Company location)'  scores=['0.159']
+    [KEEP] (fact_fact, 'ISSUES_POLICY_IN') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.589']
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.623']
+
+  depth=1 goal_indices=[1] from: 'There are no aviation exclusions applicable to this policy.'
+    [KEEP] (fact_entity, 'has ') -> 'actuarial allocation (Method for determining new face amounts)'  scores=['0.166']
+    [KEEP] (fact_fact, 'HAS_PROVISIONS') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.582']
+    [KEEP] (fact_fact, 'IS_FORM_OF') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.525']
+    [KEEP] (fact_fact, 'IS_ONE_OF_TWO') -> 'This policy insures two lives.'  scores=['0.511']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'There are no travel exclusions applicable to this policy.'  scores=['0.451']
+
+  depth=1 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.583']
+    [KEEP] (entity_fact, 'participates in: LOCATED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.372']
+    [KEEP] (entity_fact, 'participates in: AUTHORIZED_BY_SIGNATORY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.435']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+
+  depth=1 goal_indices=[1] from: 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'
+    [KEEP] (fact_fact, 'OWNS') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.585']
+    [KEEP] (fact_fact, 'IS_ESTABLISHED_BEFORE') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.467']
+    [drop] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'IS_OWNER_OF') -> 'The policy owner is the Trust.'  scores=['0.646']
+    [KEEP] (fact_fact, 'SUPPORTS_TAX_PLANNING') -> 'This policy is owned by an irrevocable trust to exclude proceeds from the insure'  scores=['0.599']
+    [KEEP] (fact_fact, 'HAS_TRUSTEE') -> 'The trustee of The Hartford Family Irrevocable Life Insurance Trust is First Nat'  scores=['0.511']
+    [KEEP] (fact_fact, 'AUTHORIZED_BY') -> 'The Trust has the right to surrender the policy.'  scores=['0.526']
+
+  depth=1 goal_indices=[1] from: 'This policy is designed for estate planning purposes.'
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy is designed for estate tax liquidity purposes.'  scores=['0.538']
+    [drop] (fact_entity, 'has ') -> 'interest rate (Variable loan cost)'  scores=['0.120']
+    [KEEP] (fact_entity, 'has ') -> 'policy (Insurance contract)'  scores=['0.129']
+    [KEEP] (fact_fact, 'SUPPORTS_PURPOSE') -> 'The purpose of this policy is estate planning.'  scores=['0.541']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The annual premium for the policy is $32,400.'  scores=['0.565']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.416']
+    [KEEP] (fact_fact, 'CONTINUES') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.525']
+
+  depth=1 goal_indices=[1] from: 'The annual premium for the policy is $32,400.'
+    [KEEP] (fact_fact, 'HAS_GUARANTEE') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.530']
+    [KEEP] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy is designed for estate planning purposes.'  scores=['0.557']
+
+  depth=1 goal_indices=[1] from: 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'
+    [KEEP] (fact_entity, 'has ') -> 'hartford, connecticut (Company location)'  scores=['0.159']
+    [KEEP] (fact_fact, 'ISSUES_POLICY_IN') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.589']
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.629']
+
+  depth=1 goal_indices=[1] from: 'hartford family irrevocable life insurance trust (Beneficiary)'
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.598']
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.598']
+    [drop] (entity_fact, 'participates in: TRUST_DATED') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.373']
+    [KEEP] (entity_fact, 'participates in: PREMIUM_PAYOR') -> 'The annual premium for the policy is $32,400.'  scores=['0.579']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.518']
+    [KEEP] (entity_fact, 'participates in: RECEIVER_OF_BENEFIT') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: NOT_APPLICABLE') -> 'The policy operates on a survivorship basis.'  scores=['0.524']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_ESTATE_PLANNING') -> 'The purpose of this policy is estate planning.'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_TAX_LIQUIDITY') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.434']
+
+  depth=1 goal_indices=[1] from: 'The policy owner is the Trust.'
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.523']
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to change beneficiaries.'  scores=['0.480']
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.574']
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to take policy loans.'  scores=['0.514']
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to surrender the policy.'  scores=['0.524']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.546']
+    [drop] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.156']
+    [drop] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.524']
+    [KEEP] (fact_fact, 'RESTRICTS') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.595']
+
+  depth=1 goal_indices=[1] from: "This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxabl"
+    [KEEP] (fact_fact, 'ENABLES') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.496']
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.492']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.454']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.418']
+    [drop] (fact_entity, 'has ') -> 'policy loans (Financial feature for policyholders)'  scores=['0.139']
+    [KEEP] (fact_entity, 'has ') -> 'irrevocable trust (Ownership structure for estate tax planning)'  scores=['0.150']
+    [drop] (fact_entity, 'has ') -> 'estate tax planning (Provision to exclude proceeds from taxable estates)'  scores=['0.130']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.505']
+
+  depth=1 goal_indices=[1] from: 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance Trust.'
+    [KEEP] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'RECEIVES') -> 'The death benefit of the policy is $2,500,000.'  scores=['0.515']
+    [KEEP] (fact_fact, 'CLAIMED_BY') -> 'A death certificate of the second insured must be submitted as part of the claim'  scores=['0.536']
+
+  depth=1 goal_indices=[1] from: 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'
+    [KEEP] (fact_fact, 'PAYS') -> 'The annual premium for the policy is $32,400.'  scores=['0.610']
+    [KEEP] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy is designed for estate planning purposes.'  scores=['0.575']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.472']
+
+  depth=1 goal_indices=[1] from: 'The Trust has the right to surrender the policy.'
+    [KEEP] (fact_entity, 'has ') -> 'surrender (Action to terminate policy)'  scores=['0.181']
+    [KEEP] (fact_fact, 'IS_GRANTED_BY') -> 'The policy owner is the Trust.'  scores=['0.609']
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.590']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'The Trust has the right to take policy loans.'  scores=['0.512']
+
+  depth=1 goal_indices=[1] from: 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'
+    [KEEP] (fact_fact, 'IS_PRECEDED_BY') -> 'The issue date of the policy is August 20, 2024.'  scores=['0.507']
+    [KEEP] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'TRUSTED_BY') -> 'The trustee of The Hartford Family Irrevocable Life Insurance Trust is First Nat'  scores=['0.479']
+
+  depth=1 goal_indices=[1] from: 'The policy number is EPL-JSL-2024-1156.'
+    [KEEP] (fact_fact, 'CONTINUES_AFTER') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.559']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.649']
+    [KEEP] (fact_fact, 'FORM_TYPE') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.556']
+    [KEEP] (fact_fact, 'INSURES_TWO') -> 'This policy insures two lives.'  scores=['0.543']
+    [KEEP] (fact_fact, 'FIRST_INSURED') -> 'The first insured is William Alexander Hartford.'  scores=['0.571']
+    [KEEP] (fact_fact, 'SECOND_INSURED') -> 'The second insured is Elizabeth Anne Hartford.'  scores=['0.577']
+    [drop] (fact_fact, 'HAS_AGE') -> 'William Alexander Hartford is 67 years old.'  scores=['0.398']
+    [drop] (fact_fact, 'HAS_BIRTHDATE') -> 'William Alexander Hartford was born on December 5, 1956.'  scores=['0.312']
+    [drop] (fact_fact, 'HAS_BIRTHDATE') -> 'Elizabeth Anne Hartford was born on March 18, 1958.'  scores=['0.310']
+    [drop] (fact_fact, 'HAS_AGE') -> 'Elizabeth Anne Hartford is 66 years old.'  scores=['0.395']
+    [drop] (fact_fact, 'HAS_GENDER') -> 'Elizabeth Anne Hartford is female.'  scores=['0.402']
+    [drop] (fact_fact, 'HAS_RISK_CLASS') -> 'Elizabeth Anne Hartford is in the Preferred risk class.'  scores=['0.497']
+    [drop] (fact_fact, 'HAS_GENDER') -> 'William Alexander Hartford is male.'  scores=['0.398']
+    [drop] (fact_fact, 'HAS_RISK_CLASS') -> 'William Alexander Hartford is in the Standard risk class.'  scores=['0.474']
+
+  depth=1 goal_indices=[1] from: 'The policy form is Second-to-Die Whole Life.'
+    [KEEP] (fact_entity, 'has ') -> 'second-to-die whole life (Policy form)'  scores=['0.218']
+    [KEEP] (fact_fact, 'HAS_FORM') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.525']
+    [KEEP] (fact_fact, 'HAS_FORM') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.553']
+    [KEEP] (fact_fact, 'HAS_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.460']
+    [KEEP] (fact_fact, 'IS_DEFINED_BY') -> 'The policy operates on a survivorship basis.'  scores=['0.578']
+    [KEEP] (fact_fact, 'RESULTS_IN') -> 'Upon the death of the second insured, $2,500,000 will be paid to the designated '  scores=['0.553']
+
+  depth=1 goal_indices=[1] from: 'The policy continues in force covering the surviving insured after the first insured dies.'
+    [KEEP] (fact_fact, 'IS_SUPPORTED_BY') -> 'The policy operates on a survivorship basis.'  scores=['0.579']
+    [KEEP] (fact_fact, 'IS_FOLLOWED_BY') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.546']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.535']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.633']
+    [KEEP] (fact_fact, 'RETAINS_FORM') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.545']
+    [KEEP] (fact_fact, 'RETAINS_COVERED_LIVES') -> 'This policy insures two lives.'  scores=['0.550']
+
+  depth=1 goal_indices=[1] from: 'The policy operates on a survivorship basis.'
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.564']
+    [KEEP] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'REQUIRES_TRUST_OWNERSHIP') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.562']
+    [KEEP] (fact_fact, 'DEFINES') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.553']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.514']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The purpose of this policy is estate planning.'  scores=['0.545']
+
+  depth=1 goal_indices=[1] from: 'This policy insures two lives.'
+    [KEEP] (fact_entity, 'has ') -> 'william alexander hartford (First insured)'  scores=['0.111']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [KEEP] (fact_fact, 'IS_ONE_OF_TWO') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.532']
+    [KEEP] (fact_fact, 'IS_ONE_OF_TWO') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.568']
+    [KEEP] (fact_fact, 'HAS_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.466']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The issue date of the policy is August 20, 2024.'  scores=['0.506']
+    [KEEP] (fact_fact, 'COORDINATES_WITH') -> 'Premiums are payable annually on August 20th.'  scores=['0.582']
+
+  depth=1 goal_indices=[1] from: 'This policy is designed for estate tax liquidity purposes.'
+    [KEEP] (fact_fact, 'IS_FOR') -> 'This policy is designed for estate planning purposes.'  scores=['0.570']
+    [KEEP] (fact_entity, 'has ') -> 'interest rate (Variable loan cost)'  scores=['0.120']
+    [KEEP] (fact_entity, 'has ') -> 'policy (Insurance contract)'  scores=['0.129']
+
+  depth=1 goal_indices=[1] from: 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'
+    [KEEP] (fact_fact, 'OWNS') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.585']
+    [KEEP] (fact_fact, 'IS_ESTABLISHED_BEFORE') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.467']
+    [drop] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'SUPPORTS_TAX_PLANNING') -> 'This policy is owned by an irrevocable trust to exclude proceeds from the insure'  scores=['0.599']
+    [KEEP] (fact_fact, 'HAS_TRUSTEE') -> 'The trustee of The Hartford Family Irrevocable Life Insurance Trust is First Nat'  scores=['0.511']
+    [KEEP] (fact_fact, 'PAYS_PREMIUMS') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.714']
+    [KEEP] (fact_fact, 'AUTHORIZED_BY') -> 'The Trust has the right to surrender the policy.'  scores=['0.526']
+
+  depth=1 goal_indices=[1] from: 'The policy may not be assigned without trustee authorization.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The Trust has the right to assign the policy.'  scores=['0.583']
+    [KEEP] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.156']
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'RESTRICTED_BY') -> 'The policy owner may cancel the policy within 30 days of policy receipt.'  scores=['0.504']
+    [KEEP] (fact_fact, 'RESTRICTED_BY') -> 'The Trust has the right to take policy loans.'  scores=['0.524']
+    [KEEP] (fact_fact, 'RESTRICTED_BY') -> 'The Trust has the right to surrender the policy.'  scores=['0.526']
+
+  depth=1 goal_indices=[1] from: 'The Trust has the right to assign the policy.'
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.608']
+    [KEEP] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.156']
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'HAS_DISPOSITION_RIGHTS') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.513']
+    [KEEP] (fact_fact, 'IS_ASSIGNED_BY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.601']
+    [KEEP] (fact_fact, 'IS_CONTROLLED_BY') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.512']
+
+  depth=1 goal_indices=[1] from: 'Neither insured has ownership rights unless specified in the trust document.'
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_entity, 'has ') -> 'first insured (Initial policy participant)'  scores=['0.134']
+    [KEEP] (fact_fact, 'IS_BASED_ON_SURVIVORSHIP') -> 'The policy operates on a survivorship basis.'  scores=['0.580']
+    [KEEP] (fact_fact, 'IS_CONTROLLED_BY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.551']
+    [KEEP] (fact_fact, 'IS_SUBJECT_TO') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.484']
+
+  depth=1 goal_indices=[1] from: 'An estate planning attorney should be consulted regarding the three-year lookback rule if '
+    [KEEP] (fact_fact, 'IS_SUBJECT_TO') -> 'This policy is owned by an irrevocable trust to exclude proceeds from the insure'  scores=['0.575']
+    [KEEP] (fact_entity, 'has ') -> 'estate tax planning (Provision to exclude proceeds from taxable estates)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'three-year lookback rule (Tax rule affecting trust transfers)'  scores=['0.109']
+    [KEEP] (fact_entity, 'has ') -> 'crummey power (Requirement for annual exclusion gifts)'  scores=['0.118']
+    [KEEP] (fact_fact, 'AFFECTS') -> 'The current interest rate for policy loans is 5.5% per annum.'  scores=['0.441']
+
+  depth=1 goal_indices=[1] from: 'The Trust has the right to take policy loans.'
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_entity, 'has ') -> 'policy loans (Financial feature for policyholders)'  scores=['0.139']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.592']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'The Trust has the right to surrender the policy.'  scores=['0.516']
+    [KEEP] (fact_fact, 'IS_ALLOWED_BY') -> 'The maximum policy loan amount is 90% of the cash surrender value.'  scores=['0.491']
+    [KEEP] (fact_fact, 'IS_ALLOWED_BY') -> 'The maximum policy loan amount is 90% of the cash surrender value.'  scores=['0.492']
+
+  depth=1 goal_indices=[1] from: 'The policy owner is the Trust.'
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.523']
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to change beneficiaries.'  scores=['0.480']
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.574']
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to take policy loans.'  scores=['0.514']
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to surrender the policy.'  scores=['0.524']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.546']
+    [drop] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.156']
+    [drop] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'IDENTIFIES_OWNER') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.633']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.524']
+
+  depth=1 goal_indices=[1] from: 'The Trust has the right to assign the policy.'
+    [KEEP] (fact_fact, 'IS_GRANTED_BY') -> 'The policy owner is the Trust.'  scores=['0.622']
+    [KEEP] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.156']
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'HAS_DISPOSITION_RIGHTS') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.513']
+    [KEEP] (fact_fact, 'IS_ASSIGNED_BY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.601']
+    [KEEP] (fact_fact, 'IS_CONTROLLED_BY') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.512']
+
+  depth=1 goal_indices=[1] from: 'The Trust has the right to take policy loans.'
+    [KEEP] (fact_fact, 'IS_GRANTED_BY') -> 'The policy owner is the Trust.'  scores=['0.603']
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_entity, 'has ') -> 'policy loans (Financial feature for policyholders)'  scores=['0.139']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'The Trust has the right to surrender the policy.'  scores=['0.516']
+    [KEEP] (fact_fact, 'IS_ALLOWED_BY') -> 'The maximum policy loan amount is 90% of the cash surrender value.'  scores=['0.491']
+    [KEEP] (fact_fact, 'IS_ALLOWED_BY') -> 'The maximum policy loan amount is 90% of the cash surrender value.'  scores=['0.492']
+
+  depth=1 goal_indices=[1] from: 'The Trust has the right to surrender the policy.'
+    [KEEP] (fact_entity, 'has ') -> 'surrender (Action to terminate policy)'  scores=['0.181']
+    [KEEP] (fact_fact, 'IS_GRANTED_BY') -> 'The policy owner is the Trust.'  scores=['0.609']
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'COMPLIMENTS') -> 'The Trust has the right to take policy loans.'  scores=['0.512']
+    [KEEP] (fact_fact, 'HAS_RIGHT_TO') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.557']
+
+  depth=1 goal_indices=[1] from: 'The policy owner may cancel the policy within 30 days of policy receipt.'
+    [KEEP] (fact_fact, 'ENTAILS') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.519']
+    [KEEP] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.156']
+    [KEEP] (fact_entity, 'has ') -> 'free look period (30-day cancellation window)'  scores=['0.151']
+
+  depth=1 goal_indices=[1] from: 'policy owner (Administrator of policy)'
+    [KEEP] (entity_fact, 'participates in: IS_TRUST') -> 'The policy owner is the Trust.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Trust has the right to assign the policy.'  scores=['0.494']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policy owner may cancel the policy within 30 days of policy receipt.'  scores=['0.419']
+    [drop] (entity_fact, 'participates in: SUBMITS_CLAIM_FORMS') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.400']
+    [KEEP] (entity_fact, 'participates in: MAINTAINS_POLICY_HOLDING') -> "After the first insured's death, the policy continues in force."  scores=['0.523']
+    [KEEP] (entity_fact, 'participates in: MANAGES_PREMIUM_OBLIGATION') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.608']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_WRITTEN_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.481']
+    [KEEP] (entity_fact, 'participates in: SUBMITS_DEATH_CERTIFICATE') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.428']
+    [drop] (entity_fact, 'participates in: ') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.250']
+
+  depth=1 goal_indices=[1] from: 'The policy is issued by Estate Planning Life Assurance Ltd.'
+    [KEEP] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.584']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.507']
+    [KEEP] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.465']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.599']
+
+  depth=1 goal_indices=[1] from: 'The policy is a joint survivorship life insurance policy.'
+    [KEEP] (fact_fact, 'OPERATES_AS') -> 'The policy operates on a survivorship basis.'  scores=['0.574']
+    [drop] (fact_fact, 'INVOLVES') -> 'This policy insures two lives.'  scores=['0.513']
+    [KEEP] (fact_fact, 'RESULTS_IN') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.562']
+    [drop] (fact_fact, 'REQUIRES') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.553']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.559']
+    [drop] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+    [drop] (fact_entity, 'has ') -> 'william alexander hartford (First insured)'  scores=['0.111']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [drop] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [drop] (fact_entity, 'has ') -> 'first national bank of connecticut (Trustee)'  scores=['0.164']
+    [KEEP] (fact_fact, 'IS_CLASSIFIED_AS') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.586']
+    [drop] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.464']
+    [drop] (fact_fact, 'IS_SUPPORTED_BY') -> 'There are no war exclusions applicable to this policy.'  scores=['0.447']
+    [drop] (fact_fact, 'IS_PART_OF') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.511']
+    [drop] (fact_fact, 'HAS_TERM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.521']
+    [drop] (fact_fact, 'ENABLES') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.529']
+    [drop] (fact_fact, 'DEPENDS_ON') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.500']
+    [drop] (fact_fact, 'HAS_CONDITION') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.541']
+    [drop] (fact_fact, 'ALLOWS') -> 'Policy loans are available before or after the first death.'  scores=['0.536']
+    [drop] (fact_fact, 'HAS_PROJECTION') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.367']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate on policy loans is variable.'  scores=['0.518']
+    [KEEP] (fact_fact, 'IS_DESIGNED_FOR') -> 'This policy is designed for estate tax liquidity purposes.'  scores=['0.555']
+    [KEEP] (fact_fact, 'HAS_TERM') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.596']
+    [drop] (fact_fact, 'HAS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.546']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate for policy loans is variable.'  scores=['0.520']
+    ... +10 more candidates not shown
+
+  depth=1 goal_indices=[1] from: 'The second insured is Elizabeth Anne Hartford.'
+    [KEEP] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [KEEP] (fact_fact, 'SECOND_TO_FIRST') -> 'The first insured is William Alexander Hartford.'  scores=['0.534']
+    [KEEP] (fact_fact, 'PART_OF') -> 'Upon the first death, the policy owner may elect to split this policy into two s'  scores=['0.536']
+
+  depth=1 goal_indices=[1] from: 'This policy insures two lives.'
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.589']
+    [KEEP] (fact_entity, 'has ') -> 'william alexander hartford (First insured)'  scores=['0.111']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [KEEP] (fact_fact, 'IS_ONE_OF_TWO') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.568']
+    [KEEP] (fact_fact, 'HAS_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.466']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The issue date of the policy is August 20, 2024.'  scores=['0.506']
+    [KEEP] (fact_fact, 'COORDINATES_WITH') -> 'Premiums are payable annually on August 20th.'  scores=['0.582']
+
+  depth=1 goal_indices=[1] from: 'The policy form is Second-to-Die Whole Life.'
+    [KEEP] (fact_entity, 'has ') -> 'second-to-die whole life (Policy form)'  scores=['0.218']
+    [KEEP] (fact_fact, 'HAS_FORM') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.591']
+    [KEEP] (fact_fact, 'HAS_FORM') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.553']
+    [KEEP] (fact_fact, 'HAS_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.460']
+    [KEEP] (fact_fact, 'IS_DEFINED_BY') -> 'The policy operates on a survivorship basis.'  scores=['0.578']
+    [KEEP] (fact_fact, 'RESULTS_IN') -> 'Upon the death of the second insured, $2,500,000 will be paid to the designated '  scores=['0.553']
+
+  depth=1 goal_indices=[1] from: 'The first insured is William Alexander Hartford.'
+    [KEEP] (fact_entity, 'has ') -> 'william alexander hartford (First insured)'  scores=['0.111']
+    [KEEP] (fact_fact, 'FIRST_TO_SECOND') -> 'The second insured is Elizabeth Anne Hartford.'  scores=['0.543']
+
+  depth=1 goal_indices=[1] from: 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'
+    [KEEP] (fact_fact, 'OWNS') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.585']
+    [KEEP] (fact_fact, 'IS_ESTABLISHED_BEFORE') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.467']
+    [drop] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'IS_OWNER_OF') -> 'The policy owner is the Trust.'  scores=['0.646']
+    [KEEP] (fact_fact, 'HAS_TRUSTEE') -> 'The trustee of The Hartford Family Irrevocable Life Insurance Trust is First Nat'  scores=['0.511']
+    [KEEP] (fact_fact, 'PAYS_PREMIUMS') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.714']
+    [KEEP] (fact_fact, 'AUTHORIZED_BY') -> 'The Trust has the right to surrender the policy.'  scores=['0.526']
+
+  depth=1 goal_indices=[1] from: 'An estate planning attorney should be consulted regarding the three-year lookback rule if '
+    [KEEP] (fact_entity, 'has ') -> 'estate tax planning (Provision to exclude proceeds from taxable estates)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'three-year lookback rule (Tax rule affecting trust transfers)'  scores=['0.109']
+    [KEEP] (fact_entity, 'has ') -> 'crummey power (Requirement for annual exclusion gifts)'  scores=['0.118']
+    [KEEP] (fact_fact, 'INFORMS') -> 'The policy owner is the Trust.'  scores=['0.597']
+    [KEEP] (fact_fact, 'AFFECTS') -> 'The current interest rate for policy loans is 5.5% per annum.'  scores=['0.441']
+
+  depth=1 goal_indices=[1] from: 'The purpose of this policy includes estate tax liquidity.'
+    [KEEP] (fact_fact, 'HAS_PURPOSE') -> 'The purpose of this policy is estate planning.'  scores=['0.550']
+    [KEEP] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [KEEP] (fact_fact, 'IS_SUPPORTED_BY') -> 'The policy operates on a survivorship basis.'  scores=['0.576']
+
+  depth=1 goal_indices=[1] from: "Proceeds paid to the trust should not be includable in either insured's estate if the trus"
+    [KEEP] (fact_entity, 'has ') -> 'irrevocable trust (Ownership structure for estate tax planning)'  scores=['0.150']
+    [KEEP] (fact_entity, 'has ') -> 'estate tax planning (Provision to exclude proceeds from taxable estates)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'three-year lookback rule (Tax rule affecting trust transfers)'  scores=['0.109']
+
+  depth=1 goal_indices=[1] from: 'An estate planning attorney should be consulted regarding Crummey power requirements.'
+    [KEEP] (fact_entity, 'has ') -> 'estate tax planning (Provision to exclude proceeds from taxable estates)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'three-year lookback rule (Tax rule affecting trust transfers)'  scores=['0.109']
+    [KEEP] (fact_entity, 'has ') -> 'crummey power (Requirement for annual exclusion gifts)'  scores=['0.118']
+
+  depth=1 goal_indices=[1] from: 'An estate planning attorney should be consulted regarding annual exclusion gift planning.'
+    [KEEP] (fact_entity, 'has ') -> 'actuarial allocation (Method for determining new face amounts)'  scores=['0.166']
+    [KEEP] (fact_entity, 'has ') -> 'estate tax planning (Provision to exclude proceeds from taxable estates)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'crummey power (Requirement for annual exclusion gifts)'  scores=['0.118']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy is designed for estate planning purposes.'  scores=['0.531']
+
+  depth=1 goal_indices=[1] from: "After the first insured's death, the policy continues in force."
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.529']
+    [KEEP] (fact_fact, 'LEADS_TO') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.556']
+    [drop] (fact_fact, 'REQUIRES') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.507']
+    [drop] (fact_fact, 'TRANSFORMS') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.525']
+    [KEEP] (fact_fact, 'MAINTAINS') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.539']
+    [KEEP] (fact_fact, 'MAINTAINS') -> "After the first insured's death, the premium remains unchanged."  scores=['0.582']
+    [KEEP] (fact_fact, 'IS_DELAYED_BY') -> 'If a premium payment is not received, there is a 60-day grace period before the '  scores=['0.535']
+    [drop] (fact_entity, 'has ') -> 'policy owner (Administrator of policy)'  scores=['0.156']
+    [drop] (fact_entity, 'has ') -> 'policy (Insurance contract)'  scores=['0.129']
+    [drop] (fact_entity, 'has ') -> 'surviving insured (Remaining insured after first death)'  scores=['0.126']
+    [drop] (fact_entity, 'has ') -> 'first insured (Initial policy participant)'  scores=['0.134']
+    [drop] (fact_fact, 'AFFECTS') -> 'The suicide clause resets if the policy is reinstated.'  scores=['0.492']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy accumulates cash value on a guaranteed schedule.'  scores=['0.546']
+
+  depth=1 goal_indices=[1] from: 'Premium waiver is not available on joint survivorship policies.'
+    [KEEP] (fact_entity, 'has ') -> 'surviving insured (Remaining insured after first death)'  scores=['0.126']
+    [KEEP] (fact_entity, 'has ') -> 'annual premium (Fixed payment obligation)'  scores=['0.173']
+    [KEEP] (fact_fact, 'EXPLAINS') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.559']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'Upon the death of the second insured, $2,500,000 will be paid to the designated '  scores=['0.534']
+
+  depth=1 goal_indices=[1] from: 'Upon the first death, the policy owner may elect to split this policy into two separate si'
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'Policy loans are available before or after the first death.'  scores=['0.552']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Partial withdrawals are not permitted under this policy type.'  scores=['0.522']
+    [drop] (fact_fact, 'HAS_DEADLINE') -> 'The election to split the policy must be made within 2 years of the first death.'  scores=['0.407']
+    [KEEP] (fact_fact, 'DETERMINES') -> "Each policy's face amount after the split is determined by actuarial allocation."  scores=['0.581']
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'Both insureds must be alive at the time of the first death for the split option '  scores=['0.537']
+    [drop] (fact_fact, 'EXTENDS_TO') -> 'The split option is available in rare simultaneous death situations with medical'  scores=['0.415']
+    [drop] (fact_fact, 'REQUIRES') -> 'Evidence of insurability may be required to exercise the split option.'  scores=['0.515']
+    [drop] (fact_fact, 'HAS_LOW_USAGE') -> 'The split option is rarely exercised.'  scores=['0.357']
+    [drop] (fact_fact, 'USED_FOR') -> 'The split option primarily exists for divorce or trust modification situations.'  scores=['0.452']
+    [drop] (fact_entity, 'has ') -> 'first death (Trigger event for split option)'  scores=['0.084']
+    [drop] (fact_entity, 'has ') -> 'split option (Provision to divide policy into two single-life policies)'  scores=['0.093']
+    [KEEP] (fact_fact, 'ENABLES') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.539']
+    [drop] (fact_fact, 'SUPPORTS') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.512']
+    [KEEP] (fact_fact, 'MAINTAINS') -> "After the first insured's death, the premium remains unchanged."  scores=['0.558']
+    [drop] (fact_fact, 'INVOLVED_IN') -> 'The second insured is Elizabeth Anne Hartford.'  scores=['0.518']
+
+  depth=1 goal_indices=[1] from: 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'
+    [KEEP] (fact_fact, 'PRECEDES') -> 'After year 10, the premium may increase.'  scores=['0.460']
+    [drop] (fact_entity, 'has ') -> 'policy (Insurance contract)'  scores=['0.129']
+    [KEEP] (fact_entity, 'has ') -> 'annual premium (Fixed payment obligation)'  scores=['0.173']
+    [KEEP] (fact_entity, 'has ') -> 'premium guarantee period (10-year fixed premium term)'  scores=['0.234']
+    [KEEP] (fact_entity, 'has ') -> 'first insured (Initial policy participant)'  scores=['0.134']
+    [KEEP] (fact_fact, 'IS_EXPLAINED_BY') -> 'Premium waiver is not available on joint survivorship policies.'  scores=['0.596']
+    [KEEP] (fact_fact, 'LIMITS') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.482']
+
+  depth=1 goal_indices=[1] from: 'Premiums continue to be paid after the first death at the same rate.'
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'Premiums are payable annually on August 20th.'  scores=['0.574']
+    [drop] (fact_entity, 'has ') -> 'surviving insured (Remaining insured after first death)'  scores=['0.126']
+    [KEEP] (fact_entity, 'has ') -> 'premium guarantee period (10-year fixed premium term)'  scores=['0.234']
+    [drop] (fact_entity, 'has ') -> 'maximum guaranteed premium (Upper limit after Year 10)'  scores=['0.165']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> "After the first insured's death, the premium remains unchanged."  scores=['0.600']
+    [KEEP] (fact_fact, 'IS_SUBJECT_TO') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.609']
+    [KEEP] (fact_fact, 'HAS_CONDITION') -> 'After year 10, the premium may increase.'  scores=['0.435']
+    [KEEP] (fact_fact, 'HAS_CAP') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.466']
+
+  depth=1 goal_indices=[1] from: 'Premiums are payable annually on August 20th.'
+    [KEEP] (fact_fact, 'REGULATES') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.583']
+    [KEEP] (fact_entity, 'has ') -> 'annual premium (Fixed payment obligation)'  scores=['0.173']
+    [KEEP] (fact_entity, 'has ') -> 'august 20th (Annual premium due date)'  scores=['0.184']
+    [KEEP] (fact_fact, 'COORDINATES_WITH') -> 'This policy insures two lives.'  scores=['0.535']
+    [KEEP] (fact_fact, 'HAS_GRACE_PERIOD') -> 'If a premium payment is not received, there is a 60-day grace period before the '  scores=['0.544']
+
+  depth=2 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: LOCATED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.372']
+    [KEEP] (entity_fact, 'participates in: AUTHORIZED_BY_SIGNATORY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.435']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+
+  depth=2 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: AUTHORIZED_BY_SIGNATORY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.435']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.586']
+
+  depth=2 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: LOCATED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.372']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.586']
+
+  depth=2 goal_indices=[1] from: 'chairman & chief executive officer (Company executive)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'If deaths occur within 30 days of each other, this will be treated as simultaneo'  scores=['0.368']
+
+  depth=2 goal_indices=[1] from: 'The policy is issued by Estate Planning Life Assurance Ltd.'
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.564']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.584']
+    [KEEP] (fact_fact, 'ISSUED_BY') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.507']
+    [KEEP] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.465']
+
+  depth=2 goal_indices=[1] from: 'The policy is a joint survivorship life insurance policy.'
+    [KEEP] (fact_fact, 'OPERATES_AS') -> 'The policy operates on a survivorship basis.'  scores=['0.574']
+    [drop] (fact_fact, 'INVOLVES') -> 'This policy insures two lives.'  scores=['0.513']
+    [KEEP] (fact_fact, 'RESULTS_IN') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.562']
+    [drop] (fact_fact, 'REQUIRES') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.553']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.559']
+    [drop] (fact_entity, 'has ') -> 'william alexander hartford (First insured)'  scores=['0.111']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [drop] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [drop] (fact_entity, 'has ') -> 'first national bank of connecticut (Trustee)'  scores=['0.164']
+    [drop] (fact_fact, 'IS_A') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.546']
+    [KEEP] (fact_fact, 'IS_CLASSIFIED_AS') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.586']
+    [drop] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.464']
+    [drop] (fact_fact, 'IS_SUPPORTED_BY') -> 'There are no war exclusions applicable to this policy.'  scores=['0.447']
+    [drop] (fact_fact, 'IS_PART_OF') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.511']
+    [drop] (fact_fact, 'HAS_TERM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.521']
+    [drop] (fact_fact, 'ENABLES') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.529']
+    [drop] (fact_fact, 'DEPENDS_ON') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.500']
+    [drop] (fact_fact, 'HAS_CONDITION') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.541']
+    [drop] (fact_fact, 'ALLOWS') -> 'Policy loans are available before or after the first death.'  scores=['0.536']
+    [drop] (fact_fact, 'HAS_PROJECTION') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.367']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate on policy loans is variable.'  scores=['0.518']
+    [KEEP] (fact_fact, 'IS_DESIGNED_FOR') -> 'This policy is designed for estate tax liquidity purposes.'  scores=['0.555']
+    [KEEP] (fact_fact, 'HAS_TERM') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.596']
+    [drop] (fact_fact, 'HAS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.546']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate for policy loans is variable.'  scores=['0.520']
+    ... +10 more candidates not shown
+
+  depth=2 goal_indices=[1] from: 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. signed the d'
+    [KEEP] (fact_fact, 'SIGNING_DATE') -> 'The document was signed on August 20, 2024.'  scores=['0.426']
+    [KEEP] (fact_entity, 'has ') -> 'chairman & chief executive officer (Company executive)'  scores=['0.195']
+
+  depth=2 goal_indices=[1] from: 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'
+    [KEEP] (fact_entity, 'has ') -> 'hartford, connecticut (Company location)'  scores=['0.159']
+    [KEEP] (fact_fact, 'ISSUING_ENTITY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.629']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.623']
+
+  depth=2 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: LOCATED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.372']
+    [KEEP] (entity_fact, 'participates in: AUTHORIZED_BY_SIGNATORY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.435']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+
+  depth=2 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.583']
+    [KEEP] (entity_fact, 'participates in: AUTHORIZED_BY_SIGNATORY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.435']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+
+  depth=2 goal_indices=[1] from: 'actuarial allocation (Method for determining new face amounts)'
+    [KEEP] (entity_fact, 'participates in: SETS_FACE_AMOUNT') -> "Each policy's face amount after the split is determined by actuarial allocation."  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.314']
+
+  depth=2 goal_indices=[1] from: 'The policy was issued by Estate Planning Life Assurance Ltd.'
+    [KEEP] (fact_fact, 'IS_BASED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.449']
+    [KEEP] (fact_fact, 'IS_REPRESENTED_BY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.491']
+
+  depth=2 goal_indices=[1] from: 'The policy is a joint survivorship life insurance policy.'
+    [KEEP] (fact_fact, 'OPERATES_AS') -> 'The policy operates on a survivorship basis.'  scores=['0.574']
+    [drop] (fact_fact, 'INVOLVES') -> 'This policy insures two lives.'  scores=['0.513']
+    [KEEP] (fact_fact, 'RESULTS_IN') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.562']
+    [drop] (fact_fact, 'REQUIRES') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.553']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.559']
+    [drop] (fact_entity, 'has ') -> 'william alexander hartford (First insured)'  scores=['0.111']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [drop] (fact_entity, 'has ') -> 'hartford family irrevocable life insurance trust (Beneficiary)'  scores=['0.139']
+    [drop] (fact_entity, 'has ') -> 'first national bank of connecticut (Trustee)'  scores=['0.164']
+    [drop] (fact_fact, 'IS_A') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.546']
+    [KEEP] (fact_fact, 'IS_CLASSIFIED_AS') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.586']
+    [drop] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.464']
+    [drop] (fact_fact, 'IS_SUPPORTED_BY') -> 'There are no war exclusions applicable to this policy.'  scores=['0.447']
+    [drop] (fact_fact, 'IS_PART_OF') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.511']
+    [drop] (fact_fact, 'HAS_TERM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.521']
+    [drop] (fact_fact, 'ENABLES') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.529']
+    [drop] (fact_fact, 'DEPENDS_ON') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.500']
+    [drop] (fact_fact, 'HAS_CONDITION') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.541']
+    [drop] (fact_fact, 'ALLOWS') -> 'Policy loans are available before or after the first death.'  scores=['0.536']
+    [drop] (fact_fact, 'HAS_PROJECTION') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.367']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate on policy loans is variable.'  scores=['0.518']
+    [KEEP] (fact_fact, 'IS_DESIGNED_FOR') -> 'This policy is designed for estate tax liquidity purposes.'  scores=['0.555']
+    [KEEP] (fact_fact, 'HAS_TERM') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.596']
+    [drop] (fact_fact, 'HAS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.546']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate for policy loans is variable.'  scores=['0.520']
+    ... +10 more candidates not shown
+
+  depth=2 goal_indices=[1] from: 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. signed the d'
+    [KEEP] (fact_fact, 'AUTHORIZES') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.575']
+    [KEEP] (fact_fact, 'SIGNING_DATE') -> 'The document was signed on August 20, 2024.'  scores=['0.426']
+    [KEEP] (fact_entity, 'has ') -> 'chairman & chief executive officer (Company executive)'  scores=['0.195']
+
+  depth=2 goal_indices=[1] from: 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'
+    [KEEP] (fact_entity, 'has ') -> 'hartford, connecticut (Company location)'  scores=['0.159']
+    [KEEP] (fact_fact, 'ISSUES_POLICY_IN') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.589']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.623']
+
+  depth=2 goal_indices=[1] from: 'policy (Insurance contract)'
+    [drop] (entity_fact, 'participates in: DESIGNED_FOR_TAX_LIQUIDITY') -> 'This policy is designed for estate tax liquidity purposes.'  scores=['0.474']
+    [KEEP] (entity_fact, 'participates in: PAYS_DEATH_BENEFIT') -> 'Upon the death of the second insured, $2,500,000 will be paid to the designated '  scores=['0.504']
+    [drop] (entity_fact, 'participates in: ADJUSTS_PAYOUT_FOR_DEBT') -> 'The death benefit payment to the designated beneficiary is reduced by any outsta'  scores=['0.451']
+    [drop] (entity_fact, 'participates in: REQUIRES_DOCUMENTATION') -> 'Proof of both deaths must be submitted to process a claim.'  scores=['0.369']
+    [drop] (entity_fact, 'participates in: REQUIRES_FIRST_DEATH_DOCUMENT') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.458']
+    [drop] (entity_fact, 'participates in: REQUIRES_SECOND_DEATH_DOCUMENT') -> 'A death certificate of the second insured must be submitted as part of the claim'  scores=['0.454']
+    [drop] (entity_fact, 'participates in: REQUIRES_COMPLETED_FORMS') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: PAYS_WITHIN_30_DAYS') -> 'Payment will be made within 30 days of receiving complete documentation.'  scores=['0.431']
+    [KEEP] (entity_fact, 'participates in: NO_PAYOUT_ON_FIRST_DEATH') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.476']
+    [drop] (entity_fact, 'participates in: CONTINUES_IN_FORCE') -> "After the first insured's death, the policy continues in force."  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_CONTINUED_PAYMENTS') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.624']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.500']
+    [drop] (entity_fact, 'participates in: RECONFIGURES_AFTER_FIRST_DEATH') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.452']
+    [drop] (entity_fact, 'participates in: MAINTAINS_COVERAGE') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: MAINTAINS_PREMIUM_RATE') -> "After the first insured's death, the premium remains unchanged."  scores=['0.527']
+    [KEEP] (entity_fact, 'participates in: HAS_GUARANTEED_PREMIUM') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.527']
+    [drop] (entity_fact, 'participates in: ALLOWED_PREMIUM_INCREASE') -> 'After year 10, the premium may increase.'  scores=['0.362']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_CAP') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.403']
+    [drop] (entity_fact, 'participates in: SUBJECT_TO_CANCELLATION') -> 'If a premium payment is not received, there is a 60-day grace period before the '  scores=['0.455']
+    [drop] (entity_fact, 'participates in: GENERATES_CASH_VALUE') -> 'This policy accumulates cash value on a guaranteed schedule.'  scores=['0.467']
+    [drop] (entity_fact, 'participates in: ELIGIBLE_FOR_LOAN') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.456']
+
+  depth=2 goal_indices=[1] from: 'hartford family irrevocable life insurance trust (Beneficiary)'
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.598']
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.598']
+    [drop] (entity_fact, 'participates in: TRUST_DATED') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.373']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.518']
+    [KEEP] (entity_fact, 'participates in: RECEIVER_OF_BENEFIT') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: NOT_APPLICABLE') -> 'The policy operates on a survivorship basis.'  scores=['0.524']
+    [KEEP] (entity_fact, 'participates in: PURPOSE_OF_ESTATE_PLANNING') -> 'The purpose of this policy is estate planning.'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_TAX_LIQUIDITY') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.434']
+
+  depth=2 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.583']
+    [KEEP] (entity_fact, 'participates in: AUTHORIZED_BY_SIGNATORY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.435']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is issued by Estate Planning Life Assurance Ltd.'  scores=['0.586']
+
+  depth=2 goal_indices=[1] from: 'The policy is a joint survivorship life insurance policy.'
+    [KEEP] (fact_fact, 'OPERATES_AS') -> 'The policy operates on a survivorship basis.'  scores=['0.574']
+    [drop] (fact_fact, 'INVOLVES') -> 'This policy insures two lives.'  scores=['0.513']
+    [KEEP] (fact_fact, 'RESULTS_IN') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.562']
+    [drop] (fact_fact, 'REQUIRES') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.553']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.559']
+    [drop] (fact_entity, 'has ') -> 'estate planning life assurance ltd. (Insurance company)'  scores=['0.208']
+    [drop] (fact_entity, 'has ') -> 'william alexander hartford (First insured)'  scores=['0.111']
+    [drop] (fact_entity, 'has ') -> 'elizabeth anne hartford (Second insured)'  scores=['0.109']
+    [drop] (fact_entity, 'has ') -> 'first national bank of connecticut (Trustee)'  scores=['0.164']
+    [drop] (fact_fact, 'IS_A') -> 'The policy number is EPL-JSL-2024-1156.'  scores=['0.546']
+    [KEEP] (fact_fact, 'IS_CLASSIFIED_AS') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.586']
+    [drop] (fact_fact, 'INCLUDES_PROVISIONS') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.464']
+    [drop] (fact_fact, 'IS_SUPPORTED_BY') -> 'There are no war exclusions applicable to this policy.'  scores=['0.447']
+    [drop] (fact_fact, 'IS_PART_OF') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.511']
+    [drop] (fact_fact, 'HAS_TERM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.521']
+    [drop] (fact_fact, 'ENABLES') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.529']
+    [drop] (fact_fact, 'DEPENDS_ON') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.500']
+    [drop] (fact_fact, 'HAS_CONDITION') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.541']
+    [drop] (fact_fact, 'ALLOWS') -> 'Policy loans are available before or after the first death.'  scores=['0.536']
+    [drop] (fact_fact, 'HAS_PROJECTION') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.367']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate on policy loans is variable.'  scores=['0.518']
+    [KEEP] (fact_fact, 'IS_DESIGNED_FOR') -> 'This policy is designed for estate tax liquidity purposes.'  scores=['0.555']
+    [KEEP] (fact_fact, 'HAS_TERM') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.596']
+    [drop] (fact_fact, 'HAS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.546']
+    [drop] (fact_fact, 'HAS_FEATURE') -> 'The interest rate for policy loans is variable.'  scores=['0.520']
+    ... +10 more candidates not shown
+
+  depth=2 goal_indices=[1] from: 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'
+    [KEEP] (fact_fact, 'OWNS') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.585']
+    [KEEP] (fact_fact, 'IS_ESTABLISHED_BEFORE') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.467']
+    [KEEP] (fact_fact, 'IS_OWNER_OF') -> 'The policy owner is the Trust.'  scores=['0.646']
+    [KEEP] (fact_fact, 'SUPPORTS_TAX_PLANNING') -> 'This policy is owned by an irrevocable trust to exclude proceeds from the insure'  scores=['0.599']
+    [KEEP] (fact_fact, 'HAS_TRUSTEE') -> 'The trustee of The Hartford Family Irrevocable Life Insurance Trust is First Nat'  scores=['0.511']
+    [KEEP] (fact_fact, 'AUTHORIZED_BY') -> 'The Trust has the right to surrender the policy.'  scores=['0.526']
+
+  depth=2 goal_indices=[1] from: 'The annual premium for the policy is $32,400.'
+    [KEEP] (fact_fact, 'HAS_GUARANTEE') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.530']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy is designed for estate planning purposes.'  scores=['0.557']
+
+  depth=2 goal_indices=[1] from: 'The policy operates on a survivorship basis.'
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.593']
+    [KEEP] (fact_fact, 'ENABLES') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.564']
+    [KEEP] (fact_fact, 'REQUIRES_TRUST_OWNERSHIP') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.562']
+    [KEEP] (fact_fact, 'DEFINES') -> 'The policy form is Second-to-Die Whole Life.'  scores=['0.553']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.514']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The purpose of this policy is estate planning.'  scores=['0.545']
+
+  depth=2 goal_indices=[1] from: 'The annual premium is guaranteed to remain level for 10 years.'
+    [KEEP] (fact_fact, 'IS_GUARANTEED_BY') -> 'The annual premium for the policy is $32,400.'  scores=['0.594']
+    [KEEP] (fact_fact, 'IS_SUPPORTED_BY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.596']
+    [KEEP] (fact_fact, 'ENABLES') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.375']
+
+  depth=2 goal_indices=[1] from: 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance Trust.'
+    [KEEP] (fact_fact, 'IS_BENEFICIARY_OF') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.621']
+    [KEEP] (fact_fact, 'RECEIVES') -> 'The death benefit of the policy is $2,500,000.'  scores=['0.515']
+    [KEEP] (fact_fact, 'CLAIMED_BY') -> 'A death certificate of the second insured must be submitted as part of the claim'  scores=['0.536']
+
+  depth=2 goal_indices=[1] from: 'irrevocable trust (Ownership structure for estate tax planning)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'There are no travel exclusions applicable to this policy.'  scores=['0.377']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_EXCLUSION') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.372']
+
+  depth=2 goal_indices=[1] from: 'hartford family irrevocable life insurance trust (Beneficiary)'
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.598']
+    [drop] (entity_fact, 'participates in: TRUST_DATED') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.373']
+    [KEEP] (entity_fact, 'participates in: PREMIUM_PAYOR') -> 'The annual premium for the policy is $32,400.'  scores=['0.579']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.518']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.680']
+    [KEEP] (entity_fact, 'participates in: NOT_APPLICABLE') -> 'The policy operates on a survivorship basis.'  scores=['0.524']
+    [KEEP] (entity_fact, 'participates in: PURPOSE_OF_ESTATE_PLANNING') -> 'The purpose of this policy is estate planning.'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_TAX_LIQUIDITY') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.434']
+
+  depth=2 goal_indices=[1] from: 'hartford family irrevocable life insurance trust (Beneficiary)'
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.598']
+    [drop] (entity_fact, 'participates in: TRUST_DATED') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.373']
+    [KEEP] (entity_fact, 'participates in: PREMIUM_PAYOR') -> 'The annual premium for the policy is $32,400.'  scores=['0.579']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.518']
+    [KEEP] (entity_fact, 'participates in: RECEIVER_OF_BENEFIT') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: NOT_APPLICABLE') -> 'The policy operates on a survivorship basis.'  scores=['0.524']
+    [KEEP] (entity_fact, 'participates in: PURPOSE_OF_ESTATE_PLANNING') -> 'The purpose of this policy is estate planning.'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_TAX_LIQUIDITY') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.434']
+
+  depth=2 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_OWNERSHIP_RIGHTS') -> 'The policy owner is the Trust.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_ASSIGN') -> 'The Trust has the right to assign the policy.'  scores=['0.496']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_TAKE_LOANS') -> 'The Trust has the right to take policy loans.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.531']
+
+  depth=2 goal_indices=[1] from: 'hartford family irrevocable life insurance trust (Beneficiary)'
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.598']
+    [KEEP] (entity_fact, 'participates in: PREMIUM_PAYOR') -> 'The annual premium for the policy is $32,400.'  scores=['0.579']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.518']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.680']
+    [KEEP] (entity_fact, 'participates in: RECEIVER_OF_BENEFIT') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: NOT_APPLICABLE') -> 'The policy operates on a survivorship basis.'  scores=['0.524']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_ESTATE_PLANNING') -> 'The purpose of this policy is estate planning.'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_TAX_LIQUIDITY') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.434']
+
+  depth=2 goal_indices=[1] from: 'hartford family irrevocable life insurance trust (Beneficiary)'
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.598']
+    [drop] (entity_fact, 'participates in: TRUST_DATED') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.373']
+    [KEEP] (entity_fact, 'participates in: PREMIUM_PAYOR') -> 'The annual premium for the policy is $32,400.'  scores=['0.579']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.518']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.680']
+    [KEEP] (entity_fact, 'participates in: RECEIVER_OF_BENEFIT') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: PURPOSE_OF_ESTATE_PLANNING') -> 'The purpose of this policy is estate planning.'  scores=['0.473']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_TAX_LIQUIDITY') -> 'The purpose of this policy includes estate tax liquidity.'  scores=['0.434']
+
+  depth=2 goal_indices=[1] from: 'william alexander hartford (First insured)'
+    [KEEP] (entity_fact, 'participates in: FIRST_INSURED') -> 'The first insured is William Alexander Hartford.'  scores=['0.511']
+    [drop] (entity_fact, 'participates in: BORN_ON') -> 'William Alexander Hartford was born on December 5, 1956.'  scores=['0.160']
+    [drop] (entity_fact, 'participates in: AGE') -> 'William Alexander Hartford is 67 years old.'  scores=['0.256']
+    [KEEP] (entity_fact, 'participates in: GENDER') -> 'William Alexander Hartford is male.'  scores=['0.306']
+    [KEEP] (entity_fact, 'participates in: RISK_CLASS_STANDARD') -> 'William Alexander Hartford is in the Standard risk class.'  scores=['0.364']
+    [KEEP] (entity_fact, 'participates in: SURVIVORSHIP_TRIGGER') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: FIRST_TO_DIE') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.450']
+    [KEEP] (entity_fact, 'participates in: FINAL_DEATH_EVENT') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.455']
+
+  depth=2 goal_indices=[1] from: 'policy (Insurance contract)'
+    [KEEP] (entity_fact, 'participates in: DESIGNED_FOR_ESTATE_PLANNING') -> 'This policy is designed for estate planning purposes.'  scores=['0.490']
+    [KEEP] (entity_fact, 'participates in: PAYS_DEATH_BENEFIT') -> 'Upon the death of the second insured, $2,500,000 will be paid to the designated '  scores=['0.504']
+    [drop] (entity_fact, 'participates in: ADJUSTS_PAYOUT_FOR_DEBT') -> 'The death benefit payment to the designated beneficiary is reduced by any outsta'  scores=['0.451']
+    [drop] (entity_fact, 'participates in: REQUIRES_DOCUMENTATION') -> 'Proof of both deaths must be submitted to process a claim.'  scores=['0.369']
+    [drop] (entity_fact, 'participates in: REQUIRES_FIRST_DEATH_DOCUMENT') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.458']
+    [drop] (entity_fact, 'participates in: REQUIRES_SECOND_DEATH_DOCUMENT') -> 'A death certificate of the second insured must be submitted as part of the claim'  scores=['0.454']
+    [drop] (entity_fact, 'participates in: REQUIRES_COMPLETED_FORMS') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: PAYS_WITHIN_30_DAYS') -> 'Payment will be made within 30 days of receiving complete documentation.'  scores=['0.431']
+    [drop] (entity_fact, 'participates in: NO_PAYOUT_ON_FIRST_DEATH') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.476']
+    [drop] (entity_fact, 'participates in: CONTINUES_IN_FORCE') -> "After the first insured's death, the policy continues in force."  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_CONTINUED_PAYMENTS') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.624']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.500']
+    [drop] (entity_fact, 'participates in: RECONFIGURES_AFTER_FIRST_DEATH') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.452']
+    [drop] (entity_fact, 'participates in: MAINTAINS_COVERAGE') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: MAINTAINS_PREMIUM_RATE') -> "After the first insured's death, the premium remains unchanged."  scores=['0.527']
+    [KEEP] (entity_fact, 'participates in: HAS_GUARANTEED_PREMIUM') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.527']
+    [drop] (entity_fact, 'participates in: ALLOWED_PREMIUM_INCREASE') -> 'After year 10, the premium may increase.'  scores=['0.362']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_CAP') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.403']
+    [drop] (entity_fact, 'participates in: SUBJECT_TO_CANCELLATION') -> 'If a premium payment is not received, there is a 60-day grace period before the '  scores=['0.455']
+    [drop] (entity_fact, 'participates in: GENERATES_CASH_VALUE') -> 'This policy accumulates cash value on a guaranteed schedule.'  scores=['0.467']
+    [drop] (entity_fact, 'participates in: ELIGIBLE_FOR_LOAN') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.456']
+
+  depth=2 goal_indices=[1] from: 'interest rate (Variable loan cost)'
+    [KEEP] (entity_fact, 'participates in: APPLIES_TO_LOANS') -> 'The interest rate for policy loans is variable.'  scores=['0.467']
+    [KEEP] (entity_fact, 'participates in: CURRENT_VALUE') -> 'The current interest rate for policy loans is 5.5% per annum.'  scores=['0.385']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy is designed for estate planning purposes.'  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: ') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.438']
+    [KEEP] (entity_fact, 'participates in: VARIABLE_RATE') -> 'The interest rate on policy loans is variable.'  scores=['0.455']
+    [KEEP] (entity_fact, 'participates in: CURRENT_RATE') -> 'The current interest rate on policy loans is 5.5% per annum.'  scores=['0.404']
+
+  depth=2 goal_indices=[1] from: 'policy owner (Administrator of policy)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Trust has the right to assign the policy.'  scores=['0.494']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policy owner may cancel the policy within 30 days of policy receipt.'  scores=['0.419']
+    [drop] (entity_fact, 'participates in: SUBMITS_CLAIM_FORMS') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.400']
+    [KEEP] (entity_fact, 'participates in: MAINTAINS_POLICY_HOLDING') -> "After the first insured's death, the policy continues in force."  scores=['0.523']
+    [KEEP] (entity_fact, 'participates in: MANAGES_PREMIUM_OBLIGATION') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.608']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_WRITTEN_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.481']
+    [KEEP] (entity_fact, 'participates in: SUBMITS_DEATH_CERTIFICATE') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.428']
+    [drop] (entity_fact, 'participates in: ') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.250']
+
+  depth=2 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_ASSIGN') -> 'The Trust has the right to assign the policy.'  scores=['0.496']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_TAKE_LOANS') -> 'The Trust has the right to take policy loans.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The Trust has the right to surrender the policy.'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.448']
+
+  depth=2 goal_indices=[1] from: 'policy owner (Administrator of policy)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.531']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policy owner may cancel the policy within 30 days of policy receipt.'  scores=['0.419']
+    [drop] (entity_fact, 'participates in: SUBMITS_CLAIM_FORMS') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.400']
+    [KEEP] (entity_fact, 'participates in: MAINTAINS_POLICY_HOLDING') -> "After the first insured's death, the policy continues in force."  scores=['0.523']
+    [KEEP] (entity_fact, 'participates in: MANAGES_PREMIUM_OBLIGATION') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.608']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_WRITTEN_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.481']
+    [KEEP] (entity_fact, 'participates in: SUBMITS_DEATH_CERTIFICATE') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.428']
+    [drop] (entity_fact, 'participates in: ') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.250']
+
+  depth=2 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_TAKE_LOANS') -> 'The Trust has the right to take policy loans.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The Trust has the right to surrender the policy.'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.531']
+
+  depth=2 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_ASSIGN') -> 'The Trust has the right to assign the policy.'  scores=['0.496']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_TAKE_LOANS') -> 'The Trust has the right to take policy loans.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The Trust has the right to surrender the policy.'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.531']
+
+  depth=2 goal_indices=[1] from: 'first insured (Initial policy participant)'
+    [drop] (entity_fact, 'participates in: DIED_IN_ACCIDENT') -> 'If both insureds die in the same accident or incident and it cannot be determine'  scores=['0.438']
+    [drop] (entity_fact, 'participates in: DIED_WITHIN_30_DAYS') -> 'If deaths occur within 30 days of each other, this will be treated as simultaneo'  scores=['0.366']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_DEATH_CERTIFICATE') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: TRIGGERS_NO_BENEFIT') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.429']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_POLICY_CONTINUATION') -> "After the first insured's death, the policy continues in force."  scores=['0.501']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.490']
+    [drop] (entity_fact, 'participates in: REQUIRES_CERTIFICATE_FILING') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_RECLASSIFICATION') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.454']
+    [drop] (entity_fact, 'participates in: TRIGGERS_COVERAGE_STABILITY') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.432']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_PREMIUM_STABILITY') -> "After the first insured's death, the premium remains unchanged."  scores=['0.498']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_GUARANTEE') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.475']
+    [drop] (entity_fact, 'participates in: TRIGGERS_POST_GUARANTEE_PERIOD') -> 'After year 10, the premium may increase.'  scores=['0.329']
+    [drop] (entity_fact, 'participates in: TRIGGERS_CAP_ENFORCEMENT') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.367']
+
+  depth=2 goal_indices=[1] from: 'estate tax planning (Provision to exclude proceeds from taxable estates)'
+    [KEEP] (entity_fact, 'participates in: ENABLES_EXCLUSION') -> 'This policy is owned by an irrevocable trust to exclude proceeds from the insure'  scores=['0.506']
+    [KEEP] (entity_fact, 'participates in: DEPENDS_ON_TRUST') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.384']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.336']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.314']
+
+  depth=2 goal_indices=[1] from: 'crummey power (Requirement for annual exclusion gifts)'
+    [KEEP] (entity_fact, 'participates in: REQUIRES_COMPLIANCE') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.349']
+    [KEEP] (entity_fact, 'participates in: SUPPORTS_EXCLUSION') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.298']
+
+  depth=2 goal_indices=[1] from: 'three-year lookback rule (Tax rule affecting trust transfers)'
+    [KEEP] (entity_fact, 'participates in: MAY_AFFECT_EXCLUSION') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: INTERACTS_WITH_POWER') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.326']
+
+  depth=2 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_ASSIGN') -> 'The Trust has the right to assign the policy.'  scores=['0.496']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The Trust has the right to surrender the policy.'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The policy may not be assigned without trustee authorization.'  scores=['0.531']
+
+  depth=2 goal_indices=[1] from: 'policy loans (Financial feature for policyholders)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_AFTER') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.442']
+    [drop] (entity_fact, 'participates in: MAXIMUM_AMOUNT') -> 'The maximum policy loan amount is 90% of the cash surrender value.'  scores=['0.418']
+    [KEEP] (entity_fact, 'participates in: HAS_VARIABLE_RATE') -> 'The interest rate for policy loans is variable.'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: CURRENT_RATE') -> 'The current interest rate for policy loans is 5.5% per annum.'  scores=['0.397']
+    [drop] (entity_fact, 'participates in: REDUCES_DEATH_BENEFIT') -> 'Policy loans reduce the death benefit dollar-for-dollar.'  scores=['0.431']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_BEFORE_AFTER') -> 'Policy loans are available before or after the first death.'  scores=['0.483']
+    [KEEP] (entity_fact, 'participates in: NOT_PERMITTED') -> 'Partial withdrawals are not permitted under this policy type.'  scores=['0.459']
+    [drop] (entity_fact, 'participates in: ') -> 'The suicide clause resets if the policy is reinstated.'  scores=['0.410']
+    [drop] (entity_fact, 'participates in: ') -> 'The policy may be contested for material misrepresentation within 2 years of iss'  scores=['0.429']
+    [drop] (entity_fact, 'participates in: ') -> 'There are no war exclusions applicable to this policy.'  scores=['0.327']
+    [drop] (entity_fact, 'participates in: HAS_EXCLUSION') -> 'There are no travel exclusions applicable to this policy.'  scores=['0.364']
+    [KEEP] (entity_fact, 'participates in: IS_NOT_AFFECTED') -> 'This policy is owned by an irrevocable trust to exclude proceeds from the insure'  scores=['0.519']
+    [drop] (entity_fact, 'participates in: ') -> 'The death benefit payment to the designated beneficiary is reduced by any outsta'  scores=['0.432']
+    [drop] (entity_fact, 'participates in: AVAILABLE_AFTER_2_YEARS') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.442']
+    [drop] (entity_fact, 'participates in: MAXIMUM_LOAN_LIMIT') -> 'The maximum policy loan amount is 90% of the cash surrender value.'  scores=['0.414']
+    [KEEP] (entity_fact, 'participates in: HAS_VARIABLE_INTEREST') -> 'The interest rate on policy loans is variable.'  scores=['0.457']
+    [drop] (entity_fact, 'participates in: CURRENT_INTEREST_RATE') -> 'The current interest rate on policy loans is 5.5% per annum.'  scores=['0.401']
+
+  depth=2 goal_indices=[1] from: 'policy owner (Administrator of policy)'
+    [KEEP] (entity_fact, 'participates in: IS_TRUST') -> 'The policy owner is the Trust.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policy owner may cancel the policy within 30 days of policy receipt.'  scores=['0.419']
+    [drop] (entity_fact, 'participates in: SUBMITS_CLAIM_FORMS') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.400']
+    [KEEP] (entity_fact, 'participates in: MAINTAINS_POLICY_HOLDING') -> "After the first insured's death, the policy continues in force."  scores=['0.523']
+    [KEEP] (entity_fact, 'participates in: MANAGES_PREMIUM_OBLIGATION') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.608']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_WRITTEN_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.481']
+    [KEEP] (entity_fact, 'participates in: SUBMITS_DEATH_CERTIFICATE') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.428']
+    [drop] (entity_fact, 'participates in: ') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.250']
+
+  depth=2 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_OWNERSHIP_RIGHTS') -> 'The policy owner is the Trust.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_TAKE_LOANS') -> 'The Trust has the right to take policy loans.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The Trust has the right to surrender the policy.'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.448']
+
+  depth=2 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_OWNERSHIP_RIGHTS') -> 'The policy owner is the Trust.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_ASSIGN') -> 'The Trust has the right to assign the policy.'  scores=['0.496']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The Trust has the right to surrender the policy.'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.448']
+
+  depth=2 goal_indices=[1] from: 'policy loans (Financial feature for policyholders)'
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_AFTER') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.442']
+    [drop] (entity_fact, 'participates in: MAXIMUM_AMOUNT') -> 'The maximum policy loan amount is 90% of the cash surrender value.'  scores=['0.418']
+    [KEEP] (entity_fact, 'participates in: HAS_VARIABLE_RATE') -> 'The interest rate for policy loans is variable.'  scores=['0.460']
+    [drop] (entity_fact, 'participates in: CURRENT_RATE') -> 'The current interest rate for policy loans is 5.5% per annum.'  scores=['0.397']
+    [drop] (entity_fact, 'participates in: REDUCES_DEATH_BENEFIT') -> 'Policy loans reduce the death benefit dollar-for-dollar.'  scores=['0.431']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_BEFORE_AFTER') -> 'Policy loans are available before or after the first death.'  scores=['0.483']
+    [KEEP] (entity_fact, 'participates in: NOT_PERMITTED') -> 'Partial withdrawals are not permitted under this policy type.'  scores=['0.459']
+    [drop] (entity_fact, 'participates in: ') -> 'The suicide clause resets if the policy is reinstated.'  scores=['0.410']
+    [drop] (entity_fact, 'participates in: ') -> 'The policy may be contested for material misrepresentation within 2 years of iss'  scores=['0.429']
+    [drop] (entity_fact, 'participates in: ') -> 'There are no war exclusions applicable to this policy.'  scores=['0.327']
+    [drop] (entity_fact, 'participates in: HAS_EXCLUSION') -> 'There are no travel exclusions applicable to this policy.'  scores=['0.364']
+    [KEEP] (entity_fact, 'participates in: IS_NOT_AFFECTED') -> 'This policy is owned by an irrevocable trust to exclude proceeds from the insure'  scores=['0.519']
+    [drop] (entity_fact, 'participates in: ') -> 'The death benefit payment to the designated beneficiary is reduced by any outsta'  scores=['0.432']
+    [drop] (entity_fact, 'participates in: AVAILABLE_AFTER_2_YEARS') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.442']
+    [drop] (entity_fact, 'participates in: MAXIMUM_LOAN_LIMIT') -> 'The maximum policy loan amount is 90% of the cash surrender value.'  scores=['0.414']
+    [KEEP] (entity_fact, 'participates in: HAS_VARIABLE_INTEREST') -> 'The interest rate on policy loans is variable.'  scores=['0.457']
+    [drop] (entity_fact, 'participates in: CURRENT_INTEREST_RATE') -> 'The current interest rate on policy loans is 5.5% per annum.'  scores=['0.401']
+
+  depth=2 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_OWNERSHIP_RIGHTS') -> 'The policy owner is the Trust.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_ASSIGN') -> 'The Trust has the right to assign the policy.'  scores=['0.496']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_TAKE_LOANS') -> 'The Trust has the right to take policy loans.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.448']
+
+  depth=2 goal_indices=[1] from: 'policy owner (Administrator of policy)'
+    [KEEP] (entity_fact, 'participates in: IS_TRUST') -> 'The policy owner is the Trust.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'The Trust has the right to assign the policy.'  scores=['0.494']
+    [drop] (entity_fact, 'participates in: SUBMITS_CLAIM_FORMS') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.400']
+    [KEEP] (entity_fact, 'participates in: MAINTAINS_POLICY_HOLDING') -> "After the first insured's death, the policy continues in force."  scores=['0.523']
+    [KEEP] (entity_fact, 'participates in: MANAGES_PREMIUM_OBLIGATION') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.608']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_WRITTEN_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.481']
+    [KEEP] (entity_fact, 'participates in: SUBMITS_DEATH_CERTIFICATE') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.428']
+    [drop] (entity_fact, 'participates in: ') -> 'The projected cash value at the end of year 10 is $285,000 based on current assu'  scores=['0.250']
+
+  depth=2 goal_indices=[1] from: 'free look period (30-day cancellation window)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_REFUND') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.451']
+
+  depth=2 goal_indices=[1] from: "After the first insured's death, the premium payment obligation continues."
+    [KEEP] (fact_fact, 'REQUIRES') -> "After the first insured's death, the policy continues in force."  scores=['0.583']
+    [KEEP] (fact_fact, 'IS_EXCLUDED_FROM') -> 'Premium waiver is not available on joint survivorship policies.'  scores=['0.584']
+    [drop] (fact_entity, 'has ') -> 'policy (Insurance contract)'  scores=['0.129']
+    [drop] (fact_entity, 'has ') -> 'surviving insured (Remaining insured after first death)'  scores=['0.126']
+    [drop] (fact_entity, 'has ') -> 'annual premium (Fixed payment obligation)'  scores=['0.173']
+    [KEEP] (fact_fact, 'CONTINUES') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.590']
+    [KEEP] (fact_fact, 'IS_REGULATED_BY') -> 'Premiums are payable annually on August 20th.'  scores=['0.593']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Upon the first death, the policy owner may elect to split this policy into two s'  scores=['0.579']
+    [KEEP] (fact_fact, 'SUSTAINED_BY') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.551']
+
+  depth=2 goal_indices=[1] from: 'The policy owner is the Trust.'
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.523']
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to change beneficiaries.'  scores=['0.480']
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to assign the policy.'  scores=['0.574']
+    [drop] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to take policy loans.'  scores=['0.514']
+    [KEEP] (fact_fact, 'GRANTS_RIGHT') -> 'The Trust has the right to surrender the policy.'  scores=['0.524']
+    [KEEP] (fact_fact, 'EXCLUDES') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.546']
+    [drop] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'IDENTIFIES_OWNER') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.633']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.524']
+
+  depth=2 goal_indices=[1] from: "After the first insured's death, the policy continues in force."
+    [drop] (fact_fact, 'FOLLOWS') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.529']
+    [KEEP] (fact_fact, 'IMPLIES') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.617']
+    [KEEP] (fact_fact, 'LEADS_TO') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.556']
+    [drop] (fact_fact, 'REQUIRES') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.507']
+    [drop] (fact_fact, 'TRANSFORMS') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.525']
+    [KEEP] (fact_fact, 'MAINTAINS') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.539']
+    [KEEP] (fact_fact, 'MAINTAINS') -> "After the first insured's death, the premium remains unchanged."  scores=['0.582']
+    [KEEP] (fact_fact, 'IS_DELAYED_BY') -> 'If a premium payment is not received, there is a 60-day grace period before the '  scores=['0.535']
+    [drop] (fact_entity, 'has ') -> 'policy (Insurance contract)'  scores=['0.129']
+    [drop] (fact_entity, 'has ') -> 'surviving insured (Remaining insured after first death)'  scores=['0.126']
+    [drop] (fact_entity, 'has ') -> 'first insured (Initial policy participant)'  scores=['0.134']
+    [drop] (fact_fact, 'AFFECTS') -> 'The suicide clause resets if the policy is reinstated.'  scores=['0.492']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'This policy accumulates cash value on a guaranteed schedule.'  scores=['0.546']
+
+  depth=2 goal_indices=[1] from: 'The Trust has the right to assign the policy.'
+    [KEEP] (fact_fact, 'IS_GRANTED_BY') -> 'The policy owner is the Trust.'  scores=['0.622']
+    [KEEP] (fact_entity, 'has ') -> 'trust (Policy owner entity)'  scores=['0.142']
+    [KEEP] (fact_fact, 'HAS_DISPOSITION_RIGHTS') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.513']
+    [KEEP] (fact_fact, 'IS_ASSIGNED_BY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.601']
+    [KEEP] (fact_fact, 'IS_CONTROLLED_BY') -> 'If the policy owner cancels within 30 days of policy receipt, a full refund of p'  scores=['0.512']
+
+  depth=2 goal_indices=[1] from: "After the first insured's death, the policy owner receives written confirmation."
+    [KEEP] (fact_fact, 'TRIGGERS') -> "After the first insured's death, the policy continues in force."  scores=['0.540']
+    [KEEP] (fact_entity, 'has ') -> 'policy (Insurance contract)'  scores=['0.129']
+    [KEEP] (fact_entity, 'has ') -> 'second insured (Primary beneficiary trigger)'  scores=['0.209']
+    [KEEP] (fact_entity, 'has ') -> 'first insured (Initial policy participant)'  scores=['0.134']
+    [KEEP] (fact_fact, 'LEADS_TO') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.537']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Upon the death of the second insured, $2,500,000 will be paid to the designated '  scores=['0.547']
+
+  depth=2 goal_indices=[1] from: "After the first insured's death, the death certificate must be filed with the insurer."
+    [KEEP] (fact_fact, 'IS_PART_OF') -> "After the first insured's death, the policy continues in force."  scores=['0.539']
+    [KEEP] (fact_entity, 'has ') -> 'death certificate (Required proof of death)'  scores=['0.142']
+    [KEEP] (fact_entity, 'has ') -> 'surviving insured (Remaining insured after first death)'  scores=['0.126']
+    [KEEP] (fact_entity, 'has ') -> 'first insured (Initial policy participant)'  scores=['0.134']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'Proof of both deaths must be submitted to process a claim.'  scores=['0.439']
+    [KEEP] (fact_fact, 'SUBMITTED_TO') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.516']
+
+  depth=2 goal_indices=[1] from: 'estate planning life assurance ltd. (Insurance company)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Estate Planning Life Assurance Ltd.'  scores=['0.583']
+    [KEEP] (entity_fact, 'participates in: LOCATED_IN') -> 'Estate Planning Life Assurance Ltd. is located in Hartford, Connecticut.'  scores=['0.372']
+    [KEEP] (entity_fact, 'participates in: AUTHORIZED_BY_SIGNATORY') -> 'The Chairman & Chief Executive Officer of Estate Planning Life Assurance Ltd. si'  scores=['0.435']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.557']
+
+  depth=2 goal_indices=[1] from: 'elizabeth anne hartford (Second insured)'
+    [KEEP] (entity_fact, 'participates in: INSURED_LIFE') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.596']
+    [drop] (entity_fact, 'participates in: BORN_ON') -> 'Elizabeth Anne Hartford was born on March 18, 1958.'  scores=['0.158']
+    [drop] (entity_fact, 'participates in: AGE') -> 'Elizabeth Anne Hartford is 66 years old.'  scores=['0.259']
+    [drop] (entity_fact, 'participates in: GENDER') -> 'Elizabeth Anne Hartford is female.'  scores=['0.315']
+    [drop] (entity_fact, 'participates in: RISK_CLASS_PREFERRED') -> 'Elizabeth Anne Hartford is in the Preferred risk class.'  scores=['0.410']
+    [KEEP] (entity_fact, 'participates in: INSURED_LIFE') -> 'This policy insures two lives.'  scores=['0.512']
+    [KEEP] (entity_fact, 'participates in: SURVIVORSHIP_TRIGGER') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: SURVIVOR') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.458']
+    [KEEP] (entity_fact, 'participates in: SURVIVING_INSURED') -> 'The policy continues in force covering the surviving insured after the first ins'  scores=['0.549']
+    [KEEP] (entity_fact, 'participates in: FINAL_DEATH_EVENT') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.455']
+
+  depth=2 goal_indices=[1] from: 'william alexander hartford (First insured)'
+    [KEEP] (entity_fact, 'participates in: INSURED_LIFE') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.596']
+    [KEEP] (entity_fact, 'participates in: FIRST_INSURED') -> 'The first insured is William Alexander Hartford.'  scores=['0.511']
+    [drop] (entity_fact, 'participates in: BORN_ON') -> 'William Alexander Hartford was born on December 5, 1956.'  scores=['0.160']
+    [drop] (entity_fact, 'participates in: AGE') -> 'William Alexander Hartford is 67 years old.'  scores=['0.256']
+    [drop] (entity_fact, 'participates in: GENDER') -> 'William Alexander Hartford is male.'  scores=['0.306']
+    [KEEP] (entity_fact, 'participates in: RISK_CLASS_STANDARD') -> 'William Alexander Hartford is in the Standard risk class.'  scores=['0.364']
+    [KEEP] (entity_fact, 'participates in: SURVIVORSHIP_TRIGGER') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: FIRST_TO_DIE') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.450']
+    [KEEP] (entity_fact, 'participates in: FINAL_DEATH_EVENT') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.455']
+
+  depth=2 goal_indices=[1] from: 'william alexander hartford (First insured)'
+    [KEEP] (entity_fact, 'participates in: INSURED_LIFE') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.596']
+    [drop] (entity_fact, 'participates in: BORN_ON') -> 'William Alexander Hartford was born on December 5, 1956.'  scores=['0.160']
+    [drop] (entity_fact, 'participates in: AGE') -> 'William Alexander Hartford is 67 years old.'  scores=['0.256']
+    [drop] (entity_fact, 'participates in: GENDER') -> 'William Alexander Hartford is male.'  scores=['0.306']
+    [KEEP] (entity_fact, 'participates in: RISK_CLASS_STANDARD') -> 'William Alexander Hartford is in the Standard risk class.'  scores=['0.364']
+    [KEEP] (entity_fact, 'participates in: INSURED_LIFE') -> 'This policy insures two lives.'  scores=['0.512']
+    [KEEP] (entity_fact, 'participates in: SURVIVORSHIP_TRIGGER') -> 'The death benefit is payable only upon the death of the second insured to die.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: FIRST_TO_DIE') -> 'If the first insured dies, no death benefit is paid.'  scores=['0.450']
+    [KEEP] (entity_fact, 'participates in: FINAL_DEATH_EVENT') -> 'The death benefit is paid only after both insureds have died.'  scores=['0.455']
+
+  depth=2 goal_indices=[1] from: 'estate tax planning (Provision to exclude proceeds from taxable estates)'
+    [KEEP] (entity_fact, 'participates in: DEPENDS_ON_TRUST') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.384']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.336']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.314']
+
+  depth=2 goal_indices=[1] from: 'crummey power (Requirement for annual exclusion gifts)'
+    [KEEP] (entity_fact, 'participates in: REQUIRES_COMPLIANCE') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.349']
+    [KEEP] (entity_fact, 'participates in: SUPPORTS_EXCLUSION') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.298']
+
+  depth=2 goal_indices=[1] from: 'three-year lookback rule (Tax rule affecting trust transfers)'
+    [KEEP] (entity_fact, 'participates in: MAY_AFFECT_EXCLUSION') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: INTERACTS_WITH_POWER') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.326']
+
+  depth=2 goal_indices=[1] from: 'hartford family irrevocable life insurance trust (Beneficiary)'
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy is a joint survivorship life insurance policy.'  scores=['0.598']
+    [KEEP] (entity_fact, 'participates in: POLICY_OWNER') -> 'The policy owner is The Hartford Family Irrevocable Life Insurance Trust.'  scores=['0.598']
+    [drop] (entity_fact, 'participates in: TRUST_DATED') -> 'The Hartford Family Irrevocable Life Insurance Trust was dated August 1, 2024.'  scores=['0.373']
+    [KEEP] (entity_fact, 'participates in: PREMIUM_PAYOR') -> 'The annual premium for the policy is $32,400.'  scores=['0.579']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The annual premium is guaranteed to remain level for 10 years.'  scores=['0.518']
+    [KEEP] (entity_fact, 'participates in: PAYOR_OF_PREMIUM') -> 'The premium payor for the policy is the Hartford Family Irrevocable Trust.'  scores=['0.680']
+    [drop] (entity_fact, 'participates in: RECEIVER_OF_BENEFIT') -> 'The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance '  scores=['0.503']
+    [KEEP] (entity_fact, 'participates in: NOT_APPLICABLE') -> 'The policy operates on a survivorship basis.'  scores=['0.524']
+    [drop] (entity_fact, 'participates in: PURPOSE_OF_ESTATE_PLANNING') -> 'The purpose of this policy is estate planning.'  scores=['0.473']
+
+  depth=2 goal_indices=[1] from: 'irrevocable trust (Ownership structure for estate tax planning)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'There are no travel exclusions applicable to this policy.'  scores=['0.377']
+
+  depth=2 goal_indices=[1] from: 'estate tax planning (Provision to exclude proceeds from taxable estates)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.336']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.314']
+
+  depth=2 goal_indices=[1] from: 'three-year lookback rule (Tax rule affecting trust transfers)'
+    [KEEP] (entity_fact, 'participates in: REQUIRES_ATTORNEY_ADVICE') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.465']
+    [KEEP] (entity_fact, 'participates in: INTERACTS_WITH_POWER') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.326']
+
+  depth=2 goal_indices=[1] from: 'estate tax planning (Provision to exclude proceeds from taxable estates)'
+    [KEEP] (entity_fact, 'participates in: DEPENDS_ON_TRUST') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.384']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.314']
+
+  depth=2 goal_indices=[1] from: 'crummey power (Requirement for annual exclusion gifts)'
+    [KEEP] (entity_fact, 'participates in: IS_RELEVANT') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.434']
+    [KEEP] (entity_fact, 'participates in: SUPPORTS_EXCLUSION') -> 'An estate planning attorney should be consulted regarding annual exclusion gift '  scores=['0.298']
+
+  depth=2 goal_indices=[1] from: 'three-year lookback rule (Tax rule affecting trust transfers)'
+    [KEEP] (entity_fact, 'participates in: MAY_AFFECT_EXCLUSION') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.382']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_ATTORNEY_ADVICE') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.465']
+
+  depth=2 goal_indices=[1] from: 'actuarial allocation (Method for determining new face amounts)'
+    [KEEP] (entity_fact, 'participates in: SETS_FACE_AMOUNT') -> "Each policy's face amount after the split is determined by actuarial allocation."  scores=['0.509']
+    [KEEP] (entity_fact, 'participates in: ') -> 'There are no aviation exclusions applicable to this policy.'  scores=['0.367']
+
+  depth=2 goal_indices=[1] from: 'estate tax planning (Provision to exclude proceeds from taxable estates)'
+    [KEEP] (entity_fact, 'participates in: DEPENDS_ON_TRUST') -> "Proceeds paid to the trust should not be includable in either insured's estate i"  scores=['0.384']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: ') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.336']
+
+  depth=2 goal_indices=[1] from: 'crummey power (Requirement for annual exclusion gifts)'
+    [KEEP] (entity_fact, 'participates in: IS_RELEVANT') -> 'An estate planning attorney should be consulted regarding the three-year lookbac'  scores=['0.434']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_COMPLIANCE') -> 'An estate planning attorney should be consulted regarding Crummey power requirem'  scores=['0.349']
+
+  depth=2 goal_indices=[1] from: 'annual premium (Fixed payment obligation)'
+    [KEEP] (entity_fact, 'participates in: REMAINS_UNCHANGED') -> "After the first insured's death, the premium remains unchanged."  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: GUARANTEED_LEVEL') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.479']
+    [KEEP] (entity_fact, 'participates in: MAY_INCREASE_AFTER_YEAR_10') -> 'After year 10, the premium may increase.'  scores=['0.310']
+    [KEEP] (entity_fact, 'participates in: NEVER_EXCEEDS_CAP') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.358']
+    [KEEP] (entity_fact, 'participates in: PAYABLE_ON_DATE') -> 'Premiums are payable annually on August 20th.'  scores=['0.546']
+
+  depth=2 goal_indices=[1] from: 'surviving insured (Remaining insured after first death)'
+    [drop] (entity_fact, 'participates in: ') -> 'Proof of both deaths must be submitted to process a claim.'  scores=['0.348']
+    [drop] (entity_fact, 'participates in: ') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.392']
+    [drop] (entity_fact, 'participates in: ') -> 'Payment will be made within 30 days of receiving complete documentation.'  scores=['0.409']
+    [KEEP] (entity_fact, 'participates in: CONTINUES_COVERAGE') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: REMAINS_COVERED') -> "After the first insured's death, the policy continues in force."  scores=['0.484']
+    [drop] (entity_fact, 'participates in: ') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.424']
+    [KEEP] (entity_fact, 'participates in: BECOMES_SINGLE_LIFE_POLICYHOLDER') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.498']
+    [KEEP] (entity_fact, 'participates in: RETAINS_COVERAGE') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: PAYS_SAME_PREMIUM') -> "After the first insured's death, the premium remains unchanged."  scores=['0.548']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.588']
+
+  depth=2 goal_indices=[1] from: 'premium guarantee period (10-year fixed premium term)'
+    [KEEP] (entity_fact, 'participates in: GUARANTEED_RATE') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.551']
+
+  depth=2 goal_indices=[1] from: 'annual premium (Fixed payment obligation)'
+    [KEEP] (entity_fact, 'participates in: REMAINS_UNCHANGED') -> "After the first insured's death, the premium remains unchanged."  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: MAY_INCREASE_AFTER_YEAR_10') -> 'After year 10, the premium may increase.'  scores=['0.310']
+    [KEEP] (entity_fact, 'participates in: NEVER_EXCEEDS_CAP') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.358']
+    [KEEP] (entity_fact, 'participates in: PAYABLE_ON_DATE') -> 'Premiums are payable annually on August 20th.'  scores=['0.546']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Premium waiver is not available on joint survivorship policies.'  scores=['0.522']
+
+  depth=2 goal_indices=[1] from: 'first insured (Initial policy participant)'
+    [drop] (entity_fact, 'participates in: DIED_IN_ACCIDENT') -> 'If both insureds die in the same accident or incident and it cannot be determine'  scores=['0.438']
+    [drop] (entity_fact, 'participates in: DIED_WITHIN_30_DAYS') -> 'If deaths occur within 30 days of each other, this will be treated as simultaneo'  scores=['0.366']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_OWNERSHIP_RIGHTS') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.464']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_DEATH_CERTIFICATE') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: TRIGGERS_NO_BENEFIT') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.429']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_POLICY_CONTINUATION') -> "After the first insured's death, the policy continues in force."  scores=['0.501']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.490']
+    [drop] (entity_fact, 'participates in: REQUIRES_CERTIFICATE_FILING') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_RECLASSIFICATION') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.454']
+    [drop] (entity_fact, 'participates in: TRIGGERS_COVERAGE_STABILITY') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.432']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_PREMIUM_STABILITY') -> "After the first insured's death, the premium remains unchanged."  scores=['0.498']
+    [drop] (entity_fact, 'participates in: TRIGGERS_POST_GUARANTEE_PERIOD') -> 'After year 10, the premium may increase.'  scores=['0.329']
+    [drop] (entity_fact, 'participates in: TRIGGERS_CAP_ENFORCEMENT') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.367']
+
+  depth=2 goal_indices=[1] from: 'premium guarantee period (10-year fixed premium term)'
+    [KEEP] (entity_fact, 'participates in: FIRST_10_YEARS') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.466']
+
+  depth=2 goal_indices=[1] from: 'august 20th (Annual premium due date)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'The projected cash value at the end of year 20 is $712,000 based on current assu'  scores=['0.272']
+
+  depth=2 goal_indices=[1] from: 'annual premium (Fixed payment obligation)'
+    [KEEP] (entity_fact, 'participates in: REMAINS_UNCHANGED') -> "After the first insured's death, the premium remains unchanged."  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: GUARANTEED_LEVEL') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.479']
+    [KEEP] (entity_fact, 'participates in: MAY_INCREASE_AFTER_YEAR_10') -> 'After year 10, the premium may increase.'  scores=['0.310']
+    [KEEP] (entity_fact, 'participates in: NEVER_EXCEEDS_CAP') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.358']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Premium waiver is not available on joint survivorship policies.'  scores=['0.522']
+
+  depth=3 goal_indices=[1] from: 'chairman & chief executive officer (Company executive)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'If deaths occur within 30 days of each other, this will be treated as simultaneo'  scores=['0.368']
+
+  depth=3 goal_indices=[1] from: 'chairman & chief executive officer (Company executive)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'If deaths occur within 30 days of each other, this will be treated as simultaneo'  scores=['0.368']
+
+  depth=3 goal_indices=[1] from: 'trust (Policy owner entity)'
+    [KEEP] (entity_fact, 'participates in: HAS_OWNERSHIP_RIGHTS') -> 'The policy owner is the Trust.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_DESIGNATE') -> 'The Trust has the right to designate beneficiaries.'  scores=['0.416']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_CHANGE') -> 'The Trust has the right to change beneficiaries.'  scores=['0.347']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_TAKE_LOANS') -> 'The Trust has the right to take policy loans.'  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: HAS_RIGHT_TO_SURRENDER') -> 'The Trust has the right to surrender the policy.'  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.448']
+
+  depth=3 goal_indices=[1] from: 'second insured (Primary beneficiary trigger)'
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_DEATH_BENEFIT') -> 'Upon the death of the second insured, $2,500,000 will be paid to the designated '  scores=['0.475']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_DEATH_CERTIFICATE') -> 'A death certificate of the second insured must be submitted as part of the claim'  scores=['0.450']
+
+  depth=3 goal_indices=[1] from: 'first insured (Initial policy participant)'
+    [drop] (entity_fact, 'participates in: DIED_IN_ACCIDENT') -> 'If both insureds die in the same accident or incident and it cannot be determine'  scores=['0.438']
+    [drop] (entity_fact, 'participates in: DIED_WITHIN_30_DAYS') -> 'If deaths occur within 30 days of each other, this will be treated as simultaneo'  scores=['0.366']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_OWNERSHIP_RIGHTS') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.464']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_DEATH_CERTIFICATE') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: TRIGGERS_NO_BENEFIT') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.429']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_POLICY_CONTINUATION') -> "After the first insured's death, the policy continues in force."  scores=['0.501']
+    [drop] (entity_fact, 'participates in: REQUIRES_CERTIFICATE_FILING') -> "After the first insured's death, the death certificate must be filed with the in"  scores=['0.443']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_RECLASSIFICATION') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.454']
+    [drop] (entity_fact, 'participates in: TRIGGERS_COVERAGE_STABILITY') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.432']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_PREMIUM_STABILITY') -> "After the first insured's death, the premium remains unchanged."  scores=['0.498']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_GUARANTEE') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.475']
+    [drop] (entity_fact, 'participates in: TRIGGERS_POST_GUARANTEE_PERIOD') -> 'After year 10, the premium may increase.'  scores=['0.329']
+    [drop] (entity_fact, 'participates in: TRIGGERS_CAP_ENFORCEMENT') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.367']
+
+  depth=3 goal_indices=[1] from: 'policy (Insurance contract)'
+    [KEEP] (entity_fact, 'participates in: DESIGNED_FOR_ESTATE_PLANNING') -> 'This policy is designed for estate planning purposes.'  scores=['0.490']
+    [drop] (entity_fact, 'participates in: DESIGNED_FOR_TAX_LIQUIDITY') -> 'This policy is designed for estate tax liquidity purposes.'  scores=['0.474']
+    [KEEP] (entity_fact, 'participates in: PAYS_DEATH_BENEFIT') -> 'Upon the death of the second insured, $2,500,000 will be paid to the designated '  scores=['0.504']
+    [drop] (entity_fact, 'participates in: ADJUSTS_PAYOUT_FOR_DEBT') -> 'The death benefit payment to the designated beneficiary is reduced by any outsta'  scores=['0.451']
+    [drop] (entity_fact, 'participates in: REQUIRES_DOCUMENTATION') -> 'Proof of both deaths must be submitted to process a claim.'  scores=['0.369']
+    [drop] (entity_fact, 'participates in: REQUIRES_FIRST_DEATH_DOCUMENT') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.458']
+    [drop] (entity_fact, 'participates in: REQUIRES_SECOND_DEATH_DOCUMENT') -> 'A death certificate of the second insured must be submitted as part of the claim'  scores=['0.454']
+    [drop] (entity_fact, 'participates in: REQUIRES_COMPLETED_FORMS') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: PAYS_WITHIN_30_DAYS') -> 'Payment will be made within 30 days of receiving complete documentation.'  scores=['0.431']
+    [KEEP] (entity_fact, 'participates in: NO_PAYOUT_ON_FIRST_DEATH') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.476']
+    [drop] (entity_fact, 'participates in: CONTINUES_IN_FORCE') -> "After the first insured's death, the policy continues in force."  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_CONTINUED_PAYMENTS') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.624']
+    [drop] (entity_fact, 'participates in: RECONFIGURES_AFTER_FIRST_DEATH') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.452']
+    [drop] (entity_fact, 'participates in: MAINTAINS_COVERAGE') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.460']
+    [KEEP] (entity_fact, 'participates in: MAINTAINS_PREMIUM_RATE') -> "After the first insured's death, the premium remains unchanged."  scores=['0.527']
+    [KEEP] (entity_fact, 'participates in: HAS_GUARANTEED_PREMIUM') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.527']
+    [drop] (entity_fact, 'participates in: ALLOWED_PREMIUM_INCREASE') -> 'After year 10, the premium may increase.'  scores=['0.362']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_CAP') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.403']
+    [drop] (entity_fact, 'participates in: SUBJECT_TO_CANCELLATION') -> 'If a premium payment is not received, there is a 60-day grace period before the '  scores=['0.455']
+    [drop] (entity_fact, 'participates in: GENERATES_CASH_VALUE') -> 'This policy accumulates cash value on a guaranteed schedule.'  scores=['0.467']
+    [drop] (entity_fact, 'participates in: ELIGIBLE_FOR_LOAN') -> 'Policy loans are available after the policy has been in force for 2 years.'  scores=['0.456']
+
+  depth=3 goal_indices=[1] from: 'death certificate (Required proof of death)'
+    [KEEP] (entity_fact, 'participates in: PROVES_DEATH') -> 'Proof of both deaths must be submitted to process a claim.'  scores=['0.345']
+    [KEEP] (entity_fact, 'participates in: PROVES_FIRST_INSURED_DEATH') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.487']
+    [KEEP] (entity_fact, 'participates in: PROVES_SECOND_INSURED_DEATH') -> 'A death certificate of the second insured must be submitted as part of the claim'  scores=['0.469']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Payment will be made within 30 days of receiving complete documentation.'  scores=['0.409']
+
+  depth=3 goal_indices=[1] from: 'first insured (Initial policy participant)'
+    [drop] (entity_fact, 'participates in: DIED_IN_ACCIDENT') -> 'If both insureds die in the same accident or incident and it cannot be determine'  scores=['0.438']
+    [drop] (entity_fact, 'participates in: DIED_WITHIN_30_DAYS') -> 'If deaths occur within 30 days of each other, this will be treated as simultaneo'  scores=['0.366']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_OWNERSHIP_RIGHTS') -> 'Neither insured has ownership rights unless specified in the trust document.'  scores=['0.464']
+    [drop] (entity_fact, 'participates in: REQUIRES_DEATH_CERTIFICATE') -> 'A death certificate of the first insured must be submitted as part of the claim '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: TRIGGERS_NO_BENEFIT') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.429']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_POLICY_CONTINUATION') -> "After the first insured's death, the policy continues in force."  scores=['0.501']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_CONFIRMATION') -> "After the first insured's death, the policy owner receives written confirmation."  scores=['0.490']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_RECLASSIFICATION') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.454']
+    [drop] (entity_fact, 'participates in: TRIGGERS_COVERAGE_STABILITY') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.432']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_PREMIUM_STABILITY') -> "After the first insured's death, the premium remains unchanged."  scores=['0.498']
+    [KEEP] (entity_fact, 'participates in: TRIGGERS_GUARANTEE') -> 'The annual premium of $32,400 is guaranteed level for the first 10 policy years.'  scores=['0.475']
+    [drop] (entity_fact, 'participates in: TRIGGERS_POST_GUARANTEE_PERIOD') -> 'After year 10, the premium may increase.'  scores=['0.329']
+    [drop] (entity_fact, 'participates in: TRIGGERS_CAP_ENFORCEMENT') -> 'After year 10, the premium will never exceed $48,600 per year.'  scores=['0.367']
+
+  depth=3 goal_indices=[1] from: 'surviving insured (Remaining insured after first death)'
+    [drop] (entity_fact, 'participates in: ') -> 'Proof of both deaths must be submitted to process a claim.'  scores=['0.348']
+    [drop] (entity_fact, 'participates in: ') -> 'Completed claim forms must be submitted as part of the claim documentation.'  scores=['0.392']
+    [drop] (entity_fact, 'participates in: ') -> 'Payment will be made within 30 days of receiving complete documentation.'  scores=['0.409']
+    [drop] (entity_fact, 'participates in: CONTINUES_COVERAGE') -> 'When the first insured dies, no death benefit is paid.'  scores=['0.448']
+    [KEEP] (entity_fact, 'participates in: REMAINS_COVERED') -> "After the first insured's death, the policy continues in force."  scores=['0.484']
+    [KEEP] (entity_fact, 'participates in: OBLIGATED_TO_PAY_PREMIUM') -> "After the first insured's death, the premium payment obligation continues."  scores=['0.632']
+    [KEEP] (entity_fact, 'participates in: BECOMES_SINGLE_LIFE_POLICYHOLDER') -> "After the first insured's death, the surviving insured becomes a single-life who"  scores=['0.498']
+    [drop] (entity_fact, 'participates in: RETAINS_COVERAGE') -> "After the first insured's death, the coverage amount remains unchanged."  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: PAYS_SAME_PREMIUM') -> "After the first insured's death, the premium remains unchanged."  scores=['0.548']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUM') -> 'Premiums continue to be paid after the first death at the same rate.'  scores=['0.588']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Premium waiver is not available on joint survivorship policies.'  scores=['0.522']
+
+--- FINAL RANKING ---
+  [SELECTED(rank 11)] ce=7.161  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 5)] ce=7.137  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 0)] ce=7.081  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 6)] ce=6.947  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 2)] ce=6.937  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 12)] ce=6.892  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 4)] ce=6.845  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 3)] ce=6.820  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 1)] ce=6.784  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 7)] ce=6.747  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 18)] ce=6.745  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 19)] ce=6.513  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 16)] ce=6.354  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 15)] ce=6.256  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [               -] ce=6.229  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [               -] ce=6.213  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [               -] ce=6.105  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 14)] ce=6.074  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 9)] ce=5.959  '"The policy owner is The Hartford Family Irrevocable Life Insurance Trust." -> The Hartford Family I'
+  [SELECTED(rank 10)] ce=5.959  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 8)] ce=5.927  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 17)] ce=5.904  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [SELECTED(rank 13)] ce=5.837  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> The Hartford Family '
+  [               -] ce=5.824  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> (has ) -> [hartford '
+  [               -] ce=5.730  '"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> (has ) -> [hartford '
+
+--- RETRIEVED CONTEXT (what the generation LLM actually saw) ---
+"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> SUPPORTS -> "This policy is designed for estate planning purposes." -> (has ) -> [policy (Insurance contract)] -> (participates in event: REQUIRES_CONTINUED_PAYMENTS) -> "After the first insured's death, the premium payment obligation continues."
+Logical Conclusions:
+The Hartford Family Irrevocable Trust paying the premiums aligns with the policy's design for estate planning purposes.
+
+[policy (Insurance contract)] -> (participates in event: PROVIDES_CONFIRMATION) -> "After the first insured's death, the policy owner receives written confirmation."
+
+[policy (Insurance contract)] -> (participates in event: MAINTAINS_PREMIUM_RATE) -> "After the first insured's death, the premium remains unchanged."
+
+[policy (Insurance contract)] -> (participates in event: HAS_GUARANTEED_PREMIUM) -> "The annual premium of $32,400 is guaranteed level for the first 10 policy years."
+
+[policy (Insurance contract)] -> (participates in event: PAYS_DEATH_BENEFIT) -> "Upon the death of the second insured, $2,500,000 will be paid to the designated beneficiary."
+
+[policy (Insurance contract)] -> (participates in event: NO_PAYOUT_ON_FIRST_DEATH) -> "When the first insured dies, no death benefit is paid."
+
+"This policy is designed for estate planning purposes." -> SUPPORTS -> "This policy is designed for estate tax liquidity purposes."
+Logical Conclusions:
+This policy serves estate planning purposes, including providing liquidity to cover estate taxes.
+
+"This policy is designed for estate planning purposes." -> SUPPORTS_PURPOSE -> "The purpose of this policy is estate planning."
+Logical Conclusions:
+The policy's design for estate planning purposes is consistent with its stated purpose of estate planning, reinforcing its intended function.
+
+"The policy owner is The Hartford Family Irrevocable Life Insurance Trust." -> PAYS_PREMIUMS -> "The premium payor for the policy is the Hartford Family Irrevocable Trust."
+Logical Conclusions:
+The Hartford Family Irrevocable Life Insurance Trust, which owns the policy, is also responsible for paying the premiums, indicating financial control.
+
+"This policy is designed for estate planning purposes." -> SUPPORTS -> "The annual premium for the policy is $32,400."
+Logical Conclusions:
+The structured annual premium of $32,400 supports the policy’s purpose of estate planning through long-term financial protection.
+
+"The premium payor for the policy is the Hartford Family Irrevocable Trust." -> PAYS -> "The annual premium for the policy is $32,400."
+Logical Conclusions:
+The Hartford Family Irrevocable Trust is the premium payor, which ensures that the annual premium of $32,400 is paid consistently.
+
+"This policy is designed for estate planning purposes." -> SUPPORTS -> "An estate planning attorney should be consulted regarding annual exclusion gift planning."
+Logical Conclusions:
+Consulting an estate planning attorney for annual exclusion gift planning is consistent with the policy’s primary purpose of estate tax liquidity and planning.
+
+"The policy owner is The Hartford Family Irrevocable Life Insurance Trust." -> IS_OWNER_OF -> "The policy owner is the Trust."
+Logical Conclusions:
+The policy owner is explicitly identified as The Hartford Family Irrevocable Life Insurance Trust, confirming the entity named in the prior fact.
+
+"The annual premium for the policy is $32,400." -> (has ) -> [hartford family irrevocable life insurance trust (Beneficiary)] -> (participates in event: POLICY_OWNER) -> "The policy is a joint survivorship life insurance policy."
+
+[hartford family irrevocable life insurance trust (Beneficiary)] -> (participates in event: POLICY_OWNER) -> "The policy owner is The Hartford Family Irrevocable Life Insurance Trust."
+
+"The policy owner is The Hartford Family Irrevocable Life Insurance Trust." -> SUPPORTS_TAX_PLANNING -> "This policy is owned by an irrevocable trust to exclude proceeds from the insureds' taxable estates."
+Logical Conclusions:
+The policy is owned by an irrevocable trust, which aligns with the estate tax planning purpose of excluding proceeds from the insureds' taxable estates.
+
+[hartford family irrevocable life insurance trust (Beneficiary)] -> (participates in event: NOT_APPLICABLE) -> "The policy operates on a survivorship basis."
+
+[hartford family irrevocable life insurance trust (Beneficiary)] -> (participates in event: PURPOSE_OF_ESTATE_PLANNING) -> "The purpose of this policy is estate planning."
+
+[hartford family irrevocable life insurance trust (Beneficiary)] -> (participates in event: RECEIVER_OF_BENEFIT) -> "The beneficiary of the policy is the Hartford Family Irrevocable Life Insurance Trust."
+
+"The annual premium for the policy is $32,400." -> HAS_GUARANTEE -> "The annual premium is guaranteed to remain level for 10 years."
+Logical Conclusions:
+The annual premium of $32,400 is guaranteed to remain level for 10 years, which provides financial predictability for the policy owner.
+
+--- GENERATION ---
+LLM answer: The Hartford Family Irrevocable Trust pays the premiums on this policy.
+Judge score: 1.0
+====================================================================================================

@@ -1,6 +1,14 @@
 import os
+from functools import lru_cache
 from transformers import AutoTokenizer
 from dotenv import load_dotenv
+
+
+@lru_cache(maxsize=None)
+def _get_tokenizer(model: str):
+    """Load each tokenizer once per process (construction calls the chunker once per chunk, from many threads)."""
+    return AutoTokenizer.from_pretrained(model)
+
 
 def chunk_text_by_tokens(model: str = None ,text: str = None, chunk_size: int = 600, overlap: int = 50) -> list[str]:
     """Splits text into overlapping chunks based on Qwen's token count."""
@@ -9,7 +17,7 @@ def chunk_text_by_tokens(model: str = None ,text: str = None, chunk_size: int = 
         load_dotenv()
         model = os.getenv("MODEL_NAME", "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8")
 
-    TOKENIZER = AutoTokenizer.from_pretrained(model)
+    TOKENIZER = _get_tokenizer(model)
 
     # Encode the text into Qwen's specific token IDs
     tokens = TOKENIZER.encode(text)

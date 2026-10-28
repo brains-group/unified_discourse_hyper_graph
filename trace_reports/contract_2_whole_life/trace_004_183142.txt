@@ -1,0 +1,1478 @@
+====================================================================================================
+QUESTION: What is the insured's issue age?
+CATEGORY: CAT1_ATOMIC_LOOKUP
+EXPECTED ANSWER: 45
+EVIDENCE: Issue Age: 45
+====================================================================================================
+
+--- GOAL PLAN ---
+rewritten_query: What is the issue age of the insured person?
+reasoning: The query "What is the insured's issue age?" is asking for a specific piece of information related to an insurance policy — namely, the age of the insured person at the time the policy was issued. This is a single, well-defined fact that can be retrieved directly from policy data if the insured's birth date and the policy issue date are known. However, the query does not provide any context such as the name of the insured, the policy number, or any other identifying details. Therefore, it cannot be answered without additional information.
+
+Since the query is asking for one specific fact (issue age) and does not reference any other entity or require chaining through multiple facts, it is a simple, single-fact query. No intermediate steps or dependencies are needed. However, because the query lacks necessary context (e.g., who the insured is), it cannot be resolved without further clarification or data.
+
+Nonetheless, for the purpose of structuring the search plan, we treat this as a single lookup task: find the issue age of the insured, assuming the necessary data (birth date and issue date) are available in the knowledge graph.
+  [0] the issue age of the insured person  (key_terms=[], depends_on_previous=False)
+planner LLM calls: 1  (total_tokens=0)
+
+--- EVIDENCE CROSS-REFERENCE ---
+
+  candidate evidence fact (word-overlap=0.18): 'Margaret Rose Chen was issued the policy at age 45.'
+    seeding      : candidate, selected=True (rank 2), scores=[0.6143658757209778]
+    traversal    : depth=0 from="If the insured's age was misstated, the face amount will be adjusted to reflect what the premium would have purchased at the correct age." chosen=True scores=[0.5771741271018982]
+    traversal    : depth=0 from='The maturity date of the policy is July 8, 2078, which corresponds to age 100.' chosen=True scores=[0.5662216544151306]
+    traversal    : depth=1 from='Margaret Rose Chen was born on July 8, 1978.' chosen=True scores=[0.6190784573554993]
+    traversal    : depth=1 from='Margaret Rose Chen is classified as Standard Non-Tobacco.' chosen=True scores=[0.53425532579422]
+    traversal    : depth=1 from='The effective date of the policy is February 1, 2024.' chosen=True scores=[0.588580310344696]
+    traversal    : depth=1 from='The effective date of the policy is February 1, 2024.' chosen=True scores=[0.588580310344696]
+    traversal    : depth=1 from='Margaret Rose Chen was born on July 8, 1978.' chosen=True scores=[0.6190784573554993]
+    traversal    : depth=2 from='Margaret Rose Chen is classified as Standard Non-Tobacco.' chosen=True scores=[0.53425532579422]
+    traversal    : depth=2 from='Margaret Rose Chen is classified as Standard Non-Tobacco.' chosen=True scores=[0.53425532579422]
+    traversal    : depth=2 from="If the insured's age was misstated, the face amount will be adjusted to reflect what the premium would have purchased at the correct age." chosen=True scores=[0.5771741271018982]
+    traversal    : depth=2 from='Margaret Rose Chen was born on July 8, 1978.' chosen=True scores=[0.619078516960144]
+    final_ranking: selected=False, cross_encoder_score=-6.799
+
+  candidate evidence fact (word-overlap=0.10): 'The premium payment period extends to age 100.'
+    seeding      : candidate, selected=True (rank 6), scores=[0.5969585180282593]
+    traversal    : depth=1 from='The effective date of the policy is February 1, 2024.' chosen=True scores=[0.593629002571106]
+    traversal    : depth=1 from='The effective date of the policy is February 1, 2024.' chosen=True scores=[0.593629002571106]
+    final_ranking: selected=False, cross_encoder_score=-4.804
+
+  candidate evidence fact (word-overlap=0.06): 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'
+    seeding      : candidate, selected=True (rank 9), scores=[0.5631695985794067]
+    traversal    : depth=0 from='Margaret Rose Chen was issued the policy at age 45.' chosen=True scores=[0.5665991306304932]
+    traversal    : depth=1 from='Margaret Rose Chen was issued the policy at age 45.' chosen=True scores=[0.5665991306304932]
+    traversal    : depth=1 from='The effective date of the policy is February 1, 2024.' chosen=True scores=[0.601813793182373]
+    traversal    : depth=1 from='Margaret Rose Chen was born on July 8, 1978.' chosen=True scores=[0.5840125679969788]
+    traversal    : depth=1 from='Margaret Rose Chen was born on July 8, 1978.' chosen=True scores=[0.5840125679969788]
+    traversal    : depth=1 from='The effective date of the policy is February 1, 2024.' chosen=True scores=[0.601813793182373]
+    traversal    : depth=2 from='july 8, 2078 (Maturity date)' chosen=True scores=[0.5322232842445374]
+    traversal    : depth=2 from='july 8, 2078 (Maturity date)' chosen=True scores=[0.5322232842445374]
+    final_ranking: selected=False, cross_encoder_score=1.428
+
+--- SEEDING (top candidates by score) ---
+  [SELECTED(rank 0)] scores=['0.705']  "If the insured's age was misstated, the face amount will be adjusted to reflect what the p"
+  [SELECTED(rank 1)] scores=['0.664']  "The amount of Reduced Paid-Up Insurance is based on the cash value and the insured's attai"
+  [SELECTED(rank 2)] scores=['0.614']  'Margaret Rose Chen was issued the policy at age 45.'
+  [SELECTED(rank 3)] scores=['0.607']  'The insured person is Margaret Rose Chen.'
+  [SELECTED(rank 4)] scores=['0.601']  'The policy was issued by Guardian Family Protection Corp.'
+  [SELECTED(rank 5)] scores=['0.601']  'The policy is a whole life insurance policy issued by Guardian Family Protection Corp.'
+  [SELECTED(rank 6)] scores=['0.597']  'The premium payment period extends to age 100.'
+  [SELECTED(rank 7)] scores=['0.594']  'The insurer may contest the policy only within the first two years while the insured is li'
+  [SELECTED(rank 8)] scores=['0.585']  "Annual dividends may be declared based on the insurer's mortality experience."
+  [SELECTED(rank 9)] scores=['0.563']  'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'
+  [               -] scores=['0.560']  'The policy type is participating whole life.'
+  [               -] scores=['0.550']  'The policy has a limited period based on cash value.'
+  [               -] scores=['0.549']  'A policyholder may borrow against the cash value after the policy has been in force for on'
+  [               -] scores=['0.544']  'The policy was issued on February 1, 2024.'
+  [               -] scores=['0.542']  'Paid-Up Insurance is defined as a reduced death benefit with no further premiums required.'
+  [               -] scores=['0.539']  'insurance company (Policy issuer and dividend payer)'
+  [               -] scores=['0.533']  'The insurer may contest the policy only for material misrepresentation in the application.'
+  [               -] scores=['0.529']  'The primary beneficiary of the policy is David Chen, who is the husband of the insured.'
+  [               -] scores=['0.525']  'misstatement of age (Policy adjustment condition)'
+  [               -] scores=['0.524']  'Extended Term Insurance requires no further premiums.'
+  [               -] scores=['0.521']  'insurer (Entity responsible for policy terms)'
+  [               -] scores=['0.518']  'If the insured dies by suicide within two years from the issue date, the insurer will pay '
+  [               -] scores=['0.516']  'To reinstate the policy, evidence of insurability satisfactory to the insurer must be prov'
+  [               -] scores=['0.515']  'The effective date of the policy is February 1, 2024.'
+  [               -] scores=['0.507']  'If no election is made within 60 days of lapse, Extended Term Insurance will automatically'
+
+--- TRAVERSAL (158 hop decisions, 14 dead ends) ---
+
+  depth=0 goal_indices=[0] from: "If the insured's age was misstated, the face amount will be adjusted to reflect what the p"
+    [KEEP] (fact_entity, 'has ') -> 'misstatement of age (Policy adjustment condition)'  scores=['0.312']
+    [KEEP] (fact_fact, 'EXCEPTION_TO') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.553']
+    [KEEP] (fact_entity, 'has ') -> 'insurer (Entity responsible for policy terms)'  scores=['0.170']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.577']
+
+  depth=0 goal_indices=[0] from: "The amount of Reduced Paid-Up Insurance is based on the cash value and the insured's attai"
+    [KEEP] (fact_fact, 'DETERMINES') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.566']
+    [KEEP] (fact_entity, 'has ') -> 'reduced paid-up insurance (Non-forfeiture option with reduced coverage)'  scores=['0.233']
+    [KEEP] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.534']
+    [KEEP] (fact_fact, 'DERIVED_FROM') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.486']
+    [KEEP] (fact_fact, 'REPLACED_BY') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.558']
+
+  depth=0 goal_indices=[0] from: 'Margaret Rose Chen was issued the policy at age 45.'
+    [KEEP] (fact_fact, 'ISSUED_WHEN_AGE') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.490']
+    [KEEP] (fact_fact, 'SETS_EFFECTIVE_DATE') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.558']
+    [drop] (fact_entity, 'has ') -> '$28,450 (Guaranteed cash value at end of Year 10)'  scores=['0.133']
+    [KEEP] (fact_fact, 'IS_APPLIED_TO') -> "If the insured's age was misstated, the face amount will be adjusted to reflect "  scores=['0.680']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.450']
+    [KEEP] (fact_fact, 'LEADS TO') -> 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'  scores=['0.567']
+    [KEEP] (fact_fact, 'IS CORROBORATED BY') -> 'The policy was issued on February 1, 2024.'  scores=['0.552']
+
+  depth=0 goal_indices=[0] from: 'The insured person is Margaret Rose Chen.'
+    [KEEP] (fact_fact, 'IS_ASSIGNED_TO') -> 'The policy is a whole life insurance policy issued by Guardian Family Protection'  scores=['0.607']
+    [KEEP] (fact_fact, 'HAS_BIRTH_DATE') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.476']
+    [KEEP] (fact_fact, 'DESIGNS_BENEFICIARY') -> 'The primary beneficiary of the policy is David Chen, who is the husband of the i'  scores=['0.546']
+    [KEEP] (fact_entity, 'has ') -> 'margaret rose chen (Insured individual)'  scores=['0.244']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.393']
+    [KEEP] (fact_fact, 'ASSOCIATED_WITH') -> 'The policy number is GFP-WL-2024-8847.'  scores=['0.512']
+
+  depth=0 goal_indices=[0] from: 'The policy was issued by Guardian Family Protection Corp.'
+    [KEEP] (fact_fact, 'ISSUED_IN') -> 'The policy was issued at Boston, Massachusetts.'  scores=['0.496']
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+    [KEEP] (fact_fact, 'ISSUES') -> 'The policy is a whole life insurance policy issued by Guardian Family Protection'  scores=['0.622']
+
+  depth=0 goal_indices=[0] from: 'The policy is a whole life insurance policy issued by Guardian Family Protection Corp.'
+    [KEEP] (fact_fact, 'CLASSIFIES_AS') -> 'The policy type is participating whole life.'  scores=['0.577']
+    [KEEP] (fact_fact, 'ASSIGNS_TO') -> 'The insured person is Margaret Rose Chen.'  scores=['0.581']
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+    [KEEP] (fact_fact, 'IS_ISSUED_BY') -> 'The policy was issued by Guardian Family Protection Corp.'  scores=['0.621']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'This policy is a participating policy.'  scores=['0.516']
+
+  depth=0 goal_indices=[0] from: 'The premium payment period extends to age 100.'
+    [KEEP] (fact_entity, 'has ') -> 'to age 100 (Premium payment period)'  scores=['0.296']
+    [KEEP] (fact_fact, 'HAS_PAYMENT_PERIOD') -> 'The annual premium for the policy is $3,240.'  scores=['0.527']
+    [KEEP] (fact_fact, 'EXTENDS') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.505']
+
+  depth=0 goal_indices=[0] from: 'The insurer may contest the policy only within the first two years while the insured is li'
+    [KEEP] (fact_fact, 'LIMITS') -> 'The insurer may contest the policy only for material misrepresentation in the ap'  scores=['0.553']
+    [KEEP] (fact_entity, 'has ') -> 'insurer (Entity responsible for policy terms)'  scores=['0.170']
+    [KEEP] (fact_entity, 'has ') -> 'contestability period (Two-year challenge window for misrepresentation)'  scores=['0.186']
+
+  depth=0 goal_indices=[0] from: "Annual dividends may be declared based on the insurer's mortality experience."
+    [KEEP] (fact_fact, 'CAUSES') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.487']
+    [KEEP] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [KEEP] (fact_entity, 'has ') -> 'insurance company (Policy issuer and dividend payer)'  scores=['0.143']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> "Dividends are based on the company's experience."  scores=['0.444']
+    [KEEP] (fact_fact, 'INFORMS') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.463']
+
+  depth=0 goal_indices=[0] from: 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'
+    [KEEP] (fact_fact, 'HAS_MATURITY_DATE') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.577']
+    [KEEP] (fact_entity, 'has ') -> 'july 8, 2078 (Maturity date)'  scores=['0.188']
+    [KEEP] (fact_fact, 'CORRESPONDS_TO') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.433']
+    [KEEP] (fact_fact, 'IS LEAD TO BY') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.566']
+
+  depth=1 goal_indices=[0] from: 'Margaret Rose Chen was issued the policy at age 45.'
+    [KEEP] (fact_fact, 'ISSUED_WHEN_AGE') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.490']
+    [KEEP] (fact_fact, 'SETS_EFFECTIVE_DATE') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.558']
+    [KEEP] (fact_entity, 'has ') -> '$28,450 (Guaranteed cash value at end of Year 10)'  scores=['0.133']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.450']
+    [KEEP] (fact_fact, 'LEADS TO') -> 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'  scores=['0.567']
+    [KEEP] (fact_fact, 'IS CORROBORATED BY') -> 'The policy was issued on February 1, 2024.'  scores=['0.552']
+
+  depth=1 goal_indices=[0] from: 'If the insured dies by suicide within two years from the issue date, the insurer will pay '
+    [KEEP] (fact_entity, 'has ') -> 'suicide (Exclusion condition within two years)'  scores=['0.252']
+    [KEEP] (fact_entity, 'has ') -> 'insurer (Entity responsible for policy terms)'  scores=['0.170']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.534']
+    [KEEP] (fact_fact, 'AFFECTS') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.511']
+
+  depth=1 goal_indices=[0] from: 'insurer (Entity responsible for policy terms)'
+    [KEEP] (entity_fact, 'participates in: SETS_REINSTATEMENT_WINDOW') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.466']
+    [KEEP] (entity_fact, 'participates in: EVALUATES_INSURABILITY') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.485']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_AT_6_PERCENT') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.428']
+    [drop] (entity_fact, 'participates in: CHARGES_INTEREST_ON_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUMS_PAID_ONLY') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: MAY_CONTEST_DURING_PERIOD') -> 'The insurer may contest the policy only within the first two years while the ins'  scores=['0.520']
+    [KEEP] (entity_fact, 'participates in: MAY_CONTEST_FOR_MISREPRESENTATION') -> 'The insurer may contest the policy only for material misrepresentation in the ap'  scores=['0.461']
+
+  depth=1 goal_indices=[0] from: 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues for a red'
+    [KEEP] (fact_fact, 'ENABLES') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.524']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [drop] (fact_entity, 'has ') -> 'insurance company (Policy issuer and dividend payer)'  scores=['0.143']
+    [drop] (fact_entity, 'has ') -> 'reduced paid-up insurance (Non-forfeiture option with reduced coverage)'  scores=['0.233']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> 'The face amount of the policy is $250,000.'  scores=['0.508']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Paid-Up Insurance is defined as a reduced death benefit with no further premiums'  scores=['0.566']
+    [KEEP] (fact_fact, 'LEADS_TO') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.498']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.533']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.523']
+
+  depth=1 goal_indices=[0] from: 'If no election is made within 60 days of lapse, Extended Term Insurance will automatically'
+    [KEEP] (fact_fact, 'TRIGGERS') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.506']
+    [KEEP] (fact_entity, 'has ') -> 'extended term insurance (Non-forfeiture option with full coverage for limited ti'  scores=['0.164']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'insurance company (Policy issuer and dividend payer)'  scores=['0.143']
+
+  depth=1 goal_indices=[0] from: 'This policy builds cash value according to the guaranteed schedule shown in the policy val'
+    [drop] (fact_fact, 'GROWS_TAX_DEFERRED') -> 'Cash value grows on a tax-deferred basis.'  scores=['0.368']
+    [KEEP] (fact_fact, 'FOLLOWS_SCHEDULE') -> 'The guaranteed cash value at the end of Year 10 is $28,450.'  scores=['0.474']
+    [drop] (fact_fact, 'FOLLOWS_SCHEDULE') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.467']
+    [drop] (fact_entity, 'has ') -> 'policy loans (Borrowed funds against cash value)'  scores=['0.095']
+    [drop] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.485']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.512']
+    [KEEP] (fact_fact, 'ENABLES') -> 'Paid-Up Insurance is defined as a reduced death benefit with no further premiums'  scores=['0.557']
+    [KEEP] (fact_fact, 'IS CHARACTERIZED BY') -> 'The policy type is participating whole life.'  scores=['0.589']
+    [KEEP] (fact_fact, 'IS CONTRIBUTED TO BY') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.554']
+    [drop] (fact_fact, 'IS SEPARATE FROM') -> 'Loan interest may be paid annually.'  scores=['0.462']
+
+  depth=1 goal_indices=[0] from: 'The actual cash value may be higher than the guaranteed amount due to dividend credits.'
+    [KEEP] (fact_fact, 'EXPLAINS') -> 'This policy is a participating policy.'  scores=['0.512']
+    [KEEP] (fact_fact, 'RESULT_OF') -> "Annual dividends may be declared based on the insurer's mortality experience."  scores=['0.603']
+    [KEEP] (fact_fact, 'RESULT_OF') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.562']
+    [KEEP] (fact_fact, 'RESULT_OF') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.562']
+    [drop] (fact_fact, 'LIMITS') -> 'Dividends are not guaranteed.'  scores=['0.385']
+    [drop] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [drop] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [drop] (fact_fact, 'IS_MODIFIED_BY') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.479']
+    [drop] (fact_fact, 'IS_MODIFIED_BY') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.479']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.500']
+    [KEEP] (fact_fact, 'ENHANCED_BY') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.498']
+    [drop] (fact_fact, 'EXCEEDS') -> 'The guaranteed cash value at the end of Year 10 is $28,450.'  scores=['0.464']
+
+  depth=1 goal_indices=[0] from: 'reduced paid-up insurance (Non-forfeiture option with reduced coverage)'
+    [KEEP] (entity_fact, 'participates in: IS_PROVIDED') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.466']
+
+  depth=1 goal_indices=[0] from: 'cash surrender value (Policy cash value upon surrender)'
+    [KEEP] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.440']
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.381']
+    [KEEP] (entity_fact, 'participates in: ') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: ') -> 'Cash value grows on a tax-deferred basis.'  scores=['0.245']
+    [drop] (entity_fact, 'participates in: ') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.352']
+    [drop] (entity_fact, 'participates in: DETERMINES_LOAN_LIMIT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.376']
+    [drop] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.392']
+    [drop] (entity_fact, 'participates in: IS_PAID_OUT') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: REACHES_AMOUNT_AT_YEAR') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.408']
+    [drop] (entity_fact, 'participates in: INCREASES_DUE_TO_DIVIDENDS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.361']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_CASH_PAYMENT') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.436']
+    [drop] (entity_fact, 'participates in: NOT_RELEVANT_TO_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.348']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_ACCUMULATION') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_FOR_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.519']
+    [drop] (entity_fact, 'participates in: DETERMINES_TERMINATION_THRESHOLD') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.415']
+
+  depth=1 goal_indices=[0] from: "If the insured's age was misstated, the face amount will be adjusted to reflect what the p"
+    [KEEP] (fact_entity, 'has ') -> 'misstatement of age (Policy adjustment condition)'  scores=['0.312']
+    [KEEP] (fact_fact, 'EXCEPTION_TO') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.553']
+    [KEEP] (fact_entity, 'has ') -> 'insurer (Entity responsible for policy terms)'  scores=['0.170']
+
+  depth=1 goal_indices=[0] from: 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'
+    [KEEP] (fact_fact, 'HAS_MATURITY_DATE') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.577']
+    [KEEP] (fact_entity, 'has ') -> 'july 8, 2078 (Maturity date)'  scores=['0.188']
+    [KEEP] (fact_fact, 'CORRESPONDS_TO') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.433']
+
+  depth=1 goal_indices=[0] from: 'The effective date of the policy is February 1, 2024.'
+    [KEEP] (fact_fact, 'DETERMINES_MATURITY') -> 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'  scores=['0.602']
+    [KEEP] (fact_entity, 'has ') -> 'february 1, 2024 (Effective date)'  scores=['0.193']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The policy was issued on February 1, 2024.'  scores=['0.575']
+    [KEEP] (fact_fact, 'IS_IDENTIFIED_BY') -> 'The policy number is GFP-WL-2024-8847.'  scores=['0.538']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.556']
+    [KEEP] (fact_fact, 'INFORMS') -> 'The premium payment period extends to age 100.'  scores=['0.594']
+
+  depth=1 goal_indices=[0] from: 'The policy was issued on February 1, 2024.'
+    [KEEP] (fact_fact, 'FOLLOWS') -> 'The policy was issued at Boston, Massachusetts.'  scores=['0.438']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The President of Guardian Family Protection Corp. signed the policy.'  scores=['0.492']
+    [KEEP] (fact_entity, 'has ') -> 'february 1, 2024 (Effective date)'  scores=['0.193']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.528']
+    [KEEP] (fact_fact, 'IS SUBJECT TO') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.488']
+
+  depth=1 goal_indices=[0] from: 'Margaret Rose Chen was born on July 8, 1978.'
+    [KEEP] (fact_fact, 'IS_BORN_ON') -> 'The insured person is Margaret Rose Chen.'  scores=['0.615']
+    [KEEP] (fact_entity, 'has ') -> 'july 8, 2078 (Maturity date)'  scores=['0.188']
+    [KEEP] (fact_fact, 'HAS_AS_CORRESPONDING_DATE') -> 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'  scores=['0.584']
+
+  depth=1 goal_indices=[0] from: 'Margaret Rose Chen is classified as Standard Non-Tobacco.'
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> 'The insured person is Margaret Rose Chen.'  scores=['0.528']
+
+  depth=1 goal_indices=[0] from: 'The policy is a whole life insurance policy issued by Guardian Family Protection Corp.'
+    [KEEP] (fact_fact, 'CLASSIFIES_AS') -> 'The policy type is participating whole life.'  scores=['0.577']
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+    [KEEP] (fact_fact, 'IS_ISSUED_BY') -> 'The policy was issued by Guardian Family Protection Corp.'  scores=['0.621']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'This policy is a participating policy.'  scores=['0.516']
+
+  depth=1 goal_indices=[0] from: 'The primary beneficiary of the policy is David Chen, who is the husband of the insured.'
+    [KEEP] (fact_fact, 'RECEIVES_BENEFIT') -> 'David Chen is entitled to 100% of the death benefit.'  scores=['0.345']
+    [KEEP] (fact_fact, 'TRIGGERS_CONTINGENCY') -> 'The Chen Family Trust is entitled to 100% of the death benefit if the primary be'  scores=['0.494']
+    [KEEP] (fact_entity, 'has ') -> 'margaret rose chen (Insured individual)'  scores=['0.244']
+    [KEEP] (fact_entity, 'has ') -> 'david chen (Primary beneficiary)'  scores=['0.138']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The contingent beneficiary of the policy is the Chen Family Trust.'  scores=['0.509']
+
+  depth=1 goal_indices=[0] from: 'The policy number is GFP-WL-2024-8847.'
+    [KEEP] (fact_entity, 'has ') -> 'policy no: gfp-wl-2024-8847 (Policy identifier)'  scores=['0.252']
+    [KEEP] (fact_fact, 'IDENTIFIES') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.534']
+
+  depth=1 goal_indices=[0] from: 'Margaret Rose Chen was born on July 8, 1978.'
+    [KEEP] (fact_fact, 'ISSUED_AT_AGE') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.619']
+    [KEEP] (fact_entity, 'has ') -> 'july 8, 2078 (Maturity date)'  scores=['0.188']
+    [KEEP] (fact_fact, 'HAS_AS_CORRESPONDING_DATE') -> 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'  scores=['0.584']
+
+  depth=1 goal_indices=[0] from: 'Margaret Rose Chen is classified as Standard Non-Tobacco.'
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.534']
+
+  depth=1 goal_indices=[0] from: 'margaret rose chen (Insured individual)'
+    [KEEP] (entity_fact, 'participates in: INSURED_PERSON') -> 'The primary beneficiary of the policy is David Chen, who is the husband of the i'  scores=['0.562']
+
+  depth=1 goal_indices=[0] from: 'The policy is a whole life insurance policy issued by Guardian Family Protection Corp.'
+    [KEEP] (fact_fact, 'CLASSIFIES_AS') -> 'The policy type is participating whole life.'  scores=['0.577']
+    [KEEP] (fact_fact, 'ASSIGNS_TO') -> 'The insured person is Margaret Rose Chen.'  scores=['0.581']
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'This policy is a participating policy.'  scores=['0.516']
+
+  depth=1 goal_indices=[0] from: 'The policy was issued at Boston, Massachusetts.'
+    [KEEP] (fact_entity, 'has ') -> 'boston, massachusetts (Issuance location)'  scores=['0.202']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The policy was issued on February 1, 2024.'  scores=['0.515']
+
+  depth=1 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a whole life insurance policy issued by Guardian Family Protection'  scores=['0.563']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.324']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDEND') -> "Dividends are based on the company's experience."  scores=['0.291']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_POLICY_LOAN') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.422']
+
+  depth=1 goal_indices=[0] from: 'The policy was issued by Guardian Family Protection Corp.'
+    [KEEP] (fact_fact, 'ISSUED_IN') -> 'The policy was issued at Boston, Massachusetts.'  scores=['0.496']
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+
+  depth=1 goal_indices=[0] from: 'The insured person is Margaret Rose Chen.'
+    [KEEP] (fact_fact, 'HAS_BIRTH_DATE') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.476']
+    [KEEP] (fact_fact, 'DESIGNS_BENEFICIARY') -> 'The primary beneficiary of the policy is David Chen, who is the husband of the i'  scores=['0.546']
+    [KEEP] (fact_entity, 'has ') -> 'margaret rose chen (Insured individual)'  scores=['0.244']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.393']
+    [KEEP] (fact_fact, 'ASSOCIATED_WITH') -> 'The policy number is GFP-WL-2024-8847.'  scores=['0.512']
+
+  depth=1 goal_indices=[0] from: 'The policy type is participating whole life.'
+    [KEEP] (fact_fact, 'IS_INSTANCE_OF') -> 'This policy is a participating policy.'  scores=['0.547']
+    [KEEP] (fact_fact, 'DERIVES_FROM') -> "Dividends are based on the company's experience."  scores=['0.421']
+    [KEEP] (fact_fact, 'HAS AS FEATURE') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.529']
+
+  depth=1 goal_indices=[0] from: 'This policy is a participating policy.'
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.469']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [drop] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [drop] (fact_entity, 'has ') -> 'insurance company (Policy issuer and dividend payer)'  scores=['0.143']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy type is participating whole life.'  scores=['0.595']
+    [KEEP] (fact_fact, 'ENHANCED_BY') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.511']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.500']
+    [drop] (fact_fact, 'INCLUDES') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.450']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.520']
+    [KEEP] (fact_fact, 'INCREASED_BY') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.470']
+
+  depth=1 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Guardian Family Protection Corp.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.324']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDEND') -> "Dividends are based on the company's experience."  scores=['0.291']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_POLICY_LOAN') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.422']
+
+  depth=1 goal_indices=[0] from: 'The annual premium for the policy is $3,240.'
+    [KEEP] (fact_entity, 'has ') -> '$3,240 (Annual premium)'  scores=['0.247']
+    [KEEP] (fact_fact, 'HAS_PAYMENT_FREQUENCY') -> 'The premium is paid annually.'  scores=['0.496']
+
+  depth=1 goal_indices=[0] from: 'The effective date of the policy is February 1, 2024.'
+    [KEEP] (fact_fact, 'HAS_EFFECTIVE_DATE') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.589']
+    [KEEP] (fact_fact, 'DETERMINES_MATURITY') -> 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'  scores=['0.602']
+    [KEEP] (fact_entity, 'has ') -> 'february 1, 2024 (Effective date)'  scores=['0.193']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The policy was issued on February 1, 2024.'  scores=['0.575']
+    [KEEP] (fact_fact, 'IS_IDENTIFIED_BY') -> 'The policy number is GFP-WL-2024-8847.'  scores=['0.538']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.556']
+
+  depth=1 goal_indices=[0] from: 'The insurer may contest the policy only for material misrepresentation in the application.'
+    [KEEP] (fact_entity, 'has ') -> 'insurer (Entity responsible for policy terms)'  scores=['0.170']
+    [KEEP] (fact_entity, 'has ') -> 'contestability period (Two-year challenge window for misrepresentation)'  scores=['0.186']
+
+  depth=1 goal_indices=[0] from: 'contestability period (Two-year challenge window for misrepresentation)'
+    [KEEP] (entity_fact, 'participates in: APPLIES_ONLY_TO_MISREPRESENTATION') -> 'The insurer may contest the policy only for material misrepresentation in the ap'  scores=['0.465']
+
+  depth=1 goal_indices=[0] from: 'insurer (Entity responsible for policy terms)'
+    [KEEP] (entity_fact, 'participates in: SETS_REINSTATEMENT_WINDOW') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.466']
+    [KEEP] (entity_fact, 'participates in: EVALUATES_INSURABILITY') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.485']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_AT_6_PERCENT') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.428']
+    [drop] (entity_fact, 'participates in: CHARGES_INTEREST_ON_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUMS_PAID_ONLY') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: ADJUSTS_FACE_AMOUNT') -> "If the insured's age was misstated, the face amount will be adjusted to reflect "  scores=['0.615']
+    [KEEP] (entity_fact, 'participates in: MAY_CONTEST_FOR_MISREPRESENTATION') -> 'The insurer may contest the policy only for material misrepresentation in the ap'  scores=['0.461']
+
+  depth=1 goal_indices=[0] from: 'The actual cash value may be higher than the guaranteed amount due to dividend credits.'
+    [KEEP] (fact_fact, 'EXPLAINS') -> 'This policy is a participating policy.'  scores=['0.512']
+    [KEEP] (fact_fact, 'RESULT_OF') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.562']
+    [KEEP] (fact_fact, 'RESULT_OF') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.562']
+    [drop] (fact_fact, 'LIMITS') -> 'Dividends are not guaranteed.'  scores=['0.385']
+    [drop] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [drop] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [drop] (fact_fact, 'IS_MODIFIED_BY') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.479']
+    [drop] (fact_fact, 'IS_MODIFIED_BY') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.479']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.500']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'The amount of Reduced Paid-Up Insurance is based on the cash value and the insur'  scores=['0.609']
+    [KEEP] (fact_fact, 'ENHANCED_BY') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.498']
+    [drop] (fact_fact, 'EXCEEDS') -> 'The guaranteed cash value at the end of Year 10 is $28,450.'  scores=['0.464']
+
+  depth=1 goal_indices=[0] from: 'One dividend option is Premium Reduction, where the dividend is applied to reduce the next'
+    [KEEP] (fact_fact, 'EXAMPLE_OF') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.452']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [KEEP] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [KEEP] (fact_fact, 'IS_OPTION_OF') -> 'This policy is a participating policy.'  scores=['0.503']
+
+  depth=1 goal_indices=[0] from: "Dividends are based on the company's experience."
+    [KEEP] (fact_fact, 'INFLUENCES_DIVIDENDS') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.423']
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+    [drop] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'The policy type is participating whole life.'  scores=['0.548']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'Dividends are not guaranteed.'  scores=['0.412']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.537']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.541']
+
+  depth=1 goal_indices=[0] from: 'insurance company (Policy issuer and dividend payer)'
+    [drop] (entity_fact, 'participates in: OFFERS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDENDS_BASED_ON_INVESTMENT') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.447']
+    [drop] (entity_fact, 'participates in: DECLARES_DIVIDENDS_BASED_ON_EXPENSES') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.436']
+    [drop] (entity_fact, 'participates in: DOES_NOT_GUARANTEE_DIVIDENDS') -> 'Dividends are not guaranteed.'  scores=['0.267']
+    [drop] (entity_fact, 'participates in: DEDUCTS_LOANS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.408']
+    [KEEP] (entity_fact, 'participates in: PAYS_FACE_AMOUNT') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the face am'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: PAYS_PAID_UP_ADDITIONS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the amount '  scores=['0.456']
+    [drop] (entity_fact, 'participates in: DEDUCTS_LOANS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.431']
+    [drop] (entity_fact, 'participates in: DEDUCTS_INTEREST') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the l'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: PAYS_WITHIN_7_DAYS') -> 'The death benefit payment will be made within 7 days of receiving complete claim'  scores=['0.399']
+    [drop] (entity_fact, 'participates in: OFFERS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.444']
+    [drop] (entity_fact, 'participates in: PAYS_CASH_SURRENDER') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.390']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.455']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.451']
+    [KEEP] (entity_fact, 'participates in: OFFERS_NO_PREMIUM_COVERAGE') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.499']
+    [drop] (entity_fact, 'participates in: APPLIES_DEFAULT') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.429']
+
+  depth=1 goal_indices=[0] from: 'dividends (Non-guaranteed annual payments)'
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: BASED_ON_COMPANY_EXPERIENCE') -> "Dividends are based on the company's experience."  scores=['0.308']
+    [drop] (entity_fact, 'participates in: INCREASES_ACTUAL_CASH_VALUE') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: INCREASE_CASH_VALUE') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.380']
+    [KEEP] (entity_fact, 'participates in: APPLICABLE_TO_POLICY') -> 'This policy is a participating policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_INVESTMENT') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.476']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_EXPENSES') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.471']
+    [drop] (entity_fact, 'participates in: NOT_GUARANTEED') -> 'Dividends are not guaranteed.'  scores=['0.320']
+    [KEEP] (entity_fact, 'participates in: PAID_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.424']
+    [drop] (entity_fact, 'participates in: REDUCE_PREMIUM') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.320']
+    [KEEP] (entity_fact, 'participates in: ACCUMULATE_AT_INTEREST') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.434']
+    [KEEP] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.458']
+    [drop] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.391']
+
+  depth=1 goal_indices=[0] from: 'The effective date of the policy is February 1, 2024.'
+    [KEEP] (fact_fact, 'HAS_EFFECTIVE_DATE') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.589']
+    [KEEP] (fact_entity, 'has ') -> 'february 1, 2024 (Effective date)'  scores=['0.193']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'The policy was issued on February 1, 2024.'  scores=['0.575']
+    [KEEP] (fact_fact, 'IS_IDENTIFIED_BY') -> 'The policy number is GFP-WL-2024-8847.'  scores=['0.538']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.556']
+    [KEEP] (fact_fact, 'INFORMS') -> 'The premium payment period extends to age 100.'  scores=['0.594']
+
+  depth=1 goal_indices=[0] from: 'Margaret Rose Chen was issued the policy at age 45.'
+    [KEEP] (fact_fact, 'ISSUED_WHEN_AGE') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.490']
+    [KEEP] (fact_fact, 'SETS_EFFECTIVE_DATE') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.558']
+    [KEEP] (fact_entity, 'has ') -> '$28,450 (Guaranteed cash value at end of Year 10)'  scores=['0.133']
+    [KEEP] (fact_fact, 'IS_APPLIED_TO') -> "If the insured's age was misstated, the face amount will be adjusted to reflect "  scores=['0.680']
+    [KEEP] (fact_fact, 'IS_CONFIRMED_BY') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.450']
+    [KEEP] (fact_fact, 'IS CORROBORATED BY') -> 'The policy was issued on February 1, 2024.'  scores=['0.552']
+
+  depth=1 goal_indices=[0] from: 'Margaret Rose Chen was born on July 8, 1978.'
+    [KEEP] (fact_fact, 'IS_BORN_ON') -> 'The insured person is Margaret Rose Chen.'  scores=['0.615']
+    [KEEP] (fact_fact, 'ISSUED_AT_AGE') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.619']
+    [KEEP] (fact_entity, 'has ') -> 'july 8, 2078 (Maturity date)'  scores=['0.188']
+
+  depth=1 goal_indices=[0] from: 'july 8, 2078 (Maturity date)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.271']
+
+  depth=2 goal_indices=[0] from: '$28,450 (Guaranteed cash value at end of Year 10)'
+    [KEEP] (entity_fact, 'participates in: IS_GUARANTEED_CASH_VALUE') -> 'The guaranteed cash value at the end of Year 10 is $28,450.'  scores=['0.395']
+    [KEEP] (entity_fact, 'participates in: IS_LOWER_THAN_ACTUAL_VALUE') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.356']
+
+  depth=2 goal_indices=[0] from: 'insurer (Entity responsible for policy terms)'
+    [KEEP] (entity_fact, 'participates in: SETS_REINSTATEMENT_WINDOW') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.466']
+    [KEEP] (entity_fact, 'participates in: EVALUATES_INSURABILITY') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.485']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_AT_6_PERCENT') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_ON_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: MAY_CONTEST_DURING_PERIOD') -> 'The insurer may contest the policy only within the first two years while the ins'  scores=['0.520']
+    [KEEP] (entity_fact, 'participates in: MAY_CONTEST_FOR_MISREPRESENTATION') -> 'The insurer may contest the policy only for material misrepresentation in the ap'  scores=['0.461']
+
+  depth=2 goal_indices=[0] from: 'The insurer may contest the policy only within the first two years while the insured is li'
+    [KEEP] (fact_fact, 'LIMITS') -> 'The insurer may contest the policy only for material misrepresentation in the ap'  scores=['0.553']
+    [KEEP] (fact_entity, 'has ') -> 'contestability period (Two-year challenge window for misrepresentation)'  scores=['0.186']
+
+  depth=2 goal_indices=[0] from: 'To reinstate the policy, evidence of insurability satisfactory to the insurer must be prov'
+    [KEEP] (fact_fact, 'ENABLES') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.528']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The policy has a limited period based on cash value.'  scores=['0.553']
+
+  depth=2 goal_indices=[0] from: 'If the insured dies by suicide within two years from the issue date, the insurer will pay '
+    [KEEP] (fact_entity, 'has ') -> 'suicide (Exclusion condition within two years)'  scores=['0.252']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.534']
+    [KEEP] (fact_fact, 'AFFECTS') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.511']
+
+  depth=2 goal_indices=[0] from: 'A policy may be reinstated within 3 years of lapse.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.545']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.489']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.498']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_fact, 'COMPLEMENTS') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.511']
+    [KEEP] (fact_fact, 'MODIFIES') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.516']
+
+  depth=2 goal_indices=[0] from: 'The insurer may contest the policy only for material misrepresentation in the application.'
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'The insurer may contest the policy only within the first two years while the ins'  scores=['0.603']
+    [KEEP] (fact_entity, 'has ') -> 'contestability period (Two-year challenge window for misrepresentation)'  scores=['0.186']
+
+  depth=2 goal_indices=[0] from: 'Overdue premiums must be paid with interest at 6% per annum to reinstate the policy.'
+    [KEEP] (fact_fact, 'ENABLES') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.500']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.491']
+
+  depth=2 goal_indices=[0] from: 'extended term insurance (Non-forfeiture option with full coverage for limited time)'
+    [KEEP] (entity_fact, 'participates in: APPLIES_AFTER_LAPSE') -> 'The policy has a limited period based on cash value.'  scores=['0.470']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_NO_PREMIUMS') -> 'No further premiums are required after the limited period based on cash value.'  scores=['0.432']
+    [KEEP] (entity_fact, 'participates in: AUTO_APPLIES_AFTER_LAPSE') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.431']
+    [KEEP] (entity_fact, 'participates in: IS_PROVIDED') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.462']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_NO_PAYMENT') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.499']
+
+  depth=2 goal_indices=[0] from: 'insurance company (Policy issuer and dividend payer)'
+    [drop] (entity_fact, 'participates in: OFFERS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDENDS_BASED_ON_MORTALITY') -> "Annual dividends may be declared based on the insurer's mortality experience."  scores=['0.522']
+    [drop] (entity_fact, 'participates in: DECLARES_DIVIDENDS_BASED_ON_INVESTMENT') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.447']
+    [drop] (entity_fact, 'participates in: DECLARES_DIVIDENDS_BASED_ON_EXPENSES') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.436']
+    [drop] (entity_fact, 'participates in: DOES_NOT_GUARANTEE_DIVIDENDS') -> 'Dividends are not guaranteed.'  scores=['0.267']
+    [drop] (entity_fact, 'participates in: DEDUCTS_LOANS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.408']
+    [KEEP] (entity_fact, 'participates in: PAYS_FACE_AMOUNT') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the face am'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: PAYS_PAID_UP_ADDITIONS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the amount '  scores=['0.456']
+    [drop] (entity_fact, 'participates in: DEDUCTS_LOANS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.431']
+    [drop] (entity_fact, 'participates in: DEDUCTS_INTEREST') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the l'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: PAYS_WITHIN_7_DAYS') -> 'The death benefit payment will be made within 7 days of receiving complete claim'  scores=['0.399']
+    [drop] (entity_fact, 'participates in: OFFERS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.444']
+    [drop] (entity_fact, 'participates in: PAYS_CASH_SURRENDER') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.390']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.455']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.451']
+    [KEEP] (entity_fact, 'participates in: OFFERS_NO_PREMIUM_COVERAGE') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.499']
+
+  depth=2 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+
+  depth=2 goal_indices=[0] from: 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues for a red'
+    [KEEP] (fact_fact, 'ENABLES') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.524']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [drop] (fact_entity, 'has ') -> 'insurance company (Policy issuer and dividend payer)'  scores=['0.143']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> 'The face amount of the policy is $250,000.'  scores=['0.508']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Paid-Up Insurance is defined as a reduced death benefit with no further premiums'  scores=['0.566']
+    [KEEP] (fact_fact, 'LEADS_TO') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.498']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.533']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.523']
+
+  depth=2 goal_indices=[0] from: 'A policyholder may borrow against the cash value after the policy has been in force for on'
+    [KEEP] (fact_fact, 'CONDITIONS') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.499']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'policy loans (Borrowed funds against cash value)'  scores=['0.095']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.510']
+    [KEEP] (fact_fact, 'IS_ENABLED_BY') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.508']
+
+  depth=2 goal_indices=[0] from: 'This policy builds cash value according to the guaranteed schedule shown in the policy val'
+    [drop] (fact_fact, 'GROWS_TAX_DEFERRED') -> 'Cash value grows on a tax-deferred basis.'  scores=['0.368']
+    [KEEP] (fact_fact, 'FOLLOWS_SCHEDULE') -> 'The guaranteed cash value at the end of Year 10 is $28,450.'  scores=['0.474']
+    [drop] (fact_fact, 'FOLLOWS_SCHEDULE') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.467']
+    [drop] (fact_entity, 'has ') -> 'policy loans (Borrowed funds against cash value)'  scores=['0.095']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.485']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.512']
+    [KEEP] (fact_fact, 'ENABLES') -> 'Paid-Up Insurance is defined as a reduced death benefit with no further premiums'  scores=['0.557']
+    [KEEP] (fact_fact, 'IS CHARACTERIZED BY') -> 'The policy type is participating whole life.'  scores=['0.589']
+    [KEEP] (fact_fact, 'IS CONTRIBUTED TO BY') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.554']
+    [drop] (fact_fact, 'IS SEPARATE FROM') -> 'Loan interest may be paid annually.'  scores=['0.462']
+
+  depth=2 goal_indices=[0] from: 'One dividend option is Accumulate at Interest, where the dividend is left with the insurer'
+    [KEEP] (fact_fact, 'EXAMPLE_OF') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.455']
+    [KEEP] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [KEEP] (fact_entity, 'has ') -> 'loan interest (Interest on outstanding policy loans)'  scores=['0.141']
+    [KEEP] (fact_fact, 'IS_OPTION_OF') -> 'This policy is a participating policy.'  scores=['0.503']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.457']
+
+  depth=2 goal_indices=[0] from: 'Cash Surrender Value is defined as the amount available if the policy is surrendered.'
+    [KEEP] (fact_fact, 'IS_CALCULATED_FROM') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.474']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.516']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'The policy has a limited period based on cash value.'  scores=['0.537']
+    [KEEP] (fact_fact, 'DERIVES_FROM') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.518']
+    [KEEP] (fact_fact, 'IS_REDUCED_BY') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.487']
+
+  depth=2 goal_indices=[0] from: 'One dividend option is Cash Payment, where the dividend is paid directly to the policyhold'
+    [KEEP] (fact_fact, 'EXAMPLE_OF') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.452']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [KEEP] (fact_fact, 'IS_OPTION_OF') -> 'This policy is a participating policy.'  scores=['0.501']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.484']
+
+  depth=2 goal_indices=[0] from: 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. using the cash'
+    [KEEP] (fact_fact, 'USES_COLLATERAL') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.464']
+    [KEEP] (fact_entity, 'has ') -> 'guardian family protection corp. (Insurance provider)'  scores=['0.200']
+    [KEEP] (fact_entity, 'has ') -> 'policy loans (Borrowed funds against cash value)'  scores=['0.095']
+    [KEEP] (fact_fact, 'ENABLES') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.556']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.459']
+    [KEEP] (fact_fact, 'AFFECTED_BY') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.496']
+
+  depth=2 goal_indices=[0] from: 'insurer (Entity responsible for policy terms)'
+    [KEEP] (entity_fact, 'participates in: SETS_REINSTATEMENT_WINDOW') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.466']
+    [KEEP] (entity_fact, 'participates in: EVALUATES_INSURABILITY') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.485']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_AT_6_PERCENT') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.428']
+    [drop] (entity_fact, 'participates in: CHARGES_INTEREST_ON_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUMS_PAID_ONLY') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: MAY_CONTEST_DURING_PERIOD') -> 'The insurer may contest the policy only within the first two years while the ins'  scores=['0.520']
+    [KEEP] (entity_fact, 'participates in: MAY_CONTEST_FOR_MISREPRESENTATION') -> 'The insurer may contest the policy only for material misrepresentation in the ap'  scores=['0.461']
+
+  depth=2 goal_indices=[0] from: 'july 8, 2078 (Maturity date)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen was born on July 8, 1978.'  scores=['0.271']
+
+  depth=2 goal_indices=[0] from: 'february 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: POLICY_ISSUANCE_DATE') -> 'The policy was issued on February 1, 2024.'  scores=['0.503']
+
+  depth=2 goal_indices=[0] from: 'february 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: EFFECTIVE_DATE') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.462']
+
+  depth=2 goal_indices=[0] from: 'july 8, 2078 (Maturity date)'
+    [KEEP] (entity_fact, 'participates in: MATURITY_DATE') -> 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'  scores=['0.532']
+
+  depth=2 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Guardian Family Protection Corp.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a whole life insurance policy issued by Guardian Family Protection'  scores=['0.563']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDEND') -> "Dividends are based on the company's experience."  scores=['0.291']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_POLICY_LOAN') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.422']
+
+  depth=2 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Guardian Family Protection Corp.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.324']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDEND') -> "Dividends are based on the company's experience."  scores=['0.291']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_POLICY_LOAN') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.422']
+
+  depth=2 goal_indices=[0] from: 'david chen (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: PRIMARY_BENEFICIARY') -> 'David Chen is entitled to 100% of the death benefit.'  scores=['0.254']
+    [KEEP] (entity_fact, 'participates in: PRIMARY_BENEFICIARY') -> 'The Chen Family Trust is entitled to 100% of the death benefit if the primary be'  scores=['0.444']
+
+  depth=2 goal_indices=[0] from: 'july 8, 2078 (Maturity date)'
+    [KEEP] (entity_fact, 'participates in: MATURITY_DATE') -> 'The maturity date of the policy is July 8, 2078, which corresponds to age 100.'  scores=['0.532']
+
+  depth=2 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Guardian Family Protection Corp.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a whole life insurance policy issued by Guardian Family Protection'  scores=['0.563']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDEND') -> "Dividends are based on the company's experience."  scores=['0.291']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_POLICY_LOAN') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.422']
+
+  depth=2 goal_indices=[0] from: 'The primary beneficiary of the policy is David Chen, who is the husband of the insured.'
+    [KEEP] (fact_fact, 'RECEIVES_BENEFIT') -> 'David Chen is entitled to 100% of the death benefit.'  scores=['0.345']
+    [KEEP] (fact_fact, 'TRIGGERS_CONTINGENCY') -> 'The Chen Family Trust is entitled to 100% of the death benefit if the primary be'  scores=['0.494']
+    [KEEP] (fact_entity, 'has ') -> 'david chen (Primary beneficiary)'  scores=['0.138']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The contingent beneficiary of the policy is the Chen Family Trust.'  scores=['0.509']
+
+  depth=2 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.324']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDEND') -> "Dividends are based on the company's experience."  scores=['0.291']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_POLICY_LOAN') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.422']
+
+  depth=2 goal_indices=[0] from: 'The policy is a whole life insurance policy issued by Guardian Family Protection Corp.'
+    [KEEP] (fact_fact, 'CLASSIFIES_AS') -> 'The policy type is participating whole life.'  scores=['0.577']
+    [KEEP] (fact_fact, 'ASSIGNS_TO') -> 'The insured person is Margaret Rose Chen.'  scores=['0.581']
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'This policy is a participating policy.'  scores=['0.516']
+
+  depth=2 goal_indices=[0] from: 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. using the cash'
+    [KEEP] (fact_fact, 'USES_COLLATERAL') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.464']
+    [KEEP] (fact_entity, 'has ') -> 'policy loans (Borrowed funds against cash value)'  scores=['0.095']
+    [KEEP] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [KEEP] (fact_fact, 'ENABLES') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.556']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.459']
+    [KEEP] (fact_fact, 'AFFECTED_BY') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.496']
+
+  depth=2 goal_indices=[0] from: 'Margaret Rose Chen is classified as Standard Non-Tobacco.'
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.534']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> 'The insured person is Margaret Rose Chen.'  scores=['0.528']
+
+  depth=2 goal_indices=[0] from: "Dividends are based on the company's experience."
+    [KEEP] (fact_fact, 'INFLUENCES_DIVIDENDS') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.423']
+    [drop] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'The policy type is participating whole life.'  scores=['0.548']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'Dividends are not guaranteed.'  scores=['0.412']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> "Annual dividends may be declared based on the insurer's mortality experience."  scores=['0.581']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.537']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.541']
+
+  depth=2 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.324']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDEND') -> "Dividends are based on the company's experience."  scores=['0.291']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_POLICY_LOAN') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.422']
+
+  depth=2 goal_indices=[0] from: 'margaret rose chen (Insured individual)'
+    [KEEP] (entity_fact, 'participates in: INSURED_PERSON') -> 'The primary beneficiary of the policy is David Chen, who is the husband of the i'  scores=['0.562']
+
+  depth=2 goal_indices=[0] from: 'The policy was issued by Guardian Family Protection Corp.'
+    [KEEP] (fact_fact, 'ISSUED_IN') -> 'The policy was issued at Boston, Massachusetts.'  scores=['0.496']
+
+  depth=2 goal_indices=[0] from: 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. using the cash'
+    [KEEP] (fact_fact, 'USES_COLLATERAL') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.464']
+    [KEEP] (fact_entity, 'has ') -> 'policy loans (Borrowed funds against cash value)'  scores=['0.095']
+    [KEEP] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [KEEP] (fact_fact, 'ENABLES') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.556']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.459']
+    [KEEP] (fact_fact, 'AFFECTED_BY') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.496']
+
+  depth=2 goal_indices=[0] from: 'Margaret Rose Chen is classified as Standard Non-Tobacco.'
+    [KEEP] (fact_fact, 'CONFIRMS') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.534']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> 'The insured person is Margaret Rose Chen.'  scores=['0.528']
+
+  depth=2 goal_indices=[0] from: "Dividends are based on the company's experience."
+    [KEEP] (fact_fact, 'INFLUENCES_DIVIDENDS') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.423']
+    [drop] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [KEEP] (fact_fact, 'INFLUENCES') -> 'The policy type is participating whole life.'  scores=['0.548']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'Dividends are not guaranteed.'  scores=['0.412']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> "Annual dividends may be declared based on the insurer's mortality experience."  scores=['0.581']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.537']
+    [KEEP] (fact_fact, 'INFLUENCED_BY') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.541']
+
+  depth=2 goal_indices=[0] from: 'february 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: POLICY_ISSUANCE_DATE') -> 'The policy was issued on February 1, 2024.'  scores=['0.503']
+
+  depth=2 goal_indices=[0] from: 'insurer (Entity responsible for policy terms)'
+    [KEEP] (entity_fact, 'participates in: SETS_REINSTATEMENT_WINDOW') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.466']
+    [KEEP] (entity_fact, 'participates in: EVALUATES_INSURABILITY') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.485']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_AT_6_PERCENT') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_ON_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUMS_PAID_ONLY') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: ADJUSTS_FACE_AMOUNT') -> "If the insured's age was misstated, the face amount will be adjusted to reflect "  scores=['0.615']
+
+  depth=2 goal_indices=[0] from: 'The insurer may contest the policy only for material misrepresentation in the application.'
+    [KEEP] (fact_entity, 'has ') -> 'insurer (Entity responsible for policy terms)'  scores=['0.170']
+
+  depth=2 goal_indices=[0] from: "If the insured's age was misstated, the face amount will be adjusted to reflect what the p"
+    [KEEP] (fact_entity, 'has ') -> 'misstatement of age (Policy adjustment condition)'  scores=['0.312']
+    [KEEP] (fact_fact, 'EXCEPTION_TO') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.553']
+    [KEEP] (fact_fact, 'APPLIES_TO') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.577']
+
+  depth=2 goal_indices=[0] from: 'To reinstate the policy, evidence of insurability satisfactory to the insurer must be prov'
+    [KEEP] (fact_fact, 'ENABLES') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.528']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'The policy has a limited period based on cash value.'  scores=['0.553']
+
+  depth=2 goal_indices=[0] from: 'If the insured dies by suicide within two years from the issue date, the insurer will pay '
+    [KEEP] (fact_entity, 'has ') -> 'suicide (Exclusion condition within two years)'  scores=['0.252']
+    [KEEP] (fact_fact, 'EXCEPTION_TO') -> "If the insured's age was misstated, the face amount will be adjusted to reflect "  scores=['0.649']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'The effective date of the policy is February 1, 2024.'  scores=['0.534']
+    [KEEP] (fact_fact, 'AFFECTS') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.511']
+
+  depth=2 goal_indices=[0] from: 'A policy may be reinstated within 3 years of lapse.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.545']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.489']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.498']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_fact, 'COMPLEMENTS') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.511']
+    [KEEP] (fact_fact, 'MODIFIES') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.516']
+
+  depth=2 goal_indices=[0] from: 'The insurer may contest the policy only for material misrepresentation in the application.'
+    [KEEP] (fact_entity, 'has ') -> 'contestability period (Two-year challenge window for misrepresentation)'  scores=['0.186']
+
+  depth=2 goal_indices=[0] from: 'Overdue premiums must be paid with interest at 6% per annum to reinstate the policy.'
+    [KEEP] (fact_fact, 'ENABLES') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.500']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_fact, 'REQUIRES') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.491']
+
+  depth=2 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [drop] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=2 goal_indices=[0] from: 'cash surrender value (Policy cash value upon surrender)'
+    [KEEP] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.440']
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.381']
+    [drop] (entity_fact, 'participates in: ') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: ') -> 'Cash value grows on a tax-deferred basis.'  scores=['0.245']
+    [drop] (entity_fact, 'participates in: ') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.352']
+    [drop] (entity_fact, 'participates in: DETERMINES_LOAN_LIMIT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.376']
+    [drop] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.392']
+    [drop] (entity_fact, 'participates in: IS_PAID_OUT') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: REACHES_AMOUNT_AT_YEAR') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.408']
+    [drop] (entity_fact, 'participates in: INCREASES_DUE_TO_DIVIDENDS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.361']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_CASH_PAYMENT') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.436']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_ACCUMULATION') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_FOR_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.519']
+    [drop] (entity_fact, 'participates in: DETERMINES_TERMINATION_THRESHOLD') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.415']
+    [KEEP] (entity_fact, 'participates in: INFLUENCES_BENEFIT') -> 'The amount of Reduced Paid-Up Insurance is based on the cash value and the insur'  scores=['0.582']
+
+  depth=2 goal_indices=[0] from: 'dividends (Non-guaranteed annual payments)'
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: BASED_ON_COMPANY_EXPERIENCE') -> "Dividends are based on the company's experience."  scores=['0.308']
+    [drop] (entity_fact, 'participates in: INCREASES_ACTUAL_CASH_VALUE') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: INCREASE_CASH_VALUE') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.380']
+    [KEEP] (entity_fact, 'participates in: APPLICABLE_TO_POLICY') -> 'This policy is a participating policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_INVESTMENT') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.476']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_EXPENSES') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.471']
+    [drop] (entity_fact, 'participates in: NOT_GUARANTEED') -> 'Dividends are not guaranteed.'  scores=['0.320']
+    [KEEP] (entity_fact, 'participates in: PAID_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.424']
+    [KEEP] (entity_fact, 'participates in: ACCUMULATE_AT_INTEREST') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.434']
+    [KEEP] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.458']
+    [drop] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.391']
+
+  depth=2 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Guardian Family Protection Corp.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a whole life insurance policy issued by Guardian Family Protection'  scores=['0.563']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.324']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_POLICY_LOAN') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.422']
+
+  depth=2 goal_indices=[0] from: 'Extended Term Insurance requires no further premiums.'
+    [KEEP] (fact_fact, 'REQUIRES') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.537']
+    [KEEP] (fact_entity, 'has ') -> 'extended term insurance (Non-forfeiture option with full coverage for limited ti'  scores=['0.164']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'No further premiums are required after the limited period based on cash value.'  scores=['0.515']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.516']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.516']
+
+  depth=2 goal_indices=[0] from: 'Upon receipt of proof of death, the insurer will pay the beneficiary the face amount.'
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.489']
+    [KEEP] (fact_fact, 'PRECEDES') -> 'The death benefit payment will be made within 7 days of receiving complete claim'  scores=['0.492']
+    [KEEP] (fact_entity, 'has ') -> 'face amount (Initial death benefit amount)'  scores=['0.207']
+    [KEEP] (fact_entity, 'has ') -> 'beneficiary (Recipient of death benefit)'  scores=['0.170']
+    [KEEP] (fact_fact, 'COMPLEMENTS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the amount '  scores=['0.530']
+
+  depth=2 goal_indices=[0] from: 'Upon receipt of proof of death, the insurer will pay the beneficiary the amount of Paid-Up'
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.475']
+    [KEEP] (fact_entity, 'has ') -> 'paid-up additions (Dividend option for additional insurance)'  scores=['0.207']
+    [KEEP] (fact_entity, 'has ') -> 'beneficiary (Recipient of death benefit)'  scores=['0.170']
+    [KEEP] (fact_fact, 'COMPLEMENTS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the face am'  scores=['0.522']
+
+  depth=2 goal_indices=[0] from: 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues for a red'
+    [KEEP] (fact_fact, 'ENABLES') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.524']
+    [KEEP] (fact_fact, 'BASED_ON') -> 'The amount of Reduced Paid-Up Insurance is based on the cash value and the insur'  scores=['0.650']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [drop] (fact_entity, 'has ') -> 'reduced paid-up insurance (Non-forfeiture option with reduced coverage)'  scores=['0.233']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> 'The face amount of the policy is $250,000.'  scores=['0.508']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'Paid-Up Insurance is defined as a reduced death benefit with no further premiums'  scores=['0.566']
+    [drop] (fact_fact, 'LEADS_TO') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.498']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.533']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.523']
+
+  depth=2 goal_indices=[0] from: 'One non-forfeiture option is Extended Term Insurance, where the full face amount is contin'
+    [KEEP] (fact_fact, 'ENABLES') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.524']
+    [KEEP] (fact_fact, 'EXPLAINS') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.544']
+    [drop] (fact_fact, 'APPLIES') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.519']
+    [drop] (fact_entity, 'has ') -> 'extended term insurance (Non-forfeiture option with full coverage for limited ti'  scores=['0.164']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_fact, 'EXEMPLIFIES') -> 'The policy has a limited period based on cash value.'  scores=['0.554']
+    [KEEP] (fact_fact, 'DEPENDS_ON') -> 'No further premiums are required after the limited period based on cash value.'  scores=['0.519']
+    [KEEP] (fact_fact, 'IS_TRIGGERED_BY') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.537']
+    [KEEP] (fact_fact, 'IS_COMPLEMENTED_BY') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.524']
+    [drop] (fact_fact, 'USES') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.509']
+
+  depth=2 goal_indices=[0] from: "Annual dividends may be declared based on the insurer's investment experience."
+    [KEEP] (fact_fact, 'CAUSES') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.475']
+    [KEEP] (fact_entity, 'has ') -> 'dividends (Non-guaranteed annual payments)'  scores=['0.097']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> "Dividends are based on the company's experience."  scores=['0.433']
+
+  depth=2 goal_indices=[0] from: "Annual dividends may be declared based on the insurer's investment experience."
+    [KEEP] (fact_fact, 'CAUSES') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.475']
+    [KEEP] (fact_entity, 'has ') -> 'insurance company (Policy issuer and dividend payer)'  scores=['0.143']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> "Dividends are based on the company's experience."  scores=['0.433']
+
+  depth=2 goal_indices=[0] from: "Annual dividends may be declared based on the insurer's expense experience."
+    [KEEP] (fact_fact, 'CAUSES') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.476']
+    [KEEP] (fact_entity, 'has ') -> 'insurance company (Policy issuer and dividend payer)'  scores=['0.143']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> "Dividends are based on the company's experience."  scores=['0.430']
+    [KEEP] (fact_fact, 'CONTRIBUTES TO') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.527']
+
+  depth=2 goal_indices=[0] from: 'One dividend option is Paid-Up Additions, where the dividend is used to purchase additiona'
+    [KEEP] (fact_fact, 'EXAMPLE_OF') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.469']
+    [KEEP] (fact_entity, 'has ') -> 'paid-up additions (Dividend option for additional insurance)'  scores=['0.207']
+    [KEEP] (fact_entity, 'has ') -> 'face amount (Initial death benefit amount)'  scores=['0.207']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'This policy is a participating policy.'  scores=['0.506']
+    [KEEP] (fact_fact, 'ENHANCED_BY') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.436']
+    [KEEP] (fact_fact, 'IS_BASED_ON') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.439']
+
+  depth=2 goal_indices=[0] from: 'This policy is a participating policy.'
+    [drop] (fact_fact, 'EXEMPLIFIES') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.469']
+    [drop] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [drop] (fact_entity, 'has ') -> 'insurance company (Policy issuer and dividend payer)'  scores=['0.143']
+    [KEEP] (fact_fact, 'IS_TYPE_OF') -> 'The policy type is participating whole life.'  scores=['0.595']
+    [KEEP] (fact_fact, 'ENHANCED_BY') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.511']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.500']
+    [drop] (fact_fact, 'INCLUDES') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.450']
+    [KEEP] (fact_fact, 'INCLUDES') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.520']
+    [KEEP] (fact_fact, 'INCREASED_BY') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.470']
+    [KEEP] (fact_fact, 'IS_PART_OF') -> 'The policy is a whole life insurance policy issued by Guardian Family Protection'  scores=['0.592']
+
+  depth=2 goal_indices=[0] from: 'One dividend option is Accumulate at Interest, where the dividend is left with the insurer'
+    [KEEP] (fact_fact, 'EXAMPLE_OF') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.455']
+    [KEEP] (fact_entity, 'has ') -> 'loan interest (Interest on outstanding policy loans)'  scores=['0.141']
+    [KEEP] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [KEEP] (fact_fact, 'IS_OPTION_OF') -> 'This policy is a participating policy.'  scores=['0.503']
+    [KEEP] (fact_fact, 'CONTRIBUTES_TO') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.457']
+
+  depth=2 goal_indices=[0] from: 'One dividend option is Cash Payment, where the dividend is paid directly to the policyhold'
+    [KEEP] (fact_fact, 'EXAMPLE_OF') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.452']
+    [KEEP] (fact_entity, 'has ') -> 'policyholder (Policy owner and borrower)'  scores=['0.130']
+    [KEEP] (fact_entity, 'has ') -> 'cash surrender value (Policy cash value upon surrender)'  scores=['0.112']
+    [KEEP] (fact_fact, 'IS_OPTION_OF') -> 'This policy is a participating policy.'  scores=['0.501']
+    [KEEP] (fact_fact, 'SUPPORTS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.484']
+
+  depth=2 goal_indices=[0] from: 'february 1, 2024 (Effective date)'
+    [KEEP] (entity_fact, 'participates in: POLICY_ISSUANCE_DATE') -> 'The policy was issued on February 1, 2024.'  scores=['0.503']
+
+  depth=2 goal_indices=[0] from: '$28,450 (Guaranteed cash value at end of Year 10)'
+    [KEEP] (entity_fact, 'participates in: IS_GUARANTEED_CASH_VALUE') -> 'The guaranteed cash value at the end of Year 10 is $28,450.'  scores=['0.395']
+    [KEEP] (entity_fact, 'participates in: IS_LOWER_THAN_ACTUAL_VALUE') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.356']
+
+  depth=2 goal_indices=[0] from: 'Margaret Rose Chen was born on July 8, 1978.'
+    [KEEP] (fact_fact, 'IS_BORN_ON') -> 'The insured person is Margaret Rose Chen.'  scores=['0.615']
+    [KEEP] (fact_fact, 'ISSUED_AT_AGE') -> 'Margaret Rose Chen was issued the policy at age 45.'  scores=['0.619']
+
+  depth=3 goal_indices=[0] from: 'contestability period (Two-year challenge window for misrepresentation)'
+    [KEEP] (entity_fact, 'participates in: APPLIES_ONLY_TO_MISREPRESENTATION') -> 'The insurer may contest the policy only for material misrepresentation in the ap'  scores=['0.465']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [drop] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'contestability period (Two-year challenge window for misrepresentation)'
+    [KEEP] (entity_fact, 'participates in: LIMITS_CONTESTABILITY_WINDOW') -> 'The insurer may contest the policy only within the first two years while the ins'  scores=['0.512']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [drop] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'policy loans (Borrowed funds against cash value)'
+    [drop] (entity_fact, 'participates in: ') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.383']
+    [drop] (entity_fact, 'participates in: IS_LANDED_BY_CORP') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.415']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: MAXED_AT_90_PERCENT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.379']
+    [drop] (entity_fact, 'participates in: CHARGED_INTEREST') -> 'The loan interest rate is 5% per annum.'  scores=['0.400']
+    [drop] (entity_fact, 'participates in: ACCUMULATE_INTEREST') -> 'The loan interest rate is compounded annually.'  scores=['0.393']
+    [KEEP] (entity_fact, 'participates in: ALLOW_INTEREST_PAYMENT') -> 'Loan interest may be paid annually.'  scores=['0.432']
+    [drop] (entity_fact, 'participates in: ACCUMULATES_INTEREST') -> 'Loan interest may be added to the loan balance.'  scores=['0.369']
+    [KEEP] (entity_fact, 'participates in: CAUSE_TERMINATION_IF_EXCEEDS_CASH_VALUE') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_FROM_DEATH_BENEFIT') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.460']
+
+  depth=3 goal_indices=[0] from: 'loan interest (Interest on outstanding policy loans)'
+    [drop] (entity_fact, 'participates in: SET_AT_5_PERCENT') -> 'The loan interest rate is 5% per annum.'  scores=['0.365']
+    [KEEP] (entity_fact, 'participates in: COMPOUNDED_ANNUALLY') -> 'The loan interest rate is compounded annually.'  scores=['0.407']
+    [KEEP] (entity_fact, 'participates in: PAYABLE_ANNUALLY') -> 'Loan interest may be paid annually.'  scores=['0.425']
+    [KEEP] (entity_fact, 'participates in: ADDED_TO_BALANCE') -> 'Loan interest may be added to the loan balance.'  scores=['0.375']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_FROM_DEATH_BENEFIT') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the l'  scores=['0.462']
+
+  depth=3 goal_indices=[0] from: 'dividends (Non-guaranteed annual payments)'
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: BASED_ON_COMPANY_EXPERIENCE') -> "Dividends are based on the company's experience."  scores=['0.308']
+    [drop] (entity_fact, 'participates in: INCREASES_ACTUAL_CASH_VALUE') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: INCREASE_CASH_VALUE') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.380']
+    [KEEP] (entity_fact, 'participates in: APPLICABLE_TO_POLICY') -> 'This policy is a participating policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_MORTALITY') -> "Annual dividends may be declared based on the insurer's mortality experience."  scores=['0.548']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_INVESTMENT') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.476']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_EXPENSES') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.471']
+    [drop] (entity_fact, 'participates in: NOT_GUARANTEED') -> 'Dividends are not guaranteed.'  scores=['0.320']
+    [KEEP] (entity_fact, 'participates in: PAID_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.424']
+    [drop] (entity_fact, 'participates in: REDUCE_PREMIUM') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.320']
+    [KEEP] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.458']
+    [drop] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.391']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [drop] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'dividends (Non-guaranteed annual payments)'
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: BASED_ON_COMPANY_EXPERIENCE') -> "Dividends are based on the company's experience."  scores=['0.308']
+    [drop] (entity_fact, 'participates in: INCREASES_ACTUAL_CASH_VALUE') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: INCREASE_CASH_VALUE') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.380']
+    [KEEP] (entity_fact, 'participates in: APPLICABLE_TO_POLICY') -> 'This policy is a participating policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_MORTALITY') -> "Annual dividends may be declared based on the insurer's mortality experience."  scores=['0.548']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_INVESTMENT') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.476']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_EXPENSES') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.471']
+    [drop] (entity_fact, 'participates in: NOT_GUARANTEED') -> 'Dividends are not guaranteed.'  scores=['0.320']
+    [drop] (entity_fact, 'participates in: REDUCE_PREMIUM') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.320']
+    [KEEP] (entity_fact, 'participates in: ACCUMULATE_AT_INTEREST') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.434']
+    [KEEP] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.458']
+    [drop] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.391']
+
+  depth=3 goal_indices=[0] from: 'guardian family protection corp. (Insurance provider)'
+    [KEEP] (entity_fact, 'participates in: ISSUED_POLICY') -> 'The policy was issued by Guardian Family Protection Corp.'  scores=['0.559']
+    [KEEP] (entity_fact, 'participates in: ISSUING_COMPANY') -> 'The policy is a whole life insurance policy issued by Guardian Family Protection'  scores=['0.563']
+    [KEEP] (entity_fact, 'participates in: ') -> 'Margaret Rose Chen is classified as Standard Non-Tobacco.'  scores=['0.324']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDEND') -> "Dividends are based on the company's experience."  scores=['0.291']
+
+  depth=3 goal_indices=[0] from: 'policy loans (Borrowed funds against cash value)'
+    [drop] (entity_fact, 'participates in: ') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.383']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: ALLOWED_AFTER_ONE_YEAR') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.526']
+    [drop] (entity_fact, 'participates in: MAXED_AT_90_PERCENT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.379']
+    [drop] (entity_fact, 'participates in: CHARGED_INTEREST') -> 'The loan interest rate is 5% per annum.'  scores=['0.400']
+    [drop] (entity_fact, 'participates in: ACCUMULATE_INTEREST') -> 'The loan interest rate is compounded annually.'  scores=['0.393']
+    [KEEP] (entity_fact, 'participates in: ALLOW_INTEREST_PAYMENT') -> 'Loan interest may be paid annually.'  scores=['0.432']
+    [drop] (entity_fact, 'participates in: ACCUMULATES_INTEREST') -> 'Loan interest may be added to the loan balance.'  scores=['0.369']
+    [drop] (entity_fact, 'participates in: CAUSE_TERMINATION_IF_EXCEEDS_CASH_VALUE') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_FROM_DEATH_BENEFIT') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.460']
+
+  depth=3 goal_indices=[0] from: 'david chen (Primary beneficiary)'
+    [KEEP] (entity_fact, 'participates in: PRIMARY_BENEFICIARY') -> 'David Chen is entitled to 100% of the death benefit.'  scores=['0.254']
+    [KEEP] (entity_fact, 'participates in: PRIMARY_BENEFICIARY') -> 'The Chen Family Trust is entitled to 100% of the death benefit if the primary be'  scores=['0.444']
+
+  depth=3 goal_indices=[0] from: 'cash surrender value (Policy cash value upon surrender)'
+    [KEEP] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.440']
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.381']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: ') -> 'Cash value grows on a tax-deferred basis.'  scores=['0.245']
+    [drop] (entity_fact, 'participates in: ') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.352']
+    [drop] (entity_fact, 'participates in: DETERMINES_LOAN_LIMIT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.376']
+    [drop] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.392']
+    [drop] (entity_fact, 'participates in: IS_PAID_OUT') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: REACHES_AMOUNT_AT_YEAR') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.408']
+    [drop] (entity_fact, 'participates in: INCREASES_DUE_TO_DIVIDENDS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.361']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_CASH_PAYMENT') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.436']
+    [drop] (entity_fact, 'participates in: NOT_RELEVANT_TO_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.348']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_ACCUMULATION') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_FOR_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.519']
+    [drop] (entity_fact, 'participates in: DETERMINES_TERMINATION_THRESHOLD') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.415']
+    [KEEP] (entity_fact, 'participates in: INFLUENCES_BENEFIT') -> 'The amount of Reduced Paid-Up Insurance is based on the cash value and the insur'  scores=['0.582']
+
+  depth=3 goal_indices=[0] from: 'policy loans (Borrowed funds against cash value)'
+    [drop] (entity_fact, 'participates in: ') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.383']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: ALLOWED_AFTER_ONE_YEAR') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.526']
+    [drop] (entity_fact, 'participates in: MAXED_AT_90_PERCENT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.379']
+    [drop] (entity_fact, 'participates in: CHARGED_INTEREST') -> 'The loan interest rate is 5% per annum.'  scores=['0.400']
+    [drop] (entity_fact, 'participates in: ACCUMULATE_INTEREST') -> 'The loan interest rate is compounded annually.'  scores=['0.393']
+    [KEEP] (entity_fact, 'participates in: ALLOW_INTEREST_PAYMENT') -> 'Loan interest may be paid annually.'  scores=['0.432']
+    [drop] (entity_fact, 'participates in: ACCUMULATES_INTEREST') -> 'Loan interest may be added to the loan balance.'  scores=['0.369']
+    [drop] (entity_fact, 'participates in: CAUSE_TERMINATION_IF_EXCEEDS_CASH_VALUE') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_FROM_DEATH_BENEFIT') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.460']
+
+  depth=3 goal_indices=[0] from: 'cash surrender value (Policy cash value upon surrender)'
+    [KEEP] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.440']
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.381']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: ') -> 'Cash value grows on a tax-deferred basis.'  scores=['0.245']
+    [drop] (entity_fact, 'participates in: ') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.352']
+    [drop] (entity_fact, 'participates in: DETERMINES_LOAN_LIMIT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.376']
+    [drop] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.392']
+    [drop] (entity_fact, 'participates in: IS_PAID_OUT') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: REACHES_AMOUNT_AT_YEAR') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.408']
+    [drop] (entity_fact, 'participates in: INCREASES_DUE_TO_DIVIDENDS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.361']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_CASH_PAYMENT') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.436']
+    [drop] (entity_fact, 'participates in: NOT_RELEVANT_TO_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.348']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_ACCUMULATION') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_FOR_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.519']
+    [drop] (entity_fact, 'participates in: DETERMINES_TERMINATION_THRESHOLD') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.415']
+    [KEEP] (entity_fact, 'participates in: INFLUENCES_BENEFIT') -> 'The amount of Reduced Paid-Up Insurance is based on the cash value and the insur'  scores=['0.582']
+
+  depth=3 goal_indices=[0] from: 'policy loans (Borrowed funds against cash value)'
+    [drop] (entity_fact, 'participates in: ') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.383']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [KEEP] (entity_fact, 'participates in: ALLOWED_AFTER_ONE_YEAR') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.526']
+    [drop] (entity_fact, 'participates in: MAXED_AT_90_PERCENT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.379']
+    [drop] (entity_fact, 'participates in: CHARGED_INTEREST') -> 'The loan interest rate is 5% per annum.'  scores=['0.400']
+    [drop] (entity_fact, 'participates in: ACCUMULATE_INTEREST') -> 'The loan interest rate is compounded annually.'  scores=['0.393']
+    [KEEP] (entity_fact, 'participates in: ALLOW_INTEREST_PAYMENT') -> 'Loan interest may be paid annually.'  scores=['0.432']
+    [drop] (entity_fact, 'participates in: ACCUMULATES_INTEREST') -> 'Loan interest may be added to the loan balance.'  scores=['0.369']
+    [drop] (entity_fact, 'participates in: CAUSE_TERMINATION_IF_EXCEEDS_CASH_VALUE') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_FROM_DEATH_BENEFIT') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.460']
+
+  depth=3 goal_indices=[0] from: 'insurer (Entity responsible for policy terms)'
+    [KEEP] (entity_fact, 'participates in: SETS_REINSTATEMENT_WINDOW') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.466']
+    [KEEP] (entity_fact, 'participates in: EVALUATES_INSURABILITY') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.485']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_AT_6_PERCENT') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: CHARGES_INTEREST_ON_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.428']
+    [KEEP] (entity_fact, 'participates in: PAYS_PREMIUMS_PAID_ONLY') -> 'If the insured dies by suicide within two years from the issue date, the insurer'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: ADJUSTS_FACE_AMOUNT') -> "If the insured's age was misstated, the face amount will be adjusted to reflect "  scores=['0.615']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [drop] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [drop] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'extended term insurance (Non-forfeiture option with full coverage for limited time)'
+    [KEEP] (entity_fact, 'participates in: APPLIES_AFTER_LAPSE') -> 'The policy has a limited period based on cash value.'  scores=['0.470']
+    [KEEP] (entity_fact, 'participates in: REQUIRES_NO_PREMIUMS') -> 'No further premiums are required after the limited period based on cash value.'  scores=['0.432']
+    [KEEP] (entity_fact, 'participates in: AUTO_APPLIES_AFTER_LAPSE') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.431']
+    [KEEP] (entity_fact, 'participates in: IS_PROVIDED') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.462']
+    [KEEP] (entity_fact, 'participates in: IS_APPLIED') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.479']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: RECEIVES_DIVIDENDS_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.391']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'face amount (Initial death benefit amount)'
+    [KEEP] (entity_fact, 'participates in: INCREASES_DUE_TO_ADDITIONS') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.444']
+
+  depth=3 goal_indices=[0] from: 'beneficiary (Recipient of death benefit)'
+    [KEEP] (entity_fact, 'participates in: RECEIVES_NET_DEATH_BENEFIT') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.403']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_PAYMENT') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the amount '  scores=['0.449']
+    [KEEP] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.415']
+    [KEEP] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the l'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_PAYMENT') -> 'The death benefit payment will be made within 7 days of receiving complete claim'  scores=['0.392']
+
+  depth=3 goal_indices=[0] from: 'paid-up additions (Dividend option for additional insurance)'
+    [KEEP] (entity_fact, 'participates in: INCREASES_DEATH_BENEFIT') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.447']
+    [KEEP] (entity_fact, 'participates in: CURRENTLY_ACTIVE_OPTION') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.398']
+
+  depth=3 goal_indices=[0] from: 'beneficiary (Recipient of death benefit)'
+    [KEEP] (entity_fact, 'participates in: RECEIVES_NET_DEATH_BENEFIT') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.403']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_PAYMENT') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the face am'  scores=['0.436']
+    [KEEP] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.415']
+    [KEEP] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the l'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_PAYMENT') -> 'The death benefit payment will be made within 7 days of receiving complete claim'  scores=['0.392']
+
+  depth=3 goal_indices=[0] from: 'dividends (Non-guaranteed annual payments)'
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'A Dividend is defined as a return of premium that may be declared annually by th'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: BASED_ON_COMPANY_EXPERIENCE') -> "Dividends are based on the company's experience."  scores=['0.308']
+    [drop] (entity_fact, 'participates in: INCREASES_ACTUAL_CASH_VALUE') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.349']
+    [drop] (entity_fact, 'participates in: INCREASE_CASH_VALUE') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.380']
+    [KEEP] (entity_fact, 'participates in: APPLICABLE_TO_POLICY') -> 'This policy is a participating policy.'  scores=['0.453']
+    [KEEP] (entity_fact, 'participates in: DETERMINED_BY_EXPENSES') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.471']
+    [drop] (entity_fact, 'participates in: NOT_GUARANTEED') -> 'Dividends are not guaranteed.'  scores=['0.320']
+    [KEEP] (entity_fact, 'participates in: PAID_AS_CASH') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.424']
+    [drop] (entity_fact, 'participates in: REDUCE_PREMIUM') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.320']
+    [KEEP] (entity_fact, 'participates in: ACCUMULATE_AT_INTEREST') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.434']
+    [KEEP] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'One dividend option is Paid-Up Additions, where the dividend is used to purchase'  scores=['0.458']
+    [KEEP] (entity_fact, 'participates in: USED_FOR_PAID_UP_ADDITIONS') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.391']
+
+  depth=3 goal_indices=[0] from: 'insurance company (Policy issuer and dividend payer)'
+    [KEEP] (entity_fact, 'participates in: OFFERS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.445']
+    [drop] (entity_fact, 'participates in: DECLARES_DIVIDENDS_BASED_ON_EXPENSES') -> "Annual dividends may be declared based on the insurer's expense experience."  scores=['0.436']
+    [drop] (entity_fact, 'participates in: DOES_NOT_GUARANTEE_DIVIDENDS') -> 'Dividends are not guaranteed.'  scores=['0.267']
+    [drop] (entity_fact, 'participates in: DEDUCTS_LOANS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.408']
+    [KEEP] (entity_fact, 'participates in: PAYS_FACE_AMOUNT') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the face am'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: PAYS_PAID_UP_ADDITIONS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the amount '  scores=['0.456']
+    [drop] (entity_fact, 'participates in: DEDUCTS_LOANS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.431']
+    [drop] (entity_fact, 'participates in: DEDUCTS_INTEREST') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the l'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: PAYS_WITHIN_7_DAYS') -> 'The death benefit payment will be made within 7 days of receiving complete claim'  scores=['0.399']
+    [drop] (entity_fact, 'participates in: OFFERS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.444']
+    [drop] (entity_fact, 'participates in: PAYS_CASH_SURRENDER') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.390']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.455']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.451']
+    [KEEP] (entity_fact, 'participates in: OFFERS_NO_PREMIUM_COVERAGE') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.499']
+    [drop] (entity_fact, 'participates in: APPLIES_DEFAULT') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.429']
+
+  depth=3 goal_indices=[0] from: 'insurance company (Policy issuer and dividend payer)'
+    [drop] (entity_fact, 'participates in: OFFERS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.445']
+    [KEEP] (entity_fact, 'participates in: DECLARES_DIVIDENDS_BASED_ON_INVESTMENT') -> "Annual dividends may be declared based on the insurer's investment experience."  scores=['0.447']
+    [drop] (entity_fact, 'participates in: DOES_NOT_GUARANTEE_DIVIDENDS') -> 'Dividends are not guaranteed.'  scores=['0.267']
+    [drop] (entity_fact, 'participates in: DEDUCTS_LOANS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.408']
+    [KEEP] (entity_fact, 'participates in: PAYS_FACE_AMOUNT') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the face am'  scores=['0.471']
+    [KEEP] (entity_fact, 'participates in: PAYS_PAID_UP_ADDITIONS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the amount '  scores=['0.456']
+    [drop] (entity_fact, 'participates in: DEDUCTS_LOANS') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the p'  scores=['0.431']
+    [drop] (entity_fact, 'participates in: DEDUCTS_INTEREST') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the l'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: PAYS_WITHIN_7_DAYS') -> 'The death benefit payment will be made within 7 days of receiving complete claim'  scores=['0.399']
+    [drop] (entity_fact, 'participates in: OFFERS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.444']
+    [drop] (entity_fact, 'participates in: PAYS_CASH_SURRENDER') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.390']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.455']
+    [KEEP] (entity_fact, 'participates in: PROVIDES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.451']
+    [KEEP] (entity_fact, 'participates in: OFFERS_NO_PREMIUM_COVERAGE') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.499']
+    [drop] (entity_fact, 'participates in: APPLIES_DEFAULT') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.429']
+
+  depth=3 goal_indices=[0] from: 'face amount (Initial death benefit amount)'
+    [KEEP] (entity_fact, 'participates in: IS_PAID_TO') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the face am'  scores=['0.456']
+
+  depth=3 goal_indices=[0] from: 'paid-up additions (Dividend option for additional insurance)'
+    [KEEP] (entity_fact, 'participates in: CURRENTLY_ACTIVE_OPTION') -> 'The current selected dividend option is Paid-Up Additions.'  scores=['0.398']
+    [KEEP] (entity_fact, 'participates in: IS_PAID_TO') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary the amount '  scores=['0.469']
+
+  depth=3 goal_indices=[0] from: 'loan interest (Interest on outstanding policy loans)'
+    [drop] (entity_fact, 'participates in: SET_AT_5_PERCENT') -> 'The loan interest rate is 5% per annum.'  scores=['0.365']
+    [KEEP] (entity_fact, 'participates in: COMPOUNDED_ANNUALLY') -> 'The loan interest rate is compounded annually.'  scores=['0.407']
+    [KEEP] (entity_fact, 'participates in: PAYABLE_ANNUALLY') -> 'Loan interest may be paid annually.'  scores=['0.425']
+    [KEEP] (entity_fact, 'participates in: ADDED_TO_BALANCE') -> 'Loan interest may be added to the loan balance.'  scores=['0.375']
+    [KEEP] (entity_fact, 'participates in: DEDUCTED_FROM_DEATH_BENEFIT') -> 'Outstanding loans and accrued interest will be deducted from the death benefit.'  scores=['0.426']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.437']
+    [KEEP] (entity_fact, 'participates in: IS_DEDUCTED_FROM') -> 'Upon receipt of proof of death, the insurer will pay the beneficiary minus the l'  scores=['0.462']
+
+  depth=3 goal_indices=[0] from: 'cash surrender value (Policy cash value upon surrender)'
+    [KEEP] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.440']
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.381']
+    [KEEP] (entity_fact, 'participates in: ') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: ') -> 'Cash value grows on a tax-deferred basis.'  scores=['0.245']
+    [drop] (entity_fact, 'participates in: ') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.352']
+    [drop] (entity_fact, 'participates in: DETERMINES_LOAN_LIMIT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.376']
+    [drop] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.392']
+    [drop] (entity_fact, 'participates in: IS_PAID_OUT') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: REACHES_AMOUNT_AT_YEAR') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.408']
+    [drop] (entity_fact, 'participates in: INCREASES_DUE_TO_DIVIDENDS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.361']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_CASH_PAYMENT') -> 'One dividend option is Cash Payment, where the dividend is paid directly to the '  scores=['0.436']
+    [drop] (entity_fact, 'participates in: NOT_RELEVANT_TO_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.348']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_FOR_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.519']
+    [drop] (entity_fact, 'participates in: DETERMINES_TERMINATION_THRESHOLD') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.415']
+    [KEEP] (entity_fact, 'participates in: INFLUENCES_BENEFIT') -> 'The amount of Reduced Paid-Up Insurance is based on the cash value and the insur'  scores=['0.582']
+
+  depth=3 goal_indices=[0] from: 'policyholder (Policy owner and borrower)'
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_REINSTATE') -> 'A policy may be reinstated within 3 years of lapse.'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: MUST_PROVIDE_INSURABILITY_EVIDENCE') -> 'To reinstate the policy, evidence of insurability satisfactory to the insurer mu'  scores=['0.509']
+    [drop] (entity_fact, 'participates in: PAYS_OVERDUE_PREMIUMS_WITH_INTEREST') -> 'Overdue premiums must be paid with interest at 6% per annum to reinstate the pol'  scores=['0.436']
+    [drop] (entity_fact, 'participates in: REPAYS_OR_REINSTATES_LOANS') -> 'Any policy loans must be repaid or reinstated with interest to reinstate the pol'  scores=['0.415']
+    [drop] (entity_fact, 'participates in: HAS_RIGHT_TO_CANCEL') -> 'The policyholder may cancel the policy within 30 days of receipt for a full refu'  scores=['0.387']
+    [KEEP] (entity_fact, 'participates in: HOLDS_PARTICIPATING_POLICY') -> 'This policy is a participating policy.'  scores=['0.447']
+    [drop] (entity_fact, 'participates in: HAS_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.314']
+    [KEEP] (entity_fact, 'participates in: ELIGIBLE_FOR_POLICY_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.528']
+    [drop] (entity_fact, 'participates in: RISKS_POLICY_TERMINATION') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.443']
+    [drop] (entity_fact, 'participates in: OWNS_POLICY') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.405']
+    [drop] (entity_fact, 'participates in: ELECTS_OPTIONS') -> 'If premiums are stopped after the policy has been in force for three years, the '  scores=['0.414']
+    [drop] (entity_fact, 'participates in: RECEIVES_CASH') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.370']
+    [KEEP] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Reduced Paid-Up Insurance, where coverage continues'  scores=['0.450']
+    [drop] (entity_fact, 'participates in: RECEIVES_COVERAGE') -> 'One non-forfeiture option is Extended Term Insurance, where the full face amount'  scores=['0.446']
+    [KEEP] (entity_fact, 'participates in: HAS_NO_PREMIUM_OBLIGATION') -> 'Extended Term Insurance requires no further premiums.'  scores=['0.472']
+    [KEEP] (entity_fact, 'participates in: HAS_DEFAULT_OPTION') -> 'If no election is made within 60 days of lapse, Extended Term Insurance will aut'  scores=['0.447']
+
+  depth=3 goal_indices=[0] from: 'cash surrender value (Policy cash value upon surrender)'
+    [KEEP] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is defined as the amount available if the policy is surrend'  scores=['0.440']
+    [drop] (entity_fact, 'participates in: DEFINED_TERM') -> 'Cash Surrender Value is equal to the cash value minus any outstanding loans and '  scores=['0.381']
+    [KEEP] (entity_fact, 'participates in: ') -> 'A Policy Loan is defined as a loan made by Guardian Family Protection Corp. usin'  scores=['0.417']
+    [KEEP] (entity_fact, 'participates in: ') -> 'This policy builds cash value according to the guaranteed schedule shown in the '  scores=['0.452']
+    [drop] (entity_fact, 'participates in: ') -> 'Cash value grows on a tax-deferred basis.'  scores=['0.245']
+    [drop] (entity_fact, 'participates in: ') -> 'Actual cash value may be higher than the guaranteed amount due to dividend credi'  scores=['0.352']
+    [drop] (entity_fact, 'participates in: DETERMINES_LOAN_LIMIT') -> 'The maximum loan amount is 90% of the current cash surrender value.'  scores=['0.376']
+    [drop] (entity_fact, 'participates in: HAS_DEDUCTIONS') -> 'Outstanding loans and accrued interest will be deducted from the cash surrender '  scores=['0.392']
+    [drop] (entity_fact, 'participates in: IS_PAID_OUT') -> 'One non-forfeiture option is Cash Surrender, where the policyholder receives the'  scores=['0.405']
+    [drop] (entity_fact, 'participates in: REACHES_AMOUNT_AT_YEAR') -> 'The guaranteed cash value at the end of Year 20 is $71,200.'  scores=['0.408']
+    [drop] (entity_fact, 'participates in: INCREASES_DUE_TO_DIVIDENDS') -> 'The actual cash value may be higher than the guaranteed amount due to dividend c'  scores=['0.361']
+    [drop] (entity_fact, 'participates in: NOT_RELEVANT_TO_PREMIUM_REDUCTION') -> 'One dividend option is Premium Reduction, where the dividend is applied to reduc'  scores=['0.348']
+    [KEEP] (entity_fact, 'participates in: NOT_RELEVANT_TO_ACCUMULATION') -> 'One dividend option is Accumulate at Interest, where the dividend is left with t'  scores=['0.440']
+    [KEEP] (entity_fact, 'participates in: AVAILABLE_FOR_LOAN') -> 'A policyholder may borrow against the cash value after the policy has been in fo'  scores=['0.519']
+    [drop] (entity_fact, 'participates in: DETERMINES_TERMINATION_THRESHOLD') -> 'If total indebtedness exceeds the cash value, the policy will terminate unless s'  scores=['0.415']
+    [KEEP] (entity_fact, 'participates in: INFLUENCES_BENEFIT') -> 'The amount of Reduced Paid-Up Insurance is based on the cash value and the insur'  scores=['0.582']
+
+--- FINAL RANKING ---
+  [SELECTED(rank 0)] ce=4.948  '"Margaret Rose Chen was issued the policy at age 45." -> The effective date of the policy is Februar'
+  [SELECTED(rank 10)] ce=4.887  '"Margaret Rose Chen was issued the policy at age 45." -> The effective date of the policy is Februar'
+  [SELECTED(rank 5)] ce=4.820  '"Margaret Rose Chen was issued the policy at age 45." -> If the insured\'s age was misstated, the fac'
+  [SELECTED(rank 18)] ce=4.718  '"Margaret Rose Chen was issued the policy at age 45." -> If the insured\'s age was misstated, the fac'
+  [SELECTED(rank 19)] ce=4.699  '"Margaret Rose Chen was issued the policy at age 45." -> The effective date of the policy is Februar'
+  [SELECTED(rank 7)] ce=4.626  '"Margaret Rose Chen was issued the policy at age 45." -> The effective date of the policy is Februar'
+  [SELECTED(rank 1)] ce=4.545  '"Margaret Rose Chen was issued the policy at age 45." -> The effective date of the policy is Februar'
+  [SELECTED(rank 6)] ce=4.406  '"If the insured\'s age was misstated, the face amount will be adjusted to reflect what the premium wo'
+  [SELECTED(rank 9)] ce=4.360  '"If the insured\'s age was misstated, the face amount will be adjusted to reflect what the premium wo'
+  [SELECTED(rank 4)] ce=4.346  '"Margaret Rose Chen was issued the policy at age 45." -> If the insured\'s age was misstated, the fac'
+  [SELECTED(rank 3)] ce=4.323  '"Margaret Rose Chen was issued the policy at age 45." -> If the insured\'s age was misstated, the fac'
+  [SELECTED(rank 2)] ce=4.299  '"The insurer may contest the policy only within the first two years while the insured is living." ->'
+  [SELECTED(rank 13)] ce=4.198  '"Margaret Rose Chen was issued the policy at age 45." -> If the insured\'s age was misstated, the fac'
+  [SELECTED(rank 14)] ce=4.148  '"The maturity date of the policy is July 8, 2078, which corresponds to age 100." -> Margaret Rose Ch'
+  [SELECTED(rank 15)] ce=4.135  '"Margaret Rose Chen was issued the policy at age 45." -> If the insured\'s age was misstated, the fac'
+  [               -] ce=4.033  '"Margaret Rose Chen was issued the policy at age 45." -> The effective date of the policy is Februar'
+  [               -] ce=4.001  '"The maturity date of the policy is July 8, 2078, which corresponds to age 100." -> Margaret Rose Ch'
+  [SELECTED(rank 8)] ce=3.994  '"If the insured\'s age was misstated, the face amount will be adjusted to reflect what the premium wo'
+  [SELECTED(rank 16)] ce=3.949  '"Margaret Rose Chen was issued the policy at age 45." -> If the insured\'s age was misstated, the fac'
+  [               -] ce=3.814  '"If the insured\'s age was misstated, the face amount will be adjusted to reflect what the premium wo'
+  [SELECTED(rank 11)] ce=3.806  '"Margaret Rose Chen was issued the policy at age 45." -> If the insured\'s age was misstated, the fac'
+  [               -] ce=3.626  '"If the insured\'s age was misstated, the face amount will be adjusted to reflect what the premium wo'
+  [               -] ce=3.585  '"The maturity date of the policy is July 8, 2078, which corresponds to age 100." -> The effective da'
+  [SELECTED(rank 17)] ce=3.452  '"If the insured\'s age was misstated, the face amount will be adjusted to reflect what the premium wo'
+  [               -] ce=3.451  '"The premium payment period extends to age 100." -> The premium payment period extending to age 100 '
+
+--- RETRIEVED CONTEXT (what the generation LLM actually saw) ---
+"Margaret Rose Chen was issued the policy at age 45." -> SETS_EFFECTIVE_DATE -> "The effective date of the policy is February 1, 2024." -> DETERMINES_MATURITY -> "The maturity date of the policy is July 8, 2078, which corresponds to age 100."
+Logical Conclusions:
+The effective date of the policy is February 1, 2024, which is used to calculate the insured's age at issuance.
+The effective date of the policy determines the maturity date, which is set to coincide with the insured reaching age 100.
+
+"The effective date of the policy is February 1, 2024." -> (has ) -> [february 1, 2024 (Effective date)] -> (participates in event: POLICY_ISSUANCE_DATE) -> "The policy was issued on February 1, 2024."
+
+"If the insured's age was misstated, the face amount will be adjusted to reflect what the premium would have purchased at the correct age." -> APPLIES_TO -> "Margaret Rose Chen was issued the policy at age 45."
+Logical Conclusions:
+If the insured's age was misstated, the face amount will be adjusted to reflect what the premium would have purchased at the correct age, which is relevant given Margaret Rose Chen was issued at age 45.
+
+"The effective date of the policy is February 1, 2024." -> IS_CONFIRMED_BY -> "The policy was issued on February 1, 2024."
+Logical Conclusions:
+The policy was issued on February 1, 2024, which matches the effective date of the policy, confirming the start of coverage.
+
+"Margaret Rose Chen was issued the policy at age 45." -> LEADS TO -> "The maturity date of the policy is July 8, 2078, which corresponds to age 100."
+Logical Conclusions:
+Margaret Rose Chen was issued the policy at age 45, which means the policy matures when she reaches age 100 on July 8, 2078.
+
+"The effective date of the policy is February 1, 2024." -> INFORMS -> "The premium payment period extends to age 100."
+Logical Conclusions:
+The premium payment period extending to age 100 is consistent with the policy's effective date of February 1, 2024, indicating long-term commitment.
+
+"The effective date of the policy is February 1, 2024." -> PRECEDES -> "If the insured dies by suicide within two years from the issue date, the insurer will pay only the premiums paid, without interest."
+Logical Conclusions:
+The policy's effective date establishes the timeline for the suicide exclusion clause, which limits payout if death occurs within two years of issuance.
+
+"The insurer may contest the policy only within the first two years while the insured is living." -> (has ) -> [insurer (Entity responsible for policy terms)] -> (participates in event: ADJUSTS_FACE_AMOUNT) -> "If the insured's age was misstated, the face amount will be adjusted to reflect what the premium would have purchased at the correct age."
+
+"If the insured's age was misstated, the face amount will be adjusted to reflect what the premium would have purchased at the correct age." -> (has ) -> [misstatement of age (Policy adjustment condition)]
+
+[insurer (Entity responsible for policy terms)] -> (participates in event: PAYS_PREMIUMS_PAID_ONLY) -> "If the insured dies by suicide within two years from the issue date, the insurer will pay only the premiums paid, without interest."
+
+"Margaret Rose Chen was issued the policy at age 45." -> IS CORROBORATED BY -> "The policy was issued on February 1, 2024."
+Logical Conclusions:
+The policy was issued on February 1, 2024, when Margaret Rose Chen was age 45, consistent with her birth date in 1978.
+
+[insurer (Entity responsible for policy terms)] -> (participates in event: EVALUATES_INSURABILITY) -> "To reinstate the policy, evidence of insurability satisfactory to the insurer must be provided."
+
+"The insured person is Margaret Rose Chen." -> HAS_BIRTH_DATE -> "Margaret Rose Chen was born on July 8, 1978." -> ISSUED_AT_AGE -> "Margaret Rose Chen was issued the policy at age 45."
+Logical Conclusions:
+Margaret Rose Chen's birth date determines her age at the time of policy issuance.
+Margaret Rose Chen was issued the policy at age 45, which is calculated from her birth date and the effective date of the policy.
+
+[insurer (Entity responsible for policy terms)] -> (participates in event: MAY_CONTEST_FOR_MISREPRESENTATION) -> "The insurer may contest the policy only for material misrepresentation in the application."
+
+[insurer (Entity responsible for policy terms)] -> (participates in event: CHARGES_INTEREST_AT_6_PERCENT) -> "Overdue premiums must be paid with interest at 6% per annum to reinstate the policy."
+
+[insurer (Entity responsible for policy terms)] -> (participates in event: SETS_REINSTATEMENT_WINDOW) -> "A policy may be reinstated within 3 years of lapse."
+
+"If the insured's age was misstated, the face amount will be adjusted to reflect what the premium would have purchased at the correct age." -> EXCEPTION_TO -> "If the insured dies by suicide within two years from the issue date, the insurer will pay only the premiums paid, without interest."
+Logical Conclusions:
+If suicide occurs within two years, the insurer pays only premiums paid; if age was misstated, the face amount is adjusted, both being exceptions to standard payout terms.
+
+--- GENERATION ---
+LLM answer: The insured's issue age is 45.
+Judge score: 1.0
+====================================================================================================

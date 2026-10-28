@@ -1,0 +1,21 @@
+{
+  "retrieval": {
+    "Recall@1": 0.299,
+    "Recall@2": 0.4479,
+    "Recall@5": 0.6007,
+    "Recall@10": 0.6911,
+    "Recall@20": 0.7717,
+    "Recall@30": 0.8083,
+    "Recall@50": 0.8519,
+    "Recall@100": 0.8966,
+    "Recall@150": 0.9132,
+    "Recall@200": 0.9262
+  },
+  "qa": {
+    "ExactMatch": 0.399,
+    "F1": 0.5036
+  },
+  "rag_type": "hipporag",
+  "llm_name": "deepseek-flash",
+  "embedding_name": "voyageai/voyage-4-nano"
+}

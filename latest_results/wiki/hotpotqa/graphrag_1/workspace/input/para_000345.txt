@@ -1,0 +1,3 @@
+Title: Flexible solar cell research
+
+Flexible solar cell research is a research-level technology, an example of which was created at the Massachusetts Institute of Technology in which solar cells are manufactured by depositing photovoltaic material on flexible substrates, such as ordinary paper, using chemical vapor deposition technology. The technology for manufacturing solar cells on paper was developed by a group of researchers from the Massachusetts Institute of Technology with support from the National Science Foundation and the Eni-MIT Alliance Solar Frontiers Program.

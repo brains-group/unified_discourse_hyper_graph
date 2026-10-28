@@ -1,0 +1,3 @@
+Title: Hofstadter's law
+
+Hofstadter's law is a self-referential time-related adage, coined by Douglas Hofstadter and named after him.

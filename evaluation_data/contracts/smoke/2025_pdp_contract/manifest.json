@@ -1,0 +1,25 @@
+{
+ "contract": "2025_pdp_contract",
+ "source": "smoke from long",
+ "tokens_cl100k": 6000,
+ "chars": 27003,
+ "chunks_1200": 6,
+ "qa": 10,
+ "facts": 10,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 2,
+  "CAT2_RELATIONAL_LOOKUP": 2,
+  "CAT3_CONDITIONAL_REASONING": 2,
+  "CAT4_MULTIHOP_REASONING": 2,
+  "CAT5_UNANSWERABLE": 2
+ },
+ "sha256": {
+  "questions.json": "cc365d36970ac451bec311773ba94133f710a96ba69948c5cc250db9abc15d4d",
+  "documents.json": "8455e42589aa111859b103a37403a75838e633b249b25c39e9935e29c60a6a73",
+  "chunks.json": "902de63602e10dcbb80434cc0df7fec3a0eb9025d049f11fee9117a7e4a1ed67",
+  "chunks_logicrag.json": "902de63602e10dcbb80434cc0df7fec3a0eb9025d049f11fee9117a7e4a1ed67",
+  "memgraphrag_corpus.txt": "8cba2bd7d4579028cc1a0602400efa2b72bc5d2564d2d3ba6b1132b74423feb4",
+  "contract.txt": "8cba2bd7d4579028cc1a0602400efa2b72bc5d2564d2d3ba6b1132b74423feb4",
+  "ms_graphrag_input/2025_pdp_contract.txt": "8cba2bd7d4579028cc1a0602400efa2b72bc5d2564d2d3ba6b1132b74423feb4"
+ }
+}

@@ -1,0 +1,57 @@
+{
+  "dataset": "quality",
+  "config": "/home/taluka/unh_v1/evaluation_scripts/hygrag/config/HKGraphTreeLSH.yaml",
+  "concurrency": 64,
+  "llm_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+  "temperature": null,
+  "embedding_model": "voyageai/voyage-4-nano",
+  "index_seconds": 89.2,
+  "build_checks": {
+    "corpus_docs": 1,
+    "chunks": 6,
+    "embedding_dim": 2048,
+    "cleora_dim": 2048,
+    "hierarchy_levels": 2,
+    "communities": 7,
+    "faiss": {
+      "chunk": {
+        "ntotal": 6,
+        "dim": 2048
+      },
+      "entity": {
+        "ntotal": 242,
+        "dim": 2048
+      },
+      "community": {
+        "ntotal": 7,
+        "dim": 2048
+      }
+    }
+  },
+  "build_log_counts": {
+    "build_error": 0,
+    "embedding_failed_random_vector": 0,
+    "no_text_random_vector": 0,
+    "faiss_build_failed": 0,
+    "hierarchy_save_failed": 0,
+    "summary_failed_placeholder": 0,
+    "summary_empty_placeholder": 0,
+    "summary_missing_member_mean": 0,
+    "summary_embedding_failed": 0,
+    "json_decode_failed": 0,
+    "json_no_values": 0,
+    "llm_retry_exhausted": 0
+  },
+  "llm_cache": {
+    "hits": 6,
+    "misses": 19
+  },
+  "questions": 20,
+  "questions_flagged": 0,
+  "query_log_counts": {
+    "fallback_retrieval": 0,
+    "search_failed": 0,
+    "context_retrieval_failed": 0
+  },
+  "empty_contexts": 0
+}

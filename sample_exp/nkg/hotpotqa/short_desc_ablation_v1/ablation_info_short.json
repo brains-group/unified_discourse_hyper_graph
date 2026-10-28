@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-02T07:57:38.882841",
+  "source_run": "/home/taluka/unh_v1/sample_exp/nkg/hotpotqa/run_v1",
+  "variant": "short",
+  "change": "every fact_fact edge: description := label (short label only); nothing else changed",
+  "edge_types": {
+    "chunk_fact": 11337,
+    "fact_fact": 60016,
+    "fact_entity": 15236,
+    "entity_fact": 15236
+  },
+  "edges_with_description_before": {
+    "fact_fact": 60016
+  },
+  "fact_fact_edges_changed": 60016,
+  "fact_fact_edges_without_label": 0,
+  "entity_fact_labels_emptied": 0,
+  "examples": [
+    {
+      "label": "FOLLOWS",
+      "long_description_removed": "New Roc City was built on the site of the former New Rochelle Mall, which closed in 1992."
+    },
+    {
+      "label": "BUILT_IN",
+      "long_description_removed": "Rocky Creek Bridge No. 01089 was built in 1927."
+    },
+    {
+      "label": "SUPPORTS",
+      "long_description_removed": "Roy Roman performed lead with both Lionel Hampton and Bob Hope."
+    },
+    {
+      "label": "IDENTIFIES",
+      "long_description_removed": "The film Aquamarine, which stars Sara Paxton, was filmed in Queensland, Australia."
+    },
+    {
+      "label": "SUPPORTS",
+      "long_description_removed": "Nick Powell initially played as a forward at Crewe Alexandra and impressed during the 2011\u201312 season."
+    }
+  ],
+  "evaluate_with": {
+    "long/": "original graph, original (neutral) layout, as in every previous run",
+    "short/": "this graph with --no-neutral-layout, so only the label appears anywhere"
+  }
+}

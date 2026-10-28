@@ -1,0 +1,314 @@
+{
+ "system": "logicrag",
+ "set": "smoke",
+ "contract": "contract_1_term_life",
+ "retrieval_file": "/home/taluka/unh_v1/evaluation_scripts/logicrag/result/contracts_smoke/contract_1_term_life/logicrag.json",
+ "summary": {
+  "n": 10,
+  "score_all": 80.0,
+  "score_excl_cat5": 100.0,
+  "by_category": {
+   "CAT1_ATOMIC_LOOKUP": {
+    "score": 100.0,
+    "n": 2
+   },
+   "CAT2_RELATIONAL_LOOKUP": {
+    "score": 100.0,
+    "n": 2
+   },
+   "CAT3_CONDITIONAL_REASONING": {
+    "score": 100.0,
+    "n": 2
+   },
+   "CAT4_MULTIHOP_REASONING": {
+    "score": 100.0,
+    "n": 2
+   },
+   "CAT5_UNANSWERABLE": {
+    "score": 0.0,
+    "n": 2
+   }
+  },
+  "abstained_on_answerable": 0,
+  "mean_context_tokens": 119.3,
+  "empty_contexts": 0,
+  "reader_empty": 0,
+  "reader_hit_max_tokens": 0,
+  "reader_no_answer_tag": 0,
+  "judge_unparsed": 0,
+  "reader_usage": {
+   "calls": 10,
+   "prompt_tokens": 2641,
+   "completion_tokens": 1007,
+   "prompt_cache_hit_tokens": 0
+  },
+  "judge_usage": {
+   "calls": 10,
+   "prompt_tokens": 4438,
+   "completion_tokens": 1051,
+   "prompt_cache_hit_tokens": 0
+  }
+ },
+ "per_question": [
+  {
+   "id": "contract_1_term_life/qa/0000",
+   "category": "CAT1_ATOMIC_LOOKUP",
+   "question": "What is the policy number for this term life insurance policy?",
+   "gold": "SL-2024-TRM-00123",
+   "evidence": "POLICY NUMBER: SL-2024-TRM-00123",
+   "context": "The policy number for this term life insurance policy is **SL-2024-TRM-00123**. This information is explicitly stated in the policy header under \"POLICY NUMBER.\" The policy is a 20-Year Level Term Life Insurance issued on January 15, 2024, with a death benefit of $500,000 and a term ending January 15, 2044.",
+   "context_tokens": 80,
+   "raw_response": "The context explicitly states the policy number in the policy header under \"POLICY NUMBER.\" The information provided directly identifies the policy number as SL-2024-TRM-00123. No additional inference or external information is needed.\n\nAnswer: The policy number for this term life insurance policy is SL-2024-TRM-00123.",
+   "answer": "The policy number for this term life insurance policy is SL-2024-TRM-00123.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM-generated answer correctly states the policy number as SL-2024-TRM-00123, which matches the correct_answer exactly. There are no contradictions, omissions, or inaccuracies. The phrasing is slightly reworded but preserves the full meaning and all key information. Since the correct_answer is a specific concrete value and the LLM provides it accurately, the answer is fully correct.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 228,
+    "completion_tokens": 80,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 94,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0001",
+   "category": "CAT1_ATOMIC_LOOKUP",
+   "question": "What is the death benefit amount on this policy?",
+   "gold": "$500,000",
+   "evidence": "Death Benefit Amount: $500,000",
+   "context": "The death benefit amount on this policy is $500,000. This amount is payable to the beneficiary upon the death of the insured, John Michael Anderson, during the policy term (January 15, 2024 – January 15, 2044), provided the policy is in force and all claim requirements are met. The death benefit is paid in a lump sum unless an alternate settlement option is chosen.",
+   "context_tokens": 82,
+   "raw_response": "The context explicitly states the death benefit amount on the policy. It mentions that the death benefit amount is $500,000, which is payable to the beneficiary upon the death of the insured, John Michael Anderson, during the policy term, provided the policy is in force and all claim requirements are met.\n\nAnswer: The death benefit amount on this policy is $500,000.",
+   "answer": "The death benefit amount on this policy is $500,000.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer directly states the death benefit amount as $500,000, which exactly matches the correct answer. There are no contradictions, omissions, or inaccuracies. The wording is slightly more verbose than the correct answer but conveys the same information with full accuracy.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 84,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 66,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0002",
+   "category": "CAT2_RELATIONAL_LOOKUP",
+   "question": "Who is the primary beneficiary of this policy?",
+   "gold": "Sarah Elizabeth Anderson (Spouse), receiving 100%",
+   "evidence": "Primary Beneficiary: Sarah Elizabeth Anderson (Spouse) - 100%",
+   "context": "The primary beneficiary of this life insurance policy is Sarah Elizabeth Anderson, the spouse of the insured, John Michael Anderson. She is designated as the sole primary beneficiary with a 100% share of the death benefit. The policy, issued on January 15, 2024, provides a $500,000 death benefit payable upon the insured's death during the 20-year term, provided the claim is made before January 15, 2044, and all required documentation is submitted.",
+   "context_tokens": 97,
+   "raw_response": "The context explicitly states that the primary beneficiary of the life insurance policy is Sarah Elizabeth Anderson. She is described as the spouse of the insured, John Michael Anderson, and is designated as the sole primary beneficiary with a 100% share of the death benefit. This information directly identifies the primary beneficiary without ambiguity.\n\nAnswer: The primary beneficiary of this policy is Sarah Elizabeth Anderson. She is the sole primary beneficiary and is entitled to the full death benefit.",
+   "answer": "The primary beneficiary of this policy is Sarah Elizabeth Anderson. She is the sole primary beneficiary and is entitled to the full death benefit.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly identifies Sarah Elizabeth Anderson as the primary beneficiary, which matches the correct answer. It accurately states that she is the sole primary beneficiary and is entitled to the full death benefit, which corresponds to the \"100%\" mentioned in the correct answer. The information is complete, precise, and semantically equivalent, with no contradictions or omissions. The phrasing is slightly more detailed but does not introduce inaccuracies.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 239,
+    "completion_tokens": 92,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 440,
+    "completion_tokens": 94,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0003",
+   "category": "CAT2_RELATIONAL_LOOKUP",
+   "question": "Who are the contingent beneficiaries and what are their shares?",
+   "gold": "Emma Grace Anderson (Daughter) at 50% and Lucas James Anderson (Son) at 50%",
+   "evidence": "Contingent Beneficiary: Emma Grace Anderson (Daughter) - 50% / Lucas James Anderson (Son) - 50%",
+   "context": "The contingent beneficiaries are Emma Grace Anderson and Lucas James Anderson. Each is entitled to a 50% share of the death benefit if the primary beneficiary, Sarah Elizabeth Anderson, predeceases the insured.",
+   "context_tokens": 41,
+   "raw_response": "Thought: The context explicitly states that the contingent beneficiaries are Emma Grace Anderson and Lucas James Anderson. It also specifies that each is entitled to a 50% share of the death benefit if the primary beneficiary predeceases the insured. This information directly answers both parts of the question: who the contingent beneficiaries are and their respective shares.\n\nAnswer: The contingent beneficiaries are Emma Grace Anderson and Lucas James Anderson, each entitled to a 50% share of the death benefit.",
+   "answer": "The contingent beneficiaries are Emma Grace Anderson and Lucas James Anderson, each entitled to a 50% share of the death benefit.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly identifies both contingent beneficiaries—Emma Grace Anderson and Lucas James Anderson—and accurately states their respective shares as 50% each. The information matches the correct answer in all key details: the names, their relationship to the primary beneficiary (implied as children), and the equal distribution of shares. The phrasing is slightly reworded but semantically equivalent. There are no contradictions, omissions, or inaccuracies.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 173,
+    "completion_tokens": 97,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 453,
+    "completion_tokens": 95,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0004",
+   "category": "CAT3_CONDITIONAL_REASONING",
+   "question": "What happens to coverage if the premium is not paid by the end of the grace period?",
+   "gold": "The policy will lapse and coverage will terminate.",
+   "evidence": "6.3 If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.",
+   "context": "If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate. The grace period is 31 days following the premium due date (the 15th of each month), during which coverage continues. If payment is not made by the end of this 31-day period, the policy is no longer in force, and no death benefit will be payable.",
+   "context_tokens": 80,
+   "raw_response": "The context states that if the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate. The grace period is 31 days following the premium due date, and if payment is not made by the end of this period, the policy is no longer in force, and no death benefit will be payable. Therefore, coverage ends when the premium is not paid by the end of the grace period.\n\nAnswer: If the premium is not paid by the end of the grace period, the policy lapses and coverage terminates.",
+   "answer": "If the premium is not paid by the end of the grace period, the policy lapses and coverage terminates.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer accurately reflects the correct answer by stating that if the premium is not paid by the end of the grace period, the policy lapses and coverage terminates. The wording is nearly identical to the correct answer, and the meaning is preserved without any contradictions, omissions, or inaccuracies. The answer captures all key facts: the consequence of non-payment by the grace period's end (policy lapsing) and the result (coverage termination). The phrasing is slightly reworded but semantically equivalent.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 221,
+    "completion_tokens": 113,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 441,
+    "completion_tokens": 110,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0005",
+   "category": "CAT3_CONDITIONAL_REASONING",
+   "question": "What is the insurer's liability if the insured commits suicide within two years of the issue date?",
+   "gold": "Liability is limited to a refund of premiums paid.",
+   "evidence": "7.1 SUICIDE CLAUSE: If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.",
+   "context": "The insurer's liability is limited to a refund of premiums paid if the insured commits suicide within two years of the issue date. This is specified in Section 7.1 of the policy, which states: \"If the insured commits suicide within two years from the issue date, our liability is limited to a refund of premiums paid.\" The policy was issued on January 15, 2024, so this clause applies if suicide occurs before January 15, 2026. The death benefit of $500,000 is not payable in such cases.",
+   "context_tokens": 110,
+   "raw_response": "The context explicitly states that if the insured commits suicide within two years of the issue date, the insurer's liability is limited to a refund of premiums paid. The policy was issued on January 15, 2024, so this clause applies to suicides occurring before January 15, 2026. The death benefit of $500,000 is not payable in such cases, but the only liability mentioned is the refund of premiums paid.\n\nAnswer: The insurer's liability is limited to a refund of premiums paid if the insured commits suicide within two years of the issue date.",
+   "answer": "The insurer's liability is limited to a refund of premiums paid if the insured commits suicide within two years of the issue date.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly states that the insurer's liability is limited to a refund of premiums paid when the insured commits suicide within two years of the issue date. This matches the correct answer exactly in meaning and includes all key facts without omission or inaccuracy. The phrasing is slightly restructured but preserves the core information accurately. There are no contradictions, omissions, or irrelevant details.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 125,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 84,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0006",
+   "category": "CAT4_MULTIHOP_REASONING",
+   "question": "Can the insurer require evidence of insurability when the insured converts this policy to a permanent policy?",
+   "gold": "No. The conversion privilege allows conversion without evidence of insurability.",
+   "evidence": "8.1 You may convert this policy to a permanent life insurance policy without evidence of insurability.",
+   "context": "The policy includes a conversion privilege (Section 8) that allows the insured to convert the 20-Year Level Term Life Insurance policy to a permanent policy without providing evidence of insurability. This conversion must occur before the earlier of: (a) the policy expiry date (January 15, 2044), or (b) the insured's 65th birthday. The premium for the new permanent policy will be based on the insured's attained age at conversion, the amount of coverage converted, and the selected class of permanent policy. Therefore, the insurer cannot require evidence of insurability when the insured converts this policy to a permanent policy.",
+   "context_tokens": 130,
+   "raw_response": "The context explicitly states that the policy includes a conversion privilege that allows the insured to convert the 20-Year Level Term Life Insurance policy to a permanent policy without providing evidence of insurability. It further clarifies that the insurer cannot require evidence of insurability when the insured converts this policy to a permanent policy. This directly addresses the question.\n\nAnswer: No, the insurer cannot require evidence of insurability when the insured converts this policy to a permanent policy.",
+   "answer": "No, the insurer cannot require evidence of insurability when the insured converts this policy to a permanent policy.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly states that the insurer cannot require evidence of insurability during conversion, which directly aligns with the correct answer. The meaning is preserved, even though the wording differs slightly (e.g., \"cannot require\" vs. \"allows conversion without\"). The core fact—that evidence of insurability is not required—is fully and accurately conveyed. There are no contradictions, omissions, or inaccuracies.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 275,
+    "completion_tokens": 95,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 448,
+    "completion_tokens": 91,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0007",
+   "category": "CAT4_MULTIHOP_REASONING",
+   "question": "If the insured dies during the grace period, will the death benefit be reduced?",
+   "gold": "Coverage continues during the grace period per Section 6.2, and the full death benefit is payable under Section 5.1 if the insured dies while the policy is in force; the policy remains in force during the grace period, so the full death benefit would be payable.",
+   "evidence": "6.2 If a premium is not paid by the due date, a grace period of 31 days is allowed. Coverage continues during the grace period. / 5.1 We will pay the death benefit to the beneficiary if: (a) The insured dies while this policy is in force",
+   "context": "If the insured dies during the grace period, the death benefit will not be reduced. According to Section 6.2, coverage continues during the 31-day grace period following the premium due date (the 15th of each month), and Section 5.1 states that the death benefit of $500,000 will be paid if the insured dies while the policy is in force, which includes the grace period. Therefore, as long as the death occurs before the policy expiry date (January 15, 2044), the full death benefit will be payable.",
+   "context_tokens": 114,
+   "raw_response": "Thought: The context states that coverage continues during the 31-day grace period following the premium due date, and the death benefit of $500,000 will be paid if the insured dies while the policy is in force, which includes the grace period. It also specifies that the death benefit will be payable as long as the death occurs before the policy expiry date (January 15, 2044). Since the policy remains in force during the grace period and the death benefit is not reduced under these conditions, the death benefit will not be reduced if the insured dies during the grace period.\n\nAnswer: No, the death benefit will not be reduced if the insured dies during the grace period.",
+   "answer": "No, the death benefit will not be reduced if the insured dies during the grace period.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 1.0,
+   "judge_unparsed": false,
+   "judge_response": "The LLM answer correctly states that the death benefit will not be reduced if the insured dies during the grace period, which aligns with the correct answer’s core claim. The correct answer explains that coverage continues during the grace period (per Section 6.2), the policy remains in force, and the full death benefit is payable under Section 5.1. While the LLM answer does not explicitly mention the policy provisions or the reason why the benefit is not reduced, it accurately conveys the essential outcome: no reduction in the death benefit. The meaning is preserved, and no contradiction or omission of a key fact is present. Therefore, the answer is fully correct in substance.\n\nScore: 1.0",
+   "reader_usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 146,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 482,
+    "completion_tokens": 144,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0008",
+   "category": "CAT5_UNANSWERABLE",
+   "question": "What is the cash value accumulation schedule for this policy?",
+   "gold": "Not specified in this policy.",
+   "evidence": "N/A",
+   "context": "**Refined Summary:**\n\nThis is a 20-Year Level Term Life Insurance policy (Policy Number: SL-2024-TRM-00123) issued by SecureLife Insurance Company on January 15, 2024, to John Michael Anderson (DOB: March 22, 1985, age 38 at issue). The policy provides a $500,000 death benefit for a 20-year term, expiring on January 15, 2044.  \n\n**Cash Value Accumulation:** This policy is a pure term life insurance product and **does not accumulate cash value**. Therefore, **there is no cash value accumulation schedule**.  \n\nPremiums are $45.00 per month, due on the 15th of each month, with a 31-day grace period during which coverage remains in force. If the premium is not paid by the end of the grace period, the policy will lapse and coverage will terminate.  \n\n**Conversion Privilege:** The policyholder may convert this term policy to a permanent life insurance policy without evidence of insurability, provided conversion occurs before the earlier of",
+   "context_tokens": 225,
+   "raw_response": "The context explicitly states that this is a pure term life insurance product. It further clarifies that the policy does not accumulate cash value. Since there is no cash value accumulation, there can be no cash value accumulation schedule. The context does not provide any details about a schedule because it does not exist for this policy.\n\nAnswer: This policy does not accumulate cash value, so there is no cash value accumulation schedule.",
+   "answer": "This policy does not accumulate cash value, so there is no cash value accumulation schedule.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 0.0,
+   "judge_unparsed": false,
+   "judge_response": "The correct answer states that the cash value accumulation schedule is not specified in the policy. The LLM answer claims that the policy \"does not accumulate cash value,\" which is a stronger and more specific assertion than the correct answer. Since the correct answer only states that the schedule is not specified (without asserting whether cash value accumulates at all), the LLM's claim that no cash value accumulates introduces an unwarranted assumption. This contradicts the correct answer, which leaves the matter open by not specifying the accumulation schedule. Therefore, the LLM answer is not aligned with the correct answer and scores 0.0.\n\nScore: 0.0",
+   "reader_usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 83,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 426,
+    "completion_tokens": 132,
+    "prompt_cache_hit_tokens": 0
+   }
+  },
+  {
+   "id": "contract_1_term_life/qa/0009",
+   "category": "CAT5_UNANSWERABLE",
+   "question": "What is the reinstatement period if this policy lapses?",
+   "gold": "Not specified in this policy.",
+   "evidence": "N/A",
+   "context": "The policy has a 31-day grace period following the premium due date (the 15th of each month), during which coverage remains in force if the monthly premium of $45.00 is not paid on time. If the premium is not paid by the end of this grace period, the policy will lapse and coverage will terminate.\n\n**There is no reinstatement provision** explicitly stated in the policy terms. Sections 1–10 of the policy do not include any mechanism or timeframe for reinstating a lapsed policy. While the policy allows for conversion to permanent insurance under Section 8.1 (before age 65 or policy expiry on January 15, 2044), and permits assignment under Section 10.3 (with written notice required), neither provision provides a basis for reinstatement. Section 10.2 (misstatement of age or sex) addresses adjustment of the death benefit but does not pertain to reinstatement.\n\nTherefore, **once the policy lapses, it cannot be reinstated**. The policy is a 20-year level term life insurance policy with a death benefit of $500,000, issued to John Michael Anderson (DOB",
+   "context_tokens": 234,
+   "raw_response": "The context explicitly states that there is no reinstatement provision in the policy terms. Sections 1–10 do not include any mechanism or timeframe for reinstating a lapsed policy. Although the policy allows for conversion to permanent insurance and assignment, neither provision provides a basis for reinstatement. Therefore, the policy cannot be reinstated once it lapses.\n\nAnswer: There is no reinstatement period because the policy cannot be reinstated once it lapses.",
+   "answer": "There is no reinstatement period because the policy cannot be reinstated once it lapses.",
+   "finish_reason": "stop",
+   "abstained": false,
+   "score": 0.0,
+   "judge_unparsed": false,
+   "judge_response": "The correct answer states that the reinstatement period is \"Not specified in this policy,\" meaning the policy document does not provide information about reinstatement. The LLM answer claims that \"the policy cannot be reinstated once it lapses,\" which is a stronger and more definitive statement than the correct answer. This introduces new information not present in the correct answer—specifically, that reinstatement is impossible—whereas the correct answer only states that the period is not specified. Since the correct answer does not rule out reinstatement or state that it's impossible, the LLM answer contradicts the correct answer by asserting a definitive policy stance that is not supported by the source.\n\nScore: 0.0",
+   "reader_usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 92,
+    "prompt_cache_hit_tokens": 0
+   },
+   "judge_usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 141,
+    "prompt_cache_hit_tokens": 0
+   }
+  }
+ ]
+}

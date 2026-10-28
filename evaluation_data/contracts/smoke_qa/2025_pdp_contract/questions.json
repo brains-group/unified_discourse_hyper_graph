@@ -1,0 +1,112 @@
+[
+ {
+  "id": "2025_pdp_contract/qa/0000",
+  "kind": "qa",
+  "question": "What is the official name of the entity referred to as 'CMS' in the contract?",
+  "answer": "Centers for Medicare & Medicaid Services",
+  "answer_letter": "",
+  "category": "CAT1_ATOMIC_LOOKUP",
+  "evidence": "Centers for Medicare & Medicaid Services (hereinafter referred to as CMS)",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0001",
+  "kind": "qa",
+  "question": "What is the final day of the effective period for this contract?",
+  "answer": "December 31, 2025",
+  "answer_letter": "",
+  "category": "CAT1_ATOMIC_LOOKUP",
+  "evidence": "This contract is effective from the date of CMS's authorized representative's signature through December 31, 2025.",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0002",
+  "kind": "qa",
+  "question": "Which official has the authority to determine if an entity is eligible to operate a PDP under 42 CFR § 423.503?",
+  "answer": "The Administrator of CMS",
+  "answer_letter": "",
+  "category": "CAT2_RELATIONAL_LOOKUP",
+  "evidence": "an entity that has been determined eligible to operate a Voluntary Medicare Prescription Drug Plan by the Administrator of CMS under 42 CFR § 423.503",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0003",
+  "kind": "qa",
+  "question": "To whom does the PDP Sponsor grant a license to use its plan formulary for Part D administration?",
+  "answer": "The Government",
+  "answer_letter": "",
+  "category": "CAT2_RELATIONAL_LOOKUP",
+  "evidence": "hereby grants to the Government, and any person or entity who might receive the formulary from the Government, a non-exclusive license to use all or any portion of the formulary",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0004",
+  "kind": "qa",
+  "question": "What is the status of the contract document if the PDP Sponsor had a contract for Year 2024?",
+  "answer": "It is considered a renewal of the existing contract",
+  "answer_letter": "",
+  "category": "CAT3_CONDITIONAL_REASONING",
+  "evidence": "If PDP Sponsor had a contract with CMS for Contract Year 2024... this document is considered a renewal of the existing contract.",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0005",
+  "kind": "qa",
+  "question": "What may happen if a licensure waiver expires and the sponsor fails to obtain a state license?",
+  "answer": "CMS may delete affected PDP Regions from the service area",
+  "answer_letter": "",
+  "category": "CAT3_CONDITIONAL_REASONING",
+  "evidence": "PDP Sponsor agrees that expiration of the licensure waiver (and the failure to obtain a license from the relevant State) may be the basis for CMS deleting from PDP Sponsor's service area those PDP Regions affected",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0006",
+  "kind": "qa",
+  "question": "What happens to pending obligations from the 2024 contract year when the 2025 contract is signed?",
+  "answer": "They are not extinguished or interrupted",
+  "answer_letter": "",
+  "category": "CAT4_MULTIHOP_REASONING",
+  "evidence": "the parties' execution of this contract does not extinguish or interrupt any pending obligations or actions that may have arisen under the 2024 or prior year contracts.",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0007",
+  "kind": "qa",
+  "question": "How do the claim submission timelines for long-term care pharmacies compare to the payment timelines for retail pharmacies?",
+  "answer": "LTC pharmacies have 30 to 90 days to submit claims, while retail pharmacies must be paid by the sponsor within 14 to 30 days of receipt depending on submission method",
+  "answer_letter": "",
+  "category": "CAT4_MULTIHOP_REASONING",
+  "evidence": "transmit payment with respect to all claims submitted by pharmacies... within 14 days of receipt of an electronically submitted claim or within 30 days of receipt of a claim submitted otherwise... long-term care facility will have not less than 30 days (but not more than 90 days) to submit claims",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0008",
+  "kind": "qa",
+  "question": "What is the monthly premium amount for this PDP plan?",
+  "answer": "Not specified in this policy.",
+  "answer_letter": "",
+  "category": "CAT5_UNANSWERABLE",
+  "evidence": "N/A",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ },
+ {
+  "id": "2025_pdp_contract/qa/0009",
+  "kind": "qa",
+  "question": "What is the exact list of drugs included in the plan formulary?",
+  "answer": "Not specified in this policy.",
+  "answer_letter": "",
+  "category": "CAT5_UNANSWERABLE",
+  "evidence": "N/A",
+  "fact_id": null,
+  "contract": "2025_pdp_contract"
+ }
+]

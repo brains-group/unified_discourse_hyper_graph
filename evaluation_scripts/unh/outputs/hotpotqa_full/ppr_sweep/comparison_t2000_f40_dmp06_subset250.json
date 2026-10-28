@@ -1,0 +1,117 @@
+{
+  "dataset": "hotpotqa",
+  "subset": 250,
+  "ppr_tag": "t2000_f40_dmp06",
+  "ppr_path_stats": {
+    "pct_edges_discourse": 41.5,
+    "pct_edges_entity": 58.5,
+    "pct_hops_discourse": 57.0,
+    "pct_hops_entity": 43.0,
+    "mean_edges_per_question": 41.5,
+    "mean_distinct_facts": 50.2,
+    "answer_in_context_pct": 86.0,
+    "mean_seconds": 2.413
+  },
+  "rows": [
+    {
+      "system": "HyperGraphRAG",
+      "n": 250,
+      "EM": 59.6,
+      "F1": 74.8,
+      "Contain-Acc": 74.0,
+      "LLM-Acc": 85.6,
+      "context_tokens_mean": 22691,
+      "context_tokens_max": 31665
+    },
+    {
+      "system": "UNH PPR (t2000_f40_dmp06)",
+      "n": 250,
+      "EM": 60.4,
+      "F1": 74.1,
+      "Contain-Acc": 71.6,
+      "LLM-Acc": 86.4,
+      "context_tokens_mean": 1427,
+      "context_tokens_max": 1999
+    },
+    {
+      "system": "HippoRAG 2",
+      "n": 250,
+      "EM": 59.6,
+      "F1": 71.9,
+      "Contain-Acc": 70.8,
+      "LLM-Acc": 80.4,
+      "context_tokens_mean": 662,
+      "context_tokens_max": 1762
+    },
+    {
+      "system": "LogicRAG",
+      "n": 250,
+      "EM": 56.4,
+      "F1": 71.3,
+      "Contain-Acc": 68.8,
+      "LLM-Acc": 81.6,
+      "context_tokens_mean": 70,
+      "context_tokens_max": 270
+    },
+    {
+      "system": "HyGRAG",
+      "n": 250,
+      "EM": 56.4,
+      "F1": 69.3,
+      "Contain-Acc": 66.4,
+      "LLM-Acc": 79.2,
+      "context_tokens_mean": 1056,
+      "context_tokens_max": 2007
+    },
+    {
+      "system": "UNH old retriever (full view)",
+      "n": 250,
+      "EM": 54.0,
+      "F1": 65.8,
+      "Contain-Acc": 64.4,
+      "LLM-Acc": 76.0,
+      "context_tokens_mean": 964,
+      "context_tokens_max": 1866
+    },
+    {
+      "system": "MS GraphRAG",
+      "n": 250,
+      "EM": 51.6,
+      "F1": 65.4,
+      "Contain-Acc": 63.6,
+      "LLM-Acc": 75.6,
+      "context_tokens_mean": 9737,
+      "context_tokens_max": 11626
+    },
+    {
+      "system": "MemGraphRAG",
+      "n": 250,
+      "EM": 50.4,
+      "F1": 61.4,
+      "Contain-Acc": 61.6,
+      "LLM-Acc": 68.4,
+      "context_tokens_mean": 1307,
+      "context_tokens_max": 1309
+    },
+    {
+      "system": "UNH old retriever (hypergraph view)",
+      "n": 250,
+      "EM": 46.8,
+      "F1": 56.6,
+      "Contain-Acc": 56.0,
+      "LLM-Acc": 64.8,
+      "context_tokens_mean": 1073,
+      "context_tokens_max": 1623
+    },
+    {
+      "system": "UNH old retriever (discourse view)",
+      "n": 250,
+      "EM": 45.2,
+      "F1": 56.6,
+      "Contain-Acc": 56.8,
+      "LLM-Acc": 64.8,
+      "context_tokens_mean": 734,
+      "context_tokens_max": 1713
+    }
+  ]
+}

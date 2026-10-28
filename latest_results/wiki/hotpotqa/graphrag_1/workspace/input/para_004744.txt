@@ -1,0 +1,3 @@
+Title: Dynkin system
+
+A Dynkin system, named after Eugene Dynkin, is a collection of subsets of another universal set formula_1 satisfying a set of axioms weaker than those of σ-algebra. Dynkin systems are sometimes referred to as λ-systems (Dynkin himself used this term) or d-system. These set families have applications in measure theory and probability.

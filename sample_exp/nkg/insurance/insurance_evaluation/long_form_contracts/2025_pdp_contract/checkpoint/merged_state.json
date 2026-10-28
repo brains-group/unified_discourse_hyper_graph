@@ -1,0 +1,16 @@
+{
+  "dedup_tokens": {
+    "prompt": 0,
+    "completion": 0,
+    "total": 0,
+    "calls": 0
+  },
+  "dedup_time_sec": 5.179,
+  "fact_dedup_tokens": {
+    "prompt": 105841,
+    "completion": 19724,
+    "total": 125565,
+    "calls": 43
+  },
+  "fact_dedup_time_sec": 27.513
+}

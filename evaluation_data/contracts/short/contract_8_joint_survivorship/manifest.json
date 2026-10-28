@@ -1,0 +1,25 @@
+{
+ "contract": "contract_8_joint_survivorship",
+ "source": "ten_contracts_dataset",
+ "tokens_cl100k": 1968,
+ "chars": 8619,
+ "chunks_1200": 2,
+ "qa": 37,
+ "facts": 72,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 13,
+  "CAT2_RELATIONAL_LOOKUP": 6,
+  "CAT3_CONDITIONAL_REASONING": 9,
+  "CAT4_MULTIHOP_REASONING": 4,
+  "CAT5_UNANSWERABLE": 5
+ },
+ "sha256": {
+  "questions.json": "4286834fa1b6c33bb02e803161ce3e6dd60424f3238b93cf0255a5b782a32eee",
+  "documents.json": "27abef5437bfd905a8bd935b6392fa208f802df5aeb838f996e960218af3031c",
+  "chunks.json": "ba8db8aaef5a14e30ae70dc7013ba778614316cc3f813045f44fd5a5b1d3ec35",
+  "chunks_logicrag.json": "ba8db8aaef5a14e30ae70dc7013ba778614316cc3f813045f44fd5a5b1d3ec35",
+  "memgraphrag_corpus.txt": "d6592d74ecf69725b4a315437a9077f468b8d3600857afdb8e82dce3e3fc802c",
+  "contract.txt": "d6592d74ecf69725b4a315437a9077f468b8d3600857afdb8e82dce3e3fc802c",
+  "ms_graphrag_input/contract_8_joint_survivorship.txt": "d6592d74ecf69725b4a315437a9077f468b8d3600857afdb8e82dce3e3fc802c"
+ }
+}

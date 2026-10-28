@@ -1,0 +1,3 @@
+Title: External combustion engine
+
+An external combustion engine (EC engine) is a heat engine where a working fluid, contained internally, is heated by combustion in an external source, through the engine wall or a heat exchanger. The fluid then, by expanding and acting on the mechanism of the engine, produces motion and usable work. The fluid is then cooled, compressed and reused (closed cycle), or (less commonly) dumped, and cool fluid pulled in (open cycle air engine).

@@ -1,0 +1,21 @@
+{
+ "system": "memgraphrag",
+ "set": "long_qa",
+ "contract": "capital_health_plan",
+ "retrieval_file": "/home/taluka/unh_v1/evaluation_scripts/memgraphrag/outputs/contracts_long_qa/capital_health_plan/qa_results.json",
+ "summary": {
+  "n": 0,
+  "recall": null,
+  "recalled": 0,
+  "mean_context_tokens": 0.0,
+  "empty_contexts": 0,
+  "judge_unparsed": 0,
+  "judge_usage": {
+   "calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "prompt_cache_hit_tokens": 0
+  }
+ },
+ "per_fact": []
+}

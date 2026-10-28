@@ -1,0 +1,3 @@
+Title: Tantrix
+
+Tantrix is a hexagonal tile-based abstract game invented by Mike McManaway from New Zealand. Each of the 56 different tiles in the set contains three lines, going from one edge of the tile to another. No two lines on a tile have the same colour. There are four colours in the set: red, yellow, blue, and green. No two tiles are identical, and each is individually numbered from 1 through 56.

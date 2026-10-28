@@ -1,0 +1,33 @@
+{
+  "system": "NKG",
+  "timestamp": "20260618_112025",
+  "contract_file": "/home/taluka/discourse_hyper_graph/evaluation_data/ten_contracts_dataset/contracts/contract_6_group_term.txt",
+  "construction_args": {
+    "model_name": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "max_workers": 100,
+    "chunk_size": 600,
+    "overlap": 50,
+    "edge_threshold": 0.5,
+    "top_k": 12,
+    "max_sub_workers": 100,
+    "fact_batch_size": 15,
+    "edge_mode": "clustered",
+    "run_deduplication": true,
+    "dedup_model_name": "voyageai/voyage-4-nano",
+    "dedup_iterations": 1,
+    "dedup_max_cluster_size": 64
+  },
+  "metrics": {
+    "total_document_chars": 8000,
+    "n_nodes": 164,
+    "n_edges": 944,
+    "n_entities": 78,
+    "n_facts": 82,
+    "execution_time_sec": 82.17,
+    "kg_size_bytes": 529607,
+    "llm_prompt_tokens": 51054,
+    "llm_completion_tokens": 35639,
+    "llm_total_tokens": 86693,
+    "llm_api_calls": 76
+  }
+}

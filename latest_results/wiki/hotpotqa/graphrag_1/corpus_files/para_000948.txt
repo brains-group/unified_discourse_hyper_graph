@@ -1,0 +1,3 @@
+Title: Boss Doctor Rhythm DR-110
+
+The Boss Doctor Rhythm DR-110 Graphic is a drum machine produced by the Boss product division of the Japanese Roland Corporation in 1983. It featured advances in technology compared to previous Roland drum machines: it had an LCD graphic display, showing a step-programming grid for the various drum voices. The DR-110 allowed the drum sounds to be played manually from rubber pads (as well as programmed). Like all Roland's previous drum machines, the DR-110's synthesized drum "voices" (synthesizer sounds) used analog synthesizer circuits. Tempo was continuously variable between 45 and 300 beats per minute (BPM). The DR-110 used a 4-bit Hitachi microprocessor and 1KB of μPD444C RAM memory.

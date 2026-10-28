@@ -1,0 +1,25 @@
+{
+ "contract": "td_contract",
+ "source": "long_qa (QA only) from long",
+ "tokens_cl100k": 10578,
+ "chars": 53779,
+ "chunks_1200": 10,
+ "qa": 100,
+ "facts": 0,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 36,
+  "CAT2_RELATIONAL_LOOKUP": 18,
+  "CAT3_CONDITIONAL_REASONING": 24,
+  "CAT4_MULTIHOP_REASONING": 12,
+  "CAT5_UNANSWERABLE": 10
+ },
+ "sha256": {
+  "questions.json": "23cf6e502c63d3079f2370519579fb85d05ebbf5cd48a129e5c1261d5d766804",
+  "documents.json": "b5f5aec0d71eb2e8c3c1806495d5ea2461b5bcd742d34ed2349502923dc1e970",
+  "chunks.json": "6770d48953749f85b3b59196c7b6f532a65a9716c0331962892267a8b8a86ce4",
+  "chunks_logicrag.json": "6770d48953749f85b3b59196c7b6f532a65a9716c0331962892267a8b8a86ce4",
+  "memgraphrag_corpus.txt": "f9c847bf23b119795adc44228b52a89bdf319868b457966ff2637914cfbc888c",
+  "contract.txt": "f9c847bf23b119795adc44228b52a89bdf319868b457966ff2637914cfbc888c",
+  "ms_graphrag_input/td_contract.txt": "f9c847bf23b119795adc44228b52a89bdf319868b457966ff2637914cfbc888c"
+ }
+}

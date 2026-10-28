@@ -47,7 +47,6 @@ class Fact(BaseModel):
     # Add this configuration to make instances hashable
     model_config = ConfigDict(frozen=True)
 
-    name: str
     sentence: str
     macro_topics: List[str]
     chunk_topics: List[str]
@@ -62,9 +61,7 @@ class Chunk(BaseModel):
     # Add this configuration to make instances hashable
     model_config = ConfigDict(frozen=True)
 
-    name: str
     text: str
     summary: str
-    topics: List[str]
     entities: List[EntityFingerprint] = Field(default_factory=list)
     facts: List[Fact]

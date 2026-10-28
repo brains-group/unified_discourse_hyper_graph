@@ -1,0 +1,3 @@
+Title: Dynkin's formula
+
+In mathematics — specifically, in stochastic analysis — Dynkin's formula is a theorem giving the expected value of any suitably smooth statistic of an Itō diffusion at a stopping time. It may be seen as a stochastic generalization of the (second) fundamental theorem of calculus. It is named after the Russian mathematician Eugene Dynkin.

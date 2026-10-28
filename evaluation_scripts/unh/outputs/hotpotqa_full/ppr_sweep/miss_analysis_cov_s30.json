@@ -1,0 +1,541 @@
+[
+ {
+  "id": "5ae1f17e554299234fd04349",
+  "q": "Which is located in Cornwall, Southwell Minster or Truro Cathedral?",
+  "gold": [
+   "cathedral of blessed virgin mary truro"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a8835dc5542994846c1ce2b",
+  "q": "Who is a winner of the 2013 6 Hours of Silverstone a co-commentator for?",
+  "gold": [
+   "bbc formula one"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 80,
+  "official_hit": true,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ae40d405542996836b02c28",
+  "q": "At what intersection was the former home of the wooden roller coaster now located at Six Flags Great America in Gurnee, Illinois located?",
+  "gold": [
+   "north avenue and first avenue"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 55,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5ae163b3554299422ee99678",
+  "q": "Who wrote Bring Me Sunshine and where did they write it?",
+  "gold": [
+   "bring me sunshine 1994 was originally threepart retrospective in tribute to eric morecambe"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5a7732dc55429972597f149b",
+  "q": "What 1944 Bollywood film was the mother of Bollywood actor Govinda in?",
+  "gold": [
+   "geet or song"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5ae7ff745542994a481bbe6e",
+  "q": "When was the track from which a sample was featured in \"Take Me to the Clouds Above\" released? ",
+  "gold": [
+   "16 march 1987"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 1823,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5a86b13f55429960ec39b6c3",
+  "q": "Where was the second World Junior Ice Hockey Championship in which Miroslav P\u0159erost coached the men's national junior ice hockey team hosted?",
+  "gold": [
+   "ufa russia"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 67,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5ac3ac8255429939154138ad",
+  "q": "APB and Sleeper are both from britain?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5a84bb825542991dd0999dbe",
+  "q": "Who beacme a star as a comic book character created by Gerry Conway and Bob Oksner?",
+  "gold": [
+   "megalyn echikunwoke"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 4494,
+  "official_hit": true,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5adc597d55429947ff17392f",
+  "q": "In what year was the narrator of \"Blackadder's Christmas Carol\" born?",
+  "gold": [
+   "1959"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 132,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a85eed75542996432c5713b",
+  "q": "Where did the descendants of the group of black Indians associated with the Seminole people settle?",
+  "gold": [
+   "coahuila mexico"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 62,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a8778d25542994846c1cd89",
+  "q": "Has Stefan Edberg won more events than  \u00c9douard Roger-Vasselin?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ae3e59a5542994393b9e79e",
+  "q": "Bride of the Regiment was later remade into a 1948 film starring the actress and pin-up girl who was the highest-salaried American woman in which two years?",
+  "gold": [
+   "1946 and 1947"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 36,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5abc6c2655429959677d6aac",
+  "q": "In which county does the United States Navy air base located in which  Attack Squadron 174 (VA-174) was based on?",
+  "gold": [
+   "duval county"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 35,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a7f010955429934daa2fc8b",
+  "q": "Were Basil Dean and Francis Ford Coppola both alive at some point in time?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5abbdf8055429931dba145bb",
+  "q": "In the Cherokee Rose episode of \"The Walking Dead,\" the character that continues to search for Sophia Peletier is portrayed by an actor who is also famous for his work in what company's advertisements?",
+  "gold": [
+   "prada"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 525,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5a8b4d5e5542995d1e6f135c",
+  "q": "What Congressional District did John Shimkus represent before the 20th Congressional District of Illinois?",
+  "gold": [
+   "illinois s 15 congressional district"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a81c7d15542990a1d231ea9",
+  "q": "Which services did Rock Nominees Ltd and  ISS A/S (Integrated Service Solutions) have in common?",
+  "gold": [
+   "cleaning catering and security"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 33,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5abc817c5542993a06baf8fd",
+  "q": "\"This Ole House\" topped the UK chart in 1981 in a recording by a platinum-selling British rock and roll singer whose recording and performing career began when? ",
+  "gold": [
+   "in late 1960s"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 33,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5ae184185542990adbacf7ac",
+  "q": "Are Waco Regional Airport and Idaho Falls Regional Airport both city owned airports?  ",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ae7922f5542994a481bbdac",
+  "q": "Where was the university at which  Barrie Ciliberti was a professor located? ",
+  "gold": [
+   "prince georges county maryland"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 51996,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5ae4f2c45542990ba0bbb1a9",
+  "q": "Who was the director of 2004 American teen comedy adventure film in which Michelle Christine Trachtenberg appeared?",
+  "gold": [
+   "schaffer"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 34,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5ae038e955429942ec259c4d",
+  "q": "When was the Russian composer who composed \"Prisoner of the Caucasus\" born? ",
+  "gold": [
+   "os 6 january 1835"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a76364d5542994ccc918719",
+  "q": "When was the anthology, in which fisrt pages of The Incal\" were released, created?",
+  "gold": [
+   "december 1974"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 193,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5adf5fa65542993a75d264db",
+  "q": "When did the University, of which The Dove Marine Laboratory is a part, gain University status ? ?",
+  "gold": [
+   "1963"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 160,
+  "official_hit": true,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5a8d227a554299585d9e37b1",
+  "q": " What annual event occurs on a property co-founded by an American who was the best-selling recording artist of the 20th century?",
+  "gold": [
+   "san diego county fair"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 983,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5adc2ae5554299438c868d64",
+  "q": "Are Yucca and Rodgersia both perennials?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ab6b13b554299710c8d1f3f",
+  "q": "The Roissy Airport connects to Paris and cities in what countries?",
+  "gold": [
+   "in france as well as to belgium"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5add292b5542990d50227e0a",
+  "q": "In what city is the mortgage lending company, founded by Dan Gilbert, headquartered?",
+  "gold": [
+   "detroit michigan"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 52,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5ae5fb2d554299546bf82ff5",
+  "q": "Who is the father of the king who attempted to have Eardwulf assassinated",
+  "gold": [
+   "\u00e6thelwald moll"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 46,
+  "official_hit": true,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5add98985542990dbb2f7e82",
+  "q": "What was the occupation of the man who published an individualist anarchist journal?",
+  "gold": [
+   "american schoolteacher and publisher"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 46,
+  "official_hit": true,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5adf24155542992d7e9f92af",
+  "q": "Richard M\u00fcnch portrayed the German general who served in what capacity during WWII in the 1970 movie Patton?",
+  "gold": [
+   "oberkommando der wehrmacht"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 711,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5ac439005542995c82c4acf9",
+  "q": "where was the 2006 Commonwealth Games that Mmoloki Nogeng won a bronze medal at held?",
+  "gold": [
+   "melbourne australia"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 232,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5add9bfa5542990dbb2f7e85",
+  "q": "What type of product is the sponsor of the Premiership Rugby Sevens SeriesSeries ? ",
+  "gold": [
+   "pale lager"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 33,
+  "official_hit": true,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5adcc5715542990d50227d0a",
+  "q": "What album starring Ed Sheeran was released on 3 March 2017?",
+  "gold": [
+   "\u00f7 pronounced divide is third studio album by english singersongwriter ed sheeran"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a8baf635542996e8ac889c6",
+  "q": "What is the current capital of the district that Michael \"Mike\" Campbell is from?",
+  "gold": [
+   "harare"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 2581,
+  "official_hit": true,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ae1d656554299234fd04322",
+  "q": "Are Greater Swiss Mountain Dog and Harrier both dog breeds?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ab804305542995dae37ea14",
+  "q": "Why are many of the band, Hirsute Pursuit's songs considered controversial?",
+  "gold": [
+   "men who have sex with men"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 949,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5adbe1c5554299438c868cc4",
+  "q": "Was 9/11: Press for Truth released prior to Chasing Coral?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ae6c0f35542991bbc97616f",
+  "q": "What two positions did the man who broke Buzz Arlett's home run record play?",
+  "gold": [
+   "first baseman and third baseman"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5a8f503c5542992414482a34",
+  "q": "The Prodigal Daughter, though a book about an American, is by a novelist of what nationality?",
+  "gold": [
+   "english"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 41,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5abe94fd55429965af743f37",
+  "q": "Were both Sinclair Research and the Wave Mate Bullet founded in the 1970s?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ae635505542992ae0d16282",
+  "q": "Where was the comedian from And There's More born? ",
+  "gold": [
+   "rochdale north west england"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 93,
+  "official_hit": true,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5abbc58455429931dba14502",
+  "q": "Stephen susco wrote a movie produced by which american film actor?",
+  "gold": [
+   "sam raimi"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 30,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5ac272f95542992f1f2b38d3",
+  "q": "Are Couroupita and Graptopetalum plants both native to central America?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": false
+ },
+ {
+  "id": "5add63845542992ae4cec541",
+  "q": "What was the release date and price for the release of Mac OS X that has the software for creating WWF files?",
+  "gold": [
+   "april 29 2005 for us12995"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a77c74155429967ab105291",
+  "q": "Which band formed in England, Of Montreal or Vib Gyor?",
+  "gold": [
+   "vib gyor was band that was formed in leeds england"
+  ],
+  "cat": "lost in extraction: no fact anywhere has it",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5abaa954554299232ef4a362",
+  "q": "Are the writing from Maurice Level and Alice Hoffman focused on different audieces?",
+  "gold": [
+   "yes"
+  ],
+  "cat": "yes/no answer (never literally in facts)",
+  "best_rank": null,
+  "official_hit": false,
+  "hipporag_hit": true
+ },
+ {
+  "id": "5a84bda45542992a431d1a96",
+  "q": "Who was born in August and was a professor?",
+  "gold": [
+   "fred macmurray"
+  ],
+  "cat": "lost in extraction from gold passage (other facts have it)",
+  "best_rank": 33,
+  "official_hit": false,
+  "hipporag_hit": false
+ }
+]

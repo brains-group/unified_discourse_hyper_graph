@@ -1,0 +1,3 @@
+Title: Fabien Morel
+
+Fabien Morel is a French algebraic geometer and key developer of A¹ homotopy theory with Vladimir Voevodsky. Among his accomplishments is the proof of the Friedlander conjecture, and the proof of the complex case of the Milnor conjecture stated in Milnor's 1983 paper 'On the homology of Lie groups made discrete'. This result was presented at the Second Abel Conference, held in January–February 2012.

@@ -1,0 +1,78 @@
+{
+  "system": "NKG",
+  "timestamp": "20260628_130533",
+  "contract_file": "/home/taluka/discourse_hyper_graph/evaluation_data/ten_contracts_dataset/contracts/contract_2_whole_life.txt",
+  "construction_args": {
+    "model_name": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+    "max_workers": 100,
+    "chunk_size": 600,
+    "overlap": 50,
+    "edge_threshold": 0.5,
+    "top_k": 12,
+    "max_sub_workers": 100,
+    "fact_batch_size": 20,
+    "edge_mode": "clustered",
+    "run_deduplication": true,
+    "dedup_model_name": "voyageai/voyage-4-nano",
+    "dedup_iterations": 1,
+    "dedup_max_cluster_size": 64,
+    "use_cot": false,
+    "neutral_description": true,
+    "concise_summary": true,
+    "clustered_round1": false,
+    "clustered_round2": true,
+    "clustered_round3": false,
+    "clustered_max_facts_per_prompt": 40
+  },
+  "metrics": {
+    "total_document_chars": 6702,
+    "n_nodes": 121,
+    "n_edges": 487,
+    "n_entities": 47,
+    "n_facts": 71,
+    "execution_time_sec": 99.14,
+    "kg_size_bytes": 310136,
+    "token_breakdown": {
+      "chunk_extraction": {
+        "prompt": 23483,
+        "completion": 25055,
+        "total": 48538,
+        "calls": 17
+      },
+      "entity_deduplication": {
+        "prompt": 18188,
+        "completion": 2613,
+        "total": 20801,
+        "calls": 23
+      },
+      "global_edges_round1": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0
+      },
+      "global_edges_round2": {
+        "prompt": 7830,
+        "completion": 4793,
+        "total": 12623,
+        "calls": 5
+      },
+      "global_edges_round3": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0
+      },
+      "total": {
+        "prompt": 49501,
+        "completion": 32461,
+        "total": 81962,
+        "calls": 45
+      }
+    },
+    "llm_prompt_tokens": 49501,
+    "llm_completion_tokens": 32461,
+    "llm_total_tokens": 81962,
+    "llm_api_calls": 45
+  }
+}

@@ -1,0 +1,3 @@
+Title: Harish-Chandra module
+
+In mathematics, specifically in the representation theory of Lie groups, a Harish-Chandra module, named after the Indian mathematician and physicist Harish-Chandra, is a representation of a real Lie group, associated to a general representation, with regularity and finiteness conditions. When the associated representation is a formula_1-module, then its Harish-Chandra module is a representation with desirable factorization properties.

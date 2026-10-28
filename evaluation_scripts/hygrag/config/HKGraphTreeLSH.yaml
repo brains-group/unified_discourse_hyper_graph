@@ -1,0 +1,145 @@
+# HK Graph Tree with Cleora + LSH Configuration
+
+# Basic Configuration
+use_entities_vdb: False
+use_relations_vdb: False
+llm_model_max_token_size: 32768
+use_entity_link_chunk: True
+enable_graph_augmentation: False
+
+# Data Configuration
+index_name: hk_graph_tree_cleora_lsh
+vdb_type: faiss
+token_model: gpt-3.5-turbo
+
+# Chunk Configuration
+chunk:
+  chunk_token_size: 1200
+  chunk_overlap_token_size: 100
+  chunk_method: chunking_by_token_size
+
+# Graph Configuration
+graph:
+    # Basic graph settings
+    enable_entity_description: True
+    graph_type: hk_graph_tree
+    force: False
+
+    # Entity-relation extraction
+    extract_two_step: True
+    max_gleaning: 1
+    enable_entity_type: True
+    enable_edge_description: True
+    enable_edge_name: True
+
+    # Entity linking
+    use_wat_linking: False
+    prior_prob: 0.8
+
+    # Cleora embedding
+    cleora_dim: 2048  # [unh_v1] = voyage-4-nano embedding size (upstream 1024 = bge-m3 size); see EVAL_PLAN.md s.8
+    cleora_iterations: 2
+
+    # LSH clustering
+    lsh_num_hyperplanes: 16
+    lsh_min_cluster_size: 5
+    lsh_max_cluster_size: 50
+
+    # Hierarchy
+    max_hierarchy_levels: 4
+    community_summary_length: 300
+    random_seed: 42
+
+    # General
+    summary_max_tokens: 1500
+    llm_model_max_token_size: 32768
+
+    # Chunk-Chunk connections
+    shared_entity_threshold: 3
+
+    # FAISS vector index
+    # Types: HNSW (HNSW+L2 fast), HNSW_IP (HNSW+inner product fast),
+    #        FLAT (brute force+inner product exact), FLAT_L2 (brute force+L2 exact)
+    faiss_index_type: HNSW
+    faiss_hnsw_m: 64
+    faiss_hnsw_ef_construction: 500
+    faiss_hnsw_ef_search: 200
+    faiss_index_path: "./faiss_index/quality"
+
+# Retriever Configuration
+retriever:
+    query_type: hk_tree
+
+    # Hierarchical retrieval
+    enable_hierarchical_retrieval: True
+    hierarchy_search_levels: 3
+    community_boost_factor: 1.2
+    # Options: hk_tree_search, hk_tree_top_down, hk_tree_comprehensive, hk_tree_true_search, hk_tree_flat_search
+    hk_tree_retrieval_method: hk_tree_flat_search
+
+    # Tree search
+    top_k: 5
+    max_communities_per_level: 5
+    max_expansion_depth: 3
+    community_relevance_threshold: 0.3
+
+    # PPR fallback
+    enable_local: False
+    use_entity_similarity_for_ppr: False
+    top_k_entity_for_ppr: 8
+    node_specificity: True
+    damping: 0.1
+
+    # Context token limits
+    max_token_for_local_context: 4000
+    max_token_for_global_context: 8000
+
+    # Entity and relationship token limits
+    entities_max_tokens: 2000
+    relationships_max_tokens: 2000
+
+# Query Configuration
+query:
+    query_type: qa
+    only_need_context: False
+    enable_hybrid_query: True
+    level: 2
+    top_k: 5
+    k_nei: 3
+
+    # Hierarchical query
+    enable_community_context: True
+    community_context_levels: 3
+    hk_tree_retrieval_method: hk_tree_flat_search
+    enable_entity_extraction: True
+
+    # Tree search query
+    tree_search: True
+    max_tree_search_depth: 3
+    tree_search_breadth: 5
+
+    # IR-CoT iterative reasoning chain
+    enable_ir_cot: True
+    max_ir_steps: 2
+    ir_cot_top_k: 5
+
+    # Context
+    retrieve_top_k: 5
+    naive_max_token_for_text_unit: 12000
+    local_max_token_for_text_unit: 4000
+    max_token_for_text_unit: 4000
+
+    # Result limits
+    max_communities_in_context: 1
+    max_entities_in_context: 5
+    max_relationships_in_context: 5
+    max_chunks_in_context: 5
+
+    entities_max_tokens: 2000
+    relationships_max_tokens: 2000
+
+    # Document display
+    max_document_display_length: 8000
+    max_smart_truncate_length: 8000
+    truncate_head_chars: 4000
+    truncate_tail_chars: 3000

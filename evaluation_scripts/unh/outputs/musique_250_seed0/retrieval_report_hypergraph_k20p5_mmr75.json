@@ -1,0 +1,39 @@
+{
+  "dataset": "musique",
+  "view": "hypergraph",
+  "subset": "/home/taluka/unh_v1/evaluation_data/musique/subsets/musique_250_seed0.json",
+  "corpus": "subset",
+  "questions": 250,
+  "kg": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/musique_250_seed0/kg.graphml",
+  "engine": "old",
+  "retrieval_args": {
+    "top_k_seeds": 9,
+    "max_depth": 3,
+    "beam_width": 6,
+    "final_top_k": 20,
+    "mode": "hypergraph",
+    "beam_mmr_lambda": 0.75,
+    "final_mmr_lambda": 0.6,
+    "search_mode": "beam_search",
+    "deduplicate_paths": true,
+    "neutral_layout": false,
+    "source_passages": 5
+  },
+  "context_cap": null,
+  "errors": 0,
+  "empty_contexts": 0,
+  "mean_context_chars": 6607,
+  "query_llm_usage_this_run": {
+    "prompt_tokens": 223239,
+    "completion_tokens": 84446,
+    "total_tokens": 307685,
+    "api_calls": 252,
+    "prompt_cache_hit_tokens": 163896
+  },
+  "seconds_this_run": 1785.0,
+  "llm_model": "deepseek-flash",
+  "temperature": "none",
+  "tag": "k20p5_mmr75",
+  "drop_empty_entities": true,
+  "dropped_empty_entities": 1
+}

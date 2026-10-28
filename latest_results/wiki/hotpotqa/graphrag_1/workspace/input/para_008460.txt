@@ -1,0 +1,3 @@
+Title: F-number
+
+The f-number of an optical system such as a camera lens is the ratio of the system's focal length to the diameter of the entrance pupil. It is a dimensionless number that is a quantitative measure of lens speed, and an important concept in photography. It is also known as the focal ratio, f-ratio, or f-stop. It is the reciprocal of the relative aperture. The f-number is commonly indicated using a hooked f with the format f/ N, where N is the f-number.

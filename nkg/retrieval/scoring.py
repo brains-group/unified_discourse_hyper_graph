@@ -2,7 +2,7 @@ import numpy as np
 from nkg.utils.math_utils import *
 
 # Default Weights
-FACT_WEIGHTS = {"sentence": 0.6, "macro": 0.15, "chunk": 0.25}
+FACT_WEIGHTS = {"sentence": 0.5, "questions": 0.3, "chunk": 0.2}
 ENTITY_WEIGHTS = {"name": 0.4, "role": 0.3, "anchors": 0.3}
 EDGE_WEIGHTS = {"label": 0.3, "desc": 0.5, "llm_score": 0.2}
 
@@ -11,15 +11,14 @@ def score_fact(
         plan_rewrite_emb: np.ndarray,
         plan_topics_embs: np.ndarray,
         fact_sent_emb: np.ndarray,
-        fact_macro_embs: np.ndarray,
+        fact_questions_emb: np.ndarray,
         fact_chunk_embs: np.ndarray,
         weights: dict = None
 ) -> float:
     """
     Scores a single fact against the embedded query plan.
-    Safely redistributes weight if macro or chunk topics are missing.
+    Safely redistributes weight if questions or chunk topics are missing.
     """
-    # Create a local copy of weights so we don't modify the global dictionary
     if weights is None:
         weights = FACT_WEIGHTS.copy()
     else:
@@ -28,28 +27,25 @@ def score_fact(
     # 1. Direct sentence match
     sent_score = cosine_similarity_single(plan_rewrite_emb, fact_sent_emb)
 
-    # 2. Macro Topic Match
-    macro_score = 0.0
-    if fact_macro_embs is not None and len(fact_macro_embs) > 0:
-        macro_score = max_pooled_list_similarity(plan_topics_embs, fact_macro_embs)
+    # 2. Answered Questions Match — rewritten query vs concatenated answered_questions string
+    questions_score = 0.0
+    if fact_questions_emb is not None and len(fact_questions_emb) > 0:
+        questions_score = float((plan_rewrite_emb @ fact_questions_emb.T).flatten()[0])
     else:
-        # If no macro topics, shift the weight to the sentence
-        weights["sentence"] += weights["macro"]
-        weights["macro"] = 0.0
+        weights["sentence"] += weights["questions"]
+        weights["questions"] = 0.0
 
     # 3. Chunk Topic Match
     chunk_score = 0.0
     if fact_chunk_embs is not None and len(fact_chunk_embs) > 0:
         chunk_score = max_pooled_list_similarity(plan_topics_embs, fact_chunk_embs)
     else:
-        # If no chunk topics, shift the weight to the sentence
         weights["sentence"] += weights["chunk"]
         weights["chunk"] = 0.0
 
-    # 4. Weighted Sum
     final_score = (
             (weights["sentence"] * sent_score) +
-            (weights["macro"] * macro_score) +
+            (weights["questions"] * questions_score) +
             (weights["chunk"] * chunk_score)
     )
     return final_score

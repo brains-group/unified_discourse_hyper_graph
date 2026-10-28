@@ -1,0 +1,19 @@
+{
+  "passages": 1,
+  "unique_docs_indexed": 1,
+  "chunks": 6,
+  "graph_nodes": 565,
+  "graph_edges": 664,
+  "hyperedges": 154,
+  "seconds": 68.6,
+  "llm_usage_this_run": {
+    "calls": 21,
+    "cache_hits": 0,
+    "prompt_tokens": 190007,
+    "completion_tokens": 55180,
+    "empty_responses": 0
+  },
+  "llm_model": "deepseek-flash",
+  "thinking_disabled": true,
+  "embedding_model": "voyageai/voyage-4-nano"
+}

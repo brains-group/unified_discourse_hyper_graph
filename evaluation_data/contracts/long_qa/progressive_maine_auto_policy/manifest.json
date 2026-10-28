@@ -1,0 +1,25 @@
+{
+ "contract": "progressive_maine_auto_policy",
+ "source": "long_qa (QA only) from long",
+ "tokens_cl100k": 15815,
+ "chars": 86597,
+ "chunks_1200": 15,
+ "qa": 85,
+ "facts": 0,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 20,
+  "CAT2_RELATIONAL_LOOKUP": 20,
+  "CAT3_CONDITIONAL_REASONING": 20,
+  "CAT4_MULTIHOP_REASONING": 20,
+  "CAT5_UNANSWERABLE": 5
+ },
+ "sha256": {
+  "questions.json": "a417857e41ca52b56c802025141e3ded1def7d2fb8a3592df702bbb973fbcd2b",
+  "documents.json": "cd04c69e0b151f1955b016522b27c593c0e8aa9e0037a8dd1a9215e3fdbb7ab7",
+  "chunks.json": "f838ac8d767f384ed831cd1ce5cdf7686529bb05197c396ee9e238b8ef7bec3e",
+  "chunks_logicrag.json": "f838ac8d767f384ed831cd1ce5cdf7686529bb05197c396ee9e238b8ef7bec3e",
+  "memgraphrag_corpus.txt": "5884890e263154029257abd8dbc9113496cb569250682a9d779d141e04d22546",
+  "contract.txt": "5884890e263154029257abd8dbc9113496cb569250682a9d779d141e04d22546",
+  "ms_graphrag_input/progressive_maine_auto_policy.txt": "5884890e263154029257abd8dbc9113496cb569250682a9d779d141e04d22546"
+ }
+}

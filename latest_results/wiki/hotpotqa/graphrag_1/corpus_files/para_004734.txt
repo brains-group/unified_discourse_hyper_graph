@@ -1,0 +1,3 @@
+Title: Brewer v. Williams
+
+Brewer v. Williams, 430 U.S. 387 (1977) , is a decision by the United States Supreme Court that clarifies what constitutes "waiver" of the right to counsel for the purposes of the Sixth Amendment. Under "Miranda v. Arizona", evidence obtained by police during interrogation of a suspect before he has been read his Miranda rights is inadmissible. Here, however, the defendant had been indicted in court, and thus his Sixth Amendment right to counsel had automatically attached. At issue was whether a voluntary admission of incriminating facts in response to police statements constituted a waiver of this right to counsel.

@@ -1,0 +1,215 @@
+{
+  "run_id": "nkg_construction_73ff2a49",
+  "timestamp": "2026-10-10T14:28:27.761272",
+  "system": "NKG",
+  "dataset": "quality",
+  "metadata": {
+    "corpus_file": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/quality_smoke3_quality/data/corpus.jsonl",
+    "corpus_paragraphs": 3,
+    "corpus_txt_path": null,
+    "run_dir": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/quality_smoke3_quality",
+    "kg_path": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/quality_smoke3_quality/kg.graphml",
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "api_base": "https://api.deepseek.com",
+    "construction_args": {
+      "input_mode": "per_document",
+      "model_name": "deepseek-flash",
+      "chunk_tokenizer_model": "Qwen/Qwen3-30B-A3B-Instruct-2507-FP8",
+      "max_workers": 2300,
+      "chunk_size": 600,
+      "chunk_overlap": 50,
+      "edge_threshold": 0.5,
+      "top_k": 12,
+      "max_sub_workers": 2300,
+      "fact_batch_size": 15,
+      "edge_mode": "clustered_fast",
+      "same_chunk_min_facts": 3,
+      "edge_descriptions": false,
+      "run_fact_dedup": true,
+      "fact_dedup_top_k": 20,
+      "fact_dedup_cluster_size": 30,
+      "fast_cluster_embed_loader": "remote_code",
+      "fast_cluster_leiden_levels": "final",
+      "fast_cluster_leiden_passes": 1,
+      "run_deduplication": true,
+      "dedup_model_name": "voyageai/voyage-4-nano",
+      "dedup_iterations": 1,
+      "dedup_max_cluster_size": 72,
+      "dedup_run_exact": true,
+      "dedup_run_semhash": true,
+      "dedup_semhash_threshold": 0.95,
+      "dedup_run_llm": true,
+      "dedup_similarity_threshold": 0.5,
+      "dedup_sim_weights": {
+        "name": 0.6,
+        "role": 0.3,
+        "type": 0.1
+      },
+      "generate_entity_relation_labels": false,
+      "use_cot": false,
+      "neutral_description": true,
+      "concise_summary": true,
+      "combined_entity_extraction": true,
+      "full_entity_profile": false,
+      "clustered_round1": false,
+      "clustered_round2": true,
+      "clustered_round3": false,
+      "clustered_max_facts_per_prompt": 50,
+      "middle_k_skip_percent": 0.33,
+      "global_edge_retrieval_model": "voyageai/voyage-4-nano",
+      "use_questions_weight": true,
+      "questions_mode": "follow_up_to_answered",
+      "construction_max_tokens": 100000,
+      "temperature": "none",
+      "num_retries": 1
+    },
+    "checkpointing": {
+      "checkpoint_dir": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/quality_smoke3_quality/checkpoint",
+      "config_path": "/home/taluka/unh_v1/evaluation_scripts/unh/outputs/quality_smoke3_quality/construction_config.json",
+      "override_history": []
+    }
+  },
+  "construction": {
+    "total_corpus_chars": 79606,
+    "n_nodes": 1513,
+    "n_edges": 8947,
+    "n_entities": 103,
+    "n_facts": 1374,
+    "execution_time_sec": 77.07,
+    "kg_size_bytes": 5008028,
+    "token_breakdown": {
+      "chunk_extraction": {
+        "prompt": 374781,
+        "completion": 323791,
+        "total": 698572,
+        "calls": 233,
+        "cache_hit": 190336
+      },
+      "chunk_extraction_sub": {
+        "chunk_fact_extraction": {
+          "prompt": 35416,
+          "completion": 27024,
+          "total": 62440,
+          "calls": 36,
+          "cache_hit": 4608
+        },
+        "chunk_entity_extraction": {
+          "prompt": 35668,
+          "completion": 7216,
+          "total": 42884,
+          "calls": 36,
+          "cache_hit": 4608
+        },
+        "fact_metadata_batch": {
+          "prompt": 203616,
+          "completion": 216129,
+          "total": 419745,
+          "calls": 123,
+          "cache_hit": 117888
+        },
+        "same_chunk_fact_edges": {
+          "prompt": 100081,
+          "completion": 73422,
+          "total": 173503,
+          "calls": 38,
+          "cache_hit": 63232
+        }
+      },
+      "entity_deduplication": {
+        "prompt": 8615,
+        "completion": 2814,
+        "total": 11429,
+        "calls": 2,
+        "cache_hit": 768
+      },
+      "fact_deduplication": {
+        "prompt": 156670,
+        "completion": 20019,
+        "total": 176689,
+        "calls": 27,
+        "cache_hit": 24192
+      },
+      "global_edges_round1": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0,
+        "cache_hit": 0
+      },
+      "global_edges_round2": {
+        "prompt": 186969,
+        "completion": 70251,
+        "total": 257220,
+        "calls": 58,
+        "cache_hit": 96512
+      },
+      "global_edges_round3": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0,
+        "calls": 0,
+        "cache_hit": 0
+      },
+      "total": {
+        "prompt": 727035,
+        "completion": 416875,
+        "total": 1143910,
+        "calls": 320,
+        "cache_hit": 311808
+      },
+      "hyperparams": {
+        "edge_mode": "clustered_fast",
+        "fast_cluster_options": {
+          "embed_loader": "remote_code",
+          "leiden_levels": "final",
+          "leiden_passes": 1
+        },
+        "edge_descriptions": false,
+        "combined_entity_extraction": true,
+        "full_entity_profile": false,
+        "generate_entity_relation_labels": false,
+        "dedup_run_exact": true,
+        "dedup_run_semhash": true,
+        "dedup_semhash_threshold": 0.95,
+        "dedup_run_llm": true,
+        "dedup_similarity_threshold": 0.5,
+        "run_fact_dedup": true,
+        "fact_dedup_iterations": 1,
+        "fact_dedup_top_k": 20,
+        "fact_dedup_threshold": 0.8,
+        "fact_dedup_cluster_size": 30,
+        "fact_dedup_sim_weights": {
+          "sentence": 0.7,
+          "entity": 0.15,
+          "topic": 0.15
+        },
+        "questions_mode": "follow_up_to_answered",
+        "middle_k_skip_percent": 0.33,
+        "construction_r1_weights": {
+          "sent": 0.0,
+          "topic": 0.0,
+          "entity": 1.0,
+          "questions": 0.0
+        },
+        "construction_r2_weights": {
+          "sent": 1.0,
+          "topic": 1.0,
+          "entity": 1.0,
+          "questions": 1.0
+        },
+        "construction_r3_weights": {
+          "sent": 1.0,
+          "topic": 1.0,
+          "entity": 1.0,
+          "questions": 1.0
+        }
+      }
+    },
+    "llm_prompt_tokens": 727035,
+    "llm_completion_tokens": 416875,
+    "llm_total_tokens": 1143910,
+    "llm_api_calls": 320,
+    "llm_prompt_cache_hit_tokens": 311808
+  }
+}

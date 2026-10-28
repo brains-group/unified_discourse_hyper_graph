@@ -1,0 +1,25 @@
+{
+ "contract": "contract_4_variable_universal",
+ "source": "ten_contracts_dataset",
+ "tokens_cl100k": 1806,
+ "chars": 7919,
+ "chunks_1200": 2,
+ "qa": 36,
+ "facts": 80,
+ "qa_by_category": {
+  "CAT1_ATOMIC_LOOKUP": 16,
+  "CAT2_RELATIONAL_LOOKUP": 6,
+  "CAT3_CONDITIONAL_REASONING": 6,
+  "CAT4_MULTIHOP_REASONING": 3,
+  "CAT5_UNANSWERABLE": 5
+ },
+ "sha256": {
+  "questions.json": "378946d5034f4856122267423f841f725c2cf92fe73b43256432bf9264913cbe",
+  "documents.json": "199322d1ee3029b8715b0d2e7873e883aa254214f6e694f8d2ef6a4f63cc4434",
+  "chunks.json": "77dde1c56940c8f1c6a602194d9ccbf302397b9ab52ca86d928fa5441ef6378a",
+  "chunks_logicrag.json": "77dde1c56940c8f1c6a602194d9ccbf302397b9ab52ca86d928fa5441ef6378a",
+  "memgraphrag_corpus.txt": "69b164c6604dbefd10619ef3d222a2ce221b776c393b444af406d298b059502e",
+  "contract.txt": "69b164c6604dbefd10619ef3d222a2ce221b776c393b444af406d298b059502e",
+  "ms_graphrag_input/contract_4_variable_universal.txt": "69b164c6604dbefd10619ef3d222a2ce221b776c393b444af406d298b059502e"
+ }
+}

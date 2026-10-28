@@ -1,0 +1,40 @@
+{
+  "official_q1000": {
+    "questions": 1000,
+    "answer_in_context_pct": 29.4,
+    "mean_context_chars": 2358,
+    "mean_distinct_facts": 11.4,
+    "mean_tokens": 582,
+    "max_tokens": 1591,
+    "mean_seconds": 9.01
+  },
+  "t2000_f40_dmp06_q1000": {
+    "args": {
+      "top_k_seeds": 30,
+      "max_depth": 4,
+      "beam_width": 6,
+      "final_top_k": 80,
+      "final_mmr_lambda": 0.6,
+      "deduplicate_paths": true,
+      "neutral_layout": false,
+      "source_passages": 0,
+      "context_tokens": 2000,
+      "force_top_facts": 40,
+      "damping": 0.6,
+      "mode": "discourse"
+    },
+    "questions": 1000,
+    "answer_in_context_pct": 58.1,
+    "mean_context_chars": 5455,
+    "mean_distinct_facts": 54.4,
+    "mean_tokens": 1577,
+    "max_tokens": 2000,
+    "pct_edges_discourse": 100.0,
+    "pct_edges_entity": 0.0,
+    "pct_hops_discourse": 100.0,
+    "pct_hops_entity": 0.0,
+    "mean_edges_per_question": 38.3,
+    "mean_seconds": 17.391,
+    "wall_seconds": 358.8
+  }
+}

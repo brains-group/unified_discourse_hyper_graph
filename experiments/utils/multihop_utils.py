@@ -241,8 +241,8 @@ def reconstruct_graph(graph_dict: dict):
 
     kwargs = dict(
         entities=set(graph_dict.get("entities") or []),
-        relations=set(graph_dict.get("relations") or []),
-        edges=[tuple(e) for e in (graph_dict.get("edges") or [])],
+        relations=set(tuple(r) if isinstance(r, list) else r for r in (graph_dict.get("relations") or [])),
+        edges=[tuple(e) if isinstance(e, list) else e for e in (graph_dict.get("edges") or [])],
         entity_clusters={
             k: set(v) for k, v in (graph_dict.get("entity_clusters") or {}).items()
         } or None,
@@ -404,6 +404,7 @@ class GlobalTokenAccumulator(CustomLogger):
         self.completion_tokens = 0
         self.total_tokens      = 0
         self.api_calls         = 0
+        self.prompt_cache_hit_tokens = 0  # prompt tokens served from the provider's prompt cache (DeepSeek)
         self._lock             = threading.Lock()
 
     def log_success_event(self, kwargs, response_obj, start_time, end_time):
@@ -414,19 +415,15 @@ class GlobalTokenAccumulator(CustomLogger):
         )
         if usage is None:
             return
-        if isinstance(usage, dict):
-            p = usage.get("prompt_tokens", 0)
-            c = usage.get("completion_tokens", 0)
-            t = usage.get("total_tokens", p + c)
-        else:
-            p = getattr(usage, "prompt_tokens", 0)
-            c = getattr(usage, "completion_tokens", 0)
-            t = getattr(usage, "total_tokens", p + c)
+        from nkg.utils.token_tracker import usage_tokens
+        p, c, hit = usage_tokens(usage)
+        t = (usage.get("total_tokens") if isinstance(usage, dict) else getattr(usage, "total_tokens", None)) or p + c
         with self._lock:
             self.prompt_tokens     += p
             self.completion_tokens += c
             self.total_tokens      += t
             self.api_calls         += 1
+            self.prompt_cache_hit_tokens += hit
 
     def snapshot(self) -> dict:
         with self._lock:
@@ -435,6 +432,7 @@ class GlobalTokenAccumulator(CustomLogger):
                 "completion_tokens": self.completion_tokens,
                 "total_tokens":      self.total_tokens,
                 "api_calls":         self.api_calls,
+                "prompt_cache_hit_tokens": self.prompt_cache_hit_tokens,
             }
 
     def reset(self):
@@ -443,12 +441,19 @@ class GlobalTokenAccumulator(CustomLogger):
             self.completion_tokens = 0
             self.total_tokens      = 0
             self.api_calls         = 0
+            self.prompt_cache_hit_tokens = 0
 
 
 def attach_token_tracker(tracker: GlobalTokenAccumulator):
-    """Hooks the tracker into LiteLLM's success callbacks."""
-    litellm.callbacks        = [tracker]
-    litellm.success_callback = [tracker]
+    """
+    Hooks the tracker into LiteLLM's callback list.
+
+    Only litellm.callbacks is set. Do NOT also set litellm.success_callback:
+    for CustomLogger instances, callbacks already fires log_success_event on
+    every successful call — setting success_callback to the same instance
+    fires it a second time, doubling every token count.
+    """
+    litellm.callbacks = [tracker]
 
 
 def detach_token_tracker():
@@ -456,9 +461,40 @@ def detach_token_tracker():
     litellm.success_callback = []
 
 
+def snapshot_tokens_from_dspy_history(lm, since_index: int = 0) -> dict:
+    """
+    Read token usage directly from DSPy's lm.history entries starting at
+    since_index, summing the 'usage' dict that DSPy stores per call.
+
+    Use this to cross-check the LiteLLM callback numbers:
+        before = len(kg.lm.history)
+        ... do work ...
+        dspy_tokens = snapshot_tokens_from_dspy_history(kg.lm, since_index=before)
+
+    Returns the same shape as GlobalTokenAccumulator.snapshot().
+    """
+    history = getattr(lm, "history", []) or []
+    p = c = t = n = 0
+    for entry in history[since_index:]:
+        usage = entry.get("usage") if isinstance(entry, dict) else None
+        if not usage:
+            continue
+        if isinstance(usage, dict):
+            ep = usage.get("prompt_tokens", 0)
+            ec = usage.get("completion_tokens", 0)
+            et = usage.get("total_tokens", ep + ec)
+        else:
+            ep = getattr(usage, "prompt_tokens", 0)
+            ec = getattr(usage, "completion_tokens", 0)
+            et = getattr(usage, "total_tokens", ep + ec)
+        p += ep; c += ec; t += et; n += 1
+    return {"prompt_tokens": p, "completion_tokens": c,
+            "total_tokens": t, "api_calls": n}
+
+
 def add_token_counters(a: dict, b: dict) -> dict:
-    """Element-wise add two token snapshots (prompt/completion/total/api_calls)."""
-    keys = ("prompt_tokens", "completion_tokens", "total_tokens", "api_calls")
+    """Element-wise add two token snapshots (prompt/completion/total/api_calls/prompt_cache_hit_tokens)."""
+    keys = ("prompt_tokens", "completion_tokens", "total_tokens", "api_calls", "prompt_cache_hit_tokens")
     return {k: int(a.get(k, 0)) + int(b.get(k, 0)) for k in keys}
 
 
@@ -468,10 +504,11 @@ def add_token_counters(a: dict, b: dict) -> dict:
 # concise span-like answers (entity / date / yes-no), no chain-of-thought.
 # =============================================================================
 SYSTEM_PROMPT = (
-    "You answer multi-hop questions using only the provided context. "
-    "Output the shortest possible answer phrase — a single entity, date, "
-    "number, or yes/no. Do not include any explanation, restate the question, "
-    "or add extra words."
+    # "You answer multi-hop questions using only the provided context. "
+    # "Output the shortest possible answer phrase — a single entity, date, "
+    # "number, or yes/no. Do not include any explanation, restate the question, "
+    # "or add extra words."
+    "Output the shortest phrase that fully answers the question, matching the level of detail the question asks for — typically a single entity, date, number, or yes/no, but if the question calls for multiple items (e.g. 'name the two...', 'who are...'), list all of them separated by commas, in the same order they'd naturally be mentioned. Do not include any explanation, restate the question, or add extra words."
 )
 
 USER_PROMPT_TEMPLATE = """Context:
@@ -502,7 +539,14 @@ def call_llm_for_answer(
     """
     Synchronous LiteLLM call. Thread-safe (LiteLLM internal locks).
     Returns the raw LLM string with surrounding whitespace stripped.
+
+    DeepSeek V4/V4.1 think by default, and hidden thinking tokens count against max_tokens:
+    with the 128-token answer cap, a large share of answers came back empty. Thinking is
+    disabled for DeepSeek endpoints, as in nkg.utils.config.configure_dspy.
     """
+    extra = {}
+    if "deepseek" in (api_base or "").lower() or str(model).lower().startswith("deepseek"):
+        extra["extra_body"] = {"thinking": {"type": "disabled"}}
     resp = litellm.completion(
         model=f"openai/{model}",
         messages=make_answer_messages(question, context),
@@ -510,8 +554,9 @@ def call_llm_for_answer(
         api_key=api_key,
         max_tokens=max_tokens,
         temperature=temperature,
+        **extra,
     )
-    return resp.choices[0].message.content.strip()
+    return (resp.choices[0].message.content or "").strip()
 
 
 # =============================================================================
@@ -519,6 +564,27 @@ def call_llm_for_answer(
 # =============================================================================
 def safe_div(num, denom, ndigits=4):
     return round(num / denom, ndigits) if denom else 0.0
+
+
+def next_eval_results_path(run_dir: str, basename: str = "evaluation_results") -> str:
+    """
+    Returns a path for a new evaluation results JSON file that will not
+    overwrite any existing file.
+
+    Tries in order:
+      {run_dir}/evaluation_results.json      (if absent)
+      {run_dir}/evaluation_results_1.json
+      {run_dir}/evaluation_results_2.json   ...
+    """
+    base = os.path.join(run_dir, f"{basename}.json")
+    if not os.path.exists(base):
+        return base
+    v = 1
+    while True:
+        candidate = os.path.join(run_dir, f"{basename}_{v}.json")
+        if not os.path.exists(candidate):
+            return candidate
+        v += 1
 
 
 def truncate_tokens(text: str, tokenizer, max_tokens: int) -> Tuple[str, int]:

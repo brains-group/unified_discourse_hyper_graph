@@ -1,0 +1,112 @@
+{
+  "token_breakdown": {
+    "chunk_extraction": {
+      "prompt": 308167,
+      "completion": 349456,
+      "total": 657623,
+      "calls": 182
+    },
+    "chunk_extraction_sub": {
+      "chunk_fact_extraction": {
+        "prompt": 29524,
+        "completion": 30595,
+        "total": 60119,
+        "calls": 30
+      },
+      "chunk_entity_extraction": {
+        "prompt": 29614,
+        "completion": 11101,
+        "total": 40715,
+        "calls": 30
+      },
+      "fact_metadata_batch": {
+        "prompt": 166692,
+        "completion": 226188,
+        "total": 392880,
+        "calls": 92
+      },
+      "same_chunk_fact_edges": {
+        "prompt": 82337,
+        "completion": 81572,
+        "total": 163909,
+        "calls": 30
+      }
+    },
+    "entity_deduplication": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0
+    },
+    "fact_deduplication": {
+      "prompt": 503861,
+      "completion": 84318,
+      "total": 588179,
+      "calls": 191
+    },
+    "global_edges_round1": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "calls": 0
+    },
+    "global_edges_round2": {
+      "prompt": 142914,
+      "completion": 87565,
+      "total": 230479,
+      "calls": 41
+    },
+    "global_edges_round3": {
+      "prompt": 189939,
+      "completion": 67730,
+      "total": 257669,
+      "calls": 67
+    },
+    "total": {
+      "prompt": 1144881,
+      "completion": 589069,
+      "total": 1733950,
+      "calls": 481
+    },
+    "hyperparams": {
+      "combined_entity_extraction": true,
+      "full_entity_profile": false,
+      "generate_entity_relation_labels": false,
+      "dedup_run_exact": true,
+      "dedup_run_semhash": true,
+      "dedup_semhash_threshold": 0.95,
+      "dedup_run_llm": false,
+      "dedup_similarity_threshold": 0.75,
+      "run_fact_dedup": true,
+      "fact_dedup_iterations": 1,
+      "fact_dedup_top_k": 12,
+      "fact_dedup_threshold": 0.8,
+      "fact_dedup_cluster_size": 8,
+      "fact_dedup_sim_weights": {
+        "sentence": 0.7,
+        "entity": 0.15,
+        "topic": 0.15
+      },
+      "questions_mode": "follow_up_to_answered",
+      "middle_k_skip_percent": 0.33,
+      "construction_r1_weights": {
+        "sent": 0.0,
+        "topic": 0.0,
+        "entity": 1.0,
+        "questions": 0.0
+      },
+      "construction_r2_weights": {
+        "sent": 1.0,
+        "topic": 1.0,
+        "entity": 1.0,
+        "questions": 1.0
+      },
+      "construction_r3_weights": {
+        "sent": 1.0,
+        "topic": 1.0,
+        "entity": 1.0,
+        "questions": 1.0
+      }
+    }
+  }
+}

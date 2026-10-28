@@ -1,0 +1,3 @@
+Title: Nucleopore filter
+
+A nuclepore filter (brand name Nuclepore from Whatman, part of GE Healthcare) is a kind of filter in which holes a few micrometres in size have been created in a plastic (e.g. polycarbonate) membrane. These filters are generally created by exposing the membrane to radiation that weakens the plastic and creates specific areas that can be removed by dousing the membrane in acid (or other chemicals). The technique and patent were developed by Robert L. Fleischer, P. Buford Price, and Robert M. Walker as an outgrowth of their research on radiation effects in solids, with a special focus on materials exposed to energetic particles in space. The technique allows for creating uniform holes of any desired diameter to allow even a virus to be filtered.

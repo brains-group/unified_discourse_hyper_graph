@@ -1,0 +1,3 @@
+Title: Dynkin diagram
+
+In the mathematical field of Lie theory, a Dynkin diagram, named for Eugene Dynkin, is a type of graph with some edges doubled or tripled (drawn as a double or triple line). The multiple edges are, within certain constraints, directed.

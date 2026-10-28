@@ -1,0 +1,54 @@
+% ---- New Table 6: UNH configuration as evaluated with the base PPR retriever + top-5 passages.
+% ---- Construction = G-Medical / Contract QA builds (clustered_fast communities, min 20 / max 45 facts).
+\begin{table}
+\centering
+\caption{\normalfont \textbf{\sys{} configuration}. Symbols follow Section~\ref{sec:method}.}
+\label{tab:hyperparams}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\columnwidth}{@{}Xr@{}}
+\toprule
+Parameter & Value \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Construction}} \\
+Chunk size and overlap (tokens) & 600, 50 \\
+Facts annotated per call & 15 \\
+Minimum facts for local relation extraction & 3 \\
+Entity-resolution neighbours & 15 \\
+Entity-resolution similarity threshold & 0.5 \\
+Maximum entity-resolution cluster size & 72 \\
+Fact-consolidation neighbours & 20 \\
+Maximum fact-consolidation cluster size & 30 \\
+Weights of the four affinity terms & 1, 1, 1, 1 \\
+Candidate neighbours per fact $k$ & 12 \\
+Minimum fact-community size $M_{\min}$ & 20 \\
+Maximum fact-community size $M$ & 45 \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Seed selection}} \\
+Fact candidates re-ranked $K_c$ & 50 \\
+Seed facts $N_s$ & 5 \\
+Chunk prior weight $\beta$ & 0.05 \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Propagation and relevance}} \\
+Edge-following probability $d$ & 0.6 \\
+Participation, provenance, semantic edge weights & 1, 1, $r$ \\
+Cross-encoder pool per ranking $K_p$ & 100 \\
+Rank-fusion constant $\kappa$ & 20 \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Path construction}} \\
+Candidate facts $K_f$ & 150 \\
+Start facts $N_0$ & 30 \\
+Extensions per partial path $B$ & 6 \\
+Paths kept per depth $G$ & 60 \\
+Maximum facts per path $D$ & 4 \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Path selection and context}} \\
+Paths selected $N_p$ & 80 \\
+Most relevant facts completed $N_c$ & 40 \\
+Path context budget $T$ (tokens) & 2,000 \\
+Appended passages $N_{\mathrm{psg}}$ & 5 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Table~\ref{tab:hyperparams} lists the \sys{} construction and retrieval settings, using the notation of Section~\ref{sec:method}. The same retrieval setting is used on every dataset. Sentence and chunk embeddings use voyage-4-nano, the cross-encoder is ms-marco-MiniLM-L6-v2, the budget $T$ is counted with the Qwen3 tokenizer and applies to the paths only, and power iteration runs for at most 60 iterations or until the $\ell_1$ change falls below $10^{-8}$. The reader is invoked separately after retrieval.
